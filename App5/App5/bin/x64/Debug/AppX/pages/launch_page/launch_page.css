@@ -1,0 +1,44 @@
+﻿.launch_page section[role=main] {
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.the_float {
+    float: left;
+    border: 3px solid;
+    margin-right: 100px;
+    margin-left: -70px;
+    width: 250px;
+    height: 225px;
+}
+
+.the_float img {
+    position: absolute;
+    width: 250px;
+    height: 225px;
+    z-index: -1;
+}
+
+.the_float h2 {
+    background-color: rgba(0,0,0,.6);
+    color: #fff;
+    font-weight: bold;
+    margin-top: 170px;
+    height: 55px;
+    padding-left: 5px;
+    font-size: 20px;
+}
+
+#launch_sel {
+    margin-top: 40px;
+}
+
+.the_float:hover {
+    cursor: pointer;
+    box-shadow: 3px 3px 3px #808080;
+}
+
+#explain {
+    font-size: 50px;
+    margin-left: 50px;
+}
