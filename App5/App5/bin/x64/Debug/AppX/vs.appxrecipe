@@ -196,7 +196,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\tidiapp\App5\App5\js\ChangeApp.js">
       <PackagePath>js\ChangeApp.js</PackagePath>
-      <Modified>2014-08-04T16:21:23.278</Modified>
+      <Modified>2014-08-04T16:41:54.594</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\tidiapp\App5\App5\js\dataBaseGather.js">
       <PackagePath>js\dataBaseGather.js</PackagePath>
@@ -408,7 +408,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\tidiapp\App5\App5\pages\home\home.html">
       <PackagePath>pages\home\home.html</PackagePath>
-      <Modified>2014-08-01T16:04:50.786</Modified>
+      <Modified>2014-08-04T16:42:58.723</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\tidiapp\App5\App5\pages\info_home\info_home.html">
       <PackagePath>pages\info_home\info_home.html</PackagePath>
@@ -552,7 +552,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\tidiapp\App5\App5\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-08-04T16:11:03.326</Modified>
+      <Modified>2014-08-04T16:41:54.554</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
