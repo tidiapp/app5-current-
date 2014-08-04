@@ -294,7 +294,7 @@
                             url: "https://thinkitdrinkit.vendhq.com/api/register_sales",
                             user: "milo@thinkitdrinkit.com",
                             headers: { "Content-type": "application/json" },
-                            password: "agave2013",
+                            //password: "********",
                             data: JSON.stringify({
                                 "register_id": "5ecccd41-3cbc-11e3-a29a-bc305bf5da20",
                                 "user_name": "",
@@ -338,7 +338,7 @@
                             url: "https://thinkitdrinkit.vendhq.com/api/register_sales",
                             user: "milo@thinkitdrinkit.com",
                             headers: { "Content-type": "application/json" },
-                            password: "agave2013",
+                            //password: "********",
                             data: JSON.stringify({
                                 "register_id": "5ecccd41-3cbc-11e3-a29a-bc305bf5da20",
                                 "user_name": "",
@@ -432,7 +432,7 @@
                             url: "https://thinkitdrinkit.vendhq.com/api/register_sales",
                             user: "milo@thinkitdrinkit.com",
                             headers: { "Content-type": "application/json" },
-                            password: "agave2013",
+                            //password: "********",
                             data: JSON.stringify({
                                 "register_id": "5ecccd41-3cbc-11e3-a29a-bc305bf5da20",
                                 "user_name": "",
@@ -482,7 +482,7 @@
                             url: "https://thinkitdrinkit.vendhq.com/api/register_sales",
                             user: "milo@thinkitdrinkit.com",
                             headers: { "Content-type": "application/json" },
-                            password: "agave2013",
+                            //password: "********",
                             data: JSON.stringify({
                                 "register_id": "5ecccd41-3cbc-11e3-a29a-bc305bf5da20",
                                 "user_name": "",
@@ -587,7 +587,7 @@
                             url: "https://thinkitdrinkit.vendhq.com/api/register_sales",
                             user: "milo@thinkitdrinkit.com",
                             headers: { "Content-type": "application/json" },
-                            password: "agave2013",
+                            //password: "********",
                             data: JSON.stringify({
                                 "register_id": "5ecccd41-3cbc-11e3-a29a-bc305bf5da20",
                                 "user_name": "",
@@ -643,7 +643,7 @@
                             url: "https://thinkitdrinkit.vendhq.com/api/register_sales",
                             user: "milo@thinkitdrinkit.com",
                             headers: { "Content-type": "application/json" },
-                            password: "agave2013",
+                            //password: "********",
                             data: JSON.stringify({
                                 "register_id": "5ecccd41-3cbc-11e3-a29a-bc305bf5da20",
                                 "user_name": "",
@@ -760,7 +760,7 @@
                             url: "https://thinkitdrinkit.vendhq.com/api/register_sales",
                             user: "milo@thinkitdrinkit.com",
                             headers: { "Content-type": "application/json" },
-                            password: "agave2013",
+                            //password: "********",
                             data: JSON.stringify({
                                 "register_id": "5ecccd41-3cbc-11e3-a29a-bc305bf5da20",
                                 "user_name": "",
@@ -798,7 +798,7 @@
                             url: "https://thinkitdrinkit.vendhq.com/api/register_sales",
                             user: "milo@thinkitdrinkit.com",
                             headers: { "Content-type": "application/json" },
-                            password: "agave2013",
+                            //password: "********",
                             data: JSON.stringify({
                                 "register_id": "5ecccd41-3cbc-11e3-a29a-bc305bf5da20",
                                 "user_name": "",
@@ -879,7 +879,7 @@
                     url: "https://thinkitdrinkit.vendhq.com/api/register_sales",
                     user: "milo@thinkitdrinkit.com",
                     headers: { "Content-type": "application/json" },
-                    password: "agave2013",
+                    //password: "********",
                     data: JSON.stringify({
                         "register_id": "5ecccd41-3cbc-11e3-a29a-bc305bf5da20",
                         "user_name": "",
@@ -911,7 +911,7 @@
                             url: "https://thinkitdrinkit.vendhq.com/api/register_sales",
                             user: "milo@thinkitdrinkit.com",
                             headers: { "Content-type": "application/json" },
-                            password: "agave2013",
+                            //password: "********",
                             data: JSON.stringify({
                                 "register_id": "5ecccd41-3cbc-11e3-a29a-bc305bf5da20",
                                 "user_name": "",

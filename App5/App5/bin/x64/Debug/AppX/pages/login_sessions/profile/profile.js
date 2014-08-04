@@ -131,7 +131,7 @@
                 type: "POST",
                 url: "http://thinkitdrinkit.vendhq.com/api/customers",
                 headers: { "Content-type": "application/json" },
-                password: "agave2013",
+                //password: "********",
                 data: JSON.stringify({
                     "id": roamingSettings.values["login_vID"],
                     "first_name": document.getElementById("fname").value,

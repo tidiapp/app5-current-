@@ -422,7 +422,7 @@
                             url: "https://thinkitdrinkit.vendhq.com/api/customers",
                             user: "milo@thinkitdrinkit.com",
                             headers: { "Content-type": "application/json" },
-                            password: "agave2013",
+                            //password: "********",
                             data: JSON.stringify({
                                 "first_name": roamingSettings.values["Sign_first"],
                                 "last_name": roamingSettings.values["Sign_last"],

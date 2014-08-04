@@ -12,10 +12,8 @@
             document.getElementById("appBar").style.backgroundColor = i;
             document.getElementById("age_display").style.borderColor = i;
             document.getElementById("sel_age_pic").style.borderColor = i;
-
             document.getElementById("info_btn").style.backgroundColor = i;
             document.getElementById("sel_btn").style.backgroundColor = i;
-            
         },
         getBase: function () {
             document.getElementById("main_footer").style.backgroundColor = i;
@@ -146,7 +144,8 @@
             document.getElementById("supl_sport").style.borderColor = i;
             //document.getElementById("sign_up").style.borderColor = i;
             document.getElementById("appBar").style.backgroundColor = i;
-
+            document.getElementById("make_drink2").style.borderColor = i;
+            document.getElementById("nutrigenetics").style.borderColor = i;
         },
 
         login: function () {
