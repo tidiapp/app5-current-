@@ -22,6 +22,9 @@
             document.getElementById("more_info_home").setAttribute("hidden", true);
             document.getElementById("shop").setAttribute("hidden", true);
 
+            document.getElementById("choosen_age").textContent = "Choose your " + roamingSettings.values["Cat_picked"] + " Base";
+            var the_sel_age = roamingSettings.values["Cat_picked"];
+
             if (the_sel_age === "Functional Nutrition") {
                 //age_pic is really the catagory image that was picked previously
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
