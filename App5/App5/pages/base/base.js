@@ -90,10 +90,6 @@
                 roamingSettings.values["Base_price"] = document.getElementById("base_price").textContent;
                 roamingSettings.values["Base_label"] = document.getElementById("sel_base_pic").src;
             } else {
-                if (roamingSettings.values["Cat_picked"] === "Functional Protein") {
-                    WinJS.Navigation.navigate('pages/protein/protein.html');
-                    roamingSettings.values["Base_protein"] = true;
-                } else {
                     WinJS.Navigation.navigate('pages/flav_sel/flav_sel.html')
                     roamingSettings.values["Base_protein"] = false;
                     roamingSettings.values["Base_name"] = base3;
@@ -103,7 +99,6 @@
                     roamingSettings.values["Base_price"] = document.getElementById("base_price").textContent;
                     //roamingSettings.values["Base_price"] = document.getElementById("base_price").textContent;
                     roamingSettings.values["Base_label"] = document.getElementById("sel_base_pic").src;
-                }
             }
         },
 

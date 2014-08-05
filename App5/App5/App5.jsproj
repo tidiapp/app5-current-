@@ -98,6 +98,9 @@
     <Content Include="js\print.js" />
     <Content Include="js\removeInfo.js" />
     <Content Include="packages.config" />
+    <Content Include="pages\func\func.css" />
+    <Content Include="pages\func\func.html" />
+    <Content Include="pages\func\func.js" />
     <Content Include="pages\supl_sport_item_info\supl_sport_item_info.css" />
     <Content Include="pages\supl_sport_item_info\supl_sport_item_info.html" />
     <Content Include="pages\supl_sport_item_info\supl_sport_item_info.js" />

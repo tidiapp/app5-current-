@@ -54,6 +54,9 @@ pages\flav_sel\flav_sel.js
 pages\flavor\flavor.css
 pages\flavor\flavor.html
 pages\flavor\flavor.js
+pages\func\func.css
+pages\func\func.html
+pages\func\func.js
 pages\home\home.css
 pages\home\home.html
 pages\home\home.js

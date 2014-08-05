@@ -10,7 +10,7 @@
 
                 if (the_sel_age === "Nutritional") {
                     var query = Age.where({
-                        AccessN: 1
+                        AccessN: true
                     }).read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.age.push({ age: results[i].Name, img: results[i].Image })
@@ -20,8 +20,18 @@
                     });
                 } else if (the_sel_age === "Protein") {
                     var query = Age.where({
-                        AccessP: 2
+                        AccessP: true
                     }).read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.age.push({ age: results[i].Name, img: results[i].Image })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                } else if (the_sel_age === "Nutrigenetics") {
+                    var query = Age.where({
+                        AccessNG: true
+                    }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.age.push({ age: results[i].Name, img: results[i].Image })
                         }
@@ -70,7 +80,7 @@
             },
             base: function (the_sel_age) {
 
-                var Age = thinkitdrinkitDataClient.getTable("Basenoage");
+                var Age = thinkitdrinkitDataClient.getTable("Base");
 
                 if (the_sel_age === "Nutritional") {
                     var query = Age.where({
@@ -92,20 +102,10 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Nutrigenetics") {
-                    var query = Age.where({
-                        Access: 4
-                    }).orderBy("Name").read().done(function (results) {
-                        for (var i = 0; i < results.length; i++) {
-                            age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image })
-                        }
-                    }, function (err) {
-                        console.log(err);
-                    });
-                }
+                } 
             },
             base_sub: function (name) {
-                var Age = thinkitdrinkitDataClient.getTable("Basenoage");
+                var Age = thinkitdrinkitDataClient.getTable("Base");
 
                 var query = Age.where({
                     Name: name
