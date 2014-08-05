@@ -20,35 +20,35 @@
             document.getElementById("shop").setAttribute("hidden", true);
             document.getElementById("home").setAttribute("hidden", true);
 
-
-            //document.getElementById("more_info_home").removeAttribute("hidden");
-            //document.getElementById("shop").removeAttribute("hidden");
             roamingSettings.values["Clicked_cat"] = "",
             roamingSettings.values["Cat_picked"] = "",
-        roamingSettings.values["Base_name"] = "",
-        roamingSettings.values["Base_pic"] = "",
-        roamingSettings.values["Base_vend"] = "",
-        roamingSettings.values["Base_price"] = "",
-        roamingSettings.values["Boost1_name"] = "",
-        roamingSettings.values["Boost1_pic"] = "",
-        roamingSettings.values["Boost1_vend"] = "",
-        roamingSettings.values["Boost1_price"] = "",
-        roamingSettings.values["Boost2_name"] = "",
-        roamingSettings.values["Boost2_pic"] = "",
-        roamingSettings.values["Boost2_vend"] = "",
-        roamingSettings.values["Boost2_price"] = "",
-        roamingSettings.values["Boost3_name"] = "",
-        roamingSettings.values["Boost3_pic"] = "",
-        roamingSettings.values["Boost3_vend"] = "",
-        roamingSettings.values["Boost3_price"] = "",
-        roamingSettings.values["Boost4_name"] = "",
-        roamingSettings.values["Boost4_pic"] = "",
-        roamingSettings.values["Boost4_vend"] = "",
-        roamingSettings.values["Boost4_price"] = "",
-        roamingSettings.values["FlavSel_name"] = "",
-        roamingSettings.values["FlavSel_pic"] = "",
-        roamingSettings.values["FlavSel_vend"] = "",
-        roamingSettings.values["Flav_name"] = ""
+            roamingSettings.values["Cat_picked_img"] = "",
+            roamingSettings.values["Cat_picked_img2"] = "",
+            roamingSettings.values["Cat_picked_img3"] = "",
+            roamingSettings.values["Base_name"] = "",
+            roamingSettings.values["Base_pic"] = "",
+            roamingSettings.values["Base_vend"] = "",
+            roamingSettings.values["Base_price"] = "",
+            roamingSettings.values["Boost1_name"] = "",
+            roamingSettings.values["Boost1_pic"] = "",
+            roamingSettings.values["Boost1_vend"] = "",
+            roamingSettings.values["Boost1_price"] = "",
+            roamingSettings.values["Boost2_name"] = "",
+            roamingSettings.values["Boost2_pic"] = "",
+            roamingSettings.values["Boost2_vend"] = "",
+            roamingSettings.values["Boost2_price"] = "",
+            roamingSettings.values["Boost3_name"] = "",
+            roamingSettings.values["Boost3_pic"] = "",
+            roamingSettings.values["Boost3_vend"] = "",
+            roamingSettings.values["Boost3_price"] = "",
+            roamingSettings.values["Boost4_name"] = "",
+            roamingSettings.values["Boost4_pic"] = "",
+            roamingSettings.values["Boost4_vend"] = "",
+            roamingSettings.values["Boost4_price"] = "",
+            roamingSettings.values["FlavSel_name"] = "",
+            roamingSettings.values["FlavSel_pic"] = "",
+            roamingSettings.values["FlavSel_vend"] = "",
+            roamingSettings.values["Flav_name"] = ""
 
             remove.pop_list(age_data.model.info_page2);
 

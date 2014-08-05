@@ -3,6 +3,7 @@
     var appData = Windows.Storage.ApplicationData.current;
     var roamingSettings = appData.roamingSettings;
     var Age = thinkitdrinkitDataClient.getTable("Age");
+    var keepInfo = true;
     var the_sel_age;
 
     WinJS.UI.Pages.define("/pages/home/home.html", {
@@ -10,28 +11,27 @@
         // populates the page elements with the app's data.
         ready: function (element, options) {
             // TODO: Initialize the page here.
-
-            document.getElementById("home").removeAttribute("hidden");
-
             WinJS.Binding.processAll(element, age_data.model);
-            
             design.getHome();
             design.changeTextColor();
-            roamingSettings.values["I_ordered"] = "no";
-
+            //roamingSettings.values["I_ordered"] = "no";
+            document.getElementById("home").removeAttribute("hidden");
             document.getElementById("more_info_home").setAttribute("hidden", true);
             document.getElementById("shop").setAttribute("hidden", true);
 
-            document.getElementById("choosen_age").textContent = "Choose your " + roamingSettings.values["Cat_picked"] + " Base";
+            document.getElementById("choosen_age").textContent = "Choose your " + roamingSettings.values["Cat_picked"] + " Catagory.";
             var the_sel_age = roamingSettings.values["Cat_picked"];
 
-            if (the_sel_age === "Functional Nutrition") {
+            document.getElementById("age_p").textContent = the_sel_age;
+
+
+            if (the_sel_age === "Nutritional") {
                 //age_pic is really the catagory image that was picked previously
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
                 document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory." + " You have 3 steps left.";
             }
 
-            if (the_sel_age === "Functional Protein") {
+            if (the_sel_age === "Protein") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
                 document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory." + " You have 3 steps left.";
             }
@@ -41,12 +41,27 @@
                 document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory." + " You have 2 steps left.";
                 document.getElementById("choosen_age").textContent = "Choose Your Test Kit";
             }
+            //gather the infomation from the database and displays it on the sreen
+            server.home(the_sel_age);
 
         },
+
+        unload: function () {
+            // TODO: Respond to navigations away from this page.
+            remove.pop_list(age_data.model.age);
+            //using the removeInfo.js file to delete the last object of the array as long as an item exists
+            if (!keepInfo) {
+                //remove.pop_list(age_data.model.info_page2)
+            }
+        },
+
+        updateLayout: function (element) {
+            /// <param name="element" domElement="true" />
+
+            // TODO: Respond to changes in layout.
+        }
     });
 
-    //gather the infomation from the database and displays it on the sreen
-    server.home();
    
     // the following namespace will be used to complete all click events on the home.html page
     var _choosen_age = "";

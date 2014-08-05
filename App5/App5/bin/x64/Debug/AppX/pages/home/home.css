@@ -148,3 +148,12 @@
     margin-left: 15px;
     float: left;
 }
+
+#where_you_are {
+    margin-left: 140px;
+    margin-top: 30px;
+    position: absolute;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+}
