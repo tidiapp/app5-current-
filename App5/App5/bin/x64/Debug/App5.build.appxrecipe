@@ -382,6 +382,15 @@
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\tidiapp\App5\App5\packages.config">
       <PackagePath>packages.config</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\tidiapp\App5\App5\pages\func.bck\func.css.bck">
+      <PackagePath>pages\func.bck\func.css.bck</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\tidiapp\App5\App5\pages\func.bck\func.html.bck">
+      <PackagePath>pages\func.bck\func.html.bck</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\tidiapp\App5\App5\pages\func.bck\func.js.bck">
+      <PackagePath>pages\func.bck\func.js.bck</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\tidiapp\App5\App5\pages\login_sessions\base\base.css_notused">
       <PackagePath>pages\login_sessions\base\base.css_notused</PackagePath>
     </AppxPackagedFile>

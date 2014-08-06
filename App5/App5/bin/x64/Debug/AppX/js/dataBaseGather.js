@@ -53,6 +53,44 @@
                     console.log(err);
                 });
             },
+            func: function (the_sel_func) {
+                remove.pop_list(age_data.model.func);
+                var Func = thinkitdrinkitDataClient.getTable("Func");
+
+                if (the_sel_func === "Sports") {
+                    var query = Func.where({
+                        AccessSports: true
+                    }).read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                } else if (the_sel_func === "Lifestyle") {
+                    var query = Func.where({
+                        AccessLifestyleProteins: true
+                    }).read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                } 
+            },
+            func_sub: function (name) {
+                var Func = thinkitdrinkitDataClient.getTable("Func");
+                remove.pop_list(age_data.model.info)
+
+                var query = Func.where({
+                    Name: name
+                }).read().done(function (results) {
+                    age_data.model.info.push({ the_info: results[0].InfoLite, info_img: results[0].Image, info_name: results[0].Name })
+                }, function (err) {
+                    console.log(err);
+                });
+            },
             //milo added 5/29 
             sport: function () {
                 remove.pop_list(age_data.model.sport);

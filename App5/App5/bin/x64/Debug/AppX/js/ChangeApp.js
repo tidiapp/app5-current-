@@ -14,7 +14,16 @@
             document.getElementById("sel_age_pic").style.borderColor = i;
             document.getElementById("info_btn").style.backgroundColor = i;
             document.getElementById("sel_btn").style.backgroundColor = i;
+        },        
+        getFunc: function () {
+            document.getElementById("main_footer").style.backgroundColor = i;
+            document.getElementById("appBar").style.backgroundColor = i;
+            document.getElementById("the_funcs").style.borderColor = i;
+            document.getElementById("sel_func_pic").style.borderColor = i;
+            document.getElementById("info_btn2").style.backgroundColor = i;
+            document.getElementById("sel_btn2").style.backgroundColor = i;
         },
+
         getBase: function () {
             document.getElementById("main_footer").style.backgroundColor = i;
             document.getElementById("appBar").style.backgroundColor = i;
