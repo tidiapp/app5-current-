@@ -120,7 +120,7 @@
 }
 
 #where_you_are {
-    margin-left: 140px;
+    margin-left: 275px;
     margin-top: 30px;
     position: absolute;
     font-size: 18px;
@@ -134,3 +134,5 @@
 #contenthost {
     margin-top: 0;
 }
+
+

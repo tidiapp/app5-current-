@@ -19,7 +19,7 @@
             document.getElementById("more_info_home").setAttribute("hidden", true);
             document.getElementById("shop").setAttribute("hidden", true);
 
-            document.getElementById("choosen_age").textContent = "Choose your " + roamingSettings.values["Cat_picked"] + " Catagory.";
+            document.getElementById("choosen_age").textContent = "Select a " + roamingSettings.values["Cat_picked"] + " Catagory.";
             var the_sel_age = roamingSettings.values["Cat_picked"];
 
             document.getElementById("age_p").textContent = the_sel_age;
@@ -34,6 +34,7 @@
             if (the_sel_age === "Protein") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
                 document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory." + " You have 3 steps left.";
+                document.getElementById("user_age").textContent = "Protein";
             }
 
             if (the_sel_age === "Nutrigenetics") {

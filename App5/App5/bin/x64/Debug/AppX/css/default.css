@@ -161,3 +161,27 @@ h1, .win-type-xx-large {
     cursor:text;
     -ms-user-select:element; 
 }
+
+.history_div {
+    float: left;
+}
+
+.history_p {
+    position: absolute;
+    color: #fff;
+    font-weight: 700;
+    height: 33px;
+    background-color: rgba(0,0,0,.6);
+    width: 113px;
+    margin-left: 17px;
+    margin-top: 57px;
+    font-size: 10px;
+    padding-left: 2px;
+    padding-top: 2px;
+}
+
+.history_pic {
+    border: 2px solid #fff;
+    margin-left: 15px;
+    float: left;
+}

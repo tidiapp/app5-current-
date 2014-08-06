@@ -13,7 +13,7 @@
             // TODO: Initialize the page here.
             design.launch();
             design.changeTextColor();
-            document.getElementById("company_name").textContent = "Start Customizing";
+            document.getElementById("company_name").textContent = "Let's Customize";
 
             document.getElementById("appBar").winControl.show();
             document.getElementById("more_info_home").setAttribute("hidden", true);

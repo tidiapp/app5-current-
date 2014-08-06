@@ -18,24 +18,39 @@
             design.getFunc();
             design.changeTextColor();
             var the_sel_func = roamingSettings.values["Age_name"];
-            document.getElementById("choosen_age").textContent = "Choose your " + roamingSettings.values["Age_name"] + " Function.";
+            document.getElementById("choosen_age").textContent = "Whats your " + roamingSettings.values["Age_name"] + " Goal.";
             document.getElementById("home").removeAttribute("hidden");
-            document.getElementById("age_p").textContent = the_sel_func;
+            //document.getElementById("age_p").textContent = the_sel_func;
+            document.getElementById("home1_p").textContent = the_sel_func;
+
             //document.getElementById("func_price").removeAttribute("hidden");
             //milo: PASSED ON FROM PREVIOS PAGE 
             //roamingSettings.values["Age_name"]
             //roamingSettings.values["Age_pic"]
             //roamingSettings.values["Age_info"]
             //roamingSettings.values["Age_price"]
+            if (roamingSettings.values["Cat_picked"] === "Nutritional") {
+                document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
+                document.getElementById("age_p").textContent = roamingSettings.values["Cat_picked"];
+            }
 
-            if (the_sel_func === "Sports") {
+            if (roamingSettings.values["Cat_picked"] === "Protein") {
+                document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
+                document.getElementById("age_p").textContent = roamingSettings.values["Cat_picked"];
+            }
+
+
+
+            if (roamingSettings.values["Age_name"] === "Sports Protein") {
                 //age_pic is really the catagory image that was picked previously
-                document.getElementById("age_pic").src = roamingSettings.values["Age_pic"];
+                document.getElementById("home1_p").textContent = roamingSettings.values["Age_name"];
+                document.getElementById("home1_pic").src = roamingSettings.values["Age_pic"];
+
                 document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Age_name"] + " function." + " You have 3 steps left.";
             }
 
-            if (the_sel_func === "Lifestyle") {
-                document.getElementById("age_pic").src = roamingSettings.values["Age_pic"];
+            if (roamingSettings.values["Age_name"] === "Lifestyle Protein") {
+                document.getElementById("home1_pic").src = roamingSettings.values["Age_pic"];
                 document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Age_name"] + " function." + " You have 3 steps left.";
             }
 
@@ -82,17 +97,8 @@
 
         next_page_flavor: function () {
             keepInfo = false;
-            if (roamingSettings.values["Cat_picked"] === "Nutrigenetics") {
-                WinJS.Navigation.navigate('pages/final/final.html');
-                roamingSettings.values["Func_protein"] = false;
-                roamingSettings.values["Func_name"] = func3;
-                roamingSettings.values["Func_Vend"] = document.getElementById("b_vend").textContent;
-                roamingSettings.values["Func_pic"] = document.getElementById("choosen_func_carry").src;
-                roamingSettings.values["Func_info"] = document.getElementById("sel_func_info").textContent;
-                roamingSettings.values["Func_price"] = document.getElementById("func_price").textContent;
-                roamingSettings.values["Func_label"] = document.getElementById("sel_func_pic").src;
-            } else {
-                    WinJS.Navigation.navigate('pages/flav_sel/flav_sel.html')
+           
+                    WinJS.Navigation.navigate('pages/base/base.html')
                     roamingSettings.values["Func_protein"] = false;
                     roamingSettings.values["Func_name"] = func3;
                     roamingSettings.values["Func_Vend"] = document.getElementById("b_vend").textContent;
@@ -101,7 +107,6 @@
                     roamingSettings.values["Func_price"] = document.getElementById("func_price").textContent;
                     //roamingSettings.values["Func_price"] = document.getElementById("func_price").textContent;
                     roamingSettings.values["Func_label"] = document.getElementById("sel_func_pic").src;
-            }
         },
 
         more_info: function (clicked) {

@@ -58,7 +58,7 @@
                 remove.pop_list(age_data.model.func);
                 var Func = thinkitdrinkitDataClient.getTable("Func");
 
-                if (the_sel_func === "Sports") {
+                if (the_sel_func === "Sports Protein") {
                     var query = Func.where({
                         AccessSports: true
                     }).read().done(function (results) {
@@ -68,9 +68,9 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_func === "Lifestyle") {
+                } else if (the_sel_func === "Lifestyle Protein") {
                     var query = Func.where({
-                        AccessLifestyleProteins: true
+                        AccessLifestyle: true
                     }).read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
@@ -78,7 +78,67 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } 
+                } else if (the_sel_func === "Diet Protein") {
+                    var query = Func.where({
+                        AccessDiet: true
+                    }).read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                } else if (the_sel_func === "Functional Protein") {
+                    var query = Func.where({
+                        AccessFunctional: true
+                    }).read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                } else if (the_sel_func === "Sports Nutrition" || the_sel_func === "F1") {
+                    var query = Func.where({
+                        AccessSportsNutrition: true
+                    }).read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                } else if (the_sel_func === "Lifestyle Nutrition" || the_sel_func === "F2") {
+                    var query = Func.where({
+                        AccessLifestyleNutrition: true
+                    }).read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                } else if (the_sel_func === "Diet Nutrition" || the_sel_func === "F3") {
+                    var query = Func.where({
+                        AccessDietNutrition: true
+                    }).read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                } else if (the_sel_func === "Functional Nutrition" || the_sel_func === "F4") {
+                    var query = Func.where({
+                        AccessFunctionalNutrition: true
+                    }).read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                }
             },
             func_sub: function (name) {
                 var Func = thinkitdrinkitDataClient.getTable("Func");
