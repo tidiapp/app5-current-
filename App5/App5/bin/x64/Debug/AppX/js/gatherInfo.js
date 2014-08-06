@@ -26,6 +26,8 @@
             ]),
             info_page2: new WinJS.Binding.List([
             ]),
+            info_page2_func: new WinJS.Binding.List([
+            ]),
             info_page3: new WinJS.Binding.List([
             ]),
             flavor1: new WinJS.Binding.List([

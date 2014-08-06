@@ -204,7 +204,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\tidiapp\App5\App5\js\dataBaseGather.js">
       <PackagePath>js\dataBaseGather.js</PackagePath>
-      <Modified>2014-08-06T15:03:49.485</Modified>
+      <Modified>2014-08-06T16:29:31.974</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\tidiapp\App5\App5\js\dataStore.js">
       <PackagePath>js\dataStore.js</PackagePath>
@@ -216,7 +216,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\tidiapp\App5\App5\js\gatherInfo.js">
       <PackagePath>js\gatherInfo.js</PackagePath>
-      <Modified>2014-08-05T17:10:18.681</Modified>
+      <Modified>2014-08-06T16:29:31.946</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\tidiapp\App5\App5\js\jquery.js">
       <PackagePath>js\jquery.js</PackagePath>
@@ -252,7 +252,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\tidiapp\App5\App5\pages\func\func.js">
       <PackagePath>pages\func\func.js</PackagePath>
-      <Modified>2014-08-06T15:15:25.071</Modified>
+      <Modified>2014-08-06T16:29:31.993</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\tidiapp\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.js">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.js</PackagePath>
@@ -384,7 +384,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\tidiapp\App5\App5\pages\func\func.html">
       <PackagePath>pages\func\func.html</PackagePath>
-      <Modified>2014-08-06T15:28:35.577</Modified>
+      <Modified>2014-08-06T16:29:32.010</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\tidiapp\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.html">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.html</PackagePath>

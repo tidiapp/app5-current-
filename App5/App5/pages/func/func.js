@@ -59,7 +59,7 @@
             remove.pop_list(age_data.model.func);
             //using the removeInfo.js file to delete the last object of the array as long as an item exists
             if (!keepInfo) {
-                remove.pop_list(age_data.model.info_page2)
+                remove.pop_list(age_data.model.info_page2_func)
             }
         },
 
@@ -74,7 +74,7 @@
     WinJS.Namespace.define("func_clicked", {
 
         clicked: function (func) {
-            remove.pop_list(age_data.model.info_page2);
+            remove.pop_list(age_data.model.info_page2_func);
             var updated_func = func.replace(/^\s+/, '').replace(/\s+$/, '');
             func3 = updated_func;
             server.func_sub(updated_func);

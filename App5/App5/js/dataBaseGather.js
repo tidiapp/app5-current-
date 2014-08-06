@@ -3,7 +3,7 @@
         "use strict";
 
         WinJS.Namespace.define("server", {
-
+            //home.html
             home: function (the_sel_age) {
                 remove.pop_list(age_data.model.age);
                 var Age = thinkitdrinkitDataClient.getTable("Age");
@@ -53,6 +53,7 @@
                     console.log(err);
                 });
             },
+            //func.html
             func: function (the_sel_func) {
                 remove.pop_list(age_data.model.func);
                 var Func = thinkitdrinkitDataClient.getTable("Func");
@@ -81,17 +82,16 @@
             },
             func_sub: function (name) {
                 var Func = thinkitdrinkitDataClient.getTable("Func");
-                remove.pop_list(age_data.model.info)
 
                 var query = Func.where({
                     Name: name
                 }).read().done(function (results) {
-                    age_data.model.info.push({ the_info: results[0].InfoLite, info_img: results[0].Image, info_name: results[0].Name })
+                    age_data.model.info_page2_func.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_img: results[0].Label, base_price: results[0].Price, the_pic: results[0].Image, b_vend: results[0].VendID })
                 }, function (err) {
                     console.log(err);
                 });
             },
-            //milo added 5/29 
+            //supl_sport.html
             sport: function () {
                 remove.pop_list(age_data.model.sport);
                 var Sport = thinkitdrinkitDataClient.getTable("Sport");
@@ -116,6 +116,7 @@
                     console.log(err);
                 });
             },
+            //base.html
             base: function (the_sel_age) {
 
                 var Age = thinkitdrinkitDataClient.getTable("Base");
@@ -154,6 +155,7 @@
                 })
 
             },
+            //protein.html
             protein: function () {
                 var Age = thinkitdrinkitDataClient.getTable("Flavor");
                 var appData = Windows.Storage.ApplicationData.current;
@@ -201,6 +203,8 @@
             //        console.log(err);
             //    })
             //},
+
+            //flavor.html
             flav_sel: function (name) {
                 var Age = thinkitdrinkitDataClient.getTable("Flavor");
                 //milo.orderBy is taking the most text in the Name column also can do orderByDescending or both http://azure.microsoft.com/en-us/documentation/articles/mobile-services-html-how-to-use-client-library/
@@ -226,6 +230,8 @@
                     console.log(err);
                 })
             },
+
+            //boost.html
             boost: function (name) {
                 var Age = thinkitdrinkitDataClient.getTable("Boost");
                 var query = Age.orderBy("Name").read().done(function (results) {
@@ -247,6 +253,7 @@
                     console.log(err);
                 })
             },
+
             info_home_setup: function () {
                 var Age = thinkitdrinkitDataClient.getTable("Base");
                 var Age2 = thinkitdrinkitDataClient.getTable("Boost");
