@@ -3,7 +3,7 @@
     WinJS.Namespace.define("age_data", {
         /* this model will take the needed information being gathered from the json file and store it in a n array that will be used
         to populate the html page*/
-        //Milo: used also here efore the dataSource data-win-bind="winControl.itemDataSource: age.dataSource" 
+        //Milo: also used here for the dataSource data-win-bind="winControl.itemDataSource: age.dataSource" 
 
         model: WinJS.Binding.as({
             age: new WinJS.Binding.List([

@@ -204,7 +204,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\tidiapp\App5\App5\js\dataBaseGather.js">
       <PackagePath>js\dataBaseGather.js</PackagePath>
-      <Modified>2014-08-06T19:37:38.486</Modified>
+      <Modified>2014-08-07T20:12:33.024</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\tidiapp\App5\App5\js\dataStore.js">
       <PackagePath>js\dataStore.js</PackagePath>
@@ -216,7 +216,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\tidiapp\App5\App5\js\gatherInfo.js">
       <PackagePath>js\gatherInfo.js</PackagePath>
-      <Modified>2014-08-06T16:29:31.946</Modified>
+      <Modified>2014-08-07T15:35:04.234</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\tidiapp\App5\App5\js\jquery.js">
       <PackagePath>js\jquery.js</PackagePath>

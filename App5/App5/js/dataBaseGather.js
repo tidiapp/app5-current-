@@ -178,7 +178,6 @@
             },
             //base.html
             base: function (the_sel_age) {
-
                 var Age = thinkitdrinkitDataClient.getTable("Base");
 
                 if (the_sel_age === "Nutritional") {
