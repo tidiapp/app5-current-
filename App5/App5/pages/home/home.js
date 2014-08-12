@@ -19,7 +19,7 @@
             document.getElementById("more_info_home").setAttribute("hidden", true);
             document.getElementById("shop").setAttribute("hidden", true);
 
-            document.getElementById("choosen_age").textContent = "Select a " + roamingSettings.values["Cat_picked"] + " Catagory.";
+            document.getElementById("choosen_age").textContent = "Select a " + roamingSettings.values["Cat_picked"] + " Category.";
             var the_sel_age = roamingSettings.values["Cat_picked"];
 
             document.getElementById("age_p").textContent = the_sel_age;
@@ -78,13 +78,29 @@
             server.home_sub(updated_answer);
         },
         next_page: function () {
-            WinJS.Navigation.navigate('pages/func/func.html');
-            var appData = Windows.Storage.ApplicationData.current;
-            var roamingSettings = appData.roamingSettings;
-            roamingSettings.values["Age_name"] = _choosen_age;
-            roamingSettings.values["Age_pic"] = document.getElementById("sel_age_pic").src;
-            roamingSettings.values["Age_info"] = null;
-            roamingSettings.values["Age_price"] = null;
+
+            if (roamingSettings.values["Cat_picked"] === "Nutrigenetics") {
+                WinJS.Navigation.navigate('pages/final/final.html');
+
+                //MILO RENAME BELLOW MAYBE roamingSettings.values["Nutrigenetics_name"] = ...
+
+                //roamingSettings.values["Base_protein"] = false;
+                //roamingSettings.values["Base_name"] = base3;
+                //roamingSettings.values["Base_Vend"] = document.getElementById("b_vend").textContent;
+                //roamingSettings.values["Base_pic"] = document.getElementById("choosen_base_carry").src;
+                //roamingSettings.values["Base_info"] = document.getElementById("sel_base_info").textContent;
+                //roamingSettings.values["Base_price"] = document.getElementById("base_price").textContent;
+                //roamingSettings.values["Base_label"] = document.getElementById("sel_base_pic").src;
+            } else {
+
+                WinJS.Navigation.navigate('pages/func/func.html');
+                var appData = Windows.Storage.ApplicationData.current;
+                var roamingSettings = appData.roamingSettings;
+                roamingSettings.values["Age_name"] = _choosen_age;
+                roamingSettings.values["Age_pic"] = document.getElementById("sel_age_pic").src;
+                roamingSettings.values["Age_info"] = null;
+                roamingSettings.values["Age_price"] = null;
+        }
         },
         more_info: function (clicked) {
             var updated_answer = clicked.replace(/^\s+/, '').replace(/\s+$/, '');

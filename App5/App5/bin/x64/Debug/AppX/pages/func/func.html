@@ -20,35 +20,38 @@
             <h1 id="choosen_age" class="titlearea win-type-ellipsis"></h1>
         </header>
         <section aria-label="Main content" role="main">
-            <div id="funcs" class="funcs_class" data-win-control="WinJS.Binding.Template">
-                <div id="the_funcs" onclick="func_clicked.clicked(event.srcElement.innerText);">
-                    <img class="func_pic_class" id="func_pic" data-win-bind="src: img" />
-                    <h2 id="func_name" class="func_name_class" data-win-bind="textContent: func"></h2>
+            <div id="win_listview_funcs_placement_row">
+                <div id="funcs" class="funcs_class" data-win-control="WinJS.Binding.Template">
+                    <div id="the_funcs" onclick="func_clicked.clicked(event.srcElement.innerText);">
+                        <img class="func_pic_class" id="func_pic" data-win-bind="src: img" />
+                        <h2 id="func_name" class="func_name_class" data-win-bind="textContent: func"></h2>
+                    </div>
                 </div>
-            </div>
-            <div id="funcs_placement" data-win-control="WinJS.UI.ListView" data-win-bind="winControl.itemDataSource: func.dataSource" data-win-options="{
+                <div id="funcs_placement" data-win-control="WinJS.UI.ListView" data-win-bind="winControl.itemDataSource: func.dataSource" data-win-options="{
                     itemTemplate: select ('.funcs_class'),
                     selectionMode: 'none'
                 }"></div>
-
-            <div id="funcs_sel" class="funcs_sel_class" data-win-control="WinJS.Binding.Template">
-                <div class="the_sel_func_scroll">
-                    <div id="the_sel_funcs">
-                        <img id="choosen_func_carry" hidden="" data-win-bind="src: the_pic" />
-                        <img class="sel_func_pic_class" id="sel_func_pic" data-win-bind="src: the_img" />
-                        <button id="info_btn2" name="sel_btn" onclick="func_clicked.more_info(document.getElementById('sel_func_name').textContent)" type="submit">Learn More</button>
-                        <button id="sel_btn2" onclick="func_clicked.next_page_flavor( document.getElementById('sel_func_pic').src)" name="sel_btn2" type="submit">Choose This func</button>
-                        <h2 id="sel_func_name" class="sel_func_name_class" data-win-bind="textContent: the_name"></h2>
-                        <p id="func_price" hidden="" data-win-bind="textContent: func_price"></p>
-                        <p id="sel_func_info" class="sel_func_info_class" data-win-bind="textContent: the_info"></p>
-                        <p hidden="" id="b_vend" data-win-bind="textContent: b_vend"></p>
+            </div>
+            <div id="win_listview_funcs_placement_sel">
+                <div id="funcs_sel" class="funcs_sel_class" data-win-control="WinJS.Binding.Template">
+                    <div class="the_sel_func_scroll">
+                        <div id="the_sel_funcs">
+                            <img id="choosen_func_carry" hidden="" data-win-bind="src: the_pic" />
+                            <img class="sel_func_pic_class" id="sel_func_pic" data-win-bind="src: the_img" />
+                            <button id="sel_btn6" onclick="func_clicked.next_page_flavor( document.getElementById('sel_func_pic').src)" name="sel_btn6" type="submit">Choose This goal</button>
+                            <button id="info_btn6" name="sel_btn" onclick="func_clicked.more_info(document.getElementById('sel_func_name').textContent)" type="submit">Learn More</button>
+                            <h2 id="sel_func_name" class="sel_func_name_class" data-win-bind="textContent: the_name"></h2>
+                            <p id="func_price" hidden="" data-win-bind="textContent: func_price"></p>
+                            <p id="sel_func_info" class="sel_func_info_class" data-win-bind="textContent: the_info"></p>
+                            <p hidden="" id="b_vend" data-win-bind="textContent: b_vend"></p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div id="sel_funcs_placement" data-win-control="WinJS.UI.ListView" data-win-bind="winControl.itemDataSource: info_page2_func.dataSource" data-win-options="{
+                <div id="sel_funcs_placement" data-win-control="WinJS.UI.ListView" data-win-bind="winControl.itemDataSource: info_page2_func.dataSource" data-win-options="{
                     itemTemplate: select ('.funcs_sel_class'),
                     selectionMode: 'none'
                 }"></div>
+            </div>        
         </section>
         <footer id="main_footer">
 

@@ -30,7 +30,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\tidiapp\App5\App5\pages\func\func.css">
       <PackagePath>pages\func\func.css</PackagePath>
-      <Modified>2014-08-06T20:53:53.779</Modified>
+      <Modified>2014-08-12T18:46:52.952</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\tidiapp\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.css">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.css</PackagePath>
@@ -70,7 +70,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\tidiapp\App5\App5\pages\home\home.css">
       <PackagePath>pages\home\home.css</PackagePath>
-      <Modified>2014-08-05T15:37:30.186</Modified>
+      <Modified>2014-08-12T14:43:13.315</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\tidiapp\App5\App5\pages\info_home\info_home.css">
       <PackagePath>pages\info_home\info_home.css</PackagePath>
@@ -200,7 +200,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\tidiapp\App5\App5\js\ChangeApp.js">
       <PackagePath>js\ChangeApp.js</PackagePath>
-      <Modified>2014-08-06T15:05:29.190</Modified>
+      <Modified>2014-08-12T18:47:10.050</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\tidiapp\App5\App5\js\dataBaseGather.js">
       <PackagePath>js\dataBaseGather.js</PackagePath>
@@ -288,7 +288,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\tidiapp\App5\App5\pages\home\home.js">
       <PackagePath>pages\home\home.js</PackagePath>
-      <Modified>2014-08-06T18:37:28.580</Modified>
+      <Modified>2014-08-12T14:40:08.305</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\tidiapp\App5\App5\pages\info_home\info_home.js">
       <PackagePath>pages\info_home\info_home.js</PackagePath>
@@ -384,7 +384,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\tidiapp\App5\App5\pages\func\func.html">
       <PackagePath>pages\func\func.html</PackagePath>
-      <Modified>2014-08-06T20:52:46.263</Modified>
+      <Modified>2014-08-12T18:46:53.197</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\tidiapp\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.html">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.html</PackagePath>
@@ -420,7 +420,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\tidiapp\App5\App5\pages\home\home.html">
       <PackagePath>pages\home\home.html</PackagePath>
-      <Modified>2014-08-06T18:33:51.817</Modified>
+      <Modified>2014-08-12T14:40:08.335</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\tidiapp\App5\App5\pages\info_home\info_home.html">
       <PackagePath>pages\info_home\info_home.html</PackagePath>

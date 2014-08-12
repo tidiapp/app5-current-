@@ -19,7 +19,7 @@
             document.getElementById("more_info_home").setAttribute("hidden", true);
             document.getElementById("shop").setAttribute("hidden", true);
 
-            document.getElementById("choosen_age").textContent = "Select a " + roamingSettings.values["Cat_picked"] + " Catagory.";
+            document.getElementById("choosen_age").textContent = "Select a " + roamingSettings.values["Cat_picked"] + " Category.";
             var the_sel_age = roamingSettings.values["Cat_picked"];
 
             document.getElementById("age_p").textContent = the_sel_age;

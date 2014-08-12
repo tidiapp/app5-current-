@@ -20,8 +20,8 @@
             document.getElementById("appBar").style.backgroundColor = i;
             document.getElementById("the_funcs").style.borderColor = i;
             document.getElementById("sel_func_pic").style.borderColor = i;
-            document.getElementById("info_btn2").style.backgroundColor = i;
-            document.getElementById("sel_btn2").style.backgroundColor = i;
+            document.getElementById("info_btn6").style.backgroundColor = i;
+            document.getElementById("sel_btn6").style.backgroundColor = i;
         },
 
         getBase: function () {
