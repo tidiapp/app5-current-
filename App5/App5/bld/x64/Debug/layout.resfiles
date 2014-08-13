@@ -41,12 +41,9 @@ pages\all_products\all_products.js
 pages\base\base.css
 pages\base\base.html
 pages\base\base.js
-pages\boost\boost - Copy.js
 pages\boost\boost.css
 pages\boost\boost.html
 pages\boost\boost.js
-pages\final\final - Copy.html
-pages\final\final - Copy.js
 pages\final\final.css
 pages\final\final.html
 pages\final\final.js
@@ -60,10 +57,6 @@ pages\flavor\flavor.js
 pages\home\home.css
 pages\home\home.html
 pages\home\home.js
-pages\info_home\info_home - Copy (2).html
-pages\info_home\info_home - Copy (2).js
-pages\info_home\info_home - Copy.html
-pages\info_home\info_home - Copy.js
 pages\info_home\info_home.css
 pages\info_home\info_home.html
 pages\info_home\info_home.js
@@ -126,7 +119,6 @@ pages\signup\signup.js
 pages\supl_sport\supl_sport.css
 pages\supl_sport\supl_sport.html
 pages\supl_sport\supl_sport.js
-pages\supl_sport_item_info\supl_sport_item_info - Copy.js
 pages\supl_sport_item_info\supl_sport_item_info.css
 pages\supl_sport_item_info\supl_sport_item_info.html
 pages\supl_sport_item_info\supl_sport_item_info.js

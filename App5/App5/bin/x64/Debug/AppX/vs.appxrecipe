@@ -1,590 +1,555 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>THINKITDRINKIT1</Machine>
-    <WindowsUser>Anthony</WindowsUser>
-    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <Machine>THINKITDRINKIT3</Machine>
+    <WindowsUser>milo</WindowsUser>
     <SolutionConfiguration>Debug|x64</SolutionConfiguration>
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>e3f10fc1-365d-4d2e-b488-7e61baad9bf4</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\bld\x64\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>5FABF8C91A0DA5997B8ADE4BCB08FACB493D5CC5494E860075D3ACBADE4122DC</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>74E3A299C5AC82EB5907EEAA45D9647C6C6453497C8C4409BCCE986492ED5753</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>e3f10fc1-365d-4d2e-b488-7e61baad9bf4_1.0.0.16_x64__bkvjexddj2nfj</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>e3f10fc1-365d-4d2e-b488-7e61baad9bf4_bkvjexddj2nfj!App</RegisteredUserModeAppID>
     <RegisteredPackageID>e3f10fc1-365d-4d2e-b488-7e61baad9bf4</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=Anthony</RegisteredPackagePublisher>
     <RegisteredVersion>1.0.0.16</RegisteredVersion>
-    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\bin\x64\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\bin\x64\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-07-23T18:33:08.839</Modified>
+      <Modified>2014-08-13T14:23:42.811</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\css\default.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\css\default.css">
       <PackagePath>css\default.css</PackagePath>
-      <Modified>2014-07-08T15:11:23.924</Modified>
+      <Modified>2014-08-13T14:20:10.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\supl_sport_item_info\supl_sport_item_info.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.css">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.css</PackagePath>
-      <Modified>2014-07-09T21:04:24.169</Modified>
+      <Modified>2014-08-13T14:20:10.465</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\supl_sport\supl_sport.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\supl_sport\supl_sport.css">
       <PackagePath>pages\supl_sport\supl_sport.css</PackagePath>
-      <Modified>2014-07-23T14:10:53.199</Modified>
+      <Modified>2014-08-13T14:20:10.441</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\all_products\all_products.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\all_products\all_products.css">
       <PackagePath>pages\all_products\all_products.css</PackagePath>
-      <Modified>2014-04-27T22:31:06.000</Modified>
+      <Modified>2014-08-13T14:20:10.246</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\base\base.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\base\base.css">
       <PackagePath>pages\base\base.css</PackagePath>
-      <Modified>2014-06-24T19:33:13.270</Modified>
+      <Modified>2014-08-13T14:20:10.272</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\boost\boost.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\boost\boost.css">
       <PackagePath>pages\boost\boost.css</PackagePath>
-      <Modified>2014-07-22T17:01:15.864</Modified>
+      <Modified>2014-08-13T14:20:10.275</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\final\final.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\final\final.css">
       <PackagePath>pages\final\final.css</PackagePath>
-      <Modified>2014-07-18T17:04:38.117</Modified>
+      <Modified>2014-08-13T14:20:10.289</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\final\print.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\final\print.css">
       <PackagePath>pages\final\print.css</PackagePath>
-      <Modified>2014-04-27T22:31:06.000</Modified>
+      <Modified>2014-08-13T14:20:10.303</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\flavor\flavor.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\flavor\flavor.css">
       <PackagePath>pages\flavor\flavor.css</PackagePath>
-      <Modified>2014-06-24T19:13:12.814</Modified>
+      <Modified>2014-08-13T14:20:10.309</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\flav_sel\flav_sel.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\flav_sel\flav_sel.css">
       <PackagePath>pages\flav_sel\flav_sel.css</PackagePath>
-      <Modified>2014-06-24T19:13:12.794</Modified>
+      <Modified>2014-08-13T14:20:10.304</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\home\home.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\home\home.css">
       <PackagePath>pages\home\home.css</PackagePath>
-      <Modified>2014-08-01T16:04:50.771</Modified>
+      <Modified>2014-08-13T14:20:10.313</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\info_home\info_home.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\info_home\info_home.css">
       <PackagePath>pages\info_home\info_home.css</PackagePath>
-      <Modified>2014-07-18T13:55:18.415</Modified>
+      <Modified>2014-08-13T14:20:10.314</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\item_info\item_info.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\item_info\item_info.css">
       <PackagePath>pages\item_info\item_info.css</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.322</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\launch_page\launch_page.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\launch_page\launch_page.css">
       <PackagePath>pages\launch_page\launch_page.css</PackagePath>
-      <Modified>2014-07-31T20:43:55.778</Modified>
+      <Modified>2014-08-13T14:20:10.327</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login\login.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login\login.css">
       <PackagePath>pages\login\login.css</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.330</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login_sessions\all_products\all_products.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\all_products\all_products.css">
       <PackagePath>pages\login_sessions\all_products\all_products.css</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.338</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login_sessions\profile\profile.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\profile\profile.css">
       <PackagePath>pages\login_sessions\profile\profile.css</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.407</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\protein\protein.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\protein\protein.css">
       <PackagePath>pages\protein\protein.css</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.429</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\signup\signup.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\signup\signup.css">
       <PackagePath>pages\signup\signup.css</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.432</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\thankyou\thankyou.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\thankyou\thankyou.css">
       <PackagePath>pages\thankyou\thankyou.css</PackagePath>
-      <Modified>2014-07-04T18:20:26.502</Modified>
+      <Modified>2014-08-13T14:20:10.473</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\welcome\welcome.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\welcome\welcome.css">
       <PackagePath>pages\welcome\welcome.css</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.475</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\images\another_logo.jpg">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\images\another_logo.jpg">
       <PackagePath>images\another_logo.jpg</PackagePath>
-      <Modified>2014-04-27T22:31:04.000</Modified>
+      <Modified>2014-08-13T14:20:10.030</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\images\another_logo.scale-100.jpg">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\images\another_logo.scale-100.jpg">
       <PackagePath>images\another_logo.scale-100.jpg</PackagePath>
-      <Modified>2014-04-27T22:31:04.000</Modified>
+      <Modified>2014-08-13T14:20:10.033</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\images\another_logo.scale-180.jpg">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\images\another_logo.scale-180.jpg">
       <PackagePath>images\another_logo.scale-180.jpg</PackagePath>
-      <Modified>2014-04-27T22:31:04.000</Modified>
+      <Modified>2014-08-13T14:20:10.038</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\images\bar1.jpg">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\images\bar1.jpg">
       <PackagePath>images\bar1.jpg</PackagePath>
-      <Modified>2014-04-27T22:31:04.000</Modified>
+      <Modified>2014-08-13T14:20:10.040</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\images\lemonLime.jpg">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\images\lemonLime.jpg">
       <PackagePath>images\lemonLime.jpg</PackagePath>
-      <Modified>2014-04-27T22:31:04.000</Modified>
+      <Modified>2014-08-13T14:20:10.043</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\images\LemonLimeZero.jpg">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\images\LemonLimeZero.jpg">
       <PackagePath>images\LemonLimeZero.jpg</PackagePath>
-      <Modified>2014-04-27T22:31:04.000</Modified>
+      <Modified>2014-08-13T14:20:10.003</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\images\logo1.jpg">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\images\logo1.jpg">
       <PackagePath>images\logo1.jpg</PackagePath>
-      <Modified>2014-04-27T22:31:06.000</Modified>
+      <Modified>2014-08-13T14:20:10.048</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\images\pomAcia.jpg">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\images\pomAcia.jpg">
       <PackagePath>images\pomAcia.jpg</PackagePath>
-      <Modified>2014-04-27T22:31:06.000</Modified>
+      <Modified>2014-08-13T14:20:10.058</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\images\logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\images\logo.scale-100.png">
       <PackagePath>images\logo.scale-100.png</PackagePath>
-      <Modified>2014-04-27T22:31:04.000</Modified>
+      <Modified>2014-08-13T14:20:10.044</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\images\logo_avatar.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\images\logo_avatar.scale-100.png">
       <PackagePath>images\logo_avatar.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-04-27T22:31:04.000</Modified>
+      <Modified>2014-08-13T14:20:10.049</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\images\logo_avatar.scale-180.png">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\images\logo_avatar.scale-180.png">
       <PackagePath>images\logo_avatar.scale-180.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-04-27T22:31:04.000</Modified>
+      <Modified>2014-08-13T14:20:10.050</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\images\logo_footer.png">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\images\logo_footer.png">
       <PackagePath>images\logo_footer.png</PackagePath>
-      <Modified>2014-04-27T22:31:04.000</Modified>
+      <Modified>2014-08-13T14:20:10.053</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\images\logo_footer_background.png">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\images\logo_footer_background.png">
       <PackagePath>images\logo_footer_background.png</PackagePath>
-      <Modified>2014-04-27T22:31:04.000</Modified>
+      <Modified>2014-08-13T14:20:10.054</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\images\logo_splash.png">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\images\logo_splash.png">
       <PackagePath>images\logo_splash.png</PackagePath>
-      <Modified>2014-04-27T22:31:04.000</Modified>
+      <Modified>2014-08-13T14:20:10.055</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\images\SmallLogo.scale-140.png">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\images\SmallLogo.scale-140.png">
       <PackagePath>images\SmallLogo.scale-140.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-04-27T22:31:06.000</Modified>
+      <Modified>2014-08-13T14:20:10.005</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\images\splash_screen_logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\images\splash_screen_logo.scale-100.png">
       <PackagePath>images\splash_screen_logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-04-27T22:31:06.000</Modified>
+      <Modified>2014-08-13T14:20:10.061</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\images\splash_screen_logo.scale-180.png">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\images\splash_screen_logo.scale-180.png">
       <PackagePath>images\splash_screen_logo.scale-180.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-04-27T22:31:06.000</Modified>
+      <Modified>2014-08-13T14:20:10.063</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\images\storelogo.scale-180.png">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\images\storelogo.scale-180.png">
       <PackagePath>images\storelogo.scale-180.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-04-27T22:31:06.000</Modified>
+      <Modified>2014-08-13T14:20:10.068</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\js\app_bar.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\app_bar.js">
       <PackagePath>js\app_bar.js</PackagePath>
-      <Modified>2014-06-17T16:05:00.135</Modified>
+      <Modified>2014-08-13T14:20:10.162</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\js\auth.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\auth.js">
       <PackagePath>js\auth.js</PackagePath>
-      <Modified>2014-04-27T22:31:06.000</Modified>
+      <Modified>2014-08-13T14:20:10.163</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\js\ChangeApp.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\ChangeApp.js">
       <PackagePath>js\ChangeApp.js</PackagePath>
-      <Modified>2014-07-17T18:24:04.430</Modified>
+      <Modified>2014-08-13T14:20:10.073</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\js\dataBaseGather.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\dataBaseGather.js">
       <PackagePath>js\dataBaseGather.js</PackagePath>
-      <Modified>2014-07-31T16:08:21.285</Modified>
+      <Modified>2014-08-13T14:20:10.169</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\js\dataStore.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\dataStore.js">
       <PackagePath>js\dataStore.js</PackagePath>
-      <Modified>2014-04-27T22:31:06.000</Modified>
+      <Modified>2014-08-13T14:20:10.170</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\js\default.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2014-06-17T20:10:24.291</Modified>
+      <Modified>2014-08-13T14:20:10.170</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\js\gatherInfo.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\gatherInfo.js">
       <PackagePath>js\gatherInfo.js</PackagePath>
-      <Modified>2014-07-03T16:12:09.780</Modified>
+      <Modified>2014-08-13T14:20:10.196</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\js\jquery.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\jquery.js">
       <PackagePath>js\jquery.js</PackagePath>
-      <Modified>2014-04-28T01:17:24.000</Modified>
+      <Modified>2014-08-13T14:20:10.227</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\js\MobileServices.intellisense.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\MobileServices.intellisense.js">
       <PackagePath>js\MobileServices.intellisense.js</PackagePath>
-      <Modified>2014-04-27T22:31:06.000</Modified>
+      <Modified>2014-08-13T14:20:10.077</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\js\MobileServices.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\MobileServices.js">
       <PackagePath>js\MobileServices.js</PackagePath>
-      <Modified>2014-04-27T22:31:06.000</Modified>
+      <Modified>2014-08-13T14:20:10.132</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\js\MobileServices.min.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\MobileServices.min.js">
       <PackagePath>js\MobileServices.min.js</PackagePath>
-      <Modified>2014-04-27T22:31:06.000</Modified>
+      <Modified>2014-08-13T14:20:10.158</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\js\myAzure.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\myAzure.js">
       <PackagePath>js\myAzure.js</PackagePath>
-      <Modified>2014-04-27T22:31:06.000</Modified>
+      <Modified>2014-08-13T14:20:10.237</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\js\navigator.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\navigator.js">
       <PackagePath>js\navigator.js</PackagePath>
-      <Modified>2014-04-27T22:31:06.000</Modified>
+      <Modified>2014-08-13T14:20:10.238</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\js\print.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\print.js">
       <PackagePath>js\print.js</PackagePath>
-      <Modified>2014-07-09T20:59:43.938</Modified>
+      <Modified>2014-08-13T14:20:10.240</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\js\removeInfo.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\removeInfo.js">
       <PackagePath>js\removeInfo.js</PackagePath>
-      <Modified>2014-04-27T22:31:06.000</Modified>
+      <Modified>2014-08-13T14:20:10.241</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\boost\boost - Copy.js">
-      <PackagePath>pages\boost\boost - Copy.js</PackagePath>
-      <Modified>2014-07-11T14:51:28.561</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\final\final - Copy.js">
-      <PackagePath>pages\final\final - Copy.js</PackagePath>
-      <Modified>2014-07-18T14:39:34.614</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\info_home\info_home - Copy %282%29.js">
-      <PackagePath>pages\info_home\info_home - Copy %282%29.js</PackagePath>
-      <Modified>2014-07-17T21:25:26.206</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\info_home\info_home - Copy.js">
-      <PackagePath>pages\info_home\info_home - Copy.js</PackagePath>
-      <Modified>2014-06-25T16:22:43.366</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\supl_sport_item_info\supl_sport_item_info - Copy.js">
-      <PackagePath>pages\supl_sport_item_info\supl_sport_item_info - Copy.js</PackagePath>
-      <Modified>2014-07-09T18:31:14.005</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\supl_sport_item_info\supl_sport_item_info.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.js">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.js</PackagePath>
-      <Modified>2014-07-17T20:31:15.554</Modified>
+      <Modified>2014-08-13T14:20:10.471</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\supl_sport\supl_sport.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\supl_sport\supl_sport.js">
       <PackagePath>pages\supl_sport\supl_sport.js</PackagePath>
-      <Modified>2014-06-25T17:20:02.432</Modified>
+      <Modified>2014-08-13T14:20:10.445</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\all_products\all_products.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\all_products\all_products.js">
       <PackagePath>pages\all_products\all_products.js</PackagePath>
-      <Modified>2014-04-27T22:31:06.000</Modified>
+      <Modified>2014-08-13T14:20:10.269</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\base\base.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\base\base.js">
       <PackagePath>pages\base\base.js</PackagePath>
-      <Modified>2014-07-31T20:17:41.234</Modified>
+      <Modified>2014-08-13T14:20:10.274</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\boost\boost.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\boost\boost.js">
       <PackagePath>pages\boost\boost.js</PackagePath>
-      <Modified>2014-07-22T19:27:14.211</Modified>
+      <Modified>2014-08-13T14:20:10.288</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\final\final.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\final\final.js">
       <PackagePath>pages\final\final.js</PackagePath>
-      <Modified>2014-07-23T18:25:44.624</Modified>
+      <Modified>2014-08-13T14:20:10.303</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\flavor\flavor.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\flavor\flavor.js">
       <PackagePath>pages\flavor\flavor.js</PackagePath>
-      <Modified>2014-04-27T22:31:06.000</Modified>
+      <Modified>2014-08-13T14:20:10.312</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\flav_sel\flav_sel.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\flav_sel\flav_sel.js">
       <PackagePath>pages\flav_sel\flav_sel.js</PackagePath>
-      <Modified>2014-07-21T21:01:30.931</Modified>
+      <Modified>2014-08-13T14:20:10.308</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\home\home.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\home\home.js">
       <PackagePath>pages\home\home.js</PackagePath>
-      <Modified>2014-08-01T18:05:38.747</Modified>
+      <Modified>2014-08-13T14:20:10.313</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\info_home\info_home.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\info_home\info_home.js">
       <PackagePath>pages\info_home\info_home.js</PackagePath>
-      <Modified>2014-07-18T13:39:42.930</Modified>
+      <Modified>2014-08-13T14:20:10.321</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\item_info\item_info.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\item_info\item_info.js">
       <PackagePath>pages\item_info\item_info.js</PackagePath>
-      <Modified>2014-06-25T15:54:25.561</Modified>
+      <Modified>2014-08-13T14:20:10.324</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\launch_page\launch_page.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\launch_page\launch_page.js">
       <PackagePath>pages\launch_page\launch_page.js</PackagePath>
-      <Modified>2014-07-31T20:41:01.105</Modified>
+      <Modified>2014-08-13T14:20:10.329</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login\login.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login\login.js">
       <PackagePath>pages\login\login.js</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.337</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login_sessions\all_products\all_products.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\all_products\all_products.js">
       <PackagePath>pages\login_sessions\all_products\all_products.js</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.356</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login_sessions\base\base.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\base\base.js">
       <PackagePath>pages\login_sessions\base\base.js</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.360</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login_sessions\boost\boost.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\boost\boost.js">
       <PackagePath>pages\login_sessions\boost\boost.js</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.368</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login_sessions\final\final.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\final\final.js">
       <PackagePath>pages\login_sessions\final\final.js</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.383</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login_sessions\flavor\flavor.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\flavor\flavor.js">
       <PackagePath>pages\login_sessions\flavor\flavor.js</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.392</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login_sessions\flav_sel\flav_sel.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\flav_sel\flav_sel.js">
       <PackagePath>pages\login_sessions\flav_sel\flav_sel.js</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.386</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login_sessions\home\home.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\home\home.js">
       <PackagePath>pages\login_sessions\home\home.js</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.397</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login_sessions\info_home\info_home.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\info_home\info_home.js">
       <PackagePath>pages\login_sessions\info_home\info_home.js</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.401</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login_sessions\item_info\item_info.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\item_info\item_info.js">
       <PackagePath>pages\login_sessions\item_info\item_info.js</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.404</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login_sessions\launch_page\launch_page.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\launch_page\launch_page.js">
       <PackagePath>pages\login_sessions\launch_page\launch_page.js</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.406</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login_sessions\profile\profile.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\profile\profile.js">
       <PackagePath>pages\login_sessions\profile\profile.js</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.417</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login_sessions\protein\protein.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\protein\protein.js">
       <PackagePath>pages\login_sessions\protein\protein.js</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.420</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login_sessions\thankyou\thankyou.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\thankyou\thankyou.js">
       <PackagePath>pages\login_sessions\thankyou\thankyou.js</PackagePath>
-      <Modified>2014-06-05T20:54:51.743</Modified>
+      <Modified>2014-08-13T14:20:10.426</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\protein\protein.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\protein\protein.js">
       <PackagePath>pages\protein\protein.js</PackagePath>
-      <Modified>2014-07-31T16:05:50.378</Modified>
+      <Modified>2014-08-13T14:20:10.431</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\signup\signup.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\signup\signup.js">
       <PackagePath>pages\signup\signup.js</PackagePath>
-      <Modified>2014-06-25T17:37:55.222</Modified>
+      <Modified>2014-08-13T14:20:10.439</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\thankyou\thankyou.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\thankyou\thankyou.js">
       <PackagePath>pages\thankyou\thankyou.js</PackagePath>
-      <Modified>2014-07-23T18:57:17.031</Modified>
+      <Modified>2014-08-13T14:20:10.474</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\welcome\welcome.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\welcome\welcome.js">
       <PackagePath>pages\welcome\welcome.js</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.477</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\services\mobile services\thinkitdrinkitData\service.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\services\mobile services\thinkitdrinkitData\service.js">
       <PackagePath>services\mobile services\thinkitdrinkitData\service.js</PackagePath>
-      <Modified>2014-07-04T17:59:07.037</Modified>
+      <Modified>2014-08-13T14:20:10.481</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\default.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\default.html">
       <PackagePath>default.html</PackagePath>
-      <Modified>2014-07-07T18:40:05.750</Modified>
+      <Modified>2014-08-13T14:20:10.001</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\final\final - Copy.html">
-      <PackagePath>pages\final\final - Copy.html</PackagePath>
-      <Modified>2014-07-18T14:47:03.425</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\info_home\info_home - Copy %282%29.html">
-      <PackagePath>pages\info_home\info_home - Copy %282%29.html</PackagePath>
-      <Modified>2014-07-17T21:04:31.714</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\info_home\info_home - Copy.html">
-      <PackagePath>pages\info_home\info_home - Copy.html</PackagePath>
-      <Modified>2014-06-24T17:47:51.910</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\supl_sport_item_info\supl_sport_item_info.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.html">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.html</PackagePath>
-      <Modified>2014-07-11T20:18:07.788</Modified>
+      <Modified>2014-08-13T14:20:10.466</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\supl_sport\supl_sport.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\supl_sport\supl_sport.html">
       <PackagePath>pages\supl_sport\supl_sport.html</PackagePath>
-      <Modified>2014-07-07T18:40:05.718</Modified>
+      <Modified>2014-08-13T14:20:10.444</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\all_products\all_products.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\all_products\all_products.html">
       <PackagePath>pages\all_products\all_products.html</PackagePath>
-      <Modified>2014-05-28T19:00:17.417</Modified>
+      <Modified>2014-08-13T14:20:10.247</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\base\base.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\base\base.html">
       <PackagePath>pages\base\base.html</PackagePath>
-      <Modified>2014-07-31T20:17:22.163</Modified>
+      <Modified>2014-08-13T14:20:10.273</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\boost\boost.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\boost\boost.html">
       <PackagePath>pages\boost\boost.html</PackagePath>
-      <Modified>2014-07-22T19:26:26.524</Modified>
+      <Modified>2014-08-13T14:20:10.279</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\final\final.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\final\final.html">
       <PackagePath>pages\final\final.html</PackagePath>
-      <Modified>2014-07-18T17:06:16.309</Modified>
+      <Modified>2014-08-13T14:20:10.292</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\flavor\flavor.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\flavor\flavor.html">
       <PackagePath>pages\flavor\flavor.html</PackagePath>
-      <Modified>2014-04-27T22:31:06.000</Modified>
+      <Modified>2014-08-13T14:20:10.311</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\flav_sel\flav_sel.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\flav_sel\flav_sel.html">
       <PackagePath>pages\flav_sel\flav_sel.html</PackagePath>
-      <Modified>2014-04-27T22:31:06.000</Modified>
+      <Modified>2014-08-13T14:20:10.307</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\home\home.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\home\home.html">
       <PackagePath>pages\home\home.html</PackagePath>
-      <Modified>2014-08-01T16:04:50.786</Modified>
+      <Modified>2014-08-13T14:20:10.313</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\info_home\info_home.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\info_home\info_home.html">
       <PackagePath>pages\info_home\info_home.html</PackagePath>
-      <Modified>2014-07-18T13:36:44.937</Modified>
+      <Modified>2014-08-13T14:20:10.315</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\item_info\item_info.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\item_info\item_info.html">
       <PackagePath>pages\item_info\item_info.html</PackagePath>
-      <Modified>2014-06-27T13:18:48.076</Modified>
+      <Modified>2014-08-13T14:20:10.323</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\launch_page\launch_page.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\launch_page\launch_page.html">
       <PackagePath>pages\launch_page\launch_page.html</PackagePath>
-      <Modified>2014-07-31T20:45:19.370</Modified>
+      <Modified>2014-08-13T14:20:10.328</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login\login.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login\login.html">
       <PackagePath>pages\login\login.html</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.331</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login_sessions\all_products\all_products.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\all_products\all_products.html">
       <PackagePath>pages\login_sessions\all_products\all_products.html</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.339</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login_sessions\base\base.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\base\base.html">
       <PackagePath>pages\login_sessions\base\base.html</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.358</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login_sessions\boost\boost.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\boost\boost.html">
       <PackagePath>pages\login_sessions\boost\boost.html</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.363</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login_sessions\final\final.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\final\final.html">
       <PackagePath>pages\login_sessions\final\final.html</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.376</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login_sessions\flavor\flavor.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\flavor\flavor.html">
       <PackagePath>pages\login_sessions\flavor\flavor.html</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.388</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login_sessions\flav_sel\flav_sel.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\flav_sel\flav_sel.html">
       <PackagePath>pages\login_sessions\flav_sel\flav_sel.html</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.385</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login_sessions\home\home.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\home\home.html">
       <PackagePath>pages\login_sessions\home\home.html</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.397</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login_sessions\info_home\info_home.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\info_home\info_home.html">
       <PackagePath>pages\login_sessions\info_home\info_home.html</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.399</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login_sessions\item_info\item_info.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\item_info\item_info.html">
       <PackagePath>pages\login_sessions\item_info\item_info.html</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.403</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login_sessions\launch_page\launch_page.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\launch_page\launch_page.html">
       <PackagePath>pages\login_sessions\launch_page\launch_page.html</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.405</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login_sessions\profile\profile.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\profile\profile.html">
       <PackagePath>pages\login_sessions\profile\profile.html</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.410</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login_sessions\protein\protein.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\protein\protein.html">
       <PackagePath>pages\login_sessions\protein\protein.html</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.419</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login_sessions\thankyou\thankyou.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\thankyou\thankyou.html">
       <PackagePath>pages\login_sessions\thankyou\thankyou.html</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.425</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\protein\protein.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\protein\protein.html">
       <PackagePath>pages\protein\protein.html</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.430</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\signup\signup.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\signup\signup.html">
       <PackagePath>pages\signup\signup.html</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.433</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\thankyou\thankyou.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\thankyou\thankyou.html">
       <PackagePath>pages\thankyou\thankyou.html</PackagePath>
-      <Modified>2014-07-10T14:49:37.535</Modified>
+      <Modified>2014-08-13T14:20:10.473</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\welcome\welcome.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\welcome\welcome.html">
       <PackagePath>pages\welcome\welcome.html</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.476</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\packages.config">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\packages.config">
       <PackagePath>packages.config</PackagePath>
-      <Modified>2014-04-27T22:30:32.000</Modified>
+      <Modified>2014-08-13T14:20:10.245</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login_sessions\base\base.css_notused">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\base\base.css_notused">
       <PackagePath>pages\login_sessions\base\base.css_notused</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.357</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login_sessions\final\final.css_notused">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\final\final.css_notused">
       <PackagePath>pages\login_sessions\final\final.css_notused</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.375</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login_sessions\flavor\flavor.css_notused">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\flavor\flavor.css_notused">
       <PackagePath>pages\login_sessions\flavor\flavor.css_notused</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.387</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login_sessions\flav_sel\flav_sel.css_notused">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\flav_sel\flav_sel.css_notused">
       <PackagePath>pages\login_sessions\flav_sel\flav_sel.css_notused</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.385</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login_sessions\home\home.css_notused">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\home\home.css_notused">
       <PackagePath>pages\login_sessions\home\home.css_notused</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.396</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login_sessions\info_home\info_home.css_notused">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\info_home\info_home.css_notused">
       <PackagePath>pages\login_sessions\info_home\info_home.css_notused</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.399</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login_sessions\item_info\item_info.css_notused">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\item_info\item_info.css_notused">
       <PackagePath>pages\login_sessions\item_info\item_info.css_notused</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.402</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login_sessions\launch_page\launch_page.css_notused">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\launch_page\launch_page.css_notused">
       <PackagePath>pages\login_sessions\launch_page\launch_page.css_notused</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.405</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login_sessions\base\base.js_bck">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\base\base.js_bck">
       <PackagePath>pages\login_sessions\base\base.js_bck</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.361</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login_sessions\boost\boost.js_bck">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\boost\boost.js_bck">
       <PackagePath>pages\login_sessions\boost\boost.js_bck</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.374</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login_sessions\boost\boost.html_bck">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\boost\boost.html_bck">
       <PackagePath>pages\login_sessions\boost\boost.html_bck</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.363</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login_sessions\protein\protein.css_notusing">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\protein\protein.css_notusing">
       <PackagePath>pages\login_sessions\protein\protein.css_notusing</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.418</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\pages\login_sessions\thankyou\thankyou.css_bck">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\thankyou\thankyou.css_bck">
       <PackagePath>pages\login_sessions\thankyou\thankyou.css_bck</PackagePath>
-      <Modified>2014-04-27T22:31:08.000</Modified>
+      <Modified>2014-08-13T14:20:10.424</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\APP\App5v21age_changeto_funcV1\App5\bin\x64\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-07-31T20:41:03.074</Modified>
+      <Modified>2014-08-13T14:23:41.921</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
