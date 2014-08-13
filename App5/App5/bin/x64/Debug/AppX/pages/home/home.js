@@ -4,7 +4,7 @@
     var roamingSettings = appData.roamingSettings;
     var Age = thinkitdrinkitDataClient.getTable("Age");
     var keepInfo = true;
-    var the_sel_age;
+    //var the_sel_age;
 
     WinJS.UI.Pages.define("/pages/home/home.html", {
         // This function is called whenever a user navigates to this page. It
@@ -23,7 +23,6 @@
             var the_sel_age = roamingSettings.values["Cat_picked"];
 
             document.getElementById("age_p").textContent = the_sel_age;
-
 
             if (the_sel_age === "Nutritional") {
                 //age_pic is really the catagory image that was picked previously
@@ -45,6 +44,7 @@
             //gather the infomation from the database and displays it on the sreen
             server.home(the_sel_age);
 
+
         },
 
         unload: function () {
@@ -52,7 +52,7 @@
             remove.pop_list(age_data.model.age);
             //using the removeInfo.js file to delete the last object of the array as long as an item exists
             if (!keepInfo) {
-                //remove.pop_list(age_data.model.info_page2)
+                remove.pop_list(age_data.model.info)
             }
         },
 
@@ -65,27 +65,61 @@
 
    
     // the following namespace will be used to complete all click events on the home.html page
-    var _choosen_age = "";
+    var _choosen_cat = "";
+
+    //Milo: I defined this above and it needs to be done here to in order for it to work inside the WinJS
+    //var the_sel_age = "";
+    var the_sel_age = roamingSettings.values["Cat_picked"];
+    //console.log("Cat picked = " + roamingSettings.values["Cat_picked"] + " The sel age = " + the_sel_age);
 
     WinJS.Namespace.define('clicked_me', {
         //the clicked function will show the photo and the more indept information of the clicked age group
         //at the bottem of the home.html page
         clicked: function (me) {          
             var updated_answer = me.replace(/^\s+/, '').replace(/\s+$/, '');
-            _choosen_age = updated_answer;
+            _choosen_cat = updated_answer;
             //gather information from from the database as the user clicks on the diffent ages
             //and then displays that information
             server.home_sub(updated_answer);
         },
+
         next_page: function () {
-            WinJS.Navigation.navigate('pages/func/func.html');
-            var appData = Windows.Storage.ApplicationData.current;
-            var roamingSettings = appData.roamingSettings;
-            roamingSettings.values["Age_name"] = _choosen_age;
-            roamingSettings.values["Age_pic"] = document.getElementById("sel_age_pic").src;
-            roamingSettings.values["Age_info"] = null;
-            roamingSettings.values["Age_price"] = null;
+            keepInfo = false;
+
+            //{
+                      
+            //            WinJS.Navigation.navigate('pages/func/func.html');
+            //            roamingSettings.values["Age_name"] = _choosen_cat;
+            //            roamingSettings.values["Age_pic"] = document.getElementById("sel_age_pic").src;
+            //            roamingSettings.values["Age_info"] = null;
+            //            roamingSettings.values["Age_price"] = null;
+            //    }
+
+
+            if ("Nutrigenetics" === roamingSettings.values["Cat_picked"]) {
+                WinJS.Navigation.navigate('pages/final/final.html');
+                var appData = Windows.Storage.ApplicationData.current;
+                var roamingSettings = appData.roamingSettings;
+                //roamingSettings.values["Base_protein"] = false;
+                //roamingSettings.values["Base_name"] = base3;
+                //roamingSettings.values["Base_Vend"] = document.getElementById("b_vend").textContent;
+                //roamingSettings.values["Base_pic"] = document.getElementById("choosen_base_carry").src;
+                //roamingSettings.values["Base_info"] = document.getElementById("sel_base_info").textContent;
+                //roamingSettings.values["Base_price"] = document.getElementById("base_price").textContent;
+                //roamingSettings.values["Base_label"] = document.getElementById("sel_base_pic").src;
+
+            } else if (roamingSettings.values["Cat_picked"] === "Protein") {
+                keepInfo = false;
+                WinJS.Navigation.navigate('pages/func/func.html');
+                var appData = Windows.Storage.ApplicationData.current;
+                var roamingSettings = appData.roamingSettings;
+                roamingSettings.values["Age_name"] = _choosen_cat;
+                roamingSettings.values["Age_pic"] = document.getElementById("sel_age_pic").src;
+                roamingSettings.values["Age_info"] = null;
+                roamingSettings.values["Age_price"] = null;
+        }
         },
+
         more_info: function (clicked) {
             var updated_answer = clicked.replace(/^\s+/, '').replace(/\s+$/, '');
             roamingSettings.values["Item_choosen"] = updated_answer;
