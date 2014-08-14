@@ -56,6 +56,9 @@
 
             remove.pop_list(age_data.model.info);
 
+            remove.pop_list(age_data.model.info_sport);
+
+
             roamingSettings.values["I_ordered"] = "no";
         },
 

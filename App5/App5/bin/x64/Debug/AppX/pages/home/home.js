@@ -78,32 +78,27 @@
             //gather information from from the database as the user clicks on the diffent ages
             //and then displays that information
             server.home_sub(updated_answer);
+            document.getElementById("nutrigenetics_price").textContent = "$ " + age_data.model.info.getItem(1);
+            console.log(age_data.model.info.getAt(index));
+
         },
 
         next_page: function () {
             keepInfo = false;
+            //milo: will not recall if this is missing even though these are gloabaly defined. 
             var appData = Windows.Storage.ApplicationData.current;
             var roamingSettings = appData.roamingSettings;
 
-            //{
-            //            WinJS.Navigation.navigate('pages/func/func.html');
-            //            roamingSettings.values["Age_name"] = _choosen_cat;
-            //            roamingSettings.values["Age_pic"] = document.getElementById("sel_age_pic").src;
-            //            roamingSettings.values["Age_info"] = null;
-            //            roamingSettings.values["Age_price"] = null;
-            //    }
-
             if (roamingSettings.values["Cat_picked"] === "Nutrigenetics") {
                 WinJS.Navigation.navigate('pages/final/final.html');
-                //roamingSettings.values["Base_protein"] = false;
-                //roamingSettings.values["Base_name"] = base3;
-                //roamingSettings.values["Base_Vend"] = document.getElementById("b_vend").textContent;
-                //roamingSettings.values["Base_pic"] = document.getElementById("choosen_base_carry").src;
-                //roamingSettings.values["Base_info"] = document.getElementById("sel_base_info").textContent;
-                //roamingSettings.values["Base_price"] = document.getElementById("base_price").textContent;
-                //roamingSettings.values["Base_label"] = document.getElementById("sel_base_pic").src;
+                //roamingSettings.values["Nutrigenetics_name"] = base3;
+                //roamingSettings.values["Nutrigenetics_Vend"] = document.getElementById("b_vend").textContent;
+                //roamingSettings.values["Nutrigenetics_pic"] = document.getElementById("choosen_base_carry").src;
+                //roamingSettings.values["Nutrigenetics_info"] = document.getElementById("sel_base_info").textContent;
+                //roamingSettings.values["Nutrigenetics_price"] = document.getElementById("base_price").textContent;
+                //roamingSettings.values["Nutrigenetics_label"] = document.getElementById("sel_base_pic").src;
 
-            } else if (roamingSettings.values["Cat_picked"] === "Protein") {
+            } else {
                 keepInfo = false;
                 WinJS.Navigation.navigate('pages/func/func.html');
                 var appData = Windows.Storage.ApplicationData.current;

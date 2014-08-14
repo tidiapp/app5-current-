@@ -48,7 +48,7 @@
                 var query = Age.where({
                     Name: name
                 }).read().done(function (results) {
-                    age_data.model.info.push({ the_info: results[0].InfoLite, info_img: results[0].Image, info_name: results[0].Name })
+                    age_data.model.info.push({ the_info: results[0].InfoLite, info_img: results[0].Image, info_name: results[0].Name, info_price: results[0].Price })
                 }, function (err) {
                     console.log(err);
                 });
@@ -164,18 +164,20 @@
                     console.log(err);
                 });
             },
-            sport_sub: function (name) {
-                var Sport = thinkitdrinkitDataClient.getTable("Sport");
-                remove.pop_list(age_data.model.info)
+            //Milo: Not being called or used
+            //sport_sub: function (name) {
+            //    var Sport = thinkitdrinkitDataClient.getTable("Sport");
+            //    remove.pop_list(age_data.model.info_sport)
 
-                var query = Sport.where({
-                    Name: name
-                }).read().done(function (results) {
-                    age_data.model.info.push({ the_info: results[0].InfoLite, info_img: results[0].Image, info_name: results[0].Name })
-                }, function (err) {
-                    console.log(err);
-                });
-            },
+            //    var query = Sport.where({
+            //        Name: name
+            //    }).read().done(function (results) {
+            //        age_data.model.info_sport.push({ the_info: results[0].InfoLite, info_img: results[0].Image, info_name: results[0].Name })
+            //    }, function (err) {
+            //        console.log(err);
+            //    });
+            //},
+
             //base.html
             base: function (the_sel_age) {
                 var Age = thinkitdrinkitDataClient.getTable("Base");

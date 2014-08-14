@@ -43,9 +43,6 @@
                 test1 = test();
             };
 
-
-
-
         },
 
         unload: function () {
@@ -53,14 +50,13 @@
 
             //milo:this helps with reapeating duplicates
             remove.pop_list(age_data.model.item_info_sport);
-
+            remove.pop_list(age_data.model.info_sport);
         },
 
         updateLayout: function (element) {
             // TODO: Respond to changes in layout.
         }
     });
-
 
     function registerForPrintContract() {
         var printManager = Windows.Graphics.Printing.PrintManager.getForCurrentView();
@@ -102,14 +98,11 @@
         $("#win_listview_host .win-listview").height(500);
         $("#win_listview_host .win-viewport").height(490).css('overflow-y', 'visible');
 
-
         //$(".win-listview").height(580);
         //$(".print_charm_content").height(500);
         //$(".win-itembox").height("100%");
 
     };
-
-
 
     WinJS.Namespace.define("webview_clicked", {
 
@@ -149,7 +142,6 @@
             } 
         },
 
-
         PrintButtonHandler: function () {
             // Optionally, functions to be executed immediately before and after printing can be configured as following:
             window.document.body.onbeforeprint = beforePrint;
@@ -159,9 +151,6 @@
             Windows.Graphics.Printing.PrintManager.showPrintUIAsync();
         }
 
-
-
-
     });
 
     function inner_site_browsing(e) {
@@ -170,7 +159,6 @@
             e.preventDefault();
         }
     }
-
 
     //setTimeout(test1, 5000)
 })();

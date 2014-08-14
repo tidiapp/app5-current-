@@ -16,6 +16,8 @@
             ]),            
             item_info_sport: new WinJS.Binding.List([
             ]),
+            info_sport: new WinJS.Binding.List([
+            ]),
             base: new WinJS.Binding.List([
             ]),
             boost: new WinJS.Binding.List([
