@@ -82,6 +82,7 @@
 
         next_page: function () {
             keepInfo = false;
+            //milo: will not recall if this is missing even though these are gloabaly defined. 
             var appData = Windows.Storage.ApplicationData.current;
             var roamingSettings = appData.roamingSettings;
 
@@ -103,7 +104,7 @@
                 //roamingSettings.values["Base_price"] = document.getElementById("base_price").textContent;
                 //roamingSettings.values["Base_label"] = document.getElementById("sel_base_pic").src;
 
-            } else if (roamingSettings.values["Cat_picked"] === "Protein") {
+            } else {
                 keepInfo = false;
                 WinJS.Navigation.navigate('pages/func/func.html');
                 var appData = Windows.Storage.ApplicationData.current;
