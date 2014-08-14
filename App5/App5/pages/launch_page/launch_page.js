@@ -90,7 +90,6 @@
 
         updateLayout: function (element) {
             /// <param name="element" domElement="true" />
-            supl_sport
             roamingSettings.values["Base_info"] = document.getElementById("sel_base_info").textContent;
             // TODO: Respond to changes in layout.
         }

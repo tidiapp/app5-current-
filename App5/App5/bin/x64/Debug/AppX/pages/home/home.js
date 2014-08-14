@@ -44,7 +44,6 @@
             //gather the infomation from the database and displays it on the sreen
             server.home(the_sel_age);
 
-
         },
 
         unload: function () {
@@ -63,13 +62,11 @@
         }
     });
 
-   
     // the following namespace will be used to complete all click events on the home.html page
     var _choosen_cat = "";
 
     //Milo: I defined this above and it needs to be done here to in order for it to work inside the WinJS
     //var the_sel_age = "";
-    var the_sel_age = roamingSettings.values["Cat_picked"];
     //console.log("Cat picked = " + roamingSettings.values["Cat_picked"] + " The sel age = " + the_sel_age);
 
     WinJS.Namespace.define('clicked_me', {
@@ -85,9 +82,10 @@
 
         next_page: function () {
             keepInfo = false;
+            var appData = Windows.Storage.ApplicationData.current;
+            var roamingSettings = appData.roamingSettings;
 
             //{
-                      
             //            WinJS.Navigation.navigate('pages/func/func.html');
             //            roamingSettings.values["Age_name"] = _choosen_cat;
             //            roamingSettings.values["Age_pic"] = document.getElementById("sel_age_pic").src;
@@ -95,11 +93,8 @@
             //            roamingSettings.values["Age_price"] = null;
             //    }
 
-
-            if ("Nutrigenetics" === roamingSettings.values["Cat_picked"]) {
+            if (roamingSettings.values["Cat_picked"] === "Nutrigenetics") {
                 WinJS.Navigation.navigate('pages/final/final.html');
-                var appData = Windows.Storage.ApplicationData.current;
-                var roamingSettings = appData.roamingSettings;
                 //roamingSettings.values["Base_protein"] = false;
                 //roamingSettings.values["Base_name"] = base3;
                 //roamingSettings.values["Base_Vend"] = document.getElementById("b_vend").textContent;
