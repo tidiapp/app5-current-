@@ -79,7 +79,9 @@
             //and then displays that information
             server.home_sub(updated_answer);
             document.getElementById("nutrigenetics_price").textContent = "$ " + age_data.model.info.getItem(1);
-            console.log(age_data.model.info.getAt(index));
+
+            //milo: trying to access the list in gatherInfo.js so far not working
+            //console.log(age_data.model.info.getAt(index));
 
         },
 

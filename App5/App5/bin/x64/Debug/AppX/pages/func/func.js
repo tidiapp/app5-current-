@@ -33,22 +33,18 @@
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
                 document.getElementById("age_p").textContent = roamingSettings.values["Cat_picked"];
             }
-
             if (roamingSettings.values["Cat_picked"] === "Protein") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
                 document.getElementById("age_p").textContent = roamingSettings.values["Cat_picked"];
             }
-
-
-
+            //milo: this shows up in the footer as the history
             if (roamingSettings.values["Age_name"] === "Sports Protein") {
                 //age_pic is really the catagory image that was picked previously
                 document.getElementById("home1_p").textContent = roamingSettings.values["Age_name"];
                 document.getElementById("home1_pic").src = roamingSettings.values["Age_pic"];
-
                 document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Age_name"] + " function." + " You have 3 steps left.";
             }
-
+            //milo: this shows up in the footer as the history
             if (roamingSettings.values["Age_name"] === "Lifestyle Protein") {
                 document.getElementById("home1_pic").src = roamingSettings.values["Age_pic"];
                 document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Age_name"] + " function." + " You have 3 steps left.";
@@ -62,11 +58,8 @@
             //document.getElementById("age_pic").src = roamingSettings.values["Age_pic"];
             //sending the users choosen age to the age_data namespace and then receiving a number that will 
             //be used to access the right object on the array
-            server.func(the_sel_func);
 
-            //if (document.getElementById("sel_func_name").textContent === "Protein") {
-            //    document.getElementById("item_info_label").setAttribute("hidden", true);
-            //}
+            server.func(the_sel_func);
         },
 
         unload: function () {
@@ -79,8 +72,6 @@
         },
 
         updateLayout: function (element) {
-            /// <param name="element" domElement="true" />
-
             // TODO: Respond to changes in layout.
         }
     });
@@ -97,16 +88,12 @@
 
         next_page_flavor: function () {
             keepInfo = false;
-           
-                    WinJS.Navigation.navigate('pages/base/base.html')
-                    roamingSettings.values["Func_protein"] = false;
-                    roamingSettings.values["Func_name"] = func3;
-                    roamingSettings.values["Func_Vend"] = document.getElementById("b_vend").textContent;
-                    roamingSettings.values["Func_pic"] = document.getElementById("choosen_func_carry").src;
-                    roamingSettings.values["Func_info"] = document.getElementById("sel_func_info").textContent;
-                    roamingSettings.values["Func_price"] = document.getElementById("func_price").textContent;
-                    //roamingSettings.values["Func_price"] = document.getElementById("func_price").textContent;
-                    roamingSettings.values["Func_label"] = document.getElementById("sel_func_pic").src;
+            WinJS.Navigation.navigate('pages/base/base.html')
+            roamingSettings.values["Func_name"] = func3;
+            roamingSettings.values["Func_pic"] = document.getElementById("choosen_func_carry").src;
+            roamingSettings.values["Func_info"] = document.getElementById("sel_func_info").textContent;
+            roamingSettings.values["Func_price"] = document.getElementById("func_price").textContent;
+            roamingSettings.values["Func_label"] = document.getElementById("sel_func_pic").src;
         },
 
         more_info: function (clicked) {

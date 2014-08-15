@@ -60,7 +60,7 @@
 
                 if (the_sel_func === "Sports Protein") {
                     var query = Func.where({
-                        AccessSports: true
+                        Access: 1
                     }).read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
@@ -70,7 +70,7 @@
                     });
                 } else if (the_sel_func === "Lifestyle Protein") {
                     var query = Func.where({
-                        AccessLifestyle: true
+                        Access: 2
                     }).read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
@@ -80,7 +80,7 @@
                     });
                 } else if (the_sel_func === "Diet Protein") {
                     var query = Func.where({
-                        AccessDiet: true
+                        Access: 3
                     }).read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
@@ -88,9 +88,9 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_func === "Functional Protein") {
+                } else if (the_sel_func === "Wellness Protein") {
                     var query = Func.where({
-                        AccessFunctional: true
+                        Access: 4
                     }).read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
@@ -100,7 +100,7 @@
                     });
                 } else if (the_sel_func === "Sports Nutrition" || the_sel_func === "F1") {
                     var query = Func.where({
-                        AccessSportsNutrition: true
+                        Access: 5
                     }).read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
@@ -110,7 +110,7 @@
                     });
                 } else if (the_sel_func === "Lifestyle Nutrition" || the_sel_func === "F2") {
                     var query = Func.where({
-                        AccessLifestyleNutrition: true
+                        Access: 6
                     }).read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
@@ -120,7 +120,7 @@
                     });
                 } else if (the_sel_func === "Diet Nutrition" || the_sel_func === "F3") {
                     var query = Func.where({
-                        AccessDietNutrition: true
+                        Access: 7
                     }).read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
@@ -130,7 +130,7 @@
                     });
                 } else if (the_sel_func === "Functional Nutrition" || the_sel_func === "F4") {
                     var query = Func.where({
-                        AccessFunctionalNutrition: true
+                        Access: 8
                     }).read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
@@ -182,9 +182,9 @@
             base: function (the_sel_age) {
                 var Age = thinkitdrinkitDataClient.getTable("Base");
 
-                if (the_sel_age === "Nutritional") {
+                if (the_sel_age === "Strength & Power") {
                     var query = Age.where({
-                        Access: 1
+                        AccessStrength: true
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image })
@@ -192,9 +192,9 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Protein") {
+                } else if (the_sel_age === "Lean Muscle") {
                     var query = Age.where({
-                        Access: 3
+                        AccessLean: true
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image })
