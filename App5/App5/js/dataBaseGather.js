@@ -202,6 +202,196 @@
                     }, function (err) {
                         console.log(err);
                     });
+                } else if (the_sel_age === "Muscle Recovery") {
+                    var query = Age.where({
+                        AccessMuscleR: true
+                    }).orderBy("Name").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                } else if (the_sel_age === "Weekend Warrior") {
+                    var query = Age.where({
+                        AccessWeekend: true
+                    }).orderBy("Name").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                } else if (the_sel_age === "Sustained Energy") {
+                    var query = Age.where({
+                        AccessSustained: true
+                    }).orderBy("Name").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                } else if (the_sel_age === "Muscle Preservation") {
+                    var query = Age.where({
+                        AccessMuscleP: true
+                    }).orderBy("Name").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                } else if (the_sel_age === "Zen Life") {
+                    var query = Age.where({
+                        AccessZen: true
+                    }).orderBy("Name").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                } else if (the_sel_age === "Vegan & Vegetarians") {
+                    var query = Age.where({
+                        AccessVegan: true
+                    }).orderBy("Name").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                } else if (the_sel_age === "Paleo") {
+                    var query = Age.where({
+                        AccessPaleo: true
+                    }).orderBy("Name").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                } else if (the_sel_age === "Artisanal Luxery") {
+                    var query = Age.where({
+                        AccessArtisanal: true
+                    }).orderBy("Name").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                } else if (the_sel_age === "On The Go") {
+                    var query = Age.where({
+                        AccessOn: true
+                    }).orderBy("Name").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                } else if (the_sel_age === "Daily") {
+                    var query = Age.where({
+                        AccessDaily: true
+                    }).orderBy("Name").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                } else if (the_sel_age === "Organic") {
+                    var query = Age.where({
+                        AccessOrganic: true
+                    }).orderBy("Name").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                } else if (the_sel_age === "Weight Loss") {
+                    var query = Age.where({
+                        AccessWeightL: true
+                    }).orderBy("Name").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                } else if (the_sel_age === "Satiety") {
+                    var query = Age.where({
+                        AccessSatiety: true
+                    }).orderBy("Name").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                } else if (the_sel_age === "Meal Replacement") {
+                    var query = Age.where({
+                        AccessMeal: true
+                    }).orderBy("Name").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                } else if (the_sel_age === "Weight Gainer") {
+                    var query = Age.where({
+                        AccessWeightG: true
+                    }).orderBy("Name").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                } else if (the_sel_age === "Brain Health") {
+                    var query = Age.where({
+                        AccessBrain: true
+                    }).orderBy("Name").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                } else if (the_sel_age === "Heart Health") {
+                    var query = Age.where({
+                        AccessHeart: true
+                    }).orderBy("Name").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                } else if (the_sel_age === "Bone & Joint") {
+                    var query = Age.where({
+                        AccessBone: true
+                    }).orderBy("Name").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                } else if (the_sel_age === "Pre-Natal") {
+                    var query = Age.where({
+                        AccessPre: true
+                    }).orderBy("Name").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
                 } 
             },
             base_sub: function (name) {
