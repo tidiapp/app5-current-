@@ -33,7 +33,7 @@
                         AccessNG: true
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
-                            age_data.model.age.push({ age: results[i].Name, img: results[i].Image })
+                            age_data.model.age.push({ age: results[i].Name, img: results[i].Image, info_price: results[0].Price })
                         }
                     }, function (err) {
                         console.log(err);

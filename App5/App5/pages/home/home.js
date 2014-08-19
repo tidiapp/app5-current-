@@ -64,7 +64,7 @@
 
     // the following namespace will be used to complete all click events on the home.html page
     var _choosen_cat = "";
-
+    var nutrigeneticsPrice = "";
     //Milo: I defined this above and it needs to be done here to in order for it to work inside the WinJS
     //var the_sel_age = "";
     //console.log("Cat picked = " + roamingSettings.values["Cat_picked"] + " The sel age = " + the_sel_age);
@@ -78,11 +78,7 @@
             //gather information from from the database as the user clicks on the diffent ages
             //and then displays that information
             server.home_sub(updated_answer);
-            document.getElementById("nutrigenetics_price").textContent = "$ " + age_data.model.info.getItem(1);
-
-            //milo: trying to access the list in gatherInfo.js so far not working
-            //console.log(age_data.model.info.getAt(index));
-
+            //milo: some code does not work well from here 
         },
 
         next_page: function () {
@@ -93,6 +89,7 @@
 
             if (roamingSettings.values["Cat_picked"] === "Nutrigenetics") {
                 WinJS.Navigation.navigate('pages/final/final.html');
+                roamingSettings.values["Nutrigenetics_price"] = document.getElementById("nutrigenetics_price").textContent;
                 //roamingSettings.values["Nutrigenetics_name"] = base3;
                 //roamingSettings.values["Nutrigenetics_Vend"] = document.getElementById("b_vend").textContent;
                 //roamingSettings.values["Nutrigenetics_pic"] = document.getElementById("choosen_base_carry").src;
