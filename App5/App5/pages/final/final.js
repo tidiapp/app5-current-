@@ -21,8 +21,8 @@
             //document.getElementById("price1_boost").textContent = roamingSettings.values["Boost1_name"] + " boost price:";
             
             if (roamingSettings.values["Base_protein"] === true){
-                document.getElementById("my_flav").setAttribute("hidden", true);
-                document.getElementById("the_name").style.marginTop = "473px";
+                //document.getElementById("my_flav").setAttribute("hidden", true);
+                //document.getElementById("the_name").style.marginTop = "473px";
             }
 
             if (roamingSettings.values["Boost0_name"] === "" || roamingSettings.values["Boost0_name"] === undefined) {

@@ -4,7 +4,7 @@
     var roamingSettings = appData.roamingSettings;
     var Age = thinkitdrinkitDataClient.getTable("Age");
     var keepInfo = true;
-    var the_sel_age;
+    //var the_sel_age;
 
     WinJS.UI.Pages.define("/pages/home/home.html", {
         // This function is called whenever a user navigates to this page. It
@@ -23,7 +23,6 @@
             var the_sel_age = roamingSettings.values["Cat_picked"];
 
             document.getElementById("age_p").textContent = the_sel_age;
-
 
             if (the_sel_age === "Nutritional") {
                 //age_pic is really the catagory image that was picked previously
@@ -52,7 +51,7 @@
             remove.pop_list(age_data.model.age);
             //using the removeInfo.js file to delete the last object of the array as long as an item exists
             if (!keepInfo) {
-                //remove.pop_list(age_data.model.info_page2)
+                remove.pop_list(age_data.model.info)
             }
         },
 
@@ -63,21 +62,27 @@
         }
     });
 
-   
     // the following namespace will be used to complete all click events on the home.html page
-    var _choosen_age = "";
+    var _choosen_cat = "";
+    var nutrigeneticsPrice = "";
+    //Milo: I defined this above and it needs to be done here to in order for it to work inside the WinJS
+    //var the_sel_age = "";
+    //console.log("Cat picked = " + roamingSettings.values["Cat_picked"] + " The sel age = " + the_sel_age);
 
     WinJS.Namespace.define('clicked_me', {
         //the clicked function will show the photo and the more indept information of the clicked age group
         //at the bottem of the home.html page
         clicked: function (me) {          
             var updated_answer = me.replace(/^\s+/, '').replace(/\s+$/, '');
-            _choosen_age = updated_answer;
+            _choosen_cat = updated_answer;
             //gather information from from the database as the user clicks on the diffent ages
             //and then displays that information
             server.home_sub(updated_answer);
+            //milo: some code does not work well from here 
         },
+
         next_page: function () {
+<<<<<<< HEAD
 
             if (roamingSettings.values["Cat_picked"] === "Nutrigenetics") {
                 WinJS.Navigation.navigate('pages/final/final.html');
@@ -97,11 +102,35 @@
                 var appData = Windows.Storage.ApplicationData.current;
                 var roamingSettings = appData.roamingSettings;
                 roamingSettings.values["Age_name"] = _choosen_age;
+=======
+            keepInfo = false;
+            //milo: will not recall if this is missing even though these are gloabaly defined. 
+            var appData = Windows.Storage.ApplicationData.current;
+            var roamingSettings = appData.roamingSettings;
+
+            if (roamingSettings.values["Cat_picked"] === "Nutrigenetics") {
+                WinJS.Navigation.navigate('pages/final/final.html');
+                roamingSettings.values["Nutrigenetics_price"] = document.getElementById("nutrigenetics_price").textContent;
+                //roamingSettings.values["Nutrigenetics_name"] = base3;
+                //roamingSettings.values["Nutrigenetics_Vend"] = document.getElementById("b_vend").textContent;
+                //roamingSettings.values["Nutrigenetics_pic"] = document.getElementById("choosen_base_carry").src;
+                //roamingSettings.values["Nutrigenetics_info"] = document.getElementById("sel_base_info").textContent;
+                //roamingSettings.values["Nutrigenetics_price"] = document.getElementById("base_price").textContent;
+                //roamingSettings.values["Nutrigenetics_label"] = document.getElementById("sel_base_pic").src;
+
+            } else {
+                keepInfo = false;
+                WinJS.Navigation.navigate('pages/func/func.html');
+                var appData = Windows.Storage.ApplicationData.current;
+                var roamingSettings = appData.roamingSettings;
+                roamingSettings.values["Age_name"] = _choosen_cat;
+>>>>>>> origin/getting-app-ready
                 roamingSettings.values["Age_pic"] = document.getElementById("sel_age_pic").src;
                 roamingSettings.values["Age_info"] = null;
                 roamingSettings.values["Age_price"] = null;
         }
         },
+
         more_info: function (clicked) {
             var updated_answer = clicked.replace(/^\s+/, '').replace(/\s+$/, '');
             roamingSettings.values["Item_choosen"] = updated_answer;

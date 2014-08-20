@@ -18,30 +18,28 @@
             design.getBase();
             design.changeTextColor();
             document.getElementById("home").removeAttribute("hidden");
-
-            document.getElementById("choosen_age").textContent = "Choose your " + roamingSettings.values["Cat_picked"] + " Base";
-            var the_sel_age = roamingSettings.values["Cat_picked"];
-
+            var the_sel_age = roamingSettings.values["Func_name"];
+            document.getElementById("choosen_age").textContent = "Choose your " + roamingSettings.values["Func_name"] + " Base";
             document.getElementById("age_p").textContent = the_sel_age;
 
             //document.getElementById("base_price").removeAttribute("hidden");
 
+            //milo:these if statments are for footer history from previous page
             if (the_sel_age === "Nutritional") {
                 //age_pic is really the catagory image that was picked previously
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
                 document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory." + " You have 3 steps left.";
             }
-
             if (the_sel_age === "Protein") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
                 document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory." + " You have 3 steps left.";
             }
-
             if (the_sel_age === "Nutrigenetics") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img3"];
                 document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory." + " You have 2 steps left.";
                 document.getElementById("choosen_age").textContent = "Choose Your Test Kit";
             }
+
             //document.getElementById("age_pic").src = roamingSettings.values["Age_pic"];
             //sending the users choosen age to the age_data namespace and then receiving a number that will 
             //be used to access the right object on the array

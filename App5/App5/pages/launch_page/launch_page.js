@@ -56,6 +56,9 @@
 
             remove.pop_list(age_data.model.info);
 
+            remove.pop_list(age_data.model.info_sport);
+
+
             roamingSettings.values["I_ordered"] = "no";
         },
 
@@ -90,7 +93,6 @@
 
         updateLayout: function (element) {
             /// <param name="element" domElement="true" />
-            supl_sport
             roamingSettings.values["Base_info"] = document.getElementById("sel_base_info").textContent;
             // TODO: Respond to changes in layout.
         }
