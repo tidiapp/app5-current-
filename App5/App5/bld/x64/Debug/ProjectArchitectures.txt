@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\App5.jsproj;x64
-=======
-C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\App5.jsproj;x64
->>>>>>> origin/getting-app-ready
+C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\App5.jsproj;x64

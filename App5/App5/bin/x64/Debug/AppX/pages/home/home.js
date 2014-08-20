@@ -83,27 +83,6 @@
         },
 
         next_page: function () {
-<<<<<<< HEAD
-
-            if (roamingSettings.values["Cat_picked"] === "Nutrigenetics") {
-                WinJS.Navigation.navigate('pages/final/final.html');
-
-                //MILO RENAME BELLOW MAYBE roamingSettings.values["Nutrigenetics_name"] = ...
-
-                //roamingSettings.values["Base_protein"] = false;
-                //roamingSettings.values["Base_name"] = base3;
-                //roamingSettings.values["Base_Vend"] = document.getElementById("b_vend").textContent;
-                //roamingSettings.values["Base_pic"] = document.getElementById("choosen_base_carry").src;
-                //roamingSettings.values["Base_info"] = document.getElementById("sel_base_info").textContent;
-                //roamingSettings.values["Base_price"] = document.getElementById("base_price").textContent;
-                //roamingSettings.values["Base_label"] = document.getElementById("sel_base_pic").src;
-            } else {
-
-                WinJS.Navigation.navigate('pages/func/func.html');
-                var appData = Windows.Storage.ApplicationData.current;
-                var roamingSettings = appData.roamingSettings;
-                roamingSettings.values["Age_name"] = _choosen_age;
-=======
             keepInfo = false;
             //milo: will not recall if this is missing even though these are gloabaly defined. 
             var appData = Windows.Storage.ApplicationData.current;
@@ -125,7 +104,6 @@
                 var appData = Windows.Storage.ApplicationData.current;
                 var roamingSettings = appData.roamingSettings;
                 roamingSettings.values["Age_name"] = _choosen_cat;
->>>>>>> origin/getting-app-ready
                 roamingSettings.values["Age_pic"] = document.getElementById("sel_age_pic").src;
                 roamingSettings.values["Age_info"] = null;
                 roamingSettings.values["Age_price"] = null;
