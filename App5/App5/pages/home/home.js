@@ -40,6 +40,7 @@
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img3"];
                 document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory." + " You have 2 steps left.";
                 document.getElementById("choosen_age").textContent = "Choose Your Test Kit";
+                document.getElementById("nutrigenetics_price_div").removeAttribute("hidden");
             }
             //gather the infomation from the database and displays it on the sreen
             server.home(the_sel_age);

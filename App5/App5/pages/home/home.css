@@ -164,7 +164,6 @@
 }
 
 #nutrigenetics_price_div {
-    position: absolute;
-
+    float: right;
+    margin-right: 70px;
 }
-
