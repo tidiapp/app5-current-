@@ -21,60 +21,36 @@
                 <h1 id="item_name" class="titlearea win-type-ellipsis"></h1>
             </header>
             <section id="win_listview_host" aria-label="Main content" role="main">
+
                 <div id="sport_info" class="sport_info_class" data-win-control="WinJS.Binding.Template">
-                    <div id="sport_info2" class="print_charm_content">
-                        <div id="sport_info_banner" class="print_charm">
-                            <ul>
-                                <li>U.S. Olympic Committee</li>
-                                <li>Sport Performance Division</li>
-                            </ul>
-                        </div>
 
+                    <!-- Milo: added data stuff from http://msdn.microsoft.com/en-us/library/windows/apps/dn609715.aspx -->
+
+                    <div id="webview_wrap" >
+
+                        <div id="sport_info2" class="print_charm_content">
                             <!-- milo from print.js -->
-                        <button id="print" onclick="webview_clicked.PrintButtonHandler();" class="print_charm">print</button>
-
-                        <div id="sport_content_colums" class="win-template win-disposable win-item">
-                            <h2 class="sport_content_heading" data-win-bind="textContent: infoH2"></h2>
-                            <p id="sport_info_info" class="sport_info_info_class" data-win-bind="textContent: info"></p>
-                            <p id="sport_info_info2" class="sport_info_info_class2" data-win-bind="textContent: info2"></p>
-                            <a id="link_webview" onclick="webview_clicked.clicked1(event.srcElement.textContent);" class="link_webview_class" data-win-bind="textContent: infoLink"></a>
-                            <h2 class="sport_content_heading" data-win-bind="textContent: info3H2"></h2>
-                            <p id="sport_info_info3" class="sport_info_info_class" data-win-bind="textContent: info3"></p>
-                            <p id="sport_info_info4" class="sport_info_info_class2" data-win-bind="textContent: info4"></p>
-                            <a id="link_webview2" onclick="webview_clicked.clicked2(event.srcElement.textContent);" class="link_webview_class" data-win-bind="textContent: infoLink2"></a>
-                            <h2 class="sport_content_heading" data-win-bind="textContent: info5H2"></h2>
-                            <p id="sport_info_info5" class="sport_info_info_class" data-win-bind="textContent: info5"></p>
-                            <p id="sport_info_info6" class="sport_info_info_class2" data-win-bind="textContent: info6"></p>
-                            <p id="sport_info_info7" class="sport_info_info_class" data-win-bind="textContent: info7"></p>
-                            <a id="link_webview3" onclick="webview_clicked.clicked3(event.srcElement.textContent);" class="link_webview_class" data-win-bind="textContent: infoLink3"></a>
+                            <button id="print" onclick="webview_clicked.PrintButtonHandler();" class="print_charm">print</button>
+                            <x-ms-webview id="webview" data-win-bind="src: infoLink"></x-ms-webview>
                         </div>
-                        <div id="sport_content_colums2" >
-                            <img class="sport_info_pic_class" id="sport_info_pic" data-win-bind="src: img" />
-                            <img class="sport_info_pic_class" id="sport_info_label" data-win-bind="src: label" />
-                            <img class="sport_info_pic_class" id="sport_info_pic2" data-win-bind="src: img2" />
+
+                        <div id="link_wrap_remove_stuff">
+                            <x-ms-webview id="webview2" data-win-bind="src: infoLink2"></x-ms-webview>
                         </div>
                     </div>
 
                 </div>
 
-                <!-- Milo: added data stuff from http://msdn.microsoft.com/en-us/library/windows/apps/dn609715.aspx -->
-                <div id="link_wrap_remove_stuff" class="link_wrap">
-                    <x-ms-webview id="webview" hidden="" class="links"></x-ms-webview>
-                    <x-ms-webview id="webview2" hidden="" class="links"></x-ms-webview>
-                    <x-ms-webview id="webview3" hidden="" class="links"></x-ms-webview>
-                </div>
-
-                <div id="sport_template_placement" data-win-control="WinJS.UI.ListView" data-win-bind="winControl.itemDataSource: item_info_sport.dataSource" data-win-options="{
-                    itemTemplate: select ('.sport_info_class'),
-                    selectionMode: 'none',
-                    tapBehavior: 'none'
-                    }"></div>
-
-            </section>
-            <footer id="main_footer" class="print_charm">
-                <h1 id="footer_company_name"></h1><!-- this is being styled in the default.js folder -->
-            </footer>
-        </div>
+        <div id="sport_template_placement" data-win-control="WinJS.UI.ListView" data-win-bind="winControl.itemDataSource: item_info_sport.dataSource" data-win-options="{
+            itemTemplate: select ('.sport_info_class'),
+            selectionMode: 'none',
+            tapBehavior: 'none'
+            }"></div>
+        </section>
+        <footer id="main_footer" class="print_charm">
+            <h1 id="footer_company_name"></h1><!-- this is being styled in the default.js folder -->
+        </footer>
+    </div>
        
 
 </body>

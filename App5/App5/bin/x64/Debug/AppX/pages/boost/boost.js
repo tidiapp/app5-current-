@@ -49,39 +49,39 @@
 
             design.getBoost();
             design.changeTextColor();
-            document.getElementById("age_p").textContent = "Age: " + roamingSettings.values["Age_name"];
-            document.getElementById("base_p").textContent = "Base: " + roamingSettings.values["Base_name"];
-            document.getElementById("flav2_p").textContent = "Flavor: " + roamingSettings.values["FlavSel_name"];
-            document.getElementById("cal_co").textContent = roamingSettings.values["Flav_name"].toLowerCase();
 
-//milo: show checkout button right away so some can buy with out boost picked
-            document.getElementById("btn_right").removeAttribute("hidden");
-
-            //if (age_data.model.the_boost_sel.length > 0) {
-            //    document.getElementById("btn_right").removeAttribute("hidden");
-            //} else if (age_data.model.the_boost_sel.length <= 0) {
-            //    document.getElementById("btn_right").setAttribute("hidden", true);
-            //}
-
-            if (roamingSettings.values["Flav_name"] === "Caloric") {
-                document.getElementById("flav_p").textContent = "Caloric";
-            } else {
-                document.getElementById("flav_p").textContent = "Non-Caloric";
+            //milo: footer history 
+            if (roamingSettings.values["Cat_picked"] === "Nutritional") {
+                document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
             }
+            //milo: footer history 
+            if (roamingSettings.values["Cat_picked"] === "Protein") {
+                document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
+            }
+            //milo: footer history 
+            document.getElementById("age_p").textContent = roamingSettings.values["Cat_picked"];
+            document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];
+            document.getElementById("home_p").textContent = roamingSettings.values["Age_name"];
+            document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];
+            document.getElementById("func_p").textContent = roamingSettings.values["Func_name"];
+            document.getElementById("func_pic").src = roamingSettings.values["Func_pic"];
+            document.getElementById("base_p").textContent = roamingSettings.values["Base_name"];
+            document.getElementById("base_pic").src = roamingSettings.values["Base_pic"];
+            document.getElementById("flav_p").textContent = roamingSettings.values["FlavSel_name"];
+            document.getElementById("flav_pic").src = roamingSettings.values["FlavSel_pic"];
+            document.getElementById("where_you_are4").textContent = "You have choosen the " + roamingSettings.values["FlavSel_name"] + " Flavor.";
+
+            //milo: show checkout button right away so some can buy with out boost picked
+            document.getElementById("btn_right").removeAttribute("hidden");
 
             if (roamingSettings.values["Base_protein"] === true) {
                 document.getElementById("flav_div").setAttribute("hidden", true)
                 document.getElementById("flav2_div").setAttribute("hidden", true)
             }
 
-            document.getElementById("age_pic").src = roamingSettings.values["Age_pic"];
-            document.getElementById("base_pic_footer").src = roamingSettings.values["Base_pic"];
-            document.getElementById("flav1_pic").src = roamingSettings.values["Flav_pic"];
-            document.getElementById("flav2_pic").src = roamingSettings.values["FlavSel_pic"];
-
-            document.getElementById("theBoostAge").textContent = roamingSettings.values["Age_name"];
+            //document.getElementById("theBoostAge").textContent = roamingSettings.values["Age_name"];
             
-            server.boost(roamingSettings.values["Age_name"]);
+            server.boost(roamingSettings.values["Func_name"]);
 
             if (age_data.model.the_boost_sel.length === 1) {
                 thename1 = roamingSettings.values["Boost1_name"];

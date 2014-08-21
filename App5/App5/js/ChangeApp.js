@@ -138,7 +138,7 @@
 
         getSport_info: function () {
             document.getElementById("main_footer").style.backgroundColor = i;
-            document.getElementById("sport_info_pic").style.borderColor = i;
+            //document.getElementById("sport_info_pic").style.borderColor = i;
         },
 
         item_info: function () {

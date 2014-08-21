@@ -60,7 +60,7 @@
 
         items_info1: function(item) {
             roamingSettings.values["Item_choosen"] = item;
-            console.log(roamingSettings.values["Item_choosen"]);
+            //console.log(roamingSettings.values["Item_choosen"]);
             WinJS.Navigation.navigate('pages/supl_sport_item_info/supl_sport_item_info.html');
         }
     })

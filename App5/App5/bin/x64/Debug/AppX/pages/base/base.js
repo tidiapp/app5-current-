@@ -20,34 +20,25 @@
             document.getElementById("home").removeAttribute("hidden");
             var the_sel_age = roamingSettings.values["Func_name"];
             document.getElementById("choosen_age").textContent = "Choose your " + roamingSettings.values["Func_name"] + " Base";
-            document.getElementById("age_p").textContent = the_sel_age;
 
-            //document.getElementById("base_price").removeAttribute("hidden");
+                //milo: footer history 
+                if (roamingSettings.values["Cat_picked"] === "Nutritional") {
+                    document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
+                }
+                //milo: footer history 
+                if (roamingSettings.values["Cat_picked"] === "Protein") {
+                    document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
+                }
+                //milo: footer history 
+                document.getElementById("age_p").textContent = roamingSettings.values["Cat_picked"];
+                document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];
+                document.getElementById("home_p").textContent = roamingSettings.values["Age_name"];
+                document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];
+                document.getElementById("func_p").textContent = roamingSettings.values["Func_name"];
+                document.getElementById("func_pic").src = roamingSettings.values["Func_pic"];
+                document.getElementById("where_you_are2").textContent = "You have choosen the " + roamingSettings.values["Func_name"] + " Function." + " You have 2 steps left.";
 
-            //milo:these if statments are for footer history from previous page
-            if (the_sel_age === "Nutritional") {
-                //age_pic is really the catagory image that was picked previously
-                document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
-                document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory." + " You have 3 steps left.";
-            }
-            if (the_sel_age === "Protein") {
-                document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
-                document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory." + " You have 3 steps left.";
-            }
-            if (the_sel_age === "Nutrigenetics") {
-                document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img3"];
-                document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory." + " You have 2 steps left.";
-                document.getElementById("choosen_age").textContent = "Choose Your Test Kit";
-            }
-
-            //document.getElementById("age_pic").src = roamingSettings.values["Age_pic"];
-            //sending the users choosen age to the age_data namespace and then receiving a number that will 
-            //be used to access the right object on the array
             server.base(the_sel_age);
-
-            //if (document.getElementById("sel_base_name").textContent === "Protein") {
-            //    document.getElementById("item_info_label").setAttribute("hidden", true);
-            //}
         },
 
         unload: function () {
@@ -78,26 +69,16 @@
 
         next_page_flavor: function () {
             keepInfo = false;
-            if (roamingSettings.values["Cat_picked"] === "Nutrigenetics") {
-                WinJS.Navigation.navigate('pages/final/final.html');
-                roamingSettings.values["Base_protein"] = false;
-                roamingSettings.values["Base_name"] = base3;
-                roamingSettings.values["Base_Vend"] = document.getElementById("b_vend").textContent;
-                roamingSettings.values["Base_pic"] = document.getElementById("choosen_base_carry").src;
-                roamingSettings.values["Base_info"] = document.getElementById("sel_base_info").textContent;
-                roamingSettings.values["Base_price"] = document.getElementById("base_price").textContent;
-                roamingSettings.values["Base_label"] = document.getElementById("sel_base_pic").src;
-            } else {
-                    WinJS.Navigation.navigate('pages/flav_sel/flav_sel.html')
-                    roamingSettings.values["Base_protein"] = false;
-                    roamingSettings.values["Base_name"] = base3;
-                    roamingSettings.values["Base_Vend"] = document.getElementById("b_vend").textContent;
-                    roamingSettings.values["Base_pic"] = document.getElementById("choosen_base_carry").src;
-                    roamingSettings.values["Base_info"] = document.getElementById("sel_base_info").textContent;
-                    roamingSettings.values["Base_price"] = document.getElementById("base_price").textContent;
-                    //roamingSettings.values["Base_price"] = document.getElementById("base_price").textContent;
-                    roamingSettings.values["Base_label"] = document.getElementById("sel_base_pic").src;
-            }
+           
+            WinJS.Navigation.navigate('pages/flav_sel/flav_sel.html')
+            roamingSettings.values["Base_protein"] = false;
+            roamingSettings.values["Base_name"] = base3;
+            roamingSettings.values["Base_Vend"] = document.getElementById("b_vend").textContent;
+            roamingSettings.values["Base_pic"] = document.getElementById("choosen_base_carry").src;
+            roamingSettings.values["Base_info"] = document.getElementById("sel_base_info").textContent;
+            roamingSettings.values["Base_price"] = document.getElementById("base_price").textContent;
+            roamingSettings.values["Base_label"] = document.getElementById("sel_base_pic").src;
+            
         },
 
         more_info: function (clicked) {

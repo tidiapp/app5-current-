@@ -38,7 +38,7 @@
 
             if (the_sel_age === "Nutrigenetics") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img3"];
-                document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory." + " You have 2 steps left.";
+                document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory.";
                 document.getElementById("choosen_age").textContent = "Choose Your Test Kit";
                 document.getElementById("nutrigenetics_price_div").removeAttribute("hidden");
             }
@@ -90,12 +90,9 @@
 
             if (roamingSettings.values["Cat_picked"] === "Nutrigenetics") {
                 WinJS.Navigation.navigate('pages/final/final.html');
+                roamingSettings.values["Nutrigenetics_name"] = _choosen_cat;
+                roamingSettings.values["Nutrigenetics_pic"] = document.getElementById("sel_age_pic").src;
                 roamingSettings.values["Nutrigenetics_price"] = document.getElementById("nutrigenetics_price").textContent;
-                //roamingSettings.values["Nutrigenetics_name"] = base3;
-                //roamingSettings.values["Nutrigenetics_Vend"] = document.getElementById("b_vend").textContent;
-                //roamingSettings.values["Nutrigenetics_pic"] = document.getElementById("choosen_base_carry").src;
-                //roamingSettings.values["Nutrigenetics_info"] = document.getElementById("sel_base_info").textContent;
-                //roamingSettings.values["Nutrigenetics_price"] = document.getElementById("base_price").textContent;
                 //roamingSettings.values["Nutrigenetics_label"] = document.getElementById("sel_base_pic").src;
 
             } else {

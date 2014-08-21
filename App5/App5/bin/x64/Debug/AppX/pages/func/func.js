@@ -21,7 +21,6 @@
             document.getElementById("choosen_age").textContent = "Whats your " + roamingSettings.values["Age_name"] + " Goal.";
             document.getElementById("home").removeAttribute("hidden");
             //document.getElementById("age_p").textContent = the_sel_func;
-            document.getElementById("home1_p").textContent = the_sel_func;
 
             //document.getElementById("func_price").removeAttribute("hidden");
             //milo: PASSED ON FROM PREVIOS PAGE 
@@ -29,26 +28,29 @@
             //roamingSettings.values["Age_pic"]
             //roamingSettings.values["Age_info"]
             //roamingSettings.values["Age_price"]
-            if (roamingSettings.values["Cat_picked"] === "Nutritional") {
-                document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
+
+                //milo: footer history 
+                if (roamingSettings.values["Cat_picked"] === "Nutritional") {
+                    document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
+                }
+                //milo: footer history 
+                if (roamingSettings.values["Cat_picked"] === "Protein") {
+                    document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
+                }
+                //milo: footer history 
                 document.getElementById("age_p").textContent = roamingSettings.values["Cat_picked"];
-            }
-            if (roamingSettings.values["Cat_picked"] === "Protein") {
-                document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
-                document.getElementById("age_p").textContent = roamingSettings.values["Cat_picked"];
-            }
-            //milo: this shows up in the footer as the history
-            if (roamingSettings.values["Age_name"] === "Sports Protein") {
-                //age_pic is really the catagory image that was picked previously
-                document.getElementById("home1_p").textContent = roamingSettings.values["Age_name"];
-                document.getElementById("home1_pic").src = roamingSettings.values["Age_pic"];
-                document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Age_name"] + " function." + " You have 3 steps left.";
-            }
-            //milo: this shows up in the footer as the history
-            if (roamingSettings.values["Age_name"] === "Lifestyle Protein") {
-                document.getElementById("home1_pic").src = roamingSettings.values["Age_pic"];
-                document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Age_name"] + " function." + " You have 3 steps left.";
-            }
+                document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];
+                document.getElementById("home_p").textContent = roamingSettings.values["Age_name"];
+                document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];
+                document.getElementById("where_you_are1").textContent = "You have choosen the " + roamingSettings.values["Age_name"] + " Goal." + " You have 3 steps left.";
+
+                    ////milo: home_ is home page footer history different then above  
+                    //if (roamingSettings.values["Age_name"] === "Diet Protein") {
+                    //    //age_pic is really the catagory image that was picked previously
+                    //}
+                    ////milo: this shows up in the footer as the history
+                    //if (roamingSettings.values["Age_name"] === "Wellness Protein") {
+                    //}
 
             //if (the_sel_func === "Nutrigenetics") {
             //    document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img3"];

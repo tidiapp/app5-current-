@@ -20,24 +20,26 @@
             document.getElementById("base_p").textContent = "Base: " + roamingSettings.values["Base_name"];
            
 
-            //the following are getting the information for the appropriate data and then changing it to numbers
-            //and then storing that information inside var
+                //milo: footer history 
+                if (roamingSettings.values["Cat_picked"] === "Nutritional") {
+                    document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
+                }
+                //milo: footer history 
+                if (roamingSettings.values["Cat_picked"] === "Protein") {
+                    document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
+                }
+                //milo: footer history 
+                document.getElementById("age_p").textContent = roamingSettings.values["Cat_picked"];
+                document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];
+                document.getElementById("home_p").textContent = roamingSettings.values["Age_name"];
+                document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];
+                document.getElementById("func_p").textContent = roamingSettings.values["Func_name"];
+                document.getElementById("func_pic").src = roamingSettings.values["Func_pic"];
+                document.getElementById("base_p").textContent = roamingSettings.values["Base_name"];
+                document.getElementById("base_pic").src = roamingSettings.values["Base_pic"];
+                document.getElementById("where_you_are3").textContent = "You have choosen the " + roamingSettings.values["Base_name"] + " Base." + " You have 1 steps left.";
 
-            if(roamingSettings.values["Flav_name"] === "Caloric"){
-                document.getElementById("flav_p").textContent = "Caloric";
-                document.getElementById("cal_co").textContent = "caloric";
-            } else {
-                document.getElementById("flav_p").textContent = "Non-Caloric";
-                document.getElementById("cal_co").textContent = "non-caloric";
-            }
-
-
-
-            document.getElementById("flav_sel_header").textContent = "Choose Your " + roamingSettings.values["Flav_name"] + " Flavor for " + roamingSettings.values["Age_name"]+"s:";
-
-            document.getElementById("age_pic").src = roamingSettings.values["Age_pic"];
-            document.getElementById("base_pic_footer").src = roamingSettings.values["Base_pic"];
-            document.getElementById("flav1_pic").src = roamingSettings.values["Flav_pic"];
+            document.getElementById("flav_sel_header").textContent = "Choose Your " + "Flavor.";
 
             server.flav_sel(roamingSettings.values["Flav_name"]);
         },

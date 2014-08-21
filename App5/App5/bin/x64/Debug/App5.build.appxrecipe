@@ -41,9 +41,6 @@
     <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\final\print.css">
       <PackagePath>pages\final\print.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\flavor\flavor.css">
-      <PackagePath>pages\flavor\flavor.css</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\flav_sel\flav_sel.css">
       <PackagePath>pages\flav_sel\flav_sel.css</PackagePath>
     </AppxPackagedFile>
@@ -206,9 +203,6 @@
     <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\final\final.js">
       <PackagePath>pages\final\final.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\flavor\flavor.js">
-      <PackagePath>pages\flavor\flavor.js</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\flav_sel\flav_sel.js">
       <PackagePath>pages\flav_sel\flav_sel.js</PackagePath>
     </AppxPackagedFile>
@@ -304,9 +298,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\final\final.html">
       <PackagePath>pages\final\final.html</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\flavor\flavor.html">
-      <PackagePath>pages\flavor\flavor.html</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\flav_sel\flav_sel.html">
       <PackagePath>pages\flav_sel\flav_sel.html</PackagePath>

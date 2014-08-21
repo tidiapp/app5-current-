@@ -16,8 +16,6 @@
             // Register for Print Contract
             registerForPrintContract();
 
-
-
             // TODO: Initialize the page here.
             WinJS.Binding.processAll(element, age_data.model);
             design.getSport_info();
@@ -28,20 +26,17 @@
 
             //$("#main_footer").hide();
             //document.getElementById("link_webview").textContent = updated_name;
-            document.onload = function () {
+            //document.onload = function () {
                 
-               // console.log(document.getElementById("sport_info_info").innerText.replace(/eros/g, "<span>cras</span>"));
-                if (document.getElementById("sport_info_info2").textContent === "") {
-                    document.getElementById("sport_info_info2").setAttribute("hidden", true)
-                }
-                if (document.getElementById("sport_info_info3").textContent === "") {
-                    document.getElementById("sport_info_info3").setAttribute("hidden", true)
-                }
-                function test() {
-                    document.getElementById("sport_info_info").style.color = "blue";
-                };
-                test1 = test();
-            };
+            //   // console.log(document.getElementById("sport_info_info").innerText.replace(/eros/g, "<span>cras</span>"));
+            //    if (document.getElementById("sport_info_info2").textContent === "") {
+            //        document.getElementById("sport_info_info2").setAttribute("hidden", true)
+            //    }
+            //    function test() {
+            //        document.getElementById("sport_info_info").style.color = "blue";
+            //    };
+            //    test1 = test();
+            //};
 
         },
 
@@ -85,8 +80,6 @@
 
         //$(".print_charm_content").height("100%");
         //$(".win-itembox").height("100%");
-
-
         //$(".article").width(1000).height(2000);
     };
 
@@ -97,11 +90,9 @@
         $(".print_charm, .link_wrap").show();
         $("#win_listview_host .win-listview").height(500);
         $("#win_listview_host .win-viewport").height(490).css('overflow-y', 'visible');
-
         //$(".win-listview").height(580);
         //$(".print_charm_content").height(500);
         //$(".win-itembox").height("100%");
-
     };
 
     WinJS.Namespace.define("webview_clicked", {
@@ -109,36 +100,12 @@
         clicked1: function () {
             //var updated_name = roamingSettings.values["Item_choosen"].replace(/^\s+/, '').replace(/\s+$/, '');
             if (age_data.model.item_info_sport.length > 0) {
-                document.getElementById("webview2").setAttribute("hidden", true);
-                document.getElementById("webview3").setAttribute("hidden", true);
+                //document.getElementById("webview2").setAttribute("hidden", true);
+                //document.getElementById("webview3").setAttribute("hidden", true);
 
-                document.getElementById("webview").removeAttribute("hidden");
-                document.getElementById("webview").navigate(event.srcElement.textContent);
-                document.getElementById("webview").addEventListener("MSWebViewNavigationStarting", inner_site_browsing);
-            } 
-        },
-
-        clicked2: function () {
-            //var updated_name = roamingSettings.values["Item_choosen"].replace(/^\s+/, '').replace(/\s+$/, '');
-            if (age_data.model.item_info_sport.length > 0) {
-                document.getElementById("webview").setAttribute("hidden", true);
-                document.getElementById("webview3").setAttribute("hidden", true);
-
-                document.getElementById("webview2").removeAttribute("hidden");
-                document.getElementById("webview2").navigate(event.srcElement.textContent);
-                document.getElementById("webview2").addEventListener("MSWebViewNavigationStarting", inner_site_browsing);
-            }
-        },
-
-        clicked3: function () {
-            //var updated_name = roamingSettings.values["Item_choosen"].replace(/^\s+/, '').replace(/\s+$/, '');
-            if (age_data.model.item_info_sport.length > 0) {
-                document.getElementById("webview2").setAttribute("hidden", true);
-                document.getElementById("webview").setAttribute("hidden", true);
-
-                document.getElementById("webview3").removeAttribute("hidden");
-                document.getElementById("webview3").navigate(event.srcElement.textContent);
-                document.getElementById("webview3").addEventListener("MSWebViewNavigationStarting", inner_site_browsing);
+                //document.getElementById("webview").removeAttribute("hidden");
+                //document.getElementById("webview").navigate(event.srcElement.textContent);
+                //document.getElementById("webview").addEventListener("MSWebViewNavigationStarting", inner_site_browsing);
             } 
         },
 

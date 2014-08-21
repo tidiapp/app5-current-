@@ -6,18 +6,18 @@
     <SolutionConfiguration>Debug|x64</SolutionConfiguration>
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>e3f10fc1-365d-4d2e-b488-7e61baad9bf4</PackageIdentityName>
-    <RegisteredManifestChecksum>19EEA814A311BEBC439FDF89044EE2597F331993F213197524BCA39F72569613</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>e3f10fc1-365d-4d2e-b488-7e61baad9bf4_1.0.0.16_x64__bkvjexddj2nfj</RegisteredPackageMoniker>
+    <RegisteredManifestChecksum>5C6709ACDFBC328EBF528071C1CCDEA9AE15F0E0BBF02B49AE982DE040C2EB69</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>e3f10fc1-365d-4d2e-b488-7e61baad9bf4_1.0.0.19_x64__bkvjexddj2nfj</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>e3f10fc1-365d-4d2e-b488-7e61baad9bf4_bkvjexddj2nfj!App</RegisteredUserModeAppID>
     <RegisteredPackageID>e3f10fc1-365d-4d2e-b488-7e61baad9bf4</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=Anthony</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.0.16</RegisteredVersion>
+    <RegisteredVersion>1.0.0.19</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\bin\x64\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-08-14T17:39:52.730</Modified>
+      <Modified>2014-08-21T17:23:48.926</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -27,11 +27,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\func\func.css">
       <PackagePath>pages\func\func.css</PackagePath>
-      <Modified>2014-08-14T17:37:27.892</Modified>
+      <Modified>2014-08-21T15:36:38.751</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\supl_sport_item_info\supl_sport_item_info.css">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.css</PackagePath>
-      <Modified>2014-08-14T14:23:14.290</Modified>
+      <Modified>2014-08-21T20:39:41.135</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\supl_sport\supl_sport.css">
       <PackagePath>pages\supl_sport\supl_sport.css</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\base\base.css">
       <PackagePath>pages\base\base.css</PackagePath>
-      <Modified>2014-08-14T14:23:13.934</Modified>
+      <Modified>2014-08-21T16:18:19.575</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\boost\boost.css">
       <PackagePath>pages\boost\boost.css</PackagePath>
-      <Modified>2014-08-14T14:23:13.939</Modified>
+      <Modified>2014-08-21T16:59:39.832</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\final\final.css">
       <PackagePath>pages\final\final.css</PackagePath>
@@ -57,13 +57,9 @@
       <PackagePath>pages\final\print.css</PackagePath>
       <Modified>2014-08-14T14:23:13.976</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\flavor\flavor.css">
-      <PackagePath>pages\flavor\flavor.css</PackagePath>
-      <Modified>2014-08-14T14:23:14.007</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\flav_sel\flav_sel.css">
       <PackagePath>pages\flav_sel\flav_sel.css</PackagePath>
-      <Modified>2014-08-14T14:23:13.978</Modified>
+      <Modified>2014-08-21T16:25:46.762</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\home\home.css">
       <PackagePath>pages\home\home.css</PackagePath>
@@ -197,11 +193,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\js\ChangeApp.js">
       <PackagePath>js\ChangeApp.js</PackagePath>
-      <Modified>2014-08-14T17:37:27.865</Modified>
+      <Modified>2014-08-20T19:56:11.061</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\js\dataBaseGather.js">
       <PackagePath>js\dataBaseGather.js</PackagePath>
-      <Modified>2014-08-19T17:51:04.013</Modified>
+      <Modified>2014-08-21T19:31:01.504</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\js\dataStore.js">
       <PackagePath>js\dataStore.js</PackagePath>
@@ -249,15 +245,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\func\func.js">
       <PackagePath>pages\func\func.js</PackagePath>
-      <Modified>2014-08-15T16:06:23.387</Modified>
+      <Modified>2014-08-21T17:05:53.420</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\supl_sport_item_info\supl_sport_item_info.js">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.js</PackagePath>
-      <Modified>2014-08-14T18:39:59.453</Modified>
+      <Modified>2014-08-20T19:55:57.475</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\supl_sport\supl_sport.js">
       <PackagePath>pages\supl_sport\supl_sport.js</PackagePath>
-      <Modified>2014-08-14T14:23:14.284</Modified>
+      <Modified>2014-08-20T17:04:22.965</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\all_products\all_products.js">
       <PackagePath>pages\all_products\all_products.js</PackagePath>
@@ -265,27 +261,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\base\base.js">
       <PackagePath>pages\base\base.js</PackagePath>
-      <Modified>2014-08-15T16:06:23.417</Modified>
+      <Modified>2014-08-21T17:05:53.390</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\boost\boost.js">
       <PackagePath>pages\boost\boost.js</PackagePath>
-      <Modified>2014-08-14T14:23:13.955</Modified>
+      <Modified>2014-08-21T17:33:37.760</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\final\final.js">
       <PackagePath>pages\final\final.js</PackagePath>
       <Modified>2014-08-19T20:58:24.105</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\flavor\flavor.js">
-      <PackagePath>pages\flavor\flavor.js</PackagePath>
-      <Modified>2014-08-14T14:23:14.010</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\flav_sel\flav_sel.js">
       <PackagePath>pages\flav_sel\flav_sel.js</PackagePath>
-      <Modified>2014-08-14T14:23:13.982</Modified>
+      <Modified>2014-08-21T17:30:58.323</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\home\home.js">
       <PackagePath>pages\home\home.js</PackagePath>
-      <Modified>2014-08-20T14:12:13.666</Modified>
+      <Modified>2014-08-21T17:19:33.273</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\info_home\info_home.js">
       <PackagePath>pages\info_home\info_home.js</PackagePath>
@@ -297,7 +289,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\launch_page\launch_page.js">
       <PackagePath>pages\launch_page\launch_page.js</PackagePath>
-      <Modified>2014-08-14T18:39:59.468</Modified>
+      <Modified>2014-08-21T14:29:52.074</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login\login.js">
       <PackagePath>pages\login\login.js</PackagePath>
@@ -381,11 +373,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\func\func.html">
       <PackagePath>pages\func\func.html</PackagePath>
-      <Modified>2014-08-15T16:04:48.797</Modified>
+      <Modified>2014-08-21T15:22:50.470</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\supl_sport_item_info\supl_sport_item_info.html">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.html</PackagePath>
-      <Modified>2014-08-14T14:23:14.294</Modified>
+      <Modified>2014-08-21T20:02:56.889</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\supl_sport\supl_sport.html">
       <PackagePath>pages\supl_sport\supl_sport.html</PackagePath>
@@ -397,27 +389,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\base\base.html">
       <PackagePath>pages\base\base.html</PackagePath>
-      <Modified>2014-08-14T14:23:13.935</Modified>
+      <Modified>2014-08-21T15:24:58.003</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\boost\boost.html">
       <PackagePath>pages\boost\boost.html</PackagePath>
-      <Modified>2014-08-14T14:23:13.943</Modified>
+      <Modified>2014-08-21T17:33:09.463</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\final\final.html">
       <PackagePath>pages\final\final.html</PackagePath>
       <Modified>2014-08-14T14:23:13.962</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\flavor\flavor.html">
-      <PackagePath>pages\flavor\flavor.html</PackagePath>
-      <Modified>2014-08-14T14:23:14.008</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\flav_sel\flav_sel.html">
       <PackagePath>pages\flav_sel\flav_sel.html</PackagePath>
-      <Modified>2014-08-14T14:23:13.980</Modified>
+      <Modified>2014-08-21T16:55:53.844</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\home\home.html">
       <PackagePath>pages\home\home.html</PackagePath>
-      <Modified>2014-08-20T14:12:41.162</Modified>
+      <Modified>2014-08-21T15:10:14.035</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\info_home\info_home.html">
       <PackagePath>pages\info_home\info_home.html</PackagePath>
@@ -573,7 +561,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-08-20T14:08:36.401</Modified>
+      <Modified>2014-08-21T17:23:48.724</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

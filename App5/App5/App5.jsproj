@@ -53,7 +53,7 @@
     <DefaultLanguage>en-US</DefaultLanguage>
     <PackageCertificateKeyFile>App5_TemporaryKey.pfx</PackageCertificateKeyFile>
     <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
-    <AppxPackageDir>C:\Users\Anthony\Desktop\APP\</AppxPackageDir>
+    <AppxPackageDir>C:\Users\milo\Desktop\AppTIDI\</AppxPackageDir>
     <AppxBundlePlatforms>x64</AppxBundlePlatforms>
     <AppxBundle>Never</AppxBundle>
   </PropertyGroup>
@@ -123,9 +123,6 @@
     <Content Include="pages\final\final.html" />
     <Content Include="pages\final\final.js" />
     <Content Include="pages\final\print.css" />
-    <Content Include="pages\flavor\flavor.css" />
-    <Content Include="pages\flavor\flavor.html" />
-    <Content Include="pages\flavor\flavor.js" />
     <Content Include="pages\flav_sel\flav_sel.css" />
     <Content Include="pages\flav_sel\flav_sel.html" />
     <Content Include="pages\flav_sel\flav_sel.js" />

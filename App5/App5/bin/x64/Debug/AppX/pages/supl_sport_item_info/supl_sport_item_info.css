@@ -87,7 +87,7 @@
 }
 
 .link_wrap {
-    width: 520px;
+    /*width: 520px;*/
     float: right;
 }
 
@@ -108,7 +108,7 @@
 }
 
 .links {
-    width: 500px;
+    width: 800px;
     height: 515px;
     margin-left: 20px;
     float: left;
@@ -147,16 +147,16 @@
 
 /*Milo: for printing*/
 #win_listview_host .win-listview  {
-    width: 960px;
+    width: 1680px;
     height: 500px;
     /*border: 2px solid pink;*/
 }
 
 #win_listview_host .win-viewport {
-    width: 950px;
+    width: 1670px;
     height: 490px;
-    overflow-y: scroll;
-    /*border: 2px solid green;*/
+    /*overflow-y: scroll;
+    border: 2px solid green;*/
 }
 
 /*#win_listview_host .win-surface {
@@ -166,8 +166,33 @@
 
 }*/
 
+#webview_wrap {
+    width: 1600px;
+}
+
 #sport_info2 {
-    width: 900px;
-    /*height: 500px;
-    overflow-y: scroll;*/
+    float: left;
+    width: 710px;
+    height: 450px;
+}
+
+#link_wrap_remove_stuff {
+    float: right;
+    width: 740px;
+    height: 40px;
+}
+
+#webview {
+    width: 700px;
+    height: 450px;
+    -ms-overflow-style: scrollbar;
+    -ms-scrollbar-base-color: ActiveBorder;
+    overflow-y: visible;
+}
+
+#webview2 {
+    width: 700px;
+    height: 450px;
+    -ms-overflow-style: scrollbar;
+    overflow-y: scroll
 }

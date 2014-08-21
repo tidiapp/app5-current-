@@ -202,7 +202,7 @@ overError {
     padding-top: 2px;
 }
 
-#base_pic_footer {
+#base_pic {
     border: 2px solid #fff;
     margin-left: 15px;
 }
@@ -260,15 +260,6 @@ button, input[type=button], input[type=submit], input[type=reset], input[type=fi
     color: white;
     border-color: transparent;
     background-clip: border-box;
-}
-
-#where_you_are4 {
-    margin-left: 540px;
-    margin-top: 30px;
-    position: absolute;
-    font-size: 18px;
-    color: #fff;
-    font-weight: bold;
 }
 
 #boost1_div, #boost2_div, #boost3_div, #boost4_div, #boost5_div, #boost6_div, #boost7_div, #boost8_div, #boost9_div {
@@ -369,4 +360,13 @@ button, input[type=button], input[type=submit], input[type=reset], input[type=fi
     width: 1400px;
     height: 200px;
     margin-top: 10px;
+}
+
+#where_you_are4 {
+    margin-left: 680px;
+    margin-top: 30px;
+    position: absolute;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
 }
