@@ -41,7 +41,7 @@
 
             document.getElementById("flav_sel_header").textContent = "Choose Your " + "Flavor.";
 
-            server.flav_sel(roamingSettings.values["Flav_name"]);
+            server.flav_sel();
         },
 
         unload: function () {

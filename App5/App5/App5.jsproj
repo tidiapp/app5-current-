@@ -101,9 +101,6 @@
     <Content Include="pages\func\func.css" />
     <Content Include="pages\func\func.html" />
     <Content Include="pages\func\func.js" />
-    <Content Include="pages\func.bck\func.css.bck" />
-    <Content Include="pages\func.bck\func.html.bck" />
-    <Content Include="pages\func.bck\func.js.bck" />
     <Content Include="pages\supl_sport_item_info\supl_sport_item_info.css" />
     <Content Include="pages\supl_sport_item_info\supl_sport_item_info.html" />
     <Content Include="pages\supl_sport_item_info\supl_sport_item_info.js" />

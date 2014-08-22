@@ -396,12 +396,11 @@
             },
 
 //flavor.html
-            flav_sel: function (name) {
+            flav_sel: function () {
                 var Age = thinkitdrinkitDataClient.getTable("Flavor");
                 //milo.orderBy is taking the most text in the Name column also can do orderByDescending or both http://azure.microsoft.com/en-us/documentation/articles/mobile-services-html-how-to-use-client-library/
 
                 var query = Age.where({
-                    AccessProtein: false
                 }).orderBy("Name").read().done(function (results) {
                     for (var i = 0; i < results.length; i++) {
                         age_data.model.flavor1.push({ sel_flav_name: results[i].Name, sel_flav_pic: results[i].Image })
@@ -411,10 +410,9 @@
                 });
 
             },
-            flav_sel_sub: function (name) {
+            flav_sel_sub: function () {
                 var Age = thinkitdrinkitDataClient.getTable("Flavor");
                 var query = Age.where({
-                    Name: name
                 }).read().done(function (results) {
                     age_data.model.info_page4.push({ sel_name: results[0].Name, sel_info: results[0].InfoLite, sel_pic: results[0].Image, sel_label: results[0].Label, f_vend: results[0].VendID })
                 }, function (err) {

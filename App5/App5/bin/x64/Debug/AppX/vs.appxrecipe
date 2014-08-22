@@ -6,562 +6,550 @@
     <SolutionConfiguration>Debug|x64</SolutionConfiguration>
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>e3f10fc1-365d-4d2e-b488-7e61baad9bf4</PackageIdentityName>
-    <RegisteredManifestChecksum>5C6709ACDFBC328EBF528071C1CCDEA9AE15F0E0BBF02B49AE982DE040C2EB69</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>e3f10fc1-365d-4d2e-b488-7e61baad9bf4_1.0.0.19_x64__bkvjexddj2nfj</RegisteredPackageMoniker>
+    <RegisteredManifestChecksum>A746960F95FA7A16D554F1163EBA40CF8ED2153AFFCA20290250B238E4356323</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>e3f10fc1-365d-4d2e-b488-7e61baad9bf4_1.0.0.20_x64__bkvjexddj2nfj</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>e3f10fc1-365d-4d2e-b488-7e61baad9bf4_bkvjexddj2nfj!App</RegisteredUserModeAppID>
     <RegisteredPackageID>e3f10fc1-365d-4d2e-b488-7e61baad9bf4</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=Anthony</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.0.19</RegisteredVersion>
+    <RegisteredVersion>1.0.0.20</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\bin\x64\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\bin\x64\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-08-21T17:23:48.926</Modified>
+      <Modified>2014-08-22T18:22:05.604</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\css\default.css">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\css\default.css">
       <PackagePath>css\default.css</PackagePath>
       <Modified>2014-08-14T17:37:27.855</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\func\func.css">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\func\func.css">
       <PackagePath>pages\func\func.css</PackagePath>
-      <Modified>2014-08-21T15:36:38.751</Modified>
+      <Modified>2014-08-22T18:22:04.313</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\supl_sport_item_info\supl_sport_item_info.css">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\supl_sport_item_info\supl_sport_item_info.css">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.css</PackagePath>
-      <Modified>2014-08-21T20:39:41.135</Modified>
+      <Modified>2014-08-22T16:55:58.041</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\supl_sport\supl_sport.css">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\supl_sport\supl_sport.css">
       <PackagePath>pages\supl_sport\supl_sport.css</PackagePath>
       <Modified>2014-08-14T18:18:54.118</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\all_products\all_products.css">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\all_products\all_products.css">
       <PackagePath>pages\all_products\all_products.css</PackagePath>
       <Modified>2014-08-14T14:23:13.776</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\base\base.css">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\base\base.css">
       <PackagePath>pages\base\base.css</PackagePath>
       <Modified>2014-08-21T16:18:19.575</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\boost\boost.css">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\boost\boost.css">
       <PackagePath>pages\boost\boost.css</PackagePath>
       <Modified>2014-08-21T16:59:39.832</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\final\final.css">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\final\final.css">
       <PackagePath>pages\final\final.css</PackagePath>
       <Modified>2014-08-14T14:23:13.956</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\final\print.css">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\final\print.css">
       <PackagePath>pages\final\print.css</PackagePath>
       <Modified>2014-08-14T14:23:13.976</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\flav_sel\flav_sel.css">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\flav_sel\flav_sel.css">
       <PackagePath>pages\flav_sel\flav_sel.css</PackagePath>
       <Modified>2014-08-21T16:25:46.762</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\home\home.css">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\home\home.css">
       <PackagePath>pages\home\home.css</PackagePath>
       <Modified>2014-08-20T14:12:13.658</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\info_home\info_home.css">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\info_home\info_home.css">
       <PackagePath>pages\info_home\info_home.css</PackagePath>
       <Modified>2014-08-14T14:23:14.019</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\item_info\item_info.css">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\item_info\item_info.css">
       <PackagePath>pages\item_info\item_info.css</PackagePath>
       <Modified>2014-08-14T14:23:14.037</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\launch_page\launch_page.css">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\launch_page\launch_page.css">
       <PackagePath>pages\launch_page\launch_page.css</PackagePath>
       <Modified>2014-08-14T14:23:14.046</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login\login.css">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login\login.css">
       <PackagePath>pages\login\login.css</PackagePath>
       <Modified>2014-08-14T14:23:14.075</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login_sessions\all_products\all_products.css">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login_sessions\all_products\all_products.css">
       <PackagePath>pages\login_sessions\all_products\all_products.css</PackagePath>
       <Modified>2014-08-14T14:23:14.086</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login_sessions\profile\profile.css">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login_sessions\profile\profile.css">
       <PackagePath>pages\login_sessions\profile\profile.css</PackagePath>
       <Modified>2014-08-14T14:23:14.227</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\protein\protein.css">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\protein\protein.css">
       <PackagePath>pages\protein\protein.css</PackagePath>
       <Modified>2014-08-14T14:23:14.257</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\signup\signup.css">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\signup\signup.css">
       <PackagePath>pages\signup\signup.css</PackagePath>
       <Modified>2014-08-14T14:23:14.261</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\thankyou\thankyou.css">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\thankyou\thankyou.css">
       <PackagePath>pages\thankyou\thankyou.css</PackagePath>
       <Modified>2014-08-14T14:23:14.298</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\welcome\welcome.css">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\welcome\welcome.css">
       <PackagePath>pages\welcome\welcome.css</PackagePath>
       <Modified>2014-08-14T14:23:14.302</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\images\another_logo.jpg">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\images\another_logo.jpg">
       <PackagePath>images\another_logo.jpg</PackagePath>
       <Modified>2014-08-14T14:23:13.555</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\images\another_logo.scale-100.jpg">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\images\another_logo.scale-100.jpg">
       <PackagePath>images\another_logo.scale-100.jpg</PackagePath>
       <Modified>2014-08-14T14:23:13.559</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\images\another_logo.scale-180.jpg">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\images\another_logo.scale-180.jpg">
       <PackagePath>images\another_logo.scale-180.jpg</PackagePath>
       <Modified>2014-08-14T14:23:13.564</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\images\bar1.jpg">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\images\bar1.jpg">
       <PackagePath>images\bar1.jpg</PackagePath>
       <Modified>2014-08-14T14:23:13.568</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\images\lemonLime.jpg">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\images\lemonLime.jpg">
       <PackagePath>images\lemonLime.jpg</PackagePath>
       <Modified>2014-08-14T14:23:13.572</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\images\LemonLimeZero.jpg">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\images\LemonLimeZero.jpg">
       <PackagePath>images\LemonLimeZero.jpg</PackagePath>
       <Modified>2014-08-14T14:23:13.520</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\images\logo1.jpg">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\images\logo1.jpg">
       <PackagePath>images\logo1.jpg</PackagePath>
       <Modified>2014-08-14T14:23:13.577</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\images\pomAcia.jpg">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\images\pomAcia.jpg">
       <PackagePath>images\pomAcia.jpg</PackagePath>
       <Modified>2014-08-14T14:23:13.593</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\images\logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\images\logo.scale-100.png">
       <PackagePath>images\logo.scale-100.png</PackagePath>
       <Modified>2014-08-14T14:23:13.572</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\images\logo_avatar.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\images\logo_avatar.scale-100.png">
       <PackagePath>images\logo_avatar.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2014-08-14T14:23:13.579</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\images\logo_avatar.scale-180.png">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\images\logo_avatar.scale-180.png">
       <PackagePath>images\logo_avatar.scale-180.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2014-08-14T14:23:13.581</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\images\logo_footer.png">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\images\logo_footer.png">
       <PackagePath>images\logo_footer.png</PackagePath>
       <Modified>2014-08-14T14:23:13.586</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\images\logo_footer_background.png">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\images\logo_footer_background.png">
       <PackagePath>images\logo_footer_background.png</PackagePath>
       <Modified>2014-08-14T14:23:13.588</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\images\logo_splash.png">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\images\logo_splash.png">
       <PackagePath>images\logo_splash.png</PackagePath>
       <Modified>2014-08-14T14:23:13.590</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\images\SmallLogo.scale-140.png">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\images\SmallLogo.scale-140.png">
       <PackagePath>images\SmallLogo.scale-140.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2014-08-14T14:23:13.522</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\images\splash_screen_logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\images\splash_screen_logo.scale-100.png">
       <PackagePath>images\splash_screen_logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2014-08-14T14:23:13.596</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\images\splash_screen_logo.scale-180.png">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\images\splash_screen_logo.scale-180.png">
       <PackagePath>images\splash_screen_logo.scale-180.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2014-08-14T14:23:13.598</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\images\storelogo.scale-180.png">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\images\storelogo.scale-180.png">
       <PackagePath>images\storelogo.scale-180.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2014-08-14T14:23:13.601</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\js\app_bar.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\js\app_bar.js">
       <PackagePath>js\app_bar.js</PackagePath>
       <Modified>2014-08-14T14:23:13.693</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\js\auth.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\js\auth.js">
       <PackagePath>js\auth.js</PackagePath>
       <Modified>2014-08-14T14:23:13.695</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\js\ChangeApp.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\js\ChangeApp.js">
       <PackagePath>js\ChangeApp.js</PackagePath>
       <Modified>2014-08-20T19:56:11.061</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\js\dataBaseGather.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\js\dataBaseGather.js">
       <PackagePath>js\dataBaseGather.js</PackagePath>
-      <Modified>2014-08-21T19:31:01.504</Modified>
+      <Modified>2014-08-22T16:05:12.691</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\js\dataStore.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\js\dataStore.js">
       <PackagePath>js\dataStore.js</PackagePath>
       <Modified>2014-08-14T14:23:13.706</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\js\default.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\js\default.js">
       <PackagePath>js\default.js</PackagePath>
       <Modified>2014-08-14T14:23:13.707</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\js\gatherInfo.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\js\gatherInfo.js">
       <PackagePath>js\gatherInfo.js</PackagePath>
       <Modified>2014-08-19T15:48:51.913</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\js\jquery.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\js\jquery.js">
       <PackagePath>js\jquery.js</PackagePath>
       <Modified>2014-08-14T14:23:13.747</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\js\MobileServices.intellisense.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\js\MobileServices.intellisense.js">
       <PackagePath>js\MobileServices.intellisense.js</PackagePath>
       <Modified>2014-08-14T14:23:13.614</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\js\MobileServices.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\js\MobileServices.js">
       <PackagePath>js\MobileServices.js</PackagePath>
       <Modified>2014-08-14T14:23:13.655</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\js\MobileServices.min.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\js\MobileServices.min.js">
       <PackagePath>js\MobileServices.min.js</PackagePath>
       <Modified>2014-08-14T14:23:13.688</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\js\myAzure.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\js\myAzure.js">
       <PackagePath>js\myAzure.js</PackagePath>
       <Modified>2014-08-14T14:23:13.762</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\js\navigator.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\js\navigator.js">
       <PackagePath>js\navigator.js</PackagePath>
       <Modified>2014-08-14T14:23:13.764</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\js\print.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\js\print.js">
       <PackagePath>js\print.js</PackagePath>
       <Modified>2014-08-14T14:23:13.765</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\js\removeInfo.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\js\removeInfo.js">
       <PackagePath>js\removeInfo.js</PackagePath>
       <Modified>2014-08-14T14:23:13.767</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\func\func.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\func\func.js">
       <PackagePath>pages\func\func.js</PackagePath>
       <Modified>2014-08-21T17:05:53.420</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\supl_sport_item_info\supl_sport_item_info.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\supl_sport_item_info\supl_sport_item_info.js">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.js</PackagePath>
       <Modified>2014-08-20T19:55:57.475</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\supl_sport\supl_sport.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\supl_sport\supl_sport.js">
       <PackagePath>pages\supl_sport\supl_sport.js</PackagePath>
       <Modified>2014-08-20T17:04:22.965</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\all_products\all_products.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\all_products\all_products.js">
       <PackagePath>pages\all_products\all_products.js</PackagePath>
       <Modified>2014-08-14T14:23:13.928</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\base\base.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\base\base.js">
       <PackagePath>pages\base\base.js</PackagePath>
       <Modified>2014-08-21T17:05:53.390</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\boost\boost.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\boost\boost.js">
       <PackagePath>pages\boost\boost.js</PackagePath>
       <Modified>2014-08-21T17:33:37.760</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\final\final.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\final\final.js">
       <PackagePath>pages\final\final.js</PackagePath>
       <Modified>2014-08-19T20:58:24.105</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\flav_sel\flav_sel.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\flav_sel\flav_sel.js">
       <PackagePath>pages\flav_sel\flav_sel.js</PackagePath>
-      <Modified>2014-08-21T17:30:58.323</Modified>
+      <Modified>2014-08-22T16:05:12.711</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\home\home.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\home\home.js">
       <PackagePath>pages\home\home.js</PackagePath>
       <Modified>2014-08-21T17:19:33.273</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\info_home\info_home.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\info_home\info_home.js">
       <PackagePath>pages\info_home\info_home.js</PackagePath>
       <Modified>2014-08-14T14:23:14.035</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\item_info\item_info.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\item_info\item_info.js">
       <PackagePath>pages\item_info\item_info.js</PackagePath>
       <Modified>2014-08-14T14:23:14.044</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\launch_page\launch_page.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\launch_page\launch_page.js">
       <PackagePath>pages\launch_page\launch_page.js</PackagePath>
       <Modified>2014-08-21T14:29:52.074</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login\login.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login\login.js">
       <PackagePath>pages\login\login.js</PackagePath>
       <Modified>2014-08-14T14:23:14.085</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login_sessions\all_products\all_products.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login_sessions\all_products\all_products.js">
       <PackagePath>pages\login_sessions\all_products\all_products.js</PackagePath>
       <Modified>2014-08-14T14:23:14.089</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login_sessions\base\base.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login_sessions\base\base.js">
       <PackagePath>pages\login_sessions\base\base.js</PackagePath>
       <Modified>2014-08-14T14:23:14.093</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login_sessions\boost\boost.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login_sessions\boost\boost.js">
       <PackagePath>pages\login_sessions\boost\boost.js</PackagePath>
       <Modified>2014-08-14T14:23:14.107</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login_sessions\final\final.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login_sessions\final\final.js">
       <PackagePath>pages\login_sessions\final\final.js</PackagePath>
       <Modified>2014-08-14T14:23:14.145</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login_sessions\flavor\flavor.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login_sessions\flavor\flavor.js">
       <PackagePath>pages\login_sessions\flavor\flavor.js</PackagePath>
       <Modified>2014-08-14T14:23:14.163</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login_sessions\flav_sel\flav_sel.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login_sessions\flav_sel\flav_sel.js">
       <PackagePath>pages\login_sessions\flav_sel\flav_sel.js</PackagePath>
       <Modified>2014-08-14T14:23:14.157</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login_sessions\home\home.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login_sessions\home\home.js">
       <PackagePath>pages\login_sessions\home\home.js</PackagePath>
       <Modified>2014-08-14T14:23:14.170</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login_sessions\info_home\info_home.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login_sessions\info_home\info_home.js">
       <PackagePath>pages\login_sessions\info_home\info_home.js</PackagePath>
       <Modified>2014-08-14T14:23:14.199</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login_sessions\item_info\item_info.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login_sessions\item_info\item_info.js">
       <PackagePath>pages\login_sessions\item_info\item_info.js</PackagePath>
       <Modified>2014-08-14T14:23:14.204</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login_sessions\launch_page\launch_page.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login_sessions\launch_page\launch_page.js">
       <PackagePath>pages\login_sessions\launch_page\launch_page.js</PackagePath>
       <Modified>2014-08-14T14:23:14.225</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login_sessions\profile\profile.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login_sessions\profile\profile.js">
       <PackagePath>pages\login_sessions\profile\profile.js</PackagePath>
       <Modified>2014-08-14T14:23:14.241</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login_sessions\protein\protein.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login_sessions\protein\protein.js">
       <PackagePath>pages\login_sessions\protein\protein.js</PackagePath>
       <Modified>2014-08-14T14:23:14.247</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login_sessions\thankyou\thankyou.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login_sessions\thankyou\thankyou.js">
       <PackagePath>pages\login_sessions\thankyou\thankyou.js</PackagePath>
       <Modified>2014-08-14T14:23:14.254</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\protein\protein.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\protein\protein.js">
       <PackagePath>pages\protein\protein.js</PackagePath>
       <Modified>2014-08-14T14:23:14.259</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\signup\signup.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\signup\signup.js">
       <PackagePath>pages\signup\signup.js</PackagePath>
       <Modified>2014-08-14T14:23:14.272</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\thankyou\thankyou.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\thankyou\thankyou.js">
       <PackagePath>pages\thankyou\thankyou.js</PackagePath>
       <Modified>2014-08-14T14:23:14.301</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\welcome\welcome.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\welcome\welcome.js">
       <PackagePath>pages\welcome\welcome.js</PackagePath>
       <Modified>2014-08-14T14:23:14.305</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\services\mobile services\thinkitdrinkitData\service.js">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\services\mobile services\thinkitdrinkitData\service.js">
       <PackagePath>services\mobile services\thinkitdrinkitData\service.js</PackagePath>
       <Modified>2014-08-14T14:23:14.307</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\default.html">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\default.html">
       <PackagePath>default.html</PackagePath>
       <Modified>2014-08-14T17:37:27.857</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\func\func.html">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\func\func.html">
       <PackagePath>pages\func\func.html</PackagePath>
       <Modified>2014-08-21T15:22:50.470</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\supl_sport_item_info\supl_sport_item_info.html">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\supl_sport_item_info\supl_sport_item_info.html">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.html</PackagePath>
-      <Modified>2014-08-21T20:02:56.889</Modified>
+      <Modified>2014-08-22T14:20:50.464</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\supl_sport\supl_sport.html">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\supl_sport\supl_sport.html">
       <PackagePath>pages\supl_sport\supl_sport.html</PackagePath>
       <Modified>2014-08-14T14:23:14.278</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\all_products\all_products.html">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\all_products\all_products.html">
       <PackagePath>pages\all_products\all_products.html</PackagePath>
       <Modified>2014-08-14T14:23:13.777</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\base\base.html">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\base\base.html">
       <PackagePath>pages\base\base.html</PackagePath>
-      <Modified>2014-08-21T15:24:58.003</Modified>
+      <Modified>2014-08-22T16:10:06.695</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\boost\boost.html">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\boost\boost.html">
       <PackagePath>pages\boost\boost.html</PackagePath>
       <Modified>2014-08-21T17:33:09.463</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\final\final.html">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\final\final.html">
       <PackagePath>pages\final\final.html</PackagePath>
       <Modified>2014-08-14T14:23:13.962</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\flav_sel\flav_sel.html">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\flav_sel\flav_sel.html">
       <PackagePath>pages\flav_sel\flav_sel.html</PackagePath>
       <Modified>2014-08-21T16:55:53.844</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\home\home.html">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\home\home.html">
       <PackagePath>pages\home\home.html</PackagePath>
       <Modified>2014-08-21T15:10:14.035</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\info_home\info_home.html">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\info_home\info_home.html">
       <PackagePath>pages\info_home\info_home.html</PackagePath>
       <Modified>2014-08-14T14:23:14.020</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\item_info\item_info.html">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\item_info\item_info.html">
       <PackagePath>pages\item_info\item_info.html</PackagePath>
       <Modified>2014-08-14T14:23:14.038</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\launch_page\launch_page.html">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\launch_page\launch_page.html">
       <PackagePath>pages\launch_page\launch_page.html</PackagePath>
       <Modified>2014-08-14T17:37:27.918</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login\login.html">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login\login.html">
       <PackagePath>pages\login\login.html</PackagePath>
       <Modified>2014-08-14T14:23:14.076</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login_sessions\all_products\all_products.html">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login_sessions\all_products\all_products.html">
       <PackagePath>pages\login_sessions\all_products\all_products.html</PackagePath>
       <Modified>2014-08-14T14:23:14.088</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login_sessions\base\base.html">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login_sessions\base\base.html">
       <PackagePath>pages\login_sessions\base\base.html</PackagePath>
       <Modified>2014-08-14T14:23:14.092</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login_sessions\boost\boost.html">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login_sessions\boost\boost.html">
       <PackagePath>pages\login_sessions\boost\boost.html</PackagePath>
       <Modified>2014-08-14T14:23:14.097</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login_sessions\final\final.html">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login_sessions\final\final.html">
       <PackagePath>pages\login_sessions\final\final.html</PackagePath>
       <Modified>2014-08-14T14:23:14.136</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login_sessions\flavor\flavor.html">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login_sessions\flavor\flavor.html">
       <PackagePath>pages\login_sessions\flavor\flavor.html</PackagePath>
       <Modified>2014-08-14T14:23:14.160</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login_sessions\flav_sel\flav_sel.html">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login_sessions\flav_sel\flav_sel.html">
       <PackagePath>pages\login_sessions\flav_sel\flav_sel.html</PackagePath>
       <Modified>2014-08-14T14:23:14.152</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login_sessions\home\home.html">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login_sessions\home\home.html">
       <PackagePath>pages\login_sessions\home\home.html</PackagePath>
       <Modified>2014-08-14T14:23:14.169</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login_sessions\info_home\info_home.html">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login_sessions\info_home\info_home.html">
       <PackagePath>pages\login_sessions\info_home\info_home.html</PackagePath>
       <Modified>2014-08-14T14:23:14.172</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login_sessions\item_info\item_info.html">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login_sessions\item_info\item_info.html">
       <PackagePath>pages\login_sessions\item_info\item_info.html</PackagePath>
       <Modified>2014-08-14T14:23:14.201</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login_sessions\launch_page\launch_page.html">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login_sessions\launch_page\launch_page.html">
       <PackagePath>pages\login_sessions\launch_page\launch_page.html</PackagePath>
       <Modified>2014-08-14T14:23:14.207</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login_sessions\profile\profile.html">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login_sessions\profile\profile.html">
       <PackagePath>pages\login_sessions\profile\profile.html</PackagePath>
       <Modified>2014-08-14T14:23:14.233</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login_sessions\protein\protein.html">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login_sessions\protein\protein.html">
       <PackagePath>pages\login_sessions\protein\protein.html</PackagePath>
       <Modified>2014-08-14T14:23:14.244</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login_sessions\thankyou\thankyou.html">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login_sessions\thankyou\thankyou.html">
       <PackagePath>pages\login_sessions\thankyou\thankyou.html</PackagePath>
       <Modified>2014-08-14T14:23:14.252</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\protein\protein.html">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\protein\protein.html">
       <PackagePath>pages\protein\protein.html</PackagePath>
       <Modified>2014-08-14T14:23:14.258</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\signup\signup.html">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\signup\signup.html">
       <PackagePath>pages\signup\signup.html</PackagePath>
       <Modified>2014-08-14T14:23:14.263</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\thankyou\thankyou.html">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\thankyou\thankyou.html">
       <PackagePath>pages\thankyou\thankyou.html</PackagePath>
       <Modified>2014-08-14T14:23:14.300</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\welcome\welcome.html">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\welcome\welcome.html">
       <PackagePath>pages\welcome\welcome.html</PackagePath>
       <Modified>2014-08-14T14:23:14.303</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\packages.config">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\packages.config">
       <PackagePath>packages.config</PackagePath>
       <Modified>2014-08-14T14:23:13.772</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\func.bck\func.css.bck">
-      <PackagePath>pages\func.bck\func.css.bck</PackagePath>
-      <Modified>2014-08-14T17:37:27.885</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\func.bck\func.html.bck">
-      <PackagePath>pages\func.bck\func.html.bck</PackagePath>
-      <Modified>2014-08-14T17:37:27.886</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\func.bck\func.js.bck">
-      <PackagePath>pages\func.bck\func.js.bck</PackagePath>
-      <Modified>2014-08-14T17:37:27.888</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login_sessions\base\base.css_notused">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login_sessions\base\base.css_notused">
       <PackagePath>pages\login_sessions\base\base.css_notused</PackagePath>
       <Modified>2014-08-14T14:23:14.090</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login_sessions\final\final.css_notused">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login_sessions\final\final.css_notused">
       <PackagePath>pages\login_sessions\final\final.css_notused</PackagePath>
       <Modified>2014-08-14T14:23:14.135</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login_sessions\flavor\flavor.css_notused">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login_sessions\flavor\flavor.css_notused">
       <PackagePath>pages\login_sessions\flavor\flavor.css_notused</PackagePath>
       <Modified>2014-08-14T14:23:14.159</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login_sessions\flav_sel\flav_sel.css_notused">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login_sessions\flav_sel\flav_sel.css_notused">
       <PackagePath>pages\login_sessions\flav_sel\flav_sel.css_notused</PackagePath>
       <Modified>2014-08-14T14:23:14.148</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login_sessions\home\home.css_notused">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login_sessions\home\home.css_notused">
       <PackagePath>pages\login_sessions\home\home.css_notused</PackagePath>
       <Modified>2014-08-14T14:23:14.165</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login_sessions\info_home\info_home.css_notused">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login_sessions\info_home\info_home.css_notused">
       <PackagePath>pages\login_sessions\info_home\info_home.css_notused</PackagePath>
       <Modified>2014-08-14T14:23:14.171</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login_sessions\item_info\item_info.css_notused">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login_sessions\item_info\item_info.css_notused">
       <PackagePath>pages\login_sessions\item_info\item_info.css_notused</PackagePath>
       <Modified>2014-08-14T14:23:14.200</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login_sessions\launch_page\launch_page.css_notused">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login_sessions\launch_page\launch_page.css_notused">
       <PackagePath>pages\login_sessions\launch_page\launch_page.css_notused</PackagePath>
       <Modified>2014-08-14T14:23:14.206</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login_sessions\base\base.js_bck">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login_sessions\base\base.js_bck">
       <PackagePath>pages\login_sessions\base\base.js_bck</PackagePath>
       <Modified>2014-08-14T14:23:14.095</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login_sessions\boost\boost.js_bck">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login_sessions\boost\boost.js_bck">
       <PackagePath>pages\login_sessions\boost\boost.js_bck</PackagePath>
       <Modified>2014-08-14T14:23:14.133</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login_sessions\boost\boost.html_bck">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login_sessions\boost\boost.html_bck">
       <PackagePath>pages\login_sessions\boost\boost.html_bck</PackagePath>
       <Modified>2014-08-14T14:23:14.102</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login_sessions\protein\protein.css_notusing">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login_sessions\protein\protein.css_notusing">
       <PackagePath>pages\login_sessions\protein\protein.css_notusing</PackagePath>
       <Modified>2014-08-14T14:23:14.243</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\pages\login_sessions\thankyou\thankyou.css_bck">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\pages\login_sessions\thankyou\thankyou.css_bck">
       <PackagePath>pages\login_sessions\thankyou\thankyou.css_bck</PackagePath>
       <Modified>2014-08-14T14:23:14.251</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\bin\x64\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v6\App5\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-08-21T17:23:48.724</Modified>
+      <Modified>2014-08-22T18:22:05.358</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
