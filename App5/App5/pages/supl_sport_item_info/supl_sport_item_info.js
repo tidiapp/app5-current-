@@ -12,6 +12,17 @@
         // populates the page elements with the app's data.
         ready: function (element, options) {
 
+            
+
+            //$('#webview').slimScroll({
+            //    position: 'right',
+            //    height: '140px',
+            //    railVisible: true,
+            //    alwaysVisible: true
+            //});
+            $('#webview').width('950').height('540').css('overflow-y', 'visible');
+
+
             //document.getElementById("print").addEventListener("click", PrintButtonHandler, false);
             // Register for Print Contract
             registerForPrintContract();

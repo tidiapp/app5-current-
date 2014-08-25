@@ -173,27 +173,27 @@
 #sport_info2 {
     float: left;
     /*width: 710px;*/
-    height: 540px;
+    /*height: 540px;*/
     margin-right: 40px;
 }
 
 #link_wrap_remove_stuff {
     float: left;
     /*width: 740px;*/
-    height: 40px;
+    /*height: 40px;*/
 }
 /*milo: tried to set these below they will not work in webview or a div that wraps webview
     -ms-overflow-style: scrollbar;
     -ms-scrollbar-base-color: ActiveBorder;
     overflow-y: visible;
 */
-#webview {
-    width: 950px;
 
+/*#webview {
+    width: 950px;
     height: 540px;
 }
 
 #webview2 {
     width: 550px;
     height: 540px;
-}
+}*/
