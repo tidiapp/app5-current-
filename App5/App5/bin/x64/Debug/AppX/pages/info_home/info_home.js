@@ -30,9 +30,21 @@
             webviewControl.addEventListener("MSWebViewDOMContentLoaded", domContentLoaded);
             webviewControl.addEventListener("MSWebViewNavigationCompleted", navigationCompleted);
             webviewControl.addEventListener("MSWebViewUnviewableContentIdentified", unviewableContentIdentified);
+            //webviewControl.navigate(new Windows.Foundation.Uri("http://storeapp.thinkitdrinkit.com/soccer12/"));
+            
+            // Create a URI describing the site to navigate to
+            var siteUrl = new Windows.Foundation.Uri("http://storeapp.thinkitdrinkit.com/soccer13/");
 
-            webviewControl.navigate("https://www.shoesofprey.com/content/concept.html");
+            // Specify the type of request
+            var httpRequestMessage = new Windows.Web.Http.HttpRequestMessage(Windows.Web.Http.HttpMethod.get, siteUrl);
 
+            // Append headers to request the webserver to check against the cache 
+            httpRequestMessage.headers.append("Cache-Control", "no-cache");
+
+            httpRequestMessage.headers.append("Pragma", "no-cache");
+
+            // Navigate the WebView with the request info
+            webviewControl.navigateWithHttpRequestMessage(httpRequestMessage);
 
         },
 
@@ -99,6 +111,7 @@
     }
 
     // NavigationStarting event is triggered when the WebView begins navigating to a new URL.
+
     function navigationStarting(e) {
         // clear any previous error messages that were displayed with WinJS.log
         WinJS.log && WinJS.log("", "sdksample", "status");
@@ -114,11 +127,14 @@
 
     function domContentLoaded(e) {
         appendLog && appendLog("Content for " + e.uri + " has finished loading.\n");
+        $('#webview').width('1000').height('550').css('overflow-y' , 'auto', '-ms-overflow-style' , 'scrollbar' , '-ms-scrollbar-base-color' , 'ActiveBorder');
+
     }
 
     // NavigationCompleted event is triggered either after all the DOM content has been loaded
     // successfully, or when loading failed.  The event arg for this is different from the other
     // navigation events, and includes a isSuccess field to indicate the status.
+
     function navigationCompleted(e) {
         updateNavigatingState(false);
 
@@ -131,12 +147,14 @@
 
     // UnviewableContentIdentified event is triggered when the URL being navigated to is not
     // a type that can be displayed in WebView, for example an EXE file or a ZIP file.
+
     function unviewableContentIdentified(e) {
         updateNavigatingState(false);
         WinJS.log && WinJS.log(e.uri + " cannot be displayed in WebView", "sdksample", "error");
     }
 
     // Appends a line of text to logArea
+
     function appendLog(message) {
         var logArea = document.getElementById("logArea");
         logArea.value += message;

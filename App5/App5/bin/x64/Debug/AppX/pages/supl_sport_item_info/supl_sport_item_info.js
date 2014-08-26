@@ -20,7 +20,22 @@
             //    railVisible: true,
             //    alwaysVisible: true
             //});
-            $('#webview').width('950').height('540').css('overflow-y', 'visible');
+
+//milo: WEBVIEW STUFF COMING FROM WORDPRESS AND IS REFRESHING EVERY 10 MINUTES
+            
+            //var webviewControl = document.getElementById("webview");
+            //webviewControl.navigate("http://storeapp.thinkitdrinkit.com/soccer/");
+            
+
+
+            //$('#sport_info2').width('960').height('550').css('overflow-y', 'auto');
+            $('#webview').width('950').height('540');
+
+            $('#link_wrap_remove_stuff').width('560').height('550').css('overflow-y', 'auto');
+            $('#webview2').width('550').height('540');
+
+
+
 
 
             //document.getElementById("print").addEventListener("click", PrintButtonHandler, false);
@@ -30,9 +45,11 @@
             // TODO: Initialize the page here.
             WinJS.Binding.processAll(element, age_data.model);
             design.getSport_info();
+
             design.changeTextColor();
             var updated_name = roamingSettings.values["Item_choosen"].replace(/^\s+/, '').replace(/\s+$/, '');
             document.getElementById("item_name").textContent = "Information on " + updated_name + ".";
+
             server.sport_info(updated_name);
 
             //$("#main_footer").hide();

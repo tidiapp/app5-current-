@@ -147,7 +147,7 @@
 
 /*Milo: for printing*/
 #win_listview_host .win-listview  {
-    width: 1680px;
+    width: 1570px;
     height: 545px;
     /*border: 2px solid pink;*/
 }
@@ -167,7 +167,7 @@
 }*/
 
 #webview_wrap {
-    width: 1600px;
+    width: 1560px;
 }
 
 #sport_info2 {
@@ -175,25 +175,30 @@
     /*width: 710px;*/
     /*height: 540px;*/
     margin-right: 40px;
+
 }
 
 #link_wrap_remove_stuff {
     float: left;
     /*width: 740px;*/
     /*height: 40px;*/
+
 }
-/*milo: tried to set these below they will not work in webview or a div that wraps webview
+/*milo: tried to set these below they will not work in webview, a div that wraps webview and JS MAYBE KEEP TRYING IN DIFF PLACES
     -ms-overflow-style: scrollbar;
     -ms-scrollbar-base-color: ActiveBorder;
-    overflow-y: visible;
+    overflow-y: auto;
 */
 
-/*#webview {
-    width: 950px;
-    height: 540px;
+#webview {
+    /*width: 950px;
+    height: 540px;*/
+
 }
 
 #webview2 {
-    width: 550px;
-    height: 540px;
-}*/
+    /*width: 550px;
+    height: 540px;*/
+
+
+}

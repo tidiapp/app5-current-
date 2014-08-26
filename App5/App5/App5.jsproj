@@ -123,6 +123,9 @@
     <Content Include="pages\func\func.css" />
     <Content Include="pages\func\func.html" />
     <Content Include="pages\func\func.js" />
+    <Content Include="pages\info_home - Copy\info_home.css" />
+    <Content Include="pages\info_home - Copy\info_home.html" />
+    <Content Include="pages\info_home - Copy\info_home.js" />
     <Content Include="pages\supl_sport_item_info\supl_sport_item_info.css" />
     <Content Include="pages\supl_sport_item_info\supl_sport_item_info.html" />
     <Content Include="pages\supl_sport_item_info\supl_sport_item_info.js" />
