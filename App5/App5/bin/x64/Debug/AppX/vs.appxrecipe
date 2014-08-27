@@ -46,7 +46,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.css">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.css</PackagePath>
-      <Modified>2014-08-26T18:57:46.559</Modified>
+      <Modified>2014-08-27T21:09:46.536</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\supl_sport\supl_sport.css">
       <PackagePath>pages\supl_sport\supl_sport.css</PackagePath>
@@ -280,7 +280,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.js">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.js</PackagePath>
-      <Modified>2014-08-26T19:41:41.346</Modified>
+      <Modified>2014-08-27T21:06:04.969</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\supl_sport\supl_sport.js">
       <PackagePath>pages\supl_sport\supl_sport.js</PackagePath>
@@ -312,7 +312,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\info_home\info_home.js">
       <PackagePath>pages\info_home\info_home.js</PackagePath>
-      <Modified>2014-08-26T20:39:24.757</Modified>
+      <Modified>2014-08-27T16:12:27.635</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\item_info\item_info.js">
       <PackagePath>pages\item_info\item_info.js</PackagePath>
@@ -460,7 +460,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\default.html">
       <PackagePath>default.html</PackagePath>
-      <Modified>2014-08-25T13:52:15.172</Modified>
+      <Modified>2014-08-27T18:33:33.859</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\func\func.html">
       <PackagePath>pages\func\func.html</PackagePath>
@@ -472,7 +472,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.html">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.html</PackagePath>
-      <Modified>2014-08-26T19:41:41.364</Modified>
+      <Modified>2014-08-27T21:06:04.955</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\supl_sport\supl_sport.html">
       <PackagePath>pages\supl_sport\supl_sport.html</PackagePath>

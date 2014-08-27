@@ -33,7 +33,9 @@
             //webviewControl.navigate(new Windows.Foundation.Uri("http://storeapp.thinkitdrinkit.com/soccer12/"));
             
             // Create a URI describing the site to navigate to
-            var siteUrl = new Windows.Foundation.Uri("http://storeapp.thinkitdrinkit.com/soccer13/");
+
+            //milo: REMOVING CACHE IN APP; UNISTALL APP FROM START PAGE OF WINDOWS 8.1 
+            var siteUrl = new Windows.Foundation.Uri("http://storeapp.thinkitdrinkit.com/soccer-supplements/");
 
             // Specify the type of request
             var httpRequestMessage = new Windows.Web.Http.HttpRequestMessage(Windows.Web.Http.HttpMethod.get, siteUrl);

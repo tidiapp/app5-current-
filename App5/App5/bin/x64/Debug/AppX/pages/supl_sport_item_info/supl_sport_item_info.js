@@ -34,6 +34,11 @@
             $('#link_wrap_remove_stuff').width('560').height('550').css('overflow-y', 'auto');
             $('#webview2').width('550').height('540');
 
+            document.getElementById("scroll_bar").removeAttribute("hidden");
+            document.getElementById("scroll_bar").textContent = "SCROLL TO CONTINUE";
+
+            document.getElementById("scroll_bar2").removeAttribute("hidden");
+            document.getElementById("scroll_bar2").textContent = "SCROLL TO CONTINUE";
 
 
 

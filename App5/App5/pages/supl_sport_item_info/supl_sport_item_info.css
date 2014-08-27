@@ -202,3 +202,21 @@
 
 
 }
+
+#scroll_bar {
+    width: 950px;
+    margin-left: 25px;
+    text-align: center;
+    font-size: 15px;
+    margin-top: -10px;
+    float: left;
+}
+
+#scroll_bar2 {
+    width: 550px;
+    margin-left: 40px;
+    text-align: center;
+    font-size: 15px;
+    margin-top: -10px;
+    float: left;
+}
