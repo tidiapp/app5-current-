@@ -208,6 +208,12 @@
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\info_home - Copy\info_home.js">
       <PackagePath>pages\info_home - Copy\info_home.js</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\info_home\info_home.js">
+      <PackagePath>pages\info_home\info_home.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info - Copy.js">
+      <PackagePath>pages\supl_sport_item_info\supl_sport_item_info - Copy.js</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.js">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.js</PackagePath>
     </AppxPackagedFile>
@@ -231,9 +237,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\home\home.js">
       <PackagePath>pages\home\home.js</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\info_home\info_home.js">
-      <PackagePath>pages\info_home\info_home.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\item_info\item_info.js">
       <PackagePath>pages\item_info\item_info.js</PackagePath>
@@ -448,6 +451,15 @@
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\packages.config">
       <PackagePath>packages.config</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\info_home\info_home.js_bck">
+      <PackagePath>pages\info_home\info_home.js_bck</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\login_sessions\base\base.js_bck">
+      <PackagePath>pages\login_sessions\base\base.js_bck</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\login_sessions\boost\boost.js_bck">
+      <PackagePath>pages\login_sessions\boost\boost.js_bck</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\login_sessions\base\base.css_notused">
       <PackagePath>pages\login_sessions\base\base.css_notused</PackagePath>
     </AppxPackagedFile>
@@ -471,12 +483,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\login_sessions\launch_page\launch_page.css_notused">
       <PackagePath>pages\login_sessions\launch_page\launch_page.css_notused</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\login_sessions\base\base.js_bck">
-      <PackagePath>pages\login_sessions\base\base.js_bck</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\login_sessions\boost\boost.js_bck">
-      <PackagePath>pages\login_sessions\boost\boost.js_bck</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\login_sessions\boost\boost.html_bck">
       <PackagePath>pages\login_sessions\boost\boost.html_bck</PackagePath>

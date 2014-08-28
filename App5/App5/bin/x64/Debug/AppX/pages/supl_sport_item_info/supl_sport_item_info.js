@@ -11,21 +11,56 @@
         // This function is called whenever a user navigates to this page. It
         // populates the page elements with the app's data.
         ready: function (element, options) {
+            // TODO: Initialize the page here.
+            WinJS.Binding.processAll(element, age_data.model);
+            design.getSport_info();
 
-            
+            design.changeTextColor();
+            var updated_name = roamingSettings.values["Item_choosen"].replace(/^\s+/, '').replace(/\s+$/, '');
+            document.getElementById("item_name").textContent = "Information on " + updated_name + ".";
 
-            //$('#webview').slimScroll({
-            //    position: 'right',
-            //    height: '140px',
-            //    railVisible: true,
-            //    alwaysVisible: true
-            //});
+            server.sport_info(updated_name);
+
+            //$("#main_footer").hide();
+            //document.getElementById("link_webview").textContent = updated_name;
+            //document.onload = function () {
+
+            //   // console.log(document.getElementById("sport_info_info").innerText.replace(/eros/g, "<span>cras</span>"));
+            //    if (document.getElementById("sport_info_info2").textContent === "") {
+            //        document.getElementById("sport_info_info2").setAttribute("hidden", true)
+            //    }
+            //    function test() {
+            //        document.getElementById("sport_info_info").style.color = "blue";
+            //    };
+            //    test1 = test();
+            //};
+
 
 //milo: WEBVIEW STUFF COMING FROM WORDPRESS AND IS REFRESHING EVERY 10 MINUTES
             
-            //var webviewControl = document.getElementById("webview");
-            //webviewControl.navigate("http://storeapp.thinkitdrinkit.com/soccer/");
-            
+            var webviewControl = document.getElementById("webview");
+            webviewControl.addEventListener("MSWebViewNavigationStarting", navigationStarting);
+            webviewControl.addEventListener("MSWebViewDOMContentLoaded", domContentLoaded);
+            webviewControl.navigate(new Windows.Foundation.Uri("http://storeapp.thinkitdrinkit.com/soccer-supplements/"));
+
+            function navigationStarting() {
+                updateNavigatingState(true);
+            }
+
+            function updateNavigatingState(isNavigating) {
+                document.getElementById("progressRing").style.visibility = (isNavigating ? "visible" : "hidden");
+            }
+
+            function domContentLoaded() {
+                updateNavigatingState(false);
+                //$('#sport_info2').slimScroll({
+                //    position: 'right',
+                //    height: '140px',
+                //    railVisible: true,
+                //    alwaysVisible: true
+                //});
+
+            }
 
 
             //$('#sport_info2').width('960').height('550').css('overflow-y', 'auto');
@@ -41,35 +76,9 @@
             document.getElementById("scroll_bar2").textContent = "SCROLL TO CONTINUE";
 
 
-
-
             //document.getElementById("print").addEventListener("click", PrintButtonHandler, false);
             // Register for Print Contract
             registerForPrintContract();
-
-            // TODO: Initialize the page here.
-            WinJS.Binding.processAll(element, age_data.model);
-            design.getSport_info();
-
-            design.changeTextColor();
-            var updated_name = roamingSettings.values["Item_choosen"].replace(/^\s+/, '').replace(/\s+$/, '');
-            document.getElementById("item_name").textContent = "Information on " + updated_name + ".";
-
-            server.sport_info(updated_name);
-
-            //$("#main_footer").hide();
-            //document.getElementById("link_webview").textContent = updated_name;
-            //document.onload = function () {
-                
-            //   // console.log(document.getElementById("sport_info_info").innerText.replace(/eros/g, "<span>cras</span>"));
-            //    if (document.getElementById("sport_info_info2").textContent === "") {
-            //        document.getElementById("sport_info_info2").setAttribute("hidden", true)
-            //    }
-            //    function test() {
-            //        document.getElementById("sport_info_info").style.color = "blue";
-            //    };
-            //    test1 = test();
-            //};
 
         },
 
@@ -153,12 +162,12 @@
 
     });
 
-    function inner_site_browsing(e) {
-        var Uri = new Windows.Foundation.Uri(e.uri);
-        if (Uri.domain != event.srcElement.textContent) {
-            e.preventDefault();
-        }
-    }
+    //function inner_site_browsing(e) {
+    //    var Uri = new Windows.Foundation.Uri(e.uri);
+    //    if (Uri.domain != event.srcElement.textContent) {
+    //        e.preventDefault();
+    //    }
+    //}
 
     //setTimeout(test1, 5000)
 })();

@@ -34,34 +34,20 @@
             //    };
             //    test1 = test();
             //};
-
-
-//milo: WEBVIEW STUFF COMING FROM WORDPRESS AND IS REFRESHING EVERY 10 MINUTES
             
+            //$('#webview').slimScroll({
+            //    position: 'right',
+            //    height: '140px',
+            //    railVisible: true,
+            //    alwaysVisible: true
+            //});
+
+//milo: WEBVIEW STUFF COMING FROM WORDPRESS AND IS REFRESHING EVERY 10 MINUTES maybe at best: SOLUTION UNSTILL APP FROM START PAGE (it removes cache mysteriously saved)
             var webviewControl = document.getElementById("webview");
             webviewControl.addEventListener("MSWebViewNavigationStarting", navigationStarting);
             webviewControl.addEventListener("MSWebViewDOMContentLoaded", domContentLoaded);
-            webviewControl.navigate(new Windows.Foundation.Uri("http://storeapp.thinkitdrinkit.com/soccer-supplements/"));
-
-            function navigationStarting() {
-                updateNavigatingState(true);
-            }
-
-            function updateNavigatingState(isNavigating) {
-                document.getElementById("progressRing").style.visibility = (isNavigating ? "visible" : "hidden");
-            }
-
-            function domContentLoaded() {
-                updateNavigatingState(false);
-                //$('#sport_info2').slimScroll({
-                //    position: 'right',
-                //    height: '140px',
-                //    railVisible: true,
-                //    alwaysVisible: true
-                //});
-
-            }
-
+            //webviewControl.navigate(new Windows.Foundation.Uri("http://storeapp.thinkitdrinkit.com/soccer-supplements/"));
+            //webviewControl.navigate("http://storeapp.thinkitdrinkit.com/soccer-supplements/");
 
             //$('#sport_info2').width('960').height('550').css('overflow-y', 'auto');
             $('#webview').width('950').height('540');
@@ -80,6 +66,8 @@
             // Register for Print Contract
             registerForPrintContract();
 
+ 
+
         },
 
         unload: function () {
@@ -94,6 +82,22 @@
             // TODO: Respond to changes in layout.
         }
     });
+
+
+    function navigationStarting() {
+        updateNavigatingState(true);
+    }
+
+    function updateNavigatingState(isNavigating) {
+        document.getElementById("progressRing").style.visibility = (isNavigating ? "visible" : "hidden");
+    }
+
+    function domContentLoaded() {
+        updateNavigatingState(false);
+    }
+
+
+
 
     function registerForPrintContract() {
         var printManager = Windows.Graphics.Printing.PrintManager.getForCurrentView();
@@ -162,12 +166,12 @@
 
     });
 
-    //function inner_site_browsing(e) {
-    //    var Uri = new Windows.Foundation.Uri(e.uri);
-    //    if (Uri.domain != event.srcElement.textContent) {
-    //        e.preventDefault();
-    //    }
-    //}
+    function inner_site_browsing(e) {
+        var Uri = new Windows.Foundation.Uri(e.uri);
+        if (Uri.domain != event.srcElement.textContent) {
+            e.preventDefault();
+        }
+    }
 
     //setTimeout(test1, 5000)
 })();

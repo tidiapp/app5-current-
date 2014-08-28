@@ -11,9 +11,8 @@
 
     <link href="supl_sport_item_info.css" rel="stylesheet" />
     <script src="supl_sport_item_info.js"></script>
-
-    <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script src="../../js/lib/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script>-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="../../js/lib/jQuery-slimScroll-1.3.0/jquery.slimscroll.min.js"></script>
 
     <!--<script src="/js/print.js"></script>-->
 </head>
@@ -24,6 +23,8 @@
                 <button data-win-control="WinJS.UI.BackButton"></button>
                 <h1 id="item_name" class="titlearea win-type-ellipsis"></h1>
             </header>
+            <progress id="progressRing" class="win-ring win-medium" style="visibility: hidden"></progress>
+
             <section id="win_listview_host" aria-label="Main content" role="main">
 
                 <div id="sport_info" class="sport_info_class" data-win-control="WinJS.Binding.Template">
@@ -31,18 +32,18 @@
                     <!-- Milo: added data stuff from http://msdn.microsoft.com/en-us/library/windows/apps/dn609715.aspx -->
 
                     <div id="webview_wrap" >
-
-                        <div id="sport_info2" class="print_charm_content">
-                            <!-- milo from print.js -->
-                            <!--<button id="print" onclick="webview_clicked.PrintButtonHandler();" class="print_charm">print</button>-->
-                            <x-ms-webview id="webview" data-win-bind="src: infoLink"></x-ms-webview>
-                        </div>
-
                         <div id="link_wrap_remove_stuff">
                             <x-ms-webview id="webview2" data-win-bind="src: infoLink2"></x-ms-webview>
                         </div>
                     </div>
+                </div>
+                <!--milo: WinJS.Binding.Template ends  -->
 
+                <div id="sport_info2" class="print_charm_content">
+                    <!-- milo from print.js -->
+                    <!--<button id="print" onclick="webview_clicked.PrintButtonHandler();" class="print_charm">print</button>-->
+                    <!--Milo: removed from webview data-win-bind="src: infoLink"  -->
+                    <x-ms-webview id="webview"></x-ms-webview>
                 </div>
 
         <div id="sport_template_placement" data-win-control="WinJS.UI.ListView" data-win-bind="winControl.itemDataSource: item_info_sport.dataSource" data-win-options="{
