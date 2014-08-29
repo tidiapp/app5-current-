@@ -202,6 +202,9 @@
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\js\removeInfo.js">
       <PackagePath>js\removeInfo.js</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\js\showPopupUI.js">
+      <PackagePath>js\showPopupUI.js</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\func\func.js">
       <PackagePath>pages\func\func.js</PackagePath>
     </AppxPackagedFile>
@@ -210,9 +213,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\info_home\info_home.js">
       <PackagePath>pages\info_home\info_home.js</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info - Copy.js">
-      <PackagePath>pages\supl_sport_item_info\supl_sport_item_info - Copy.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.js">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.js</PackagePath>

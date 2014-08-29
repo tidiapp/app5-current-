@@ -56,6 +56,7 @@ js\myAzure.js
 js\navigator.js
 js\print.js
 js\removeInfo.js
+js\showPopupUI.js
 packages.config
 pages\all_products\all_products.css
 pages\all_products\all_products.html
@@ -145,7 +146,6 @@ pages\signup\signup.js
 pages\supl_sport\supl_sport.css
 pages\supl_sport\supl_sport.html
 pages\supl_sport\supl_sport.js
-pages\supl_sport_item_info\supl_sport_item_info - Copy.js
 pages\supl_sport_item_info\supl_sport_item_info.css
 pages\supl_sport_item_info\supl_sport_item_info.html
 pages\supl_sport_item_info\supl_sport_item_info.js

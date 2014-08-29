@@ -119,6 +119,7 @@
     <Content Include="default.html" />
     <Content Include="js\print.js" />
     <Content Include="js\removeInfo.js" />
+    <Content Include="js\showPopupUI.js" />
     <Content Include="packages.config" />
     <Content Include="pages\func\func.css" />
     <Content Include="pages\func\func.html" />
@@ -127,7 +128,6 @@
     <Content Include="pages\info_home - Copy\info_home.html" />
     <Content Include="pages\info_home - Copy\info_home.js" />
     <Content Include="pages\info_home\info_home.js" />
-    <Content Include="pages\supl_sport_item_info\supl_sport_item_info - Copy.js" />
     <Content Include="pages\supl_sport_item_info\supl_sport_item_info.css" />
     <Content Include="pages\supl_sport_item_info\supl_sport_item_info.html" />
     <Content Include="pages\supl_sport_item_info\supl_sport_item_info.js" />

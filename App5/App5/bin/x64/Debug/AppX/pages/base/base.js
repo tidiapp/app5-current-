@@ -38,8 +38,16 @@
                 document.getElementById("func_pic").src = roamingSettings.values["Func_pic"];
                 document.getElementById("where_you_are2").textContent = "You have choosen the " + roamingSettings.values["Func_name"] + " Function." + " You have 2 steps left.";
 
-            server.base(the_sel_age);
+                server.base(the_sel_age);
+
+
+                runAnimation.addEventListener("click", togglePopupUI, false);
+
+
         },
+
+
+
 
         unload: function () {
             // TODO: Respond to navigations away from this page.
@@ -55,7 +63,41 @@
 
             // TODO: Respond to changes in layout.
         }
-    });
+    },
+
+
+
+    function togglePopupUI() {
+        if (runAnimation.innerHTML === "Show pop-up") {
+            // Set desired final opacity on the UI element.
+            myPopupUI.style.opacity = "1";
+
+            // Run show popup animation
+            WinJS.UI.Animation.showPopup(myPopupUI, null);
+
+            runAnimation.innerHTML = "Hide pop-up";
+        } else {
+            // Set desired final opacity on the UI element.
+            myPopupUI.style.opacity = "0";
+
+            // Run show popup animation
+            WinJS.UI.Animation.hidePopup(myPopupUI);
+
+            runAnimation.innerHTML = "Show pop-up";
+        }
+    }
+
+
+
+
+
+
+
+    );
+
+
+
+
 
     var base3 = "";
     WinJS.Namespace.define("base_clicked", {
