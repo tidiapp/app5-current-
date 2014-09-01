@@ -21,33 +21,26 @@
             var the_sel_age = roamingSettings.values["Func_name"];
             document.getElementById("choosen_age").textContent = "Choose your " + roamingSettings.values["Func_name"] + " Base";
 
-                //milo: footer history 
-                if (roamingSettings.values["Cat_picked"] === "Nutritional") {
-                    document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
-                }
-                //milo: footer history 
-                if (roamingSettings.values["Cat_picked"] === "Protein") {
-                    document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
-                }
-                //milo: footer history 
-                document.getElementById("age_p").textContent = roamingSettings.values["Cat_picked"];
-                document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];
-                document.getElementById("home_p").textContent = roamingSettings.values["Age_name"];
-                document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];
-                document.getElementById("func_p").textContent = roamingSettings.values["Func_name"];
-                document.getElementById("func_pic").src = roamingSettings.values["Func_pic"];
-                document.getElementById("where_you_are2").textContent = "You have choosen the " + roamingSettings.values["Func_name"] + " Function." + " You have 2 steps left.";
+            //milo: footer history 
+            if (roamingSettings.values["Cat_picked"] === "Nutritional") {
+                document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
+            }
+            //milo: footer history 
+            if (roamingSettings.values["Cat_picked"] === "Protein") {
+                document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
+            }
+            //milo: footer history 
+            document.getElementById("age_p").textContent = roamingSettings.values["Cat_picked"];
+            document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];
+            document.getElementById("home_p").textContent = roamingSettings.values["Age_name"];
+            document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];
+            document.getElementById("func_p").textContent = roamingSettings.values["Func_name"];
+            document.getElementById("func_pic").src = roamingSettings.values["Func_pic"];
+            document.getElementById("where_you_are2").textContent = "You have choosen the " + roamingSettings.values["Func_name"] + " Function." + " You have 2 steps left.";
 
-                server.base(the_sel_age);
-
-
-                runAnimation.addEventListener("click", togglePopupUI, false);
-
+            server.base(the_sel_age);
 
         },
-
-
-
 
         unload: function () {
             // TODO: Respond to navigations away from this page.
@@ -63,41 +56,8 @@
 
             // TODO: Respond to changes in layout.
         }
-    },
 
-
-
-    function togglePopupUI() {
-        if (runAnimation.innerHTML === "Show pop-up") {
-            // Set desired final opacity on the UI element.
-            myPopupUI.style.opacity = "1";
-
-            // Run show popup animation
-            WinJS.UI.Animation.showPopup(myPopupUI, null);
-
-            runAnimation.innerHTML = "Hide pop-up";
-        } else {
-            // Set desired final opacity on the UI element.
-            myPopupUI.style.opacity = "0";
-
-            // Run show popup animation
-            WinJS.UI.Animation.hidePopup(myPopupUI);
-
-            runAnimation.innerHTML = "Show pop-up";
-        }
-    }
-
-
-
-
-
-
-
-    );
-
-
-
-
+    });
 
     var base3 = "";
     WinJS.Namespace.define("base_clicked", {

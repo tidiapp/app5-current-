@@ -1,6 +1,7 @@
 ﻿.func section[role=main] {
     margin-left: 120px;
     margin-right: 120px;
+    width: 600px;
 }
 
 .func_pic_class {
@@ -103,14 +104,12 @@
     margin-top: 0;
 }
 
-
 /*Milo this actually works to fix glitch when too many products are hit at the same time, it DOES NOT SHOW UP IN THE CSS DOM eXPLORER DUNNO WHY BUT IT WORKS!!*/
-
 
 #win_listview_funcs_placement_row .win-listview {
     height: 325px;
     /*border: 2px solid pink;*/
-    width: 1580px;
+    width: 750px;
 /*dont use margins here use in .win-surface*/
 }
 
@@ -141,7 +140,6 @@
 
     #funcs_placement .win-focus.win-container .win-focusedoutline {
     outline: red dashed 2px;
-                     
     }
 
 #funcs_placement .win-surface {
@@ -179,3 +177,36 @@
     font-weight: bold;
 }
 
+#myPopupUI{
+    text-align: left;
+    width: 700px;
+    height: 600px;
+    border: 1px solid black;
+    background-color: #C8C8C8;
+    color: black;
+    opacity: 0;
+    z-index: 1;
+}
+
+#myPopupUI p{
+    position: relative;
+    left: 10px;
+}
+
+#popup_button {
+    float: right;
+}
+
+#popup_content {
+    float: right;
+}
+
+#popup_div {
+    float: right;
+}
+
+#progressRing {
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 750px;
+}

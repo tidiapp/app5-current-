@@ -14,6 +14,7 @@
         // populates the page elements with the app's data.
         ready: function (element, options) {
             // TODO: Initialize the page here.
+
             WinJS.Binding.processAll(element, age_data.model);
             design.getFunc();
             design.changeTextColor();
@@ -21,7 +22,6 @@
             document.getElementById("choosen_age").textContent = "Whats your " + roamingSettings.values["Age_name"] + " Goal.";
             document.getElementById("home").removeAttribute("hidden");
             //document.getElementById("age_p").textContent = the_sel_func;
-
             //document.getElementById("func_price").removeAttribute("hidden");
             //milo: PASSED ON FROM PREVIOS PAGE 
             //roamingSettings.values["Age_name"]
@@ -61,7 +61,31 @@
             //sending the users choosen age to the age_data namespace and then receiving a number that will 
             //be used to access the right object on the array
 
-            server.func(the_sel_func);
+                server.func(the_sel_func);
+
+                runAnimation.addEventListener("click", togglePopupUI, false);
+
+                var webviewControl = document.getElementById("webview");
+                webviewControl.addEventListener("MSWebViewNavigationStarting", navigationStarting);
+                webviewControl.addEventListener("MSWebViewDOMContentLoaded", domContentLoaded);
+                webviewControl.navigate(new Windows.Foundation.Uri("http://storeapp.thinkitdrinkit.com/soccer-supplements/"));
+
+                function navigationStarting() {
+                    updateNavigatingState(true);
+                }
+
+                function updateNavigatingState(isNavigating) {
+                    document.getElementById("progressRing").style.visibility = (isNavigating ? "visible" : "hidden");
+                }
+
+                function domContentLoaded(e) {
+                    var link_current = e.uri;
+                    updateNavigatingState(false);
+                }
+
+                $('#webview').width('650').height('440');
+
+
         },
 
         unload: function () {
@@ -77,6 +101,26 @@
             // TODO: Respond to changes in layout.
         }
     });
+
+    function togglePopupUI() {
+        if (runAnimation.innerHTML === "Show pop-up") {
+            // Set desired final opacity on the UI element.
+            myPopupUI.style.opacity = "1";
+
+            // Run show popup animation
+            WinJS.UI.Animation.showPopup(myPopupUI, null);
+
+            runAnimation.innerHTML = "Hide pop-up";
+        } else {
+            // Set desired final opacity on the UI element.
+            myPopupUI.style.opacity = "0";
+
+            // Run show popup animation
+            WinJS.UI.Animation.hidePopup(myPopupUI);
+
+            runAnimation.innerHTML = "Show pop-up";
+        }
+    }
 
     var func3 = "";
     WinJS.Namespace.define("func_clicked", {

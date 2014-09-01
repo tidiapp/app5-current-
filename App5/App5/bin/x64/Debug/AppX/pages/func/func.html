@@ -19,6 +19,9 @@
             <button data-win-control="WinJS.UI.BackButton"></button>
             <h1 id="choosen_age" class="titlearea win-type-ellipsis"></h1>
         </header>
+
+        <progress id="progressRing" class="win-ring win-large" style="visibility: hidden"></progress>
+
         <section aria-label="Main content" role="main">
             <div id="win_listview_funcs_placement_row">
                 <div id="funcs" class="funcs_class" data-win-control="WinJS.Binding.Template">
@@ -52,6 +55,19 @@
                 }"></div>
             </div>        
         </section>
+
+        <div id="popup_div">
+            <div id="popup_button">
+                <button id="runAnimation">Show pop-up</button><br /><br />
+            </div>
+            <div id="popup_content">
+                <div id="myPopupUI">
+                    <p>TEST PURPOSES ONLY </p>
+                    <x-ms-webview id="webview"></x-ms-webview>
+                </div>
+            </div>
+        </div>
+
         <footer id="main_footer">
 
             <!--Milo: age_ is really coming from launch_page -->
