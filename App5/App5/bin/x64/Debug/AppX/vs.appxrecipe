@@ -288,7 +288,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.js">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.js</PackagePath>
-      <Modified>2014-09-01T20:47:37.158</Modified>
+      <Modified>2014-09-02T18:19:56.078</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\supl_sport\supl_sport.js">
       <PackagePath>pages\supl_sport\supl_sport.js</PackagePath>
@@ -476,7 +476,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.html">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.html</PackagePath>
-      <Modified>2014-09-01T20:09:18.750</Modified>
+      <Modified>2014-09-02T15:08:24.826</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\supl_sport\supl_sport.html">
       <PackagePath>pages\supl_sport\supl_sport.html</PackagePath>
