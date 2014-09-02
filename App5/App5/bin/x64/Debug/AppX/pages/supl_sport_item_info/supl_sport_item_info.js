@@ -25,21 +25,14 @@
             var webviewControl = document.getElementById("webview");
             webviewControl.addEventListener("MSWebViewNavigationStarting", navigationStarting);
             webviewControl.addEventListener("MSWebViewDOMContentLoaded", domContentLoaded);
-            //webviewControl.navigate(new Windows.Foundation.Uri("http://storeapp.thinkitdrinkit.com/soccer-supplements/"));
+            webviewControl.navigate(new Windows.Foundation.Uri("http://storeapp.thinkitdrinkit.com/soccer-supplements/"));
 
             // Create a URI describing the site to navigate to
-            var siteUrl = new Windows.Foundation.Uri("http://storeapp.thinkitdrinkit.com/soccer-supplements/");
-            // Specify the type of request
+            //var siteUrl = new Windows.Foundation.Uri("http://storeapp.thinkitdrinkit.com/soccer-supplements/");
+            //// Specify the type of request
             //var httpRequestMessage = new Windows.Web.Http.HttpRequestMessage(Windows.Web.Http.HttpMethod.get, siteUrl);
-            // Append headers to request the webserver to check against the cache 
-            //var headers = httpRequestMessage.headers.append("Cache-Control", "no-cache");
-            //var headers2 = httpRequestMessage.headers.append("Pragma", "no-cache");
-            // Navigate the WebView with the request info
+            //// Navigate the WebView with the request info
             //webview.navigateWithHttpRequestMessage(httpRequestMessage);
-
-            var httpBaseProtocolFilter = new Windows.Web.Http.Filters.HttpBaseProtocolFilter(Windows.Web.Http.HttpMethod.get, siteUrl);
-            var cacheControl = httpBaseProtocolFilter.cacheControl;
-            var httpCacheDirectiveHeaderValueCollection = cacheControl;
 
             var webviewControl2 = document.getElementById("webview2");
             webviewControl2.addEventListener("MSWebViewNavigationStarting", navigationStarting);
