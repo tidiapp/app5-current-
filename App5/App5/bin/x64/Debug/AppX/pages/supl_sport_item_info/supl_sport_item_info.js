@@ -21,12 +21,6 @@
 
             server.sport_info(updated_name);
 
-//milo: WEBVIEW STUFF COMING FROM WORDPRESS AND IS REFRESHING MAYBE EVERY 10 MINUTES (SO IF YOU CHANGE IN WORDPRESS IT TAKES THAT LONG, BEST WAY UNISTALL APP FROM START WINDOW IN WINDOWS 8.1)
-            var webviewControl = document.getElementById("webview");
-            webviewControl.addEventListener("MSWebViewNavigationStarting", navigationStarting);
-            webviewControl.addEventListener("MSWebViewDOMContentLoaded", domContentLoaded);
-            webviewControl.navigate(new Windows.Foundation.Uri("http://storeapp.thinkitdrinkit.com/soccer-supplements/"));
-
             // Create a URI describing the site to navigate to
             //var siteUrl = new Windows.Foundation.Uri("http://storeapp.thinkitdrinkit.com/soccer-supplements/");
             //// Specify the type of request
@@ -34,11 +28,32 @@
             //// Navigate the WebView with the request info
             //webview.navigateWithHttpRequestMessage(httpRequestMessage);
 
-            var webviewControl2 = document.getElementById("webview2");
-            webviewControl2.addEventListener("MSWebViewNavigationStarting", navigationStarting);
-            webviewControl2.addEventListener("MSWebViewDOMContentLoaded", domContentLoaded);
-            webviewControl2.navigate(new Windows.Foundation.Uri("http://storeapp.thinkitdrinkit.com/soccer-supplements/soccer-ephys/"));
+            if (updated_name === "Soccer") {
+                //milo: WEBVIEW STUFF COMING FROM WORDPRESS AND IS REFRESHING MAYBE EVERY 10 MINUTES (SO IF YOU CHANGE IN WORDPRESS IT TAKES THAT LONG, BEST WAY UNISTALL APP FROM START WINDOW IN WINDOWS 8.1)
+                var webviewControl = document.getElementById("webview");
+                webviewControl.addEventListener("MSWebViewNavigationStarting", navigationStarting);
+                webviewControl.addEventListener("MSWebViewDOMContentLoaded", domContentLoaded);
+                webviewControl.navigate(new Windows.Foundation.Uri("http://storeapp.thinkitdrinkit.com/soccer-supplements/"));
 
+                var webviewControl2 = document.getElementById("webview2");
+                webviewControl2.addEventListener("MSWebViewNavigationStarting", navigationStarting);
+                webviewControl2.addEventListener("MSWebViewDOMContentLoaded", domContentLoaded);
+                webviewControl2.navigate(new Windows.Foundation.Uri("http://storeapp.thinkitdrinkit.com/soccer-supplements/soccer-ephys/"));
+            }
+
+            if (updated_name === "Football") {
+                //milo: WEBVIEW STUFF COMING FROM WORDPRESS AND IS REFRESHING MAYBE EVERY 10 MINUTES (SO IF YOU CHANGE IN WORDPRESS IT TAKES THAT LONG, BEST WAY UNISTALL APP FROM START WINDOW IN WINDOWS 8.1)
+                var webviewControl = document.getElementById("webview");
+                webviewControl.addEventListener("MSWebViewNavigationStarting", navigationStarting);
+                webviewControl.addEventListener("MSWebViewDOMContentLoaded", domContentLoaded);
+                webviewControl.navigate(new Windows.Foundation.Uri("http://storeapp.thinkitdrinkit.com/football-supplements/"));
+
+                var webviewControl2 = document.getElementById("webview2");
+                webviewControl2.addEventListener("MSWebViewNavigationStarting", navigationStarting);
+                webviewControl2.addEventListener("MSWebViewDOMContentLoaded", domContentLoaded);
+                webviewControl2.navigate(new Windows.Foundation.Uri("http://storeapp.thinkitdrinkit.com/football-supplements/"));
+            }
+            
             function navigationStarting() {
                 updateNavigatingState(true);
             }
@@ -50,7 +65,6 @@
             function domContentLoaded(e) {
                 var link_current = e.uri;
                 updateNavigatingState(false);
-
             }
 
             //$('#sport_info2').width('960').height('550').css('overflow-y', 'auto');
@@ -64,7 +78,6 @@
 
             document.getElementById("scroll_bar2").removeAttribute("hidden");
             document.getElementById("scroll_bar2").textContent = "SCROLL TO CONTINUE";
-
         },
 
         unload: function () {

@@ -38,7 +38,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\func\func.css">
       <PackagePath>pages\func\func.css</PackagePath>
-      <Modified>2014-09-01T17:28:09.792</Modified>
+      <Modified>2014-09-03T16:42:12.489</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\info_home - Copy\info_home.css">
       <PackagePath>pages\info_home - Copy\info_home.css</PackagePath>
@@ -78,7 +78,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\home\home.css">
       <PackagePath>pages\home\home.css</PackagePath>
-      <Modified>2014-08-25T13:52:15.285</Modified>
+      <Modified>2014-09-03T16:46:22.804</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\info_home\info_home.css">
       <PackagePath>pages\info_home\info_home.css</PackagePath>
@@ -90,7 +90,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\launch_page\launch_page.css">
       <PackagePath>pages\launch_page\launch_page.css</PackagePath>
-      <Modified>2014-08-25T13:51:58.066</Modified>
+      <Modified>2014-09-03T15:36:27.202</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\login\login.css">
       <PackagePath>pages\login\login.css</PackagePath>
@@ -288,7 +288,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.js">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.js</PackagePath>
-      <Modified>2014-09-02T20:14:58.107</Modified>
+      <Modified>2014-09-03T14:46:06.188</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\supl_sport\supl_sport.js">
       <PackagePath>pages\supl_sport\supl_sport.js</PackagePath>
@@ -324,7 +324,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\launch_page\launch_page.js">
       <PackagePath>pages\launch_page\launch_page.js</PackagePath>
-      <Modified>2014-08-25T13:52:15.295</Modified>
+      <Modified>2014-09-03T15:01:15.241</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\login\login.js">
       <PackagePath>pages\login\login.js</PackagePath>
@@ -504,7 +504,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\home\home.html">
       <PackagePath>pages\home\home.html</PackagePath>
-      <Modified>2014-08-25T13:52:15.287</Modified>
+      <Modified>2014-09-03T16:42:12.452</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\info_home\info_home.html">
       <PackagePath>pages\info_home\info_home.html</PackagePath>
@@ -516,7 +516,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\launch_page\launch_page.html">
       <PackagePath>pages\launch_page\launch_page.html</PackagePath>
-      <Modified>2014-08-26T13:55:44.864</Modified>
+      <Modified>2014-09-03T15:19:11.928</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\app5-current-\App5\App5\pages\login\login.html">
       <PackagePath>pages\login\login.html</PackagePath>

@@ -53,14 +53,6 @@
     margin-right: 10px;
 }
 
-#sel_funcs_placement {
-    margin-top: -120px;
-    margin-left: -100px;
-    width: 710px;
-    /*height: 210px;*/
-    overflow-y: auto;
-}
-
 #info_btn6 {
     height: 60px;
     margin-top: 130px;
@@ -113,11 +105,25 @@
 /*dont use margins here use in .win-surface*/
 }
 
+#sel_funcs_placement {
+    /*margin-top: -120px;*/
+    margin-left: -100px;
+    overflow-y: auto;
+}
+
 #win_listview_funcs_placement_sel .win-listview {
     height: 200px;
     width: 715px;
     float: left;
-    margin-top: 10px;
+    /*border: 2px solid black;*/
+    /*dont use margins here use in .win-surface or directly in id*/
+}
+
+#sel_funcs_placement .win-viewport {
+    /*overflow-x: hidden;*/
+    height: 220px;
+    /*border: 2px solid green;*/
+    width: 640px;
 }
 
 #funcs_placement .win-viewport {

@@ -98,7 +98,7 @@
 
         updateLayout: function (element) {
             /// <param name="element" domElement="true" />
-            roamingSettings.values["Base_info"] = document.getElementById("sel_base_info").textContent;
+            //roamingSettings.values["Base_info"] = document.getElementById("sel_base_info").textContent;
             // TODO: Respond to changes in layout.
         }
 
