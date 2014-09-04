@@ -48,9 +48,11 @@
         },
 
         unload: function () {
-            // TODO: Respond to navigations away from this page.
-            remove.pop_list(age_data.model.age);
+            // TODO: Respond to navigations away from this page.            
             //using the removeInfo.js file to delete the last object of the array as long as an item exists
+            remove.pop_list(age_data.model.age);
+            //milo: removing keepInfo data when back button is used from func page.
+            remove.pop_list(age_data.model.info_page2_func);
             if (!keepInfo) {
                 remove.pop_list(age_data.model.info)
             }

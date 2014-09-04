@@ -134,102 +134,11 @@
                 document.getElementById("total").textContent = "$" + Math.ceil(((roamingSettings.values["total_price"] * .0636) + roamingSettings.values["total_price"]) * 100) / 100;
                 // var the_added = parseFloat(roamingSettings.values["Boost3_price"]) + parseFloat(roamingSettings.values["Boost2_price"]) + parseFloat(roamingSettings.values["Boost1_price"]) + parseFloat(roamingSettings.values["Base_price"]);
             }
-            if (roamingSettings.values["Boost5_name"] != "" || roamingSettings.values["Boost5_name"] === undefined) {
-
-                document.getElementById("my_boost5_img_final").src = roamingSettings.values["Boost5_pic"];
-                document.getElementById("my_boost5_name").textContent = "Boost: " + roamingSettings.values["Boost5_name"];
-                document.getElementById("my_boost5_img_label_final").src = roamingSettings.values["Boost5_pic_label"];
-
-                document.getElementById("boost_price5").textContent = "$" + roamingSettings.values["Boost5_price"];
-
-                roamingSettings.values["total_price"] = parseFloat(roamingSettings.values["Base_price"]) + parseFloat(roamingSettings.values["Boost1_price"]) + parseFloat(roamingSettings.values["Boost2_price"]) + parseFloat(roamingSettings.values["Boost3_price"]) + parseFloat(roamingSettings.values["Boost4_price"]) + parseFloat(roamingSettings.values["Boost5_price"]);
-                document.getElementById("boost_price5").removeAttribute("hidden");
-                document.getElementById("my_boost5").removeAttribute("hidden");
-                document.getElementById("product_total").textContent = "$" + roamingSettings.values["total_price"];
-                console.log((roamingSettings.values["total_price"] * (.0636)));
-
-                document.getElementById("tax").textContent = "$" + Math.ceil((roamingSettings.values["total_price"] * .0636) * 100) / 100;
-
-                document.getElementById("total").textContent = "$" + Math.ceil(((roamingSettings.values["total_price"] * .0636) + roamingSettings.values["total_price"]) * 100) / 100;
-            }
-            if (roamingSettings.values["Boost6_name"] != "" || roamingSettings.values["Boost6_name"] === undefined) {
-
-                document.getElementById("my_boost6_img_final").src = roamingSettings.values["Boost6_pic"];
-                document.getElementById("my_boost6_name").textContent = "Boost: " + roamingSettings.values["Boost6_name"];
-                document.getElementById("my_boost6_img_label_final").src = roamingSettings.values["Boost6_pic_label"];
-
-                document.getElementById("boost_price6").textContent = "$" + roamingSettings.values["Boost6_price"];
-
-                roamingSettings.values["total_price"] = parseFloat(roamingSettings.values["Base_price"]) + parseFloat(roamingSettings.values["Boost1_price"]) + parseFloat(roamingSettings.values["Boost2_price"]) + parseFloat(roamingSettings.values["Boost3_price"]) + parseFloat(roamingSettings.values["Boost4_price"]) + parseFloat(roamingSettings.values["Boost5_price"]) + parseFloat(roamingSettings.values["Boost6_price"]);
-                document.getElementById("boost_price6").removeAttribute("hidden");
-                document.getElementById("my_boost6").removeAttribute("hidden");
-                document.getElementById("product_total").textContent = "$" + roamingSettings.values["total_price"];
-                console.log((roamingSettings.values["total_price"] * (.0636)));
-
-                document.getElementById("tax").textContent = "$" + Math.ceil((roamingSettings.values["total_price"] * .0636) * 100) / 100;
-
-                document.getElementById("total").textContent = "$" + Math.ceil(((roamingSettings.values["total_price"] * .0636) + roamingSettings.values["total_price"]) * 100) / 100;
-            }
-            if (roamingSettings.values["Boost7_name"] != "" || roamingSettings.values["Boost7_name"] === undefined) {
-
-                document.getElementById("my_boost7_img_final").src = roamingSettings.values["Boost7_pic"];
-                document.getElementById("my_boost7_name").textContent = "Boost: " + roamingSettings.values["Boost7_name"];
-                document.getElementById("my_boost7_img_label_final").src = roamingSettings.values["Boost7_pic_label"];
-
-                document.getElementById("boost_price7").textContent = "$" + roamingSettings.values["Boost7_price"];
-
-                roamingSettings.values["total_price"] = parseFloat(roamingSettings.values["Base_price"]) + parseFloat(roamingSettings.values["Boost1_price"]) + parseFloat(roamingSettings.values["Boost2_price"]) + parseFloat(roamingSettings.values["Boost3_price"]) + parseFloat(roamingSettings.values["Boost4_price"]) + parseFloat(roamingSettings.values["Boost5_price"]) + parseFloat(roamingSettings.values["Boost6_price"]) + parseFloat(roamingSettings.values["Boost7_price"]);
-                document.getElementById("boost_price7").removeAttribute("hidden");
-                document.getElementById("my_boost7").removeAttribute("hidden");
-                document.getElementById("product_total").textContent = "$" + roamingSettings.values["total_price"];
-                console.log((roamingSettings.values["total_price"] * (.0636)));
-
-                document.getElementById("tax").textContent = "$" + Math.ceil((roamingSettings.values["total_price"] * .0636) * 100) / 100;
-
-                document.getElementById("total").textContent = "$" + Math.ceil(((roamingSettings.values["total_price"] * .0636) + roamingSettings.values["total_price"]) * 100) / 100;
-            }
-            if (roamingSettings.values["Boost8_name"] != "" || roamingSettings.values["Boost8_name"] === undefined) {
-
-                document.getElementById("my_boost8_img_final").src = roamingSettings.values["Boost8_pic"];
-                document.getElementById("my_boost8_name").textContent = "Boost: " + roamingSettings.values["Boost8_name"];
-                document.getElementById("my_boost8_img_label_final").src = roamingSettings.values["Boost8_pic_label"];
-
-                document.getElementById("boost_price8").textContent = "$" + roamingSettings.values["Boost8_price"];
-
-                roamingSettings.values["total_price"] = parseFloat(roamingSettings.values["Base_price"]) + parseFloat(roamingSettings.values["Boost1_price"]) + parseFloat(roamingSettings.values["Boost2_price"]) + parseFloat(roamingSettings.values["Boost3_price"]) + parseFloat(roamingSettings.values["Boost4_price"]) + parseFloat(roamingSettings.values["Boost5_price"]) + parseFloat(roamingSettings.values["Boost6_price"]) + parseFloat(roamingSettings.values["Boost7_price"]) + parseFloat(roamingSettings.values["Boost8_price"]);
-                document.getElementById("boost_price8").removeAttribute("hidden");
-                document.getElementById("my_boost8").removeAttribute("hidden");
-                document.getElementById("product_total").textContent = "$" + roamingSettings.values["total_price"];
-                console.log((roamingSettings.values["total_price"] * (.0636)));
-
-                document.getElementById("tax").textContent = "$" + Math.ceil((roamingSettings.values["total_price"] * .0636) * 100) / 100;
-
-                document.getElementById("total").textContent = "$" + Math.ceil(((roamingSettings.values["total_price"] * .0636) + roamingSettings.values["total_price"]) * 100) / 100;
-            }
-            if (roamingSettings.values["Boost9_name"] != "" || roamingSettings.values["Boost9_name"] === undefined) {
-
-                document.getElementById("my_boost9_img_final").src = roamingSettings.values["Boost9_pic"];
-                document.getElementById("my_boost9_name").textContent = "Boost: " + roamingSettings.values["Boost9_name"];
-                document.getElementById("my_boost9_img_label_final").src = roamingSettings.values["Boost9_pic_label"];
-
-                document.getElementById("boost_price9").textContent = "$" + roamingSettings.values["Boost9_price"];
-
-                roamingSettings.values["total_price"] = parseFloat(roamingSettings.values["Base_price"]) + parseFloat(roamingSettings.values["Boost1_price"]) + parseFloat(roamingSettings.values["Boost2_price"]) + parseFloat(roamingSettings.values["Boost3_price"]) + parseFloat(roamingSettings.values["Boost4_price"]) + parseFloat(roamingSettings.values["Boost5_price"]) + parseFloat(roamingSettings.values["Boost6_price"]) + parseFloat(roamingSettings.values["Boost7_price"]) + parseFloat(roamingSettings.values["Boost8_price"]) + parseFloat(roamingSettings.values["Boost9_price"]);
-                document.getElementById("boost_price9").removeAttribute("hidden");
-                document.getElementById("my_boost9").removeAttribute("hidden");
-                document.getElementById("product_total").textContent = "$" + roamingSettings.values["total_price"];
-                console.log((roamingSettings.values["total_price"] * (.0636)));
-
-                document.getElementById("tax").textContent = "$" + Math.ceil((roamingSettings.values["total_price"] * .0636) * 100) / 100;
-
-                document.getElementById("total").textContent = "$" + Math.ceil(((roamingSettings.values["total_price"] * .0636) + roamingSettings.values["total_price"]) * 100) / 100;
-            }
         },
 
         unload: function () {
             // TODO: Respond to navigations away from this page.
             roamingSettings.values["I_ordered"] = "yes";
-           
         },
 
         updateLayout: function (element) {
@@ -241,7 +150,6 @@
     var backSaved = new WinJS.UI.BackButton()
 
     WinJS.Namespace.define("FinalClick", {
-
 
         saveName: function () {
             //milo what ever you type in it gets saved

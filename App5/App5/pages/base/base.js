@@ -44,8 +44,10 @@
 
         unload: function () {
             // TODO: Respond to navigations away from this page.
-            remove.pop_list(age_data.model.base);
             //using the removeInfo.js file to delete the last object of the array as long as an item exists
+            remove.pop_list(age_data.model.base);
+            //milo: removing keepInfo data when back button is used from func page.
+            remove.pop_list(age_data.model.info_page4);
             if (!keepInfo) {
                 remove.pop_list(age_data.model.info_page2)
             }
@@ -70,8 +72,7 @@
         },
 
         next_page_flavor: function () {
-            keepInfo = false;
-           
+            keepInfo = true;
             WinJS.Navigation.navigate('pages/flav_sel/flav_sel.html')
             roamingSettings.values["Base_protein"] = false;
             roamingSettings.values["Base_name"] = base3;

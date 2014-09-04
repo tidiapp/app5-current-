@@ -71,15 +71,14 @@
         },
 
         next_page_boost: function () {
+            keepInfo = true;
             WinJS.Navigation.navigate('pages/boost/boost.html')
-
             roamingSettings.values["FlavSel_name"] = the_choosenFlav;
             roamingSettings.values["FlavSel_pic"] = document.getElementById("hidden_flav_pic").src;
             roamingSettings.values["FlavSel_vend"] = document.getElementById("f_vend").textContent;
             roamingSettings.values["FlavSel_info"] = null;
             roamingSettings.values["FlavSel_price"] = null;
             roamingSettings.values["FlavSel_label"] = document.getElementById("flav_sel_sel_pic").src;
-            keepInfo = false;
         },
         more_info: function (clicked) {
             roamingSettings.values["Item_choosen"] = clicked;

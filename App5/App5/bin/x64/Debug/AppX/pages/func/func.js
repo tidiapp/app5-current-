@@ -14,7 +14,6 @@
         // populates the page elements with the app's data.
         ready: function (element, options) {
             // TODO: Initialize the page here.
-
             WinJS.Binding.processAll(element, age_data.model);
             design.getFunc();
             design.changeTextColor();
@@ -23,6 +22,7 @@
             document.getElementById("home").removeAttribute("hidden");
             //document.getElementById("age_p").textContent = the_sel_func;
             //document.getElementById("func_price").removeAttribute("hidden");
+
             //milo: PASSED ON FROM PREVIOS PAGE 
             //roamingSettings.values["Age_name"]
             //roamingSettings.values["Age_pic"]
@@ -44,25 +44,9 @@
                 document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];
                 document.getElementById("where_you_are1").textContent = "You have choosen the " + roamingSettings.values["Age_name"] + " Goal." + " You have 3 steps left.";
 
-                    ////milo: home_ is home page footer history different then above  
-                    //if (roamingSettings.values["Age_name"] === "Diet Protein") {
-                    //    //age_pic is really the catagory image that was picked previously
-                    //}
-                    ////milo: this shows up in the footer as the history
-                    //if (roamingSettings.values["Age_name"] === "Wellness Protein") {
-                    //}
-
-            //if (the_sel_func === "Nutrigenetics") {
-            //    document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img3"];
-            //    document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Age_name"] + " catagory." + " You have 2 steps left.";
-            //    document.getElementById("choosen_age").textContent = "Choose Your Test Kit";
-            //}
-            //document.getElementById("age_pic").src = roamingSettings.values["Age_pic"];
-            //sending the users choosen age to the age_data namespace and then receiving a number that will 
-            //be used to access the right object on the array
-
                 server.func(the_sel_func);
 
+                //milo: popup testing with webview inside it 
                 runAnimation.addEventListener("click", togglePopupUI, false);
 
                 var webviewControl = document.getElementById("webview");
@@ -85,16 +69,18 @@
 
                 $('#webview').width('650').height('440');
 
-
+                roamingSettings.values["Item_choosen"] = "";
         },
 
         unload: function () {
             // TODO: Respond to navigations away from this page.
-            remove.pop_list(age_data.model.func);
             //using the removeInfo.js file to delete the last object of the array as long as an item exists
-            if (!keepInfo) {
-                remove.pop_list(age_data.model.info_page2_func)
-            }
+            remove.pop_list(age_data.model.func);
+            //milo: removing keepInfo data when back button is used from func page.
+            remove.pop_list(age_data.model.info_page2)
+            if (keepInfo === false) {
+                remove.pop_list(age_data.model.info_page2_func);
+            } 
         },
 
         updateLayout: function (element) {
