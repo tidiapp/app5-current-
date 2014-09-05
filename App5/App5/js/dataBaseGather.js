@@ -410,9 +410,10 @@
                 });
 
             },
-            flav_sel_sub: function () {
+            flav_sel_sub: function (name) {
                 var Age = thinkitdrinkitDataClient.getTable("Flavor");
                 var query = Age.where({
+                    Name: name
                 }).read().done(function (results) {
                     age_data.model.info_page4.push({ sel_name: results[0].Name, sel_info: results[0].InfoLite, sel_pic: results[0].Image, sel_label: results[0].Label, f_vend: results[0].VendID })
                 }, function (err) {

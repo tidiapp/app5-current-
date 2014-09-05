@@ -27,12 +27,12 @@
             if (the_sel_age === "Nutritional") {
                 //age_pic is really the catagory image that was picked previously
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
-                document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory." + " You have 3 steps left.";
+                document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory." + " You have 4 steps left.";
             }
 
             if (the_sel_age === "Protein") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
-                document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory." + " You have 3 steps left.";
+                document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory." + " You have 4 steps left.";
                 document.getElementById("user_age").textContent = "Protein";
             }
 
