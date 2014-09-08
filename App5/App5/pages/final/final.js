@@ -347,7 +347,7 @@
                                 "customer_id": "",
                                 "status": "SAVED",
                                 "total_price": roamingSettings.values["total_price"],
-                                "total_tax": (roamingSettings.values["total_price"] % .0636),
+                                "total_tax": (roamingSettings.values["total_price"] * .0636),
                                 "note": roamingSettings.values["creat_cust"] + " " + roamingSettings.values["creat_last"],
                                 "register_sale_products": [
                                    {
@@ -404,7 +404,7 @@
                                        "product_id":  roamingSettings.values["Base_Vend"],
                                        "quantity": 1,
                                        "price": roamingSettings.values["Base_price"],
-                                       "tax": (roamingSettings.values["Base_price"] % .0636)
+                                       "tax": (roamingSettings.values["Base_price"] * .0636)
                                    },
                                    {
                                        "product_id": roamingSettings.values["FlavSel_vend"],
@@ -502,7 +502,7 @@
                                 "customer_id": "",
                                 "status": "SAVED",
                                 "total_price": roamingSettings.values["total_price"],
-                                "total_tax": (roamingSettings.values["total_price"] % .0636),
+                                "total_tax": (roamingSettings.values["total_price"] * .0636),
                                 "note": roamingSettings.values["creat_cust"] + " " + roamingSettings.values["creat_last"],
                                 "register_sale_products": [
                                    {
@@ -565,7 +565,7 @@
                                        "product_id": roamingSettings.values["Base_Vend"],
                                        "quantity": 1,
                                        "price": roamingSettings.values["Base_price"],
-                                       "tax": (roamingSettings.values["Base_price"] % .0636)
+                                       "tax": (roamingSettings.values["Base_price"] * .0636)
                                    },
                                    {
                                        "product_id": roamingSettings.values["FlavSel_vend"],
