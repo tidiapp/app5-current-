@@ -738,7 +738,7 @@
                             }),
                         }).then(function sucess(res) {
                             roamingSettings.values["Invoice_number"] = JSON.parse(res.responseText).register_sale.invoice_number;
-                            console.log("finalsubmitpage order#", roamingSettings.values["Invoice_number"]);
+                            console.log("finalsubmitpage 1 boost order#", roamingSettings.values["Invoice_number"]);
                             roamingSettings.values["I_ordered"] = "yes";
                         }, function error(err) {
                             console.log("fail", err.responseText)

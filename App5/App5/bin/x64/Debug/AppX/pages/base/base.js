@@ -74,9 +74,8 @@
 
         next_page_flavor: function () {
 
-                var vendId = document.getElementById("b_vend").innerHTML;
                 keepInfo = true;
-                WinJS.Navigation.navigate('pages/flav_sel/flav_sel.html')
+                var vendId = document.getElementById("b_vend").innerHTML;
                 roamingSettings.values["Base_protein"] = false;
                 roamingSettings.values["Base_Vend"] = vendId;
                 roamingSettings.values["Base_name"] = base3;
@@ -84,54 +83,41 @@
                 roamingSettings.values["Base_info"] = document.getElementById("sel_base_info").textContent;
                 roamingSettings.values["Base_price"] = document.getElementById("base_price").textContent;
                 roamingSettings.values["Base_label"] = document.getElementById("sel_base_pic").src;
-
                 console.log("Next page " + roamingSettings.values["Base_Vend"]);
             
-            WinJS.xhr({
-                //GET /api/register_sales/{id} request 
-                    type: "POST",
-                    url: "https://thinkitdrinkit.vendhq.com/api/products",
-                    user: "milo@thinkitdrinkit.com",
-                    headers: { "Content-type": "application/json" },
-                    //password: "agave2013",
-                    data: JSON.stringify({
-                        //milo: in this object its the id part in the following GET /api/register_sales/{id}  
-                        
-                            "id": roamingSettings.values["Base_Vend"],
-                            "source_id": "",
-                            "source_variant_id": "",
-                            "handle": "",
-                            "type": "",
-                            "tags": "",
-                            "name": "",
-                            "description": "",
-                            "sku": "",
-                            "variant_option_one_name": "",
-                            "variant_option_one_value": "",
-                            "variant_option_two_name": "",
-                            "variant_option_two_value": "",
-                            "variant_option_three_name": null,
-                            "variant_option_three_value": null,
-                            "supply_price": "",
-                            "retail_price": "",
-                            "tax": "",
-                            "brand_name": "",
-                            "supplier_name": "",
-                            "supplier_code": "",
-                            "inventory": [
-                            {
-                                "outlet_name": "",
-                                "count": "",
-                                "reorder_point": "",
-                                "restock_level": ""
-                            }]
-                    }),
+                WinJS.xhr({
+                    //GET /api/register_sales/{id} request 
+                        type: "POST",
+                        url: "https://thinkitdrinkit.vendhq.com/api/products",
+                        user: "milo@thinkitdrinkit.com",
+                        headers: { "Content-type": "application/json" },
+                        //password: "********",
+                        data: JSON.stringify({
+                                //milo: in this object its the id part in the following GET /api/register_sales/{id}  
+                                "id": roamingSettings.values["Base_Vend"],
+                                "inventory": [{
+                                }]
+                        }),
                 }).then(function sucess(res) {
-                    roamingSettings.values["Count"] = JSON.parse(res.responseText).product.inventory.count;
-                    console.log("Count from VEND ", roamingSettings.values["Count"]);
-                }, function error(err) {
-                    console.log("fail", err.responseText)
-                });
+
+                    //milo: http://www.mkyong.com/javascript/how-to-access-json-object-in-javascript/
+                    roamingSettings.values["Count"] = JSON.parse(res.responseText).product.inventory[0].count;
+                        console.log("Count from VEND ", roamingSettings.values["Count"]);
+                    }, function error(err) {
+                        console.log("fail", err.responseText)
+                    });
+
+
+                if (roamingSettings.values["Count"] >= 14.00000) {
+                    WinJS.Navigation.navigate('pages/flav_sel/flav_sel.html')
+
+                } else if (roamingSettings.values["Count"] <= 13.00000) {
+                    console.log("Out of stock");
+                }
+
+                if (vendId == null) {
+                    WinJS.Navigation.navigate('pages/flav_sel/flav_sel.html')
+                }
 
             //milo: define here GET call to VEND to check for 14 + count available if not throw msg saying "Out of stock Please pick another Base"
 
