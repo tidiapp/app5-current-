@@ -85,6 +85,8 @@
                 roamingSettings.values["Base_label"] = document.getElementById("sel_base_pic").src;
                 console.log("Next page " + roamingSettings.values["Base_Vend"]);
             
+
+            //milo: wrap this whole thing in a if statment and say if vendId is not available go to next page anyway. 
                 WinJS.xhr({
                     //GET /api/register_sales/{id} request 
                         type: "POST",
@@ -115,9 +117,9 @@
                     console.log("Out of stock");
                 }
 
-                if (vendId == null) {
-                    WinJS.Navigation.navigate('pages/flav_sel/flav_sel.html')
-                }
+                //if (vendId == null) {
+                //    WinJS.Navigation.navigate('pages/flav_sel/flav_sel.html')
+                //}
 
             //milo: define here GET call to VEND to check for 14 + count available if not throw msg saying "Out of stock Please pick another Base"
 
