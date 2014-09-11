@@ -23,12 +23,6 @@
             //document.getElementById("age_p").textContent = the_sel_func;
             //document.getElementById("func_price").removeAttribute("hidden");
 
-            //milo: PASSED ON FROM PREVIOS PAGE 
-            //roamingSettings.values["Age_name"]
-            //roamingSettings.values["Age_pic"]
-            //roamingSettings.values["Age_info"]
-            //roamingSettings.values["Age_price"]
-
                 //milo: footer history 
                 if (roamingSettings.values["Cat_picked"] === "Nutritional") {
                     document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
@@ -46,30 +40,30 @@
 
                 server.func(the_sel_func);
 
-                //milo: popup testing with webview inside it 
-                runAnimation.addEventListener("click", togglePopupUI, false);
+                ////milo: popup testing with webview inside it 
+                //runAnimation.addEventListener("click", togglePopupUI, false);
 
-                var webviewControl = document.getElementById("webview");
-                webviewControl.addEventListener("MSWebViewNavigationStarting", navigationStarting);
-                webviewControl.addEventListener("MSWebViewDOMContentLoaded", domContentLoaded);
-                webviewControl.navigate(new Windows.Foundation.Uri("http://storeapp.thinkitdrinkit.com/soccer-supplements/"));
+                //var webviewControl = document.getElementById("webview");
+                //webviewControl.addEventListener("MSWebViewNavigationStarting", navigationStarting);
+                //webviewControl.addEventListener("MSWebViewDOMContentLoaded", domContentLoaded);
+                //webviewControl.navigate(new Windows.Foundation.Uri("http://storeapp.thinkitdrinkit.com/soccer-supplements/"));
 
-                function navigationStarting() {
-                    updateNavigatingState(true);
-                }
+                //function navigationStarting() {
+                //    updateNavigatingState(true);
+                //}
 
-                function updateNavigatingState(isNavigating) {
-                    document.getElementById("progressRing").style.visibility = (isNavigating ? "visible" : "hidden");
-                }
+                //function updateNavigatingState(isNavigating) {
+                //    document.getElementById("progressRing").style.visibility = (isNavigating ? "visible" : "hidden");
+                //}
 
-                function domContentLoaded(e) {
-                    var link_current = e.uri;
-                    updateNavigatingState(false);
-                }
+                //function domContentLoaded(e) {
+                //    var link_current = e.uri;
+                //    updateNavigatingState(false);
+                //}
 
-                $('#webview').width('650').height('440');
+                //$('#webview').width('650').height('440');
 
-                roamingSettings.values["Item_choosen"] = "";
+                //roamingSettings.values["Item_choosen"] = "";
         },
 
         unload: function () {
@@ -88,25 +82,26 @@
         }
     });
 
-    function togglePopupUI() {
-        if (runAnimation.innerHTML === "Show pop-up") {
-            // Set desired final opacity on the UI element.
-            myPopupUI.style.opacity = "1";
+    ////milo: popup testing with webview  
+    //function togglePopupUI() {
+    //    if (runAnimation.innerHTML === "Show pop-up") {
+    //        // Set desired final opacity on the UI element.
+    //        myPopupUI.style.opacity = "1";
 
-            // Run show popup animation
-            WinJS.UI.Animation.showPopup(myPopupUI, null);
+    //        // Run show popup animation
+    //        WinJS.UI.Animation.showPopup(myPopupUI, null);
 
-            runAnimation.innerHTML = "Hide pop-up";
-        } else {
-            // Set desired final opacity on the UI element.
-            myPopupUI.style.opacity = "0";
+    //        runAnimation.innerHTML = "Hide pop-up";
+    //    } else {
+    //        // Set desired final opacity on the UI element.
+    //        myPopupUI.style.opacity = "0";
 
-            // Run show popup animation
-            WinJS.UI.Animation.hidePopup(myPopupUI);
+    //        // Run show popup animation
+    //        WinJS.UI.Animation.hidePopup(myPopupUI);
 
-            runAnimation.innerHTML = "Show pop-up";
-        }
-    }
+    //        runAnimation.innerHTML = "Show pop-up";
+    //    }
+    //}
 
     var func3 = "";
     WinJS.Namespace.define("func_clicked", {

@@ -2,11 +2,30 @@
     "use strict";
     var i = "";
     var j = "";
+
     WinJS.Namespace.define("design", {
+
         colorChange: function (themeColor,themeTextColor) {
             i = themeColor;
             j = themeTextColor;
         },
+
+        launch: function () {
+            document.getElementById("main_footer").style.backgroundColor = i;
+            document.getElementById("appBar").style.backgroundColor = i;
+            //document.getElementById("make_drink").style.borderColor = i;
+            //document.getElementById("learn_more").style.borderColor = i;
+            //document.getElementById("supl_sport").style.borderColor = i;
+            //document.getElementById("sign_up").style.borderColor = i;
+            //document.getElementById("make_drink2").style.borderColor = i;
+            //document.getElementById("nutrigenetics").style.borderColor = i;
+        },
+
+        changeTextColor: function () {
+            document.getElementById("footer_company_name").style.color = j;
+            document.getElementById("company_name").style.color = j;
+        },
+
         getHome: function () {
             document.getElementById("main_footer").style.backgroundColor = i;
             document.getElementById("appBar").style.backgroundColor = i;
@@ -14,7 +33,8 @@
             document.getElementById("sel_age_pic").style.borderColor = i;
             document.getElementById("info_btn").style.backgroundColor = i;
             document.getElementById("sel_btn").style.backgroundColor = i;
-        },        
+        },
+
         getFunc: function () {
             document.getElementById("main_footer").style.backgroundColor = i;
             document.getElementById("appBar").style.backgroundColor = i;
@@ -78,11 +98,6 @@
 
         },
 
-        changeTextColor: function () {
-            document.getElementById("footer_company_name").style.color = j;
-            document.getElementById("company_name").style.color = j;
-        },
-
         getThanks: function () {
             document.getElementById("main_footer").style.backgroundColor = i;
             //document.getElementById("yes_btn").style.backgroundColor = i;
@@ -144,17 +159,6 @@
         item_info: function () {
             document.getElementById("main_footer").style.backgroundColor = i;
             document.getElementById("item_info_pic").style.borderColor = i;
-        },
-
-        launch: function () {
-            document.getElementById("main_footer").style.backgroundColor = i;
-            document.getElementById("make_drink").style.borderColor = i;
-            document.getElementById("learn_more").style.borderColor = i;
-            document.getElementById("supl_sport").style.borderColor = i;
-            //document.getElementById("sign_up").style.borderColor = i;
-            document.getElementById("appBar").style.backgroundColor = i;
-            document.getElementById("make_drink2").style.borderColor = i;
-            document.getElementById("nutrigenetics").style.borderColor = i;
         },
 
         login: function () {

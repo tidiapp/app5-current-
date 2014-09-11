@@ -19,14 +19,25 @@
     z-index: -1;
 }
 
-.the_float h2 {
-    background-color: rgba(0,0,0,.6);
+.the_float a {
+    /*background-color: rgba(0,0,0,.6);*/
     color: #fff;
-    font-weight: bold;
-    margin-top: 210px;
+    /*font-weight: bold;*/
+    margin-top: 190px;
     height: 15px;
-    padding-left: 5px;
-    font-size: 10px;
+    font-size: 18px;
+    text-align: center;
+    font-family: myriad pro;
+
+    text-decoration: none;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    padding-bottom: 3px;
+
+}
+
+#underline {
+    margin-top: 150px;
 }
 
 #launch_sel {
@@ -53,3 +64,4 @@
     float: left;
     margin-top: 30px;
 }
+

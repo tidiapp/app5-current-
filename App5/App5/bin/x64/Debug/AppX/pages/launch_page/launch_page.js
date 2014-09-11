@@ -13,6 +13,12 @@
             // TODO: Initialize the page here.
             design.launch();
             design.changeTextColor();
+            document.getElementById("make_drink").style.borderColor = "white";
+            document.getElementById("learn_more").style.borderColor = "white";
+            document.getElementById("supl_sport").style.borderColor = "white";
+            document.getElementById("make_drink2").style.borderColor = "white";
+            document.getElementById("nutrigenetics").style.borderColor = "white";
+
             document.getElementById("company_name").textContent = "Let's Customize";
 
             document.getElementById("appBar").winControl.show();
@@ -62,7 +68,6 @@
             remove.pop_list(age_data.model.info);
 
             remove.pop_list(age_data.model.info_sport);
-
 
             roamingSettings.values["I_ordered"] = "no";
         },
