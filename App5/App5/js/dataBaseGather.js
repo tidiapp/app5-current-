@@ -240,7 +240,7 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Vegan & Vegetarians") {
+                } else if (the_sel_age === "Vegan & Vegetarian") {
                     var query = Age.where({
                         AccessVegan: true
                     }).orderBy("Name").read().done(function (results) {
@@ -270,19 +270,9 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "On The Go") {
+                } else if (the_sel_age === "Active Life") {
                     var query = Age.where({
-                        AccessOn: true
-                    }).orderBy("Name").read().done(function (results) {
-                        for (var i = 0; i < results.length; i++) {
-                            age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image })
-                        }
-                    }, function (err) {
-                        console.log(err);
-                    });
-                } else if (the_sel_age === "Daily") {
-                    var query = Age.where({
-                        AccessDaily: true
+                        AccessActive: true
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image })
@@ -495,7 +485,7 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Vegan & Vegetarians") {
+                } else if (the_sel_age === "Vegan & Vegetarian") {
                     var query = Age.where({
                         AccessVegan: true
                     }).orderBy("Name").read().done(function (results) {
@@ -525,19 +515,9 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "On The Go") {
+                } else if (the_sel_age === "Active Life") {
                     var query = Age.where({
-                        AccessOn: true
-                    }).orderBy("Name").read().done(function (results) {
-                        for (var i = 0; i < results.length; i++) {
-                            age_data.model.boost.push({ boost_name: results[i].Name, boost_pic: results[i].Image })
-                        }
-                    }, function (err) {
-                        console.log(err);
-                    });
-                } else if (the_sel_age === "Daily") {
-                    var query = Age.where({
-                        AccessDaily: true
+                        AccessActive: true
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.boost.push({ boost_name: results[i].Name, boost_pic: results[i].Image })
