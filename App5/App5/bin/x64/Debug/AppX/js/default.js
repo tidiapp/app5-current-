@@ -23,8 +23,6 @@
                 roamingSettings.values["true"] = false;
                 //This is the normal(default) app color in hex #BA5EB7
 
-                
-
             } else {
                 // TODO: This application has been reactivated from suspension.
                 // Restore application state here.
@@ -52,10 +50,6 @@
         app.sessionState.history = nav.history;
     };
     app.start();
-
-
-
-
 
 
 

@@ -3,7 +3,6 @@
         "use strict";
 
         WinJS.Namespace.define("server", {
-
 //home.html
             home: function (the_sel_age) {
                 remove.pop_list(age_data.model.age);
