@@ -19,14 +19,14 @@
             design.changeTextColor();
             document.getElementById("home").removeAttribute("hidden");
             var the_sel_age = roamingSettings.values["Func_name"];
-            document.getElementById("choosen_age").textContent = "Choose your " + roamingSettings.values["Func_name"] + " Base";
+            document.getElementById("choosen_age3").textContent = "Select Your " + "Protein For " + roamingSettings.values["Func_name"];
 
             //milo: footer history 
-            if (roamingSettings.values["Cat_picked"] === "Nutritional") {
+            if (roamingSettings.values["Cat_picked"] === "Customize A Functional Drink Mix") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
             }
             //milo: footer history 
-            if (roamingSettings.values["Cat_picked"] === "Protein") {
+            if (roamingSettings.values["Cat_picked"] === "Customize A Protein Drink Mix") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
             }
             //milo: footer history 
@@ -48,6 +48,7 @@
             remove.pop_list(age_data.model.base);
             //milo: removing keepInfo data when back button is used from func page.
             remove.pop_list(age_data.model.info_page4);
+            roamingSettings.values["Count"] = "";
             if (!keepInfo) {
                 remove.pop_list(age_data.model.info_page2)
             }
@@ -84,11 +85,11 @@
                 roamingSettings.values["Base_label"] = document.getElementById("sel_base_pic").src;
                 console.log("Next page " + vendId);
             
-            //milo: this is for making a call to vend to check if we have enough product for the order if low it will not allow to move on. 
-            //milo: b8ca3a65-0166-11e4-fbb5-3772ff8b2b7f or 2nd one b8ca3a65-0166-11e4-fbb5-3772835994f8 = Whey Protein Isolate(B) is the only one currently set up
+            //milo: the following makes a call to vend to check if we have enough product for the order if low it will not allow to move on. 
+            //milo: b8ca3a65-0166-11e4-fbb5-3772ff8b2b7f or 2nd one b8ca3a65-0166-11e4-fbb5-3772835994f8 == Whey Protein Isolate(B) is the only one currently set up to stop at low count (13 count or less)
                 if (vendId != "" && vendId != "null" ) {
                     WinJS.xhr({
-                        //GET /api/register_sales/{id} request 
+                        //milo: using POST but not passing anything to vend until .then at which point it reads the api product inventory count and displays it back.  
                         type: "POST",
                         url: "https://thinkitdrinkit.vendhq.com/api/products",
                         user: "milo@thinkitdrinkit.com",
@@ -101,29 +102,27 @@
                             }]
                         }),
                     }).then(function sucess(res) {
-                        //milo: below allows a the real GET which is the count to come back to app. Notes accessing json>>> http://www.mkyong.com/javascript/how-to-access-json-object-in-javascript/
+                        //milo: below allows the real GET which is the count to come back to app. Notes accessing json>>> http://www.mkyong.com/javascript/how-to-access-json-object-in-javascript/
                         roamingSettings.values["Count"] = JSON.parse(res.responseText).product.inventory[0].count;
                         console.log("Count from VEND ", roamingSettings.values["Count"]);
+                        if (roamingSettings.values["Count"] >= 14.00000) {
+                            WinJS.Navigation.navigate('pages/flav_sel/flav_sel.html')
+
+                        } else if (roamingSettings.values["Count"] <= 13.00000) {
+                            document.getElementById("out_of_stock").removeAttribute("hidden");
+                            document.getElementById("out_of_stock").textContent = "OUT OF STOCK, PLEASE PICK ANOTHER BASE";
+                            document.getElementById("out_of_stock").style.color = "red";
+                            document.getElementById("out_of_stock").style.fontSize = "20px";
+                            document.getElementById("out_of_stock").style.marginTop = "145px";
+                            document.getElementById("out_of_stock").style.marginLeft = "260px";
+                            document.getElementById("out_of_stock").style.position = "Absolute";
+                        }
                     }, function error(err) {
                         console.log("fail", err.responseText)
                     });
-                    if (roamingSettings.values["Count"] >= 14.00000) {
-                        WinJS.Navigation.navigate('pages/flav_sel/flav_sel.html')
-
-                    } else if (roamingSettings.values["Count"] <= 13.00000) {
-                        console.log("Out of stock");
-                        document.getElementById("out_of_stock").removeAttribute("hidden");
-                        document.getElementById("out_of_stock").textContent = "OUT OF STOCK, PLEASE PICK ANOTHER BASE";
-                        document.getElementById("out_of_stock").style.color = "red";
-                        document.getElementById("out_of_stock").style.fontSize = "20px";
-                        document.getElementById("out_of_stock").style.marginTop = "145px";
-                        document.getElementById("out_of_stock").style.marginLeft = "260px";
-                        document.getElementById("out_of_stock").style.position = "Absolute";
-                    }
                 } else {
                     WinJS.Navigation.navigate('pages/flav_sel/flav_sel.html')
                 }
-            
         },
 
         more_info: function (clicked) {

@@ -26,9 +26,6 @@
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\func\func.css">
       <PackagePath>pages\func\func.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\info_home - Copy\info_home.css">
-      <PackagePath>pages\info_home - Copy\info_home.css</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.css">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.css</PackagePath>
     </AppxPackagedFile>
@@ -67,15 +64,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login\login.css">
       <PackagePath>pages\login\login.css</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\all_products\all_products.css">
-      <PackagePath>pages\login_sessions\all_products\all_products.css</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\profile\profile.css">
-      <PackagePath>pages\login_sessions\profile\profile.css</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\protein\protein.css">
-      <PackagePath>pages\protein\protein.css</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\signup\signup.css">
       <PackagePath>pages\signup\signup.css</PackagePath>
@@ -206,9 +194,6 @@
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\func\func.js">
       <PackagePath>pages\func\func.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\info_home - Copy\info_home.js">
-      <PackagePath>pages\info_home - Copy\info_home.js</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\info_home\info_home.js">
       <PackagePath>pages\info_home\info_home.js</PackagePath>
     </AppxPackagedFile>
@@ -244,48 +229,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login\login.js">
       <PackagePath>pages\login\login.js</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\all_products\all_products.js">
-      <PackagePath>pages\login_sessions\all_products\all_products.js</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\base\base.js">
-      <PackagePath>pages\login_sessions\base\base.js</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\boost\boost.js">
-      <PackagePath>pages\login_sessions\boost\boost.js</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\final\final.js">
-      <PackagePath>pages\login_sessions\final\final.js</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\flavor\flavor.js">
-      <PackagePath>pages\login_sessions\flavor\flavor.js</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\flav_sel\flav_sel.js">
-      <PackagePath>pages\login_sessions\flav_sel\flav_sel.js</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\home\home.js">
-      <PackagePath>pages\login_sessions\home\home.js</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\info_home\info_home.js">
-      <PackagePath>pages\login_sessions\info_home\info_home.js</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\item_info\item_info.js">
-      <PackagePath>pages\login_sessions\item_info\item_info.js</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\launch_page\launch_page.js">
-      <PackagePath>pages\login_sessions\launch_page\launch_page.js</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\profile\profile.js">
-      <PackagePath>pages\login_sessions\profile\profile.js</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\protein\protein.js">
-      <PackagePath>pages\login_sessions\protein\protein.js</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\thankyou\thankyou.js">
-      <PackagePath>pages\login_sessions\thankyou\thankyou.js</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\protein\protein.js">
-      <PackagePath>pages\protein\protein.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\signup\signup.js">
       <PackagePath>pages\signup\signup.js</PackagePath>
@@ -350,9 +293,6 @@
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\func\func.html">
       <PackagePath>pages\func\func.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\info_home - Copy\info_home.html">
-      <PackagePath>pages\info_home - Copy\info_home.html</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.html">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.html</PackagePath>
     </AppxPackagedFile>
@@ -389,48 +329,6 @@
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login\login.html">
       <PackagePath>pages\login\login.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\all_products\all_products.html">
-      <PackagePath>pages\login_sessions\all_products\all_products.html</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\base\base.html">
-      <PackagePath>pages\login_sessions\base\base.html</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\boost\boost.html">
-      <PackagePath>pages\login_sessions\boost\boost.html</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\final\final.html">
-      <PackagePath>pages\login_sessions\final\final.html</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\flavor\flavor.html">
-      <PackagePath>pages\login_sessions\flavor\flavor.html</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\flav_sel\flav_sel.html">
-      <PackagePath>pages\login_sessions\flav_sel\flav_sel.html</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\home\home.html">
-      <PackagePath>pages\login_sessions\home\home.html</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\info_home\info_home.html">
-      <PackagePath>pages\login_sessions\info_home\info_home.html</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\item_info\item_info.html">
-      <PackagePath>pages\login_sessions\item_info\item_info.html</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\launch_page\launch_page.html">
-      <PackagePath>pages\login_sessions\launch_page\launch_page.html</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\profile\profile.html">
-      <PackagePath>pages\login_sessions\profile\profile.html</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\protein\protein.html">
-      <PackagePath>pages\login_sessions\protein\protein.html</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\thankyou\thankyou.html">
-      <PackagePath>pages\login_sessions\thankyou\thankyou.html</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\protein\protein.html">
-      <PackagePath>pages\protein\protein.html</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\signup\signup.html">
       <PackagePath>pages\signup\signup.html</PackagePath>
     </AppxPackagedFile>
@@ -448,48 +346,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\packages.config">
       <PackagePath>packages.config</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\info_home\info_home.js_bck">
-      <PackagePath>pages\info_home\info_home.js_bck</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\base\base.js_bck">
-      <PackagePath>pages\login_sessions\base\base.js_bck</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\boost\boost.js_bck">
-      <PackagePath>pages\login_sessions\boost\boost.js_bck</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\base\base.css_notused">
-      <PackagePath>pages\login_sessions\base\base.css_notused</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\final\final.css_notused">
-      <PackagePath>pages\login_sessions\final\final.css_notused</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\flavor\flavor.css_notused">
-      <PackagePath>pages\login_sessions\flavor\flavor.css_notused</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\flav_sel\flav_sel.css_notused">
-      <PackagePath>pages\login_sessions\flav_sel\flav_sel.css_notused</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\home\home.css_notused">
-      <PackagePath>pages\login_sessions\home\home.css_notused</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\info_home\info_home.css_notused">
-      <PackagePath>pages\login_sessions\info_home\info_home.css_notused</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\item_info\item_info.css_notused">
-      <PackagePath>pages\login_sessions\item_info\item_info.css_notused</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\launch_page\launch_page.css_notused">
-      <PackagePath>pages\login_sessions\launch_page\launch_page.css_notused</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\boost\boost.html_bck">
-      <PackagePath>pages\login_sessions\boost\boost.html_bck</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\protein\protein.css_notusing">
-      <PackagePath>pages\login_sessions\protein\protein.css_notusing</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\thankyou\thankyou.css_bck">
-      <PackagePath>pages\login_sessions\thankyou\thankyou.css_bck</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>

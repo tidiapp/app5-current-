@@ -19,24 +19,24 @@
             document.getElementById("more_info_home").setAttribute("hidden", true);
             document.getElementById("shop").setAttribute("hidden", true);
 
-            document.getElementById("choosen_age").textContent = "Select a " + roamingSettings.values["Cat_picked"] + " Category.";
+            document.getElementById("choosen_age").textContent = roamingSettings.values["Cat_picked"] + ".";
             var the_sel_age = roamingSettings.values["Cat_picked"];
 
             document.getElementById("age_p").textContent = the_sel_age;
 
-            if (the_sel_age === "Nutritional") {
+            if (the_sel_age === "Customize A Functional Drink Mix") {
                 //age_pic is really the catagory image that was picked previously
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
                 document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory." + " You have 4 steps left.";
             }
 
-            if (the_sel_age === "Protein") {
+            if (the_sel_age === "Customize A Protein Drink Mix") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
                 document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory." + " You have 4 steps left.";
-                document.getElementById("user_age").textContent = "Protein";
+                document.getElementById("user_age").textContent = "Customize A Protein Drink Mix";
             }
 
-            if (the_sel_age === "Nutrigenetics") {
+            if (the_sel_age === "Purchase A Nutrigenetic Test") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img3"];
                 document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory.";
                 document.getElementById("choosen_age").textContent = "Choose Your Test Kit";
@@ -90,7 +90,7 @@
             var appData = Windows.Storage.ApplicationData.current;
             var roamingSettings = appData.roamingSettings;
 
-            if (roamingSettings.values["Cat_picked"] === "Nutrigenetics") {
+            if (roamingSettings.values["Cat_picked"] === "Purchase A Nutrigenetic Test") {
                 WinJS.Navigation.navigate('pages/final/final.html');
                 roamingSettings.values["Nutrigenetics_name"] = _choosen_cat;
                 roamingSettings.values["Nutrigenetics_pic"] = document.getElementById("sel_age_pic").src;

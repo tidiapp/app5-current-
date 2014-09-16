@@ -44,7 +44,7 @@
     border: 3px solid #c8060c;
 }
 
-#choosen_age {
+#choosen_age3 {
     margin-right: 20px;
     position: relative;
 }
@@ -64,6 +64,7 @@
     width: 710px;
     /*height: 210px;*/
     overflow-y: auto;
+    height: 270px;
 }
 
 #info_btn2 {
@@ -95,10 +96,6 @@
     height: 250px;
     overflow: auto;
     /*direction: rtl;*/
-}
-
-#choosen_age {
-    position: relative;
 }
 
 #age_p {

@@ -14,11 +14,12 @@
 
             design.launch();
             design.changeTextColor();
-            document.getElementById("make_drink").style.borderColor = "white";
-            document.getElementById("learn_more").style.borderColor = "white";
-            document.getElementById("supl_sport").style.borderColor = "white";
-            document.getElementById("make_drink2").style.borderColor = "white";
-            document.getElementById("nutrigenetics").style.borderColor = "white";
+            //milo: used to be borderColer = "white"
+            document.getElementById("make_drink").style.border = 0;
+            document.getElementById("learn_more").style.border = 0;
+            document.getElementById("supl_sport").style.border = 0;
+            document.getElementById("make_drink2").style.border = 0;
+            document.getElementById("nutrigenetics").style.border = 0;
             document.getElementById("company_name").textContent = "Let's Customize";
             document.getElementById("appBar").winControl.show();
             document.getElementById("more_info_home").setAttribute("hidden", true);
@@ -94,7 +95,6 @@
             roamingSettings.values["FlavSel_pic"] = "",
             roamingSettings.values["FlavSel_vend"] = "",
             roamingSettings.values["Flav_name"] = ""
-
         },
 
         updateLayout: function (element) {

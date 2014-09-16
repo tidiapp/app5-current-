@@ -21,11 +21,11 @@
            
 
                 //milo: footer history 
-                if (roamingSettings.values["Cat_picked"] === "Nutritional") {
+                if (roamingSettings.values["Cat_picked"] === "Customize A Functional Drink Mix") {
                     document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
                 }
                 //milo: footer history 
-                if (roamingSettings.values["Cat_picked"] === "Protein") {
+                if (roamingSettings.values["Cat_picked"] === "Customize A Protein Drink Mix") {
                     document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
                 }
                 //milo: footer history 

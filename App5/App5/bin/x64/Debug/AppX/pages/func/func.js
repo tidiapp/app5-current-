@@ -18,17 +18,17 @@
             design.getFunc();
             design.changeTextColor();
             var the_sel_func = roamingSettings.values["Age_name"];
-            document.getElementById("choosen_age").textContent = "Whats your " + roamingSettings.values["Age_name"] + " Goal.";
+            document.getElementById("choosen_age2").textContent = "Select Your " + roamingSettings.values["Age_name"] + " Goal.";
             document.getElementById("home").removeAttribute("hidden");
             //document.getElementById("age_p").textContent = the_sel_func;
             //document.getElementById("func_price").removeAttribute("hidden");
 
                 //milo: footer history 
-                if (roamingSettings.values["Cat_picked"] === "Nutritional") {
+                if (roamingSettings.values["Cat_picked"] === "Customize A Functional Drink Mix") {
                     document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
                 }
                 //milo: footer history 
-                if (roamingSettings.values["Cat_picked"] === "Protein") {
+                if (roamingSettings.values["Cat_picked"] === "Customize A Protein Drink Mix") {
                     document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
                 }
                 //milo: footer history 

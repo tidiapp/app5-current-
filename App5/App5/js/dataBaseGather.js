@@ -8,7 +8,7 @@
                 remove.pop_list(age_data.model.age);
                 var Age = thinkitdrinkitDataClient.getTable("Age");
 
-                if (the_sel_age === "Nutritional") {
+                if (the_sel_age === "Customize A Functional Drink Mix") {
                     var query = Age.where({
                         AccessN: true
                     }).read().done(function (results) {
@@ -18,7 +18,7 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Protein") {
+                } else if (the_sel_age === "Customize A Protein Drink Mix") {
                     var query = Age.where({
                         AccessP: true
                     }).read().done(function (results) {
@@ -28,7 +28,7 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Nutrigenetics") {
+                } else if (the_sel_age === "Purchase A Nutrigenetic Test") {
                     var query = Age.where({
                         AccessNG: true
                     }).orderBy("Name").read().done(function (results) {
@@ -58,7 +58,7 @@
                 remove.pop_list(age_data.model.func);
                 var Func = thinkitdrinkitDataClient.getTable("Func");
 
-                if (the_sel_func === "Sports Protein") {
+                if (the_sel_func === "Sport Protein") {
                     var query = Func.where({
                         Access: 1
                     }).read().done(function (results) {
@@ -88,7 +88,7 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_func === "Wellness Protein") {
+                } else if (the_sel_func === "Functional Protein") {
                     var query = Func.where({
                         Access: 4
                     }).read().done(function (results) {
@@ -189,9 +189,9 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Muscle Recovery") {
+                } else if (the_sel_age === "Muscle Preservation") {
                     var query = Age.where({
-                        AccessMuscleR: true
+                        AccessMuscleP: true
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image })
@@ -199,9 +199,9 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Weekend Warrior") {
+                } else if (the_sel_age === "Endurance") {
                     var query = Age.where({
-                        AccessWeekend: true
+                        AccessEndurance: true
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image })
@@ -209,9 +209,9 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Sustained Energy") {
+                } else if (the_sel_age === "Cellular Energy") {
                     var query = Age.where({
-                        AccessSustained: true
+                        AccessCellular: true
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image })
@@ -259,7 +259,7 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Artisanal Luxery") {
+                } else if (the_sel_age === "Artisanal") {
                     var query = Age.where({
                         AccessArtisanal: true
                     }).orderBy("Name").read().done(function (results) {
@@ -339,9 +339,9 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Heart Health") {
+                } else if (the_sel_age === "Cardiovascular") {
                     var query = Age.where({
-                        AccessHeart: true
+                        AccessCardiovascular: true
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image })
@@ -434,9 +434,9 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Muscle Recovery") {
+                } else if (the_sel_age === "Muscle Preservation") {
                     var query = Age.where({
-                        AccessMuscleR: true
+                        AccessMuscleP: true
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.boost.push({ boost_name: results[i].Name, boost_pic: results[i].Image })
@@ -444,9 +444,9 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Weekend Warrior") {
+                } else if (the_sel_age === "Endurance") {
                     var query = Age.where({
-                        AccessWeekend: true
+                        AccessEndurance: true
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.boost.push({ boost_name: results[i].Name, boost_pic: results[i].Image })
@@ -454,9 +454,9 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Sustained Energy") {
+                } else if (the_sel_age === "Cellular Energy") {
                     var query = Age.where({
-                        AccessSustained: true
+                        AccessCellular: true
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.boost.push({ boost_name: results[i].Name, boost_pic: results[i].Image })
@@ -504,7 +504,7 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Artisanal Luxery") {
+                } else if (the_sel_age === "Artisanal") {
                     var query = Age.where({
                         AccessArtisanal: true
                     }).orderBy("Name").read().done(function (results) {
@@ -584,9 +584,9 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Heart Health") {
+                } else if (the_sel_age === "Cardiovascular") {
                     var query = Age.where({
-                        AccessHeart: true
+                        AccessCardiovascular: true
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.boost.push({ boost_name: results[i].Name, boost_pic: results[i].Image })
