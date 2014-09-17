@@ -38,6 +38,16 @@
                     }, function (err) {
                         console.log(err);
                     });
+                } else if (the_sel_age === "Customize A Sport Drink Mix") {
+                    var query = Age.where({
+                        AccessS: true
+                    }).orderBy("Name").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.age.push({ age: results[i].Name, img: results[i].Image })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
                 }
             },
             home_sub: function (name) {
@@ -349,7 +359,7 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Bone & Joint") {
+                } else if (the_sel_age === "Bone & Joint Support") {
                     var query = Age.where({
                         AccessBone: true
                     }).orderBy("Name").read().done(function (results) {
@@ -594,7 +604,7 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Bone & Joint") {
+                } else if (the_sel_age === "Bone & Joint Support") {
                     var query = Age.where({
                         AccessBone: true
                     }).orderBy("Name").read().done(function (results) {

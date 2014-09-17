@@ -31,8 +31,8 @@
                 </div>
             </section>
 
-            <section id="supl_sport" class="the_float" onclick="WinJS.Navigation.navigate('pages/supl_sport/supl_sport.html'), cat_clicked.clicked(document.getElementById('supl_sport_name').textContent);">
-                <img src="https://thinkitdrinkit.blob.core.windows.net/thinkitdrinkitappimages/sportup.png" />
+            <section id="supl_sport" class="the_float" onclick="cat_clicked.passon(event.srcElement.innerText), cat_clicked.next_page();">
+                <img id="make_sport_drink_img" src="https://thinkitdrinkit.blob.core.windows.net/thinkitdrinkitappimages/sportup.png" />
                 <div class="underline_div">
                 <a id="supl_sport_name">Customize A Sport Drink Mix</a>
                 </div>

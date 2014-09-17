@@ -27,13 +27,10 @@
             if (the_sel_age === "Customize A Functional Drink Mix") {
                 //age_pic is really the catagory image that was picked previously
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
-                document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory." + " You have 4 steps left.";
             }
 
             if (the_sel_age === "Customize A Protein Drink Mix") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
-                document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory." + " You have 4 steps left.";
-                document.getElementById("user_age").textContent = "Customize A Protein Drink Mix";
             }
 
             if (the_sel_age === "Purchase A Nutrigenetic Test") {
@@ -42,6 +39,13 @@
                 document.getElementById("choosen_age").textContent = "Choose Your Test Kit";
                 document.getElementById("nutrigenetics_price_div").removeAttribute("hidden");
             }
+
+            if (the_sel_age === "Customize A Sport Drink Mix") {
+                document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img4"];
+            }
+
+            document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory." + " You have 4 steps left.";
+
             //gather the infomation from the database and displays it on the sreen
             server.home(the_sel_age);
 

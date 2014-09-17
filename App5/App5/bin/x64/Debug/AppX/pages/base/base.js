@@ -19,7 +19,7 @@
             design.changeTextColor();
             document.getElementById("home").removeAttribute("hidden");
             var the_sel_age = roamingSettings.values["Func_name"];
-            document.getElementById("choosen_age3").textContent = "Select Your " + "Protein For " + roamingSettings.values["Func_name"];
+            document.getElementById("choosen_age3").textContent = "Select Your " + "Protein For " + roamingSettings.values["Func_name"] + ".";
 
             //milo: footer history 
             if (roamingSettings.values["Cat_picked"] === "Customize A Functional Drink Mix") {
@@ -28,6 +28,9 @@
             //milo: footer history 
             if (roamingSettings.values["Cat_picked"] === "Customize A Protein Drink Mix") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
+            }
+            if (roamingSettings.values["Cat_picked"] === "Customize A Sport Drink Mix") {
+                document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img4"];
             }
             //milo: footer history 
             document.getElementById("age_p").textContent = roamingSettings.values["Cat_picked"];

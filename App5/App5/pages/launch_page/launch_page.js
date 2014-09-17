@@ -31,6 +31,7 @@
             roamingSettings.values["Cat_picked_img"] = "",
             roamingSettings.values["Cat_picked_img2"] = "",
             roamingSettings.values["Cat_picked_img3"] = "",
+            roamingSettings.values["Cat_picked_img4"] = "",
             roamingSettings.values["Func_name"] = "",
             roamingSettings.values["Func_pic"] = "",
             roamingSettings.values["Func_info"] = "",
@@ -122,11 +123,9 @@
             roamingSettings.values["Cat_picked_img"] = document.getElementById("make_drink_img").src;
             roamingSettings.values["Cat_picked_img2"] = document.getElementById("make_drink_img2").src;
             roamingSettings.values["Cat_picked_img3"] = document.getElementById("nutrigenetics_img").src;
+            roamingSettings.values["Cat_picked_img4"] = document.getElementById("make_sport_drink_img").src;
         },
 
-        clicked: function () {
-            roamingSettings.values["Clicked_cat"] = document.getElementById("supl_sport_name").textContent;
-        },
         clicked2: function () {
             roamingSettings.values["Clicked_cat"] = document.getElementById("learn_more_title").textContent;
             //console.log(roamingSettings.values["Clicked_cat"]);

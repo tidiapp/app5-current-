@@ -31,6 +31,9 @@
                 if (roamingSettings.values["Cat_picked"] === "Customize A Protein Drink Mix") {
                     document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
                 }
+                if (roamingSettings.values["Cat_picked"] === "Customize A Sport Drink Mix") {
+                    document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img4"];
+                }
                 //milo: footer history 
                 document.getElementById("age_p").textContent = roamingSettings.values["Cat_picked"];
                 document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];
