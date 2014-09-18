@@ -17,7 +17,6 @@
     var thename4 = "";
     var thename0 = "";
 
-
     WinJS.UI.Pages.define("/pages/boost/boost.html", {
         // This function is called whenever a user navigates to this page. It
         // populates the page elements with the app's data.
@@ -196,7 +195,6 @@
         }
     });
 
-
     thename1 = "";
     thename2 = "";
     thename3 = "";
@@ -205,12 +203,10 @@
     //console.log(thename1, thename2, thename3);
 
     WinJS.Namespace.define("boost_clicked", {
-       
+       //milo: onclick from boost.html takes what was clicked and passes it to variable.
         clicked1: function (name, img, price, vend, label) {
             //document.getElementById("btn_right").removeAttribute("hidden");
-
             //var boostView = element.querySelector().winControl;
-
 
             if (age_data.model.the_boost_sel.length < 4) {
                 //console.log(thename1, thename2, thename3, thename4, thename5, thename6, thename7, thename8, thename9);

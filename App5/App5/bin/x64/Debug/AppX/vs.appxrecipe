@@ -17,7 +17,7 @@
     <AppXManifest Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\bin\x64\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-09-16T16:49:38.693</Modified>
+      <Modified>2014-09-18T19:13:30.053</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -67,7 +67,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\flav_sel\flav_sel.css">
       <PackagePath>pages\flav_sel\flav_sel.css</PackagePath>
-      <Modified>2014-08-21T16:25:46.762</Modified>
+      <Modified>2014-09-18T19:53:56.302</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\home\home.css">
       <PackagePath>pages\home\home.css</PackagePath>
@@ -255,6 +255,14 @@
       <PackagePath>js\showPopupUI.js</PackagePath>
       <Modified>2014-09-10T14:43:07.262</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\vendCalls.js">
+      <PackagePath>js\vendCalls.js</PackagePath>
+      <Modified>2014-09-18T19:13:18.188</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\base\base.js">
+      <PackagePath>pages\base\base.js</PackagePath>
+      <Modified>2014-09-18T21:13:14.475</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\func\func.js">
       <PackagePath>pages\func\func.js</PackagePath>
       <Modified>2014-09-17T19:49:56.091</Modified>
@@ -275,13 +283,9 @@
       <PackagePath>pages\all_products\all_products.js</PackagePath>
       <Modified>2014-08-14T14:23:13.928</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\base\base.js">
-      <PackagePath>pages\base\base.js</PackagePath>
-      <Modified>2014-09-17T20:02:43.316</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\boost\boost.js">
       <PackagePath>pages\boost\boost.js</PackagePath>
-      <Modified>2014-09-17T20:02:43.250</Modified>
+      <Modified>2014-09-18T20:46:33.132</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\final\final.js">
       <PackagePath>pages\final\final.js</PackagePath>
@@ -289,7 +293,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\flav_sel\flav_sel.js">
       <PackagePath>pages\flav_sel\flav_sel.js</PackagePath>
-      <Modified>2014-09-17T20:02:43.270</Modified>
+      <Modified>2014-09-18T20:29:35.073</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\home\home.js">
       <PackagePath>pages\home\home.js</PackagePath>
@@ -405,7 +409,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\base\base.html">
       <PackagePath>pages\base\base.html</PackagePath>
-      <Modified>2014-09-16T17:55:45.175</Modified>
+      <Modified>2014-09-18T19:13:18.224</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\boost\boost.html">
       <PackagePath>pages\boost\boost.html</PackagePath>
@@ -417,7 +421,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\flav_sel\flav_sel.html">
       <PackagePath>pages\flav_sel\flav_sel.html</PackagePath>
-      <Modified>2014-08-21T16:55:53.844</Modified>
+      <Modified>2014-09-18T19:43:05.789</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\home\home.html">
       <PackagePath>pages\home\home.html</PackagePath>
@@ -465,7 +469,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-09-16T16:49:38.437</Modified>
+      <Modified>2014-09-18T19:13:29.813</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

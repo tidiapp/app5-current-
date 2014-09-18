@@ -120,7 +120,9 @@
     <Content Include="js\print.js" />
     <Content Include="js\removeInfo.js" />
     <Content Include="js\showPopupUI.js" />
+    <Content Include="js\vendCalls.js" />
     <Content Include="packages.config" />
+    <Content Include="pages\base\base.js" />
     <Content Include="pages\func\func.css" />
     <Content Include="pages\func\func.html" />
     <Content Include="pages\func\func.js" />
@@ -136,7 +138,6 @@
     <Content Include="pages\all_products\all_products.js" />
     <Content Include="pages\base\base.css" />
     <Content Include="pages\base\base.html" />
-    <Content Include="pages\base\base.js" />
     <Content Include="pages\boost\boost.css" />
     <Content Include="pages\boost\boost.html" />
     <Content Include="pages\boost\boost.js" />

@@ -75,13 +75,51 @@
 
         next_page_boost: function () {
             keepInfo = true;
-            WinJS.Navigation.navigate('pages/boost/boost.html')
             roamingSettings.values["FlavSel_name"] = the_choosenFlav;
             roamingSettings.values["FlavSel_pic"] = document.getElementById("hidden_flav_pic").src;
             roamingSettings.values["FlavSel_vend"] = document.getElementById("f_vend").textContent;
             roamingSettings.values["FlavSel_info"] = null;
             roamingSettings.values["FlavSel_price"] = null;
             roamingSettings.values["FlavSel_label"] = document.getElementById("flav_sel_sel_pic").src;
+
+            var vendId = roamingSettings.values["FlavSel_vend"];
+            //milo: the following makes a call to vend to check if we have enough product for the order if low it will not allow to move on. 
+            if (vendId != "" && vendId != "null") {
+
+                WinJS.xhr({
+                    //milo: using POST but not passing anything to vend until .then at which point it reads the api product inventory count and displays it back.  
+                    type: "POST",
+                    url: "https://thinkitdrinkit.vendhq.com/api/products",
+                    user: "milo@thinkitdrinkit.com",
+                    headers: { "Content-type": "application/json" },
+                    //password: "********",
+                    data: JSON.stringify({
+                        //milo: in this object its the id part >>> GET /api/register_sales/{id} >>> that VEND wants which is below
+                        "id": vendId,
+                        "inventory": [{
+                        }]
+                    }),
+                }).then(function sucess(res) {
+                    //milo: below allows the real GET which is the count to come back to app. Notes accessing json>>> http://www.mkyong.com/javascript/how-to-access-json-object-in-javascript/
+                    var vendCount = JSON.parse(res.responseText).product.inventory[0].count;
+                    console.log("Flavor Count from VEND ", vendCount);
+                    if (vendCount >= 14.00000) {
+                        WinJS.Navigation.navigate('pages/boost/boost.html')
+                    } else if (vendCount <= 13.00000) {
+                        document.getElementById("out_of_stock2").removeAttribute("hidden");
+                        document.getElementById("out_of_stock2").textContent = "OUT OF STOCK, PLEASE PICK ANOTHER FLAVOR";
+                        document.getElementById("out_of_stock2").style.color = "red";
+                        document.getElementById("out_of_stock2").style.fontSize = "20px";
+                        document.getElementById("out_of_stock2").style.marginTop = "115px";
+                        document.getElementById("out_of_stock2").style.marginLeft = "263px";
+                        document.getElementById("out_of_stock2").style.position = "Absolute";
+                    }
+                }, function error(err) {
+                    console.log("fail", err.responseText)
+                });
+            } else {
+                WinJS.Navigation.navigate('pages/boost/boost.html')
+            }
         },
         more_info: function (clicked) {
             roamingSettings.values["Item_choosen"] = clicked;

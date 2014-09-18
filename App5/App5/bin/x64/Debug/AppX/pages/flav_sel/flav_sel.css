@@ -55,7 +55,7 @@
 #the_flav_sel_sel {
     width: 700px;
     background-color: #fff;
-    height: 200px;
+    height: 235px;
     /*added this for scrollable nutritional lable*/
     overflow: auto;
 }
@@ -63,7 +63,7 @@
 #flav_sel_sel_placement {
     margin-left: -100px;
     width: 710px;
-    height: 220px;
+    height: 240px;
     margin-top: 22px;
 }
 

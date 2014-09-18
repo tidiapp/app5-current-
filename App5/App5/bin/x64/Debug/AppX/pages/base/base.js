@@ -75,7 +75,9 @@
             //milo: if msg "not available please pick another base" stays clear it here when they click on the next boost ( this would be after base_clicked.next_page_flavor fired )
         },
 
-        next_page_flavor: function () {
+        next_page_flavor: function (name) {
+
+            console.log("heyehy " + name);
 
                 keepInfo = true;
                 var vendId = document.getElementById("b_vend").innerHTML;
@@ -86,11 +88,12 @@
                 roamingSettings.values["Base_info"] = document.getElementById("sel_base_info").textContent;
                 roamingSettings.values["Base_price"] = document.getElementById("base_price").textContent;
                 roamingSettings.values["Base_label"] = document.getElementById("sel_base_pic").src;
-                console.log("Next page " + vendId);
-            
+                //console.log("Next page " + vendId);
+                
             //milo: the following makes a call to vend to check if we have enough product for the order if low it will not allow to move on. 
             //milo: b8ca3a65-0166-11e4-fbb5-3772ff8b2b7f or 2nd one b8ca3a65-0166-11e4-fbb5-3772835994f8 == Whey Protein Isolate(B) is the only one currently set up to stop at low count (13 count or less)
-                if (vendId != "" && vendId != "null" ) {
+                if (vendId != "" && vendId != "null") {
+                    
                     WinJS.xhr({
                         //milo: using POST but not passing anything to vend until .then at which point it reads the api product inventory count and displays it back.  
                         type: "POST",
@@ -100,18 +103,17 @@
                         //password: "********",
                         data: JSON.stringify({
                             //milo: in this object its the id part >>> GET /api/register_sales/{id} >>> that VEND wants which is below
-                            "id": roamingSettings.values["Base_Vend"],
+                            "id": vendId,
                             "inventory": [{
                             }]
                         }),
                     }).then(function sucess(res) {
                         //milo: below allows the real GET which is the count to come back to app. Notes accessing json>>> http://www.mkyong.com/javascript/how-to-access-json-object-in-javascript/
-                        roamingSettings.values["Count"] = JSON.parse(res.responseText).product.inventory[0].count;
-                        console.log("Count from VEND ", roamingSettings.values["Count"]);
-                        if (roamingSettings.values["Count"] >= 14.00000) {
+                        var vendCount = JSON.parse(res.responseText).product.inventory[0].count;
+                        console.log("Base Count from VEND ", vendCount);
+                        if (vendCount >= 14.00000) {
                             WinJS.Navigation.navigate('pages/flav_sel/flav_sel.html')
-
-                        } else if (roamingSettings.values["Count"] <= 13.00000) {
+                        } else if (vendCount <= 13.00000) {
                             document.getElementById("out_of_stock").removeAttribute("hidden");
                             document.getElementById("out_of_stock").textContent = "OUT OF STOCK, PLEASE PICK ANOTHER BASE";
                             document.getElementById("out_of_stock").style.color = "red";
