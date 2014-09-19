@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
-  <Identity Name="e3f10fc1-365d-4d2e-b488-7e61baad9bf4" Version="1.0.0.20" Publisher="CN=Anthony" />
+  <Identity Name="e3f10fc1-365d-4d2e-b488-7e61baad9bf4" Version="1.0.0.21" Publisher="CN=Anthony" />
   <Properties>
     <DisplayName>App5</DisplayName>
     <PublisherDisplayName>Anthony &amp; Milo</PublisherDisplayName>

@@ -39,6 +39,9 @@
             design.getBoost();
             design.changeTextColor();
 
+//*******milo: did this for testing purposes, for david to see graphic only 
+            document.getElementById("boost_name").setAttribute("hidden", true);
+
             //milo: footer history 
             if (roamingSettings.values["Cat_picked"] === "Customize A Functional Drink Mix") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
@@ -243,6 +246,7 @@
                         document.getElementById("the_test");
                         console.log(roamingSettings.values["Boost1_name"] + roamingSettings.values["Boost1_pic"]);
                         keepInfo = false;
+//milo: here needs to be the check order qantity from vend 
 
                     } else if (age_data.model.the_boost_sel.length === 2) {
                         thename2 = name;
@@ -260,6 +264,7 @@
                         document.getElementById("boost2_div").removeAttribute("hidden");
                         document.getElementById("the_test");
                         keepInfo = false;
+//milo: here needs to be the check order qantity from vend 
 
                     } else if (age_data.model.the_boost_sel.length === 3) {
                         thename3 = name;
@@ -277,6 +282,8 @@
                         document.getElementById("div_boost3_name").textContent = name;
                         document.getElementById("the_test");
                         keepInfo = false;
+//milo: here needs to be the check order qantity from vend 
+
                     } else if (age_data.model.the_boost_sel.length === 4) {
                         thename4 = name;
                         document.getElementById("the_number").textContent = age_data.model.the_boost_sel.length;
@@ -293,6 +300,8 @@
                         document.getElementById("div_boost4_name").textContent = name;
                         document.getElementById("the_test");
                         keepInfo = false;
+//milo: here needs to be the check order qantity from vend 
+
                     } 
                 }//ends else for duplicate check
             } else {

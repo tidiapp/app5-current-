@@ -75,10 +75,7 @@
             //milo: if msg "not available please pick another base" stays clear it here when they click on the next boost ( this would be after base_clicked.next_page_flavor fired )
         },
 
-        next_page_flavor: function (name) {
-
-            console.log("heyehy " + name);
-
+        next_page_flavor: function () {
                 keepInfo = true;
                 var vendId = document.getElementById("b_vend").innerHTML;
                 roamingSettings.values["Base_protein"] = false;

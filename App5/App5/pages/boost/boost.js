@@ -39,6 +39,9 @@
             design.getBoost();
             design.changeTextColor();
 
+//*******milo: did this for testing purposes, for david to see graphic only 
+            document.getElementById("boost_name").setAttribute("hidden", true);
+
             //milo: footer history 
             if (roamingSettings.values["Cat_picked"] === "Customize A Functional Drink Mix") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
