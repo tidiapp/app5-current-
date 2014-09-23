@@ -121,6 +121,7 @@
     <Content Include="js\removeInfo.js" />
     <Content Include="js\showPopupUI.js" />
     <Content Include="js\vendCalls.js" />
+    <Content Include="Myriad-Condensed.ttf" />
     <Content Include="packages.config" />
     <Content Include="pages\base\base.js" />
     <Content Include="pages\func\func.css" />

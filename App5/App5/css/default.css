@@ -46,7 +46,7 @@
 
 body {
     background-color: #fff;
-    font-family: 'Myriad Pro';
+    font-family: 'Myriad-Condensed';
     /*Milo added the mstouch none, it disables multy touch -ms-touch-action: none; DID NOT WORK*/
     /*-ms-touch-action: none;*/
 }
