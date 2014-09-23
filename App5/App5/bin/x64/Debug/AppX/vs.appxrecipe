@@ -17,13 +17,13 @@
     <AppXManifest Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\bin\x64\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-09-22T20:30:23.087</Modified>
+      <Modified>2014-09-23T16:59:07.745</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\css\default.css">
       <PackagePath>css\default.css</PackagePath>
-      <Modified>2014-09-22T20:30:20.696</Modified>
+      <Modified>2014-09-23T16:49:05.348</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\libs\prettify\prettify.css">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\libs\prettify\prettify.css</PackagePath>
@@ -32,6 +32,14 @@
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\style.css">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\style.css</PackagePath>
       <Modified>2014-08-25T14:51:38.545</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\boost\boost.css">
+      <PackagePath>pages\boost\boost.css</PackagePath>
+      <Modified>2014-09-23T20:01:13.374</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\boost.ori\boost.css">
+      <PackagePath>pages\boost.ori\boost.css</PackagePath>
+      <Modified>2014-08-21T16:59:39.832</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\func\func.css">
       <PackagePath>pages\func\func.css</PackagePath>
@@ -53,9 +61,9 @@
       <PackagePath>pages\base\base.css</PackagePath>
       <Modified>2014-09-16T17:55:45.162</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\boost\boost.css">
-      <PackagePath>pages\boost\boost.css</PackagePath>
-      <Modified>2014-08-21T16:59:39.832</Modified>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\boost.bck\boost.css">
+      <PackagePath>pages\boost.bck\boost.css</PackagePath>
+      <Modified>2014-09-23T19:43:13.273</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\final\final.css">
       <PackagePath>pages\final\final.css</PackagePath>
@@ -83,7 +91,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\launch_page\launch_page.css">
       <PackagePath>pages\launch_page\launch_page.css</PackagePath>
-      <Modified>2014-09-15T15:00:00.680</Modified>
+      <Modified>2014-09-23T16:52:33.991</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login\login.css">
       <PackagePath>pages\login\login.css</PackagePath>
@@ -193,7 +201,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\dataBaseGather.js">
       <PackagePath>js\dataBaseGather.js</PackagePath>
-      <Modified>2014-09-19T21:14:58.679</Modified>
+      <Modified>2014-09-23T21:29:21.471</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\dataStore.js">
       <PackagePath>js\dataStore.js</PackagePath>
@@ -263,6 +271,14 @@
       <PackagePath>pages\base\base.js</PackagePath>
       <Modified>2014-09-18T21:18:31.754</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\boost\boost.js">
+      <PackagePath>pages\boost\boost.js</PackagePath>
+      <Modified>2014-09-19T21:13:40.665</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\boost.ori\boost.js">
+      <PackagePath>pages\boost.ori\boost.js</PackagePath>
+      <Modified>2014-09-19T21:13:40.665</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\func\func.js">
       <PackagePath>pages\func\func.js</PackagePath>
       <Modified>2014-09-17T19:49:56.091</Modified>
@@ -283,8 +299,8 @@
       <PackagePath>pages\all_products\all_products.js</PackagePath>
       <Modified>2014-08-14T14:23:13.928</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\boost\boost.js">
-      <PackagePath>pages\boost\boost.js</PackagePath>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\boost.bck\boost.js">
+      <PackagePath>pages\boost.bck\boost.js</PackagePath>
       <Modified>2014-09-19T21:13:40.665</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\final\final.js">
@@ -391,6 +407,14 @@
       <PackagePath>default.html</PackagePath>
       <Modified>2014-09-10T14:43:07.250</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\boost\boost.html">
+      <PackagePath>pages\boost\boost.html</PackagePath>
+      <Modified>2014-09-19T16:23:53.106</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\boost.ori\boost.html">
+      <PackagePath>pages\boost.ori\boost.html</PackagePath>
+      <Modified>2014-09-19T16:23:53.106</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\func\func.html">
       <PackagePath>pages\func\func.html</PackagePath>
       <Modified>2014-09-16T17:55:45.239</Modified>
@@ -411,8 +435,8 @@
       <PackagePath>pages\base\base.html</PackagePath>
       <Modified>2014-09-18T19:13:18.224</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\boost\boost.html">
-      <PackagePath>pages\boost\boost.html</PackagePath>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\boost.bck\boost.html">
+      <PackagePath>pages\boost.bck\boost.html</PackagePath>
       <Modified>2014-09-19T16:23:53.106</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\final\final.html">
@@ -463,17 +487,13 @@
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\slimScroll.jquery.json</PackagePath>
       <Modified>2014-08-25T14:51:37.334</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\Myriad-Condensed.ttf">
-      <PackagePath>Myriad-Condensed.ttf</PackagePath>
-      <Modified>2014-09-22T20:20:49.837</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\packages.config">
       <PackagePath>packages.config</PackagePath>
       <Modified>2014-08-14T14:23:13.772</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-09-22T20:30:22.880</Modified>
+      <Modified>2014-09-23T16:59:07.596</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

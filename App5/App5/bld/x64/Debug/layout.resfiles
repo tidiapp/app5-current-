@@ -58,7 +58,6 @@ js\print.js
 js\removeInfo.js
 js\showPopupUI.js
 js\vendCalls.js
-Myriad-Condensed.ttf
 packages.config
 pages\all_products\all_products.css
 pages\all_products\all_products.html
@@ -66,6 +65,12 @@ pages\all_products\all_products.js
 pages\base\base.css
 pages\base\base.html
 pages\base\base.js
+pages\boost.bck\boost.css
+pages\boost.bck\boost.html
+pages\boost.bck\boost.js
+pages\boost.ori\boost.css
+pages\boost.ori\boost.html
+pages\boost.ori\boost.js
 pages\boost\boost.css
 pages\boost\boost.html
 pages\boost\boost.js

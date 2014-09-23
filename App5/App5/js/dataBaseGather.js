@@ -505,9 +505,13 @@
                         console.log(err);
                     });
                 } else if (the_sel_age === "Paleo") {
+
+                    //milo: added function
                     var query = Age.where({
-                        AccessPaleo: true
-                    }).orderBy("Name").read().done(function (results) {
+                        AccessPaleo: true 
+                        //AccessPurpose: null && "null" && "undefined"
+                        
+                    }).orderBy("AccessPurpose").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.boost.push({ boost_name: results[i].Name, boost_pic: results[i].Image })
                         }
