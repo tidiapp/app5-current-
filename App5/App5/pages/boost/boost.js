@@ -38,6 +38,7 @@
 
             design.getBoost();
             design.changeTextColor();
+            design.getBoostBorders("white");
 
             //milo: footer history 
             if (roamingSettings.values["Cat_picked"] === "Customize A Functional Drink Mix") {
@@ -203,6 +204,15 @@
     //console.log(thename1, thename2, thename3);
 
     WinJS.Namespace.define("boost_clicked", {
+
+        clicked: function (name) {
+            remove.pop_list(age_data.model.info_page5);
+            var updated_name = name.replace(/^\s+/, '').replace(/\s+$/, '');
+            server.boost_sub(updated_name);
+            keepInfo = false;
+            console.log(updated_name);
+        },
+
        //milo: onclick from boost.html takes what was clicked and passes it to variable.
         clicked1: function (name, img, price, vend, label) {
             //document.getElementById("btn_right").removeAttribute("hidden");
@@ -308,13 +318,6 @@
                 document.getElementById("overError").style.marginTop = "100px";
                 document.getElementById("overError").style.position = "Absolute";
             }
-        },
-
-        clicked: function (name) {
-            remove.pop_list(age_data.model.info_page5);
-            var updated_name = name.replace(/^\s+/, '').replace(/\s+$/, '');
-            server.boost_sub(updated_name);
-            keepInfo = false;
         },
 
         release: function () {

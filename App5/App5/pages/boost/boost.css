@@ -26,16 +26,16 @@
 }
 
 .boost_bg_img_class {
-    width: 140px;
-    height: 140px;
+    width: 180px;
+    height: 180px;
     position: absolute;
     z-index: -1;
 }
 
 #boost_list_id {
-    width: 140px;
-    height: 140px;
-    border: 3px solid #c8060c;
+    width: 180px;
+    height: 180px;
+    border: 3px solid;
 }
 
 #boost_name {
@@ -43,7 +43,7 @@
     /*height: 25px;*/
     color: #fff;
     font-weight: 300;
-    margin-top: 75px;
+    margin-top: 105px;
     /*background-color: rgba(0,0,0,.6);*/
     font-size: 18px;
     /*padding-left: 10px;*/
@@ -309,7 +309,7 @@ button, input[type=button], input[type=submit], input[type=reset], input[type=fi
 }
 
 #win_listview_host_boost_row .win-listview {
-    height: 325px;
+    height: 235px;
     /*border: 2px solid pink;*/
     width: 1580px;
 /*dont use margins here use .win-surface*/
@@ -329,14 +329,14 @@ button, input[type=button], input[type=submit], input[type=reset], input[type=fi
 }
 
 #boost_list_placement .win-viewport {
-    height: 320px;
+    height: 230px;
     /*border: 2px solid green;*/
     width: 1578px;
 }
 
 #boost_list_placement .win-container {
-    width: 146px;
-    height: 146px;
+    width: 186px;
+    height: 186px;
 }
 
     #boost_list_placement .win-focus.win-container .win-focusedoutline {

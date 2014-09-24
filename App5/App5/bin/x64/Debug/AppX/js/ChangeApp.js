@@ -71,8 +71,6 @@
         getBoost: function () {
             document.getElementById("main_footer").style.backgroundColor = i;
             document.getElementById("appBar").style.backgroundColor = i;
-            document.getElementById("boost_list_id").style.borderColor = i;
-            document.getElementById("choosen_bg_img").style.borderColor = i;
 
             document.getElementById("info_btn3").style.backgroundColor = i;
             document.getElementById("sel_btn3").style.backgroundColor = i;
@@ -81,6 +79,10 @@
             document.getElementById("sel_btn10").style.backgroundColor = i;
             document.getElementById("the_number").style.color = i;
             document.getElementById("the_num").style.color = i;
+        },
+        getBoostBorders: function (i) {
+            document.getElementById("boost_list_id").style.borderColor = i;
+            document.getElementById("choosen_bg_img").style.borderColor = i;
         },
         getFinal: function () {
             document.getElementById("main_footer").style.backgroundColor = i;
