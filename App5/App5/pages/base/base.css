@@ -132,4 +132,17 @@
     margin-top: 0;
 }
 
+#base_price {
+    position: absolute;
+
+}
+
+#base_price_div {
+    float: right;
+    margin-right: 70px;
+    font-size: 30px;
+
+}
+
+
 

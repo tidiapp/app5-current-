@@ -53,7 +53,7 @@
             // TODO: Respond to navigations away from this page.
 
             roamingSettings.values["I_ordered"] = "yes";
-            if (!roamingSettings.values["not_cont"]) {
+            if (roamingSettings.values["not_cont"]) {
                 roamingSettings.values["total_price"] = 0;
             }
             //get_set.get_order('', true);
@@ -247,7 +247,7 @@
               }*/ //The above code is for testing only
             // console.log(array_t);
 
-            WinJS.Navigation.navigate('pages/home/home.html');
+            WinJS.Navigation.navigate('pages/launch_page/launch_page.html');
             var test = age_data.model.continue_order_save.toString();
             console.log("Continue: " + test + " " + age_data.model.continue_order_save.length);
         }

@@ -123,3 +123,14 @@
 #contenthost {
     margin-top: 0;
 }
+
+#boost_price_prev_div {
+    position: absolute;
+    margin-left: 94px;
+    margin-top: 2px;
+    font-size: 25px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.6);
+    padding-top: 6px;
+    padding-right: 5px;
+}

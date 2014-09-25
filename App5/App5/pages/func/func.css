@@ -5,8 +5,8 @@
 }
 
 .func_pic_class {
-    width: 136px;
-    height: 130px;
+    width: 206px;
+    height: 200px;
     position: absolute;
     z-index: -1;
     /*margin-right: 10px;*/
@@ -23,19 +23,20 @@
 
 #func_name {
     width: auto;
-    height: 35px;
+    height: 30px;
     color: #fff;
-    font-weight: 800;
-    margin-top: 90px;
+    font-weight: 400;
+    margin-top: 150px;
     background-color: rgba(0,0,0,.6);
-    font-size: 14px;
+    font-size: 20px;
     padding-left: 2px;
-    padding-top: 5px;
+    padding-top: 10px;
+    text-align: center;
 }
 
 #the_funcs {
-    width: 130px;
-    height: 130px;
+    width: 200px;
+    height: 200px;
     border: 3px solid #c8060c;
 }
 
@@ -95,7 +96,7 @@
 #win_listview_funcs_placement_row .win-listview {
     height: 325px;
     /*border: 2px solid pink;*/
-    width: 750px;
+    width: 1580px;
 /*dont use margins here use in .win-surface*/
 }
 
@@ -135,8 +136,8 @@
 }
 
 #funcs_placement .win-container {
-    width: 136px;
-    height: 136px;
+    width: 206px;
+    height: 206px;
 }
 
     #funcs_placement .win-focus.win-container .win-focusedoutline {

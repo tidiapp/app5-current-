@@ -38,8 +38,10 @@
                 document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];
                 document.getElementById("func_p").textContent = roamingSettings.values["Func_name"];
                 document.getElementById("func_pic").src = roamingSettings.values["Func_pic"];
+
                 document.getElementById("base_p").textContent = roamingSettings.values["Base_name"];
                 document.getElementById("base_pic").src = roamingSettings.values["Base_pic"];
+                document.getElementById("base_price_prev").textContent = roamingSettings.values["Base_price"];
                 document.getElementById("where_you_are3").textContent = "You have choosen the " + roamingSettings.values["Base_name"] + " Base." + " You have 1 steps left.";
 
             document.getElementById("flav_sel_header").textContent = "Choose Your " + "Flavor.";

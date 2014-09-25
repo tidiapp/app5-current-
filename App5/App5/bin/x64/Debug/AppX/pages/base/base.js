@@ -43,6 +43,9 @@
 
             server.base(the_sel_age);
 
+            document.getElementById("base_price_div").removeAttribute("hidden");
+
+
         },
 
         unload: function () {
@@ -73,6 +76,7 @@
             base3 = updated_base;
             server.base_sub(updated_base);
             //milo: if msg "not available please pick another base" stays clear it here when they click on the next boost ( this would be after base_clicked.next_page_flavor fired )
+
         },
 
         next_page_flavor: function () {

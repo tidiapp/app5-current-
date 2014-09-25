@@ -1,502 +1,499 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>THECHAMP262</Machine>
-    <WindowsUser>ANTHONY</WindowsUser>
-    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <Machine>THINKITDRINKIT4</Machine>
+    <WindowsUser>milo</WindowsUser>
     <SolutionConfiguration>Debug|x64</SolutionConfiguration>
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>e3f10fc1-365d-4d2e-b488-7e61baad9bf4</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\bld\x64\Debug\</IntermediateOutputPath>
     <RegisteredManifestChecksum>FB0A391C1E41F9D5CC2F8806B86141D6A5698C2AEC8F50B2DFF4A79BBCA1119B</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>e3f10fc1-365d-4d2e-b488-7e61baad9bf4_1.0.0.21_x64__bkvjexddj2nfj</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>e3f10fc1-365d-4d2e-b488-7e61baad9bf4_bkvjexddj2nfj!App</RegisteredUserModeAppID>
     <RegisteredPackageID>e3f10fc1-365d-4d2e-b488-7e61baad9bf4</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=Anthony</RegisteredPackagePublisher>
     <RegisteredVersion>1.0.0.21</RegisteredVersion>
-    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\bin\x64\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\bin\x64\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-09-25T01:20:40.506</Modified>
+      <Modified>2014-09-25T14:01:56.002</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\css\default.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\css\default.css">
       <PackagePath>css\default.css</PackagePath>
-      <Modified>2014-09-25T01:19:29.880</Modified>
+      <Modified>2014-09-25T18:32:46.896</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\libs\prettify\prettify.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\libs\prettify\prettify.css">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\libs\prettify\prettify.css</PackagePath>
-      <Modified>2014-09-25T01:19:29.931</Modified>
+      <Modified>2014-08-25T14:51:38.572</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\style.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\style.css">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\style.css</PackagePath>
-      <Modified>2014-09-25T01:19:29.969</Modified>
+      <Modified>2014-08-25T14:51:38.545</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\boost\boost.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\boost\boost.css">
       <PackagePath>pages\boost\boost.css</PackagePath>
-      <Modified>2014-09-25T01:19:30.032</Modified>
+      <Modified>2014-09-25T18:39:01.095</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\boost.ori\boost.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\boost.ori\boost.css">
       <PackagePath>pages\boost.ori\boost.css</PackagePath>
-      <Modified>2014-09-25T01:19:30.019</Modified>
+      <Modified>2014-08-21T16:59:39.832</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\func\func.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\func\func.css">
       <PackagePath>pages\func\func.css</PackagePath>
-      <Modified>2014-09-25T01:19:30.059</Modified>
+      <Modified>2014-09-25T17:04:49.168</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.css">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.css</PackagePath>
-      <Modified>2014-09-25T01:19:30.105</Modified>
+      <Modified>2014-09-10T14:43:07.334</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\supl_sport\supl_sport.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\supl_sport\supl_sport.css">
       <PackagePath>pages\supl_sport\supl_sport.css</PackagePath>
-      <Modified>2014-09-25T01:19:30.099</Modified>
+      <Modified>2014-09-10T14:43:07.332</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\all_products\all_products.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\all_products\all_products.css">
       <PackagePath>pages\all_products\all_products.css</PackagePath>
-      <Modified>2014-09-25T01:19:16.732</Modified>
+      <Modified>2014-08-14T14:23:13.776</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\base\base.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\base\base.css">
       <PackagePath>pages\base\base.css</PackagePath>
-      <Modified>2014-09-25T01:19:29.995</Modified>
+      <Modified>2014-09-25T20:55:01.239</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\boost.bck\boost.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\boost.bck\boost.css">
       <PackagePath>pages\boost.bck\boost.css</PackagePath>
-      <Modified>2014-09-25T01:19:30.009</Modified>
+      <Modified>2014-09-23T19:43:13.273</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\final\final.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\final\final.css">
       <PackagePath>pages\final\final.css</PackagePath>
-      <Modified>2014-09-25T01:29:19.395</Modified>
+      <Modified>2014-09-25T14:01:56.356</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\final\print.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\final\print.css">
       <PackagePath>pages\final\print.css</PackagePath>
-      <Modified>2014-09-25T01:19:16.802</Modified>
+      <Modified>2014-08-14T14:23:13.976</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\flav_sel\flav_sel.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\flav_sel\flav_sel.css">
       <PackagePath>pages\flav_sel\flav_sel.css</PackagePath>
-      <Modified>2014-09-25T01:19:30.048</Modified>
+      <Modified>2014-09-25T21:21:17.824</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\home\home.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\home\home.css">
       <PackagePath>pages\home\home.css</PackagePath>
-      <Modified>2014-09-25T01:19:30.069</Modified>
+      <Modified>2014-09-25T18:53:40.680</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\info_home\info_home.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\info_home\info_home.css">
       <PackagePath>pages\info_home\info_home.css</PackagePath>
-      <Modified>2014-09-25T01:19:16.847</Modified>
+      <Modified>2014-08-14T14:23:14.019</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\item_info\item_info.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\item_info\item_info.css">
       <PackagePath>pages\item_info\item_info.css</PackagePath>
-      <Modified>2014-09-25T01:19:16.859</Modified>
+      <Modified>2014-08-14T14:23:14.037</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\launch_page\launch_page.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\launch_page\launch_page.css">
       <PackagePath>pages\launch_page\launch_page.css</PackagePath>
-      <Modified>2014-09-25T01:19:30.089</Modified>
+      <Modified>2014-09-25T15:00:07.617</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\login\login.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login\login.css">
       <PackagePath>pages\login\login.css</PackagePath>
-      <Modified>2014-09-25T01:19:16.893</Modified>
+      <Modified>2014-08-14T14:23:14.075</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\signup\signup.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\signup\signup.css">
       <PackagePath>pages\signup\signup.css</PackagePath>
-      <Modified>2014-09-25T01:19:17.130</Modified>
+      <Modified>2014-08-14T14:23:14.261</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\thankyou\thankyou.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\thankyou\thankyou.css">
       <PackagePath>pages\thankyou\thankyou.css</PackagePath>
-      <Modified>2014-09-25T01:19:17.189</Modified>
+      <Modified>2014-08-14T14:23:14.298</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\welcome\welcome.css">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\welcome\welcome.css">
       <PackagePath>pages\welcome\welcome.css</PackagePath>
-      <Modified>2014-09-25T01:19:17.200</Modified>
+      <Modified>2014-08-14T14:23:14.302</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\images\another_logo.jpg">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\images\another_logo.jpg">
       <PackagePath>images\another_logo.jpg</PackagePath>
-      <Modified>2014-09-25T01:19:15.813</Modified>
+      <Modified>2014-08-14T14:23:13.555</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\images\another_logo.scale-100.jpg">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\images\another_logo.scale-100.jpg">
       <PackagePath>images\another_logo.scale-100.jpg</PackagePath>
-      <Modified>2014-09-25T01:19:15.817</Modified>
+      <Modified>2014-08-14T14:23:13.559</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\images\another_logo.scale-180.jpg">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\images\another_logo.scale-180.jpg">
       <PackagePath>images\another_logo.scale-180.jpg</PackagePath>
-      <Modified>2014-09-25T01:19:15.822</Modified>
+      <Modified>2014-08-14T14:23:13.564</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\images\bar1.jpg">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\images\bar1.jpg">
       <PackagePath>images\bar1.jpg</PackagePath>
-      <Modified>2014-09-25T01:19:15.825</Modified>
+      <Modified>2014-08-14T14:23:13.568</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\images\lemonLime.jpg">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\images\lemonLime.jpg">
       <PackagePath>images\lemonLime.jpg</PackagePath>
-      <Modified>2014-09-25T01:19:15.828</Modified>
+      <Modified>2014-08-14T14:23:13.572</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\images\LemonLimeZero.jpg">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\images\LemonLimeZero.jpg">
       <PackagePath>images\LemonLimeZero.jpg</PackagePath>
-      <Modified>2014-09-25T01:19:15.806</Modified>
+      <Modified>2014-08-14T14:23:13.520</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\images\logo1.jpg">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\images\logo1.jpg">
       <PackagePath>images\logo1.jpg</PackagePath>
-      <Modified>2014-09-25T01:19:15.835</Modified>
+      <Modified>2014-08-14T14:23:13.577</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\images\pomAcia.jpg">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\images\pomAcia.jpg">
       <PackagePath>images\pomAcia.jpg</PackagePath>
-      <Modified>2014-09-25T01:19:15.869</Modified>
+      <Modified>2014-08-14T14:23:13.593</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\images\logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\images\logo.scale-100.png">
       <PackagePath>images\logo.scale-100.png</PackagePath>
-      <Modified>2014-09-25T01:19:15.831</Modified>
+      <Modified>2014-08-14T14:23:13.572</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\images\logo_avatar.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\images\logo_avatar.scale-100.png">
       <PackagePath>images\logo_avatar.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-09-25T01:19:15.839</Modified>
+      <Modified>2014-08-14T14:23:13.579</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\images\logo_avatar.scale-180.png">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\images\logo_avatar.scale-180.png">
       <PackagePath>images\logo_avatar.scale-180.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-09-25T01:19:15.844</Modified>
+      <Modified>2014-08-14T14:23:13.581</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\images\logo_footer.png">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\images\logo_footer.png">
       <PackagePath>images\logo_footer.png</PackagePath>
-      <Modified>2014-09-25T01:19:15.857</Modified>
+      <Modified>2014-08-14T14:23:13.586</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\images\logo_footer_background.png">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\images\logo_footer_background.png">
       <PackagePath>images\logo_footer_background.png</PackagePath>
-      <Modified>2014-09-25T01:19:15.860</Modified>
+      <Modified>2014-08-14T14:23:13.588</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\images\logo_splash.png">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\images\logo_splash.png">
       <PackagePath>images\logo_splash.png</PackagePath>
-      <Modified>2014-09-25T01:19:15.863</Modified>
+      <Modified>2014-08-14T14:23:13.590</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\images\SmallLogo.scale-140.png">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\images\SmallLogo.scale-140.png">
       <PackagePath>images\SmallLogo.scale-140.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-09-25T01:19:15.809</Modified>
+      <Modified>2014-08-14T14:23:13.522</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\images\splash_screen_logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\images\splash_screen_logo.scale-100.png">
       <PackagePath>images\splash_screen_logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-09-25T01:19:15.891</Modified>
+      <Modified>2014-08-14T14:23:13.596</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\images\splash_screen_logo.scale-180.png">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\images\splash_screen_logo.scale-180.png">
       <PackagePath>images\splash_screen_logo.scale-180.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-09-25T01:19:15.900</Modified>
+      <Modified>2014-08-14T14:23:13.598</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\images\storelogo.scale-180.png">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\images\storelogo.scale-180.png">
       <PackagePath>images\storelogo.scale-180.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-09-25T01:19:15.927</Modified>
+      <Modified>2014-08-14T14:23:13.601</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\app_bar.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\app_bar.js">
       <PackagePath>js\app_bar.js</PackagePath>
-      <Modified>2014-09-25T01:19:16.292</Modified>
+      <Modified>2014-08-14T14:23:13.693</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\auth.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\auth.js">
       <PackagePath>js\auth.js</PackagePath>
-      <Modified>2014-09-25T01:19:16.337</Modified>
+      <Modified>2014-08-14T14:23:13.695</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\ChangeApp.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\ChangeApp.js">
       <PackagePath>js\ChangeApp.js</PackagePath>
-      <Modified>2014-09-25T01:19:29.887</Modified>
+      <Modified>2014-09-24T18:34:43.542</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\dataBaseGather.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\dataBaseGather.js">
       <PackagePath>js\dataBaseGather.js</PackagePath>
-      <Modified>2014-09-25T01:19:29.891</Modified>
+      <Modified>2014-09-25T20:36:46.564</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\dataStore.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\dataStore.js">
       <PackagePath>js\dataStore.js</PackagePath>
-      <Modified>2014-09-25T01:19:16.460</Modified>
+      <Modified>2014-08-14T14:23:13.706</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\default.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2014-09-25T01:30:04.674</Modified>
+      <Modified>2014-09-25T14:01:56.350</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\gatherInfo.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\gatherInfo.js">
       <PackagePath>js\gatherInfo.js</PackagePath>
-      <Modified>2014-09-25T01:30:38.187</Modified>
+      <Modified>2014-09-25T14:01:56.351</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\jquery.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\jquery.js">
       <PackagePath>js\jquery.js</PackagePath>
-      <Modified>2014-09-25T01:19:16.640</Modified>
+      <Modified>2014-08-14T14:23:13.747</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\libs\prettify\prettify.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\libs\prettify\prettify.js">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\libs\prettify\prettify.js</PackagePath>
-      <Modified>2014-09-25T01:19:29.935</Modified>
+      <Modified>2014-08-25T14:51:38.622</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\jquery.slimscroll.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\jquery.slimscroll.js">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\jquery.slimscroll.js</PackagePath>
-      <Modified>2014-09-25T01:19:29.973</Modified>
+      <Modified>2014-08-25T15:40:03.825</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\jquery.slimscroll.min.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\jquery.slimscroll.min.js">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\jquery.slimscroll.min.js</PackagePath>
-      <Modified>2014-09-25T01:19:29.978</Modified>
+      <Modified>2014-08-25T14:51:37.317</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\MobileServices.intellisense.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\MobileServices.intellisense.js">
       <PackagePath>js\MobileServices.intellisense.js</PackagePath>
-      <Modified>2014-09-25T01:19:16.023</Modified>
+      <Modified>2014-08-14T14:23:13.614</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\MobileServices.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\MobileServices.js">
       <PackagePath>js\MobileServices.js</PackagePath>
-      <Modified>2014-09-25T01:19:16.136</Modified>
+      <Modified>2014-08-14T14:23:13.655</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\MobileServices.min.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\MobileServices.min.js">
       <PackagePath>js\MobileServices.min.js</PackagePath>
-      <Modified>2014-09-25T01:19:16.180</Modified>
+      <Modified>2014-08-14T14:23:13.688</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\myAzure.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\myAzure.js">
       <PackagePath>js\myAzure.js</PackagePath>
-      <Modified>2014-09-25T01:19:16.676</Modified>
+      <Modified>2014-08-14T14:23:13.762</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\navigator.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\navigator.js">
       <PackagePath>js\navigator.js</PackagePath>
-      <Modified>2014-09-25T01:19:16.694</Modified>
+      <Modified>2014-08-14T14:23:13.764</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\print.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\print.js">
       <PackagePath>js\print.js</PackagePath>
-      <Modified>2014-09-25T01:19:16.705</Modified>
+      <Modified>2014-08-14T14:23:13.765</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\removeInfo.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\removeInfo.js">
       <PackagePath>js\removeInfo.js</PackagePath>
-      <Modified>2014-09-25T01:19:16.716</Modified>
+      <Modified>2014-08-14T14:23:13.767</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\showPopupUI.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\showPopupUI.js">
       <PackagePath>js\showPopupUI.js</PackagePath>
-      <Modified>2014-09-25T01:19:29.984</Modified>
+      <Modified>2014-09-10T14:43:07.262</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\vendCalls.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\vendCalls.js">
       <PackagePath>js\vendCalls.js</PackagePath>
-      <Modified>2014-09-25T01:19:29.988</Modified>
+      <Modified>2014-09-18T19:13:18.188</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\base\base.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\base\base.js">
       <PackagePath>pages\base\base.js</PackagePath>
-      <Modified>2014-09-25T01:19:30.006</Modified>
+      <Modified>2014-09-25T20:55:01.250</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\boost\boost.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\boost\boost.js">
       <PackagePath>pages\boost\boost.js</PackagePath>
-      <Modified>2014-09-25T01:19:30.041</Modified>
+      <Modified>2014-09-24T18:34:43.570</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\boost.ori\boost.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\boost.ori\boost.js">
       <PackagePath>pages\boost.ori\boost.js</PackagePath>
-      <Modified>2014-09-25T01:19:30.027</Modified>
+      <Modified>2014-09-19T21:13:40.665</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\func\func.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\func\func.js">
       <PackagePath>pages\func\func.js</PackagePath>
-      <Modified>2014-09-25T01:19:30.065</Modified>
+      <Modified>2014-09-17T19:49:56.091</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\info_home\info_home.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\info_home\info_home.js">
       <PackagePath>pages\info_home\info_home.js</PackagePath>
-      <Modified>2014-09-25T01:19:30.079</Modified>
+      <Modified>2014-09-10T14:43:07.323</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.js">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.js</PackagePath>
-      <Modified>2014-09-25T01:19:30.113</Modified>
+      <Modified>2014-09-10T14:43:07.337</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\supl_sport\supl_sport.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\supl_sport\supl_sport.js">
       <PackagePath>pages\supl_sport\supl_sport.js</PackagePath>
-      <Modified>2014-09-25T01:19:30.102</Modified>
+      <Modified>2014-08-20T17:04:22.965</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\all_products\all_products.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\all_products\all_products.js">
       <PackagePath>pages\all_products\all_products.js</PackagePath>
-      <Modified>2014-09-25T01:19:16.748</Modified>
+      <Modified>2014-08-14T14:23:13.928</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\boost.bck\boost.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\boost.bck\boost.js">
       <PackagePath>pages\boost.bck\boost.js</PackagePath>
-      <Modified>2014-09-25T01:19:30.016</Modified>
+      <Modified>2014-09-19T21:13:40.665</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\final\final.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\final\final.js">
       <PackagePath>pages\final\final.js</PackagePath>
-      <Modified>2014-09-25T01:25:21.636</Modified>
+      <Modified>2014-09-25T20:14:09.356</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\flav_sel\flav_sel.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\flav_sel\flav_sel.js">
       <PackagePath>pages\flav_sel\flav_sel.js</PackagePath>
-      <Modified>2014-09-25T01:19:30.055</Modified>
+      <Modified>2014-09-25T20:56:28.377</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\home\home.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\home\home.js">
       <PackagePath>pages\home\home.js</PackagePath>
-      <Modified>2014-09-25T01:19:30.075</Modified>
+      <Modified>2014-09-25T16:50:56.091</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\item_info\item_info.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\item_info\item_info.js">
       <PackagePath>pages\item_info\item_info.js</PackagePath>
-      <Modified>2014-09-25T01:19:30.083</Modified>
+      <Modified>2014-09-16T16:55:15.065</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\launch_page\launch_page.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\launch_page\launch_page.js">
       <PackagePath>pages\launch_page\launch_page.js</PackagePath>
-      <Modified>2014-09-25T01:29:49.467</Modified>
+      <Modified>2014-09-25T14:01:56.369</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\login\login.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login\login.js">
       <PackagePath>pages\login\login.js</PackagePath>
-      <Modified>2014-09-25T01:19:16.899</Modified>
+      <Modified>2014-08-14T14:23:14.085</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\signup\signup.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\signup\signup.js">
       <PackagePath>pages\signup\signup.js</PackagePath>
-      <Modified>2014-09-25T01:19:17.138</Modified>
+      <Modified>2014-08-14T14:23:14.272</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\thankyou\thankyou.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\thankyou\thankyou.js">
       <PackagePath>pages\thankyou\thankyou.js</PackagePath>
-      <Modified>2014-09-25T01:19:17.197</Modified>
+      <Modified>2014-08-14T14:23:14.301</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\welcome\welcome.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\welcome\welcome.js">
       <PackagePath>pages\welcome\welcome.js</PackagePath>
-      <Modified>2014-09-25T01:19:17.208</Modified>
+      <Modified>2014-08-14T14:23:14.305</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\services\mobile services\thinkitdrinkitData\service.js">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\services\mobile services\thinkitdrinkitData\service.js">
       <PackagePath>services\mobile services\thinkitdrinkitData\service.js</PackagePath>
-      <Modified>2014-09-25T01:19:17.213</Modified>
+      <Modified>2014-08-14T14:23:14.307</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\allow-page-scroll.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\allow-page-scroll.html">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\allow-page-scroll.html</PackagePath>
-      <Modified>2014-09-25T01:19:29.907</Modified>
+      <Modified>2014-08-25T14:51:37.375</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\chaining.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\chaining.html">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\chaining.html</PackagePath>
-      <Modified>2014-09-25T01:19:29.911</Modified>
+      <Modified>2014-08-25T14:51:37.404</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\disable-fade-out.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\disable-fade-out.html">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\disable-fade-out.html</PackagePath>
-      <Modified>2014-09-25T01:19:29.915</Modified>
+      <Modified>2014-08-25T14:51:37.455</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\dynamic-content.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\dynamic-content.html">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\dynamic-content.html</PackagePath>
-      <Modified>2014-09-25T01:19:29.919</Modified>
+      <Modified>2014-08-25T14:51:37.484</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\height-width.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\height-width.html">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\height-width.html</PackagePath>
-      <Modified>2014-09-25T01:19:29.924</Modified>
+      <Modified>2014-08-25T14:51:38.228</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\index.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\index.html">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\index.html</PackagePath>
-      <Modified>2014-09-25T01:19:29.928</Modified>
+      <Modified>2014-08-25T14:51:38.252</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\mouse-wheel.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\mouse-wheel.html">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\mouse-wheel.html</PackagePath>
-      <Modified>2014-09-25T01:19:29.938</Modified>
+      <Modified>2014-08-25T14:51:38.281</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\multiple-elements.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\multiple-elements.html">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\multiple-elements.html</PackagePath>
-      <Modified>2014-09-25T01:19:29.942</Modified>
+      <Modified>2014-08-25T14:51:38.314</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\navigation.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\navigation.html">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\navigation.html</PackagePath>
-      <Modified>2014-09-25T01:19:29.945</Modified>
+      <Modified>2014-08-25T14:51:38.336</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\nested.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\nested.html">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\nested.html</PackagePath>
-      <Modified>2014-09-25T01:19:29.948</Modified>
+      <Modified>2014-08-25T14:51:38.369</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\programmatic-scrolling.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\programmatic-scrolling.html">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\programmatic-scrolling.html</PackagePath>
-      <Modified>2014-09-25T01:19:29.953</Modified>
+      <Modified>2014-08-25T14:51:38.401</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\rail.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\rail.html">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\rail.html</PackagePath>
-      <Modified>2014-09-25T01:19:29.956</Modified>
+      <Modified>2014-08-25T14:51:38.431</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\scroll-events.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\scroll-events.html">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\scroll-events.html</PackagePath>
-      <Modified>2014-09-25T01:19:29.959</Modified>
+      <Modified>2014-08-25T14:51:38.461</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\scrollbar.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\scrollbar.html">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\scrollbar.html</PackagePath>
-      <Modified>2014-09-25T01:19:29.963</Modified>
+      <Modified>2014-08-25T14:51:38.494</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\start-position.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\start-position.html">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\start-position.html</PackagePath>
-      <Modified>2014-09-25T01:19:29.966</Modified>
+      <Modified>2014-08-25T14:51:38.524</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\default.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\default.html">
       <PackagePath>default.html</PackagePath>
-      <Modified>2014-09-25T01:19:29.883</Modified>
+      <Modified>2014-09-10T14:43:07.250</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\boost\boost.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\boost\boost.html">
       <PackagePath>pages\boost\boost.html</PackagePath>
-      <Modified>2014-09-25T01:19:30.038</Modified>
+      <Modified>2014-09-24T16:53:27.532</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\boost.ori\boost.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\boost.ori\boost.html">
       <PackagePath>pages\boost.ori\boost.html</PackagePath>
-      <Modified>2014-09-25T01:19:30.023</Modified>
+      <Modified>2014-09-24T16:53:27.444</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\func\func.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\func\func.html">
       <PackagePath>pages\func\func.html</PackagePath>
-      <Modified>2014-09-25T01:19:30.063</Modified>
+      <Modified>2014-09-16T17:55:45.239</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.html">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.html</PackagePath>
-      <Modified>2014-09-25T01:19:30.109</Modified>
+      <Modified>2014-09-10T14:43:07.336</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\supl_sport\supl_sport.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\supl_sport\supl_sport.html">
       <PackagePath>pages\supl_sport\supl_sport.html</PackagePath>
-      <Modified>2014-09-25T01:19:17.147</Modified>
+      <Modified>2014-08-14T14:23:14.278</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\all_products\all_products.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\all_products\all_products.html">
       <PackagePath>pages\all_products\all_products.html</PackagePath>
-      <Modified>2014-09-25T01:19:16.737</Modified>
+      <Modified>2014-08-14T14:23:13.777</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\base\base.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\base\base.html">
       <PackagePath>pages\base\base.html</PackagePath>
-      <Modified>2014-09-25T01:19:30.000</Modified>
+      <Modified>2014-09-25T20:37:19.558</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\boost.bck\boost.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\boost.bck\boost.html">
       <PackagePath>pages\boost.bck\boost.html</PackagePath>
-      <Modified>2014-09-25T01:19:30.013</Modified>
+      <Modified>2014-09-24T16:53:27.488</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\final\final.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\final\final.html">
       <PackagePath>pages\final\final.html</PackagePath>
-      <Modified>2014-09-25T01:28:03.291</Modified>
+      <Modified>2014-09-25T14:01:56.359</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\flav_sel\flav_sel.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\flav_sel\flav_sel.html">
       <PackagePath>pages\flav_sel\flav_sel.html</PackagePath>
-      <Modified>2014-09-25T01:19:30.051</Modified>
+      <Modified>2014-09-25T21:11:39.174</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\home\home.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\home\home.html">
       <PackagePath>pages\home\home.html</PackagePath>
-      <Modified>2014-09-25T01:19:30.072</Modified>
+      <Modified>2014-09-25T16:50:56.080</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\info_home\info_home.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\info_home\info_home.html">
       <PackagePath>pages\info_home\info_home.html</PackagePath>
-      <Modified>2014-09-25T01:19:16.851</Modified>
+      <Modified>2014-08-14T14:23:14.020</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\item_info\item_info.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\item_info\item_info.html">
       <PackagePath>pages\item_info\item_info.html</PackagePath>
-      <Modified>2014-09-25T01:19:16.865</Modified>
+      <Modified>2014-08-14T14:23:14.038</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\launch_page\launch_page.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\launch_page\launch_page.html">
       <PackagePath>pages\launch_page\launch_page.html</PackagePath>
-      <Modified>2014-09-25T01:19:30.092</Modified>
+      <Modified>2014-09-25T14:57:05.026</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\login\login.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login\login.html">
       <PackagePath>pages\login\login.html</PackagePath>
-      <Modified>2014-09-25T01:19:16.896</Modified>
+      <Modified>2014-08-14T14:23:14.076</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\signup\signup.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\signup\signup.html">
       <PackagePath>pages\signup\signup.html</PackagePath>
-      <Modified>2014-09-25T01:19:17.134</Modified>
+      <Modified>2014-08-14T14:23:14.263</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\thankyou\thankyou.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\thankyou\thankyou.html">
       <PackagePath>pages\thankyou\thankyou.html</PackagePath>
-      <Modified>2014-09-25T01:19:17.194</Modified>
+      <Modified>2014-08-14T14:23:14.300</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\welcome\welcome.html">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\welcome\welcome.html">
       <PackagePath>pages\welcome\welcome.html</PackagePath>
-      <Modified>2014-09-25T01:19:17.204</Modified>
+      <Modified>2014-08-14T14:23:14.303</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\README.md">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\README.md">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\README.md</PackagePath>
-      <Modified>2014-09-25T01:19:29.903</Modified>
+      <Modified>2014-08-25T14:51:37.268</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\slimScroll.jquery.json">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\slimScroll.jquery.json">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\slimScroll.jquery.json</PackagePath>
-      <Modified>2014-09-25T01:19:29.981</Modified>
+      <Modified>2014-08-25T14:51:37.334</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\packages.config">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\packages.config">
       <PackagePath>packages.config</PackagePath>
-      <Modified>2014-09-25T01:19:16.727</Modified>
+      <Modified>2014-08-14T14:23:13.772</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\bin\x64\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-09-25T01:20:39.798</Modified>
+      <Modified>2014-09-25T14:49:39.506</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
