@@ -59,6 +59,8 @@
             login_user_past: new WinJS.Binding.List([
             ]),
             order_and_name: new WinJS.Binding.List([
+            ]),
+            continue_order_save: new WinJS.Binding.List([
             ])
         })
     })

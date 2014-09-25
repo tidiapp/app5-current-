@@ -19,6 +19,7 @@
                 //this changes the theme color of the entire app
                 //it accepts some colors written as a string and all in hex
                 //www.html-color-codes.info is a good website to obtain hex color values
+                roamingSettings.values["the_complete_total"] = 0;
                 design.colorChange("#FF7C00", "white");
                 roamingSettings.values["true"] = false;
                 //This is the normal(default) app color in hex #BA5EB7

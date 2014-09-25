@@ -70,7 +70,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\final\final.css">
       <PackagePath>pages\final\final.css</PackagePath>
-      <Modified>2014-09-25T01:19:16.781</Modified>
+      <Modified>2014-09-25T01:29:19.395</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\final\print.css">
       <PackagePath>pages\final\print.css</PackagePath>
@@ -212,11 +212,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2014-09-25T01:19:29.895</Modified>
+      <Modified>2014-09-25T01:30:04.674</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\gatherInfo.js">
       <PackagePath>js\gatherInfo.js</PackagePath>
-      <Modified>2014-09-25T01:19:29.899</Modified>
+      <Modified>2014-09-25T01:30:38.187</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\js\jquery.js">
       <PackagePath>js\jquery.js</PackagePath>
@@ -308,7 +308,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\final\final.js">
       <PackagePath>pages\final\final.js</PackagePath>
-      <Modified>2014-09-25T01:19:30.045</Modified>
+      <Modified>2014-09-25T01:25:21.636</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\flav_sel\flav_sel.js">
       <PackagePath>pages\flav_sel\flav_sel.js</PackagePath>
@@ -324,7 +324,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\launch_page\launch_page.js">
       <PackagePath>pages\launch_page\launch_page.js</PackagePath>
-      <Modified>2014-09-25T01:19:30.095</Modified>
+      <Modified>2014-09-25T01:29:49.467</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\login\login.js">
       <PackagePath>pages\login\login.js</PackagePath>
@@ -444,7 +444,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\final\final.html">
       <PackagePath>pages\final\final.html</PackagePath>
-      <Modified>2014-09-25T01:19:16.789</Modified>
+      <Modified>2014-09-25T01:28:03.291</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\pages\flav_sel\flav_sel.html">
       <PackagePath>pages\flav_sel\flav_sel.html</PackagePath>
