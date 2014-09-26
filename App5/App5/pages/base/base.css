@@ -141,8 +141,9 @@
     float: right;
     margin-right: 70px;
     font-size: 30px;
-
 }
-
+#base_price_doll {
+    position: absolute;
+}
 
 
