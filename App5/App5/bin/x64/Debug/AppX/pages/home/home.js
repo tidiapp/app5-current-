@@ -48,6 +48,7 @@
 
             //gather the infomation from the database and displays it on the sreen
             server.home(the_sel_age);
+            console.log(Age.lookup(1));
 
         },
 
@@ -72,6 +73,7 @@
     // the following namespace will be used to complete all click events on the home.html page
     var _choosen_cat = "";
     var nutrigeneticsPrice = "";
+
     //Milo: I defined this above and it needs to be done here to in order for it to work inside the WinJS
     //var the_sel_age = "";
     //console.log("Cat picked = " + roamingSettings.values["Cat_picked"] + " The sel age = " + the_sel_age);
@@ -84,8 +86,10 @@
             _choosen_cat = updated_answer;
             //gather information from from the database as the user clicks on the diffent ages
             //and then displays that information
+
             server.home_sub(updated_answer);
             //milo: some code does not work well from here 
+
         },
 
         next_page: function () {
@@ -110,7 +114,8 @@
                 roamingSettings.values["Age_pic"] = document.getElementById("sel_age_pic").src;
                 roamingSettings.values["Age_info"] = null;
                 roamingSettings.values["Age_price"] = null;
-        }
+            }
+
         },
 
         more_info: function (clicked) {

@@ -1,4 +1,6 @@
-﻿http://azure.microsoft.com/en-us/documentation/articles/mobile-services-html-how-to-use-client-library/
+﻿//http://azure.microsoft.com/en-us/documentation/articles/mobile-services-html-how-to-use-client-library/
+//http://azure.microsoft.com/en-us/documentation/articles/mobile-services-javascript-backend-windows-universal-javascript-get-started-data/
+
     (function () {
         "use strict";
 
@@ -6,7 +8,9 @@
 //home.html
             home: function (the_sel_age) {
                 remove.pop_list(age_data.model.age);
-                var Age = thinkitdrinkitDataClient.getTable("Age");
+
+                //milo: withFilter suposed to not cache, great way to test for same name pictures being replaced never seems to refresh the new pic unless name is changed. 
+                var Age = thinkitdrinkitDataClient.withFilter(noCachingFilter).getTable("Age");
 
                 if (the_sel_age === "Customize A Functional Drink Mix") {
                     var query = Age.where({
@@ -41,7 +45,10 @@
                 } else if (the_sel_age === "Customize A Sport Drink Mix") {
                     var query = Age.where({
                         AccessS: true
-                    }).orderBy("Name").read().done(function (results) {
+                    }).orderBy("Name").read(
+
+
+                    ).done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.age.push({ age: results[i].Name, img: results[i].Image })
                         }
@@ -64,9 +71,14 @@
             },
 
 //func.html
+
+            //milo: need id from db to pass into the_sel_func
+
             func: function (the_sel_func) {
                 remove.pop_list(age_data.model.func);
                 var Func = thinkitdrinkitDataClient.getTable("Func");
+
+            //milo:need to check id if they mach here
 
                 if (the_sel_func === "Sport Protein") {
                     var query = Func.where({
