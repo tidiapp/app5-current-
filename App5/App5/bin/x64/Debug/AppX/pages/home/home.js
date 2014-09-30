@@ -48,7 +48,6 @@
 
             //gather the infomation from the database and displays it on the sreen
             server.home(the_sel_age);
-            console.log(Age.lookup(1));
 
         },
 

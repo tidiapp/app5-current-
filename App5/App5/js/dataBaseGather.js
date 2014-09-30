@@ -5,7 +5,7 @@
         "use strict";
 
         WinJS.Namespace.define("server", {
-//home.html
+            //home.html
             home: function (the_sel_age) {
                 remove.pop_list(age_data.model.age);
 
@@ -45,10 +45,7 @@
                 } else if (the_sel_age === "Customize A Sport Drink Mix") {
                     var query = Age.where({
                         AccessS: true
-                    }).orderBy("Name").read(
-
-
-                    ).done(function (results) {
+                    }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.age.push({ age: results[i].Name, img: results[i].Image })
                         }
@@ -72,13 +69,24 @@
 
 //func.html
 
-            //milo: need id from db to pass into the_sel_func
+                //func: function (name_sel) {
+                //    remove.pop_list(age_data.model.func);
+                //    var Func = thinkitdrinkitDataClient.getTable("Func");
+
+                //var query = Func.where(function (name_sel, id_sel) {
+                //    return this.Access == 2 && (this.Name == name_sel && this.id == id_sel);
+                //}).read().done(function (results) {
+                //    alert(JSON.stringify(results));
+                //}, function (err) {
+                //    alert("Error: " + err);
+                //});
+
+                //},
+
 
             func: function (the_sel_func) {
                 remove.pop_list(age_data.model.func);
                 var Func = thinkitdrinkitDataClient.getTable("Func");
-
-            //milo:need to check id if they mach here
 
                 if (the_sel_func === "Sport Protein") {
                     var query = Func.where({
@@ -161,7 +169,8 @@
                         console.log(err);
                     });
                 }
-            },
+                },
+
             func_sub: function (name) {
                 var Func = thinkitdrinkitDataClient.getTable("Func");
 

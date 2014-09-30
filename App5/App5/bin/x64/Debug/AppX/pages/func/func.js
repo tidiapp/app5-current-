@@ -42,6 +42,7 @@
                 document.getElementById("where_you_are1").textContent = "You have choosen the " + roamingSettings.values["Age_name"] + " Goal." + " You have 3 steps left.";
 
                 server.func(the_sel_func);
+                //server.func(name_sel, id_sel);
 
                 ////milo: popup testing with webview inside it 
                 //runAnimation.addEventListener("click", togglePopupUI, false);

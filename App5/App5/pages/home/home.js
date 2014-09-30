@@ -4,7 +4,6 @@
     var roamingSettings = appData.roamingSettings;
     var Age = thinkitdrinkitDataClient.getTable("Age");
     var keepInfo = true;
-    //var the_sel_age;
 
     WinJS.UI.Pages.define("/pages/home/home.html", {
         // This function is called whenever a user navigates to this page. It
