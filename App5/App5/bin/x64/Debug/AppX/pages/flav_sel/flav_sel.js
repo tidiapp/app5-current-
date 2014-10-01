@@ -80,13 +80,13 @@
             roamingSettings.values["FlavSel_name"] = the_choosenFlav;
             roamingSettings.values["FlavSel_pic"] = document.getElementById("hidden_flav_pic").src;
             roamingSettings.values["FlavSel_vend"] = document.getElementById("f_vend").textContent;
+            var vendId_count = document.getElementById("f_vend_count").textContent;
             roamingSettings.values["FlavSel_info"] = null;
             roamingSettings.values["FlavSel_price"] = null;
             roamingSettings.values["FlavSel_label"] = document.getElementById("flav_sel_sel_pic").src;
 
-            var vendId = roamingSettings.values["FlavSel_vend"];
             //milo: the following makes a call to vend to check if we have enough product for the order if low it will not allow to move on. 
-            if (vendId != "" && vendId != "null") {
+            if (vendId_count != "" && vendId_count != "null") {
 
                 WinJS.xhr({
                     //milo: using POST but not passing anything to vend until .then at which point it reads the api product inventory count and displays it back.  
@@ -97,7 +97,7 @@
                     //password: "********",
                     data: JSON.stringify({
                         //milo: in this object its the id part >>> GET /api/register_sales/{id} >>> that VEND wants which is below
-                        "id": vendId,
+                        "id": vendId_count,
                         "inventory": [{
                         }]
                     }),

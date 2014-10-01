@@ -82,6 +82,7 @@
         next_page_flavor: function () {
                 keepInfo = true;
                 var vendId = document.getElementById("b_vend").innerHTML;
+                var vendId_count = document.getElementById("b_vend_count").innerHTML;
                 roamingSettings.values["Base_protein"] = false;
                 roamingSettings.values["Base_Vend"] = vendId;
                 roamingSettings.values["Base_name"] = base3;
@@ -89,12 +90,9 @@
                 roamingSettings.values["Base_info"] = document.getElementById("sel_base_info").textContent;
                 roamingSettings.values["Base_price"] = document.getElementById("base_price").textContent;
                 roamingSettings.values["Base_label"] = document.getElementById("sel_base_pic").src;
-                //console.log("Next page " + vendId);
                 
             //milo: the following makes a call to vend to check if we have enough product for the order if low it will not allow to move on. 
-            //milo: b8ca3a65-0166-11e4-fbb5-3772ff8b2b7f or 2nd one b8ca3a65-0166-11e4-fbb5-3772835994f8 == Whey Protein Isolate(B) is the only one currently set up to stop at low count (13 count or less)
-                if (vendId != "" && vendId != "null") {
-                    
+                if (vendId_count != "" && vendId_count != "null") {
                     WinJS.xhr({
                         //milo: using POST but not passing anything to vend until .then at which point it reads the api product inventory count and displays it back.  
                         type: "POST",
@@ -104,7 +102,7 @@
                         //password: "********",
                         data: JSON.stringify({
                             //milo: in this object its the id part >>> GET /api/register_sales/{id} >>> that VEND wants which is below
-                            "id": vendId,
+                            "id": vendId_count,
                             "inventory": [{
                             }]
                         }),
@@ -114,7 +112,7 @@
                         console.log("Base Count from VEND ", vendCount);
                         if (vendCount >= 14.00000) {
                             WinJS.Navigation.navigate('pages/flav_sel/flav_sel.html')
-                        } else if (vendCount <= 13.00000) {
+                        } else {
                             document.getElementById("out_of_stock").removeAttribute("hidden");
                             document.getElementById("out_of_stock").textContent = "OUT OF STOCK, PLEASE PICK ANOTHER BASE";
                             document.getElementById("out_of_stock").style.color = "red";

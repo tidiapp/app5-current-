@@ -1,6 +1,7 @@
 ﻿// For an introduction to the Page Control template, see the following documentation:
-//MILO DOCUMENT LINK USED FOR BACK END MOBILE DEV IT IS WHAT THE APP USES 
-// http://msdn.microsoft.com/en-us/library/azure/jj554207.aspx
+//http://msdn.microsoft.com/en-us/library/azure/jj554207.aspx
+//milo: LINK USED FOR mobile BACK END MOBILE DEV IT IS WHAT THE APP USES 
+
 (function () {
     "use strict";
     var appData = Windows.Storage.ApplicationData.current;

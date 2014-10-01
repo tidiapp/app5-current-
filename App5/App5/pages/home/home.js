@@ -112,6 +112,7 @@
                 roamingSettings.values["Age_pic"] = document.getElementById("sel_age_pic").src;
                 roamingSettings.values["Age_info"] = null;
                 roamingSettings.values["Age_price"] = null;
+                roamingSettings.values["Id_sel"] = document.getElementById("id_sel").textContent;
             }
 
         },

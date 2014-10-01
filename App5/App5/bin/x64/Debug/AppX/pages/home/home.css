@@ -186,3 +186,7 @@
     margin-right: 70px;
 }
 
+#id_sel {
+    position: absolute;
+    margin-top: -100px;
+}

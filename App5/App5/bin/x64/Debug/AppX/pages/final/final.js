@@ -93,6 +93,7 @@
                     var my_date = month + "-" + day + "-" + year;
                     return my_date;
                 }
+
                 function my_curr_time() {
                     var d = new Date();
                     var theHour = d.getHours();

@@ -17,7 +17,7 @@
             WinJS.Binding.processAll(element, age_data.model);
             design.getFunc();
             design.changeTextColor();
-            var the_sel_func = roamingSettings.values["Age_name"];
+            var id_sel = roamingSettings.values["Id_sel"];
             document.getElementById("choosen_age2").textContent = "Select Your " + roamingSettings.values["Age_name"] + " Goal.";
             document.getElementById("home").removeAttribute("hidden");
             //document.getElementById("age_p").textContent = the_sel_func;
@@ -41,7 +41,7 @@
                 document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];
                 document.getElementById("where_you_are1").textContent = "You have choosen the " + roamingSettings.values["Age_name"] + " Goal." + " You have 3 steps left.";
 
-                server.func(the_sel_func);
+                server.func(id_sel);
 
                 ////milo: popup testing with webview inside it 
                 //runAnimation.addEventListener("click", togglePopupUI, false);
