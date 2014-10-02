@@ -10,6 +10,7 @@
                 remove.pop_list(age_data.model.age);
 
                 //milo: withFilter suposed to not cache, great way to test for same name pictures being replaced never seems to refresh the new pic unless name is changed. 
+                //milo: left all if (the_sel_age === "blahahahh") as names they are easy to change find all replace...
                 var Age = thinkitdrinkitDataClient.withFilter(noCachingFilter).getTable("Age");
 
                 if (the_sel_age === "Customize A Functional Drink Mix") {
@@ -25,10 +26,9 @@
                 } else if (the_sel_age === "Customize A Protein Drink Mix") {
                     var query = Age.where({
                         AccessP: true
-
-                    }).orderBy().read().done(function (results) {
+                    }).orderBy("Order").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
-                            age_data.model.age.push({ age: results[i].Name, img: results[i].Image, id_sel: results[i].id })
+                            age_data.model.age.push({ age: results[i].Name, img: results[i].Image })
                         }
                     }, function (err) {
                         console.log(err);
@@ -68,16 +68,17 @@
                 });
             },
 
-//func.html
-
+//func.html 
+            //milo id_sel is coming from home.html and server.home_sub() above
             func: function (id_sel) {
                 remove.pop_list(age_data.model.func);
                 var Func = thinkitdrinkitDataClient.getTable("Func");
                 //milo: id_sel is the id that was picked by user from the db and it equals the actual id number to display the correct business logic 
+                //milo: in the if statement == 'whatever number' is the actual id from the thinkitdrinkitDataClient.Age table in azure db
                 if (id_sel == 1) {
                     var query = Func.where({
                         Access: 1
-                    }).orderBy("Name").read().done(function (results) {
+                    }).orderBy("Order").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
                         }
@@ -87,7 +88,7 @@
                 } else if (id_sel == 2) {
                     var query = Func.where({
                         Access: 2
-                    }).orderBy("Name").read().done(function (results) {
+                    }).orderBy("Order").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
                         }
@@ -97,7 +98,7 @@
                 } else if (id_sel == 4) {
                     var query = Func.where({
                         Access: 3
-                    }).orderBy("Name").read().done(function (results) {
+                    }).orderBy("Order").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
                         }
@@ -107,7 +108,7 @@
                 } else if (id_sel == 3) {
                     var query = Func.where({
                         Access: 4
-                    }).orderBy("Name").read().done(function (results) {
+                    }).orderBy("Order").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
                         }
@@ -117,7 +118,7 @@
                 } else if (id_sel == 18) {
                     var query = Func.where({
                         Access: 5
-                    }).orderBy("Name").read().done(function (results) {
+                    }).orderBy("Order").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
                         }
@@ -127,7 +128,7 @@
                 } else if (id_sel == 19) {
                     var query = Func.where({
                         Access: 6
-                    }).orderBy("Name").read().done(function (results) {
+                    }).orderBy("Order").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
                         }
@@ -137,7 +138,7 @@
                 } else if (id_sel == 20) {
                     var query = Func.where({
                         Access: 7
-                    }).orderBy("Name").read().done(function (results) {
+                    }).orderBy("Order").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
                         }
@@ -147,7 +148,7 @@
                 } else if (id_sel == 21) {
                     var query = Func.where({
                         Access: 8
-                    }).orderBy("Name").read().done(function (results) {
+                    }).orderBy("Order").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
                         }
@@ -163,32 +164,20 @@
                 var query = Func.where({
                     Name: name
                 }).read().done(function (results) {
-                    age_data.model.info_page2_func.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_img: results[0].Label, base_price: results[0].Price, the_pic: results[0].Image, b_vend: results[0].VendID })
+                    age_data.model.info_page2_func.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_img: results[0].Label, base_price: results[0].Price, the_pic: results[0].Image, b_vend: results[0].VendID, id_sel: results[0].id })
                 }, function (err) {
                     console.log(err);
                 });
             },
-            //Milo: Not being called or used
-            //sport_sub: function (name) {
-            //    var Sport = thinkitdrinkitDataClient.getTable("Sport");
-            //    remove.pop_list(age_data.model.info_sport)
-
-            //    var query = Sport.where({
-            //        Name: name
-            //    }).read().done(function (results) {
-            //        age_data.model.info_sport.push({ the_info: results[0].InfoLite, info_img: results[0].Image, info_name: results[0].Name })
-            //    }, function (err) {
-            //        console.log(err);
-            //    });
-            //},
 
 //base.html
-            base: function (the_sel_age) {
+            base: function (id_sel) {
                 var Age = thinkitdrinkitDataClient.getTable("Base");
+                //milo: id_sel == whatever #, the whatever # is the id from thinkitdrinkitDataClient.Func db in azure
 
-                if (the_sel_age === "Strength & Power") {
+                if (id_sel == 1) {
                     var query = Age.where({
-                        AccessStrength: true
+                        id_1: true
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[0].Price })
@@ -196,9 +185,9 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Lean Muscle") {
+                } else if (id_sel == 2) {
                     var query = Age.where({
-                        AccessLean: true
+                        id_2: true
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[0].Price })
@@ -206,37 +195,7 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Muscle Preservation") {
-                    var query = Age.where({
-                        AccessMuscleP: true
-                    }).orderBy("Name").read().done(function (results) {
-                        for (var i = 0; i < results.length; i++) {
-                            age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[0].Price })
-                        }
-                    }, function (err) {
-                        console.log(err);
-                    });
-                } else if (the_sel_age === "Endurance") {
-                    var query = Age.where({
-                        AccessEndurance: true
-                    }).orderBy("Name").read().done(function (results) {
-                        for (var i = 0; i < results.length; i++) {
-                            age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[0].Price })
-                        }
-                    }, function (err) {
-                        console.log(err);
-                    });
-                } else if (the_sel_age === "Cellular Energy") {
-                    var query = Age.where({
-                        AccessCellular: true
-                    }).orderBy("Name").read().done(function (results) {
-                        for (var i = 0; i < results.length; i++) {
-                            age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[0].Price })
-                        }
-                    }, function (err) {
-                        console.log(err);
-                    });
-                } else if (the_sel_age === "Muscle Preservation") {
+                } else if (id_sel === "Muscle Preservation") {
                     var query = Age.where({
                         AccessMuscleP: true
                     }).orderBy("Name").read().done(function (results) {
@@ -246,9 +205,9 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Zen Life") {
+                } else if (id_sel == 4) {
                     var query = Age.where({
-                        AccessZen: true
+                        id_4: true
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[0].Price })
@@ -256,9 +215,9 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Vegan & Vegetarian") {
+                } else if (id_sel == 5) {
                     var query = Age.where({
-                        AccessVegan: true
+                        id_5: true
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[0].Price })
@@ -266,9 +225,9 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Paleo") {
+                } else if (id_sel == 6) {
                     var query = Age.where({
-                        AccessPaleo: true
+                        id_6: true
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[0].Price })
@@ -276,9 +235,9 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Artisanal") {
+                } else if (id_sel == 7) {
                     var query = Age.where({
-                        AccessArtisanal: true
+                        id_7: true
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[0].Price })
@@ -286,9 +245,9 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Active Life") {
+                } else if (id_sel == 8) {
                     var query = Age.where({
-                        AccessActive: true
+                        id_8: true
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[0].Price })
@@ -296,9 +255,9 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Organic") {
+                } else if (id_sel == 9) {
                     var query = Age.where({
-                        AccessOrganic: true
+                        id_9: true
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[0].Price })
@@ -306,9 +265,9 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Weight Loss") {
+                } else if (id_sel == 11) {
                     var query = Age.where({
-                        AccessWeightL: true
+                        id_11: true
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[0].Price })
@@ -316,9 +275,9 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Satiety") {
+                } else if (id_sel == 12) {
                     var query = Age.where({
-                        AccessSatiety: true
+                        id_12: true
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[0].Price })
@@ -326,9 +285,9 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Meal Replacement") {
+                } else if (id_sel == 14) {
                     var query = Age.where({
-                        AccessMeal: true
+                        id_14: true
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[0].Price })
@@ -336,9 +295,9 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Weight Gainer") {
+                } else if (id_sel == 15) {
                     var query = Age.where({
-                        AccessWeightG: true
+                        id_15: true
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[0].Price })
@@ -346,9 +305,9 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Brain Health") {
+                } else if (id_sel == 16) {
                     var query = Age.where({
-                        AccessBrain: true
+                        id_16: true
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[0].Price })
@@ -356,9 +315,9 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Cardiovascular") {
+                } else if (id_sel == 17) {
                     var query = Age.where({
-                        AccessCardiovascular: true
+                        id_17: true
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[0].Price })
@@ -366,9 +325,9 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Bone & Joint Support") {
+                } else if (id_sel == 18) {
                     var query = Age.where({
-                        AccessBone: true
+                        id_18: true
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[0].Price })
@@ -376,9 +335,9 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Pre-Natal") {
+                } else if (id_sel == 19) {
                     var query = Age.where({
-                        AccessPre: true
+                        id_19: true
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[0].Price })
@@ -386,7 +345,67 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } 
+                } else if (id_sel == 20) {
+                    var query = Age.where({
+                        id_20: true
+                    }).orderBy("Name").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[0].Price })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                } else if (id_sel == 22) {
+                    var query = Age.where({
+                        id_22: true
+                    }).orderBy("Name").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[0].Price })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                } else if (id_sel == 23) {
+                    var query = Age.where({
+                        id_23: true
+                    }).orderBy("Name").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[0].Price })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                } else if (id_sel == 29) {
+                    var query = Age.where({
+                        id_29: true
+                    }).orderBy("Name").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[0].Price })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                } else if (id_sel == 28) {
+                    var query = Age.where({
+                        id_28: true
+                    }).orderBy("Name").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[0].Price })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                } else if (id_sel == 30) {
+                    var query = Age.where({
+                        id_30: true
+                    }).orderBy("Name").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[0].Price })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                }
             },
             base_sub: function (name) {
                 var Age = thinkitdrinkitDataClient.getTable("Base");
@@ -428,6 +447,7 @@
             },
 
 //boost.html
+            //milo: uses id from thinkitdrinkitData.Func table
             boost: function (the_sel_age) {
                 var Age = thinkitdrinkitDataClient.getTable("Boost");
 

@@ -120,6 +120,7 @@
                 roamingSettings.values["Age_info"] = null;
                 roamingSettings.values["Age_price"] = null;
                 roamingSettings.values["Id_sel"] = document.getElementById("id_sel").textContent;
+                console.log("Home page picked id = " + roamingSettings.values["Id_sel"]);
             }
 
         },

@@ -7,7 +7,6 @@
     var roamingSettings = appData.roamingSettings;
     var Age = thinkitdrinkitDataClient.getTable("Base");
     var keepInfo = true;
-    var the_sel_age;
 
     WinJS.UI.Pages.define("/pages/base/base.html", {
         // This function is called whenever a user navigates to this page. It
@@ -18,7 +17,7 @@
             design.getBase();
             design.changeTextColor();
             document.getElementById("home").removeAttribute("hidden");
-            var the_sel_age = roamingSettings.values["Func_name"];
+            var id_sel = roamingSettings.values["Id_sel"];
             document.getElementById("choosen_age3").textContent = "Select Your " + "Protein For " + roamingSettings.values["Func_name"] + ".";
 
             //milo: footer history 
@@ -41,11 +40,9 @@
             document.getElementById("func_pic").src = roamingSettings.values["Func_pic"];
             document.getElementById("where_you_are2").textContent = "You have choosen the " + roamingSettings.values["Func_name"] + " Function." + " You have 2 steps left.";
 
-            server.base(the_sel_age);
+            server.base(id_sel);
 
             document.getElementById("base_price_div").removeAttribute("hidden");
-
-
         },
 
         unload: function () {
@@ -64,7 +61,6 @@
             /// <param name="element" domElement="true" />
             // TODO: Respond to changes in layout.
         }
-
     });
 
     var base3 = "";
@@ -76,7 +72,6 @@
             base3 = updated_base;
             server.base_sub(updated_base);
             //milo: if msg "not available please pick another base" stays clear it here when they click on the next boost ( this would be after base_clicked.next_page_flavor fired )
-
         },
 
         next_page_flavor: function () {
@@ -90,6 +85,8 @@
                 roamingSettings.values["Base_info"] = document.getElementById("sel_base_info").textContent;
                 roamingSettings.values["Base_price"] = document.getElementById("base_price").textContent;
                 roamingSettings.values["Base_label"] = document.getElementById("sel_base_pic").src;
+                roamingSettings.values["Id_sel"] = document.getElementById("id_sel3").textContent;
+                console.log("Base page picked id = " + roamingSettings.values["Id_sel"]);
                 
             //milo: the following makes a call to vend to check if we have enough product for the order if low it will not allow to move on. 
                 if (vendId_count != "" && vendId_count != "null") {
