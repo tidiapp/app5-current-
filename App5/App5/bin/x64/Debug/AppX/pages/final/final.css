@@ -216,7 +216,7 @@ font-size: 30px;}
 
 #submit_wrap {
     float: left;
-    margin-top: -200px;
+    margin-top: -220px;
     /*margin-top: -12px;*/ /*This is for the app in the office. Just commit out the line above*/
     width: 700px;
 }

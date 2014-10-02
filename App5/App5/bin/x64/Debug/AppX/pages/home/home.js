@@ -13,6 +13,13 @@
             WinJS.Binding.processAll(element, age_data.model);
             design.getHome();
             design.changeTextColor();
+
+            if (roamingSettings.values['not_cont']) {
+                document.getElementById('youcurrentprice').textContent = roamingSettings.values["the_complete_total"];
+                document.getElementById('youcurrentprice').removeAttribute('hidden');
+                document.getElementById('thewordsforcurrentprice').removeAttribute('hidden');
+            }
+
             //roamingSettings.values["I_ordered"] = "no";
             document.getElementById("home").removeAttribute("hidden");
             document.getElementById("more_info_home").setAttribute("hidden", true);

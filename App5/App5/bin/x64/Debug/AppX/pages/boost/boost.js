@@ -39,7 +39,10 @@
             design.getBoost();
             design.changeTextColor();
             design.getBoostBorders("white");
-
+            roamingSettings.values["went_back_back"] = false;
+            if (roamingSettings.values["went_back"]) {
+                roamingSettings.values["went_back_back"] = true;
+            } 
             //milo: footer history 
             if (roamingSettings.values["Cat_picked"] === "Customize A Functional Drink Mix") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];

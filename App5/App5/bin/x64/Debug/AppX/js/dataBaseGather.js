@@ -70,24 +70,10 @@
 
 //func.html
 
-                //func: function (name_sel) {
-                //    remove.pop_list(age_data.model.func);
-                //    var Func = thinkitdrinkitDataClient.getTable("Func");
-
-                //var query = Func.where(function (name_sel, id_sel) {
-                //    return this.Access == 2 && (this.Name == name_sel && this.id == id_sel);
-                //}).read().done(function (results) {
-                //    alert(JSON.stringify(results));
-                //}, function (err) {
-                //    alert("Error: " + err);
-                //});
-
-                //},
-
             func: function (id_sel) {
                 remove.pop_list(age_data.model.func);
                 var Func = thinkitdrinkitDataClient.getTable("Func");
-
+                //milo: id_sel is the id that was picked by user from the db and it equals the actual id number to display the correct business logic 
                 if (id_sel == 1) {
                     var query = Func.where({
                         Access: 1

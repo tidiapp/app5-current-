@@ -26,6 +26,9 @@
             document.getElementById("shop").setAttribute("hidden", true);
             document.getElementById("home").setAttribute("hidden", true);
 
+
+            
+
             roamingSettings.values["Clicked_cat"] = "",
             roamingSettings.values["Cat_picked"] = "",
             roamingSettings.values["Cat_picked_img"] = "",
@@ -68,9 +71,13 @@
             remove.pop_list(age_data.model.info_sport);
             roamingSettings.values["I_ordered"] = "no";
             if (!roamingSettings.values["not_cont"]) {
-                roamingSettings.values["the_complete_total"] = 0;
+                roamingSettings.values["the_complete_total"] = 0;         
             }
-
+            if (roamingSettings.values['not_cont']) {
+                document.getElementById('youcurrentprice').textContent = roamingSettings.values["the_complete_total"];
+                document.getElementById('youcurrentprice').removeAttribute('hidden');
+                document.getElementById('thewordsforcurrentprice').removeAttribute('hidden');
+            }
         },
 
         unload: function () {

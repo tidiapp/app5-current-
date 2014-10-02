@@ -13,7 +13,7 @@
         // populates the page elements with the app's data.
         ready: function (element, options) {
             // TODO: Initialize the page here.
-
+            roamingSettings.values["went_back"] = true;
             design.getFinal();
             design.changeTextColor();
             var theNew = roamingSettings.values["Base_Vend"].replace(/^\s+/, '').replace(/\s+$/, '');
@@ -27,23 +27,24 @@
               document.getElementById("my_base_name").textContent = "Base: " + roamingSettings.values["Base_name"];
               document.getElementById("my_flav_name").textContent = "Flavor: " + roamingSettings.values["flavSel_name"];
               document.getElementById("my_boost1_name").textContent = "Boost: " + roamingSettings.values["Boost1_name"];*/
+            roamingSettings.values["went_back"] = true;
+            if (roamingSettings.values["went_back_back"]) {
+                if (roamingSettings.values["Boost2_name"] == "" || roamingSettings.values["Boost2_name"] === !undefined) { roamingSettings.values["Boost2_price"] = 0 };
+                if (roamingSettings.values["Boost3_name"] == "" || roamingSettings.values["Boost3_name"] === !undefined) { roamingSettings.values["Boost3_price"] = 0 };
+                if (roamingSettings.values["Boost4_name"] == "" || roamingSettings.values["Boost4_name"] === !undefined) { roamingSettings.values["Boost4_price"] = 0 };
 
+                roamingSettings.values['Boost_total'] = (parseFloat(roamingSettings.values["Boost1_price"]) + parseFloat(roamingSettings.values["Boost2_price"]) + parseFloat(roamingSettings.values["Boost3_price"]) + parseFloat(roamingSettings.values["Boost4_price"]));
 
-            if (roamingSettings.values["Boost2_name"] == "" || roamingSettings.values["Boost2_name"] === !undefined) { roamingSettings.values["Boost2_price"] = 0 };
-            if (roamingSettings.values["Boost3_name"] == "" || roamingSettings.values["Boost3_name"] === !undefined) { roamingSettings.values["Boost3_price"] = 0 };
-            if (roamingSettings.values["Boost4_name"] == "" || roamingSettings.values["Boost4_name"] === !undefined) { roamingSettings.values["Boost4_price"] = 0 };
+                roamingSettings.values["total_price"] = parseFloat(roamingSettings.values["Base_price"]) + parseFloat(roamingSettings.values['Boost_total']);
 
-            roamingSettings.values['Boost_total'] = (parseFloat(roamingSettings.values["Boost1_price"]) + parseFloat(roamingSettings.values["Boost2_price"]) + parseFloat(roamingSettings.values["Boost3_price"]) + parseFloat(roamingSettings.values["Boost4_price"]));
-
+                roamingSettings.values["the_complete_total"] += parseFloat(roamingSettings.values["total_price"]);
+                console.log((parseFloat(roamingSettings.values["Base_price"]) + parseFloat(roamingSettings.values["Boost1_price"])));
+                console.log(roamingSettings.values["total_price"]);
+                console.log(roamingSettings.values["the_complete_total"]);
+                roamingSettings.values["not_cont"] = true;
+                roamingSettings.values["went_back"] = false;
+            }
             document.getElementById("tax").textContent = "$" + Math.ceil(((parseFloat(roamingSettings.values["Base_price"]) + parseFloat(roamingSettings.values['Boost_total'])) * .0636) * 100) / 100;
-
-            roamingSettings.values["total_price"] = parseFloat(roamingSettings.values["Base_price"]) + parseFloat(roamingSettings.values['Boost_total']);
-
-            roamingSettings.values["the_complete_total"] += parseFloat(roamingSettings.values["total_price"]);
-            console.log((parseFloat(roamingSettings.values["Base_price"]) + parseFloat(roamingSettings.values["Boost1_price"])));
-            console.log(roamingSettings.values["total_price"]);
-            console.log(roamingSettings.values["the_complete_total"]);
-            roamingSettings.values["not_cont"] = true;
             document.getElementById("product_total").textContent = "$" + roamingSettings.values["the_complete_total"];
             document.getElementById("tax").textContent = "$" + Math.ceil((roamingSettings.values["the_complete_total"] * .0636) * 100) / 100;
             document.getElementById("total").textContent = "$" + Math.ceil(((roamingSettings.values["the_complete_total"] * .0636) + roamingSettings.values["the_complete_total"]) * 100) / 100;
@@ -55,8 +56,9 @@
             roamingSettings.values["I_ordered"] = "yes";
             if (roamingSettings.values["not_cont"]) {
                 roamingSettings.values["total_price"] = 0;
+            } else if (!roamingSettings.values["not_cont"]) {
+                remove.pop_list(age_data.model.continue_order_save);
             }
-            //get_set.get_order('', true);
 
         },
 
@@ -72,6 +74,7 @@
     var backSaved = new WinJS.UI.BackButton()
     var the_order = Array;
     var the_full_order = Array;
+    //console.log(document.getElementById('Cname').value);
     WinJS.Namespace.define("FinalClick", {
 
         clicked: function () {
@@ -143,7 +146,7 @@
                     i++;
                     j++;
                 }
-                console.log(array_t);
+ 
                 WinJS.xhr({
                     type: "POST",
                     url: "http://thinkitdrinkit.vendhq.com/api/register_sales",
@@ -156,12 +159,14 @@
                         "status": "SAVED",
                         "total_price": roamingSettings.values["the_complete_total"],
                         "total_tax": (roamingSettings.values["the_complete_total"] * .0636),
-                        "note": "New Order",
+                        "note": document.getElementById('Cname').value,
                         "register_sale_products": array_t
                     }),
                 }).then(function sucess(res) {
                     roamingSettings.values["Invoice_number"] = JSON.parse(res.responseText).register_sale.invoice_number;
                     roamingSettings.values["I_ordered"] = "yes";
+                    roamingSettings.values["not_cont"] = false;
+                    roamingSettings.values["went_back"] = true;
                 }, function error(err) {
                     console.log("fail", err.responseText)
                 });
@@ -203,7 +208,6 @@
                             WinJS.Navigation.navigate('pages/thankyou/thankyou.html');
                             roamingSettings.values["continue_shopping"] = false;
                             roamingSettings.values["the_complete_total"] = 0;
-                            console.log(the_full_order)
                         }), function (err) {
                             console.log(err);
                         }
@@ -232,25 +236,8 @@
             }
             roamingSettings.values["not_cont"] = true;
             console.log(roamingSettings.values["Base_vend"] + ' ' + roamingSettings.values["Boost1_vend"]);
-            /*  var test_array = Array();
-              var array_t = Array();
-              var i = 0;
-              var j = 1;
-              while (age_data.model.continue_order_save.length > i) {
-                  test_array.push(age_data.model.continue_order_save)
-                  console.log(test_array);
-                  array_t.push({
-                      product_id: test_array[i]['_keyMap'][j]['data'].product_id, quantity: 1, price: test_array[i]['_keyMap'][j]['data'].price, tax: test_array[i]['_keyMap'][j]['data'].tax
-                  })
-                  //console.log(i);
-                  i++;
-                  j++;
-              }*/ //The above code is for testing only
-            // console.log(array_t);
-
+            roamingSettings.values["went_back"] = true;
             WinJS.Navigation.navigate('pages/launch_page/launch_page.html');
-            var test = age_data.model.continue_order_save.toString();
-            console.log("Continue: " + test + " " + age_data.model.continue_order_save.length);
         }
 
     })
