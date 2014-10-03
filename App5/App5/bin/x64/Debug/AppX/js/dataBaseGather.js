@@ -74,88 +74,16 @@
                 remove.pop_list(age_data.model.func);
                 var Func = thinkitdrinkitDataClient.getTable("Func");
                 //milo: id_sel is the id that was picked by user from the db and it equals the actual id number to display the correct business logic 
-                //milo: in the if statement == 'whatever number' is the actual id from the thinkitdrinkitDataClient.Age table in azure db
-                if (id_sel == 1) {
-                    var query = Func.where({
-                        Access: 1
+               //milo: in the if statement == 'whatever number' is the actual id from the thinkitdrinkitDataClient.Age table in azure db
+                   var query = Func.where({
+                        Age_id: id_sel
                     }).orderBy("Order").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
                         }
                     }, function (err) {
                         console.log(err);
-                    });
-                } else if (id_sel == 2) {
-                    var query = Func.where({
-                        Access: 2
-                    }).orderBy("Order").read().done(function (results) {
-                        for (var i = 0; i < results.length; i++) {
-                            age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
-                        }
-                    }, function (err) {
-                        console.log(err);
-                    });
-                } else if (id_sel == 4) {
-                    var query = Func.where({
-                        Access: 3
-                    }).orderBy("Order").read().done(function (results) {
-                        for (var i = 0; i < results.length; i++) {
-                            age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
-                        }
-                    }, function (err) {
-                        console.log(err);
-                    });
-                } else if (id_sel == 3) {
-                    var query = Func.where({
-                        Access: 4
-                    }).orderBy("Order").read().done(function (results) {
-                        for (var i = 0; i < results.length; i++) {
-                            age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
-                        }
-                    }, function (err) {
-                        console.log(err);
-                    });
-                } else if (id_sel == 18) {
-                    var query = Func.where({
-                        Access: 5
-                    }).orderBy("Order").read().done(function (results) {
-                        for (var i = 0; i < results.length; i++) {
-                            age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
-                        }
-                    }, function (err) {
-                        console.log(err);
-                    });
-                } else if (id_sel == 19) {
-                    var query = Func.where({
-                        Access: 6
-                    }).orderBy("Order").read().done(function (results) {
-                        for (var i = 0; i < results.length; i++) {
-                            age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
-                        }
-                    }, function (err) {
-                        console.log(err);
-                    });
-                } else if (id_sel == 20) {
-                    var query = Func.where({
-                        Access: 7
-                    }).orderBy("Order").read().done(function (results) {
-                        for (var i = 0; i < results.length; i++) {
-                            age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
-                        }
-                    }, function (err) {
-                        console.log(err);
-                    });
-                } else if (id_sel == 21) {
-                    var query = Func.where({
-                        Access: 8
-                    }).orderBy("Order").read().done(function (results) {
-                        for (var i = 0; i < results.length; i++) {
-                            age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
-                        }
-                    }, function (err) {
-                        console.log(err);
-                    });
-                }
+                    });             
                 },
 
             func_sub: function (name) {

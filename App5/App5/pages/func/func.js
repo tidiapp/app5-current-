@@ -19,6 +19,7 @@
             design.changeTextColor();
             //milo
             var id_sel = roamingSettings.values["Id_sel"];
+            console.log(roamingSettings.values["Id_sel"]);
             document.getElementById("choosen_age2").textContent = "Select Your " + roamingSettings.values["Age_name"] + " Goal.";
             document.getElementById("home").removeAttribute("hidden");
 
