@@ -117,6 +117,8 @@
                 var Age = thinkitdrinkitDataClient.getTable("Base");
 
                 var query = Age.where({
+
+//$$$$$$$$milo change Name to Func_id and name to grab the id, currently its just grabbing Name and the first one in db which is not the one associated with the id I picked.
                     Name: name
                 }).read().done(function (results) {
                     age_data.model.info_page2.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_img: results[0].Label, base_price: results[0].Price, the_pic: results[0].Image, b_vend: results[0].VendID, b_vend_count: results[0].VendID_count })
