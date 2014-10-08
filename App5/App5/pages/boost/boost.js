@@ -77,8 +77,8 @@
 
             //document.getElementById("theBoostAge").textContent = roamingSettings.values["Age_name"];
             
-            server.boost(roamingSettings.values["Id_sel"]);
-            console.log("Boost page picked id = " + roamingSettings.values["Id_sel"]);
+            server.boost(roamingSettings.values["Id_sel_func"]);
+            console.log("Boost page picked id = " + roamingSettings.values["Id_sel_func"]);
 
             if (age_data.model.the_boost_sel.length === 1) {
                 thename1 = roamingSettings.values["Boost1_name"];
@@ -395,7 +395,7 @@
                 keepInfo = false;
             }
 
-            WinJS.Navigation.navigate('pages/final/final.html');
+            WinJS.Navigation.navigate('pages/flav_sel/flav_sel.html');
             thename1 = "";
             thename2 = "";
             thename3 = "";

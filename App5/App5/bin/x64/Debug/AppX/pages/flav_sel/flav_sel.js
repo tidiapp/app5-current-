@@ -106,7 +106,7 @@
                     var vendCount = JSON.parse(res.responseText).product.inventory[0].count;
                     console.log("Flavor Count from VEND ", vendCount);
                     if (vendCount >= 14.00000) {
-                        WinJS.Navigation.navigate('pages/boost/boost.html')
+                        WinJS.Navigation.navigate('pages/final/final.html')
                     } else if (vendCount <= 13.00000) {
                         document.getElementById("out_of_stock2").removeAttribute("hidden");
                         document.getElementById("out_of_stock2").textContent = "OUT OF STOCK, PLEASE PICK ANOTHER FLAVOR";
@@ -120,7 +120,7 @@
                     console.log("fail", err.responseText)
                 });
             } else {
-                WinJS.Navigation.navigate('pages/boost/boost.html')
+                WinJS.Navigation.navigate('pages/final/final.html')
             }
         },
         more_info: function (clicked) {

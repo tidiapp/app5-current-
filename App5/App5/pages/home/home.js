@@ -13,7 +13,7 @@
             WinJS.Binding.processAll(element, age_data.model);
             design.getHome();
             design.changeTextColor();
-
+            //console.log("Age page picked id READY() = " + roamingSettings.values["Id_sel_age"]);
             if (roamingSettings.values['not_cont']) {
                 document.getElementById('youcurrentprice').textContent = roamingSettings.values["the_complete_total"];
                 document.getElementById('youcurrentprice').removeAttribute('hidden');
@@ -119,8 +119,8 @@
                 roamingSettings.values["Age_pic"] = document.getElementById("sel_age_pic").src;
                 roamingSettings.values["Age_info"] = null;
                 roamingSettings.values["Age_price"] = null;
-                roamingSettings.values["Id_sel"] = document.getElementById("id_sel").textContent;
-                console.log("Home page picked id = " + roamingSettings.values["Id_sel"]);
+                roamingSettings.values["Id_sel_age"] = document.getElementById("id_sel").textContent;
+                console.log("Age page picked id = " + roamingSettings.values["Id_sel_age"]);
             }
 
         },

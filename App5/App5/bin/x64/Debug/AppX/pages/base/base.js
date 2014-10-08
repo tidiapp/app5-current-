@@ -17,7 +17,7 @@
             design.getBase();
             design.changeTextColor();
             document.getElementById("home").removeAttribute("hidden");
-            var id_sel = roamingSettings.values["Id_sel"];
+            var id_sel = roamingSettings.values["Id_sel_func"];
             document.getElementById("choosen_age3").textContent = "Select Your " + "Protein For " + roamingSettings.values["Func_name"] + ".";
 
             //milo: footer history 
@@ -51,7 +51,7 @@
             remove.pop_list(age_data.model.base);
             //milo: removing keepInfo data when back button is used from func page.
             remove.pop_list(age_data.model.info_page4);
-            roamingSettings.values["Count"] = "";
+            //roamingSettings.values["Count"] = "";
             if (!keepInfo) {
                 remove.pop_list(age_data.model.info_page2)
             }
@@ -85,8 +85,7 @@
                 roamingSettings.values["Base_info"] = document.getElementById("sel_base_info").textContent;
                 roamingSettings.values["Base_price"] = document.getElementById("base_price").textContent;
                 roamingSettings.values["Base_label"] = document.getElementById("sel_base_pic").src;
-                roamingSettings.values["Id_sel"] = document.getElementById("id_sel3").textContent;
-                console.log("Base page picked id = " + roamingSettings.values["Id_sel"]);
+                //roamingSettings.values["Id_sel_func"] = document.getElementById("id_sel3").textContent;
                 
             //milo: the following makes a call to vend to check if we have enough product for the order if low it will not allow to move on. 
                 if (vendId_count != "" && vendId_count != "null") {
@@ -108,7 +107,7 @@
                         var vendCount = JSON.parse(res.responseText).product.inventory[0].count;
                         console.log("Base Count from VEND ", vendCount);
                         if (vendCount >= 14.00000) {
-                            WinJS.Navigation.navigate('pages/flav_sel/flav_sel.html')
+                            WinJS.Navigation.navigate('pages/boost/boost.html')
                         } else {
                             document.getElementById("out_of_stock").removeAttribute("hidden");
                             document.getElementById("out_of_stock").textContent = "OUT OF STOCK, PLEASE PICK ANOTHER BASE";
@@ -122,7 +121,7 @@
                         console.log("fail", err.responseText)
                     });
                 } else {
-                    WinJS.Navigation.navigate('pages/flav_sel/flav_sel.html')
+                    WinJS.Navigation.navigate('pages/boost/boost.html')
                 }
         },
 

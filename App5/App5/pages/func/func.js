@@ -18,8 +18,8 @@
             design.getFunc();
             design.changeTextColor();
             //milo
-            var id_sel = roamingSettings.values["Id_sel"];
-            console.log(roamingSettings.values["Id_sel"]);
+            var id_sel = roamingSettings.values["Id_sel_age"];
+            //console.log("Func page picked id READY() = " + roamingSettings.values["Id_sel_age"]);
             document.getElementById("choosen_age2").textContent = "Select Your " + roamingSettings.values["Age_name"] + " Goal.";
             document.getElementById("home").removeAttribute("hidden");
 
@@ -79,8 +79,8 @@
             roamingSettings.values["Func_info"] = document.getElementById("sel_func_info").textContent;
             roamingSettings.values["Func_price"] = document.getElementById("func_price").textContent;
             roamingSettings.values["Func_label"] = document.getElementById("sel_func_pic").src;
-            roamingSettings.values["Id_sel"] = document.getElementById("id_sel2").textContent;
-            console.log("Func page picked id = " + roamingSettings.values["Id_sel"]);
+            roamingSettings.values["Id_sel_func"] = document.getElementById("id_sel2").textContent;
+            console.log("Func page picked id = " + roamingSettings.values["Id_sel_func"]);
         },
 
         more_info: function (clicked) {

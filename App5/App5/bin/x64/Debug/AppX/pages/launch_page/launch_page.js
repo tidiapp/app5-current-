@@ -27,8 +27,6 @@
             document.getElementById("home").setAttribute("hidden", true);
 
 
-            
-
             roamingSettings.values["Clicked_cat"] = "",
             roamingSettings.values["Cat_picked"] = "",
             roamingSettings.values["Cat_picked_img"] = "",
@@ -63,7 +61,9 @@
             roamingSettings.values["FlavSel_name"] = "",
             roamingSettings.values["FlavSel_pic"] = "",
             roamingSettings.values["FlavSel_vend"] = "",
-            roamingSettings.values["Flav_name"] = ""
+            roamingSettings.values["Flav_name"] = "",
+            roamingSettings.values["Id_sel_age"],
+            roamingSettings.values["Id_sel_func"]
 
             remove.pop_list(age_data.model.info_page2);
             remove.pop_list(age_data.model.the_boost_sel);

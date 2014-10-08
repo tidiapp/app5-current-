@@ -9,9 +9,9 @@
             home: function (the_sel_age) {
                 remove.pop_list(age_data.model.age);
 
-                //milo: withFilter suposed to not cache, great way to test for same name pictures being replaced never seems to refresh the new pic unless name is changed. 
+                //milo: withFilter var Age = thinkitdrinkitDataClient.withFilter(noCachingFilter).getTable("Age"); suposed to not cache, great way to test for same name pictures being replaced never seems to refresh the new pic unless name is changed. 
                 //milo: left all if (the_sel_age === "blahahahh") as names they are easy to change find all replace...
-                var Age = thinkitdrinkitDataClient.withFilter(noCachingFilter).getTable("Age");
+                var Age = thinkitdrinkitDataClient.getTable("Age");
 
                 if (the_sel_age === "Customize A Functional Drink Mix") {
                     var query = Age.where({
@@ -107,7 +107,7 @@
                         Func_id: id_sel
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
-                            age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[0].Price })
+                            age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[i].Price })
                         }
                     }, function (err) {
                         console.log(err);
@@ -117,8 +117,6 @@
                 var Age = thinkitdrinkitDataClient.getTable("Base");
 
                 var query = Age.where({
-
-//$$$$$$$$milo change Name to Func_id and name to grab the id, currently its just grabbing Name and the first one in db which is not the one associated with the id I picked.
                     Name: name
                 }).read().done(function (results) {
                     age_data.model.info_page2.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_img: results[0].Label, base_price: results[0].Price, the_pic: results[0].Image, b_vend: results[0].VendID, b_vend_count: results[0].VendID_count })
