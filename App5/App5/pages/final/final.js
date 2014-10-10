@@ -138,7 +138,7 @@
                 var j = 1;
                 while (age_data.model.continue_order_save.length > i) {
                     test_array.push(age_data.model.continue_order_save)
-                    console.log(test_array);
+                    //console.log(test_array[0].tax);
                     array_t.push({
                         product_id: test_array[i]['_keyMap'][j]['data'].product_id, quantity: 1, price: test_array[i]['_keyMap'][j]['data'].price, tax: test_array[i]['_keyMap'][j]['data'].tax
                     })
