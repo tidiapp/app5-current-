@@ -25,7 +25,7 @@
                 document.getElementById("item_info_label").setAttribute("hidden", true);
             }
 
-            if (updated_name === "Customize A Protein Drink Mix") {
+            if (updated_name === "Protein") {
                 document.getElementById("item_info_label").setAttribute("hidden", true);
             }
            

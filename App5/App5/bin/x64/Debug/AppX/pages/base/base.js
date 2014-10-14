@@ -21,14 +21,14 @@
             document.getElementById("choosen_age3").textContent = "Select Your " + "Protein For " + roamingSettings.values["Func_name"] + ".";
 
             //milo: footer history 
-            if (roamingSettings.values["Cat_picked"] === "Customize A Functional Drink Mix") {
+            if (roamingSettings.values["Cat_picked"] === "Energy") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
             }
             //milo: footer history 
-            if (roamingSettings.values["Cat_picked"] === "Customize A Protein Drink Mix") {
+            if (roamingSettings.values["Cat_picked"] === "Protein") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
             }
-            if (roamingSettings.values["Cat_picked"] === "Customize A Sport Drink Mix") {
+            if (roamingSettings.values["Cat_picked"] === "Specific Sports") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img4"];
             }
             //milo: footer history 

@@ -30,12 +30,12 @@
 
             document.getElementById("age_p").textContent = the_sel_age;
 
-            if (the_sel_age === "Customize A Functional Drink Mix") {
+            if (the_sel_age === "Energy") {
                 //age_pic is really the catagory image that was picked previously
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
             }
 
-            if (the_sel_age === "Customize A Protein Drink Mix") {
+            if (the_sel_age === "Protein") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
             }
 
@@ -46,7 +46,7 @@
                 document.getElementById("nutrigenetics_price_div").removeAttribute("hidden");
             }
 
-            if (the_sel_age === "Customize A Sport Drink Mix") {
+            if (the_sel_age === "Specific Sports") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img4"];
             }
 

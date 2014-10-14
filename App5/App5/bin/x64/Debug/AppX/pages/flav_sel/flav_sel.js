@@ -21,14 +21,14 @@
            
 
                 //milo: footer history 
-                if (roamingSettings.values["Cat_picked"] === "Customize A Functional Drink Mix") {
+                if (roamingSettings.values["Cat_picked"] === "Energy") {
                     document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
                 }
                 //milo: footer history 
-                if (roamingSettings.values["Cat_picked"] === "Customize A Protein Drink Mix") {
+                if (roamingSettings.values["Cat_picked"] === "Protein") {
                     document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
                 }
-                if (roamingSettings.values["Cat_picked"] === "Customize A Sport Drink Mix") {
+                if (roamingSettings.values["Cat_picked"] === "Specific Sports") {
                     document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img4"];
                 }
                 //milo: footer history 
@@ -43,6 +43,10 @@
                 document.getElementById("base_pic").src = roamingSettings.values["Base_pic"];
                 document.getElementById("base_price_prev").textContent = roamingSettings.values["Base_price"];
                 document.getElementById("where_you_are3").textContent = "You have choosen the " + roamingSettings.values["Base_name"] + " Base." + " You have 1 steps left.";
+
+                //document.getElementById("boost_p").textContent = roamingSettings.values["missing      "];
+                //document.getElementById("boost_pic").src = roamingSettings.values["missing      must be total"];
+
 
             document.getElementById("flav_sel_header").textContent = "Choose Your " + "Flavor.";
 

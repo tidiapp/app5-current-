@@ -18,7 +18,7 @@
             design.changeTextColor();
             var theNew = roamingSettings.values["Base_Vend"].replace(/^\s+/, '').replace(/\s+$/, '');
 
-            /*  document.getElementById("my_base_img_final").src = roamingSettings.values["Base_pic"];
+            /*document.getElementById("my_base_img_final").src = roamingSettings.values["Base_pic"];
               document.getElementById("sel_base_pic_final").src = roamingSettings.values["Base_label"];
               document.getElementById("my_flav_img_final").src = roamingSettings.values["flavSel_pic"];
               document.getElementById("my_flav_label_img_final").src = roamingSettings.values["FlavSel_label"];
@@ -138,7 +138,7 @@
                 var j = 1;
                 while (age_data.model.continue_order_save.length > i) {
                     test_array.push(age_data.model.continue_order_save)
-                    console.log(test_array[0].tax);
+                    //console.log(test_array[0].tax);
                     array_t.push({
                         product_id: test_array[i]['_keyMap'][j]['data'].product_id, quantity: 1, price: test_array[i]['_keyMap'][j]['data'].price, tax: test_array[i]['_keyMap'][j]['data'].tax
                     })
@@ -146,7 +146,6 @@
                     i++;
                     j++;
                 }
-                console.log(age_data.model.continue_order_save);
  
                 WinJS.xhr({
                     type: "POST",

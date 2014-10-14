@@ -104,9 +104,9 @@
                             </div>
                         </div>
                         <div id="btn_right" hidden="">
-                            <p style="font-size: 20px" id="hidden_p">You have choosen <span id="the_number"></span> of up to 4 boosts choose another boost or checkout.</p>
+                            <p style="font-size: 20px" id="hidden_p">You have choosen <span id="the_number"></span> of up to 4 boosts choose another boost or add to cart.</p>
                             <button onclick="boost_clicked.release()" id="del_btn10" name="del_btn10" type="reset">Remove Last</button>
-                            <button id="sel_btn10" class="sel_look_btn" onclick="boost_clicked.finalKeepInfo(document.getElementById('choosen_name').textContent)" name="sel_btn10" type="submit">Checkout</button>
+                            <button id="sel_btn10" class="sel_look_btn" onclick="boost_clicked.finalKeepInfo(document.getElementById('choosen_name').textContent)" name="sel_btn10" type="submit">Add To Cart</button>
                         </div>
                     </div>
                 </div>
@@ -134,15 +134,15 @@
 
             <!--Milo: base_ is really coming from base page -->
             <div id="base_div" class="history_div">
+                <div class="price_prev_div">
+                    <span>$</span>
+                    <span id="base_price_prev2"></span>
+                </div>
                 <p id="base_p" class="history_p"></p>
                 <img id="base_pic" class="history_pic" alt="This is a test" onclick="WinJS.Navigation.back(2)" src="#" width="115" height="90" />
             </div>
 
-            <!--Milo: base_ is really coming from base page -->
-            <div id="flav_div" class="history_div">
-                <p id="flav_p" class="history_p"></p>
-                <img id="flav_pic" class="history_pic" alt="This is a test" onclick="WinJS.Navigation.back(1)" src="#" width="115" height="90" />
-            </div>
+            
 
             <h2 id="where_you_are4"><span id="cal_co"></span></h2>
             <h1 id="footer_company_name"></h1><!-- this is being styled in the default.js folder -->

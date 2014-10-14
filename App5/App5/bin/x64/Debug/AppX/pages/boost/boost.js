@@ -44,14 +44,14 @@
                 roamingSettings.values["went_back_back"] = true;
             } 
             //milo: footer history 
-            if (roamingSettings.values["Cat_picked"] === "Customize A Functional Drink Mix") {
+            if (roamingSettings.values["Cat_picked"] === "Energy") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
             }
             //milo: footer history 
-            if (roamingSettings.values["Cat_picked"] === "Customize A Protein Drink Mix") {
+            if (roamingSettings.values["Cat_picked"] === "Protein") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
             }
-            if (roamingSettings.values["Cat_picked"] === "Customize A Sport Drink Mix") {
+            if (roamingSettings.values["Cat_picked"] === "Specific Sports") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img4"];
             }
             //milo: footer history 
@@ -63,8 +63,7 @@
             document.getElementById("func_pic").src = roamingSettings.values["Func_pic"];
             document.getElementById("base_p").textContent = roamingSettings.values["Base_name"];
             document.getElementById("base_pic").src = roamingSettings.values["Base_pic"];
-            document.getElementById("flav_p").textContent = roamingSettings.values["FlavSel_name"];
-            document.getElementById("flav_pic").src = roamingSettings.values["FlavSel_pic"];
+            document.getElementById("base_price_prev2").textContent = roamingSettings.values["Base_price"];
             document.getElementById("where_you_are4").textContent = "You have choosen the " + roamingSettings.values["FlavSel_name"] + " Flavor.";
 
             //milo: show checkout button right away so some can buy with out boost picked

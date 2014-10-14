@@ -1,26 +1,26 @@
 ﻿.launch_page section[role=main] {
-    margin-left: 120px;
-    margin-right: 120px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .the_float {
     float: left;
-    border: 3px solid;
-    margin-right: 100px;
-    margin-left: -70px;
-    width: 250px;
-    height: 225px;
+    /*border: 3px solid;*/
+    margin-right: 5px;
+    /*margin-left: -70px;*/
+    width: 165px;
+    height: 165px;
 }
 
 .the_float img {
     position: absolute;
-    width: 250px;
-    height: 225px;
+    width: 165px;
+    height: 165px;
     z-index: -1;
 }
 
 .underline_div {
-    margin-top: 150px;
+    margin-top: 110px;
     text-align: center;
 }    
     .the_float a {
@@ -52,6 +52,7 @@
 
 #intro_text {
     font-size: 20px;
+    margin-left: 45px;
 }
 
 #intro_text_section {

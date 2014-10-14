@@ -13,7 +13,7 @@
                 //milo: left all if (the_sel_age === "blahahahh") as names they are easy to change find all replace...
                 var Age = thinkitdrinkitDataClient.getTable("Age");
 
-                if (the_sel_age === "Customize A Functional Drink Mix") {
+                if (the_sel_age === "Energy") {
                     var query = Age.where({
                         AccessN: true
                     }).orderBy("Name").read().done(function (results) {
@@ -23,7 +23,7 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Customize A Protein Drink Mix") {
+                } else if (the_sel_age === "Protein") {
                     var query = Age.where({
                         AccessP: true
                     }).orderBy("Order").read().done(function (results) {
@@ -43,7 +43,7 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Customize A Sport Drink Mix") {
+                } else if (the_sel_age === "Specific Sports") {
                     var query = Age.where({
                         AccessS: true
                     }).orderBy("Name").read().done(function (results) {

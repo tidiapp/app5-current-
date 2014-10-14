@@ -18,7 +18,7 @@
             design.changeTextColor();
             var theNew = roamingSettings.values["Base_Vend"].replace(/^\s+/, '').replace(/\s+$/, '');
 
-            /*  document.getElementById("my_base_img_final").src = roamingSettings.values["Base_pic"];
+            /*document.getElementById("my_base_img_final").src = roamingSettings.values["Base_pic"];
               document.getElementById("sel_base_pic_final").src = roamingSettings.values["Base_label"];
               document.getElementById("my_flav_img_final").src = roamingSettings.values["flavSel_pic"];
               document.getElementById("my_flav_label_img_final").src = roamingSettings.values["FlavSel_label"];
