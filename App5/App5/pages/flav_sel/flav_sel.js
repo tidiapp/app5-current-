@@ -19,7 +19,6 @@
             document.getElementById("age_p").textContent = "Age: " + roamingSettings.values["Age_name"];
             document.getElementById("base_p").textContent = "Base: " + roamingSettings.values["Base_name"];
            
-
                 //milo: footer history 
                 if (roamingSettings.values["Cat_picked"] === "Energy") {
                     document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
@@ -41,12 +40,23 @@
 
                 document.getElementById("base_p").textContent = roamingSettings.values["Base_name"];
                 document.getElementById("base_pic").src = roamingSettings.values["Base_pic"];
-                document.getElementById("base_price_prev").textContent = roamingSettings.values["Base_price"];
-                document.getElementById("where_you_are3").textContent = "You have choosen the " + roamingSettings.values["Base_name"] + " Base." + " You have 1 steps left.";
+                document.getElementById("base_price_prev2").textContent = roamingSettings.values["Base_price"];
+                roamingSettings.values['Boost_total_footer'] = (parseFloat(roamingSettings.values["Boost1_price"]) + parseFloat(roamingSettings.values["Boost2_price"]) + parseFloat(roamingSettings.values["Boost3_price"]) + parseFloat(roamingSettings.values["Boost4_price"]));
+                document.getElementById("base_price_prev3").textContent = roamingSettings.values['Boost_total_footer'];
 
-                //document.getElementById("boost_p").textContent = roamingSettings.values["missing      "];
-                //document.getElementById("boost_pic").src = roamingSettings.values["missing      must be total"];
 
+                document.getElementById("where_you_are3").textContent = "You have choosen " + roamingSettings.values["Boost_total_num"] + " Boosts.";
+
+                //document.getElementById("boost_p").innerHTML = roamingSettings.values["Boost1_name"] + "<br>" + roamingSettings.values["Boost2_name"] + "<br>" + roamingSettings.values["Boost3_name"] + "<br>" + roamingSettings.values["Boost4_name"];
+
+                var boosts = [roamingSettings.values["Boost1_name"] , roamingSettings.values["Boost2_name"] , roamingSettings.values["Boost3_name"] , roamingSettings.values["Boost4_name"]];
+                var text = "";
+                var i;
+
+                for (i = 0; i < boosts.length; i++) {
+                    text += boosts[i] + "<br>";
+                }
+                document.getElementById("boost_p").innerHTML = text;
 
             document.getElementById("flav_sel_header").textContent = "Choose Your " + "Flavor.";
 

@@ -62,8 +62,9 @@
             roamingSettings.values["FlavSel_pic"] = "",
             roamingSettings.values["FlavSel_vend"] = "",
             roamingSettings.values["Flav_name"] = "",
-            roamingSettings.values["Id_sel_age"],
-            roamingSettings.values["Id_sel_func"]
+            roamingSettings.values["Id_sel_age"] = "",
+            roamingSettings.values["Id_sel_func"] = "",
+            roamingSettings.values["Boost_total_num"] = ""
 
             remove.pop_list(age_data.model.info_page2);
             remove.pop_list(age_data.model.the_boost_sel);

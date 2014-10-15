@@ -63,10 +63,10 @@
             document.getElementById("func_pic").src = roamingSettings.values["Func_pic"];
             document.getElementById("base_p").textContent = roamingSettings.values["Base_name"];
             document.getElementById("base_pic").src = roamingSettings.values["Base_pic"];
-            document.getElementById("base_price_prev2").textContent = roamingSettings.values["Base_price"];
-            document.getElementById("where_you_are4").textContent = "You have choosen the " + roamingSettings.values["FlavSel_name"] + " Flavor.";
+            document.getElementById("base_price_prev").textContent = roamingSettings.values["Base_price"];
+            document.getElementById("where_you_are4").textContent = "You have choosen the " + roamingSettings.values["Base_name"] + " Base." + " You have 1 step left.";
 
-            //milo: show checkout button right away so some can buy with out boost picked
+            //milo: show checkout button right away so some can buy without boost picked
             document.getElementById("btn_right").removeAttribute("hidden");
 
             if (roamingSettings.values["Base_protein"] === true) {
@@ -238,6 +238,8 @@
                     document.getElementById("only_one_warning").setAttribute("hidden", true);
 
                     //console.log("double " + thename1 +" "+ thename2 +" "+ thename3 +" "+ name)
+
+                    roamingSettings.values["Boost_total_num"] = age_data.model.the_boost_sel.length;
 
                     //if statements should be placed here for the 1 boost condition
                     if (age_data.model.the_boost_sel.length === 1) {

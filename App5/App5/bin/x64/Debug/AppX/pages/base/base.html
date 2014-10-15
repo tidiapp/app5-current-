@@ -62,21 +62,21 @@
         <footer id="main_footer">
 
             <!--Milo: age_ is really coming from launch_page -->
-            <div id="age_div">
-                <p id="age_p"></p>
-                <img id="age_pic" alt="This is a test" onclick="WinJS.Navigation.back(3)" src="#" width="115" height="90" />
+            <div id="age_div" class="history_div" onclick="WinJS.Navigation.back(3)">
+                <p id="age_p" class="history_p"></p>
+                <img id="age_pic" alt="This is a test" src="#" width="115" height="90" />
             </div>
 
             <!--Milo: home_ is coming from home page -->
-            <div id="home_div" class="history_div">
+            <div id="home_div" class="history_div" onclick="WinJS.Navigation.back(2)">
                 <p id="home_p" class="history_p"></p>
-                <img id="home_pic" class="history_pic" alt="This is a test" onclick="WinJS.Navigation.back(2)" src="#" width="115" height="90" />
+                <img id="home_pic" class="history_pic" alt="This is a test" src="#" width="115" height="90" />
             </div>
 
             <!--Milo: func_ is coming from func page -->
-            <div id="func_div" class="history_div">
+            <div id="func_div" class="history_div" onclick="WinJS.Navigation.back(1)">
                 <p id="func_p" class="history_p"></p>
-                <img id="func_pic" class="history_pic" alt="This is a test" onclick="WinJS.Navigation.back(1)" src="#" width="115" height="90" />
+                <img id="func_pic" class="history_pic" alt="This is a test" src="#" width="115" height="90" />
             </div>
 
             <h2 id="where_you_are2"></h2>

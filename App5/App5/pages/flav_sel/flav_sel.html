@@ -54,40 +54,44 @@
         </section>
          <footer id="main_footer">
              <!--Milo: age_ is really coming from launch_page -->
-             <div id="age_div">
-                 <p id="age_p"></p>
-                 <img id="age_pic" alt="This is a test" onclick="WinJS.Navigation.back(5)" src="#" width="115" height="90" />
+             <div id="age_div" class="history_div" onclick="WinJS.Navigation.back(5)">
+                 <p id="age_p" class="history_p"></p>
+                 <img id="age_pic" alt="This is a test" src="#" width="115" height="90" />
              </div>
 
              <!--Milo: home_ is really coming from home page -->
-             <div id="home_div" class="history_div">
+             <div id="home_div" class="history_div" onclick="WinJS.Navigation.back(4)">
                  <p id="home_p" class="history_p"></p>
-                 <img id="home_pic" class="history_pic" alt="This is a test" onclick="WinJS.Navigation.back(4)" src="#" width="115" height="90" />
+                 <img id="home_pic" class="history_pic" alt="This is a test" src="#" width="115" height="90" />
              </div>
 
              <!--Milo: func_ is really coming from func page -->
-             <div id="func_div" class="history_div">
+             <div id="func_div" class="history_div" onclick="WinJS.Navigation.back(3)">
                  <p id="func_p" class="history_p"></p>
-                 <img id="func_pic" class="history_pic" alt="This is a test" onclick="WinJS.Navigation.back(3)" src="#" width="115" height="90" />
+                 <img id="func_pic" class="history_pic" alt="This is a test" src="#" width="115" height="90" />
              </div>
 
              <!--Milo: base_ is really coming from base page -->
-             <div id="base_div" class="history_div">
+             <div id="base_div" class="history_div" onclick="WinJS.Navigation.back(2)">
                  <div class="price_prev_div">
                      <span>$</span>
-                     <span id="base_price_prev"></span>
+                     <span id="base_price_prev2"></span>
                  </div>
                  <p id="base_p" class="history_p"></p>
-                 <img id="base_pic" class="history_pic" alt="This is a test" onclick="WinJS.Navigation.back(2)" src="#" width="115" height="90" />
+                 <img id="base_pic" class="history_pic" alt="This is a test" src="#" width="115" height="90" />
              </div>
 
-             <!--Milo: base_ is really coming from base page -->
-             <div id="boost_div" class="history_div">
+             <!--Milo: boost_ is really coming from boost page -->
+             <div id="boost_div" class="history_div" onclick="WinJS.Navigation.back(1)">
+                 <div class="price_prev_div">
+                     <span>$</span>
+                     <span id="base_price_prev3"></span>
+                 </div>
                  <p id="boost_p" class="history_p"></p>
-                 <img id="boost_pic" class="history_pic" alt="This is a test" onclick="WinJS.Navigation.back(1)" src="#" width="115" height="90" />
+                 <img id="boost_pic" class="history_pic" width="115" height="90" />
              </div>
 
-              <h2 id="where_you_are3">You have chosen your age, base, and <span id="cal_co"></span>. You have 2 steps left.</h2>
+              <h2 id="where_you_are3"></h2>
            <h1 id="footer_company_name"></h1><!-- this is being styled in the default.js folder -->
         </footer>
     </div>

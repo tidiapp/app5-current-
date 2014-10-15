@@ -183,7 +183,7 @@ overError {
     padding-top: 2px;
 }
 
-#base_p {
+/*#base_p {
     position: absolute;
     color: #fff;
     height: 33px;
@@ -195,7 +195,7 @@ overError {
     margin-top: 57px;
     padding-left: 3px;
     padding-top: 2px;
-}
+}*/
 
 #base_pic {
     border: 2px solid #fff;
@@ -206,7 +206,7 @@ overError {
     float: left;
 }
 
-#age_p {
+/*#age_p {
     position: absolute;
     color: #fff;
     font-weight: 700;
@@ -218,7 +218,7 @@ overError {
     margin-top: 57px;
     padding-left: 3px;
     padding-top: 2px;
-}
+}*/
 
 #hidden_p {
     margin-top: 0;
@@ -368,7 +368,7 @@ button, input[type=button], input[type=submit], input[type=reset], input[type=fi
 }
 
 #where_you_are4 {
-    margin-left: 680px;
+    margin-left: 545px;
     margin-top: 30px;
     position: absolute;
     font-size: 18px;
