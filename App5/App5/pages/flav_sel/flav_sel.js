@@ -42,17 +42,17 @@
             document.getElementById("base_pic").src = roamingSettings.values["Base_pic"];
             document.getElementById("base_price_prev2").textContent = roamingSettings.values["Base_price"];
 
-            if (roamingSettings.values["went_back"]) {
+            roamingSettings.values["went_back"] = true;
+            if (roamingSettings.values["went_back_back"]) {
                 if (roamingSettings.values["Boost1_name"] == "" || roamingSettings.values["Boost1_name"] === !undefined) { roamingSettings.values["Boost1_price"] = 0 };
                 if (roamingSettings.values["Boost2_name"] == "" || roamingSettings.values["Boost2_name"] === !undefined) { roamingSettings.values["Boost2_price"] = 0 };
                 if (roamingSettings.values["Boost3_name"] == "" || roamingSettings.values["Boost3_name"] === !undefined) { roamingSettings.values["Boost3_price"] = 0 };
                 if (roamingSettings.values["Boost4_name"] == "" || roamingSettings.values["Boost4_name"] === !undefined) { roamingSettings.values["Boost4_price"] = 0 };
 
                 roamingSettings.values['Boost_total_footer'] = (parseFloat(roamingSettings.values["Boost1_price"]) + parseFloat(roamingSettings.values["Boost2_price"]) + parseFloat(roamingSettings.values["Boost3_price"]) + parseFloat(roamingSettings.values["Boost4_price"]));
+                document.getElementById("base_price_prev3").textContent = roamingSettings.values['Boost_total_footer'];
             }
 
-                //roamingSettings.values['Boost_total_footer'] = (parseFloat(roamingSettings.values["Boost1_price"]) + parseFloat(roamingSettings.values["Boost2_price"]) + parseFloat(roamingSettings.values["Boost3_price"]) + parseFloat(roamingSettings.values["Boost4_price"]));
-                document.getElementById("base_price_prev3").textContent = roamingSettings.values['Boost_total_footer'];
                 document.getElementById("where_you_are3").textContent = "You have choosen " + roamingSettings.values["Boost_total_num"] + " Boosts.";
                 //document.getElementById("boost_p").innerHTML = roamingSettings.values["Boost1_name"] + "<br>" + roamingSettings.values["Boost2_name"] + "<br>" + roamingSettings.values["Boost3_name"] + "<br>" + roamingSettings.values["Boost4_name"];
 
