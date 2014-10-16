@@ -27,6 +27,7 @@
               document.getElementById("my_base_name").textContent = "Base: " + roamingSettings.values["Base_name"];
               document.getElementById("my_flav_name").textContent = "Flavor: " + roamingSettings.values["flavSel_name"];
               document.getElementById("my_boost1_name").textContent = "Boost: " + roamingSettings.values["Boost1_name"];*/
+
             roamingSettings.values["went_back"] = true;
             if (roamingSettings.values["went_back_back"]) {
                 if (roamingSettings.values["Boost2_name"] == "" || roamingSettings.values["Boost2_name"] === !undefined) { roamingSettings.values["Boost2_price"] = 0 };
@@ -43,6 +44,7 @@
                 console.log(roamingSettings.values["the_complete_total"]);
                 roamingSettings.values["not_cont"] = true;
                 roamingSettings.values["went_back"] = false;
+                roamingSettings.values["went_back_back"] = false;
             }
             document.getElementById("tax").textContent = "$" + Math.ceil(((parseFloat(roamingSettings.values["Base_price"]) + parseFloat(roamingSettings.values['Boost_total'])) * .0636) * 100) / 100;
             document.getElementById("product_total").textContent = "$" + roamingSettings.values["the_complete_total"];

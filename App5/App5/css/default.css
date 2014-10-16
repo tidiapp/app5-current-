@@ -199,6 +199,6 @@ h1, .win-type-xx-large {
     font-size: 25px;
     color: #fff;
     background-color: rgba(0,0,0,0.6);
-    padding-top: 1px;
-    padding-right: 5px;
+    width: 38px;
+    height: 35px;
 }
