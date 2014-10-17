@@ -129,6 +129,7 @@
     <Content Include="pages\boost.ori\boost.css" />
     <Content Include="pages\boost.ori\boost.html" />
     <Content Include="pages\boost.ori\boost.js" />
+    <Content Include="pages\flav_sel\flav_sel - Copy.html" />
     <Content Include="pages\func\func.css" />
     <Content Include="pages\func\func.html" />
     <Content Include="pages\func\func.js" />

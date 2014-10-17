@@ -311,6 +311,9 @@
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\boost.ori\boost.html">
       <PackagePath>pages\boost.ori\boost.html</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\flav_sel\flav_sel - Copy.html">
+      <PackagePath>pages\flav_sel\flav_sel - Copy.html</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\func\func.html">
       <PackagePath>pages\func\func.html</PackagePath>
     </AppxPackagedFile>

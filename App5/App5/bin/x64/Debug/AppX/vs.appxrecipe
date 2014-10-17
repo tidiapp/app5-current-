@@ -17,7 +17,7 @@
     <AppXManifest Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\bin\x64\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-10-08T20:17:06.632</Modified>
+      <Modified>2014-10-17T20:38:53.471</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -415,6 +415,10 @@
       <PackagePath>pages\boost.ori\boost.html</PackagePath>
       <Modified>2014-09-24T16:53:27.444</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\flav_sel\flav_sel - Copy.html">
+      <PackagePath>pages\flav_sel\flav_sel - Copy.html</PackagePath>
+      <Modified>2014-10-15T20:26:38.720</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\func\func.html">
       <PackagePath>pages\func\func.html</PackagePath>
       <Modified>2014-10-15T20:11:36.242</Modified>
@@ -445,7 +449,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\flav_sel\flav_sel.html">
       <PackagePath>pages\flav_sel\flav_sel.html</PackagePath>
-      <Modified>2014-10-15T20:26:38.720</Modified>
+      <Modified>2014-10-17T20:41:20.153</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\home\home.html">
       <PackagePath>pages\home\home.html</PackagePath>
@@ -493,7 +497,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-10-08T20:17:06.392</Modified>
+      <Modified>2014-10-17T20:38:53.048</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
