@@ -64,7 +64,11 @@
             roamingSettings.values["Flav_name"] = "",
             roamingSettings.values["Id_sel_age"] = "",
             roamingSettings.values["Id_sel_func"] = "",
-            roamingSettings.values["Boost_total_num"] = ""
+            roamingSettings.values["Boost_total_num"] = "",
+            roamingSettings.values["Nutrigenetics_name"] = "",
+            roamingSettings.values["Nutrigenetics_pic"] = "",
+            roamingSettings.values["Nutrigenetics_price"] = ""
+
 
             remove.pop_list(age_data.model.info_page2);
             remove.pop_list(age_data.model.the_boost_sel);

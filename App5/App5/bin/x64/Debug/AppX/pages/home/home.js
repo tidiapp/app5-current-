@@ -29,6 +29,7 @@
             var the_sel_age = roamingSettings.values["Cat_picked"];
 
             document.getElementById("age_p").textContent = the_sel_age;
+            document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory." + " You have 4 steps left.";
 
             if (the_sel_age === "Energy") {
                 //age_pic is really the catagory image that was picked previously
@@ -49,9 +50,6 @@
             if (the_sel_age === "Specific Sports") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img4"];
             }
-
-            document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory." + " You have 4 steps left.";
-
             //gather the infomation from the database and displays it on the sreen
             server.home(the_sel_age);
 

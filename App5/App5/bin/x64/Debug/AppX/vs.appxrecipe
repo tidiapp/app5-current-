@@ -305,7 +305,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\final\final.js">
       <PackagePath>pages\final\final.js</PackagePath>
-      <Modified>2014-10-16T21:06:11.678</Modified>
+      <Modified>2014-10-17T15:13:22.654</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\flav_sel\flav_sel.js">
       <PackagePath>pages\flav_sel\flav_sel.js</PackagePath>
@@ -313,7 +313,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\home\home.js">
       <PackagePath>pages\home\home.js</PackagePath>
-      <Modified>2014-10-14T20:26:15.727</Modified>
+      <Modified>2014-10-17T14:59:36.320</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\item_info\item_info.js">
       <PackagePath>pages\item_info\item_info.js</PackagePath>
@@ -321,7 +321,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\launch_page\launch_page.js">
       <PackagePath>pages\launch_page\launch_page.js</PackagePath>
-      <Modified>2014-10-15T16:03:35.838</Modified>
+      <Modified>2014-10-17T15:06:32.861</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login\login.js">
       <PackagePath>pages\login\login.js</PackagePath>
