@@ -53,8 +53,7 @@
                 document.getElementById("base_price_prev3").textContent = roamingSettings.values['Boost_total_footer'];
             }
 
-            document.getElementById("where_you_are3").textHTML = "You have choosen " + roamingSettings.values["Boost_total_num"] + " Boosts." + "<br>" + " Total";
-            //document.getElementById("where_you_are3").innerHTML = "<br>";
+            document.getElementById("where_you_are3").textContent = "You have choosen " + roamingSettings.values["Boost_total_num"] + " Boosts.";
                 //document.getElementById("boost_p").innerHTML = roamingSettings.values["Boost1_name"] + "<br>" + roamingSettings.values["Boost2_name"] + "<br>" + roamingSettings.values["Boost3_name"] + "<br>" + roamingSettings.values["Boost4_name"];
 
                 var boosts = [roamingSettings.values["Boost1_name"] , roamingSettings.values["Boost2_name"] , roamingSettings.values["Boost3_name"] , roamingSettings.values["Boost4_name"]];
