@@ -23,7 +23,7 @@
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\css\default.css">
       <PackagePath>css\default.css</PackagePath>
-      <Modified>2014-10-16T15:39:39.401</Modified>
+      <Modified>2014-10-20T14:18:21.156</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\libs\prettify\prettify.css">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\libs\prettify\prettify.css</PackagePath>
@@ -75,7 +75,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\flav_sel\flav_sel.css">
       <PackagePath>pages\flav_sel\flav_sel.css</PackagePath>
-      <Modified>2014-10-15T20:06:43.218</Modified>
+      <Modified>2014-10-20T14:18:21.141</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\home\home.css">
       <PackagePath>pages\home\home.css</PackagePath>
@@ -309,7 +309,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\flav_sel\flav_sel.js">
       <PackagePath>pages\flav_sel\flav_sel.js</PackagePath>
-      <Modified>2014-10-16T21:06:11.700</Modified>
+      <Modified>2014-10-20T14:37:06.307</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\home\home.js">
       <PackagePath>pages\home\home.js</PackagePath>

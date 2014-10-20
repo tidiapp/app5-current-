@@ -172,7 +172,7 @@ h1, .win-type-xx-large {
     float: left;
 }
 
-.history_p {
+/*.history_p {
     position: absolute;
     color: #fff;
     font-weight: 700;
@@ -184,6 +184,20 @@ h1, .win-type-xx-large {
     font-size: 10px;
     padding-left: 2px;
     padding-top: 2px;
+}*/
+
+.history_p {
+    position: absolute;
+    color: #fff;
+    font-weight: 400;
+    height: 53px;
+    background-color: rgba(0,0,0,.6);
+    width: 98px;
+    margin-left: 17px;
+    margin-top: 28px;
+    font-size: 12px;
+    padding-left: 2px;
+    padding-top: 2px;
 }
 
 .history_pic {
@@ -192,7 +206,7 @@ h1, .win-type-xx-large {
     float: left;
 }
 
-.price_prev_div {
+/*.price_prev_div {
     position: absolute;
     margin-left: 94px;
     margin-top: 2px;
@@ -201,4 +215,15 @@ h1, .win-type-xx-large {
     background-color: rgba(0,0,0,0.6);
     width: 38px;
     height: 35px;
+}*/
+
+.price_prev_div {
+    position: absolute;
+    margin-left: 79px;
+    margin-top: 2px;
+    font-size: 25px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.6);
+    width: 38px;
+    height: 26px;
 }
