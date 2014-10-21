@@ -114,8 +114,8 @@
                     type: "POST",
                     url: "https://thinkitdrinkit.vendhq.com/api/products",
                     user: "milo@thinkitdrinkit.com",
+                    password: "agave2013",
                     headers: { "Content-type": "application/json" },
-                    //password: "********",
                     data: JSON.stringify({
                         //milo: in this object its the id part >>> GET /api/register_sales/{id} >>> that VEND wants which is below
                         "id": vendId_count,

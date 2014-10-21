@@ -103,11 +103,15 @@
         getThanks: function () {
             document.getElementById("main_footer").style.backgroundColor = i;
             //document.getElementById("yes_btn").style.backgroundColor = i;
-            document.getElementById("no_btn").style.backgroundColor = i;
+            //document.getElementById("no_btn").style.backgroundColor = i;
             //document.getElementById("yes_btn").style.color = j;
-            document.getElementById("no_btn").style.color = j;
+            //document.getElementById("no_btn").style.color = j;
             //document.getElementById("yes_btn").style.borderColor = i;
-            document.getElementById("no_btn").style.borderColor = i;
+            //document.getElementById("no_btn").style.borderColor = i;
+            document.getElementById("new_btn").style.backgroundColor = i;
+            document.getElementById("new_btn").style.color = j;
+            document.getElementById("new_btn").style.borderColor = i;
+
         },
 
         getSignUp: function () {

@@ -1,4 +1,4 @@
-﻿// For an introduction to the Page Control template, see the following documentation:
+﻿// For an introduction to the Page Control template, see the following documentation:no_btn
 //http://msdn.microsoft.com/en-us/library/azure/jj554207.aspx
 //milo: LINK USED FOR mobile BACK END MOBILE DEV IT IS WHAT THE APP USES 
 
@@ -18,7 +18,7 @@
             design.changeTextColor();
             document.getElementById("thanks_h1").textContent = "Thank you, an associate will take your payment at the counter.";
             document.getElementById("thanks_h2").textContent = "Your order number is: " + (roamingSettings.values["Invoice_number"]) + ".";
-            document.getElementById("no_btn").textContent = "Make a New Order";
+            document.getElementById("new_btn").textContent = "Make a New Order";
             console.log("thankyou order#", roamingSettings.values["Invoice_number"]);
 
         },
@@ -107,10 +107,16 @@
             roamingSettings.values["creat_last"] = ""
         },
 
-    })
+        clicked_new: function () {
 
-    function Delayer() {
-        setTimeout("WinJS.Navigation.navigate('pages/launch_page/launch_page.html')", 10000);
-    } Delayer()
+            roamingSettings.values["I_ordered"] === "yes";
+            WinJS.Navigation.navigate('pages/launch_page/launch_page.html')
+        },
+
+    })
+    //milo: buggie if you hit home and this excutes it take over and loads that page no matter where you end up
+    //function Delayer() {
+    //    setTimeout("WinJS.Navigation.navigate('pages/launch_page/launch_page.html')", 10000);
+    //} Delayer()
 
 })();

@@ -120,6 +120,9 @@
                     return theTime;
                 }
 
+                console.log("milo: here");
+
+
                 if (roamingSettings.values["Boost2_price"] > 0 && roamingSettings.values["Boost3_price"] <= 0) {
 
                     age_data.model.continue_order_save.push({
@@ -154,8 +157,9 @@
  
                 WinJS.xhr({
                     type: "POST",
-                    url: "http://thinkitdrinkit.vendhq.com/api/register_sales",
+                    url: "https://thinkitdrinkit.vendhq.com/api/register_sales",
                     headers: { "Content-type": "application/json" },
+                    user: "milo@thinkitdrinkit.com",
                     password: "agave2013",
                     data: JSON.stringify({
                         "register_id": "5ecccd41-3cbc-11e3-a29a-bc305bf5da20",
@@ -172,53 +176,67 @@
                     roamingSettings.values["I_ordered"] = "yes";
                     roamingSettings.values["not_cont"] = false;
                     roamingSettings.values["went_back"] = true;
+
+                    //milo: testing 2nd new order bug, consolelog does not show up here so error is above
+                    //console.log("milo: here");
+
+                    //console.log(roamingSettings.values["Invoice_number"]);
+                    roamingSettings.values["the_complete_total"] = 0;
+                    roamingSettings.values["theComplete"] = document.getElementById("total").textContent;
+
+
+
+                    Age.insert({//Nothing is being sent to the database yet
+                        Name: "Guest",
+                        Base: roamingSettings.values["Base_name"],
+                        BaseImage: roamingSettings.values["Base_pic"],
+                        BaseID: roamingSettings.values["Base_vend"],
+                        BasePrice: roamingSettings.values["Base_price"],
+                        Age: roamingSettings.values["Age_name"],
+                        AgeImage: roamingSettings.values["Age_pic"],
+                        Boost1: roamingSettings.values["Boost1_name"],
+                        Boost1Image: roamingSettings.values["Boost1_pic"],
+                        Boost1ID: roamingSettings.values["Boost1_vend"],
+                        Boost1Price: roamingSettings.values["Boost1_price"],
+                        Boost2: roamingSettings.values["Boost2_name"],
+                        Boost2Image: roamingSettings.values["Boost2_pic"],
+                        Boost2ID: roamingSettings.values["Boost2_vend"],
+                        Boost2Price: roamingSettings.values["Boost2_price"],
+                        Boost3: roamingSettings.values["Boost3_name"],
+                        Boost3Image: roamingSettings.values["Boost3_pic"],
+                        Boost3ID: roamingSettings.values["Boost3_vend"],
+                        Boost3Price: roamingSettings.values["Boost3_price"],
+                        FlavName: roamingSettings.values["FlavSel_name"],
+                        FlavImage: roamingSettings.values["FlavSel_pic"],
+                        FlavID: roamingSettings.values["FlavSel_vend"],
+                        Caloric: roamingSettings.values["Flav_name"],
+                        TotalPrice: roamingSettings.values["theComplete"],
+                        OrderNumber: roamingSettings.values["Invoice_number"],
+                        PurchaseDate: my_curr_date(),
+                        TimePurchase: my_curr_time()
+                    }).done(function (result) {
+                        WinJS.Navigation.navigate('pages/thankyou/thankyou.html');
+                        roamingSettings.values["continue_shopping"] = false;
+                        roamingSettings.values["the_complete_total"] = 0;
+                    }), function (err) {
+                        console.log(err);
+                    }
+
+
+
                 }, function error(err) {
                     console.log("fail", err.responseText)
                 });
 
-                function Delayer() {
-                    //console.log(roamingSettings.values["Invoice_number"]);
-                    roamingSettings.values["the_complete_total"] = 0;
-                    roamingSettings.values["theComplete"] = document.getElementById("total").textContent;
-                    setTimeout(function () {
-                        Age.insert({//Nothing is being sent to the database yet
-                            Name: "Guest",
-                            Base: roamingSettings.values["Base_name"],
-                            BaseImage: roamingSettings.values["Base_pic"],
-                            BaseID: roamingSettings.values["Base_vend"],
-                            BasePrice: roamingSettings.values["Base_price"],
-                            Age: roamingSettings.values["Age_name"],
-                            AgeImage: roamingSettings.values["Age_pic"],
-                            Boost1: roamingSettings.values["Boost1_name"],
-                            Boost1Image: roamingSettings.values["Boost1_pic"],
-                            Boost1ID: roamingSettings.values["Boost1_vend"],
-                            Boost1Price: roamingSettings.values["Boost1_price"],
-                            Boost2: roamingSettings.values["Boost2_name"],
-                            Boost2Image: roamingSettings.values["Boost2_pic"],
-                            Boost2ID: roamingSettings.values["Boost2_vend"],
-                            Boost2Price: roamingSettings.values["Boost2_price"],
-                            Boost3: roamingSettings.values["Boost3_name"],
-                            Boost3Image: roamingSettings.values["Boost3_pic"],
-                            Boost3ID: roamingSettings.values["Boost3_vend"],
-                            Boost3Price: roamingSettings.values["Boost3_price"],
-                            FlavName: roamingSettings.values["FlavSel_name"],
-                            FlavImage: roamingSettings.values["FlavSel_pic"],
-                            FlavID: roamingSettings.values["FlavSel_vend"],
-                            Caloric: roamingSettings.values["Flav_name"],
-                            TotalPrice: roamingSettings.values["theComplete"],
-                            OrderNumber: roamingSettings.values["Invoice_number"],
-                            PurchaseDate: my_curr_date(),
-                            TimePurchase: my_curr_time()
-                        }).done(function (result) {
-                            WinJS.Navigation.navigate('pages/thankyou/thankyou.html');
-                            roamingSettings.values["continue_shopping"] = false;
-                            roamingSettings.values["the_complete_total"] = 0;
-                        }), function (err) {
-                            console.log(err);
-                        }
-                    }, 3000);
-                }
-                Delayer()
+                //function Delayer() {
+
+                    //setTimeout(function () {
+                      
+                    //}, 3000);
+                 
+               // }
+               // Delayer()
+
             })
         },//ends clicked name space
         the_continue: function () {
@@ -243,7 +261,12 @@
             console.log(roamingSettings.values["Base_vend"] + ' ' + roamingSettings.values["Boost1_vend"]);
             roamingSettings.values["went_back"] = true;
             WinJS.Navigation.navigate('pages/launch_page/launch_page.html');
+        },
+
+        grayOut: function () {
+            document.getElementById("sub_button").style.opacity = (.2);
         }
+
 
     })
 })();
