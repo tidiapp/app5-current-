@@ -15,6 +15,10 @@
     var thename2 = "";
     var thename3 = "";
     var thename4 = "";
+    var thename5 = "";
+    var thename6 = "";
+    var thename7 = "";
+    var thename8 = "";
     var thename0 = "";
 
     WinJS.UI.Pages.define("/pages/boost/boost.html", {
@@ -28,6 +32,10 @@
             thename2 = "";
             thename3 = "";
             thename4 = "";
+            thename5 = "";
+            thename6 = "";
+            thename7 = "";
+            thename8 = "";
             thename0 = "";
 
             WinJS.Binding.processAll(element, age_data.model);

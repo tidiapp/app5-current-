@@ -120,7 +120,6 @@
                     return theTime;
                 }
 
-                console.log("milo: here");
 
 
                 if (roamingSettings.values["Boost2_price"] > 0 && roamingSettings.values["Boost3_price"] <= 0) {
