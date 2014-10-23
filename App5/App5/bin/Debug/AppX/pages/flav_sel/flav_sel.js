@@ -2,9 +2,10 @@
 // http://go.microsoft.com/fwlink/?LinkId=232511
 (function () {
     "use strict";
-    var _ageNum4 = "";
-    var _baseNum4 = "";
-    var _flavNum4 = "";
+    var appData = Windows.Storage.ApplicationData.current;
+    var roamingSettings = appData.roamingSettings;
+    var Age = thinkitdrinkitDataClient.getTable("Flavor");
+    var keepInfo = true;
 
     WinJS.UI.Pages.define("/pages/flav_sel/flav_sel.html", {
         // This function is called whenever a user navigates to this page. It
@@ -12,34 +13,94 @@
         ready: function (element, options) {
             // TODO: Initialize the page here.
             WinJS.Binding.processAll(element, age_data.model);
+            design.getFlavSel();
+            design.changeTextColor();
+
+            document.getElementById("age_p").textContent = "Age: " + roamingSettings.values["Age_name"];
+            document.getElementById("base_p").textContent = "Base: " + roamingSettings.values["Base_name"];
            
-            //the following are getting the information for the appropriate data and then changing it to numbers
-            //and then storing that information inside var
-            _ageNum4 = age_data.get_age_num(get_set.set_age("name"));
-            _baseNum4 = age_data.get_base_num(get_set.set_base("name"));
-            _flavNum4 = age_data.get_flav_num(get_set.set_flav("name"));
+            //milo: footer history 
+            if (roamingSettings.values["Cat_picked"] === "Energy") {
+                document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
+            }
+            //milo: footer history 
+            if (roamingSettings.values["Cat_picked"] === "Protein") {
+                document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
+            }
+            if (roamingSettings.values["Cat_picked"] === "Specific Sports") {
+                document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img4"];
+            }
+            //milo: footer history 
+            document.getElementById("age_p").textContent = roamingSettings.values["Cat_picked"];
+            document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];
+            document.getElementById("home_p").textContent = roamingSettings.values["Age_name"];
+            document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];
+            document.getElementById("func_p").textContent = roamingSettings.values["Func_name"];
+            document.getElementById("func_pic").src = roamingSettings.values["Func_pic"];
 
-            document.getElementById("flav_sel_header").textContent = "Choose Your Flavor:";
+            document.getElementById("base_p").textContent = roamingSettings.values["Base_name"];
+            document.getElementById("base_pic").src = roamingSettings.values["Base_pic"];
+            document.getElementById("base_price_prev2").textContent = roamingSettings.values["Base_price"];
 
-            document.getElementById("age_pic").src = get_set.set_age("pic");
-            document.getElementById("base_pic").src = get_set.set_base("pic");
-            document.getElementById("flav1_pic").src = get_set.set_flav("pic");
+            document.getElementById("boost_price_prev1").textContent = roamingSettings.values["Boost1_price"];
+            document.getElementById("boost_price_prev2").textContent = roamingSettings.values["Boost2_price"];
+            document.getElementById("boost_price_prev3").textContent = roamingSettings.values["Boost3_price"];
+            document.getElementById("boost_price_prev4").textContent = roamingSettings.values["Boost4_price"];
+            document.getElementById("boost_price_prev5").textContent = roamingSettings.values["Boost5_price"];
+            document.getElementById("boost_price_prev6").textContent = roamingSettings.values["Boost6_price"];
+            document.getElementById("boost_price_prev7").textContent = roamingSettings.values["Boost7_price"];
+            document.getElementById("boost_price_prev8").textContent = roamingSettings.values["Boost8_price"];
 
-            WinJS.xhr({ url: "resource/data.txt" }).then(function (xhr) {
-                var user_flav_sel = JSON.parse(xhr.responseText);
-                user_flav_sel.forEach(function (user_flav_sels) {
-                    for (var i = 0; i < user_flav_sels[_ageNum4].Base[_baseNum4].flavor[_flavNum4].flavors.length; i++) {
-                        age_data.model.flavor1.push({ sel_flav_name: user_flav_sels[_ageNum4].Base[_baseNum4].flavor[_flavNum4].flavors[i].name, sel_flav_pic: user_flav_sels[_ageNum4].Base[_baseNum4].flavor[_flavNum4].flavors[i].image })
-                        console.log(user_flav_sels[_ageNum4].Base[_baseNum4].flavor[_flavNum4].flavors[i].name);
-                    }
-                });
-            });
+
+            document.getElementById("boost_p").textContent = roamingSettings.values["Boost1_name"];
+            document.getElementById("boost_p2").textContent = roamingSettings.values["Boost2_name"];
+            document.getElementById("boost_p3").textContent = roamingSettings.values["Boost3_name"];
+            document.getElementById("boost_p4").textContent = roamingSettings.values["Boost4_name"];
+            document.getElementById("boost_p5").textContent = roamingSettings.values["Boost5_name"];
+            document.getElementById("boost_p6").textContent = roamingSettings.values["Boost6_name"];
+            document.getElementById("boost_p7").textContent = roamingSettings.values["Boost7_name"];
+            document.getElementById("boost_p8").textContent = roamingSettings.values["Boost8_name"];
+
+            roamingSettings.values["went_back"] = true;
+            if (roamingSettings.values["went_back_back"]) {
+                if (roamingSettings.values["Boost1_name"] == "" || roamingSettings.values["Boost1_name"] === !undefined) { roamingSettings.values["Boost1_price"] = 0 };
+                if (roamingSettings.values["Boost2_name"] == "" || roamingSettings.values["Boost2_name"] === !undefined) { roamingSettings.values["Boost2_price"] = 0 };
+                if (roamingSettings.values["Boost3_name"] == "" || roamingSettings.values["Boost3_name"] === !undefined) { roamingSettings.values["Boost3_price"] = 0 };
+                if (roamingSettings.values["Boost4_name"] == "" || roamingSettings.values["Boost4_name"] === !undefined) { roamingSettings.values["Boost4_price"] = 0 };
+                if (roamingSettings.values["Boost5_name"] == "" || roamingSettings.values["Boost5_name"] === !undefined) { roamingSettings.values["Boost5_price"] = 0 };
+                if (roamingSettings.values["Boost6_name"] == "" || roamingSettings.values["Boost6_name"] === !undefined) { roamingSettings.values["Boost6_price"] = 0 };
+                if (roamingSettings.values["Boost7_name"] == "" || roamingSettings.values["Boost7_name"] === !undefined) { roamingSettings.values["Boost7_price"] = 0 };
+                if (roamingSettings.values["Boost8_name"] == "" || roamingSettings.values["Boost8_name"] === !undefined) { roamingSettings.values["Boost8_price"] = 0 };
+
+                roamingSettings.values['Boost_total_footer'] = (parseFloat(roamingSettings.values["Boost1_price"]) + parseFloat(roamingSettings.values["Boost2_price"]) + parseFloat(roamingSettings.values["Boost3_price"]) + parseFloat(roamingSettings.values["Boost4_price"]) + parseFloat(roamingSettings.values["Boost5_price"]) + parseFloat(roamingSettings.values["Boost6_price"]) + parseFloat(roamingSettings.values["Boost7_price"]) + parseFloat(roamingSettings.values["Boost8_price"]));
+                document.getElementById("base_price_total").textContent = roamingSettings.values['Boost_total_footer'];
+            }
+
+            document.getElementById("where_you_are3").textContent = "You have choosen " + roamingSettings.values["Boost_total_num"] + " Boosts.";
+
+            //milo: was looping to show 4 boosts in 1 box
+            //document.getElementById("boost_p").innerHTML = roamingSettings.values["Boost1_name"] + "<br>" + roamingSettings.values["Boost2_name"] + "<br>" + roamingSettings.values["Boost3_name"] + "<br>" + roamingSettings.values["Boost4_name"];
+            //var boosts = [roamingSettings.values["Boost1_name"], roamingSettings.values["Boost2_name"], roamingSettings.values["Boost3_name"], roamingSettings.values["Boost4_name"], roamingSettings.values["Boost5_name"], roamingSettings.values["Boost6_name"], roamingSettings.values["Boost7_name"], roamingSettings.values["Boost8_name"]];
+            //    var text = "";
+            //    var i;
+
+            //    for (i = 0; i < boosts.length; i++) {
+            //        text += boosts[i] + "<br>";
+            //    }
+            //    document.getElementById("boost_p").innerHTML = text;
+
+            document.getElementById("flav_sel_header").textContent = "Choose Your " + "Flavor.";
+
+            server.flav_sel();
         },
 
         unload: function () {
             // TODO: Respond to navigations away from this page.
-            remove.pop_list(age_data.model.flavor1);
-            remove.pop_list(age_data.model.info_page4);
+                remove.pop_list(age_data.model.flavor1);
+            
+            if (!keepInfo) {
+                remove.pop_list(age_data.model.info_page4);
+            }
         },
 
         updateLayout: function (element) {
@@ -52,25 +113,66 @@
     WinJS.Namespace.define("flav_sel_clicked", {
       
         clicked: function (flav1) {
-            console.log(flav1);
-
-            the_choosenFlav = flav1;
+            var updated_flav1 = flav1.replace(/^\s+/, '').replace(/\s+$/, '');
 
             remove.pop_list(age_data.model.info_page4);
-
-            var the_flav_num = age_data.get_flav_sel_num(flav1);
-
-            WinJS.xhr({ url: "resource/data.txt" }).then(function (xhr) {
-                var sel_the_flav = JSON.parse(xhr.responseText);
-                sel_the_flav.forEach(function (sel_the_flavs) {
-                    age_data.model.info_page4.push({ sel_name: sel_the_flavs[_ageNum4].Base[_baseNum4].flavor[_flavNum4].flavors[the_flav_num].name, sel_label: sel_the_flavs[_ageNum4].Base[_baseNum4].flavor[_flavNum4].flavors[the_flav_num].label, sel_info: sel_the_flavs[_ageNum4].Base[_baseNum4].flavor[_flavNum4].flavors[the_flav_num].info, sel_pic: sel_the_flavs[_ageNum4].Base[_baseNum4].flavor[_flavNum4].flavors[the_flav_num].image });
-                });
-            });
+            the_choosenFlav = updated_flav1;
+            server.flav_sel_sub(updated_flav1);
         },
 
         next_page_boost: function () {
-            WinJS.Navigation.navigate('pages/boost/boost.html')
-            get_set.get_sel_flav(the_choosenFlav, document.getElementById("hidden_flav_pic").src, null, null);
+            keepInfo = true;
+            roamingSettings.values["FlavSel_name"] = the_choosenFlav;
+            roamingSettings.values["FlavSel_pic"] = document.getElementById("hidden_flav_pic").src;
+            roamingSettings.values["FlavSel_vend"] = document.getElementById("f_vend").textContent;
+            var vendId_count = document.getElementById("f_vend_count").textContent;
+            roamingSettings.values["FlavSel_info"] = null;
+            roamingSettings.values["FlavSel_price"] = null;
+            roamingSettings.values["FlavSel_label"] = document.getElementById("flav_sel_sel_pic").src;
+
+            //milo: the following makes a call to vend to check if we have enough product for the order if low it will not allow to move on. 
+            if (vendId_count != "" && vendId_count != "null") {
+
+                WinJS.xhr({
+                    //milo: using POST but not passing anything to vend until .then at which point it reads the api product inventory count and displays it back.  
+                    type: "POST",
+                    url: "https://thinkitdrinkit.vendhq.com/api/products",
+                    user: "milo@thinkitdrinkit.com",
+                    password: "agave2013",
+                    headers: { "Content-type": "application/json" },
+                    data: JSON.stringify({
+                        //milo: in this object its the id part >>> GET /api/register_sales/{id} >>> that VEND wants which is below
+                        "id": vendId_count,
+                        "inventory": [{
+                        }]
+                    }),
+                }).then(function sucess(res) {
+                    //milo: below allows the real GET which is the count to come back to app. Notes accessing json>>> http://www.mkyong.com/javascript/how-to-access-json-object-in-javascript/
+                    var vendCount = JSON.parse(res.responseText).product.inventory[0].count;
+                    console.log("Flavor Count from VEND ", vendCount);
+                    if (vendCount >= 14.00000) {
+                        WinJS.Navigation.navigate('pages/final/final.html')
+                    } else if (vendCount <= 13.00000) {
+                        document.getElementById("out_of_stock2").removeAttribute("hidden");
+                        document.getElementById("out_of_stock2").textContent = "OUT OF STOCK, PLEASE PICK ANOTHER FLAVOR";
+                        document.getElementById("out_of_stock2").style.color = "red";
+                        document.getElementById("out_of_stock2").style.fontSize = "20px";
+                        document.getElementById("out_of_stock2").style.marginTop = "115px";
+                        document.getElementById("out_of_stock2").style.marginLeft = "263px";
+                        document.getElementById("out_of_stock2").style.position = "Absolute";
+                    }
+                }, function error(err) {
+                    console.log("fail", err.responseText)
+                });
+            } else {
+                WinJS.Navigation.navigate('pages/final/final.html')
+            }
+        },
+        more_info: function (clicked) {
+            roamingSettings.values["Item_choosen"] = clicked;
+            roamingSettings.values["Clicked_cat"] = "Flavor";
+            WinJS.Navigation.navigate('pages/item_info/item_info.html');
+            keepInfo = true;
         }
 
     })

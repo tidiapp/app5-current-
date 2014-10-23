@@ -42,28 +42,60 @@
             document.getElementById("base_pic").src = roamingSettings.values["Base_pic"];
             document.getElementById("base_price_prev2").textContent = roamingSettings.values["Base_price"];
 
+            document.getElementById("boost_price_prev1").textContent = roamingSettings.values["Boost1_price"];
+            document.getElementById("boost_price_prev2").textContent = roamingSettings.values["Boost2_price"];
+            document.getElementById("boost_price_prev3").textContent = roamingSettings.values["Boost3_price"];
+            document.getElementById("boost_price_prev4").textContent = roamingSettings.values["Boost4_price"];
+            document.getElementById("boost_price_prev5").textContent = roamingSettings.values["Boost5_price"];
+            document.getElementById("boost_price_prev6").textContent = roamingSettings.values["Boost6_price"];
+            document.getElementById("boost_price_prev7").textContent = roamingSettings.values["Boost7_price"];
+            document.getElementById("boost_price_prev8").textContent = roamingSettings.values["Boost8_price"];
+
+            document.getElementById("boost_p").textContent = roamingSettings.values["Boost1_name"];
+            document.getElementById("boost_p2").textContent = roamingSettings.values["Boost2_name"];
+            document.getElementById("boost_p3").textContent = roamingSettings.values["Boost3_name"];
+            document.getElementById("boost_p4").textContent = roamingSettings.values["Boost4_name"];
+            document.getElementById("boost_p5").textContent = roamingSettings.values["Boost5_name"];
+            document.getElementById("boost_p6").textContent = roamingSettings.values["Boost6_name"];
+            document.getElementById("boost_p7").textContent = roamingSettings.values["Boost7_name"];
+            document.getElementById("boost_p8").textContent = roamingSettings.values["Boost8_name"];
+
+            if (roamingSettings.values["Boost1_name"] != "") { roamingSettings.values["Boost1_price"] = 0 };
+            if (roamingSettings.values["Boost2_name"] == "" || roamingSettings.values["Boost2_name"] === !undefined) { roamingSettings.values["Boost2_price"] = 0 };
+            if (roamingSettings.values["Boost3_name"] == "" || roamingSettings.values["Boost3_name"] === !undefined) { roamingSettings.values["Boost3_price"] = 0 };
+            if (roamingSettings.values["Boost4_name"] == "" || roamingSettings.values["Boost4_name"] === !undefined) { roamingSettings.values["Boost4_price"] = 0 };
+            if (roamingSettings.values["Boost5_name"] == "" || roamingSettings.values["Boost5_name"] === !undefined) { roamingSettings.values["Boost5_price"] = 0 };
+            if (roamingSettings.values["Boost6_name"] == "" || roamingSettings.values["Boost6_name"] === !undefined) { roamingSettings.values["Boost6_price"] = 0 };
+            if (roamingSettings.values["Boost7_name"] == "" || roamingSettings.values["Boost7_name"] === !undefined) { roamingSettings.values["Boost7_price"] = 0 };
+            if (roamingSettings.values["Boost8_name"] == "" || roamingSettings.values["Boost8_name"] === !undefined) { roamingSettings.values["Boost8_price"] = 0 };
+
             roamingSettings.values["went_back"] = true;
             if (roamingSettings.values["went_back_back"]) {
                 if (roamingSettings.values["Boost1_name"] == "" || roamingSettings.values["Boost1_name"] === !undefined) { roamingSettings.values["Boost1_price"] = 0 };
                 if (roamingSettings.values["Boost2_name"] == "" || roamingSettings.values["Boost2_name"] === !undefined) { roamingSettings.values["Boost2_price"] = 0 };
                 if (roamingSettings.values["Boost3_name"] == "" || roamingSettings.values["Boost3_name"] === !undefined) { roamingSettings.values["Boost3_price"] = 0 };
                 if (roamingSettings.values["Boost4_name"] == "" || roamingSettings.values["Boost4_name"] === !undefined) { roamingSettings.values["Boost4_price"] = 0 };
+                if (roamingSettings.values["Boost5_name"] == "" || roamingSettings.values["Boost5_name"] === !undefined) { roamingSettings.values["Boost5_price"] = 0 };
+                if (roamingSettings.values["Boost6_name"] == "" || roamingSettings.values["Boost6_name"] === !undefined) { roamingSettings.values["Boost6_price"] = 0 };
+                if (roamingSettings.values["Boost7_name"] == "" || roamingSettings.values["Boost7_name"] === !undefined) { roamingSettings.values["Boost7_price"] = 0 };
+                if (roamingSettings.values["Boost8_name"] == "" || roamingSettings.values["Boost8_name"] === !undefined) { roamingSettings.values["Boost8_price"] = 0 };
 
-                roamingSettings.values['Boost_total_footer'] = (parseFloat(roamingSettings.values["Boost1_price"]) + parseFloat(roamingSettings.values["Boost2_price"]) + parseFloat(roamingSettings.values["Boost3_price"]) + parseFloat(roamingSettings.values["Boost4_price"]));
-                document.getElementById("base_price_prev3").textContent = roamingSettings.values['Boost_total_footer'];
+                roamingSettings.values['Boost_total_footer'] = (parseFloat(roamingSettings.values["Boost1_price"]) + parseFloat(roamingSettings.values["Boost2_price"]) + parseFloat(roamingSettings.values["Boost3_price"]) + parseFloat(roamingSettings.values["Boost4_price"]) + parseFloat(roamingSettings.values["Boost5_price"]) + parseFloat(roamingSettings.values["Boost6_price"]) + parseFloat(roamingSettings.values["Boost7_price"]) + parseFloat(roamingSettings.values["Boost8_price"]));
+                document.getElementById("base_price_total").textContent = roamingSettings.values['Boost_total_footer'];
             }
 
             document.getElementById("where_you_are3").textContent = "You have choosen " + roamingSettings.values["Boost_total_num"] + " Boosts.";
-                //document.getElementById("boost_p").innerHTML = roamingSettings.values["Boost1_name"] + "<br>" + roamingSettings.values["Boost2_name"] + "<br>" + roamingSettings.values["Boost3_name"] + "<br>" + roamingSettings.values["Boost4_name"];
 
-                var boosts = [roamingSettings.values["Boost1_name"] , roamingSettings.values["Boost2_name"] , roamingSettings.values["Boost3_name"] , roamingSettings.values["Boost4_name"]];
-                var text = "";
-                var i;
+            //milo: was looping to show 4 boosts in 1 box
+            //document.getElementById("boost_p").innerHTML = roamingSettings.values["Boost1_name"] + "<br>" + roamingSettings.values["Boost2_name"] + "<br>" + roamingSettings.values["Boost3_name"] + "<br>" + roamingSettings.values["Boost4_name"];
+            //var boosts = [roamingSettings.values["Boost1_name"], roamingSettings.values["Boost2_name"], roamingSettings.values["Boost3_name"], roamingSettings.values["Boost4_name"], roamingSettings.values["Boost5_name"], roamingSettings.values["Boost6_name"], roamingSettings.values["Boost7_name"], roamingSettings.values["Boost8_name"]];
+            //    var text = "";
+            //    var i;
 
-                for (i = 0; i < boosts.length; i++) {
-                    text += boosts[i] + "<br>";
-                }
-                document.getElementById("boost_p").innerHTML = text;
+            //    for (i = 0; i < boosts.length; i++) {
+            //        text += boosts[i] + "<br>";
+            //    }
+            //    document.getElementById("boost_p").innerHTML = text;
 
             document.getElementById("flav_sel_header").textContent = "Choose Your " + "Flavor.";
 

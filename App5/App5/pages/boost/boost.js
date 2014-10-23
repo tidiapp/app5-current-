@@ -178,7 +178,201 @@
                 document.getElementById("boost4_div").removeAttribute("hidden");
                 document.getElementById("div_boost4_name").textContent = roamingSettings.values["Boost4_name"];
 
-            }  else if (age_data.model.the_boost_sel.length === 0) {
+            } else if (age_data.model.the_boost_sel.length === 5) {
+
+                thename1 = roamingSettings.values["Boost1_name"];
+                document.getElementById("the_number").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("the_num").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("div_boost1_name").textContent = roamingSettings.values["Boost1_name"];
+                document.getElementById("area_img1").src = roamingSettings.values["Boost1_pic"];
+                document.getElementById("boost1_div").removeAttribute("hidden");
+                document.getElementById("the_test");
+
+                thename2 = roamingSettings.values["Boost2_name"];
+                document.getElementById("the_number").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("the_num").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("div_boost2_name").textContent = roamingSettings.values["Boost2_name"];
+                document.getElementById("area_img2").src = roamingSettings.values["Boost2_pic"];
+                document.getElementById("boost2_div").removeAttribute("hidden");
+
+                thename3 = roamingSettings.values["Boost3_name"];
+                document.getElementById("the_number").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("the_num").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("area_img3").src = roamingSettings.values["Boost3_pic"];
+                document.getElementById("boost3_div").removeAttribute("hidden");
+                document.getElementById("div_boost3_name").textContent = roamingSettings.values["Boost3_name"];
+
+                thename4 = roamingSettings.values["Boost4_name"];
+                document.getElementById("the_number").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("the_num").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("area_img4").src = roamingSettings.values["Boost4_pic"];
+                document.getElementById("boost4_div").removeAttribute("hidden");
+                document.getElementById("div_boost4_name").textContent = roamingSettings.values["Boost4_name"];
+
+                thename5 = roamingSettings.values["Boost5_name"];
+                document.getElementById("the_number").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("the_num").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("area_img5").src = roamingSettings.values["Boost5_pic"];
+                document.getElementById("boost5_div").removeAttribute("hidden");
+                document.getElementById("div_boost5_name").textContent = roamingSettings.values["Boost5_name"];
+
+            } else if (age_data.model.the_boost_sel.length === 6) {
+
+                thename1 = roamingSettings.values["Boost1_name"];
+                document.getElementById("the_number").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("the_num").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("div_boost1_name").textContent = roamingSettings.values["Boost1_name"];
+                document.getElementById("area_img1").src = roamingSettings.values["Boost1_pic"];
+                document.getElementById("boost1_div").removeAttribute("hidden");
+                document.getElementById("the_test");
+
+                thename2 = roamingSettings.values["Boost2_name"];
+                document.getElementById("the_number").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("the_num").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("div_boost2_name").textContent = roamingSettings.values["Boost2_name"];
+                document.getElementById("area_img2").src = roamingSettings.values["Boost2_pic"];
+                document.getElementById("boost2_div").removeAttribute("hidden");
+
+                thename3 = roamingSettings.values["Boost3_name"];
+                document.getElementById("the_number").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("the_num").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("area_img3").src = roamingSettings.values["Boost3_pic"];
+                document.getElementById("boost3_div").removeAttribute("hidden");
+                document.getElementById("div_boost3_name").textContent = roamingSettings.values["Boost3_name"];
+
+                thename4 = roamingSettings.values["Boost4_name"];
+                document.getElementById("the_number").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("the_num").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("area_img4").src = roamingSettings.values["Boost4_pic"];
+                document.getElementById("boost4_div").removeAttribute("hidden");
+                document.getElementById("div_boost4_name").textContent = roamingSettings.values["Boost4_name"];
+
+                thename5 = roamingSettings.values["Boost5_name"];
+                document.getElementById("the_number").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("the_num").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("area_img5").src = roamingSettings.values["Boost5_pic"];
+                document.getElementById("boost5_div").removeAttribute("hidden");
+                document.getElementById("div_boost5_name").textContent = roamingSettings.values["Boost5_name"];
+
+                thename6 = roamingSettings.values["Boost6_name"];
+                document.getElementById("the_number").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("the_num").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("area_img6").src = roamingSettings.values["Boost6_pic"];
+                document.getElementById("boost6_div").removeAttribute("hidden");
+                document.getElementById("div_boost6_name").textContent = roamingSettings.values["Boost6_name"];
+
+            } else if (age_data.model.the_boost_sel.length === 7) {
+
+                thename1 = roamingSettings.values["Boost1_name"];
+                document.getElementById("the_number").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("the_num").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("div_boost1_name").textContent = roamingSettings.values["Boost1_name"];
+                document.getElementById("area_img1").src = roamingSettings.values["Boost1_pic"];
+                document.getElementById("boost1_div").removeAttribute("hidden");
+                document.getElementById("the_test");
+
+                thename2 = roamingSettings.values["Boost2_name"];
+                document.getElementById("the_number").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("the_num").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("div_boost2_name").textContent = roamingSettings.values["Boost2_name"];
+                document.getElementById("area_img2").src = roamingSettings.values["Boost2_pic"];
+                document.getElementById("boost2_div").removeAttribute("hidden");
+
+                thename3 = roamingSettings.values["Boost3_name"];
+                document.getElementById("the_number").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("the_num").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("area_img3").src = roamingSettings.values["Boost3_pic"];
+                document.getElementById("boost3_div").removeAttribute("hidden");
+                document.getElementById("div_boost3_name").textContent = roamingSettings.values["Boost3_name"];
+
+                thename4 = roamingSettings.values["Boost4_name"];
+                document.getElementById("the_number").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("the_num").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("area_img4").src = roamingSettings.values["Boost4_pic"];
+                document.getElementById("boost4_div").removeAttribute("hidden");
+                document.getElementById("div_boost4_name").textContent = roamingSettings.values["Boost4_name"];
+
+                thename5 = roamingSettings.values["Boost5_name"];
+                document.getElementById("the_number").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("the_num").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("area_img5").src = roamingSettings.values["Boost5_pic"];
+                document.getElementById("boost5_div").removeAttribute("hidden");
+                document.getElementById("div_boost5_name").textContent = roamingSettings.values["Boost5_name"];
+
+                thename6 = roamingSettings.values["Boost6_name"];
+                document.getElementById("the_number").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("the_num").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("area_img6").src = roamingSettings.values["Boost6_pic"];
+                document.getElementById("boost6_div").removeAttribute("hidden");
+                document.getElementById("div_boost6_name").textContent = roamingSettings.values["Boost6_name"];
+
+                thename7 = roamingSettings.values["Boost7_name"];
+                document.getElementById("the_number").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("the_num").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("area_img7").src = roamingSettings.values["Boost7_pic"];
+                document.getElementById("boost7_div").removeAttribute("hidden");
+                document.getElementById("div_boost7_name").textContent = roamingSettings.values["Boost7_name"];
+
+            } else if (age_data.model.the_boost_sel.length === 8) {
+
+                thename1 = roamingSettings.values["Boost1_name"];
+                document.getElementById("the_number").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("the_num").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("div_boost1_name").textContent = roamingSettings.values["Boost1_name"];
+                document.getElementById("area_img1").src = roamingSettings.values["Boost1_pic"];
+                document.getElementById("boost1_div").removeAttribute("hidden");
+                document.getElementById("the_test");
+
+                thename2 = roamingSettings.values["Boost2_name"];
+                document.getElementById("the_number").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("the_num").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("div_boost2_name").textContent = roamingSettings.values["Boost2_name"];
+                document.getElementById("area_img2").src = roamingSettings.values["Boost2_pic"];
+                document.getElementById("boost2_div").removeAttribute("hidden");
+
+                thename3 = roamingSettings.values["Boost3_name"];
+                document.getElementById("the_number").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("the_num").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("area_img3").src = roamingSettings.values["Boost3_pic"];
+                document.getElementById("boost3_div").removeAttribute("hidden");
+                document.getElementById("div_boost3_name").textContent = roamingSettings.values["Boost3_name"];
+
+                thename4 = roamingSettings.values["Boost4_name"];
+                document.getElementById("the_number").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("the_num").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("area_img4").src = roamingSettings.values["Boost4_pic"];
+                document.getElementById("boost4_div").removeAttribute("hidden");
+                document.getElementById("div_boost4_name").textContent = roamingSettings.values["Boost4_name"];
+
+                thename5 = roamingSettings.values["Boost5_name"];
+                document.getElementById("the_number").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("the_num").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("area_img5").src = roamingSettings.values["Boost5_pic"];
+                document.getElementById("boost5_div").removeAttribute("hidden");
+                document.getElementById("div_boost5_name").textContent = roamingSettings.values["Boost5_name"];
+
+                thename6 = roamingSettings.values["Boost6_name"];
+                document.getElementById("the_number").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("the_num").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("area_img6").src = roamingSettings.values["Boost6_pic"];
+                document.getElementById("boost6_div").removeAttribute("hidden");
+                document.getElementById("div_boost6_name").textContent = roamingSettings.values["Boost6_name"];
+
+                thename7 = roamingSettings.values["Boost7_name"];
+                document.getElementById("the_number").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("the_num").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("area_img7").src = roamingSettings.values["Boost7_pic"];
+                document.getElementById("boost7_div").removeAttribute("hidden");
+                document.getElementById("div_boost7_name").textContent = roamingSettings.values["Boost7_name"];
+
+                thename8 = roamingSettings.values["Boost8_name"];
+                document.getElementById("the_number").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("the_num").textContent = age_data.model.the_boost_sel.length;
+                document.getElementById("area_img8").src = roamingSettings.values["Boost8_pic"];
+                document.getElementById("boost8_div").removeAttribute("hidden");
+                document.getElementById("div_boost8_name").textContent = roamingSettings.values["Boost8_name"];
+
+            } else if (age_data.model.the_boost_sel.length === 0) {
                 thename0 = roamingSettings.values["Boost0_name"];
                 document.getElementById("the_number").textContent = age_data.model.the_boost_sel.length;
                 document.getElementById("the_num").textContent = age_data.model.the_boost_sel.length;
@@ -213,6 +407,10 @@
     thename2 = "";
     thename3 = "";
     thename4 = "";
+    thename5 = "";
+    thename6 = "";
+    thename7 = "";
+    thename8 = "";
     thename0 = "";
     //console.log(thename1, thename2, thename3);
 
@@ -231,7 +429,7 @@
             //document.getElementById("btn_right").removeAttribute("hidden");
             //var boostView = element.querySelector().winControl;
 
-            if (age_data.model.the_boost_sel.length < 4) {
+            if (age_data.model.the_boost_sel.length < 8) {
                 //console.log(thename1, thename2, thename3, thename4, thename5, thename6, thename7, thename8, thename9);
                 //var fix1 = age_data.model.the_boost_sel.length;
                 //&& (fix1 > 0 && fix1 < 9)
@@ -242,6 +440,14 @@
                 } else if (name === thename3) {
                     document.getElementById("only_one_warning").removeAttribute("hidden");
                 } else if (name === thename4) {
+                    document.getElementById("only_one_warning").removeAttribute("hidden");
+                } else if (name === thename5) {
+                    document.getElementById("only_one_warning").removeAttribute("hidden");
+                } else if (name === thename6) {
+                    document.getElementById("only_one_warning").removeAttribute("hidden");
+                } else if (name === thename7) {
+                    document.getElementById("only_one_warning").removeAttribute("hidden");
+                } else if (name === thename8) {
                     document.getElementById("only_one_warning").removeAttribute("hidden");
                 } else {
                     age_data.model.the_boost_sel.push({ the_name: name, the_pic: img });            
@@ -324,7 +530,79 @@
                         keepInfo = false;
 //milo: here needs to be the check order qantity from vend 
 
-                    } 
+                    } else if (age_data.model.the_boost_sel.length === 5) {
+                        thename5 = name;
+                        document.getElementById("the_number").textContent = age_data.model.the_boost_sel.length;
+                        document.getElementById("the_num").textContent = age_data.model.the_boost_sel.length;
+                        roamingSettings.values["Boost5_name"] = name;
+                        roamingSettings.values["Boost5_pic"] = img;
+                        roamingSettings.values["Boost5_info"] = null;
+                        roamingSettings.values["Boost5_price"] = price;
+                        roamingSettings.values["Boost5_vend"] = vend;
+                        roamingSettings.values["Boost5_pic_label"] = label;
+                        document.getElementById("area_img5").src = roamingSettings.values["Boost5_pic"];
+                        console.log(roamingSettings.values["Boost5_name"] + roamingSettings.values["Boost5_pic"]);
+                        document.getElementById("boost5_div").removeAttribute("hidden");
+                        document.getElementById("div_boost5_name").textContent = name;
+                        document.getElementById("the_test");
+                        keepInfo = false;
+                        //milo: here needs to be the check order qantity from vend 
+
+                    } else if (age_data.model.the_boost_sel.length === 6) {
+                        thename6 = name;
+                        document.getElementById("the_number").textContent = age_data.model.the_boost_sel.length;
+                        document.getElementById("the_num").textContent = age_data.model.the_boost_sel.length;
+                        roamingSettings.values["Boost6_name"] = name;
+                        roamingSettings.values["Boost6_pic"] = img;
+                        roamingSettings.values["Boost6_info"] = null;
+                        roamingSettings.values["Boost6_price"] = price;
+                        roamingSettings.values["Boost6_vend"] = vend;
+                        roamingSettings.values["Boost6_pic_label"] = label;
+                        document.getElementById("area_img6").src = roamingSettings.values["Boost6_pic"];
+                        console.log(roamingSettings.values["Boost6_name"] + roamingSettings.values["Boost6_pic"]);
+                        document.getElementById("boost6_div").removeAttribute("hidden");
+                        document.getElementById("div_boost6_name").textContent = name;
+                        document.getElementById("the_test");
+                        keepInfo = false;
+                        //milo: here needs to be the check order qantity from vend 
+
+                    } else if (age_data.model.the_boost_sel.length === 7) {
+                        thename7 = name;
+                        document.getElementById("the_number").textContent = age_data.model.the_boost_sel.length;
+                        document.getElementById("the_num").textContent = age_data.model.the_boost_sel.length;
+                        roamingSettings.values["Boost7_name"] = name;
+                        roamingSettings.values["Boost7_pic"] = img;
+                        roamingSettings.values["Boost7_info"] = null;
+                        roamingSettings.values["Boost7_price"] = price;
+                        roamingSettings.values["Boost7_vend"] = vend;
+                        roamingSettings.values["Boost7_pic_label"] = label;
+                        document.getElementById("area_img7").src = roamingSettings.values["Boost7_pic"];
+                        console.log(roamingSettings.values["Boost7_name"] + roamingSettings.values["Boost7_pic"]);
+                        document.getElementById("boost7_div").removeAttribute("hidden");
+                        document.getElementById("div_boost7_name").textContent = name;
+                        document.getElementById("the_test");
+                        keepInfo = false;
+                        //milo: here needs to be the check order qantity from vend 
+
+                    } else if (age_data.model.the_boost_sel.length === 8) {
+                        thename8 = name;
+                        document.getElementById("the_number").textContent = age_data.model.the_boost_sel.length;
+                        document.getElementById("the_num").textContent = age_data.model.the_boost_sel.length;
+                        roamingSettings.values["Boost8_name"] = name;
+                        roamingSettings.values["Boost8_pic"] = img;
+                        roamingSettings.values["Boost8_info"] = null;
+                        roamingSettings.values["Boost8_price"] = price;
+                        roamingSettings.values["Boost8_vend"] = vend;
+                        roamingSettings.values["Boost8_pic_label"] = label;
+                        document.getElementById("area_img8").src = roamingSettings.values["Boost8_pic"];
+                        console.log(roamingSettings.values["Boost8_name"] + roamingSettings.values["Boost8_pic"]);
+                        document.getElementById("boost8_div").removeAttribute("hidden");
+                        document.getElementById("div_boost8_name").textContent = name;
+                        document.getElementById("the_test");
+                        keepInfo = false;
+                        //milo: here needs to be the check order qantity from vend 
+
+                    }
                 }//ends else for duplicate check
             } else {
                 document.getElementById("overError").textContent = " Sorry, You May Only Choose 4 Boosts. If You Want To Change Boosts, Please Click the Remove Last Button";
@@ -376,6 +654,46 @@
                 roamingSettings.values["Boost4_pic_label"] = "";
                 thename4 = "";
                 document.getElementById("boost4_div").setAttribute("hidden", true);
+
+            } else if (age_data.model.the_boost_sel.length === 5) {
+                roamingSettings.values["Boost5_name"] = "";
+                roamingSettings.values["Boost5_pic"] = "";
+                roamingSettings.values["Boost5_vend"] = "";
+                roamingSettings.values["Boost5_info"] = null;
+                roamingSettings.values["Boost5_price"] = null;
+                roamingSettings.values["Boost5_pic_label"] = "";
+                thename5 = "";
+                document.getElementById("boost5_div").setAttribute("hidden", true);
+
+            } else if (age_data.model.the_boost_sel.length === 6) {
+                roamingSettings.values["Boost6_name"] = "";
+                roamingSettings.values["Boost6_pic"] = "";
+                roamingSettings.values["Boost6_vend"] = "";
+                roamingSettings.values["Boost6_info"] = null;
+                roamingSettings.values["Boost6_price"] = null;
+                roamingSettings.values["Boost6_pic_label"] = "";
+                thename6 = "";
+                document.getElementById("boost6_div").setAttribute("hidden", true);
+
+            } else if (age_data.model.the_boost_sel.length === 7) {
+                roamingSettings.values["Boost7_name"] = "";
+                roamingSettings.values["Boost7_pic"] = "";
+                roamingSettings.values["Boost7_vend"] = "";
+                roamingSettings.values["Boost7_info"] = null;
+                roamingSettings.values["Boost7_price"] = null;
+                roamingSettings.values["Boost7_pic_label"] = "";
+                thename7 = "";
+                document.getElementById("boost7_div").setAttribute("hidden", true);
+
+            } else if (age_data.model.the_boost_sel.length === 8) {
+                roamingSettings.values["Boost8_name"] = "";
+                roamingSettings.values["Boost8_pic"] = "";
+                roamingSettings.values["Boost8_vend"] = "";
+                roamingSettings.values["Boost8_info"] = null;
+                roamingSettings.values["Boost8_price"] = null;
+                roamingSettings.values["Boost8_pic_label"] = "";
+                thename8 = "";
+                document.getElementById("boost8_div").setAttribute("hidden", true);
             } 
            
             age_data.model.the_boost_sel.pop();
@@ -411,6 +729,10 @@
             thename2 = "";
             thename3 = "";
             thename4 = "";
+            thename5 = "";
+            thename6 = "";
+            thename7 = "";
+            thename8 = "";
             thename0 = "";
             roamingSettings.values["orderComplete"] = false;
             keepInfo = true;

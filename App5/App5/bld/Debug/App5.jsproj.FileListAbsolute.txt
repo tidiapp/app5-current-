@@ -13,3 +13,19 @@ c:\users\anthony\documents\visual studio 2013\Projects\App5\App5\bld\Debug\quali
 c:\users\anthony\documents\visual studio 2013\Projects\App5\App5\bld\Debug\qualifiers.txt.intermediate
 c:\users\anthony\documents\visual studio 2013\Projects\App5\App5\bld\Debug\MultipleQualifiersPerDimensionFound.txt
 c:\users\anthony\documents\visual studio 2013\Projects\App5\App5\bld\Debug\ProjectArchitectures.txt
+C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\bin\Debug\resources.pri
+C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\bin\Debug\AppxManifest.xml
+C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\bin\Debug\App5.build.appxrecipe
+C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\bld\Debug\priconfig.xml
+C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\bld\Debug\priconfig.xml.intermediate
+C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\bld\Debug\layout.resfiles
+C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\bld\Debug\layout.resfiles.intermediate
+C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\bld\Debug\resources.resfiles
+C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\bld\Debug\resources.resfiles.intermediate
+C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\bld\Debug\pri.resfiles
+C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\bld\Debug\pri.resfiles.intermediate
+C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\bld\Debug\qualifiers.txt
+C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\bld\Debug\qualifiers.txt.intermediate
+C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\bld\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\bld\Debug\MobileServices.pri.xml
+C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\bld\Debug\ProjectArchitectures.txt

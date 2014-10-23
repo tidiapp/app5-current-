@@ -1,0 +1,64 @@
+﻿.launch_page section[role=main] {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.the_float {
+    float: left;
+    /*border: 3px solid;*/
+    margin-right: 5px;
+    /*margin-left: -70px;*/
+    width: 165px;
+    height: 165px;
+}
+
+.the_float img {
+    position: absolute;
+    width: 165px;
+    height: 165px;
+    z-index: -1;
+}
+
+.underline_div {
+    margin-top: 110px;
+    text-align: center;
+}    
+    .the_float a {
+        /*background-color: rgba(0,0,0,.6);*/
+        color: #fff;
+        font-size: 23.2px;
+        text-decoration: none;
+        /*border-bottom-width: 2px;
+        border-bottom-style: solid;
+        padding-bottom: 2px;*/
+        }
+        .the_float a:active {
+             color: #fff;
+        }
+
+#launch_sel {
+    margin-top: 40px;
+}
+
+.the_float:hover {
+    cursor: pointer;
+    box-shadow: 3px 3px 3px #808080;
+}
+
+#explain {
+    font-size: 50px;
+    margin-left: 80px;
+}
+
+#intro_text {
+    font-size: 20px;
+    margin-left: 45px;
+}
+
+#intro_text_section {
+    margin-left: -40px;
+    margin-right: 190px;
+    float: left;
+    margin-top: 30px;
+}
+

@@ -3,81 +3,134 @@
 (function () {
     "use strict";
     var num = 0;
+    var appData = Windows.Storage.ApplicationData.current;
+    var roamingSettings = appData.roamingSettings;
+    var Age = thinkitdrinkitDataClient.getTable("Base");
+    var keepInfo = true;
 
     WinJS.UI.Pages.define("/pages/base/base.html", {
         // This function is called whenever a user navigates to this page. It
         // populates the page elements with the app's data.
         ready: function (element, options) {
             // TODO: Initialize the page here.
-
             WinJS.Binding.processAll(element, age_data.model);
-            
-            document.getElementById("choosen_age").textContent = "Choose Your Base:";
+            design.getBase();
+            design.changeTextColor();
+            document.getElementById("home").removeAttribute("hidden");
+            var id_sel = roamingSettings.values["Id_sel_func"];
+            document.getElementById("choosen_age3").textContent = "Select Your " + "Protein For " + roamingSettings.values["Func_name"] + ".";
 
-            var the_sel_age = get_set.set_age("name");
+            //milo: footer history 
+            if (roamingSettings.values["Cat_picked"] === "Energy") {
+                document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
+            }
+            //milo: footer history 
+            if (roamingSettings.values["Cat_picked"] === "Protein") {
+                document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
+            }
+            if (roamingSettings.values["Cat_picked"] === "Specific Sports") {
+                document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img4"];
+            }
+            //milo: footer history 
+            document.getElementById("age_p").textContent = roamingSettings.values["Cat_picked"];
+            document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];
+            document.getElementById("home_p").textContent = roamingSettings.values["Age_name"];
+            document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];
+            document.getElementById("func_p").textContent = roamingSettings.values["Func_name"];
+            document.getElementById("func_pic").src = roamingSettings.values["Func_pic"];
+            document.getElementById("where_you_are2").textContent = "You have choosen the " + roamingSettings.values["Func_name"] + " Function." + " You have 2 steps left.";
 
-            document.getElementById("age_pic").src = get_set.set_age("pic");
+            server.base(id_sel);
 
-           //alt = options.age;
-
-            //sending the users choosen age to the age_data namespace and then receiving a number that will 
-            //be used to access the right object on the array
-            num = age_data.get_age_num(get_set.set_age("name"));
-
-            WinJS.xhr({ url: "resource/data.txt" }).then(function (xhr) {
-                var age_bases = JSON.parse(xhr.responseText);
-                age_bases.forEach(function (age_base) {
-                    for (var i = 0; i < age_base[num].Base.length; i++) {
-                        age_data.model.base.push({ b_name: age_base[num].Base[i].name, b_pic: age_base[num].Base[i].image })
-                    }
-                });
-            });
+            document.getElementById("base_price_div").removeAttribute("hidden");
         },
 
         unload: function () {
             // TODO: Respond to navigations away from this page.
-
             //using the removeInfo.js file to delete the last object of the array as long as an item exists
-            remove.pop_list(age_data.model.base)
-            remove.pop_list(age_data.model.info_page2)
+            remove.pop_list(age_data.model.base);
+            //milo: removing keepInfo data when back button is used from func page.
+            remove.pop_list(age_data.model.info_page4);
+            //roamingSettings.values["Count"] = "";
+            if (!keepInfo) {
+                remove.pop_list(age_data.model.info_page2)
+            }
         },
 
         updateLayout: function (element) {
             /// <param name="element" domElement="true" />
-
             // TODO: Respond to changes in layout.
         }
     });
 
-    var age3 = "";
     var base3 = "";
     WinJS.Namespace.define("base_clicked", {
+
         clicked: function (base) {
-            remove.pop_list(age_data.model.info_page2)
-            var age_num = 0;
-            var base_num = 0;
-            age3 = get_set.set_age("name");
-            base3 = base;
-
-            if (base === "Protein") {
-
-            } else {
-                age_num = age_data.get_age_num(get_set.set_age("name"));
-                base_num = age_data.get_base_num(base);
-
-                WinJS.xhr({ url: "resource/data.txt" }).then(function (xhr) {
-                    var base_sel = JSON.parse(xhr.responseText);
-                    base_sel.forEach(function (sel) {
-                        age_data.model.info_page2.push({ the_name: sel[age_num].Base[base_num].name, the_img: sel[age_num].Base[base_num].label, the_info: sel[age_num].Base[base_num].info, the_pic: sel[age_num].Base[base_num].image, base_price: sel[age_num].Base[base_num].price });
-                    });
-                });
-            };
+            remove.pop_list(age_data.model.info_page2);
+            var updated_base = base.replace(/^\s+/, '').replace(/\s+$/, '');
+            base3 = updated_base;
+            server.base_sub(updated_base);
+            //milo: if msg "not available please pick another base" stays clear it here when they click on the next boost ( this would be after base_clicked.next_page_flavor fired )
         },
-        next_page_flavor: function () {
-            WinJS.Navigation.navigate('pages/flavor/flavor.html')
-            get_set.get_base(base3, document.getElementById("choosen_base_carry").src, document.getElementById("sel_base_info").textContent, document.getElementById("base_price").textContent);
-        }
 
+        next_page_flavor: function () {
+                keepInfo = true;
+                var vendId = document.getElementById("b_vend").innerHTML;
+                var vendId_count = document.getElementById("b_vend_count").innerHTML;
+                roamingSettings.values["Base_protein"] = false;
+                roamingSettings.values["Base_Vend"] = vendId;
+                roamingSettings.values["Base_name"] = base3;
+                roamingSettings.values["Base_pic"] = document.getElementById("choosen_base_carry").src;
+                roamingSettings.values["Base_info"] = document.getElementById("sel_base_info").textContent;
+                roamingSettings.values["Base_price"] = document.getElementById("base_price").textContent;
+                roamingSettings.values["Base_label"] = document.getElementById("sel_base_pic").src;
+                //roamingSettings.values["Id_sel_func"] = document.getElementById("id_sel3").textContent;
+                
+            //milo: the following makes a call to vend to check if we have enough product for the order if low it will not allow to move on. 
+                if (vendId_count != "" && vendId_count != "null") {
+                    WinJS.xhr({
+                        //milo: using POST but not passing anything to vend until .then at which point it reads the api product inventory count and displays it back.  
+                        type: "POST",
+                        url: "https://thinkitdrinkit.vendhq.com/api/products",
+                        user: "milo@thinkitdrinkit.com",
+                        password: "agave2013",
+                        headers: { "Content-type": "application/json" },
+                        data: JSON.stringify({
+                            //milo: in this object its the id part >>> GET /api/register_sales/{id} >>> that VEND wants which is below
+                            "id": vendId_count,
+                            "inventory": [{
+                            }]
+                        }),
+                    }).then(function sucess(res) {
+                        //milo: below allows the real GET which is the count to come back to app. Notes accessing json>>> http://www.mkyong.com/javascript/how-to-access-json-object-in-javascript/
+                        var vendCount = JSON.parse(res.responseText).product.inventory[0].count;
+                        console.log("Base Count from VEND ", vendCount);
+                        if (vendCount >= 14.00000) {
+                            WinJS.Navigation.navigate('pages/boost/boost.html')
+                        } else {
+                            document.getElementById("out_of_stock").removeAttribute("hidden");
+                            document.getElementById("out_of_stock").textContent = "OUT OF STOCK, PLEASE PICK ANOTHER BASE";
+                            document.getElementById("out_of_stock").style.color = "red";
+                            document.getElementById("out_of_stock").style.fontSize = "20px";
+                            document.getElementById("out_of_stock").style.marginTop = "145px";
+                            document.getElementById("out_of_stock").style.marginLeft = "260px";
+                            document.getElementById("out_of_stock").style.position = "Absolute";
+                        }
+                    }, function error(err) {
+                        console.log("fail", err.responseText)
+                    });
+                } else {
+                    WinJS.Navigation.navigate('pages/boost/boost.html')
+                }
+        },
+
+        more_info: function (clicked) {
+            roamingSettings.values["Item_choosen"] = clicked;
+            roamingSettings.values["Clicked_cat"] = "Base";
+            WinJS.Navigation.navigate('pages/item_info/item_info.html');
+            keepInfo = true;
+        }
     })
 
 })();

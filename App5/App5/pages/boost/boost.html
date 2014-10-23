@@ -18,7 +18,7 @@
             <button data-win-control="WinJS.UI.BackButton"></button>
 
             <!--milo: this was in the H1 to show previous page selected <span id="theBoostAge"></span> -->
-            <h1 class="titlearea win-type-ellipsis" id="choosen_base">Choose Your Boost (You Have Choosen <span id="the_num">0</span> of up to 4 boosts).</h1>
+            <h1 class="titlearea win-type-ellipsis" id="choosen_base">Choose Your Boost (You Have Choosen <span id="the_num">0</span> of up to 8 boosts).</h1>
             <p class="titlearea win-type-ellipsis" id="overError"></p>
         </header>
         <section aria-label="Main content" role="main" data-win-options="{selectionMode: 'multi',
@@ -97,14 +97,10 @@
                                     <img src="#" width="80" height="80" id="area_img8" class="area_img_class" />
                                     <p id="div_boost8_name"></p>
                                 </div>
-                                <div id="boost9_div" hidden="">
-                                    <img src="#" width="80" height="80" id="area_img9" class="area_img_class" />
-                                    <p id="div_boost9_name"></p>
-                                </div>
                             </div>
                         </div>
                         <div id="btn_right" hidden="">
-                            <p style="font-size: 20px" id="hidden_p">You have choosen <span id="the_number"></span> of up to 4 boosts choose another boost or add to cart.</p>
+                            <p style="font-size: 20px" id="hidden_p">You have choosen <span id="the_number"></span> of up to 8 boosts choose another boost or add to cart.</p>
                             <button onclick="boost_clicked.release()" id="del_btn10" name="del_btn10" type="reset">Remove Last</button>
                             <button id="sel_btn10" class="sel_look_btn" onclick="boost_clicked.finalKeepInfo(document.getElementById('choosen_name').textContent)" name="sel_btn10" type="submit">Add To Cart</button>
                         </div>
@@ -143,7 +139,7 @@
             </div>
 
             <h2 id="where_you_are4"><span id="cal_co"></span></h2>
-            <h1 id="footer_company_name"></h1><!-- this is being styled in the default.js folder -->
+            <!--<h1 id="footer_company_name"></h1>--><!-- this is being styled in the default.js folder -->
         </footer>
     </div>
 </body>
