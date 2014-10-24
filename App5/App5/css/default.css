@@ -193,7 +193,7 @@ h1, .win-type-xx-large {
     height: 53px;
     background-color: rgba(0,0,0,.6);
     width: 98px;
-    margin-left: 17px;
+    margin-left: 12px;
     margin-top: 28px;
     font-size: 12px;
     padding-left: 2px;
@@ -202,7 +202,7 @@ h1, .win-type-xx-large {
 
 .history_pic {
     border: 2px solid #fff;
-    margin-left: 15px;
+    margin-left: 10px;
     float: left;
 }
 
@@ -219,16 +219,16 @@ h1, .win-type-xx-large {
 
 .price_prev_div {
     position: absolute;
-    margin-left: 79px;
+    margin-left: 75px;
     margin-top: 2px;
     font-size: 25px;
     color: #fff;
     background-color: rgba(0,0,0,0.6);
-    width: 38px;
+    width: 37px;
     height: 26px;
 }
 
-#price_prev_div_total {
+/*#price_prev_div_total {
     position: absolute;
     margin-left: 79px;
     margin-top: 2px;
@@ -237,4 +237,4 @@ h1, .win-type-xx-large {
     background-color: rgba(0,0,0,0.6);
     width: 38px;
     height: 26px;
-}
+}*/
