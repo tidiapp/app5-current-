@@ -60,14 +60,14 @@
             document.getElementById("boost_p7").textContent = roamingSettings.values["Boost7_name"];
             document.getElementById("boost_p8").textContent = roamingSettings.values["Boost8_name"];
 
-            if (roamingSettings.values["Boost1_name"] != "") { roamingSettings.values["Boost1_price"] = 0 };
-            if (roamingSettings.values["Boost2_name"] == "" || roamingSettings.values["Boost2_name"] === !undefined) { roamingSettings.values["Boost2_price"] = 0 };
-            if (roamingSettings.values["Boost3_name"] == "" || roamingSettings.values["Boost3_name"] === !undefined) { roamingSettings.values["Boost3_price"] = 0 };
-            if (roamingSettings.values["Boost4_name"] == "" || roamingSettings.values["Boost4_name"] === !undefined) { roamingSettings.values["Boost4_price"] = 0 };
-            if (roamingSettings.values["Boost5_name"] == "" || roamingSettings.values["Boost5_name"] === !undefined) { roamingSettings.values["Boost5_price"] = 0 };
-            if (roamingSettings.values["Boost6_name"] == "" || roamingSettings.values["Boost6_name"] === !undefined) { roamingSettings.values["Boost6_price"] = 0 };
-            if (roamingSettings.values["Boost7_name"] == "" || roamingSettings.values["Boost7_name"] === !undefined) { roamingSettings.values["Boost7_price"] = 0 };
-            if (roamingSettings.values["Boost8_name"] == "" || roamingSettings.values["Boost8_name"] === !undefined) { roamingSettings.values["Boost8_price"] = 0 };
+            if (roamingSettings.values["Boost1_name"] != "") { document.getElementById("boost_div").removeAttribute("hidden"); };
+            if (roamingSettings.values["Boost2_name"] != "") { document.getElementById("boost_div2").removeAttribute("hidden"); };
+            if (roamingSettings.values["Boost3_name"] != "") { document.getElementById("boost_div3").removeAttribute("hidden"); };
+            if (roamingSettings.values["Boost4_name"] != "") { document.getElementById("boost_div4").removeAttribute("hidden"); };
+            if (roamingSettings.values["Boost5_name"] != "") { document.getElementById("boost_div5").removeAttribute("hidden"); };
+            if (roamingSettings.values["Boost6_name"] != "") { document.getElementById("boost_div6").removeAttribute("hidden"); };
+            if (roamingSettings.values["Boost7_name"] != "") { document.getElementById("boost_div7").removeAttribute("hidden"); };
+            if (roamingSettings.values["Boost8_name"] != "") { document.getElementById("boost_div8").removeAttribute("hidden"); };
 
             roamingSettings.values["went_back"] = true;
             if (roamingSettings.values["went_back_back"]) {

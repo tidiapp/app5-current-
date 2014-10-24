@@ -109,14 +109,14 @@
 }*/
 
 #where_you_are3 {
-    margin-left: 1440px;
-    margin-top: 30px;
-    position: absolute;
+    /*padding-left: 20px;
+    margin-top: 30px;*/
+    /*position: absolute;*/
     font-size: 18px;
     color: #fff;
     font-weight: bold;
-}
-/*Milo this actually works to fix glictch when too many products are hit at the same time, it DOES NOT SHOW UP IN THE CSS DOM eXPLORER DUNNO WHY BUT IT WORKS!!*/
+
+}/*Milo this actually works to fix glictch when too many products are hit at the same time, it DOES NOT SHOW UP IN THE CSS DOM eXPLORER DUNNO WHY BUT IT WORKS!!*/
 #flav_sel_sel_placement .win-viewport {
     overflow-x: hidden;
 }
@@ -124,3 +124,19 @@
     margin-top: 0;
 }
 
+#boost_footer {
+    margin-right: 10px;
+    width: auto;
+    height: 100px;
+    float: left;
+}
+
+#boost_footer_total {
+    width: auto;
+    height: 100px;
+    float: left;
+}
+
+#footer_wrap {
+    
+}
