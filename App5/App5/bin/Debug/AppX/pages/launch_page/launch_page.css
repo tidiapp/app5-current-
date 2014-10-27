@@ -8,19 +8,19 @@
     /*border: 3px solid;*/
     margin-right: 5px;
     /*margin-left: -70px;*/
-    width: 165px;
-    height: 165px;
+    width: 160px;
+    height: 160px;
 }
 
 .the_float img {
     position: absolute;
-    width: 165px;
-    height: 165px;
+    width: 160px;
+    height: 160px;
     z-index: -1;
 }
 
 .underline_div {
-    margin-top: 110px;
+    margin-top: 90px;
     text-align: center;
 }    
     .the_float a {
