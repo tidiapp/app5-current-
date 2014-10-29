@@ -84,6 +84,7 @@
                 document.getElementById("base_price_total").textContent = roamingSettings.values['Boost_total_footer'];
             }
 
+            //milo: footer history 
             document.getElementById("where_you_are3").textContent = "You have choosen " + roamingSettings.values["Boost_total_num"] + " Boosts.";
 
             //milo: was looping to show 4 boosts in 1 box
@@ -133,13 +134,14 @@
             roamingSettings.values["FlavSel_name"] = the_choosenFlav;
             roamingSettings.values["FlavSel_pic"] = document.getElementById("hidden_flav_pic").src;
             roamingSettings.values["FlavSel_vend"] = document.getElementById("f_vend").textContent;
+            var vendId = roamingSettings.values["FlavSel_vend"];
             var vendId_count = document.getElementById("f_vend_count").textContent;
             roamingSettings.values["FlavSel_info"] = null;
             roamingSettings.values["FlavSel_price"] = null;
             roamingSettings.values["FlavSel_label"] = document.getElementById("flav_sel_sel_pic").src;
 
             //milo: the following makes a call to vend to check if we have enough product for the order if low it will not allow to move on. 
-            if (vendId_count != "" && vendId_count != "null") {
+            if (vendId != "" && vendId != "null") {
 
                 WinJS.xhr({
                     //milo: using POST but not passing anything to vend until .then at which point it reads the api product inventory count and displays it back.  
@@ -150,7 +152,7 @@
                     headers: { "Content-type": "application/json" },
                     data: JSON.stringify({
                         //milo: in this object its the id part >>> GET /api/register_sales/{id} >>> that VEND wants which is below
-                        "id": vendId_count,
+                        "id": vendId,
                         "inventory": [{
                         }]
                     }),
@@ -158,22 +160,29 @@
                     //milo: below allows the real GET which is the count to come back to app. Notes accessing json>>> http://www.mkyong.com/javascript/how-to-access-json-object-in-javascript/
                     var vendCount = JSON.parse(res.responseText).product.inventory[0].count;
                     console.log("Flavor Count from VEND ", vendCount);
-                    if (vendCount >= 14.00000) {
+                    if (vendCount >= 1.00000) {
                         WinJS.Navigation.navigate('pages/final/final.html')
-                    } else if (vendCount <= 13.00000) {
+                    } else if (vendCount <= 0.00000) {
                         document.getElementById("out_of_stock2").removeAttribute("hidden");
                         document.getElementById("out_of_stock2").textContent = "OUT OF STOCK, PLEASE PICK ANOTHER FLAVOR";
                         document.getElementById("out_of_stock2").style.color = "red";
                         document.getElementById("out_of_stock2").style.fontSize = "20px";
-                        document.getElementById("out_of_stock2").style.marginTop = "115px";
-                        document.getElementById("out_of_stock2").style.marginLeft = "263px";
+                        document.getElementById("out_of_stock2").style.marginTop = "120px";
+                        document.getElementById("out_of_stock2").style.marginLeft = "290px";
                         document.getElementById("out_of_stock2").style.position = "Absolute";
                     }
                 }, function error(err) {
                     console.log("fail", err.responseText)
                 });
-            } else {
-                WinJS.Navigation.navigate('pages/final/final.html')
+            } else if (vendId == "null" || vendId == undefined || vendId == "") {
+                document.getElementById("out_of_stock2").removeAttribute("hidden");
+                document.getElementById("out_of_stock2").textContent = "ID Missing in DB or Vend product does not exist.";
+                document.getElementById("out_of_stock2").style.color = "red";
+                document.getElementById("out_of_stock2").style.fontSize = "20px";
+                document.getElementById("out_of_stock2").style.marginTop = "120px";
+                document.getElementById("out_of_stock2").style.marginLeft = "290px";
+                document.getElementById("out_of_stock2").style.position = "Absolute";
+                //WinJS.Navigation.navigate('pages/final/final.html')
             }
         },
         more_info: function (clicked) {

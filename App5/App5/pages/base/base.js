@@ -88,7 +88,7 @@
                 //roamingSettings.values["Id_sel_func"] = document.getElementById("id_sel3").textContent;
                 
             //milo: the following makes a call to vend to check if we have enough product for the order if low it will not allow to move on. 
-                if (vendId_count != "" && vendId_count != "null") {
+                if (vendId != "" && vendId != "null") {
                     WinJS.xhr({
                         //milo: using POST but not passing anything to vend until .then at which point it reads the api product inventory count and displays it back.  
                         type: "POST",
@@ -98,7 +98,7 @@
                         headers: { "Content-type": "application/json" },
                         data: JSON.stringify({
                             //milo: in this object its the id part >>> GET /api/register_sales/{id} >>> that VEND wants which is below
-                            "id": vendId_count,
+                            "id": vendId,
                             "inventory": [{
                             }]
                         }),
@@ -106,22 +106,29 @@
                         //milo: below allows the real GET which is the count to come back to app. Notes accessing json>>> http://www.mkyong.com/javascript/how-to-access-json-object-in-javascript/
                         var vendCount = JSON.parse(res.responseText).product.inventory[0].count;
                         console.log("Base Count from VEND ", vendCount);
-                        if (vendCount >= 14.00000) {
+                        if (vendCount >= 1.00000) {
                             WinJS.Navigation.navigate('pages/boost/boost.html')
-                        } else {
+                        } else if (vendCount <= 0.00000) {
                             document.getElementById("out_of_stock").removeAttribute("hidden");
                             document.getElementById("out_of_stock").textContent = "OUT OF STOCK, PLEASE PICK ANOTHER BASE";
                             document.getElementById("out_of_stock").style.color = "red";
                             document.getElementById("out_of_stock").style.fontSize = "20px";
-                            document.getElementById("out_of_stock").style.marginTop = "145px";
-                            document.getElementById("out_of_stock").style.marginLeft = "260px";
+                            document.getElementById("out_of_stock").style.marginTop = "120px";
+                            document.getElementById("out_of_stock").style.marginLeft = "290px";
                             document.getElementById("out_of_stock").style.position = "Absolute";
                         }
                     }, function error(err) {
                         console.log("fail", err.responseText)
                     });
-                } else {
-                    WinJS.Navigation.navigate('pages/boost/boost.html')
+                } else if (vendId == "null" || vendId == undefined || vendId == "") {
+                    document.getElementById("out_of_stock2").removeAttribute("hidden");
+                    document.getElementById("out_of_stock2").textContent = "ID Missing in DB or Vend product does not exist.";
+                    document.getElementById("out_of_stock2").style.color = "red";
+                    document.getElementById("out_of_stock2").style.fontSize = "20px";
+                    document.getElementById("out_of_stock2").style.marginTop = "120px";
+                    document.getElementById("out_of_stock2").style.marginLeft = "290px";
+                    document.getElementById("out_of_stock2").style.position = "Absolute";
+                    //WinJS.Navigation.navigate('pages/boost/boost.html')
                 }
         },
 

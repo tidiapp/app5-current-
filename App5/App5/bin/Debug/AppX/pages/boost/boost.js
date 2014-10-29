@@ -373,7 +373,8 @@
                 document.getElementById("div_boost8_name").textContent = roamingSettings.values["Boost8_name"];
 
             } else if (age_data.model.the_boost_sel.length === 0) {
-                thename0 = roamingSettings.values["Boost0_name"];
+                //thename0 = roamingSettings.values["Boost0_name"];
+                //roamingSettings.values["Boost0_name"] = age_data.model.the_boost_sel.length;
                 document.getElementById("the_number").textContent = age_data.model.the_boost_sel.length;
                 document.getElementById("the_num").textContent = age_data.model.the_boost_sel.length;
 
@@ -605,7 +606,7 @@
                     }
                 }//ends else for duplicate check
             } else {
-                document.getElementById("overError").textContent = " Sorry, You May Only Choose 4 Boosts. If You Want To Change Boosts, Please Click the Remove Last Button";
+                document.getElementById("overError").textContent = " Sorry, You May Only Choose 8 Boosts. If You Want To Change Boosts, Please Click the Remove Last Button";
                 document.getElementById("overError").style.color = "red";
                 document.getElementById("overError").style.fontSize = "30px";
                 document.getElementById("overError").style.marginTop = "100px";
@@ -713,13 +714,14 @@
             roamingSettings.values["orderComplete"] = false;
             keepInfo = true;
         },
-        finalKeepInfo: function () {
 
-            if (thename0 === undefined || thename0 === "") {
-                thename0 = name;
+        finalKeepInfo: function () {
+            if (age_data.model.the_boost_sel.length === 0) {
+                //thename0 = name;
                 document.getElementById("the_number").textContent = age_data.model.the_boost_sel.length;
                 document.getElementById("the_num").textContent = age_data.model.the_boost_sel.length;
-                roamingSettings.values["Boost0_name"] = name;
+                //roamingSettings.values["Boost0_name"] = name;
+                roamingSettings.values["Boost_total_num"] = age_data.model.the_boost_sel.length;
                 document.getElementById("the_test");
                 keepInfo = false;
             }

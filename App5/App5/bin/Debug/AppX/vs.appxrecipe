@@ -6,7 +6,7 @@
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>e3f10fc1-365d-4d2e-b488-7e61baad9bf4</PackageIdentityName>
-    <RegisteredManifestChecksum>C02998AD4CD4FC03464792B61EC5E11F783FAD7489991BC8C581A89EBE48CE26</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>95AE1ABA22235366CB9F7675253C086F15E22B1B24F8A78846393BF2097B3FE6</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>e3f10fc1-365d-4d2e-b488-7e61baad9bf4_1.0.0.21_neutral__bkvjexddj2nfj</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>e3f10fc1-365d-4d2e-b488-7e61baad9bf4_bkvjexddj2nfj!App</RegisteredUserModeAppID>
     <RegisteredPackageID>e3f10fc1-365d-4d2e-b488-7e61baad9bf4</RegisteredPackageID>
@@ -17,13 +17,13 @@
     <AppXManifest Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-10-24T21:01:03.354</Modified>
+      <Modified>2014-10-28T13:26:20.949</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\css\default.css">
       <PackagePath>css\default.css</PackagePath>
-      <Modified>2014-10-27T20:47:29.872</Modified>
+      <Modified>2014-10-28T14:14:15.869</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\libs\prettify\prettify.css">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\libs\prettify\prettify.css</PackagePath>
@@ -59,7 +59,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\base\base.css">
       <PackagePath>pages\base\base.css</PackagePath>
-      <Modified>2014-10-27T17:10:24.817</Modified>
+      <Modified>2014-10-28T15:41:59.176</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\boost.bck\boost.css">
       <PackagePath>pages\boost.bck\boost.css</PackagePath>
@@ -269,11 +269,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\base\base.js">
       <PackagePath>pages\base\base.js</PackagePath>
-      <Modified>2014-10-24T20:48:33.506</Modified>
+      <Modified>2014-10-28T16:06:50.367</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\boost\boost.js">
       <PackagePath>pages\boost\boost.js</PackagePath>
-      <Modified>2014-10-24T20:48:33.515</Modified>
+      <Modified>2014-10-29T20:30:02.284</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\boost.ori\boost.js">
       <PackagePath>pages\boost.ori\boost.js</PackagePath>
@@ -309,11 +309,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\flav_sel\flav_sel.js">
       <PackagePath>pages\flav_sel\flav_sel.js</PackagePath>
-      <Modified>2014-10-24T20:48:33.521</Modified>
+      <Modified>2014-10-29T20:00:19.521</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\home\home.js">
       <PackagePath>pages\home\home.js</PackagePath>
-      <Modified>2014-10-27T20:42:15.931</Modified>
+      <Modified>2014-10-28T14:06:49.088</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\item_info\item_info.js">
       <PackagePath>pages\item_info\item_info.js</PackagePath>
@@ -497,7 +497,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-10-27T13:47:52.236</Modified>
+      <Modified>2014-10-28T13:26:20.587</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

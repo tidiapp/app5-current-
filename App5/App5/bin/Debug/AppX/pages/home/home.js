@@ -38,7 +38,7 @@
 
             if (the_sel_age === "Protein") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
-                document.getElementById("choosen_age").innerHTML = roamingSettings.values["Cat_picked"] + ", " + " a vital macronutrient for ultimate performance, essential to maintain biological processes and strong," + "<br>" + "healthy bodies The foundation (building block) of human nutrition, health and well being Fitness Protein: " + "<br>" +  "Essential for health, wellness, body weight, and physical activity ";
+                document.getElementById("choosen_age").innerHTML = roamingSettings.values["Cat_picked"] + ", " + " The foundation (building block) of human nutrition, health and well being.";
             }
 
             if (the_sel_age === "Purchase A Nutrigenetic Test") {
