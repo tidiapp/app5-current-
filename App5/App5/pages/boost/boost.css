@@ -233,15 +233,6 @@ overError {
     font-weight: bold;
 }
 
-.sel_look_btn {
-    font-size: 25px;
-    height: 60px;
-    margin-left: 120px;
-    text-transform: uppercase;
-    box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);
-    border: 0;
-}
-
 #del_btn10 {
     height: 60px;
     position: absolute;
@@ -249,6 +240,7 @@ overError {
     box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);
     border: 0;
 }
+
 button, input[type=button], input[type=submit], input[type=reset], input[type=file]::-ms-browse {
     /*background-color: #FF7C00;
     border-color: #FF7C00;*/

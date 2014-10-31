@@ -34,17 +34,21 @@
                 if (roamingSettings.values["Boost2_name"] == "" || roamingSettings.values["Boost2_name"] === !undefined) { roamingSettings.values["Boost2_price"] = 0 };
                 if (roamingSettings.values["Boost3_name"] == "" || roamingSettings.values["Boost3_name"] === !undefined) { roamingSettings.values["Boost3_price"] = 0 };
                 if (roamingSettings.values["Boost4_name"] == "" || roamingSettings.values["Boost4_name"] === !undefined) { roamingSettings.values["Boost4_price"] = 0 };
+                if (roamingSettings.values["Boost5_name"] == "" || roamingSettings.values["Boost5_name"] === !undefined) { roamingSettings.values["Boost5_price"] = 0 };
+                if (roamingSettings.values["Boost6_name"] == "" || roamingSettings.values["Boost6_name"] === !undefined) { roamingSettings.values["Boost6_price"] = 0 };
+                if (roamingSettings.values["Boost7_name"] == "" || roamingSettings.values["Boost7_name"] === !undefined) { roamingSettings.values["Boost7_price"] = 0 };
+                if (roamingSettings.values["Boost8_name"] == "" || roamingSettings.values["Boost8_name"] === !undefined) { roamingSettings.values["Boost8_price"] = 0 };
                 if (roamingSettings.values["Nutrigenetics_name"] == "" || roamingSettings.values["Nutrigenetics_name"] === !undefined) { roamingSettings.values["Nutrigenetics_price"] = 0 };
                 if (roamingSettings.values["Base_name"] == "" || roamingSettings.values["Base_name"] === !undefined) { roamingSettings.values["Base_price"] = 0 };
 
-                roamingSettings.values['Boost_total'] = (parseFloat(roamingSettings.values["Boost1_price"]) + parseFloat(roamingSettings.values["Boost2_price"]) + parseFloat(roamingSettings.values["Boost3_price"]) + parseFloat(roamingSettings.values["Boost4_price"]));
+                roamingSettings.values['Boost_total'] = (parseFloat(roamingSettings.values["Boost1_price"]) + parseFloat(roamingSettings.values["Boost2_price"]) + parseFloat(roamingSettings.values["Boost3_price"]) + parseFloat(roamingSettings.values["Boost4_price"]) + parseFloat(roamingSettings.values["Boost5_price"]) + parseFloat(roamingSettings.values["Boost6_price"]) + parseFloat(roamingSettings.values["Boost7_price"]) + parseFloat(roamingSettings.values["Boost8_price"]));
 
                 roamingSettings.values["total_price"] = parseFloat(roamingSettings.values["Base_price"]) + parseFloat(roamingSettings.values['Boost_total']) + parseFloat(roamingSettings.values["Nutrigenetics_price"]);
 
                 roamingSettings.values["the_complete_total"] += parseFloat(roamingSettings.values["total_price"]);
-                console.log((parseFloat(roamingSettings.values["Base_price"]) + parseFloat(roamingSettings.values["Boost1_price"])));
-                console.log(roamingSettings.values["total_price"]);
-                console.log(roamingSettings.values["the_complete_total"]);
+                //console.log((parseFloat(roamingSettings.values["Base_price"]) + parseFloat(roamingSettings.values["Boost1_price"])));
+                //console.log(roamingSettings.values["total_price"]);
+                //console.log(roamingSettings.values["the_complete_total"]);
                 roamingSettings.values["not_cont"] = true;
                 roamingSettings.values["went_back"] = false;
             }
@@ -120,10 +124,9 @@
                     return theTime;
                 }
 
-
+//milo whats going on here 
 
                 if (roamingSettings.values["Boost2_price"] > 0 && roamingSettings.values["Boost3_price"] <= 0) {
-
                     age_data.model.continue_order_save.push({
                         product_id: roamingSettings.values["Base_vend"], quantity: 1, price: roamingSettings.values["Base_price"], tax: (roamingSettings.values["Base_price"] * .0636)
                     }, { product_id: roamingSettings.values["FlavSel_vend"], quantity: 1, price: roamingSettings.values["FlavSel_price"], tax: (roamingSettings.values["FlavSel_price"] * .0636) }, { product_id: roamingSettings.values["Boost1_vend"], quantity: 1, price: roamingSettings.values["Boost1_price"], tax: (roamingSettings.values["Boost1_price"] * .0636) }, { product_id: roamingSettings.values["Boost2_vend"], quantity: 1, price: roamingSettings.values["Boost2_price"], tax: (roamingSettings.values["Boost2_price"] * .0636) });
@@ -183,8 +186,6 @@
                     roamingSettings.values["the_complete_total"] = 0;
                     roamingSettings.values["theComplete"] = document.getElementById("total").textContent;
 
-
-
                     Age.insert({//Nothing is being sent to the database yet
                         Name: "Guest",
                         Base: roamingSettings.values["Base_name"],
@@ -220,7 +221,6 @@
                     }), function (err) {
                         console.log(err);
                     }
-
 
 
                 }, function error(err) {
