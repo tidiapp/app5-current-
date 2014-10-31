@@ -34,17 +34,21 @@
                 if (roamingSettings.values["Boost2_name"] == "" || roamingSettings.values["Boost2_name"] === !undefined) { roamingSettings.values["Boost2_price"] = 0 };
                 if (roamingSettings.values["Boost3_name"] == "" || roamingSettings.values["Boost3_name"] === !undefined) { roamingSettings.values["Boost3_price"] = 0 };
                 if (roamingSettings.values["Boost4_name"] == "" || roamingSettings.values["Boost4_name"] === !undefined) { roamingSettings.values["Boost4_price"] = 0 };
+                if (roamingSettings.values["Boost5_name"] == "" || roamingSettings.values["Boost5_name"] === !undefined) { roamingSettings.values["Boost5_price"] = 0 };
+                if (roamingSettings.values["Boost6_name"] == "" || roamingSettings.values["Boost6_name"] === !undefined) { roamingSettings.values["Boost6_price"] = 0 };
+                if (roamingSettings.values["Boost7_name"] == "" || roamingSettings.values["Boost7_name"] === !undefined) { roamingSettings.values["Boost7_price"] = 0 };
+                if (roamingSettings.values["Boost8_name"] == "" || roamingSettings.values["Boost8_name"] === !undefined) { roamingSettings.values["Boost8_price"] = 0 };
                 if (roamingSettings.values["Nutrigenetics_name"] == "" || roamingSettings.values["Nutrigenetics_name"] === !undefined) { roamingSettings.values["Nutrigenetics_price"] = 0 };
                 if (roamingSettings.values["Base_name"] == "" || roamingSettings.values["Base_name"] === !undefined) { roamingSettings.values["Base_price"] = 0 };
 
-                roamingSettings.values['Boost_total'] = (parseFloat(roamingSettings.values["Boost1_price"]) + parseFloat(roamingSettings.values["Boost2_price"]) + parseFloat(roamingSettings.values["Boost3_price"]) + parseFloat(roamingSettings.values["Boost4_price"]));
+                roamingSettings.values['Boost_total'] = (parseFloat(roamingSettings.values["Boost1_price"]) + parseFloat(roamingSettings.values["Boost2_price"]) + parseFloat(roamingSettings.values["Boost3_price"]) + parseFloat(roamingSettings.values["Boost4_price"]) + parseFloat(roamingSettings.values["Boost5_price"]) + parseFloat(roamingSettings.values["Boost6_price"]) + parseFloat(roamingSettings.values["Boost7_price"]) + parseFloat(roamingSettings.values["Boost8_price"]));
 
                 roamingSettings.values["total_price"] = parseFloat(roamingSettings.values["Base_price"]) + parseFloat(roamingSettings.values['Boost_total']) + parseFloat(roamingSettings.values["Nutrigenetics_price"]);
 
                 roamingSettings.values["the_complete_total"] += parseFloat(roamingSettings.values["total_price"]);
-                console.log((parseFloat(roamingSettings.values["Base_price"]) + parseFloat(roamingSettings.values["Boost1_price"])));
-                console.log(roamingSettings.values["total_price"]);
-                console.log(roamingSettings.values["the_complete_total"]);
+                //console.log((parseFloat(roamingSettings.values["Base_price"]) + parseFloat(roamingSettings.values["Boost1_price"])));
+                //console.log(roamingSettings.values["total_price"]);
+                //console.log(roamingSettings.values["the_complete_total"]);
                 roamingSettings.values["not_cont"] = true;
                 roamingSettings.values["went_back"] = false;
             }
@@ -120,25 +124,48 @@
                     return theTime;
                 }
 
-
-
+//2 boosts
                 if (roamingSettings.values["Boost2_price"] > 0 && roamingSettings.values["Boost3_price"] <= 0) {
-
                     age_data.model.continue_order_save.push({
                         product_id: roamingSettings.values["Base_vend"], quantity: 1, price: roamingSettings.values["Base_price"], tax: (roamingSettings.values["Base_price"] * .0636)
                     }, { product_id: roamingSettings.values["FlavSel_vend"], quantity: 1, price: roamingSettings.values["FlavSel_price"], tax: (roamingSettings.values["FlavSel_price"] * .0636) }, { product_id: roamingSettings.values["Boost1_vend"], quantity: 1, price: roamingSettings.values["Boost1_price"], tax: (roamingSettings.values["Boost1_price"] * .0636) }, { product_id: roamingSettings.values["Boost2_vend"], quantity: 1, price: roamingSettings.values["Boost2_price"], tax: (roamingSettings.values["Boost2_price"] * .0636) });
-
-                } else if (roamingSettings.values["Boost3_price"] > 0 && roamingSettings.values["Boost2_price"] > 0) {
+//3 boosts
+                } else if (roamingSettings.values["Boost3_price"] > 0 && roamingSettings.values["Boost4_price"] <= 0) {
                     age_data.model.continue_order_save.push({
                         product_id: roamingSettings.values["Base_vend"], quantity: 1, price: roamingSettings.values["Base_price"], tax: (roamingSettings.values["Base_price"] * .0636)
                     }, { product_id: roamingSettings.values["FlavSel_vend"], quantity: 1, price: roamingSettings.values["FlavSel_price"], tax: (roamingSettings.values["FlavSel_price"] * .0636) }, { product_id: roamingSettings.values["Boost1_vend"], quantity: 1, price: roamingSettings.values["Boost1_price"], tax: (roamingSettings.values["Boost1_price"] * .0636) }, { product_id: roamingSettings.values["Boost2_vend"], quantity: 1, price: roamingSettings.values["Boost2_price"], tax: (roamingSettings.values["Boost2_price"] * .0636) }, { product_id: roamingSettings.values["Boost3_vend"], quantity: 1, price: roamingSettings.values["Boost3_price"], tax: (roamingSettings.values["Boost3_price"] * .0636) });
-
+//4 boosts
+                } else if (roamingSettings.values["Boost4_price"] > 0 && roamingSettings.values["Boost5_price"] <= 0) {
+                    age_data.model.continue_order_save.push({
+                        product_id: roamingSettings.values["Base_vend"], quantity: 1, price: roamingSettings.values["Base_price"], tax: (roamingSettings.values["Base_price"] * .0636)
+                    }, { product_id: roamingSettings.values["FlavSel_vend"], quantity: 1, price: roamingSettings.values["FlavSel_price"], tax: (roamingSettings.values["FlavSel_price"] * .0636) }, { product_id: roamingSettings.values["Boost1_vend"], quantity: 1, price: roamingSettings.values["Boost1_price"], tax: (roamingSettings.values["Boost1_price"] * .0636) }, { product_id: roamingSettings.values["Boost2_vend"], quantity: 1, price: roamingSettings.values["Boost2_price"], tax: (roamingSettings.values["Boost2_price"] * .0636) }, { product_id: roamingSettings.values["Boost3_vend"], quantity: 1, price: roamingSettings.values["Boost3_price"], tax: (roamingSettings.values["Boost3_price"] * .0636) }, { product_id: roamingSettings.values["Boost4_vend"], quantity: 1, price: roamingSettings.values["Boost4_price"], tax: (roamingSettings.values["Boost4_price"] * .0636) });
+//5 boost
+                } else if (roamingSettings.values["Boost5_price"] > 0 && roamingSettings.values["Boost6_price"] <= 0) {
+                    age_data.model.continue_order_save.push({
+                        product_id: roamingSettings.values["Base_vend"], quantity: 1, price: roamingSettings.values["Base_price"], tax: (roamingSettings.values["Base_price"] * .0636)
+                    }, { product_id: roamingSettings.values["FlavSel_vend"], quantity: 1, price: roamingSettings.values["FlavSel_price"], tax: (roamingSettings.values["FlavSel_price"] * .0636) }, { product_id: roamingSettings.values["Boost1_vend"], quantity: 1, price: roamingSettings.values["Boost1_price"], tax: (roamingSettings.values["Boost1_price"] * .0636) }, { product_id: roamingSettings.values["Boost2_vend"], quantity: 1, price: roamingSettings.values["Boost2_price"], tax: (roamingSettings.values["Boost2_price"] * .0636) }, { product_id: roamingSettings.values["Boost3_vend"], quantity: 1, price: roamingSettings.values["Boost3_price"], tax: (roamingSettings.values["Boost3_price"] * .0636) }, { product_id: roamingSettings.values["Boost4_vend"], quantity: 1, price: roamingSettings.values["Boost4_price"], tax: (roamingSettings.values["Boost4_price"] * .0636) }, { product_id: roamingSettings.values["Boost5_vend"], quantity: 1, price: roamingSettings.values["Boost5_price"], tax: (roamingSettings.values["Boost5_price"] * .0636) });
+//6 boost
+                } else if (roamingSettings.values["Boost6_price"] > 0 && roamingSettings.values["Boost7_price"] <= 0) {
+                    age_data.model.continue_order_save.push({
+                        product_id: roamingSettings.values["Base_vend"], quantity: 1, price: roamingSettings.values["Base_price"], tax: (roamingSettings.values["Base_price"] * .0636)
+                    }, { product_id: roamingSettings.values["FlavSel_vend"], quantity: 1, price: roamingSettings.values["FlavSel_price"], tax: (roamingSettings.values["FlavSel_price"] * .0636) }, { product_id: roamingSettings.values["Boost1_vend"], quantity: 1, price: roamingSettings.values["Boost1_price"], tax: (roamingSettings.values["Boost1_price"] * .0636) }, { product_id: roamingSettings.values["Boost2_vend"], quantity: 1, price: roamingSettings.values["Boost2_price"], tax: (roamingSettings.values["Boost2_price"] * .0636) }, { product_id: roamingSettings.values["Boost3_vend"], quantity: 1, price: roamingSettings.values["Boost3_price"], tax: (roamingSettings.values["Boost3_price"] * .0636) }, { product_id: roamingSettings.values["Boost4_vend"], quantity: 1, price: roamingSettings.values["Boost4_price"], tax: (roamingSettings.values["Boost4_price"] * .0636) }, { product_id: roamingSettings.values["Boost5_vend"], quantity: 1, price: roamingSettings.values["Boost5_price"], tax: (roamingSettings.values["Boost5_price"] * .0636) }, { product_id: roamingSettings.values["Boost6_vend"], quantity: 1, price: roamingSettings.values["Boost6_price"], tax: (roamingSettings.values["Boost6_price"] * .0636) });
+//7 boost
+                } else if (roamingSettings.values["Boost7_price"] > 0 && roamingSettings.values["Boost8_price"] <= 0) {
+                    age_data.model.continue_order_save.push({
+                        product_id: roamingSettings.values["Base_vend"], quantity: 1, price: roamingSettings.values["Base_price"], tax: (roamingSettings.values["Base_price"] * .0636)
+                    }, { product_id: roamingSettings.values["FlavSel_vend"], quantity: 1, price: roamingSettings.values["FlavSel_price"], tax: (roamingSettings.values["FlavSel_price"] * .0636) }, { product_id: roamingSettings.values["Boost1_vend"], quantity: 1, price: roamingSettings.values["Boost1_price"], tax: (roamingSettings.values["Boost1_price"] * .0636) }, { product_id: roamingSettings.values["Boost2_vend"], quantity: 1, price: roamingSettings.values["Boost2_price"], tax: (roamingSettings.values["Boost2_price"] * .0636) }, { product_id: roamingSettings.values["Boost3_vend"], quantity: 1, price: roamingSettings.values["Boost3_price"], tax: (roamingSettings.values["Boost3_price"] * .0636) }, { product_id: roamingSettings.values["Boost4_vend"], quantity: 1, price: roamingSettings.values["Boost4_price"], tax: (roamingSettings.values["Boost4_price"] * .0636) }, { product_id: roamingSettings.values["Boost5_vend"], quantity: 1, price: roamingSettings.values["Boost5_price"], tax: (roamingSettings.values["Boost5_price"] * .0636) }, { product_id: roamingSettings.values["Boost6_vend"], quantity: 1, price: roamingSettings.values["Boost6_price"], tax: (roamingSettings.values["Boost6_price"] * .0636) }, { product_id: roamingSettings.values["Boost7_vend"], quantity: 1, price: roamingSettings.values["Boost7_price"], tax: (roamingSettings.values["Boost7_price"] * .0636) });
+//8 boost
+                } else if (roamingSettings.values["Boost8_price"] > 0) {
+                    age_data.model.continue_order_save.push({
+                        product_id: roamingSettings.values["Base_vend"], quantity: 1, price: roamingSettings.values["Base_price"], tax: (roamingSettings.values["Base_price"] * .0636)
+                    }, { product_id: roamingSettings.values["FlavSel_vend"], quantity: 1, price: roamingSettings.values["FlavSel_price"], tax: (roamingSettings.values["FlavSel_price"] * .0636) }, { product_id: roamingSettings.values["Boost1_vend"], quantity: 1, price: roamingSettings.values["Boost1_price"], tax: (roamingSettings.values["Boost1_price"] * .0636) }, { product_id: roamingSettings.values["Boost2_vend"], quantity: 1, price: roamingSettings.values["Boost2_price"], tax: (roamingSettings.values["Boost2_price"] * .0636) }, { product_id: roamingSettings.values["Boost3_vend"], quantity: 1, price: roamingSettings.values["Boost3_price"], tax: (roamingSettings.values["Boost3_price"] * .0636) }, { product_id: roamingSettings.values["Boost4_vend"], quantity: 1, price: roamingSettings.values["Boost4_price"], tax: (roamingSettings.values["Boost4_price"] * .0636) }, { product_id: roamingSettings.values["Boost5_vend"], quantity: 1, price: roamingSettings.values["Boost5_price"], tax: (roamingSettings.values["Boost5_price"] * .0636) }, { product_id: roamingSettings.values["Boost6_vend"], quantity: 1, price: roamingSettings.values["Boost6_price"], tax: (roamingSettings.values["Boost6_price"] * .0636) }, { product_id: roamingSettings.values["Boost7_vend"], quantity: 1, price: roamingSettings.values["Boost7_price"], tax: (roamingSettings.values["Boost7_price"] * .0636) }, { product_id: roamingSettings.values["Boost8_vend"], quantity: 1, price: roamingSettings.values["Boost8_price"], tax: (roamingSettings.values["Boost8_price"] * .0636) });
+//1 boost
                 } else {
                     age_data.model.continue_order_save.push({
                         product_id: roamingSettings.values["Base_vend"], quantity: 1, price: roamingSettings.values["Base_price"], tax: (roamingSettings.values["Base_price"] * .0636)
                     }, { product_id: roamingSettings.values["FlavSel_vend"], quantity: 1, price: roamingSettings.values["FlavSel_price"], tax: (roamingSettings.values["FlavSel_price"] * .0636) }, { product_id: roamingSettings.values["Boost1_vend"], quantity: 1, price: roamingSettings.values["Boost1_price"], tax: (roamingSettings.values["Boost1_price"] * .0636) });
-
                 }
+
                 var test_array = Array();
                 var array_t = Array();
                 var i = 0;
@@ -183,8 +210,6 @@
                     roamingSettings.values["the_complete_total"] = 0;
                     roamingSettings.values["theComplete"] = document.getElementById("total").textContent;
 
-
-
                     Age.insert({//Nothing is being sent to the database yet
                         Name: "Guest",
                         Base: roamingSettings.values["Base_name"],
@@ -205,6 +230,32 @@
                         Boost3Image: roamingSettings.values["Boost3_pic"],
                         Boost3ID: roamingSettings.values["Boost3_vend"],
                         Boost3Price: roamingSettings.values["Boost3_price"],
+
+                        Boost4: roamingSettings.values["Boost4_name"],
+                        Boost4Image: roamingSettings.values["Boost4_pic"],
+                        Boost4ID: roamingSettings.values["Boost4_vend"],
+                        Boost4Price: roamingSettings.values["Boost4_price"],
+
+                        Boost5: roamingSettings.values["Boost5_name"],
+                        Boost5Image: roamingSettings.values["Boost5_pic"],
+                        Boost5ID: roamingSettings.values["Boost5_vend"],
+                        Boost5Price: roamingSettings.values["Boost5_price"],
+
+                        Boost6: roamingSettings.values["Boost6_name"],
+                        Boost6Image: roamingSettings.values["Boost6_pic"],
+                        Boost6ID: roamingSettings.values["Boost6_vend"],
+                        Boost6Price: roamingSettings.values["Boost6_price"],
+
+                        Boost7: roamingSettings.values["Boost7_name"],
+                        Boost7Image: roamingSettings.values["Boost7_pic"],
+                        Boost7ID: roamingSettings.values["Boost7_vend"],
+                        Boost7Price: roamingSettings.values["Boost7_price"],
+
+                        Boost8: roamingSettings.values["Boost8_name"],
+                        Boost8Image: roamingSettings.values["Boost8_pic"],
+                        Boost8ID: roamingSettings.values["Boost8_vend"],
+                        Boost8Price: roamingSettings.values["Boost8_price"],
+
                         FlavName: roamingSettings.values["FlavSel_name"],
                         FlavImage: roamingSettings.values["FlavSel_pic"],
                         FlavID: roamingSettings.values["FlavSel_vend"],
@@ -220,7 +271,6 @@
                     }), function (err) {
                         console.log(err);
                     }
-
 
 
                 }, function error(err) {
@@ -239,23 +289,49 @@
             })
         },//ends clicked name space
         the_continue: function () {
-            if (roamingSettings.values["Boost2_price"] > 0 && roamingSettings.values["Boost3_price"] <= 0) {
 
-                age_data.model.continue_order_save.push({
-                    product_id: roamingSettings.values["Base_vend"], quantity: 1, price: roamingSettings.values["Base_price"], tax: (roamingSettings.values["Base_price"] * .0636)
-                }, { product_id: roamingSettings.values["FlavSel_vend"], quantity: 1, price: roamingSettings.values["FlavSel_price"], tax: (roamingSettings.values["FlavSel_price"] * .0636) }, { product_id: roamingSettings.values["Boost1_vend"], quantity: 1, price: roamingSettings.values["Boost1_price"], tax: (roamingSettings.values["Boost1_price"] * .0636) }, { product_id: roamingSettings.values["Boost2_vend"], quantity: 1, price: roamingSettings.values["Boost2_price"], tax: (roamingSettings.values["Boost2_price"] * .0636) });
+//2 boosts
+                if (roamingSettings.values["Boost2_price"] > 0 && roamingSettings.values["Boost3_price"] <= 0) {
+                    age_data.model.continue_order_save.push({
+                        product_id: roamingSettings.values["Base_vend"], quantity: 1, price: roamingSettings.values["Base_price"], tax: (roamingSettings.values["Base_price"] * .0636)
+                    }, { product_id: roamingSettings.values["FlavSel_vend"], quantity: 1, price: roamingSettings.values["FlavSel_price"], tax: (roamingSettings.values["FlavSel_price"] * .0636) }, { product_id: roamingSettings.values["Boost1_vend"], quantity: 1, price: roamingSettings.values["Boost1_price"], tax: (roamingSettings.values["Boost1_price"] * .0636) }, { product_id: roamingSettings.values["Boost2_vend"], quantity: 1, price: roamingSettings.values["Boost2_price"], tax: (roamingSettings.values["Boost2_price"] * .0636) });
+//3 boosts
+                } else if (roamingSettings.values["Boost3_price"] > 0 && roamingSettings.values["Boost4_price"] <= 0) {
+                    age_data.model.continue_order_save.push({
+                        product_id: roamingSettings.values["Base_vend"], quantity: 1, price: roamingSettings.values["Base_price"], tax: (roamingSettings.values["Base_price"] * .0636)
+                    }, { product_id: roamingSettings.values["FlavSel_vend"], quantity: 1, price: roamingSettings.values["FlavSel_price"], tax: (roamingSettings.values["FlavSel_price"] * .0636) }, { product_id: roamingSettings.values["Boost1_vend"], quantity: 1, price: roamingSettings.values["Boost1_price"], tax: (roamingSettings.values["Boost1_price"] * .0636) }, { product_id: roamingSettings.values["Boost2_vend"], quantity: 1, price: roamingSettings.values["Boost2_price"], tax: (roamingSettings.values["Boost2_price"] * .0636) }, { product_id: roamingSettings.values["Boost3_vend"], quantity: 1, price: roamingSettings.values["Boost3_price"], tax: (roamingSettings.values["Boost3_price"] * .0636) });
+//4 boosts
+                } else if (roamingSettings.values["Boost4_price"] > 0 && roamingSettings.values["Boost5_price"] <= 0) {
+                    age_data.model.continue_order_save.push({
+                        product_id: roamingSettings.values["Base_vend"], quantity: 1, price: roamingSettings.values["Base_price"], tax: (roamingSettings.values["Base_price"] * .0636)
+                    }, { product_id: roamingSettings.values["FlavSel_vend"], quantity: 1, price: roamingSettings.values["FlavSel_price"], tax: (roamingSettings.values["FlavSel_price"] * .0636) }, { product_id: roamingSettings.values["Boost1_vend"], quantity: 1, price: roamingSettings.values["Boost1_price"], tax: (roamingSettings.values["Boost1_price"] * .0636) }, { product_id: roamingSettings.values["Boost2_vend"], quantity: 1, price: roamingSettings.values["Boost2_price"], tax: (roamingSettings.values["Boost2_price"] * .0636) }, { product_id: roamingSettings.values["Boost3_vend"], quantity: 1, price: roamingSettings.values["Boost3_price"], tax: (roamingSettings.values["Boost3_price"] * .0636) }, { product_id: roamingSettings.values["Boost4_vend"], quantity: 1, price: roamingSettings.values["Boost4_price"], tax: (roamingSettings.values["Boost4_price"] * .0636) });
+//5 boost
+                } else if (roamingSettings.values["Boost5_price"] > 0 && roamingSettings.values["Boost6_price"] <= 0) {
+                    age_data.model.continue_order_save.push({
+                        product_id: roamingSettings.values["Base_vend"], quantity: 1, price: roamingSettings.values["Base_price"], tax: (roamingSettings.values["Base_price"] * .0636)
+                    }, { product_id: roamingSettings.values["FlavSel_vend"], quantity: 1, price: roamingSettings.values["FlavSel_price"], tax: (roamingSettings.values["FlavSel_price"] * .0636) }, { product_id: roamingSettings.values["Boost1_vend"], quantity: 1, price: roamingSettings.values["Boost1_price"], tax: (roamingSettings.values["Boost1_price"] * .0636) }, { product_id: roamingSettings.values["Boost2_vend"], quantity: 1, price: roamingSettings.values["Boost2_price"], tax: (roamingSettings.values["Boost2_price"] * .0636) }, { product_id: roamingSettings.values["Boost3_vend"], quantity: 1, price: roamingSettings.values["Boost3_price"], tax: (roamingSettings.values["Boost3_price"] * .0636) }, { product_id: roamingSettings.values["Boost4_vend"], quantity: 1, price: roamingSettings.values["Boost4_price"], tax: (roamingSettings.values["Boost4_price"] * .0636) }, { product_id: roamingSettings.values["Boost5_vend"], quantity: 1, price: roamingSettings.values["Boost5_price"], tax: (roamingSettings.values["Boost5_price"] * .0636) });
+//6 boost
+                } else if (roamingSettings.values["Boost6_price"] > 0 && roamingSettings.values["Boost7_price"] <= 0) {
+                    age_data.model.continue_order_save.push({
+                        product_id: roamingSettings.values["Base_vend"], quantity: 1, price: roamingSettings.values["Base_price"], tax: (roamingSettings.values["Base_price"] * .0636)
+                    }, { product_id: roamingSettings.values["FlavSel_vend"], quantity: 1, price: roamingSettings.values["FlavSel_price"], tax: (roamingSettings.values["FlavSel_price"] * .0636) }, { product_id: roamingSettings.values["Boost1_vend"], quantity: 1, price: roamingSettings.values["Boost1_price"], tax: (roamingSettings.values["Boost1_price"] * .0636) }, { product_id: roamingSettings.values["Boost2_vend"], quantity: 1, price: roamingSettings.values["Boost2_price"], tax: (roamingSettings.values["Boost2_price"] * .0636) }, { product_id: roamingSettings.values["Boost3_vend"], quantity: 1, price: roamingSettings.values["Boost3_price"], tax: (roamingSettings.values["Boost3_price"] * .0636) }, { product_id: roamingSettings.values["Boost4_vend"], quantity: 1, price: roamingSettings.values["Boost4_price"], tax: (roamingSettings.values["Boost4_price"] * .0636) }, { product_id: roamingSettings.values["Boost5_vend"], quantity: 1, price: roamingSettings.values["Boost5_price"], tax: (roamingSettings.values["Boost5_price"] * .0636) }, { product_id: roamingSettings.values["Boost6_vend"], quantity: 1, price: roamingSettings.values["Boost6_price"], tax: (roamingSettings.values["Boost6_price"] * .0636) });
+//7 boost
+                } else if (roamingSettings.values["Boost7_price"] > 0 && roamingSettings.values["Boost8_price"] <= 0) {
+                    age_data.model.continue_order_save.push({
+                        product_id: roamingSettings.values["Base_vend"], quantity: 1, price: roamingSettings.values["Base_price"], tax: (roamingSettings.values["Base_price"] * .0636)
+                    }, { product_id: roamingSettings.values["FlavSel_vend"], quantity: 1, price: roamingSettings.values["FlavSel_price"], tax: (roamingSettings.values["FlavSel_price"] * .0636) }, { product_id: roamingSettings.values["Boost1_vend"], quantity: 1, price: roamingSettings.values["Boost1_price"], tax: (roamingSettings.values["Boost1_price"] * .0636) }, { product_id: roamingSettings.values["Boost2_vend"], quantity: 1, price: roamingSettings.values["Boost2_price"], tax: (roamingSettings.values["Boost2_price"] * .0636) }, { product_id: roamingSettings.values["Boost3_vend"], quantity: 1, price: roamingSettings.values["Boost3_price"], tax: (roamingSettings.values["Boost3_price"] * .0636) }, { product_id: roamingSettings.values["Boost4_vend"], quantity: 1, price: roamingSettings.values["Boost4_price"], tax: (roamingSettings.values["Boost4_price"] * .0636) }, { product_id: roamingSettings.values["Boost5_vend"], quantity: 1, price: roamingSettings.values["Boost5_price"], tax: (roamingSettings.values["Boost5_price"] * .0636) }, { product_id: roamingSettings.values["Boost6_vend"], quantity: 1, price: roamingSettings.values["Boost6_price"], tax: (roamingSettings.values["Boost6_price"] * .0636) }, { product_id: roamingSettings.values["Boost7_vend"], quantity: 1, price: roamingSettings.values["Boost7_price"], tax: (roamingSettings.values["Boost7_price"] * .0636) });
+//8 boost
+                } else if (roamingSettings.values["Boost8_price"] > 0) {
+                    age_data.model.continue_order_save.push({
+                        product_id: roamingSettings.values["Base_vend"], quantity: 1, price: roamingSettings.values["Base_price"], tax: (roamingSettings.values["Base_price"] * .0636)
+                    }, { product_id: roamingSettings.values["FlavSel_vend"], quantity: 1, price: roamingSettings.values["FlavSel_price"], tax: (roamingSettings.values["FlavSel_price"] * .0636) }, { product_id: roamingSettings.values["Boost1_vend"], quantity: 1, price: roamingSettings.values["Boost1_price"], tax: (roamingSettings.values["Boost1_price"] * .0636) }, { product_id: roamingSettings.values["Boost2_vend"], quantity: 1, price: roamingSettings.values["Boost2_price"], tax: (roamingSettings.values["Boost2_price"] * .0636) }, { product_id: roamingSettings.values["Boost3_vend"], quantity: 1, price: roamingSettings.values["Boost3_price"], tax: (roamingSettings.values["Boost3_price"] * .0636) }, { product_id: roamingSettings.values["Boost4_vend"], quantity: 1, price: roamingSettings.values["Boost4_price"], tax: (roamingSettings.values["Boost4_price"] * .0636) }, { product_id: roamingSettings.values["Boost5_vend"], quantity: 1, price: roamingSettings.values["Boost5_price"], tax: (roamingSettings.values["Boost5_price"] * .0636) }, { product_id: roamingSettings.values["Boost6_vend"], quantity: 1, price: roamingSettings.values["Boost6_price"], tax: (roamingSettings.values["Boost6_price"] * .0636) }, { product_id: roamingSettings.values["Boost7_vend"], quantity: 1, price: roamingSettings.values["Boost7_price"], tax: (roamingSettings.values["Boost7_price"] * .0636) }, { product_id: roamingSettings.values["Boost8_vend"], quantity: 1, price: roamingSettings.values["Boost8_price"], tax: (roamingSettings.values["Boost8_price"] * .0636) });
+//1 boost
+                } else {
+                    age_data.model.continue_order_save.push({
+                        product_id: roamingSettings.values["Base_vend"], quantity: 1, price: roamingSettings.values["Base_price"], tax: (roamingSettings.values["Base_price"] * .0636)
+                    }, { product_id: roamingSettings.values["FlavSel_vend"], quantity: 1, price: roamingSettings.values["FlavSel_price"], tax: (roamingSettings.values["FlavSel_price"] * .0636) }, { product_id: roamingSettings.values["Boost1_vend"], quantity: 1, price: roamingSettings.values["Boost1_price"], tax: (roamingSettings.values["Boost1_price"] * .0636) });
+                }
 
-            } else if (roamingSettings.values["Boost3_price"] > 0 && roamingSettings.values["Boost2_price"] > 0) {
-                age_data.model.continue_order_save.push({
-                    product_id: roamingSettings.values["Base_vend"], quantity: 1, price: roamingSettings.values["Base_price"], tax: (roamingSettings.values["Base_price"] * .0636)
-                }, { product_id: roamingSettings.values["FlavSel_vend"], quantity: 1, price: roamingSettings.values["FlavSel_price"], tax: (roamingSettings.values["FlavSel_price"] * .0636) }, { product_id: roamingSettings.values["Boost1_vend"], quantity: 1, price: roamingSettings.values["Boost1_price"], tax: (roamingSettings.values["Boost1_price"] * .0636) }, { product_id: roamingSettings.values["Boost2_vend"], quantity: 1, price: roamingSettings.values["Boost2_price"], tax: (roamingSettings.values["Boost2_price"] * .0636) }, { product_id: roamingSettings.values["Boost3_vend"], quantity: 1, price: roamingSettings.values["Boost3_price"], tax: (roamingSettings.values["Boost3_price"] * .0636) });
-
-            } else {
-                age_data.model.continue_order_save.push({
-                    product_id: roamingSettings.values["Base_vend"], quantity: 1, price: roamingSettings.values["Base_price"], tax: (roamingSettings.values["Base_price"] * .0636)
-                }, { product_id: roamingSettings.values["FlavSel_vend"], quantity: 1, price: roamingSettings.values["FlavSel_price"], tax: (roamingSettings.values["FlavSel_price"] * .0636) }, { product_id: roamingSettings.values["Boost1_vend"], quantity: 1, price: roamingSettings.values["Boost1_price"], tax: (roamingSettings.values["Boost1_price"] * .0636) });
-
-            }
             roamingSettings.values["not_cont"] = true;
             console.log(roamingSettings.values["Base_vend"] + ' ' + roamingSettings.values["Boost1_vend"]);
             roamingSettings.values["went_back"] = true;
@@ -265,7 +341,6 @@
         grayOut: function () {
             document.getElementById("sub_button").style.opacity = (.2);
         }
-
 
     })
 })();
