@@ -18,19 +18,34 @@
             design.changeTextColor();
             document.getElementById("home").removeAttribute("hidden");
             var id_sel = roamingSettings.values["Id_sel_func"];
-            document.getElementById("choosen_age3").textContent = "Select Your " + "Protein For " + roamingSettings.values["Func_name"] + ".";
 
-            //milo: footer history 
+            //milo: footer history & H1
+            if (roamingSettings.values["Cat_picked"] === "Fitness & Exercise") {
+                document.getElementById("age_pic").textContent = roamingSettings.values["Cat_picked_img"];
+                document.getElementById("choosen_age3").textContent = "Select Your Age For " + roamingSettings.values["Func_name"] + ".";
+            }
+
+            //milo: footer history & H1
             if (roamingSettings.values["Cat_picked"] === "Energy") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
             }
-            //milo: footer history 
+
+            //milo: footer history & H1
+            if (roamingSettings.values["Cat_picked"] === "Energy") {
+                document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
+            }
+
+            //milo: footer history & H1
             if (roamingSettings.values["Cat_picked"] === "Protein") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
+                document.getElementById("choosen_age3").textContent = "Select Your " + "Protein For " + roamingSettings.values["Func_name"] + ".";
             }
-            if (roamingSettings.values["Cat_picked"] === "Specific Sports") {
+
+            //milo: footer history & H1
+            if (roamingSettings.values["Cat_picked"] === "Competitive Sports") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img4"];
             }
+
             //milo: footer history 
             document.getElementById("age_p").textContent = roamingSettings.values["Cat_picked"];
             document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];

@@ -48,7 +48,7 @@
                 document.getElementById("nutrigenetics_price_div").removeAttribute("hidden");
             }
 
-            if (the_sel_age === "Specific Sports") {
+            if (the_sel_age === "Competitive Sports") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img4"];
             }
             //gather the infomation from the database and displays it on the sreen
