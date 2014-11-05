@@ -86,7 +86,7 @@
             roamingSettings.values["Nutrigenetics_name"] = "",
             roamingSettings.values["Nutrigenetics_pic"] = "",
             roamingSettings.values["Nutrigenetics_price"] = "",
-            roamingSettings.values["New_route"] = ""
+            //roamingSettings.values["New_route"] = ""
 
 
             remove.pop_list(age_data.model.info_page2);
@@ -160,14 +160,13 @@
             roamingSettings.values["Cat_picked_img4"] = document.getElementById("make_sport_drink_img").src;
         },
 
-        next_page_func: function () {
-            WinJS.Navigation.navigate('pages/func/func.html');
-            var appData = Windows.Storage.ApplicationData.current;
-            var roamingSettings = appData.roamingSettings;
-            roamingSettings.values["Cat_picked"] = cat_picked;
-            roamingSettings.values["Cat_picked_img"] = document.getElementById("make_drink_img").src;
-        },
-
+        //next_page_func: function () {
+        //    WinJS.Navigation.navigate('pages/func/func.html');
+        //    var appData = Windows.Storage.ApplicationData.current;
+        //    var roamingSettings = appData.roamingSettings;
+        //    roamingSettings.values["Cat_picked"] = cat_picked;
+        //    roamingSettings.values["Cat_picked_img"] = document.getElementById("make_drink_img").src;
+        //},
 
         clicked2: function () {
             roamingSettings.values["Clicked_cat"] = document.getElementById("learn_more_title").textContent;

@@ -22,12 +22,7 @@
             //milo: footer history & H1
             if (roamingSettings.values["Cat_picked"] === "Fitness & Exercise") {
                 document.getElementById("age_pic").textContent = roamingSettings.values["Cat_picked_img"];
-                document.getElementById("choosen_age3").textContent = "Select Your Age For " + roamingSettings.values["Func_name"] + ".";
-            }
-
-            //milo: footer history & H1
-            if (roamingSettings.values["Cat_picked"] === "Energy") {
-                document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
+                document.getElementById("choosen_age3").textContent = "Select Your Age For " + roamingSettings.values["Age_name"] + ".";
             }
 
             //milo: footer history & H1

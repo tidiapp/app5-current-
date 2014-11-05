@@ -20,15 +20,10 @@
             //milo
             var id_sel = roamingSettings.values["Id_sel_age"];
             var cat_selected = roamingSettings.values["Cat_picked"];
-            var new_route = roamingSettings.values["New_route"];
+            //var new_route = roamingSettings.values["New_route"];
 
             //console.log("Func page picked id READY() = " + roamingSettings.values["Id_sel_age"]);
             document.getElementById("home").removeAttribute("hidden");
-
-                //milo: footer history & H1
-                if (roamingSettings.values["Cat_picked"] === "Fitness & Exercise") {
-                    document.getElementById("choosen_age2").textContent = "Select Your " + roamingSettings.values["Cat_picked"] + " Goal.";
-                }
 
                 //milo: footer history & H1
                 if (roamingSettings.values["Cat_picked"] === "Energy") {
@@ -53,7 +48,7 @@
                 document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];
                 document.getElementById("where_you_are1").textContent = "You have choosen the " + roamingSettings.values["Age_name"] + " Goal." + " You have 3 steps left.";
 
-                server.func(id_sel, cat_selected, new_route);
+                server.func(id_sel, cat_selected);
 
         },
 
@@ -84,21 +79,20 @@
         },
 
         next_page_flavor: function () {
-            if (func3 === "Recovery") {
-                WinJS.Navigation.navigate('pages/func/func.html');
-                roamingSettings.values["New_route"] = func3;
-
-            } else {
-            keepInfo = false;
-            WinJS.Navigation.navigate('pages/base/base.html')
-            roamingSettings.values["Func_name"] = func3;
-            roamingSettings.values["Func_pic"] = document.getElementById("choosen_func_carry").src;
-            roamingSettings.values["Func_info"] = document.getElementById("sel_func_info").textContent;
-            roamingSettings.values["Func_price"] = document.getElementById("func_price").textContent;
-            roamingSettings.values["Func_label"] = document.getElementById("sel_func_pic").src;
-            roamingSettings.values["Id_sel_func"] = document.getElementById("id_sel2").textContent;
-            console.log("Func page picked id = " + roamingSettings.values["Id_sel_func"]);
-        }
+            //if (func3 === "Recovery") {
+            //    WinJS.Navigation.navigate('pages/func/func.html');
+            //    roamingSettings.values["New_route"] = func3;
+            //} else {
+                keepInfo = false;
+                WinJS.Navigation.navigate('pages/base/base.html')
+                roamingSettings.values["Func_name"] = func3;
+                roamingSettings.values["Func_pic"] = document.getElementById("choosen_func_carry").src;
+                roamingSettings.values["Func_info"] = document.getElementById("sel_func_info").textContent;
+                roamingSettings.values["Func_price"] = document.getElementById("func_price").textContent;
+                roamingSettings.values["Func_label"] = document.getElementById("sel_func_pic").src;
+                roamingSettings.values["Id_sel_func"] = document.getElementById("id_sel2").textContent;
+                console.log("Func page picked id = " + roamingSettings.values["Id_sel_func"]);
+            //}
         },
 
         more_info: function (clicked) {
