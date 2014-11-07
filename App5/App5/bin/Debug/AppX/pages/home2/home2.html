@@ -21,45 +21,45 @@
 <body>
     <!-- The content that will be loaded and displayed. -->
     <div class="fragment homepage">
-        <header id="home_header" aria-label="Header content" role="banner">
+        <header id="home_header22" aria-label="Header content" role="banner">
             <!--<h1 id="header_me" class="titlearea win-type-ellipsis"></h1>-->
             <button data-win-control="WinJS.UI.BackButton"></button> 
-            <h1 id="choosen_age" class="titlearea win-type-ellipsis"></h1>
-            <p hidden="" id="thewordsforcurrentprice">You Current Total is: $<span hidden="" id="youcurrentprice"></span></p>
+            <h1 id="choosen_age22" class="titlearea win-type-ellipsis"></h1>
+            <p hidden="" id="thewordsforcurrentprice22">You Current Total is: $<span hidden="" id="youcurrentprice22"></span></p>
         </header>
-        <section id="home_content" aria-label="Main content" role="main">
-            <div id="age_template_placement_winlistview">
-                <div class="users_age_template" data-win-control="WinJS.Binding.Template">
+        <section id="home_content22" aria-label="Main content" role="main">
+            <div id="age_template_placement_winlistview22">
+                <div class="home2_template" data-win-control="WinJS.Binding.Template">
                     <div onclick="clicked_me.clicked(event.srcElement.innerText);" id="age_display22">
                         <img class="age_bg" data-win-bind="src: img" />
-                        <h2 id="user_age" data-win-bind="textContent: func_home2"></h2>
+                        <h2 id="user_age22" data-win-bind="textContent: home2"></h2>
 
 
                     </div>
                 </div><!-- ends user_age_template -->
 
-                <div id="age_template_placement" data-win-control="WinJS.UI.ListView" data-win-bind="winControl.itemDataSource: func_home2.dataSource" data-win-options="{
-                    itemTemplate: select ('.users_age_template'),
+                <div id="age_template_placement22" data-win-control="WinJS.UI.ListView" data-win-bind="winControl.itemDataSource: func_home2.dataSource" data-win-options="{
+                    itemTemplate: select ('.home2_template'),
                     selectionMode: 'none'
                 }"></div><!-- this div is populating the div above (user_age_template) -->
             </div>
 
             <div id="info_template_placement_winlistview">
-                <div id="age_info_template" data-win-control="WinJS.Binding.Template">
+                <div id="home2_template" data-win-control="WinJS.Binding.Template">
                     <!--<div id="nutrigenetics_price_div">
                         <span>$</span>
                         <span id="nutrigenetics_price" data-win-bind="textContent: the_price"></span>
                     </div>-->
-                    <img id="sel_age_pic" class="info_pic" data-win-bind="src: the_pic" />
-                    <button id="info_btn" name="sel_btn" onclick="clicked_me.more_info(document.getElementById('sel_age_name').textContent)" type="submit">Learn More</button>
-                    <button onclick="clicked_me.next_page()" id="sel_btn" name="sel_btn" type="submit">Choose This Category</button>
-                    <h2 id="sel_age_name" class="sel_age_name_class" data-win-bind="textContent: the_name"></h2>
-                    <p id="info_text" data-win-bind="textContent: the_info"></p>
-                    <span hidden="" id="id_sel" data-win-bind="textContent: id_sel"></span>
+                    <img id="sel_age_pic22" class="info_pic" data-win-bind="src: info_img" />
+                    <button id="info_btn22" name="sel_btn" onclick="clicked_me.more_info(document.getElementById('sel_age_name22').textContent)" type="submit">Learn More</button>
+                    <button onclick="clicked_me.next_page()" id="sel_btn22" name="sel_btn" type="submit">Choose This Category</button>
+                    <h2 id="sel_age_name22" class="sel_age_name_class" data-win-bind="textContent: info_name"></h2>
+                    <p id="info_text22" data-win-bind="textContent: the_info"></p>
+                    <span hidden="" id="id_sel22" data-win-bind="textContent: id_sel"></span>
                 </div>
 
-                <div id="info_template_placement" data-win-control="WinJS.UI.ListView" data-win-bind="winControl.itemDataSource: info_page2_func_home2.dataSource" data-win-options="{
-                itemTemplate: select ('#age_info_template'),
+                <div id="info_template_placement22" data-win-control="WinJS.UI.ListView" data-win-bind="winControl.itemDataSource: info_page2_func_home2.dataSource" data-win-options="{
+                itemTemplate: select ('#home2_template'),
                 selectionMode: 'none'
                 }"></div>
             </div>        
@@ -67,11 +67,11 @@
 
         <footer id="main_footer">
             <!--Milo: age_ is really coming from launch_page -->
-            <div id="age_div" class="history_div" onclick="WinJS.Navigation.back(1)">
-                <p id="age_p" class="history_p"></p>
-                <img id="age_pic" class="history_pic" alt="This is a test" src="#" width="115" height="90" />
+            <div id="age_div22" class="history_div" onclick="WinJS.Navigation.back(1)">
+                <p id="age_p22" class="history_p"></p>
+                <img id="age_pic22" class="history_pic" alt="This is a test" src="#" width="115" height="90" />
             </div>
-            <h2 id="where_you_are"></h2>
+            <h2 id="where_you_are22"></h2>
             <!--<h1 id="footer_company_name" class="print_charm"></h1>--><!-- this is being styled in the default.js folder -->
         </footer>
     </div>

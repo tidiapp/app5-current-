@@ -35,9 +35,6 @@
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\home2\home2.css">
       <PackagePath>pages\home2\home2.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\home_subcat\home_subcat.css">
-      <PackagePath>pages\home_subcat\home_subcat.css</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.css">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.css</PackagePath>
     </AppxPackagedFile>
@@ -221,9 +218,6 @@
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\home2\home2.js">
       <PackagePath>pages\home2\home2.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\home_subcat\home_subcat.js">
-      <PackagePath>pages\home_subcat\home_subcat.js</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\info_home\info_home.js">
       <PackagePath>pages\info_home\info_home.js</PackagePath>
     </AppxPackagedFile>
@@ -331,9 +325,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\home2\home2.html">
       <PackagePath>pages\home2\home2.html</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\home_subcat\home_subcat.html">
-      <PackagePath>pages\home_subcat\home_subcat.html</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.html">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.html</PackagePath>

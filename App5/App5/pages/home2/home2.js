@@ -15,21 +15,21 @@
             design.changeTextColor();
             //console.log("Age page picked id READY() = " + roamingSettings.values["Id_sel_age"]);
             if (roamingSettings.values["not_cont"]) {
-                document.getElementById("youcurrentprice").textContent = roamingSettings.values["the_complete_total"];
-                document.getElementById("youcurrentprice").removeAttribute('hidden');
+                document.getElementById("youcurrentprice22").textContent = roamingSettings.values["the_complete_total"];
+                document.getElementById("youcurrentprice22").removeAttribute('hidden');
                 document.getElementById("thewordsforcurrentprice22").removeAttribute("hidden");
             }
 
             //roamingSettings.values["I_ordered"] = "no";
             document.getElementById("home").removeAttribute("hidden");
-            document.getElementById("more_info_home").setAttribute("hidden", true);
-            document.getElementById("shop").setAttribute("hidden", true);
+            //document.getElementById("more_info_home").setAttribute("hidden", true);
+            //document.getElementById("shop").setAttribute("hidden", true);
 
             document.getElementById("choosen_age22").textContent = roamingSettings.values["Cat_picked"] + ".";
             var the_sel_age = roamingSettings.values["Cat_picked"];
 
-            document.getElementById("age_p").textContent = the_sel_age;
-            document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory." + " You have 4 steps left.";
+            document.getElementById("age_p22").textContent = the_sel_age;
+            document.getElementById("where_you_are22").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory." + " You have 4 steps left.";
 
             ////milo: footer history & H1
             //if (roamingSettings.values["Cat_picked"] === "Fitness & Exercise") {
@@ -39,26 +39,26 @@
             ////milo: footer history & H1
             //if (the_sel_age === "Energy") {
             //    //age_pic is really the catagory image that was picked previously
-            //    document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
+            //    document.getElementById("age_pic22").src = roamingSettings.values["Cat_picked_img"];
             //}
 
             ////milo: footer history & H1
             //if (the_sel_age === "Protein") {
-            //    document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
+            //    document.getElementById("age_pic22").src = roamingSettings.values["Cat_picked_img2"];
             //    document.getElementById("choosen_age22").innerHTML = roamingSettings.values["Cat_picked"] + ", " + " The foundation (building block) of human nutrition, health and well being.";
             //}
 
             ////milo: footer history & H1
             //if (the_sel_age === "Purchase A Nutrigenetic Test") {
-            //    document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img3"];
-            //    document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory.";
+            //    document.getElementById("age_pic22").src = roamingSettings.values["Cat_picked_img3"];
+            //    document.getElementById("where_you_are22").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory.";
             //    document.getElementById("choosen_age22").textContent = "Choose Your Test Kit";
             //    document.getElementById("nutrigenetics_price_div").removeAttribute("hidden");
             //}
 
             //milo: footer history & H1
             if (the_sel_age === "Competitive Sports") {
-                document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img4"];
+                document.getElementById("age_pic22").src = roamingSettings.values["Cat_picked_img4"];
             }
             //gather the infomation from the database and displays it on the sreen
             server.func_home2();
@@ -68,11 +68,11 @@
         unload: function () {
             // TODO: Respond to navigations away from this page.            
             //using the removeInfo.js file to delete the last object of the array as long as an item exists
-            remove.pop_list(age_data.model.age);
+            remove.pop_list(age_data.model.func_home2);
             //milo: removing keepInfo data when back button is used from func page.
             remove.pop_list(age_data.model.info_page2_func_home2);
             if (!keepInfo) {
-                remove.pop_list(age_data.model.info)
+                remove.pop_list(age_data.model.info_page2_func_home2)
             }
         },
 
@@ -111,12 +111,12 @@
             //milo: will not recall if this is missing even though these are gloabaly defined. 
             var appData = Windows.Storage.ApplicationData.current;
             var roamingSettings = appData.roamingSettings;
-            var id_sel = document.getElementById("id_sel").textContent;
+            var id_sel = document.getElementById("id_sel22").textContent;
 
             //if (roamingSettings.values["Cat_picked"] === "Purchase A Nutrigenetic Test") {
             //    WinJS.Navigation.navigate('pages/final/final.html');
             //    roamingSettings.values["Nutrigenetics_name"] = _choosen_cat;
-            //    roamingSettings.values["Nutrigenetics_pic"] = document.getElementById("sel_age_pic").src;
+            //    roamingSettings.values["Nutrigenetics_pic"] = document.getElementById("sel_age_pic22").src;
             //    roamingSettings.values["Nutrigenetics_price"] = document.getElementById("nutrigenetics_price").textContent;
             //    //roamingSettings.values["Nutrigenetics_label"] = document.getElementById("sel_base_pic").src;
 
@@ -127,7 +127,7 @@
             //    var appData = Windows.Storage.ApplicationData.current;
             //    var roamingSettings = appData.roamingSettings;
             //    roamingSettings.values["Age_name"] = _choosen_cat;
-            //    roamingSettings.values["Age_pic"] = document.getElementById("sel_age_pic").src;
+            //    roamingSettings.values["Age_pic"] = document.getElementById("sel_age_pic22").src;
             //    roamingSettings.values["Age_info"] = null;
             //    roamingSettings.values["Age_price"] = null;
             //    roamingSettings.values["Id_sel_func"] = id_sel;
@@ -139,7 +139,7 @@
                 var appData = Windows.Storage.ApplicationData.current;
                 var roamingSettings = appData.roamingSettings;
                 //roamingSettings.values["Age_name"] = _choosen_cat;
-                //roamingSettings.values["Age_pic"] = document.getElementById("sel_age_pic").src;
+                //roamingSettings.values["Age_pic"] = document.getElementById("sel_age_pic22").src;
                 //roamingSettings.values["Age_info"] = null;
                 //roamingSettings.values["Age_price"] = null;
                 roamingSettings.values["Id_sel_age"] = id_sel;

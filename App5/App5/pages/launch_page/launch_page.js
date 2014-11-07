@@ -26,7 +26,8 @@
             document.getElementById("shop").setAttribute("hidden", true);
             document.getElementById("home").setAttribute("hidden", true);
 
-
+            roamingSettings.values["Age_name"] = "",
+            roamingSettings.values["Age_pic"] = "",
             roamingSettings.values["Clicked_cat"] = "",
             roamingSettings.values["Cat_picked"] = "",
             roamingSettings.values["Cat_picked_img"] = "",
@@ -153,16 +154,47 @@
             cat_picked = updated_answer;
         },
 
+        
         next_page: function () {
-            WinJS.Navigation.navigate('pages/home/home.html');
-            var appData = Windows.Storage.ApplicationData.current;
-            var roamingSettings = appData.roamingSettings;
-            roamingSettings.values["Cat_picked"] = cat_picked;
-            roamingSettings.values["Cat_picked_img"] = document.getElementById("make_drink_img").src;
-            roamingSettings.values["Cat_picked_img2"] = document.getElementById("make_drink_img2").src;
-            roamingSettings.values["Cat_picked_img3"] = document.getElementById("nutrigenetics_img").src;
-            roamingSettings.values["Cat_picked_img4"] = document.getElementById("make_sport_drink_img").src;
+
+            if(cat_picked === "Competitive Sports"){
+                WinJS.Navigation.navigate('pages/home2/home2.html');
+                var appData = Windows.Storage.ApplicationData.current;
+                var roamingSettings = appData.roamingSettings;
+                //roamingSettings.values["Cat_picked"] = cat_picked;
+                roamingSettings.values["Cat_picked_img"] = document.getElementById("make_drink_img").src;
+                roamingSettings.values["Cat_picked_img2"] = document.getElementById("make_drink_img2").src;
+                roamingSettings.values["Cat_picked_img3"] = document.getElementById("nutrigenetics_img").src;
+                roamingSettings.values["Cat_picked_img4"] = document.getElementById("make_sport_drink_img").src;
+
+    
+            } else {
+                WinJS.Navigation.navigate('pages/home/home.html');
+                var appData = Windows.Storage.ApplicationData.current;
+                var roamingSettings = appData.roamingSettings;
+                roamingSettings.values["Cat_picked"] = cat_picked;
+                roamingSettings.values["Cat_picked_img"] = document.getElementById("make_drink_img").src;
+                roamingSettings.values["Cat_picked_img2"] = document.getElementById("make_drink_img2").src;
+                roamingSettings.values["Cat_picked_img3"] = document.getElementById("nutrigenetics_img").src;
+                roamingSettings.values["Cat_picked_img4"] = document.getElementById("make_sport_drink_img").src;
+            }
+
         },
+        //next_page_func: function () {
+        //    WinJS.Navigation.navigate('pages/func/func.html');
+        //    var appData = Windows.Storage.ApplicationData.current;
+        //    var roamingSettings = appData.roamingSettings;
+        //    roamingSettings.values["Cat_picked"] = cat_picked;
+        //    roamingSettings.values["Cat_picked_img"] = document.getElementById("make_drink_img").src;
+        //},
+
+        //next_page_home2: function () {
+        //    WinJS.Navigation.navigate('pages/home2/home2.html');
+        //    var appData = Windows.Storage.ApplicationData.current;
+        //    var roamingSettings = appData.roamingSettings;
+        //    roamingSettings.values["Cat_picked"] = cat_picked;
+        //    roamingSettings.values["Cat_picked_img"] = document.getElementById("make_drink_img").src;
+        //},
 
         clicked2: function () {
             roamingSettings.values["Clicked_cat"] = document.getElementById("learn_more_title").textContent;

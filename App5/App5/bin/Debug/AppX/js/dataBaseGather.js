@@ -81,6 +81,64 @@
                 });
             },
 
+//func_home2            
+            func_home2: function () {
+                remove.pop_list(age_data.model.func_home2);
+
+                var Age = thinkitdrinkitDataClient.getTable("Func");
+
+                    var query = Age.where({
+                        Home2: true
+                    }).orderBy("Name").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.func_home2.push({ home2: results[i].Name, img: results[i].Image })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+            },
+            func_sub_home2: function (name) {
+                var Age = thinkitdrinkitDataClient.getTable("Func");
+                remove.pop_list(age_data.model.info_page2_func_home2)
+
+                var query = Age.where({
+                    Name: name
+                }).read().done(function (results) {
+                    age_data.model.info.push({ the_info: results[0].InfoLite, info_img: results[0].Image, info_name: results[0].Name, info_price: results[0].Price, id_sel: results[0].id })
+                }, function (err) {
+                    console.log(err);
+                });
+            },
+
+////func_home2
+//            func_home2: function () {
+//                remove.pop_list(age_data.model.func_home2);
+//                var Func2 = thinkitdrinkitDataClient.getTable("Func");
+
+//                var query = Func2.where({
+//                    Home2: true
+//                }).orderBy("Order").read().done(function (results) {
+//                    for (var i = 0; i < results.length; i++) {
+//                        age_data.model.func_home2.push({ home2: results[i].Name, img: results[i].Image })
+//                    }
+//                }, function (err) {
+//                    console.log(err);
+//                });
+
+//            },
+
+//            func_sub_home2: function (name) {
+//                var Func2 = thinkitdrinkitDataClient.getTable("Func");
+
+//                var query = Func2.where({
+//                    Name: name
+//                }).read().done(function (results) {
+//                    age_data.model.info_page2_func_home2.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_price: results[0].Price, the_pic: results[0].Image, b_vend: results[0].VendID, id_sel: results[0].id })
+//                }, function (err) {
+//                    console.log(err);
+//                });
+//            },
+
 //func.html 
             //milo id_sel is coming from home.html and server.home_sub() above
             func: function (id_sel, cat_selected) {
@@ -112,35 +170,6 @@
                         console.log(err);
                     });
             },
-//func_home2
-            func_home2: function () {
-                remove.pop_list(age_data.model.func_home2);
-                var Func2 = thinkitdrinkitDataClient.getTable("Func");
-
-                var query = Func2.where({
-                    Home2: true
-                }).orderBy("Order").read().done(function (results) {
-                    for (var i = 0; i < results.length; i++) {
-                        age_data.model.func_home2.push({ func_home2: results[i].Name, img: results[i].Image })
-                    }
-                }, function (err) {
-                    console.log(err);
-                });
-                
-            },
-
-            func_sub_home2: function (name) {
-                var Func2 = thinkitdrinkitDataClient.getTable("Func");
-
-                var query = Func2.where({
-                    Name: name
-                }).read().done(function (results) {
-                    age_data.model.info_page2_func_home2.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_price: results[0].Price, the_pic: results[0].Image, b_vend: results[0].VendID, id_sel: results[0].id })
-                }, function (err) {
-                    console.log(err);
-                });
-            },
-
 
 //base.html
             base: function (id_sel) {
