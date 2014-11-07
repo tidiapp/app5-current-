@@ -3,9 +3,12 @@
 
     (function () {
         "use strict";
+        var appData = Windows.Storage.ApplicationData.current;
+        var roamingSettings = appData.roamingSettings;
 
         WinJS.Namespace.define("server", {
-//home.html
+            //home.html
+
             home: function (the_sel_age) {
                 remove.pop_list(age_data.model.age);
 
@@ -33,6 +36,16 @@
                     }, function (err) {
                         console.log(err);
                     });
+                } else if (the_sel_age === "Fitness & Exercise") {
+                    var query = Age.where({
+                        AccessR: true
+                    }).orderBy("Order").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.age.push({ age: results[i].Name, img: results[i].Image })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
                 } else if (the_sel_age === "Purchase A Nutrigenetic Test") {
                     var query = Age.where({
                         AccessNG: true
@@ -43,7 +56,7 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Specific Sports") {
+                } else if (the_sel_age === "Competitive Sports") {
                     var query = Age.where({
                         AccessS: true
                     }).orderBy("Name").read().done(function (results) {
@@ -70,12 +83,13 @@
 
 //func.html 
             //milo id_sel is coming from home.html and server.home_sub() above
-            func: function (id_sel) {
+            func: function (id_sel, cat_selected) {
                 remove.pop_list(age_data.model.func);
                 var Func = thinkitdrinkitDataClient.getTable("Func");
-                //milo: id_sel is the id that was picked by user from the db and it equals the actual id number to display the correct business logic 
-               //milo: in the if statement == 'whatever number' is the actual id from the thinkitdrinkitDataClient.Age table in azure db
-                   var query = Func.where({
+
+                    //milo: id_sel is the id that was picked by user from the db and it equals the actual id number to display the correct business logic 
+                    //milo: in the if statement == 'whatever number' is the actual id from the thinkitdrinkitDataClient.Age table in azure db
+                    var query = Func.where({
                         Age_id: id_sel
                     }).orderBy("Order").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
@@ -83,28 +97,61 @@
                         }
                     }, function (err) {
                         console.log(err);
-                    });             
+                    });
+                
                 },
 
             func_sub: function (name) {
                 var Func = thinkitdrinkitDataClient.getTable("Func");
 
+                    var query = Func.where({
+                        Name: name
+                    }).read().done(function (results) {
+                        age_data.model.info_page2_func.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_img: results[0].Label, base_price: results[0].Price, the_pic: results[0].Image, b_vend: results[0].VendID, id_sel: results[0].id })
+                    }, function (err) {
+                        console.log(err);
+                    });
+            },
+
+            func_home2: function () {
+                remove.pop_list(age_data.model.func_home2);
+                var Func = thinkitdrinkitDataClient.getTable("Func");
+
+                //milo: id_sel is the id that was picked by user from the db and it equals the actual id number to display the correct business logic 
+                //milo: in the if statement == 'whatever number' is the actual id from the thinkitdrinkitDataClient.Age table in azure db
+                var query = Func.where({
+                    Access: true
+                }).orderBy("Order").read().done(function (results) {
+                    for (var i = 0; i < results.length; i++) {
+                        age_data.model.func_home2.push({ func: results[i].Name, img: results[i].Image })
+                    }
+                }, function (err) {
+                    console.log(err);
+                });
+                
+            },
+
+            func_sub_home2: function (name) {
+                var Func = thinkitdrinkitDataClient.getTable("Func");
+
                 var query = Func.where({
                     Name: name
                 }).read().done(function (results) {
-                    age_data.model.info_page2_func.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_img: results[0].Label, base_price: results[0].Price, the_pic: results[0].Image, b_vend: results[0].VendID, id_sel: results[0].id })
+                    age_data.model.info_page2_func_home2.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_img: results[0].Label, base_price: results[0].Price, the_pic: results[0].Image, b_vend: results[0].VendID, id_sel: results[0].id })
                 }, function (err) {
                     console.log(err);
                 });
             },
+
 
 //base.html
             base: function (id_sel) {
                 var Age = thinkitdrinkitDataClient.getTable("Base");
                 //milo: id_sel == whatever #, the whatever # is the id from thinkitdrinkitDataClient.Func db in azure
 
+                if (id_sel == 25 || id_sel == 26) {
                     var query = Age.where({
-                        Func_id: id_sel
+                        Age_id: id_sel
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[i].Price })
@@ -112,6 +159,17 @@
                     }, function (err) {
                         console.log(err);
                     });
+                } else {
+                    var query = Age.where({
+                        Func_id: id_sel,
+                    }).orderBy("Name").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[i].Price })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                }
             },
             base_sub: function (name) {
                 var Age = thinkitdrinkitDataClient.getTable("Base");

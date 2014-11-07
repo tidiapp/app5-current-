@@ -88,6 +88,12 @@ pages\func\func.js
 pages\home\home.css
 pages\home\home.html
 pages\home\home.js
+pages\home_subcat\home_subcat.css
+pages\home_subcat\home_subcat.html
+pages\home_subcat\home_subcat.js
+pages\home2\home2.css
+pages\home2\home2.html
+pages\home2\home2.js
 pages\info_home\info_home.css
 pages\info_home\info_home.html
 pages\info_home\info_home.js

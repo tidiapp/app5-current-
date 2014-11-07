@@ -129,7 +129,7 @@ overError {
 }
 
 #btn_right {
-    margin-left: 560px;
+    margin-left: 430px;
     position: absolute;
     margin-top: 60px;
     width: 350px;
@@ -351,7 +351,7 @@ button, input[type=button], input[type=submit], input[type=reset], input[type=fi
     /*width: 490px;
     height: 200px;*/
     float: left;
-    margin-left: 30px;
+    margin-left: 60px;
 }
 
 #boost_selected_submit_wrap_outer {

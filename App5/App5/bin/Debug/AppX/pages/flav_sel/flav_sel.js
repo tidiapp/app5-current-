@@ -27,7 +27,7 @@
             if (roamingSettings.values["Cat_picked"] === "Protein") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
             }
-            if (roamingSettings.values["Cat_picked"] === "Specific Sports") {
+            if (roamingSettings.values["Cat_picked"] === "Competitive Sports") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img4"];
             }
             //milo: footer history 

@@ -35,6 +35,16 @@
             document.getElementById("sel_btn").style.backgroundColor = i;
         },
 
+        getHome2: function () {
+            document.getElementById("main_footer").style.backgroundColor = i;
+            document.getElementById("appBar").style.backgroundColor = i;
+            document.getElementById("age_display22").style.borderColor = i;
+            document.getElementById("sel_age_pic").style.borderColor = i;
+            document.getElementById("info_btn").style.backgroundColor = i;
+            document.getElementById("sel_btn").style.backgroundColor = i;
+        },
+
+
         getFunc: function () {
             document.getElementById("main_footer").style.backgroundColor = i;
             document.getElementById("appBar").style.backgroundColor = i;
