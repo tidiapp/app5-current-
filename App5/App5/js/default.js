@@ -22,7 +22,7 @@
                 roamingSettings.values["the_complete_total"] = 0;
                 design.colorChange("#FF7C00", "white");
                 roamingSettings.values["true"] = false;
-                roamingSettings.values['not_cont'] = false;
+                roamingSettings.values["not_cont"] = false;
                 roamingSettings.values["went_back"] = true;
                 //This is the normal(default) app color in hex #BA5EB7
 

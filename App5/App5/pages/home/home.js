@@ -14,10 +14,10 @@
             design.getHome();
             design.changeTextColor();
             //console.log("Age page picked id READY() = " + roamingSettings.values["Id_sel_age"]);
-            if (roamingSettings.values['not_cont']) {
-                document.getElementById('youcurrentprice').textContent = roamingSettings.values["the_complete_total"];
-                document.getElementById('youcurrentprice').removeAttribute('hidden');
-                document.getElementById('thewordsforcurrentprice').removeAttribute('hidden');
+            if (roamingSettings.values["not_cont"]) {
+                document.getElementById("youcurrentprice").textContent = roamingSettings.values["the_complete_total"];
+                document.getElementById("youcurrentprice").removeAttribute("hidden");
+                document.getElementById("thewordsforcurrentprice").removeAttribute("hidden");
             }
 
             //roamingSettings.values["I_ordered"] = "no";

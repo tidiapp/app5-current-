@@ -110,7 +110,7 @@
         clicked_new: function () {
 
             roamingSettings.values["I_ordered"] === "yes";
-            WinJS.Navigation.navigate('pages/launch_page/launch_page.html')
+            WinJS.Navigation.navigate('pages/launch_page/launch_page.html');
         },
 
     })

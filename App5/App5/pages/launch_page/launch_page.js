@@ -84,21 +84,27 @@
             roamingSettings.values["Boost_total_num"] = "",
             roamingSettings.values["Nutrigenetics_name"] = "",
             roamingSettings.values["Nutrigenetics_pic"] = "",
-            roamingSettings.values["Nutrigenetics_price"] = ""
+            roamingSettings.values["Nutrigenetics_price"] = "",
+            roamingSettings.values["creat_cust"] = "",
+            roamingSettings.values["creat_last"] = ""
 
 
+            //if (!roamingSettings.values["not_cont"]){
+            //    roamingSettings.values["Invoice_number"] = "";
+            //}
+            
             remove.pop_list(age_data.model.info_page2);
             remove.pop_list(age_data.model.the_boost_sel);
             remove.pop_list(age_data.model.info);
             remove.pop_list(age_data.model.info_sport);
             roamingSettings.values["I_ordered"] = "no";
-            if (!roamingSettings.values["not_cont"]) {
+            if (roamingSettings.values["not_cont"]) {
                 roamingSettings.values["the_complete_total"] = 0;         
             }
-            if (roamingSettings.values['not_cont']) {
-                document.getElementById('youcurrentprice').textContent = roamingSettings.values["the_complete_total"];
-                document.getElementById('youcurrentprice').removeAttribute('hidden');
-                document.getElementById('thewordsforcurrentprice').removeAttribute('hidden');
+            if (!roamingSettings.values["not_cont"]) {
+                document.getElementById("youcurrentprice").textContent = roamingSettings.values["the_complete_total"];
+                document.getElementById("youcurrentprice").removeAttribute("hidden");
+                document.getElementById("thewordsforcurrentprice").removeAttribute("hidden");
             }
         },
 
