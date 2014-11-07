@@ -14,10 +14,10 @@
             design.getHome2();
             design.changeTextColor();
             //console.log("Age page picked id READY() = " + roamingSettings.values["Id_sel_age"]);
-            if (roamingSettings.values['not_cont']) {
-                document.getElementById('youcurrentprice').textContent = roamingSettings.values["the_complete_total"];
-                document.getElementById('youcurrentprice').removeAttribute('hidden');
-                document.getElementById('thewordsforcurrentprice').removeAttribute('hidden');
+            if (roamingSettings.values["not_cont"]) {
+                document.getElementById("youcurrentprice").textContent = roamingSettings.values["the_complete_total"];
+                document.getElementById("youcurrentprice").removeAttribute('hidden');
+                document.getElementById("thewordsforcurrentprice22").removeAttribute("hidden");
             }
 
             //roamingSettings.values["I_ordered"] = "no";
@@ -25,7 +25,7 @@
             document.getElementById("more_info_home").setAttribute("hidden", true);
             document.getElementById("shop").setAttribute("hidden", true);
 
-            document.getElementById("choosen_age").textContent = roamingSettings.values["Cat_picked"] + ".";
+            document.getElementById("choosen_age22").textContent = roamingSettings.values["Cat_picked"] + ".";
             var the_sel_age = roamingSettings.values["Cat_picked"];
 
             document.getElementById("age_p").textContent = the_sel_age;
@@ -33,7 +33,7 @@
 
             ////milo: footer history & H1
             //if (roamingSettings.values["Cat_picked"] === "Fitness & Exercise") {
-            //    document.getElementById("choosen_age").textContent = "Select Your " + roamingSettings.values["Cat_picked"] + " Goal.";
+            //    document.getElementById("choosen_age22").textContent = "Select Your " + roamingSettings.values["Cat_picked"] + " Goal.";
             //}
 
             ////milo: footer history & H1
@@ -45,14 +45,14 @@
             ////milo: footer history & H1
             //if (the_sel_age === "Protein") {
             //    document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
-            //    document.getElementById("choosen_age").innerHTML = roamingSettings.values["Cat_picked"] + ", " + " The foundation (building block) of human nutrition, health and well being.";
+            //    document.getElementById("choosen_age22").innerHTML = roamingSettings.values["Cat_picked"] + ", " + " The foundation (building block) of human nutrition, health and well being.";
             //}
 
             ////milo: footer history & H1
             //if (the_sel_age === "Purchase A Nutrigenetic Test") {
             //    document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img3"];
             //    document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory.";
-            //    document.getElementById("choosen_age").textContent = "Choose Your Test Kit";
+            //    document.getElementById("choosen_age22").textContent = "Choose Your Test Kit";
             //    document.getElementById("nutrigenetics_price_div").removeAttribute("hidden");
             //}
 
@@ -94,13 +94,14 @@
     WinJS.Namespace.define('clicked_me', {
         //the clicked function will show the photo and the more indept information of the clicked age group
         //at the bottem of the home.html page
-        clicked: function (me) {          
+        clicked: function (me) {
+            remove.pop_list(age_data.model.info_page2_func_home2);
             var updated_answer = me.replace(/^\s+/, '').replace(/\s+$/, '');
             _choosen_cat = updated_answer;
             //gather information from from the database as the user clicks on the diffent ages
             //and then displays that information
 
-            server.home_sub_home2(updated_answer);
+            server.func_sub_home2(updated_answer);
             //milo: some code does not work well from here 
 
         },

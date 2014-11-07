@@ -32,7 +32,7 @@
                 <div class="users_age_template" data-win-control="WinJS.Binding.Template">
                     <div onclick="clicked_me.clicked(event.srcElement.innerText);" id="age_display22">
                         <img class="age_bg" data-win-bind="src: img" />
-                        <h2 id="user_age" data-win-bind="textContent: age"></h2>
+                        <h2 id="user_age" data-win-bind="textContent: func_home2"></h2>
 
 
                     </div>
@@ -46,14 +46,14 @@
 
             <div id="info_template_placement_winlistview">
                 <div id="age_info_template" data-win-control="WinJS.Binding.Template">
-                    <div hidden="" id="nutrigenetics_price_div">
+                    <!--<div id="nutrigenetics_price_div">
                         <span>$</span>
-                        <span id="nutrigenetics_price" data-win-bind="textContent: info_price"></span>
-                    </div>
-                    <img id="sel_age_pic" class="info_pic" data-win-bind="src: info_img" />
+                        <span id="nutrigenetics_price" data-win-bind="textContent: the_price"></span>
+                    </div>-->
+                    <img id="sel_age_pic" class="info_pic" data-win-bind="src: the_pic" />
                     <button id="info_btn" name="sel_btn" onclick="clicked_me.more_info(document.getElementById('sel_age_name').textContent)" type="submit">Learn More</button>
                     <button onclick="clicked_me.next_page()" id="sel_btn" name="sel_btn" type="submit">Choose This Category</button>
-                    <h2 id="sel_age_name" class="sel_age_name_class" data-win-bind="textContent: info_name"></h2>
+                    <h2 id="sel_age_name" class="sel_age_name_class" data-win-bind="textContent: the_name"></h2>
                     <p id="info_text" data-win-bind="textContent: the_info"></p>
                     <span hidden="" id="id_sel" data-win-bind="textContent: id_sel"></span>
                 </div>

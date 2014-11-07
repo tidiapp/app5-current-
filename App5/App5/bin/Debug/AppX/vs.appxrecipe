@@ -209,7 +209,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\js\dataBaseGather.js">
       <PackagePath>js\dataBaseGather.js</PackagePath>
-      <Modified>2014-11-06T21:27:00.432</Modified>
+      <Modified>2014-11-07T18:07:10.213</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\js\dataStore.js">
       <PackagePath>js\dataStore.js</PackagePath>
@@ -293,7 +293,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\home2\home2.js">
       <PackagePath>pages\home2\home2.js</PackagePath>
-      <Modified>2014-11-06T21:32:38.805</Modified>
+      <Modified>2014-11-07T18:12:56.513</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\home_subcat\home_subcat.js">
       <PackagePath>pages\home_subcat\home_subcat.js</PackagePath>
@@ -441,7 +441,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\home2\home2.html">
       <PackagePath>pages\home2\home2.html</PackagePath>
-      <Modified>2014-11-06T21:51:02.263</Modified>
+      <Modified>2014-11-07T17:57:17.390</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\home_subcat\home_subcat.html">
       <PackagePath>pages\home_subcat\home_subcat.html</PackagePath>

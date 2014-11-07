@@ -94,13 +94,14 @@
     WinJS.Namespace.define('clicked_me', {
         //the clicked function will show the photo and the more indept information of the clicked age group
         //at the bottem of the home.html page
-        clicked: function (me) {          
+        clicked: function (me) {
+            remove.pop_list(age_data.model.info_page2_func_home2);
             var updated_answer = me.replace(/^\s+/, '').replace(/\s+$/, '');
             _choosen_cat = updated_answer;
             //gather information from from the database as the user clicks on the diffent ages
             //and then displays that information
 
-            server.home_sub_home2(updated_answer);
+            server.func_sub_home2(updated_answer);
             //milo: some code does not work well from here 
 
         },

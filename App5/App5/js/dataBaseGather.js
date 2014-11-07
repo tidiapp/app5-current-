@@ -112,18 +112,16 @@
                         console.log(err);
                     });
             },
-
+//func_home2
             func_home2: function () {
                 remove.pop_list(age_data.model.func_home2);
-                var Func = thinkitdrinkitDataClient.getTable("Func");
+                var Func2 = thinkitdrinkitDataClient.getTable("Func");
 
-                //milo: id_sel is the id that was picked by user from the db and it equals the actual id number to display the correct business logic 
-                //milo: in the if statement == 'whatever number' is the actual id from the thinkitdrinkitDataClient.Age table in azure db
-                var query = Func.where({
-                    Access: true
+                var query = Func2.where({
+                    Home2: true
                 }).orderBy("Order").read().done(function (results) {
                     for (var i = 0; i < results.length; i++) {
-                        age_data.model.func_home2.push({ func: results[i].Name, img: results[i].Image })
+                        age_data.model.func_home2.push({ func_home2: results[i].Name, img: results[i].Image })
                     }
                 }, function (err) {
                     console.log(err);
@@ -132,12 +130,12 @@
             },
 
             func_sub_home2: function (name) {
-                var Func = thinkitdrinkitDataClient.getTable("Func");
+                var Func2 = thinkitdrinkitDataClient.getTable("Func");
 
-                var query = Func.where({
+                var query = Func2.where({
                     Name: name
                 }).read().done(function (results) {
-                    age_data.model.info_page2_func_home2.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_img: results[0].Label, base_price: results[0].Price, the_pic: results[0].Image, b_vend: results[0].VendID, id_sel: results[0].id })
+                    age_data.model.info_page2_func_home2.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_price: results[0].Price, the_pic: results[0].Image, b_vend: results[0].VendID, id_sel: results[0].id })
                 }, function (err) {
                     console.log(err);
                 });
