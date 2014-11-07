@@ -5,19 +5,19 @@
     var Age = thinkitdrinkitDataClient.getTable("Age");
     var keepInfo = true;
 
-    WinJS.UI.Pages.define("/pages/home/home.html", {
+    WinJS.UI.Pages.define("/pages/home_subcat/home_subcat.html", {
         // This function is called whenever a user navigates to this page. It
         // populates the page elements with the app's data.
         ready: function (element, options) {
             // TODO: Initialize the page here.
             WinJS.Binding.processAll(element, age_data.model);
-            design.getHome();
+            design.getHome_subcat();
             design.changeTextColor();
             //console.log("Age page picked id READY() = " + roamingSettings.values["Id_sel_age"]);
             if (roamingSettings.values['not_cont']) {
-                document.getElementById('youcurrentprice').textContent = roamingSettings.values["the_complete_total"];
-                document.getElementById('youcurrentprice').removeAttribute('hidden');
-                document.getElementById('thewordsforcurrentprice').removeAttribute('hidden');
+                document.getElementById('youcurrentprice_subcat').textContent = roamingSettings.values["the_complete_total"];
+                document.getElementById('youcurrentprice_subcat').removeAttribute('hidden');
+                document.getElementById('thewordsforcurrentprice_subcat').removeAttribute('hidden');
             }
 
             //roamingSettings.values["I_ordered"] = "no";
@@ -25,40 +25,40 @@
             document.getElementById("more_info_home").setAttribute("hidden", true);
             document.getElementById("shop").setAttribute("hidden", true);
 
-            document.getElementById("choosen_age").textContent = roamingSettings.values["Cat_picked"] + ".";
+            document.getElementById("choosen_age_subcat").textContent = roamingSettings.values["Cat_picked"] + ".";
             var the_sel_age = roamingSettings.values["Cat_picked"];
 
-            document.getElementById("age_p").textContent = the_sel_age;
-            document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory." + " You have 4 steps left.";
+            document.getElementById("age_p_subcat").textContent = the_sel_age;
+            document.getElementById("where_you_are_subcat").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory." + " You have 4 steps left.";
 
-            //milo: footer history & H1
-            if (roamingSettings.values["Cat_picked"] === "Fitness & Exercise") {
-                document.getElementById("choosen_age").textContent = "Select Your " + roamingSettings.values["Cat_picked"] + " Goal.";
-            }
+            ////milo: footer history & H1
+            //if (roamingSettings.values["Cat_picked"] === "Fitness & Exercise") {
+            //    document.getElementById("choosen_age_subcat").textContent = "Select Your " + roamingSettings.values["Cat_picked"] + " Goal.";
+            //}
 
-            //milo: footer history & H1
-            if (the_sel_age === "Energy") {
-                //age_pic is really the catagory image that was picked previously
-                document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
-            }
+            ////milo: footer history & H1
+            //if (the_sel_age === "Energy") {
+            //    //age_pic is really the catagory image that was picked previously
+            //    document.getElementById("age_pic_subcat").src = roamingSettings.values["Cat_picked_img"];
+            //}
 
-            //milo: footer history & H1
-            if (the_sel_age === "Protein") {
-                document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
-                document.getElementById("choosen_age").innerHTML = roamingSettings.values["Cat_picked"] + ", " + " The foundation (building block) of human nutrition, health and well being.";
-            }
+            ////milo: footer history & H1
+            //if (the_sel_age === "Protein") {
+            //    document.getElementById("age_pic_subcat").src = roamingSettings.values["Cat_picked_img2"];
+            //    document.getElementById("choosen_age_subcat").innerHTML = roamingSettings.values["Cat_picked"] + ", " + " The foundation (building block) of human nutrition, health and well being.";
+            //}
 
-            //milo: footer history & H1
-            if (the_sel_age === "Purchase A Nutrigenetic Test") {
-                document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img3"];
-                document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory.";
-                document.getElementById("choosen_age").textContent = "Choose Your Test Kit";
-                document.getElementById("nutrigenetics_price_div").removeAttribute("hidden");
-            }
+            ////milo: footer history & H1
+            //if (the_sel_age === "Purchase A Nutrigenetic Test") {
+            //    document.getElementById("age_pic_subcat").src = roamingSettings.values["Cat_picked_img3"];
+            //    document.getElementById("where_you_are_subcat").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory.";
+            //    document.getElementById("choosen_age_subcat").textContent = "Choose Your Test Kit";
+            //    document.getElementById("nutrigenetics_price_div_subcat").removeAttribute("hidden");
+            //}
 
             //milo: footer history & H1
             if (the_sel_age === "Competitive Sports") {
-                document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img4"];
+                document.getElementById("age_pic_subcat").src = roamingSettings.values["Cat_picked_img4"];
             }
             //gather the infomation from the database and displays it on the sreen
             server.home(the_sel_age);
@@ -83,7 +83,7 @@
         }
     });
 
-    // the following namespace will be used to complete all click events on the home.html page
+    // the following namespace will be used to complete all click events on the home_subcat.html page
     var _choosen_cat = "";
     var nutrigeneticsPrice = "";
 
@@ -93,7 +93,7 @@
 
     WinJS.Namespace.define('clicked_me', {
         //the clicked function will show the photo and the more indept information of the clicked age group
-        //at the bottem of the home.html page
+        //at the bottem of the home_subcat.html page
         clicked: function (me) {          
             var updated_answer = me.replace(/^\s+/, '').replace(/\s+$/, '');
             _choosen_cat = updated_answer;
@@ -110,13 +110,13 @@
             //milo: will not recall if this is missing even though these are gloabaly defined. 
             var appData = Windows.Storage.ApplicationData.current;
             var roamingSettings = appData.roamingSettings;
-            var id_sel = document.getElementById("id_sel").textContent;
+            var id_sel = document.getElementById("id_sel_subcat").textContent;
 
             if (roamingSettings.values["Cat_picked"] === "Purchase A Nutrigenetic Test") {
                 WinJS.Navigation.navigate('pages/final/final.html');
                 roamingSettings.values["Nutrigenetics_name"] = _choosen_cat;
-                roamingSettings.values["Nutrigenetics_pic"] = document.getElementById("sel_age_pic").src;
-                roamingSettings.values["Nutrigenetics_price"] = document.getElementById("nutrigenetics_price").textContent;
+                roamingSettings.values["Nutrigenetics_pic"] = document.getElementById("sel_age_pic_subcat").src;
+                roamingSettings.values["Nutrigenetics_price"] = document.getElementById("nutrigenetics_price_subcat").textContent;
                 //roamingSettings.values["Nutrigenetics_label"] = document.getElementById("sel_base_pic").src;
 
             //milo: id's coming from Age DB
@@ -126,7 +126,7 @@
                 var appData = Windows.Storage.ApplicationData.current;
                 var roamingSettings = appData.roamingSettings;
                 roamingSettings.values["Age_name"] = _choosen_cat;
-                roamingSettings.values["Age_pic"] = document.getElementById("sel_age_pic").src;
+                roamingSettings.values["Age_pic"] = document.getElementById("sel_age_pic_subcat").src;
                 roamingSettings.values["Age_info"] = null;
                 roamingSettings.values["Age_price"] = null;
                 roamingSettings.values["Id_sel_func"] = id_sel;
@@ -138,7 +138,7 @@
                 var appData = Windows.Storage.ApplicationData.current;
                 var roamingSettings = appData.roamingSettings;
                 roamingSettings.values["Age_name"] = _choosen_cat;
-                roamingSettings.values["Age_pic"] = document.getElementById("sel_age_pic").src;
+                roamingSettings.values["Age_pic"] = document.getElementById("sel_age_pic_subcat").src;
                 roamingSettings.values["Age_info"] = null;
                 roamingSettings.values["Age_price"] = null;
                 roamingSettings.values["Id_sel_age"] = id_sel;

@@ -168,6 +168,14 @@
         //    roamingSettings.values["Cat_picked_img"] = document.getElementById("make_drink_img").src;
         //},
 
+        next_page_home2: function () {
+            WinJS.Navigation.navigate('pages/home2/home2.html');
+            var appData = Windows.Storage.ApplicationData.current;
+            var roamingSettings = appData.roamingSettings;
+            roamingSettings.values["Cat_picked"] = cat_picked;
+            roamingSettings.values["Cat_picked_img"] = document.getElementById("make_drink_img").src;
+        },
+
         clicked2: function () {
             roamingSettings.values["Clicked_cat"] = document.getElementById("learn_more_title").textContent;
             //console.log(roamingSettings.values["Clicked_cat"]);

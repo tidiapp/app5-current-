@@ -119,6 +119,7 @@
                 roamingSettings.values["Nutrigenetics_price"] = document.getElementById("nutrigenetics_price").textContent;
                 //roamingSettings.values["Nutrigenetics_label"] = document.getElementById("sel_base_pic").src;
 
+            //milo: id's coming from Age DB
             } else if (id_sel == 25 || id_sel == 26) {
                 WinJS.Navigation.navigate('pages/base/base.html');
                 //roamingSettings.values["New_route"] = func3;

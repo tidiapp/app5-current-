@@ -17,7 +17,7 @@
     <AppXManifest Include="C:\Users\milo\Desktop\app5-current-\App5\App5\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-11-04T15:07:28.351</Modified>
+      <Modified>2014-11-06T20:13:35.389</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -44,6 +44,14 @@
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\func\func.css">
       <PackagePath>pages\func\func.css</PackagePath>
       <Modified>2014-11-04T14:59:56.452</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\home2\home2.css">
+      <PackagePath>pages\home2\home2.css</PackagePath>
+      <Modified>2014-11-06T20:22:27.332</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\home_subcat\home_subcat.css">
+      <PackagePath>pages\home_subcat\home_subcat.css</PackagePath>
+      <Modified>2014-11-06T19:43:03.465</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.css">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.css</PackagePath>
@@ -197,11 +205,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\js\ChangeApp.js">
       <PackagePath>js\ChangeApp.js</PackagePath>
-      <Modified>2014-11-04T14:59:55.813</Modified>
+      <Modified>2014-11-06T21:29:30.349</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\js\dataBaseGather.js">
       <PackagePath>js\dataBaseGather.js</PackagePath>
-      <Modified>2014-11-05T18:24:12.398</Modified>
+      <Modified>2014-11-06T21:27:00.432</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\js\dataStore.js">
       <PackagePath>js\dataStore.js</PackagePath>
@@ -213,7 +221,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\js\gatherInfo.js">
       <PackagePath>js\gatherInfo.js</PackagePath>
-      <Modified>2014-11-04T14:59:55.827</Modified>
+      <Modified>2014-11-06T21:27:00.414</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\js\jquery.js">
       <PackagePath>js\jquery.js</PackagePath>
@@ -283,6 +291,14 @@
       <PackagePath>pages\func\func.js</PackagePath>
       <Modified>2014-11-05T17:31:14.724</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\home2\home2.js">
+      <PackagePath>pages\home2\home2.js</PackagePath>
+      <Modified>2014-11-06T21:32:38.805</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\home_subcat\home_subcat.js">
+      <PackagePath>pages\home_subcat\home_subcat.js</PackagePath>
+      <Modified>2014-11-06T19:39:46.390</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\info_home\info_home.js">
       <PackagePath>pages\info_home\info_home.js</PackagePath>
       <Modified>2014-11-04T14:59:56.465</Modified>
@@ -313,7 +329,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\home\home.js">
       <PackagePath>pages\home\home.js</PackagePath>
-      <Modified>2014-11-05T18:14:16.792</Modified>
+      <Modified>2014-11-06T17:16:18.243</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\item_info\item_info.js">
       <PackagePath>pages\item_info\item_info.js</PackagePath>
@@ -321,7 +337,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\launch_page\launch_page.js">
       <PackagePath>pages\launch_page\launch_page.js</PackagePath>
-      <Modified>2014-11-05T17:21:39.985</Modified>
+      <Modified>2014-11-06T20:14:20.432</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\login\login.js">
       <PackagePath>pages\login\login.js</PackagePath>
@@ -423,6 +439,14 @@
       <PackagePath>pages\func\func.html</PackagePath>
       <Modified>2014-11-04T14:59:56.453</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\home2\home2.html">
+      <PackagePath>pages\home2\home2.html</PackagePath>
+      <Modified>2014-11-06T21:51:02.263</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\home_subcat\home_subcat.html">
+      <PackagePath>pages\home_subcat\home_subcat.html</PackagePath>
+      <Modified>2014-11-06T20:06:49.119</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.html">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.html</PackagePath>
       <Modified>2014-11-04T14:59:56.480</Modified>
@@ -465,7 +489,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\launch_page\launch_page.html">
       <PackagePath>pages\launch_page\launch_page.html</PackagePath>
-      <Modified>2014-11-05T17:21:39.957</Modified>
+      <Modified>2014-11-06T20:09:14.934</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\login\login.html">
       <PackagePath>pages\login\login.html</PackagePath>
@@ -497,7 +521,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-11-04T15:07:27.496</Modified>
+      <Modified>2014-11-06T20:13:34.931</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

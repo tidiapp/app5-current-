@@ -10,6 +10,8 @@
             ]),
             func: new WinJS.Binding.List([
             ]),
+            func_home2: new WinJS.Binding.List([
+            ]),
             sport: new WinJS.Binding.List([
             ]),
             info_home_sport: new WinJS.Binding.List([
@@ -29,6 +31,8 @@
             info_page2: new WinJS.Binding.List([
             ]),
             info_page2_func: new WinJS.Binding.List([
+            ]),
+            info_page2_func_home2: new WinJS.Binding.List([
             ]),
             info_page3: new WinJS.Binding.List([
             ]),
