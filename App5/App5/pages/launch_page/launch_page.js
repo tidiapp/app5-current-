@@ -26,8 +26,7 @@
             document.getElementById("shop").setAttribute("hidden", true);
             document.getElementById("home").setAttribute("hidden", true);
 
-            roamingSettings.values["Age_name"] = "",
-            roamingSettings.values["Age_pic"] = "",
+
             roamingSettings.values["Clicked_cat"] = "",
             roamingSettings.values["Cat_picked"] = "",
             roamingSettings.values["Cat_picked_img"] = "",
@@ -86,21 +85,26 @@
             roamingSettings.values["Nutrigenetics_name"] = "",
             roamingSettings.values["Nutrigenetics_pic"] = "",
             roamingSettings.values["Nutrigenetics_price"] = "",
-            //roamingSettings.values["New_route"] = ""
+            roamingSettings.values["creat_cust"] = "",
+            roamingSettings.values["creat_last"] = ""
 
 
+            //if (!roamingSettings.values["not_cont"]){
+            //    roamingSettings.values["Invoice_number"] = "";
+            //}
+            
             remove.pop_list(age_data.model.info_page2);
             remove.pop_list(age_data.model.the_boost_sel);
             remove.pop_list(age_data.model.info);
             remove.pop_list(age_data.model.info_sport);
             roamingSettings.values["I_ordered"] = "no";
-            if (!roamingSettings.values["not_cont"]) {
+            if (roamingSettings.values["not_cont"]) {
                 roamingSettings.values["the_complete_total"] = 0;         
             }
-            if (roamingSettings.values['not_cont']) {
-                document.getElementById('youcurrentprice').textContent = roamingSettings.values["the_complete_total"];
-                document.getElementById('youcurrentprice').removeAttribute('hidden');
-                document.getElementById('thewordsforcurrentprice').removeAttribute('hidden');
+            if (!roamingSettings.values["not_cont"]) {
+                document.getElementById("youcurrentprice").textContent = roamingSettings.values["the_complete_total"];
+                document.getElementById("youcurrentprice").removeAttribute("hidden");
+                document.getElementById("thewordsforcurrentprice").removeAttribute("hidden");
             }
         },
 
@@ -158,22 +162,6 @@
             roamingSettings.values["Cat_picked_img2"] = document.getElementById("make_drink_img2").src;
             roamingSettings.values["Cat_picked_img3"] = document.getElementById("nutrigenetics_img").src;
             roamingSettings.values["Cat_picked_img4"] = document.getElementById("make_sport_drink_img").src;
-        },
-
-        //next_page_func: function () {
-        //    WinJS.Navigation.navigate('pages/func/func.html');
-        //    var appData = Windows.Storage.ApplicationData.current;
-        //    var roamingSettings = appData.roamingSettings;
-        //    roamingSettings.values["Cat_picked"] = cat_picked;
-        //    roamingSettings.values["Cat_picked_img"] = document.getElementById("make_drink_img").src;
-        //},
-
-        next_page_home2: function () {
-            WinJS.Navigation.navigate('pages/home2/home2.html');
-            var appData = Windows.Storage.ApplicationData.current;
-            var roamingSettings = appData.roamingSettings;
-            roamingSettings.values["Cat_picked"] = cat_picked;
-            roamingSettings.values["Cat_picked_img"] = document.getElementById("make_drink_img").src;
         },
 
         clicked2: function () {

@@ -40,6 +40,8 @@
                 if (roamingSettings.values["Boost8_name"] == "" || roamingSettings.values["Boost8_name"] === !undefined) { roamingSettings.values["Boost8_price"] = 0 };
                 if (roamingSettings.values["Nutrigenetics_name"] == "" || roamingSettings.values["Nutrigenetics_name"] === !undefined) { roamingSettings.values["Nutrigenetics_price"] = 0 };
                 if (roamingSettings.values["Base_name"] == "" || roamingSettings.values["Base_name"] === !undefined) { roamingSettings.values["Base_price"] = 0 };
+                if (roamingSettings.values["FlavSel_name"] == "" || roamingSettings.values["FlavSel_name"] === !undefined) { roamingSettings.values["FlavSel_price"] = 0 };
+
 
                 roamingSettings.values['Boost_total'] = (parseFloat(roamingSettings.values["Boost1_price"]) + parseFloat(roamingSettings.values["Boost2_price"]) + parseFloat(roamingSettings.values["Boost3_price"]) + parseFloat(roamingSettings.values["Boost4_price"]) + parseFloat(roamingSettings.values["Boost5_price"]) + parseFloat(roamingSettings.values["Boost6_price"]) + parseFloat(roamingSettings.values["Boost7_price"]) + parseFloat(roamingSettings.values["Boost8_price"]));
 
@@ -59,14 +61,17 @@
             document.getElementById("total").textContent = "$" + Math.ceil(((roamingSettings.values["the_complete_total"] * .0636) + roamingSettings.values["the_complete_total"]) * 100) / 100;
         },
 
+//'BUG fix for 2nd new order breaking after submit is hit' CODE ABOVE IS FINE...
+
+
         unload: function () {
             // TODO: Respond to navigations away from this page.
 
             roamingSettings.values["I_ordered"] = "yes";
             if (roamingSettings.values["not_cont"]) {
                 roamingSettings.values["total_price"] = 0;
-            } else if (!roamingSettings.values["not_cont"]) {
                 remove.pop_list(age_data.model.continue_order_save);
+            } else if (!roamingSettings.values["not_cont"]) {
             }
 
         },
@@ -163,9 +168,12 @@
                 } else {
                     age_data.model.continue_order_save.push({
                         product_id: roamingSettings.values["Base_vend"], quantity: 1, price: roamingSettings.values["Base_price"], tax: (roamingSettings.values["Base_price"] * .0636)
+                       
                     }, { product_id: roamingSettings.values["FlavSel_vend"], quantity: 1, price: roamingSettings.values["FlavSel_price"], tax: (roamingSettings.values["FlavSel_price"] * .0636) }, { product_id: roamingSettings.values["Boost1_vend"], quantity: 1, price: roamingSettings.values["Boost1_price"], tax: (roamingSettings.values["Boost1_price"] * .0636) });
+                    console.log("Yes its in here");
                 }
 
+//'BUG fix for 2nd new order breaking after submit is hit' CODE ABOVE IS FINE... loop is where the break happens below before winjs (winjs never fires)
                 var test_array = Array();
                 var array_t = Array();
                 var i = 0;
@@ -199,8 +207,9 @@
                     }),
                 }).then(function sucess(res) {
                     roamingSettings.values["Invoice_number"] = JSON.parse(res.responseText).register_sale.invoice_number;
+                    //milo "I_ordered used in login not so important"
                     roamingSettings.values["I_ordered"] = "yes";
-                    roamingSettings.values["not_cont"] = false;
+                    roamingSettings.values["not_cont"] = true;
                     roamingSettings.values["went_back"] = true;
 
                     //milo: testing 2nd new order bug, consolelog does not show up here so error is above
@@ -278,14 +287,10 @@
                 });
 
                 //function Delayer() {
-
                     //setTimeout(function () {
-                      
                     //}, 3000);
-                 
                // }
                // Delayer()
-
             })
         },//ends clicked name space
         the_continue: function () {
@@ -332,7 +337,7 @@
                     }, { product_id: roamingSettings.values["FlavSel_vend"], quantity: 1, price: roamingSettings.values["FlavSel_price"], tax: (roamingSettings.values["FlavSel_price"] * .0636) }, { product_id: roamingSettings.values["Boost1_vend"], quantity: 1, price: roamingSettings.values["Boost1_price"], tax: (roamingSettings.values["Boost1_price"] * .0636) });
                 }
 
-            roamingSettings.values["not_cont"] = true;
+            roamingSettings.values["not_cont"] = false;
             console.log(roamingSettings.values["Base_vend"] + ' ' + roamingSettings.values["Boost1_vend"]);
             roamingSettings.values["went_back"] = true;
             WinJS.Navigation.navigate('pages/launch_page/launch_page.html');

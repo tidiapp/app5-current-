@@ -137,7 +137,7 @@
             var vendId = roamingSettings.values["FlavSel_vend"];
             var vendId_count = document.getElementById("f_vend_count").textContent;
             roamingSettings.values["FlavSel_info"] = null;
-            roamingSettings.values["FlavSel_price"] = null;
+            roamingSettings.values["FlavSel_price"] = 0;
             roamingSettings.values["FlavSel_label"] = document.getElementById("flav_sel_sel_pic").src;
 
             //milo: the following makes a call to vend to check if we have enough product for the order if low it will not allow to move on. 
