@@ -104,7 +104,7 @@
                 var query = Age.where({
                     Name: name
                 }).read().done(function (results) {
-                    age_data.model.info.push({ the_info: results[0].InfoLite, info_img: results[0].Image, info_name: results[0].Name, info_price: results[0].Price, id_sel: results[0].id })
+                    age_data.model.info_page2_func_home2.push({ the_info: results[0].InfoLite, info_img: results[0].Image, info_name: results[0].Name, id_sel: results[0].id })
                 }, function (err) {
                     console.log(err);
                 });

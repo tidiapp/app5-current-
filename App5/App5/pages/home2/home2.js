@@ -91,7 +91,7 @@
     //var the_sel_age = "";
     //console.log("Cat picked = " + roamingSettings.values["Cat_picked"] + " The sel age = " + the_sel_age);
 
-    WinJS.Namespace.define('clicked_me', {
+    WinJS.Namespace.define('clicked_me2', {
         //the clicked function will show the photo and the more indept information of the clicked age group
         //at the bottem of the home.html page
         clicked: function (me) {
@@ -151,7 +151,7 @@
         more_info: function (clicked) {
             var updated_answer = clicked.replace(/^\s+/, '').replace(/\s+$/, '');
             roamingSettings.values["Item_choosen"] = updated_answer;
-            roamingSettings.values["Clicked_cat"] = "Age"
+            roamingSettings.values["Clicked_cat"] = "Func"
             WinJS.Navigation.navigate('pages/item_info/item_info.html');
         }
     })
