@@ -8,7 +8,7 @@
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>e3f10fc1-365d-4d2e-b488-7e61baad9bf4</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\bld\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>057A585A4BA2E4A8DFDF190A0F8489F131B35268332F06B0716C02ABE98D6F76</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>C02998AD4CD4FC03464792B61EC5E11F783FAD7489991BC8C581A89EBE48CE26</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>e3f10fc1-365d-4d2e-b488-7e61baad9bf4_1.0.0.21_neutral__bkvjexddj2nfj</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>e3f10fc1-365d-4d2e-b488-7e61baad9bf4_bkvjexddj2nfj!App</RegisteredUserModeAppID>
     <RegisteredPackageID>e3f10fc1-365d-4d2e-b488-7e61baad9bf4</RegisteredPackageID>
@@ -20,7 +20,7 @@
     <AppXManifest Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-11-10T14:49:08.291</Modified>
+      <Modified>2014-11-11T14:36:50.277</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -512,7 +512,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-11-10T15:15:50.406</Modified>
+      <Modified>2014-11-11T14:36:48.653</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
