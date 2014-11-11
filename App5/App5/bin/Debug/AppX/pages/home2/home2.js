@@ -138,11 +138,11 @@
                 WinJS.Navigation.navigate('pages/home/home.html');
                 var appData = Windows.Storage.ApplicationData.current;
                 var roamingSettings = appData.roamingSettings;
-                //roamingSettings.values["Age_name"] = _choosen_cat;
+                roamingSettings.values["Home2_name"] = _choosen_cat;
                 //roamingSettings.values["Age_pic"] = document.getElementById("sel_age_pic22").src;
                 //roamingSettings.values["Age_info"] = null;
                 //roamingSettings.values["Age_price"] = null;
-                roamingSettings.values["Id_sel_age"] = id_sel;
+                roamingSettings.values["Id_sel_sport"] = id_sel;
                 //console.log("Age page picked id = " + roamingSettings.values["Id_sel_age"]);
             //}
 

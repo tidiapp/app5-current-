@@ -13,6 +13,7 @@
             WinJS.Binding.processAll(element, age_data.model);
             design.getHome();
             design.changeTextColor();
+            var id_sel_sport = roamingSettings.values["Id_sel_sport"];
             //console.log("Age page picked id READY() = " + roamingSettings.values["Id_sel_age"]);
             if (roamingSettings.values["not_cont"]) {
                 document.getElementById("youcurrentprice").textContent = roamingSettings.values["the_complete_total"];
@@ -24,15 +25,20 @@
             document.getElementById("home").removeAttribute("hidden");
             document.getElementById("more_info_home").setAttribute("hidden", true);
             document.getElementById("shop").setAttribute("hidden", true);
-
-            document.getElementById("choosen_age").textContent = roamingSettings.values["Cat_picked"] + ".";
             var the_sel_age = roamingSettings.values["Cat_picked"];
-
-            document.getElementById("age_p").textContent = the_sel_age;
-            document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory." + " You have 4 steps left.";
+            document.getElementById("choosen_age").textContent = the_sel_age + ".";
 
             //milo: footer history & H1
-            if (roamingSettings.values["Cat_picked"] === "Fitness & Exercise") {
+            if (the_sel_age === "Competitive Sports") {
+                document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img4"];
+                document.getElementById("choosen_age").textContent = roamingSettings.values["Home2_name"] + ".";
+            } else {
+                document.getElementById("age_p").textContent = the_sel_age;
+                document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory." + " You have 4 steps left.";
+            }
+
+            //milo: footer history & H1
+            if (the_sel_age === "Fitness & Exercise") {
                 document.getElementById("choosen_age").textContent = "Select Your " + roamingSettings.values["Cat_picked"] + " Goal.";
             }
 
@@ -56,12 +62,13 @@
                 document.getElementById("nutrigenetics_price_div").removeAttribute("hidden");
             }
 
-            //milo: footer history & H1
-            if (the_sel_age === "Competitive Sports") {
-                document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img4"];
-            }
-            //gather the infomation from the database and displays it on the sreen
-            server.home(the_sel_age);
+
+                //gather the infomation from the database and displays it on the sreen
+                if (the_sel_age === "Competitive Sports") {
+                    server.home2(id_sel_sport);
+                } else {
+                    server.home(the_sel_age);
+                }
 
         },
 
@@ -86,6 +93,8 @@
     // the following namespace will be used to complete all click events on the home.html page
     var _choosen_cat = "";
     var nutrigeneticsPrice = "";
+    var the_sel_age_sub = roamingSettings.values["Cat_picked"];
+    var id_sel_sport = roamingSettings.values["Id_sel_sport"];
 
     //Milo: I defined this above and it needs to be done here to in order for it to work inside the WinJS
     //var the_sel_age = "";
@@ -100,7 +109,12 @@
             //gather information from from the database as the user clicks on the diffent ages
             //and then displays that information
 
-            server.home_sub(updated_answer);
+            //server.home_sub(updated_answer);
+            if (the_sel_age_sub === "Competitive Sports") {
+                server.home2(id_sel_sport);
+            } else {
+                server.home_sub2(updated_answer);
+            }
             //milo: some code does not work well from here 
 
         },

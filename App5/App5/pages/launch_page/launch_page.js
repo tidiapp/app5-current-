@@ -34,11 +34,13 @@
             roamingSettings.values["Cat_picked_img2"] = "",
             roamingSettings.values["Cat_picked_img3"] = "",
             roamingSettings.values["Cat_picked_img4"] = "",
+
             roamingSettings.values["Func_name"] = "",
             roamingSettings.values["Func_pic"] = "",
             roamingSettings.values["Func_info"] = "",
             roamingSettings.values["Func_price"] = "",
             roamingSettings.values["Func_label"] = "",
+            roamingSettings.values["Home2_name"] = "",
             roamingSettings.values["Base_name"] = "",
             roamingSettings.values["Base_pic"] = "",
             roamingSettings.values["Base_vend"] = "",
@@ -81,6 +83,7 @@
             roamingSettings.values["FlavSel_vend"] = "",
             roamingSettings.values["Flav_name"] = "",
             roamingSettings.values["Id_sel_age"] = "",
+            roamingSettings.values["Id_sel_sport"] = "",
             roamingSettings.values["Id_sel_func"] = "",
             roamingSettings.values["Boost_total_num"] = "",
             roamingSettings.values["Nutrigenetics_name"] = "",
@@ -88,7 +91,6 @@
             roamingSettings.values["Nutrigenetics_price"] = "",
             roamingSettings.values["creat_cust"] = "",
             roamingSettings.values["creat_last"] = ""
-
 
             //if (!roamingSettings.values["not_cont"]){
             //    roamingSettings.values["Invoice_number"] = "";
@@ -153,7 +155,6 @@
             var updated_answer = me.replace(/^\s+/, '').replace(/\s+$/, '');
             cat_picked = updated_answer;
         },
-
         
         next_page: function () {
 
