@@ -8,7 +8,7 @@
 
         WinJS.Namespace.define("server", {
 //home.html
-            home: function (the_sel_age) {
+            home: function (the_sel_age, id) {
                 remove.pop_list(age_data.model.age);
 
                 //milo: withFilter var Age = thinkitdrinkitDataClient.withFilter(noCachingFilter).getTable("Age"); suposed to not cache, great way to test for same name pictures being replaced never seems to refresh the new pic unless name is changed. 
@@ -58,7 +58,17 @@
                 } else if (the_sel_age === "Competitive Sports") {
                     var query = Age.where({
                         AccessS: true
-                    }).orderBy("Name").read().done(function (results) {
+                    }).read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.age.push({ age: results[i].Name, img: results[i].Image })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+
+                    var query = Age.where({
+                        Func_id: id,
+                    }).read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.age.push({ age: results[i].Name, img: results[i].Image })
                         }
@@ -81,43 +91,43 @@
             },
 
 //home2            
-            home2: function (id) {
-                remove.pop_list(age_data.model.age);
-                var Age = thinkitdrinkitDataClient.getTable("Age");
+            //home2: function (id) {
+            //    remove.pop_list(age_data.model.age);
+            //    var Age = thinkitdrinkitDataClient.getTable("Age");
 
-                    var query = Age.where({
-                        Func_id: id,
-                    }).orderBy("Name").read().done(function (results) {
-                        for (var i = 0; i < results.length; i++) {
-                            age_data.model.age.push({ age: results[i].Name, img: results[i].Image })
-                        }
-                    }, function (err) {
-                        console.log(err);
-                    });
+            //        var query = Age.where({
+            //            Func_id: id,
+            //        }).orderBy("Name").read().done(function (results) {
+            //            for (var i = 0; i < results.length; i++) {
+            //                age_data.model.age.push({ age: results[i].Name, img: results[i].Image })
+            //            }
+            //        }, function (err) {
+            //            console.log(err);
+            //        });
 
-                 var query2 = Age.where({
-                        AccessS: true
-                    }).read().done(function (results) {
-                        for (var i = 0; i < results.length; i++) {
-                            age_data.model.age.push({ age: results[i].Name, img: results[i].Image })
-                        }
-                    }, function (err) {
-                        console.log(err);
-                    });
+            //     var query2 = Age.where({
+            //            AccessS: true
+            //        }).read().done(function (results) {
+            //            for (var i = 0; i < results.length; i++) {
+            //                age_data.model.age.push({ age: results[i].Name, img: results[i].Image })
+            //            }
+            //        }, function (err) {
+            //            console.log(err);
+            //        });
                 
-            },
-            home_sub2: function (name) {
-                var Age = thinkitdrinkitDataClient.getTable("Age");
-                remove.pop_list(age_data.model.info)
+            //},
+            //home_sub2: function (name) {
+            //    var Age = thinkitdrinkitDataClient.getTable("Age");
+            //    remove.pop_list(age_data.model.info)
 
-                var query = Age.where({
-                    Name: name
-                }).read().done(function (results) {
-                    age_data.model.info.push({ the_info: results[0].InfoLite, info_img: results[0].Image, info_name: results[0].Name, info_price: results[0].Price, id_sel: results[0].id })
-                }, function (err) {
-                    console.log(err);
-                });
-            },
+            //    var query = Age.where({
+            //        Name: name
+            //    }).read().done(function (results) {
+            //        age_data.model.info.push({ the_info: results[0].InfoLite, info_img: results[0].Image, info_name: results[0].Name, info_price: results[0].Price, id_sel: results[0].id })
+            //    }, function (err) {
+            //        console.log(err);
+            //    });
+            //},
 
 //func_home2            
             func_home2: function () {

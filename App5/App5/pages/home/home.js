@@ -13,7 +13,7 @@
             WinJS.Binding.processAll(element, age_data.model);
             design.getHome();
             design.changeTextColor();
-            var id_sel_sport = roamingSettings.values["Id_sel_sport"];
+            var id = roamingSettings.values["Id_sel_sport"];
             //console.log("Age page picked id READY() = " + roamingSettings.values["Id_sel_age"]);
             if (roamingSettings.values["not_cont"]) {
                 document.getElementById("youcurrentprice").textContent = roamingSettings.values["the_complete_total"];
@@ -62,13 +62,14 @@
                 document.getElementById("nutrigenetics_price_div").removeAttribute("hidden");
             }
 
-
                 //gather the infomation from the database and displays it on the sreen
-                if (the_sel_age === "Competitive Sports") {
-                    server.home2(id_sel_sport);
-                } else {
-                    server.home(the_sel_age);
-                }
+                //if (the_sel_age === "Competitive Sports") {
+                //    server.home2(id);
+                //} else {
+                //    server.home(the_sel_age);
+                //}
+
+            server.home(the_sel_age, id);
 
         },
 
@@ -93,8 +94,8 @@
     // the following namespace will be used to complete all click events on the home.html page
     var _choosen_cat = "";
     var nutrigeneticsPrice = "";
-    var the_sel_age_sub = roamingSettings.values["Cat_picked"];
-    var id_sel_sport = roamingSettings.values["Id_sel_sport"];
+    //var the_sel_age_sub = roamingSettings.values["Cat_picked"];
+    var id = roamingSettings.values["Id_sel_sport"];
 
     //Milo: I defined this above and it needs to be done here to in order for it to work inside the WinJS
     //var the_sel_age = "";
@@ -110,11 +111,16 @@
             //and then displays that information
 
             //server.home_sub(updated_answer);
-            if (the_sel_age_sub === "Competitive Sports") {
-                server.home2(id_sel_sport);
-            } else {
-                server.home_sub2(updated_answer);
-            }
+            //if (the_sel_age_sub === "Competitive Sports") {
+            //    server.home_sub2(id);
+            //} else {
+            //    server.home_sub(updated_answer);
+            //}
+
+            //server.home_sub(updated_answer);
+
+            server.home_sub(updated_answer, id);
+
             //milo: some code does not work well from here 
 
         },
