@@ -6,7 +6,7 @@
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>e3f10fc1-365d-4d2e-b488-7e61baad9bf4</PackageIdentityName>
-    <RegisteredManifestChecksum>97A78F110AE25486F1542F40C2B25266D2C804C06C21034701DA66061B1614F7</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>95AE1ABA22235366CB9F7675253C086F15E22B1B24F8A78846393BF2097B3FE6</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>e3f10fc1-365d-4d2e-b488-7e61baad9bf4_1.0.0.21_neutral__bkvjexddj2nfj</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>e3f10fc1-365d-4d2e-b488-7e61baad9bf4_bkvjexddj2nfj!App</RegisteredUserModeAppID>
     <RegisteredPackageID>e3f10fc1-365d-4d2e-b488-7e61baad9bf4</RegisteredPackageID>
@@ -17,7 +17,7 @@
     <AppXManifest Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-11-11T20:01:06.312</Modified>
+      <Modified>2014-11-18T14:41:48.260</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -205,7 +205,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\dataBaseGather.js">
       <PackagePath>js\dataBaseGather.js</PackagePath>
-      <Modified>2014-11-12T17:49:28.341</Modified>
+      <Modified>2014-11-18T21:20:35.076</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\dataStore.js">
       <PackagePath>js\dataStore.js</PackagePath>
@@ -509,7 +509,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-11-11T20:01:05.389</Modified>
+      <Modified>2014-11-18T14:41:48.057</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

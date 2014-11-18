@@ -67,7 +67,7 @@
                     });
 
                     var query = Age.where({
-                        Func_id: id,
+                        FuncDBhome2_id: id,
                     }).read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.age.push({ age: results[i].Name, img: results[i].Image })
@@ -89,45 +89,6 @@
                     console.log(err);
                 });
             },
-
-//home2            
-            //home2: function (id) {
-            //    remove.pop_list(age_data.model.age);
-            //    var Age = thinkitdrinkitDataClient.getTable("Age");
-
-            //        var query = Age.where({
-            //            Func_id: id,
-            //        }).orderBy("Name").read().done(function (results) {
-            //            for (var i = 0; i < results.length; i++) {
-            //                age_data.model.age.push({ age: results[i].Name, img: results[i].Image })
-            //            }
-            //        }, function (err) {
-            //            console.log(err);
-            //        });
-
-            //     var query2 = Age.where({
-            //            AccessS: true
-            //        }).read().done(function (results) {
-            //            for (var i = 0; i < results.length; i++) {
-            //                age_data.model.age.push({ age: results[i].Name, img: results[i].Image })
-            //            }
-            //        }, function (err) {
-            //            console.log(err);
-            //        });
-                
-            //},
-            //home_sub2: function (name) {
-            //    var Age = thinkitdrinkitDataClient.getTable("Age");
-            //    remove.pop_list(age_data.model.info)
-
-            //    var query = Age.where({
-            //        Name: name
-            //    }).read().done(function (results) {
-            //        age_data.model.info.push({ the_info: results[0].InfoLite, info_img: results[0].Image, info_name: results[0].Name, info_price: results[0].Price, id_sel: results[0].id })
-            //    }, function (err) {
-            //        console.log(err);
-            //    });
-            //},
 
 //func_home2            
             func_home2: function () {
@@ -220,10 +181,11 @@
             },
 
 //base.html
-            base: function (id_sel) {
+            base: function (id_sel, the_sel_age) {
                 var Age = thinkitdrinkitDataClient.getTable("Base");
                 //milo: id_sel == whatever #, the whatever # is the id from thinkitdrinkitDataClient.Func db in azure
 
+                //think this 25 26 is from protein might have to be like: (the_sel_age === "Protein" && (id_sel == 25 || id_sel == 26))
                 if (id_sel == 25 || id_sel == 26) {
                     var query = Age.where({
                         Age_id: id_sel
@@ -234,9 +196,19 @@
                     }, function (err) {
                         console.log(err);
                     });
+                } else if (the_sel_age === "Competitive Sports") {
+                    var query = Age.where({
+                        AgeDBhome_id: id_sel
+                    }).orderBy("Name").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[i].Price })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
                 } else {
                     var query = Age.where({
-                        Func_id: id_sel,
+                        FuncDBfunc_id: id_sel
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[i].Price })
@@ -291,7 +263,7 @@
                 var Age = thinkitdrinkitDataClient.getTable("Boost");
 
                     var query = Age.where({
-                        Func_id: id_sel
+                        FuncDBfunc_id: id_sel
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.boost.push({ boost_name: results[i].Name, boost_pic: results[i].Image })

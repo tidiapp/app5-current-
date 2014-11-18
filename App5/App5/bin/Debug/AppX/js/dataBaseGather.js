@@ -67,7 +67,7 @@
                     });
 
                     var query = Age.where({
-                        Func_id: id,
+                        FuncDBhome2_id: id,
                     }).read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.age.push({ age: results[i].Name, img: results[i].Image })
@@ -96,7 +96,7 @@
             //    var Age = thinkitdrinkitDataClient.getTable("Age");
 
             //        var query = Age.where({
-            //            Func_id: id,
+            //            FuncDBhome2_id: id,
             //        }).orderBy("Name").read().done(function (results) {
             //            for (var i = 0; i < results.length; i++) {
             //                age_data.model.age.push({ age: results[i].Name, img: results[i].Image })
@@ -236,7 +236,7 @@
                     });
                 } else {
                     var query = Age.where({
-                        Func_id: id_sel,
+                        FuncDBfunc_id: id_sel,
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[i].Price })
@@ -291,7 +291,7 @@
                 var Age = thinkitdrinkitDataClient.getTable("Boost");
 
                     var query = Age.where({
-                        Func_id: id_sel
+                        FuncDBfunc_id: id_sel
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.boost.push({ boost_name: results[i].Name, boost_pic: results[i].Image })
