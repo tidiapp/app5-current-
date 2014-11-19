@@ -3,7 +3,7 @@
   <PropertyGroup>
     <ReferenceCachePath>C:\Users\milo\AppData\Local\Temp\nlekks40_App5_refcache</ReferenceCachePath>
     <AutoRefresh>true</AutoRefresh>
-    <ShowAllFiles>true</ShowAllFiles>
+    <ShowAllFiles>false</ShowAllFiles>
     <AppxPackageIsForStore>False</AppxPackageIsForStore>
     <AppxShowAllApps>False</AppxShowAllApps>
     <AppxBuildConfigurationSelection>x64</AppxBuildConfigurationSelection>

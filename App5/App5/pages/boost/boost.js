@@ -86,7 +86,8 @@
 
             //document.getElementById("theBoostAge").textContent = roamingSettings.values["Age_name"];
             
-            server.boost(roamingSettings.values["Id_sel_func"]);
+            server.boost(roamingSettings.values["Cat_picked"], roamingSettings.values["Id_sel_func"], roamingSettings.values["Id_sel_sport"], roamingSettings.values["Id_sel_base"]);
+
             console.log("Boost page picked id = " + roamingSettings.values["Id_sel_func"]);
 
             if (age_data.model.the_boost_sel.length === 1) {

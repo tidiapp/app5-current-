@@ -13,7 +13,7 @@
             WinJS.Binding.processAll(element, age_data.model);
             design.getHome();
             design.changeTextColor();
-            var id = roamingSettings.values["Id_sel_sport"];
+            //var id = roamingSettings.values["Id_sel_sport"];
             //console.log("Age page picked id READY() = " + roamingSettings.values["Id_sel_age"]);
             if (roamingSettings.values["not_cont"]) {
                 document.getElementById("youcurrentprice").textContent = roamingSettings.values["the_complete_total"];
@@ -69,7 +69,7 @@
                 //    server.home(the_sel_age);
                 //}
 
-            server.home(the_sel_age, id);
+            server.home(the_sel_age);
 
         },
 
@@ -94,8 +94,6 @@
     // the following namespace will be used to complete all click events on the home.html page
     var _choosen_cat = "";
     var nutrigeneticsPrice = "";
-    //var the_sel_age_sub = roamingSettings.values["Cat_picked"];
-    var id = roamingSettings.values["Id_sel_sport"];
 
     //Milo: I defined this above and it needs to be done here to in order for it to work inside the WinJS
     //var the_sel_age = "";
@@ -110,16 +108,7 @@
             //gather information from from the database as the user clicks on the diffent ages
             //and then displays that information
 
-            //server.home_sub(updated_answer);
-            //if (the_sel_age_sub === "Competitive Sports") {
-            //    server.home_sub2(id);
-            //} else {
-            //    server.home_sub(updated_answer);
-            //}
-
-            //server.home_sub(updated_answer);
-
-            server.home_sub(updated_answer, id);
+            server.home_sub(updated_answer);
 
             //milo: some code does not work well from here 
 
@@ -138,9 +127,9 @@
                 roamingSettings.values["Nutrigenetics_pic"] = document.getElementById("sel_age_pic").src;
                 roamingSettings.values["Nutrigenetics_price"] = document.getElementById("nutrigenetics_price").textContent;
                 //roamingSettings.values["Nutrigenetics_label"] = document.getElementById("sel_base_pic").src;
-
+            }
             //milo: id's coming from Age DB
-            } else if (id_sel == 25 || id_sel == 26) {
+            else if (id_sel == 25 || id_sel == 26 || id_sel == 27 || id_sel == 28) {
                 WinJS.Navigation.navigate('pages/base/base.html');
                 //roamingSettings.values["New_route"] = func3;
                 var appData = Windows.Storage.ApplicationData.current;
@@ -150,7 +139,7 @@
                 roamingSettings.values["Age_info"] = null;
                 roamingSettings.values["Age_price"] = null;
                 roamingSettings.values["Id_sel_func"] = id_sel;
-                console.log("Func page picked id = " + roamingSettings.values["Id_sel_func"]);
+                //console.log("Func page picked id = " + roamingSettings.values["Id_sel_func"]);
 
             } else {
                 keepInfo = false;
@@ -162,7 +151,7 @@
                 roamingSettings.values["Age_info"] = null;
                 roamingSettings.values["Age_price"] = null;
                 roamingSettings.values["Id_sel_age"] = id_sel;
-                console.log("Age page picked id = " + roamingSettings.values["Id_sel_age"]);
+                //console.log("Age page picked id = " + roamingSettings.values["Id_sel_age"]);
             }
 
         },

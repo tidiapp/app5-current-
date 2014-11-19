@@ -95,7 +95,7 @@
                 roamingSettings.values["Base_info"] = document.getElementById("sel_base_info").textContent;
                 roamingSettings.values["Base_price"] = document.getElementById("base_price").textContent;
                 roamingSettings.values["Base_label"] = document.getElementById("sel_base_pic").src;
-                //roamingSettings.values["Id_sel_func"] = document.getElementById("id_sel3").textContent;
+                roamingSettings.values["Id_sel_base"] = document.getElementById("id_sel3").textContent;
                 
             //milo: the following makes a call to vend to check if we have enough product for the order if low it will not allow to move on. 
                 if (vendId != "" && vendId != "null") {

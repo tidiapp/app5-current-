@@ -113,27 +113,6 @@
             var roamingSettings = appData.roamingSettings;
             var id_sel = document.getElementById("id_sel22").textContent;
 
-            //if (roamingSettings.values["Cat_picked"] === "Purchase A Nutrigenetic Test") {
-            //    WinJS.Navigation.navigate('pages/final/final.html');
-            //    roamingSettings.values["Nutrigenetics_name"] = _choosen_cat;
-            //    roamingSettings.values["Nutrigenetics_pic"] = document.getElementById("sel_age_pic22").src;
-            //    roamingSettings.values["Nutrigenetics_price"] = document.getElementById("nutrigenetics_price").textContent;
-            //    //roamingSettings.values["Nutrigenetics_label"] = document.getElementById("sel_base_pic").src;
-
-            ////milo: id's coming from Age DB
-            //} else if (id_sel == 25 || id_sel == 26) {
-            //    WinJS.Navigation.navigate('pages/base/base.html');
-            //    //roamingSettings.values["New_route"] = func3;
-            //    var appData = Windows.Storage.ApplicationData.current;
-            //    var roamingSettings = appData.roamingSettings;
-            //    roamingSettings.values["Age_name"] = _choosen_cat;
-            //    roamingSettings.values["Age_pic"] = document.getElementById("sel_age_pic22").src;
-            //    roamingSettings.values["Age_info"] = null;
-            //    roamingSettings.values["Age_price"] = null;
-            //    roamingSettings.values["Id_sel_func"] = id_sel;
-            //    console.log("Func page picked id = " + roamingSettings.values["Id_sel_func"]);
-
-            //} else {
                 keepInfo = false;
                 WinJS.Navigation.navigate('pages/home/home.html');
                 var appData = Windows.Storage.ApplicationData.current;
@@ -143,9 +122,6 @@
                 //roamingSettings.values["Age_info"] = null;
                 //roamingSettings.values["Age_price"] = null;
                 roamingSettings.values["Id_sel_sport"] = id_sel;
-                //console.log("Age page picked id = " + roamingSettings.values["Id_sel_age"]);
-            //}
-
         },
 
         more_info: function (clicked) {

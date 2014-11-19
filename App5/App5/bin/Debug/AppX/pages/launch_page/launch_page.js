@@ -42,6 +42,7 @@
             roamingSettings.values["Func_label"] = "",
             roamingSettings.values["Home2_name"] = "",
             roamingSettings.values["Base_name"] = "",
+            roamingSettings.values["Id_sel_base"] = "",
             roamingSettings.values["Base_pic"] = "",
             roamingSettings.values["Base_vend"] = "",
             roamingSettings.values["Base_price"] = "",

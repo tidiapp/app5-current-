@@ -8,7 +8,7 @@
 
         WinJS.Namespace.define("server", {
 //home.html
-            home: function (the_sel_age, id) {
+            home: function (the_sel_age) {
                 remove.pop_list(age_data.model.age);
 
                 //milo: withFilter var Age = thinkitdrinkitDataClient.withFilter(noCachingFilter).getTable("Age"); suposed to not cache, great way to test for same name pictures being replaced never seems to refresh the new pic unless name is changed. 
@@ -58,17 +58,7 @@
                 } else if (the_sel_age === "Competitive Sports") {
                     var query = Age.where({
                         AccessS: true
-                    }).read().done(function (results) {
-                        for (var i = 0; i < results.length; i++) {
-                            age_data.model.age.push({ age: results[i].Name, img: results[i].Image })
-                        }
-                    }, function (err) {
-                        console.log(err);
-                    });
-
-                    var query = Age.where({
-                        FuncDBhome2_id: id,
-                    }).read().done(function (results) {
+                    }).orderBy("OrderS").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.age.push({ age: results[i].Name, img: results[i].Image })
                         }
@@ -181,7 +171,7 @@
             },
 
 //base.html
-            base: function (id_sel, the_sel_age) {
+            base: function (id_sel) {
                 var Age = thinkitdrinkitDataClient.getTable("Base");
                 //milo: id_sel == whatever #, the whatever # is the id from thinkitdrinkitDataClient.Func db in azure
 
@@ -196,7 +186,7 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Competitive Sports") {
+                } else if (id_sel == 27 || id_sel == 28) {
                     var query = Age.where({
                         AgeDBhome_id: id_sel
                     }).orderBy("Name").read().done(function (results) {
@@ -224,7 +214,7 @@
                 var query = Age.where({
                     Name: name
                 }).read().done(function (results) {
-                    age_data.model.info_page2.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_img: results[0].Label, base_price: results[0].Price, the_pic: results[0].Image, b_vend: results[0].VendID, b_vend_count: results[0].VendID_count })
+                    age_data.model.info_page2.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_img: results[0].Label, base_price: results[0].Price, the_pic: results[0].Image, b_vend: results[0].VendID, b_vend_count: results[0].VendID_count, id_sel: results[0].id })
                 }, function (err) {
                     console.log(err);
                 })
@@ -259,11 +249,13 @@
 
 //boost.html
             //milo: uses id from thinkitdrinkitData.Func table
-            boost: function (id_sel) {
+            boost: function (cat_picked, id_func, id_sport, id_base) {
                 var Age = thinkitdrinkitDataClient.getTable("Boost");
 
+                if (cat_picked === "Competitive Sports") {
                     var query = Age.where({
-                        FuncDBfunc_id: id_sel
+                        FuncDBsport_id: id_sport,
+                        BaseDBbase_id: id_base
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.boost.push({ boost_name: results[i].Name, boost_pic: results[i].Image })
@@ -271,6 +263,17 @@
                     }, function (err) {
                         console.log(err);
                     });
+                } else if (cat_picked === "Protein") {
+                    var query = Age.where({
+                        FuncDBfunc_id: id_func
+                    }).orderBy("Name").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.boost.push({ boost_name: results[i].Name, boost_pic: results[i].Image })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                }
             },
             boost_sub: function (name) {
                 var Age = thinkitdrinkitDataClient.getTable("Boost");
