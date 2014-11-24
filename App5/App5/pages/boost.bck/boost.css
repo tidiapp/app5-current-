@@ -239,14 +239,14 @@ overError {
     font-weight: bold;
 }
 
-.sel_look_btn {
+/*.sel_look_btn {
     font-size: 35px;
     height: 60px;
     margin-left: 120px;
     text-transform: uppercase;
     box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);
     border: 0;
-}
+}*/
 
 #del_btn10 {
     height: 60px;

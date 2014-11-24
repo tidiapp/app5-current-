@@ -273,6 +273,16 @@
                     }, function (err) {
                         console.log(err);
                     });
+                } else if (cat_picked === "Fitness & Exercise") {
+                    var query = Age.where({
+                        BaseDBbase_id: id_base
+                    }).orderBy("Name").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.boost.push({ boost_name: results[i].Name, boost_pic: results[i].Image })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
                 }
             },
             boost_sub: function (name) {

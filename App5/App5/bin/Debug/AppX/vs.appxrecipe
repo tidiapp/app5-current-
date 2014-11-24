@@ -67,7 +67,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\boost.bck\boost.css">
       <PackagePath>pages\boost.bck\boost.css</PackagePath>
-      <Modified>2014-10-24T20:48:33.507</Modified>
+      <Modified>2014-11-24T17:24:22.853</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\final\final.css">
       <PackagePath>pages\final\final.css</PackagePath>
@@ -205,7 +205,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\dataBaseGather.js">
       <PackagePath>js\dataBaseGather.js</PackagePath>
-      <Modified>2014-11-19T18:55:40.350</Modified>
+      <Modified>2014-11-24T17:55:46.062</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\dataStore.js">
       <PackagePath>js\dataStore.js</PackagePath>
