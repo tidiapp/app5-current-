@@ -27,6 +27,46 @@
               document.getElementById("my_base_name").textContent = "Base: " + roamingSettings.values["Base_name"];
               document.getElementById("my_flav_name").textContent = "Flavor: " + roamingSettings.values["flavSel_name"];
               document.getElementById("my_boost1_name").textContent = "Boost: " + roamingSettings.values["Boost1_name"];*/
+            
+            //Age.select("240788").read().done(function (result) {
+            //    //var id_db = result;
+            //    console.log(result);
+            //    //for (var i = result; i < 240790; i++) {
+            //    //    Age.insert({
+            //    //        BasePrice: i,
+            //    //        Name: "Guest",
+            //    //        Base: 'test',
+            //    //        BaseImage: 'Something else',
+            //    //        BaseID: '???',
+            //    //        id: 240788
+            //    //    })
+            //    //}
+
+            //    alert(JSON.stringify(result));
+            //}, function (err) {
+            //    alert("Error: " + err);
+            //})
+
+            //var query = Age.select("id", "Base").read().done(function (results) {
+            //    alert(JSON.stringify(results));
+            //}, function (err) {
+            //    alert("Error: " + err);
+            //})
+
+
+//milo this is the last one I worked on
+            //var query = Age.where({
+            //    Base: "Hydrolyzed Beef"
+            //})
+            //  .insert({
+            //               BasePrice: "100",
+            //               //Name: "Guest",
+            //               //Base: 'test',
+            //               //BaseImage: 'TEST'
+            //           })
+                
+
+
 
             roamingSettings.values["went_back"] = true;
             if (roamingSettings.values["went_back_back"]) {
@@ -218,7 +258,7 @@
                     //console.log(roamingSettings.values["Invoice_number"]);
                     roamingSettings.values["the_complete_total"] = 0;
                     roamingSettings.values["theComplete"] = document.getElementById("total").textContent;
-
+      
                     Age.insert({//Nothing is being sent to the database yet
                         Name: "Guest",
                         Base: roamingSettings.values["Base_name"],

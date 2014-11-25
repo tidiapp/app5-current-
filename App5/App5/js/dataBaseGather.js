@@ -80,21 +80,21 @@
                 });
             },
 
-//func_home2            
+//func_home2 home2.html           
             func_home2: function () {
                 remove.pop_list(age_data.model.func_home2);
-
                 var Age = thinkitdrinkitDataClient.getTable("Func");
 
                     var query = Age.where({
-                        Home2: true
-                    }).orderBy("Name").read().done(function (results) {
+                    Home2: true
+                }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.func_home2.push({ home2: results[i].Name, img: results[i].Image })
-                        }
-                    }, function (err) {
+                }
+                }, function (err) {
                         console.log(err);
-                    });
+                });                
+            
             },
             func_sub_home2: function (name) {
                 var Age = thinkitdrinkitDataClient.getTable("Func");
@@ -109,41 +109,24 @@
                 });
             },
 
-////func_home2
-//            func_home2: function () {
-//                remove.pop_list(age_data.model.func_home2);
-//                var Func2 = thinkitdrinkitDataClient.getTable("Func");
-
-//                var query = Func2.where({
-//                    Home2: true
-//                }).orderBy("Order").read().done(function (results) {
-//                    for (var i = 0; i < results.length; i++) {
-//                        age_data.model.func_home2.push({ home2: results[i].Name, img: results[i].Image })
-//                    }
-//                }, function (err) {
-//                    console.log(err);
-//                });
-
-//            },
-
-//            func_sub_home2: function (name) {
-//                var Func2 = thinkitdrinkitDataClient.getTable("Func");
-
-//                var query = Func2.where({
-//                    Name: name
-//                }).read().done(function (results) {
-//                    age_data.model.info_page2_func_home2.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_price: results[0].Price, the_pic: results[0].Image, b_vend: results[0].VendID, id_sel: results[0].id })
-//                }, function (err) {
-//                    console.log(err);
-//                });
-//            },
-
-//func.html 
+//func.html func.html
             //milo id_sel is coming from home.html and server.home_sub() above
             func: function (id_sel, cat_selected) {
                 remove.pop_list(age_data.model.func);
                 var Func = thinkitdrinkitDataClient.getTable("Func");
 
+                if (cat_selected === "Energy") {
+                    var query = Func.where({
+                        Access: 1
+                    }).orderBy("Name").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+
+                } else {
                     //milo: id_sel is the id that was picked by user from the db and it equals the actual id number to display the correct business logic 
                     //milo: in the if statement == 'whatever number' is the actual id from the thinkitdrinkitDataClient.Age table in azure db
                     var query = Func.where({
@@ -155,7 +138,7 @@
                     }, function (err) {
                         console.log(err);
                     });
-                
+                }
                 },
 
             func_sub: function (name) {
@@ -266,6 +249,16 @@
                 } else if (cat_picked === "Protein") {
                     var query = Age.where({
                         FuncDBfunc_id: id_func
+                    }).orderBy("Name").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.boost.push({ boost_name: results[i].Name, boost_pic: results[i].Image })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                } else if (cat_picked === "Energy") {
+                    var query = Age.where({
+                        BaseDBbase_id: id_base
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.boost.push({ boost_name: results[i].Name, boost_pic: results[i].Image })
