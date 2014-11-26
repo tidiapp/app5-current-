@@ -54,19 +54,16 @@
             //})
 
 
-//milo this is the last one I worked on
-            //var query = Age.where({
-            //    Base: "Hydrolyzed Beef"
-            //})
-            //  .insert({
-            //               BasePrice: "100",
-            //               //Name: "Guest",
-            //               //Base: 'test',
-            //               //BaseImage: 'TEST'
-            //           })
+//milo: looping for any db to update any part automatically using ids 
+
+//var EditDB = thinkitdrinkitDataClient.getTable("Boost");
+//for (var i = 1; i <= 3947; i++) {
+//    var query = EditDB.update({
+//        id: i,
+//        Price: "7"
+//    })
+//}
                 
-
-
 
             roamingSettings.values["went_back"] = true;
             if (roamingSettings.values["went_back_back"]) {
