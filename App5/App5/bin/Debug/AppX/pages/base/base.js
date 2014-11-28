@@ -18,6 +18,7 @@
             design.changeTextColor();
             document.getElementById("home").removeAttribute("hidden");
             var id_sel = roamingSettings.values["Id_sel_func"];
+            var cat_selected = roamingSettings.values["Cat_picked"];
 
             //milo: footer history & H1
             if (roamingSettings.values["Cat_picked"] === "Fitness & Exercise") {
@@ -50,7 +51,7 @@
             document.getElementById("func_pic").src = roamingSettings.values["Func_pic"];
             document.getElementById("where_you_are2").textContent = "You have choosen the " + roamingSettings.values["Func_name"] + " Function." + " You have 2 steps left.";
 
-            server.base(id_sel);
+            server.base(id_sel, cat_selected);
 
             document.getElementById("base_price_div").removeAttribute("hidden");
         },

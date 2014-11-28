@@ -170,7 +170,7 @@
                 roamingSettings.values["Cat_picked_img4"] = document.getElementById("make_sport_drink_img").src;
     
             } else if (cat_picked === "Energy") {
-                WinJS.Navigation.navigate('pages/func/func.html');
+                WinJS.Navigation.navigate('pages/base/base.html');
                 var appData = Windows.Storage.ApplicationData.current;
                 var roamingSettings = appData.roamingSettings;
                 roamingSettings.values["Cat_picked"] = cat_picked;

@@ -53,7 +53,6 @@
             //    alert("Error: " + err);
             //})
 
-
 //milo: looping for any db to update any part automatically using ids 
 
 //var EditDB = thinkitdrinkitDataClient.getTable("Boost");
@@ -63,7 +62,6 @@
 //        Price: "7"
 //    })
 //}
-                
 
             roamingSettings.values["went_back"] = true;
             if (roamingSettings.values["went_back_back"]) {

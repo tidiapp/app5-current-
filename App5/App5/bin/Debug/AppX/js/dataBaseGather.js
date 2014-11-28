@@ -15,17 +15,7 @@
                 //milo: left all if (the_sel_age === "blahahahh") as names they are easy to change find all replace...
                 var Age = thinkitdrinkitDataClient.getTable("Age");
 
-                if (the_sel_age === "Energy") {
-                    var query = Age.where({
-                        AccessN: true
-                    }).orderBy("Name").read().done(function (results) {
-                        for (var i = 0; i < results.length; i++) {
-                            age_data.model.age.push({ age: results[i].Name, img: results[i].Image })
-                        }
-                    }, function (err) {
-                        console.log(err);
-                    });
-                } else if (the_sel_age === "Protein") {
+                if (the_sel_age === "Protein") {
                     var query = Age.where({
                         AccessP: true
                     }).orderBy("Order").read().done(function (results) {
@@ -115,18 +105,6 @@
                 remove.pop_list(age_data.model.func);
                 var Func = thinkitdrinkitDataClient.getTable("Func");
 
-                if (cat_selected === "Energy") {
-                    var query = Func.where({
-                        Access: 1
-                    }).orderBy("Name").read().done(function (results) {
-                        for (var i = 0; i < results.length; i++) {
-                            age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
-                        }
-                    }, function (err) {
-                        console.log(err);
-                    });
-
-                } else {
                     //milo: id_sel is the id that was picked by user from the db and it equals the actual id number to display the correct business logic 
                     //milo: in the if statement == 'whatever number' is the actual id from the thinkitdrinkitDataClient.Age table in azure db
                     var query = Func.where({
@@ -138,7 +116,6 @@
                     }, function (err) {
                         console.log(err);
                     });
-                }
                 },
 
             func_sub: function (name) {
@@ -154,7 +131,7 @@
             },
 
 //base.html
-            base: function (id_sel) {
+            base: function (id_sel, cat_selected) {
                 var Age = thinkitdrinkitDataClient.getTable("Base");
                 //milo: id_sel == whatever #, the whatever # is the id from thinkitdrinkitDataClient.Func db in azure
 
@@ -172,6 +149,16 @@
                 } else if (id_sel == 27 || id_sel == 28) {
                     var query = Age.where({
                         AgeDBhome_id: id_sel
+                    }).orderBy("Name").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[i].Price })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                } else if (cat_selected === "Energy") {
+                    var query = Age.where({
+                        Access: 1
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[i].Price })
