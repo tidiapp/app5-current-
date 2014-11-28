@@ -166,6 +166,36 @@
                     }, function (err) {
                         console.log(err);
                     });
+                } else if (cat_selected === "Weight Management") {
+                    var query = Age.where({
+                        Access: 2
+                    }).orderBy("Name").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[i].Price })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                } else if (cat_selected === "Lifestyle Diets") {
+                    var query = Age.where({
+                        Access: 3
+                    }).orderBy("Name").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[i].Price })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                } else if (cat_selected === "Wellness") {
+                    var query = Age.where({
+                        Access: 4
+                    }).orderBy("Name").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[i].Price })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
                 } else {
                     var query = Age.where({
                         FuncDBfunc_id: id_sel
