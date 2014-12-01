@@ -22,8 +22,8 @@
 
             //milo: footer history & H1
             if (roamingSettings.values["Cat_picked"] === "Fitness & Exercise") {
-                document.getElementById("age_pic").textContent = roamingSettings.values["Cat_picked_img"];
-                document.getElementById("choosen_age3").textContent = "Select Your Age For " + roamingSettings.values["Age_name"] + ".";
+                document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img5"];
+                document.getElementById("choosen_age3").textContent = "Select Your Base For " + roamingSettings.values["Age_name"] + ".";
             }
 
             //milo: footer history & H1
@@ -32,9 +32,15 @@
             }
 
             //milo: footer history & H1
-            if (roamingSettings.values["Cat_picked"] === "Protein") {
-                document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
+            if (roamingSettings.values["Cat_picked"] === "Protein" || id_sel == 1) {
+                if (roamingSettings.values["Cat_picked"] === "Protein") {
+                    document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
+                }
+                else {
+                    document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img5"];
+                }
                 document.getElementById("choosen_age3").textContent = "Select Your " + "Protein For " + roamingSettings.values["Func_name"] + ".";
+                document.getElementById("func_div").removeAttribute("hidden");
             }
 
             //milo: footer history & H1

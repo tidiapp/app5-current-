@@ -34,6 +34,7 @@
             roamingSettings.values["Cat_picked_img2"] = "",
             roamingSettings.values["Cat_picked_img3"] = "",
             roamingSettings.values["Cat_picked_img4"] = "",
+            roamingSettings.values["Cat_picked_img5"] = "",
 
             roamingSettings.values["Func_name"] = "",
             roamingSettings.values["Func_pic"] = "",
@@ -164,9 +165,6 @@
                 var appData = Windows.Storage.ApplicationData.current;
                 var roamingSettings = appData.roamingSettings;
                 roamingSettings.values["Cat_picked"] = cat_picked;
-                roamingSettings.values["Cat_picked_img"] = document.getElementById("make_drink_img").src;
-                roamingSettings.values["Cat_picked_img2"] = document.getElementById("make_drink_img2").src;
-                roamingSettings.values["Cat_picked_img3"] = document.getElementById("nutrigenetics_img").src;
                 roamingSettings.values["Cat_picked_img4"] = document.getElementById("make_sport_drink_img").src;
     
             } else if (cat_picked === "Energy" || cat_picked === "Weight Management" || cat_picked === "Lifestyle Diets" || cat_picked === "Wellness") {
@@ -175,19 +173,15 @@
                 var roamingSettings = appData.roamingSettings;
                 roamingSettings.values["Cat_picked"] = cat_picked;
                 roamingSettings.values["Cat_picked_img"] = document.getElementById("make_drink_img").src;
-                roamingSettings.values["Cat_picked_img2"] = document.getElementById("make_drink_img2").src;
-                roamingSettings.values["Cat_picked_img3"] = document.getElementById("nutrigenetics_img").src;
-                roamingSettings.values["Cat_picked_img4"] = document.getElementById("make_sport_drink_img").src;
 
             } else {
                 WinJS.Navigation.navigate('pages/home/home.html');
                 var appData = Windows.Storage.ApplicationData.current;
                 var roamingSettings = appData.roamingSettings;
                 roamingSettings.values["Cat_picked"] = cat_picked;
-                roamingSettings.values["Cat_picked_img"] = document.getElementById("make_drink_img").src;
                 roamingSettings.values["Cat_picked_img2"] = document.getElementById("make_drink_img2").src;
                 roamingSettings.values["Cat_picked_img3"] = document.getElementById("nutrigenetics_img").src;
-                roamingSettings.values["Cat_picked_img4"] = document.getElementById("make_sport_drink_img").src;
+                roamingSettings.values["Cat_picked_img5"] = document.getElementById("make_sport_drink_img2").src;
             }
 
         },

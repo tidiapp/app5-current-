@@ -40,6 +40,8 @@
             //milo: footer history & H1
             if (the_sel_age === "Fitness & Exercise") {
                 document.getElementById("choosen_age").textContent = "Select Your " + roamingSettings.values["Cat_picked"] + " Goal.";
+                document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img5"];
+
             }
 
             //milo: footer history & H1

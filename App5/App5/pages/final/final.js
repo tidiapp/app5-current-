@@ -56,10 +56,12 @@
 //milo: looping for any db to update any part automatically using ids 
 
 //var EditDB = thinkitdrinkitDataClient.getTable("Boost");
-//for (var i = 1; i <= 3947; i++) {
+//for (var i = 11509; i <= 11556; i++) {
 //    var query = EditDB.update({
 //        id: i,
+//        //BaseDBbase_id: 147
 //        Price: "7"
+//        //Image: "https://thinkitdrinkit.blob.core.windows.net/thinkitdrinkitappimagesboost/purpose2/optimsmcurrent.png"
 //    })
 //}
 

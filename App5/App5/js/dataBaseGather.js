@@ -263,7 +263,7 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (cat_picked === "Protein") {
+                } else if (cat_picked === "Protein" || id_func == 1) {
                     var query = Age.where({
                         FuncDBfunc_id: id_func
                     }).orderBy("Name").read().done(function (results) {
@@ -273,7 +273,7 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (cat_picked === "Energy") {
+                } else if (cat_picked === "Energy" || cat_picked === "Fitness & Exercise" || cat_picked === "Weight Management" || cat_picked === "Lifestyle Diets" || cat_picked === "Wellness") {
                     var query = Age.where({
                         BaseDBbase_id: id_base
                     }).orderBy("Name").read().done(function (results) {
@@ -283,17 +283,7 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (cat_picked === "Fitness & Exercise") {
-                    var query = Age.where({
-                        BaseDBbase_id: id_base
-                    }).orderBy("Name").read().done(function (results) {
-                        for (var i = 0; i < results.length; i++) {
-                            age_data.model.boost.push({ boost_name: results[i].Name, boost_pic: results[i].Image })
-                        }
-                    }, function (err) {
-                        console.log(err);
-                    });
-                }
+                } 
             },
             boost_sub: function (name) {
                 var Age = thinkitdrinkitDataClient.getTable("Boost");

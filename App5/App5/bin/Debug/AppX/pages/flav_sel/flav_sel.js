@@ -15,21 +15,36 @@
             WinJS.Binding.processAll(element, age_data.model);
             design.getFlavSel();
             design.changeTextColor();
+            var id_sel = roamingSettings.values["Id_sel_func"];
 
             document.getElementById("age_p").textContent = "Age: " + roamingSettings.values["Age_name"];
             document.getElementById("base_p").textContent = "Base: " + roamingSettings.values["Base_name"];
+
+            //milo: footer history 
+            if (roamingSettings.values["Cat_picked"] === "Fitness & Exercise") {
+                document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img5"];
+            }
            
             //milo: footer history 
             if (roamingSettings.values["Cat_picked"] === "Energy") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
             }
+
             //milo: footer history 
-            if (roamingSettings.values["Cat_picked"] === "Protein") {
-                document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
+            if (roamingSettings.values["Cat_picked"] === "Protein" || id_sel == 1) {
+                if (roamingSettings.values["Cat_picked"] === "Protein") {
+                    document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
+                } else {
+                    document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img5"];
+                }
+                document.getElementById("func_div").removeAttribute("hidden");
             }
+
+            //milo: footer history 
             if (roamingSettings.values["Cat_picked"] === "Competitive Sports") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img4"];
             }
+
             //milo: footer history 
             document.getElementById("age_p").textContent = roamingSettings.values["Cat_picked"];
             document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];

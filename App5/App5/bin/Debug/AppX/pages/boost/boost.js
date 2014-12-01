@@ -43,6 +43,7 @@
             if (roamingSettings.values["orderComplete"]) {
                 remove.pop_list(age_data.model.the_boost_sel);
             }
+            var id_sel = roamingSettings.values["Id_sel_func"];
 
             design.getBoost();
             design.changeTextColor();
@@ -54,16 +55,29 @@
             }
 
             //milo: footer history 
+            if (roamingSettings.values["Cat_picked"] === "Fitness & Exercise") {
+                document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img5"];
+            }
+
+            //milo: footer history 
             if (roamingSettings.values["Cat_picked"] === "Energy") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
             }
             //milo: footer history 
-            if (roamingSettings.values["Cat_picked"] === "Protein") {
-                document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
+            if (roamingSettings.values["Cat_picked"] === "Protein" || id_sel == 1) {
+                if (roamingSettings.values["Cat_picked"] === "Protein") {
+                    document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
+                } else {
+                    document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img5"];
+                }
+                document.getElementById("func_div").removeAttribute("hidden");
             }
+
+            //milo: footer history 
             if (roamingSettings.values["Cat_picked"] === "Competitive Sports") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img4"];
             }
+
             //milo: footer history 
             document.getElementById("age_p").textContent = roamingSettings.values["Cat_picked"];
             document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];
@@ -90,6 +104,7 @@
 
             console.log("Boost page picked id = " + roamingSettings.values["Id_sel_func"]);
 
+//milo all if statments save, so when you go to flavor and then back to boost, your picked boosts are still visible.
             if (age_data.model.the_boost_sel.length === 1) {
                 thename1 = roamingSettings.values["Boost1_name"];
                 //console.log(roamingSettings.values["Boost1_name"] + roamingSettings.values["Boost1_pic"]);
@@ -471,7 +486,7 @@
                         roamingSettings.values["Boost1_vend"] = vend;
                         roamingSettings.values["Boost1_pic_label"] = label;
                         document.getElementById("div_boost1_name").textContent = name;
-                        document.getElementById("area_img1").src = roamingSettings.values["Boost1_pic"];
+                        document.getElementById("area_img1").src = img;
                         document.getElementById("boost1_div").removeAttribute("hidden");
                         document.getElementById("the_test");
                         console.log(roamingSettings.values["Boost1_name"] + roamingSettings.values["Boost1_pic"]);
