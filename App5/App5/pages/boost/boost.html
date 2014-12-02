@@ -26,9 +26,11 @@
 
             <div id="win_listview_host_boost_row">
                 <div id="boost_list" class="boost_list_class" data-win-control="WinJS.Binding.Template">
-                    <div id="boost_list_id" data-win-bind="className: boost_name" onclick="boost_clicked.clicked(event.srcElement.innerText);">
+                    <div id="boost_list_id" data-win-bind="className: boost_name" onclick="boost_clicked.clicked(event.srcElement.children.id_sel.innerText);">
                         <img class="boost_bg_img_class" id="boost_bg_img" data-win-bind="src: boost_pic" />
                         <h2 id="boost_name" class="boost_name_class" data-win-bind="textContent: boost_name"></h2>
+                        <span  id="id_sel" data-win-bind="textContent: id_sel"></span>
+
 
                         <!--<p id="the_test"></p>-->
                     </div>

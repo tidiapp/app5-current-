@@ -258,7 +258,7 @@
                         BaseDBbase_id: id_base
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
-                            age_data.model.boost.push({ boost_name: results[i].Name, boost_pic: results[i].Image })
+                            age_data.model.boost.push({ boost_name: results[i].Name, boost_pic: results[i].Image, id_sel: results[i].id })
                         }
                     }, function (err) {
                         console.log(err);
@@ -268,7 +268,7 @@
                         FuncDBfunc_id: id_func
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
-                            age_data.model.boost.push({ boost_name: results[i].Name, boost_pic: results[i].Image })
+                            age_data.model.boost.push({ boost_name: results[i].Name, boost_pic: results[i].Image, id_sel: results[i].id })
                         }
                     }, function (err) {
                         console.log(err);
@@ -278,19 +278,19 @@
                         BaseDBbase_id: id_base
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
-                            age_data.model.boost.push({ boost_name: results[i].Name, boost_pic: results[i].Image })
+                            age_data.model.boost.push({ boost_name: results[i].Name, boost_pic: results[i].Image, id_sel: results[i].id })
                         }
                     }, function (err) {
                         console.log(err);
                     });
                 } 
             },
-            boost_sub: function (name) {
+            boost_sub: function (id_sel_boost) {
                 var Age = thinkitdrinkitDataClient.getTable("Boost");
                 var query = Age.where({
-                    Name: name
+                    id: id_sel_boost
                 }).read().done(function (results) {
-                    age_data.model.info_page5.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_label: results[0].Label, the_price: results[0].Price, bo_vend: results[0].VendID })
+                    age_data.model.info_page5.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_label: results[0].Label, the_price: results[0].Price, bo_vend: results[0].VendID, id_sel: results[0].id })
                 }, function (err) {
                     console.log(err);
                 })

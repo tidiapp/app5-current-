@@ -102,7 +102,17 @@
 //SERVER CALL            
             server.boost(roamingSettings.values["Cat_picked"], roamingSettings.values["Id_sel_func"], roamingSettings.values["Id_sel_sport"], roamingSettings.values["Id_sel_base"]);
 
-            console.log("Boost page picked id = " + roamingSettings.values["Id_sel_func"]);
+            //console.log("Base picked id = " + roamingSettings.values["Id_sel_base"], "Cat picked id = " + roamingSettings.values["Cat_picked"], "Func picked id = " + roamingSettings.values["Id_sel_func"], "Sport picked id = " + roamingSettings.values["Id_sel_sport"]);
+
+            console.log("Cat page picked id     = " + roamingSettings.values["Cat_picked"]);
+
+            if (roamingSettings.values["Func_name"] != "") {
+            console.log("Name & id              = " + roamingSettings.values["Func_name"] + " (from func db)" + " id:" + roamingSettings.values["Id_sel_func"]);
+            } else if (roamingSettings.values["Age_name"] != "") {
+            console.log("Name & id              = " + roamingSettings.values["Age_name"] + " (from age db)" + " id:" + roamingSettings.values["Id_sel_func"]);
+            }
+            console.log("Sport picked id        = " + roamingSettings.values["Id_sel_sport"]);
+            console.log("Base picked id         = " + roamingSettings.values["Id_sel_base"], roamingSettings.values["Base_name"]);
 
 //milo all if statments save, so when you go to flavor and then back to boost, your picked boosts are still visible.
             if (age_data.model.the_boost_sel.length === 1) {
@@ -429,17 +439,37 @@
     thename7 = "";
     thename8 = "";
     thename0 = "";
+
     //console.log(thename1, thename2, thename3);
 
     WinJS.Namespace.define("boost_clicked", {
 
-        clicked: function (name) {
+        //clicked: function (name) {
+        //    remove.pop_list(age_data.model.info_page5);
+        //    var updated_name = name.replace(/^\s+/, '').replace(/\s+$/, '');
+        //    server.boost_sub(name);
+        //    keepInfo = false;
+        //    console.log(updated_name);
+        //},
+
+        //clicked: function (id) {
+        //    remove.pop_list(age_data.model.info_page5);
+       
+        //    var updated_id = id.replace(/^\s+/, '').replace(/\s+$/, '');
+        //    console.log(updated_id)
+        //    server.boost_sub(updated_id);
+        //    keepInfo = false;
+        //},
+
+        clicked: function (id_sel_boost) {
             remove.pop_list(age_data.model.info_page5);
-            var updated_name = name.replace(/^\s+/, '').replace(/\s+$/, '');
-            server.boost_sub(updated_name);
+
+            console.log(id_sel_boost)
+            server.boost_sub(id_sel_boost);
             keepInfo = false;
-            console.log(updated_name);
         },
+
+
 
        //milo: onclick from boost.html takes what was clicked and passes it to variable.
         clicked1: function (name, img, price, vend, label) {
@@ -489,7 +519,7 @@
                         document.getElementById("area_img1").src = img;
                         document.getElementById("boost1_div").removeAttribute("hidden");
                         document.getElementById("the_test");
-                        console.log(roamingSettings.values["Boost1_name"] + roamingSettings.values["Boost1_pic"]);
+                        console.log(roamingSettings.values["Boost1_name"] + " " + roamingSettings.values["Boost1_pic"]);
                         keepInfo = false;
 //milo: here needs to be the check order qantity from vend 
 

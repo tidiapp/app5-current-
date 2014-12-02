@@ -103,6 +103,8 @@
                 roamingSettings.values["Base_price"] = document.getElementById("base_price").textContent;
                 roamingSettings.values["Base_label"] = document.getElementById("sel_base_pic").src;
                 roamingSettings.values["Id_sel_base"] = document.getElementById("id_sel3").textContent;
+
+                //console.log("Base page picked id = " + roamingSettings.values["Id_sel_base"]);
                 
             //milo: the following makes a call to vend to check if we have enough product for the order if low it will not allow to move on. 
                 if (vendId != "" && vendId != "null") {
@@ -122,7 +124,7 @@
                     }).then(function sucess(res) {
                         //milo: below allows the real GET which is the count to come back to app. Notes accessing json>>> http://www.mkyong.com/javascript/how-to-access-json-object-in-javascript/
                         var vendCount = JSON.parse(res.responseText).product.inventory[0].count;
-                        console.log("Base Count from VEND ", vendCount);
+                        //console.log("Base Count from VEND ", vendCount);
                         if (vendCount >= 1.00000) {
                             WinJS.Navigation.navigate('pages/boost/boost.html')
                         } else if (vendCount <= 0.00000) {
