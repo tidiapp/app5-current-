@@ -470,8 +470,6 @@
             keepInfo = false;
         },
 
-
-
        //milo: onclick from boost.html takes what was clicked and passes it to variable.
         clicked1: function (name, img, price, vend, label) {
             //document.getElementById("btn_right").removeAttribute("hidden");
