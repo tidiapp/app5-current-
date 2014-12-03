@@ -456,6 +456,7 @@
         //    remove.pop_list(age_data.model.info_page5);
        
         //    var updated_id = id.replace(/^\s+/, '').replace(/\s+$/, '');
+
         //    console.log(updated_id)
         //    server.boost_sub(updated_id);
         //    keepInfo = false;

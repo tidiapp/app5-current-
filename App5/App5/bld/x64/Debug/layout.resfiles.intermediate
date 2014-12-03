@@ -65,12 +65,6 @@ pages\all_products\all_products.js
 pages\base\base.css
 pages\base\base.html
 pages\base\base.js
-pages\boost.bck\boost.css
-pages\boost.bck\boost.html
-pages\boost.bck\boost.js
-pages\boost.ori\boost.css
-pages\boost.ori\boost.html
-pages\boost.ori\boost.js
 pages\boost\boost.css
 pages\boost\boost.html
 pages\boost\boost.js
@@ -78,7 +72,6 @@ pages\final\final.css
 pages\final\final.html
 pages\final\final.js
 pages\final\print.css
-pages\flav_sel\flav_sel - Copy.html
 pages\flav_sel\flav_sel.css
 pages\flav_sel\flav_sel.html
 pages\flav_sel\flav_sel.js
@@ -88,6 +81,9 @@ pages\func\func.js
 pages\home\home.css
 pages\home\home.html
 pages\home\home.js
+pages\home2\home2.css
+pages\home2\home2.html
+pages\home2\home2.js
 pages\info_home\info_home.css
 pages\info_home\info_home.html
 pages\info_home\info_home.js

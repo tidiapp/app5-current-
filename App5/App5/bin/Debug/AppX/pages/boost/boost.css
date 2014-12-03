@@ -32,15 +32,17 @@
     z-index: -1;
 }
 
+#boost_name_div {
+    float: left;
+    margin-top: -205px;
+}
+
 #boost_name {
     width: auto;
-    /*height: 25px;*/
     color: #fff;
     font-weight: 300;
     margin-top: 105px;
-    /*background-color: rgba(0,0,0,.6);*/
     font-size: 18px;
-    /*padding-left: 10px;*/
     padding-top: 5px;
     text-align: center;
 }
@@ -290,6 +292,10 @@ button, input[type=button], input[type=submit], input[type=reset], input[type=fi
 }
 
 /*Milo this actually works to fix glitch when too many products are hit at the same time, it DOES NOT SHOW UP IN THE CSS DOM eXPLORER DUNNO WHY BUT IT WORKS!!*/
+
+/*.win-listview .win-item, .win-itemcontainer .win-item {
+    overflow: visible;
+}*/
 
 #win_listview_host_boost_all .win-listview {
 /*dont use margins here use .win-surface*/
