@@ -99,7 +99,7 @@
             }
 
             //document.getElementById("theBoostAge").textContent = roamingSettings.values["Age_name"];
-//SERVER CALL            
+            //SERVER CALL            
             server.boost(roamingSettings.values["Cat_picked"], roamingSettings.values["Id_sel_func"], roamingSettings.values["Id_sel_sport"], roamingSettings.values["Id_sel_base"]);
 
             //console.log("Base picked id = " + roamingSettings.values["Id_sel_base"], "Cat picked id = " + roamingSettings.values["Cat_picked"], "Func picked id = " + roamingSettings.values["Id_sel_func"], "Sport picked id = " + roamingSettings.values["Id_sel_sport"]);
@@ -107,14 +107,14 @@
             console.log("Cat page picked id     = " + roamingSettings.values["Cat_picked"]);
 
             if (roamingSettings.values["Func_name"] != "") {
-            console.log("Name & id              = " + roamingSettings.values["Func_name"] + " (from func db)" + " id:" + roamingSettings.values["Id_sel_func"]);
+                console.log("Name & id              = " + roamingSettings.values["Func_name"] + " (from func db)" + " id:" + roamingSettings.values["Id_sel_func"]);
             } else if (roamingSettings.values["Age_name"] != "") {
-            console.log("Name & id              = " + roamingSettings.values["Age_name"] + " (from age db)" + " id:" + roamingSettings.values["Id_sel_func"]);
+                console.log("Name & id              = " + roamingSettings.values["Age_name"] + " (from age db)" + " id:" + roamingSettings.values["Id_sel_func"]);
             }
             console.log("Sport picked id        = " + roamingSettings.values["Id_sel_sport"]);
             console.log("Base picked id         = " + roamingSettings.values["Id_sel_base"], roamingSettings.values["Base_name"]);
 
-//milo all if statments save, so when you go to flavor and then back to boost, your picked boosts are still visible.
+            //milo all if statments save, so when you go to flavor and then back to boost, your picked boosts are still visible.
             if (age_data.model.the_boost_sel.length === 1) {
                 thename1 = roamingSettings.values["Boost1_name"];
                 //console.log(roamingSettings.values["Boost1_name"] + roamingSettings.values["Boost1_pic"]);
@@ -126,11 +126,11 @@
 
                 document.getElementById("boost1_div").removeAttribute("hidden");
                 document.getElementById("the_test");
-               // keepInfo = false;
+                // keepInfo = false;
             } else if (age_data.model.the_boost_sel.length === 2) {
                 
                 thename1 = roamingSettings.values["Boost1_name"];
-               // console.log("one boost " + roamingSettings.values["Boost1_name"] + roamingSettings.values["Boost1_pic"]);
+                // console.log("one boost " + roamingSettings.values["Boost1_name"] + roamingSettings.values["Boost1_pic"]);
                 document.getElementById("the_number").textContent = age_data.model.the_boost_sel.length;
                 document.getElementById("the_num").textContent = age_data.model.the_boost_sel.length;
 
@@ -140,7 +140,7 @@
                 document.getElementById("boost1_div").removeAttribute("hidden");
                 document.getElementById("the_test");
 
-               // console.log("two boost: " + roamingSettings.values["Boost2_name"] + roamingSettings.values["Boost2_pic"]);
+                // console.log("two boost: " + roamingSettings.values["Boost2_name"] + roamingSettings.values["Boost2_pic"]);
                 thename2 = roamingSettings.values["Boost2_name"];
                 document.getElementById("the_number").textContent = age_data.model.the_boost_sel.length;
                 document.getElementById("the_num").textContent = age_data.model.the_boost_sel.length;
@@ -457,22 +457,34 @@
        
             //var updated_id = id.replace(/^\s+/, '').replace(/\s+$/, '');
 
-            var re = /^\s+/;
-            var updated_id = id.replace(re, '').replace(/\s+$/, '');
-
+            var updated_id = id.replace(/^\s+/, '').replace(/\s+/, '').replace(/\s+$/, '').replace('AdvantraZ','');
 
             console.log(updated_id)
             server.boost_sub(updated_id);
             keepInfo = false;
         },
 
+
+//clicked: function (id_sel_boost, name) {
+   
+
+//            console.log(name)
+//            remove.pop_list(age_data.model.info_page5);
+
+//            server.boost_sub(id_sel_boost);
+//            keepInfo = false;
+
+
+//        },
+
         //clicked: function (id_sel_boost) {
+        //    console.log(id_sel_boost)
         //    remove.pop_list(age_data.model.info_page5);
 
-        //    console.log(id_sel_boost)
         //    server.boost_sub(id_sel_boost);
         //    keepInfo = false;
         //},
+
 
        //milo: onclick from boost.html takes what was clicked and passes it to variable.
         clicked1: function (name, img, price, vend, label) {
