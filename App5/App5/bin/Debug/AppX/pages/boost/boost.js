@@ -452,23 +452,27 @@
         //    console.log(updated_name);
         //},
 
-        //clicked: function (id) {
-        //    remove.pop_list(age_data.model.info_page5);
-       
-        //    var updated_id = id.replace(/^\s+/, '').replace(/\s+$/, '');
-
-        //    console.log(updated_id)
-        //    server.boost_sub(updated_id);
-        //    keepInfo = false;
-        //},
-
-        clicked: function (id_sel_boost) {
+        clicked: function (id) {
             remove.pop_list(age_data.model.info_page5);
+       
+            //var updated_id = id.replace(/^\s+/, '').replace(/\s+$/, '');
 
-            console.log(id_sel_boost)
-            server.boost_sub(id_sel_boost);
+            var re = /^\s+/;
+            var updated_id = id.replace(re, '').replace(/\s+$/, '');
+
+
+            console.log(updated_id)
+            server.boost_sub(updated_id);
             keepInfo = false;
         },
+
+        //clicked: function (id_sel_boost) {
+        //    remove.pop_list(age_data.model.info_page5);
+
+        //    console.log(id_sel_boost)
+        //    server.boost_sub(id_sel_boost);
+        //    keepInfo = false;
+        //},
 
        //milo: onclick from boost.html takes what was clicked and passes it to variable.
         clicked1: function (name, img, price, vend, label) {

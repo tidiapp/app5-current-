@@ -34,7 +34,7 @@
 
 #boost_name_div {
     /*float: left;*/
-    margin-top: -105px;
+    /*margin-top: -105px;*/
 }
 
 #boost_name {
@@ -45,6 +45,7 @@
     font-size: 18px;
     padding-top: 5px;
     text-align: center;
+    margin-top: 100px;
 }
 
 #flav2_pic {
