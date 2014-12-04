@@ -457,9 +457,16 @@
        
             //var updated_id = id.replace(/^\s+/, '').replace(/\s+$/, '');
 
-            var updated_id = id.replace(/^\s+/, '').replace(/\s+/, '').replace(/\s+$/, '').replace('AdvantraZ','');
+            var updated_id = id.replace(/^\s+/, '').replace(/\s+/, '').replace(/\s+$/, '');
+            //var updated_id = id.replace(/\n/g, '');
 
-            console.log(updated_id)
+            updated_id.slice(2);
+            console.log(updated_id.slice(4));
+
+            //console.log(updated_id)
+
+
+
             server.boost_sub(updated_id);
             keepInfo = false;
         },
