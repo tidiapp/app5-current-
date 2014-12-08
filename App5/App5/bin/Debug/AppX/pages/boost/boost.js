@@ -99,7 +99,7 @@
             }
 
             //document.getElementById("theBoostAge").textContent = roamingSettings.values["Age_name"];
-            //SERVER CALL            
+//SERVER CALL            
             server.boost(roamingSettings.values["Cat_picked"], roamingSettings.values["Id_sel_func"], roamingSettings.values["Id_sel_sport"], roamingSettings.values["Id_sel_base"]);
 
             //console.log("Base picked id = " + roamingSettings.values["Id_sel_base"], "Cat picked id = " + roamingSettings.values["Cat_picked"], "Func picked id = " + roamingSettings.values["Id_sel_func"], "Sport picked id = " + roamingSettings.values["Id_sel_sport"]);
@@ -452,37 +452,44 @@
         //    console.log(updated_name);
         //},
 
-        clicked: function (id) {
-            remove.pop_list(age_data.model.info_page5);
+        //clicked: function (id) {
+        //    remove.pop_list(age_data.model.info_page5);
        
-            //var updated_id = id.replace(/^\s+/, '').replace(/\s+$/, '');
+        //    //var updated_id = id.replace(/^\s+/, '').replace(/\s+$/, '');
 
-            var updated_id = id.replace(/^\s+/, '').replace(/\s+/, '').replace(/\s+$/, '');
-            //var updated_id = id.replace(/\n/g, '');
+        //    var updated_id = id.replace(/^\s+/, '').replace(/\s+/, '').replace(/\s+$/, '');
+        //    //var updated_id = id.replace(/\n/g, '');
 
-            updated_id.slice(2);
-            console.log(updated_id.slice(4));
+        //    updated_id.slice(2);
+        //    console.log(updated_id.slice(4));
 
-            //console.log(updated_id)
+        //    //console.log(updated_id)
 
-
-
-            server.boost_sub(updated_id);
-            keepInfo = false;
-        },
+        //    server.boost_sub(updated_id);
+        //    keepInfo = false;
+        //},
 
 
-//clicked: function (id_sel_boost, name) {
+clicked: function (id, name) {
    
+            remove.pop_list(age_data.model.info_page5);
+            //var updated_id = id.replace(/^\s+/, '').replace(/\s+/, '').replace(/\s+$/, '');
 
-//            console.log(name)
-//            remove.pop_list(age_data.model.info_page5);
+            //when image is clicked numrical only allowed and id var pass through 
+            var updated_id = id.replace(/[^0-9]\S+/g, '');
+            //var updated_id = id.replace(/^\s+/, '').replace(/\s*\r\s.*/, '');
+            //when h1 is clicked (bug passes what boost word is in the h1 tag) 
+            var updated_id2 = name.replace(/^\s+/, '').replace(/\s*\r\s.*/, '');
 
-//            server.boost_sub(id_sel_boost);
-//            keepInfo = false;
+            //var updated_id2 = name.replace(/[^a-zA-Z]+|\\s/g, '');
+            //var updated_id2 = name.replace(/^\s+/, '').replace(/\s+/, '').replace(/\s+$/, '');
 
+            //server.boost_sub(updated_id, updated_id2, roamingSettings.values["Id_sel_base"], roamingSettings.values["Id_sel_func"]);
+            server.boost_sub(updated_id, updated_id2, roamingSettings.values["Cat_picked"], roamingSettings.values["Id_sel_func"], roamingSettings.values["Id_sel_sport"], roamingSettings.values["Id_sel_base"]);
 
-//        },
+            keepInfo = false;
+
+        },
 
         //clicked: function (id_sel_boost) {
         //    console.log(id_sel_boost)

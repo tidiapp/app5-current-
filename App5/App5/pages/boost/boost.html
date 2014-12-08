@@ -27,31 +27,12 @@
             <div id="win_listview_host_boost_row">
                 <div id="boost_list" class="boost_list_class" data-win-control="WinJS.Binding.Template">
 
-                    <!--<div id="boost_list_id" data-win-bind="className: boost_name" onclick="boost_clicked.clicked(event.srcElement.innerText);">
-                        <img class="boost_bg_img_class" id="boost_bg_img" data-win-bind="src: boost_pic" />
+                    <div  id="boost_list_id" data-win-bind="className: boost_name" onclick="boost_clicked.clicked(event.srcElement.innerText, event.srcElement.innerText);">
+                        <!--milo: DO NOT USE! event.srcElement.children.id_sel.innerText or event.srcElement.firstElementChild.innerText, in boost page app has issues if you click on the image, the event.srcElement.innerText if it has more then 1 thing to grab like 2 pices of text from a h1 and span tag in one div it will break app -->
                         <span id="id_sel" data-win-bind="textContent: id_sel"></span>
-                    </div>
-                    <div>
-                        <h2 id="boost_name" class="boost_name_class" data-win-bind="textContent: boost_name"></h2>
-                    </div>-->
-
-                    <!--<div  id="boost_list_id" data-win-bind="className: boost_name" onclick="boost_clicked.clicked(event.srcElement.firstElementChild.innerText);">-->
-                    <div  id="boost_list_id" data-win-bind="className: boost_name" onclick="boost_clicked.clicked(event.srcElement.innerText);">
-                    <!--<div id="boost_list_id" data-win-bind="className: boost_name" onclick="boost_clicked.clicked(event.srcElement.children.id_sel.innerText, event.srcElement.innerText);">-->
-
-                        <!--milo: DO NOT PUT ANY EXTRA TEXT IN THIS DIV (boost_list_id) EXPECT THE CURRENT id_sel WHICH PULLS THE ID NUMBER. ANY EXTRA TEXT WILL CAUSE A BUG WHERE A HANDFULL CLICKS ON THE BOOSTS WILL CRASH THE APP -->
-                        <span id="id_sel" data-win-bind="textContent: id_sel"></span>
-
                         <img class="boost_bg_img_class" id="boost_bg_img" data-win-bind="src: boost_pic" />
                         <h1 id="boost_name" class="boost_name_class" data-win-bind="textContent: boost_name"></h1>
-
-
-
                     </div>
-                    <!--<div id="boost_name_div">
-                    </div>-->
-
-
                 </div>
 
                 <div id="boost_list_placement" class="boost_placement_class" data-win-control="WinJS.UI.ListView" data-win-bind="winControl.itemDataSource: boost.dataSource" data-win-options="{

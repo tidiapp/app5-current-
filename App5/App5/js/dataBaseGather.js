@@ -285,15 +285,50 @@
                     });
                 } 
             },
-            boost_sub: function (id_sel_boost) {
+            boost_sub: function (id, name, cat_picked, id_func, id_sport, id_base) {
                 var Age = thinkitdrinkitDataClient.getTable("Boost");
-                var query = Age.where({
-                    id: id_sel_boost
-                }).read().done(function (results) {
-                    age_data.model.info_page5.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_label: results[0].Label, the_price: results[0].Price, bo_vend: results[0].VendID, id_sel: results[0].id })
-                }, function (err) {
-                    console.log(err);
-                })
+
+                //milo: this is for a bug in boost.html if clicking on image this fires if clicked on h1 else fires (the issue is coming from boost.html when div grabs event.srcElement.innerText there are two text areas h1 and span that couse issues) 
+                if (id != isNaN && id != "") {
+                    var query = Age.where({
+                        id: id
+                    }).read().done(function (results) {
+                        age_data.model.info_page5.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_label: results[0].Label, the_price: results[0].Price, bo_vend: results[0].VendID, id_sel: results[0].id })
+                    }, function (err) {
+                        console.log(err);
+                    })
+                //milo: bug continued, now if the h1 did get hit we have to compare the name in the db with the id
+                } else {
+                    if (cat_picked === "Competitive Sports") {
+                        var query = Age.where({
+                            FuncDBsport_id: id_sport,
+                            BaseDBbase_id: id_base,
+                            Name: name
+                        }).read().done(function (results) {
+                            age_data.model.info_page5.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_label: results[0].Label, the_price: results[0].Price, bo_vend: results[0].VendID, id_sel: results[0].id })
+                        }, function (err) {
+                            console.log(err);
+                        })
+                    } else if (cat_picked === "Protein" || id_func == 1) {
+                        var query = Age.where({
+                            FuncDBfunc_id: id_func,
+                            Name: name
+                        }).read().done(function (results) {
+                            age_data.model.info_page5.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_label: results[0].Label, the_price: results[0].Price, bo_vend: results[0].VendID, id_sel: results[0].id })
+                        }, function (err) {
+                            console.log(err);
+                        })
+                    } else if (cat_picked === "Energy" || cat_picked === "Fitness & Exercise" || cat_picked === "Weight Management" || cat_picked === "Lifestyle Diets" || cat_picked === "Wellness") {
+                        var query = Age.where({
+                            BaseDBbase_id: id_base,
+                            Name: name
+                        }).read().done(function (results) {
+                            age_data.model.info_page5.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_label: results[0].Label, the_price: results[0].Price, bo_vend: results[0].VendID, id_sel: results[0].id })
+                        }, function (err) {
+                            console.log(err);
+                        })
+                    }
+                }
             },
 
 //login_sessions/info_home.js
