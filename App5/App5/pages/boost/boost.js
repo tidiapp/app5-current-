@@ -476,7 +476,7 @@ clicked: function (id, name) {
             //var updated_id = id.replace(/^\s+/, '').replace(/\s+/, '').replace(/\s+$/, '');
 
             //when image is clicked numrical only allowed and id var pass through 
-            var updated_id = id.replace(/[^0-9]/g, '');
+            var updated_id = id.slice(0,9).replace(/[^0-9]/g, '');
             //var updated_id = id.replace(/^\s+/, '').replace(/\s*\r\s.*/, '');
             //when h1 is clicked (bug passes what boost word is in the h1 tag) 
             var updated_id2 = name.replace(/^\s+/, '').replace(/\s*\r\s.*/, '');
