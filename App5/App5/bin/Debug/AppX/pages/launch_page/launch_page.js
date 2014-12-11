@@ -152,13 +152,10 @@
     var cat_picked = "";
 
     WinJS.Namespace.define("cat_clicked", {
-
-        passon: function (me) {
-            var updated_answer = me.replace(/^\s+/, '').replace(/\s+$/, '');
-            cat_picked = updated_answer;
-        },
         
-        next_page: function () {
+        next_page: function (me) {
+
+            var cat_picked = me.replace(/^\s+/, '').replace(/\s+$/, '');
 
             if(cat_picked === "Competitive Sports"){
                 WinJS.Navigation.navigate('pages/home2/home2.html');

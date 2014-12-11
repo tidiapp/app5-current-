@@ -108,6 +108,9 @@
                 
             //milo: the following makes a call to vend to check if we have enough product for the order if low it will not allow to move on. 
                 if (vendId != "" && vendId != "null") {
+
+                    //
+
                     WinJS.xhr({
                         //milo: using POST but not passing anything to vend until .then at which point it reads the api product inventory count and displays it back.  
                         type: "POST",
