@@ -20,7 +20,7 @@
                 //it accepts some colors written as a string and all in hex
                 //www.html-color-codes.info is a good website to obtain hex color values
                 roamingSettings.values["the_complete_total"] = 0;
-                design.colorChange("#FF7C00", "white");
+                design.colorChange("#F89B1E", "white");
                 roamingSettings.values["true"] = false;
                 roamingSettings.values["not_cont"] = false;
                 roamingSettings.values["went_back"] = true;

@@ -31,6 +31,7 @@
             }
 
             //milo: footer history 
+            // id_sel might have been for Recovery 
             if (roamingSettings.values["Cat_picked"] === "Protein" || id_sel == 1) {
                 if (roamingSettings.values["Cat_picked"] === "Protein") {
                     document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
@@ -205,7 +206,20 @@
             roamingSettings.values["Clicked_cat"] = "Flavor";
             WinJS.Navigation.navigate('pages/item_info/item_info.html');
             keepInfo = true;
+        },
+
+        //milo: recvery catagory has a func page and needs to jump 2 some other catagories dont have a func page so just need to jump 1.
+        footer_click: function () {
+            var id_sel_footer = roamingSettings.values["Id_sel_func"];
+
+            if (id_sel_footer == 25 || id_sel_footer == 26 || id_sel_footer == 27 || id_sel_footer == 28) {
+                WinJS.Navigation.back(3);
+
+            } else {
+                WinJS.Navigation.back(4);
+            }
         }
+
 
     })
 

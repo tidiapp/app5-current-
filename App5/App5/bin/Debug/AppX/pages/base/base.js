@@ -32,12 +32,17 @@
             }
 
             //milo: footer history & H1
-            if (roamingSettings.values["Cat_picked"] === "Protein" || id_sel == 1) {
+            if (roamingSettings.values["Cat_picked"] === "Protein" || id_sel == 1 || id_sel == 2 || id_sel == 4 || id_sel == 5 || id_sel == 6) {
                 if (roamingSettings.values["Cat_picked"] === "Protein") {
+                    //milo: Cat_picked_img2 image from Protein
                     document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
-                }
-                else {
+                    document.getElementById("where_you_are2").textContent = "You have choosen " + roamingSettings.values["Func_name"] + "." + " You have 2 steps left.";
+
+                } else {
+                    //milo: Cat_picked_img5 image from Fitness & Exercise
                     document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img5"];
+                    document.getElementById("where_you_are2").textContent = "You have choosen " + roamingSettings.values["Func_name"] + "." + " You have 2 steps left.";
+
                 }
                 document.getElementById("choosen_age3").textContent = "Select Your " + "Protein For " + roamingSettings.values["Func_name"] + ".";
                 document.getElementById("func_div").removeAttribute("hidden");
@@ -55,7 +60,6 @@
             document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];
             document.getElementById("func_p").textContent = roamingSettings.values["Func_name"];
             document.getElementById("func_pic").src = roamingSettings.values["Func_pic"];
-            document.getElementById("where_you_are2").textContent = "You have choosen the " + roamingSettings.values["Func_name"] + " Function." + " You have 2 steps left.";
 
             server.base(id_sel, cat_selected);
 
@@ -108,6 +112,9 @@
                 
             //milo: the following makes a call to vend to check if we have enough product for the order if low it will not allow to move on. 
                 if (vendId != "" && vendId != "null") {
+
+                    //
+
                     WinJS.xhr({
                         //milo: using POST but not passing anything to vend until .then at which point it reads the api product inventory count and displays it back.  
                         type: "POST",
@@ -156,7 +163,32 @@
             roamingSettings.values["Clicked_cat"] = "Base";
             WinJS.Navigation.navigate('pages/item_info/item_info.html');
             keepInfo = true;
+        },
+
+        //milo: recvery catagory has a func page and needs to jump 2 some other catagories dont have a func page so just need to jump 1.
+        footer_click: function () {
+            var id_sel_footer = roamingSettings.values["Id_sel_func"];
+
+            if (id_sel_footer == 25 || id_sel_footer == 26 || id_sel_footer == 27 || id_sel_footer == 28) {
+                WinJS.Navigation.back(1);
+
+            } else {
+                WinJS.Navigation.back(2);
+            }
+        },
+
+        footer_click2: function () {
+            var cat_selected_footer = roamingSettings.values["Cat_picked"];
+            var id_sel_footer = roamingSettings.values["Id_sel_func"];
+
+            if (cat_selected_footer === "Fitness & Exercise" && (id_sel_footer == 25 || id_sel_footer == 26 || id_sel_footer == 27 || id_sel_footer == 28)) {
+                WinJS.Navigation.back(2);
+
+            } else {
+                WinJS.Navigation.back(3);
+            }
         }
+
     })
 
 })();

@@ -470,7 +470,7 @@
         //},
 
 
-clicked: function (id, name) {
+        clicked: function (id, name) {
    
             remove.pop_list(age_data.model.info_page5);
             //var updated_id = id.replace(/^\s+/, '').replace(/\s+/, '').replace(/\s+$/, '');
@@ -813,6 +813,19 @@ clicked: function (id, name) {
             thename0 = "";
             roamingSettings.values["orderComplete"] = false;
             keepInfo = true;
+        },
+
+        //milo: recvery catagory has a func page and needs to jump 2 some other catagories dont have a func page so just need to jump 1.
+        footer_click: function () {
+            var id_sel_footer = roamingSettings.values["Id_sel_func"];
+
+            if (id_sel_footer == 25 || id_sel_footer == 26 || id_sel_footer == 27 || id_sel_footer == 28) {
+                WinJS.Navigation.back(2);
+
+            } else {
+                WinJS.Navigation.back(3);
+            }
         }
+
     })
 })();

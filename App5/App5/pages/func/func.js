@@ -35,10 +35,10 @@
 
                     if (roamingSettings.values["Cat_picked"] === "Protein") {
                         document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
-                        document.getElementById("choosen_age2").textContent = "Select Your " + roamingSettings.values["Age_name"] + " Goal.";
+                        document.getElementById("choosen_age2").textContent = "Select Your " + roamingSettings.values["Age_name"] + "." + " Goal.";
                     } else {
                         document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img5"];
-                        document.getElementById("choosen_age2").textContent = "Select Your " + roamingSettings.values["Age_name"] + " Goal.";
+                        document.getElementById("choosen_age2").textContent = "Select Your " + roamingSettings.values["Age_name"] + "." + " Goal.";
                     }
                 }
 
@@ -52,7 +52,7 @@
                 document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];
                 document.getElementById("home_p").textContent = roamingSettings.values["Age_name"];
                 document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];
-                document.getElementById("where_you_are1").textContent = "You have choosen the " + roamingSettings.values["Age_name"] + " Goal." + " You have 3 steps left.";
+                document.getElementById("where_you_are1").textContent = "You have choosen the " + roamingSettings.values["Age_name"] + "." + " You have 3 steps left.";
 
                 server.func(id_sel, cat_selected);
 

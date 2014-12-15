@@ -140,8 +140,8 @@
                 roamingSettings.values["Age_pic"] = document.getElementById("sel_age_pic").src;
                 roamingSettings.values["Age_info"] = null;
                 roamingSettings.values["Age_price"] = null;
+                //milo: Id_sel_func is used instead of Id_sel_age since some catagories skip over func.html this helps with alowing to keep the code in base.html working properly. 
                 roamingSettings.values["Id_sel_func"] = id_sel;
-                //console.log("Func page picked id = " + roamingSettings.values["Id_sel_func"]);
 
             } else {
                 keepInfo = false;
