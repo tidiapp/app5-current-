@@ -39,8 +39,9 @@
 
             //milo: footer history & H1
             if (the_sel_age === "Fitness & Exercise") {
-                document.getElementById("choosen_age").textContent = "Select Your " + roamingSettings.values["Cat_picked"] + " Goal.";
+                document.getElementById("choosen_age").textContent = "Physical and daily activity can improve your health, energy, and mood.";
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img5"];
+                document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory." + " You have 3 steps left.";
 
             }
 
