@@ -49,7 +49,7 @@
             //}
 
             ////milo: footer history & H1
-            //if (the_sel_age === "Purchase A Nutrigenetic Test") {
+            //if (the_sel_age === "Nutrigenetic Test") {
             //    document.getElementById("age_pic22").src = roamingSettings.values["Cat_picked_img3"];
             //    document.getElementById("where_you_are22").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory.";
             //    document.getElementById("choosen_age22").textContent = "Choose Your Test Kit";

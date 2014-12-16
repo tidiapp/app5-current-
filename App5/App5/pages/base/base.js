@@ -20,29 +20,78 @@
             var id_sel = roamingSettings.values["Id_sel_func"];
             var cat_selected = roamingSettings.values["Cat_picked"];
 
-            //milo: footer history & H1
+            ////milo: footer history & H1 Fitness>workout
+            ////Fitness>workout
+            ////Fitness>social
+            ////Fitness>recovery>strength *bug in footer where_you_ar2*
+            //if (roamingSettings.values["Cat_picked"] === "Fitness & Exercise") {
+            //    document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img5"];
+            //    document.getElementById("choosen_age3").textContent = "Select Your Base For " + roamingSettings.values["Age_name"] + ".";
+            //    document.getElementById("where_you_are2").textContent = "You have choosen " + roamingSettings.values["Age_name"] + "." + " You have 2 steps left.";
+            //}
+
+            ////milo: footer history & H1 
+            ////milo: Bug fixed here if you go down fitness & Energy, Recovery shows up which is the same as going from Protein catagory, The app was getting confused the path it came from this if else helps with footer cookie issues.  
+            //if (roamingSettings.values["Cat_picked"] === "Protein" || id_sel == 1 || id_sel == 2 || id_sel == 4 || id_sel == 5 || id_sel == 6) {
+            //    if (roamingSettings.values["Cat_picked"] === "Protein") {
+            //        //milo: Cat_picked_img2 image from Protein
+            //        document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
+            //        document.getElementById("where_you_are2").textContent = "You have choosen " + roamingSettings.values["Func_name"] + "." + " You have 2 steps left.";
+
+            //    } else {
+            //        //milo: Cat_picked_img5 image from Fitness & Exercise
+            //        //document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img5"];
+
+            //    }
+            //    document.getElementById("choosen_age3").textContent = "Select Your " + "Protein For " + roamingSettings.values["Func_name"] + ".";
+            //    document.getElementById("func_div").removeAttribute("hidden");
+            //}
+
+
+
+
+
+
+
+
+            //milo: footer history & H1 Fitness>workout
+            //Fitness>workout
+            //Fitness>social
+            //Fitness>recovery>strength *bug in footer where_you_ar2*
             if (roamingSettings.values["Cat_picked"] === "Fitness & Exercise") {
-                document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img5"];
-                document.getElementById("choosen_age3").textContent = "Select Your Base For " + roamingSettings.values["Age_name"] + ".";
-                document.getElementById("where_you_are2").textContent = "You have choosen " + roamingSettings.values["Age_name"] + "." + " You have 2 steps left.";
+               
+//**********FIX********************id_sel needs to say if Recovery not id_sel which is func id that couses errrosrs 
+                if (id_sel == 1) {
+                    //Fitness>recovery>
+                    document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
+                    document.getElementById("where_you_are2").textContent = "You have choosen " + roamingSettings.values["Func_name"] + "." + " You have 2 steps left.";
+                    document.getElementById("choosen_age3").textContent = "Select Your " + "Protein For " + roamingSettings.values["Func_name"] + ".";
+                    document.getElementById("func_div").removeAttribute("hidden");
+                } else {
+                    document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img5"];
+                    document.getElementById("choosen_age3").textContent = "Select Your Base For " + roamingSettings.values["Age_name"] + ".";
+                    document.getElementById("where_you_are2").textContent = "You have choosen " + roamingSettings.values["Age_name"] + "." + " You have 2 steps left.";
+                }
             }
 
             //milo: footer history & H1 
             //milo: Bug fixed here if you go down fitness & Energy, Recovery shows up which is the same as going from Protein catagory, The app was getting confused the path it came from this if else helps with footer cookie issues.  
-            if (roamingSettings.values["Cat_picked"] === "Protein" || id_sel == 1 || id_sel == 2 || id_sel == 4 || id_sel == 5 || id_sel == 6) {
-                if (roamingSettings.values["Cat_picked"] === "Protein") {
-                    //milo: Cat_picked_img2 image from Protein
-                    document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
-                    document.getElementById("where_you_are2").textContent = "You have choosen " + roamingSettings.values["Func_name"] + "." + " You have 2 steps left.";
+            if (roamingSettings.values["Cat_picked"] === "Protein") {
+               
+                //milo: Cat_picked_img2 image from Protein
+                document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
+                document.getElementById("where_you_are2").textContent = "You have choosen " + roamingSettings.values["Func_name"] + "." + " You have 2 steps left.";
 
-                } else {
-                    //milo: Cat_picked_img5 image from Fitness & Exercise
-                    //document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img5"];
-
-                }
                 document.getElementById("choosen_age3").textContent = "Select Your " + "Protein For " + roamingSettings.values["Func_name"] + ".";
                 document.getElementById("func_div").removeAttribute("hidden");
             }
+
+
+
+
+
+
+
 
             //milo: footer history & H1
             if (roamingSettings.values["Cat_picked"] === "Competitive Sports") {

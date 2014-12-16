@@ -35,7 +35,7 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Purchase A Nutrigenetic Test") {
+                } else if (the_sel_age === "Nutrigenetic Test") {
                     var query = Age.where({
                         AccessNG: true
                     }).orderBy("Name").read().done(function (results) {

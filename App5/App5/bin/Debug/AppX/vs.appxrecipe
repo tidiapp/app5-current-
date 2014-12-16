@@ -90,7 +90,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\launch_page\launch_page.css">
       <PackagePath>pages\launch_page\launch_page.css</PackagePath>
-      <Modified>2014-12-09T16:36:22.624</Modified>
+      <Modified>2014-12-16T21:09:43.437</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\login\login.css">
       <PackagePath>pages\login\login.css</PackagePath>
@@ -200,7 +200,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\js\dataBaseGather.js">
       <PackagePath>js\dataBaseGather.js</PackagePath>
-      <Modified>2014-12-09T16:36:22.564</Modified>
+      <Modified>2014-12-16T20:57:05.658</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\js\dataStore.js">
       <PackagePath>js\dataStore.js</PackagePath>
@@ -268,7 +268,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\base\base.js">
       <PackagePath>pages\base\base.js</PackagePath>
-      <Modified>2014-12-15T17:00:44.650</Modified>
+      <Modified>2014-12-16T22:19:03.499</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\boost\boost.js">
       <PackagePath>pages\boost\boost.js</PackagePath>
@@ -280,11 +280,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\home2\home2.js">
       <PackagePath>pages\home2\home2.js</PackagePath>
-      <Modified>2014-12-09T16:36:22.621</Modified>
+      <Modified>2014-12-16T20:57:05.625</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\info_home\info_home.js">
       <PackagePath>pages\info_home\info_home.js</PackagePath>
-      <Modified>2014-12-09T16:36:22.623</Modified>
+      <Modified>2014-12-16T16:13:02.852</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.js">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.js</PackagePath>
@@ -308,7 +308,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\home\home.js">
       <PackagePath>pages\home\home.js</PackagePath>
-      <Modified>2014-12-15T17:09:00.514</Modified>
+      <Modified>2014-12-16T20:57:05.709</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\item_info\item_info.js">
       <PackagePath>pages\item_info\item_info.js</PackagePath>
@@ -452,7 +452,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\launch_page\launch_page.html">
       <PackagePath>pages\launch_page\launch_page.html</PackagePath>
-      <Modified>2014-12-12T21:50:55.848</Modified>
+      <Modified>2014-12-16T20:57:05.692</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\login\login.html">
       <PackagePath>pages\login\login.html</PackagePath>

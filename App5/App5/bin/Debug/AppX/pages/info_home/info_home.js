@@ -31,7 +31,7 @@
             //webviewControl.addEventListener("MSWebViewNavigationCompleted", navigationCompleted);
             //webviewControl.addEventListener("MSWebViewUnviewableContentIdentified", unviewableContentIdentified);
             //webviewControl.refresh();
-            webviewControl.navigate("http://storeapp.thinkitdrinkit.com/soccer-supplements/");
+            webviewControl.navigate("http://storeapp.thinkitdrinkit.com/soccer/");
 
 
 
