@@ -245,7 +245,7 @@ h1, .win-type-xx-large {
 
 .sel_look_btn {
 /*Use xx-large insted of pixels there is a bug with the button shadow causing a white pixel border*/
-    font-size: xx-large;
+    font-size: x-large;
     height: 60px;
     margin-left: 120px;
     text-transform: uppercase;

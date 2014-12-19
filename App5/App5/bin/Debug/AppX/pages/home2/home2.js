@@ -118,9 +118,9 @@
                 var appData = Windows.Storage.ApplicationData.current;
                 var roamingSettings = appData.roamingSettings;
                 roamingSettings.values["Home2_name"] = _choosen_cat;
-                roamingSettings.values["Age_pic"] = document.getElementById("sel_age_pic22").src;
-                roamingSettings.values["Age_info"] = null;
-                roamingSettings.values["Age_price"] = null;
+                roamingSettings.values["Home2_pic"] = document.getElementById("sel_age_pic22").src;
+                roamingSettings.values["Home2_info"] = null;
+                roamingSettings.values["Home2_price"] = null;
                 roamingSettings.values["Id_sel_sport"] = id_sel;
         },
 

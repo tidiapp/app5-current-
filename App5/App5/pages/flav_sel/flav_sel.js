@@ -21,6 +21,16 @@
             document.getElementById("base_p").textContent = "Base: " + roamingSettings.values["Base_name"];
 
             //milo: footer history 
+            document.getElementById("age_p").textContent = roamingSettings.values["Cat_picked"];
+            document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];
+            document.getElementById("home_p").textContent = roamingSettings.values["Age_name"];
+            document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];
+            document.getElementById("func_p").textContent = roamingSettings.values["Func_name"];
+            document.getElementById("func_pic").src = roamingSettings.values["Func_pic"];
+            document.getElementById("base_p").textContent = roamingSettings.values["Base_name"];
+            document.getElementById("base_pic").src = roamingSettings.values["Base_pic"];
+
+            //milo: footer history 
             if (roamingSettings.values["Cat_picked"] === "Fitness & Exercise") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img5"];
             }
@@ -44,18 +54,12 @@
             //milo: footer history 
             if (roamingSettings.values["Cat_picked"] === "Competitive Sports") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img4"];
+                document.getElementById("home2_div").removeAttribute("hidden");
+                document.getElementById("home2_p").textContent = roamingSettings.values["Home2_name"];
+                document.getElementById("home2_pic").src = roamingSettings.values["Home2_pic"];
+
             }
 
-            //milo: footer history 
-            document.getElementById("age_p").textContent = roamingSettings.values["Cat_picked"];
-            document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];
-            document.getElementById("home_p").textContent = roamingSettings.values["Age_name"];
-            document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];
-            document.getElementById("func_p").textContent = roamingSettings.values["Func_name"];
-            document.getElementById("func_pic").src = roamingSettings.values["Func_pic"];
-
-            document.getElementById("base_p").textContent = roamingSettings.values["Base_name"];
-            document.getElementById("base_pic").src = roamingSettings.values["Base_pic"];
             document.getElementById("base_price_prev2").textContent = roamingSettings.values["Base_price"];
 
             document.getElementById("boost_price_prev1").textContent = roamingSettings.values["Boost1_price"];

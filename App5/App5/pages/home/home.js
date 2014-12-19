@@ -33,11 +33,11 @@
             //milo: footer history & H1
             if (the_sel_age === "Competitive Sports") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img4"];
-                document.getElementById("choosen_age").textContent = roamingSettings.values["Home2_name"] + ".";
+                document.getElementById("choosen_age").textContent = "Select Your Sport Objective.";
                 document.getElementById("home2_div").removeAttribute("hidden");
-                document.getElementById("home2_p").textContent = roamingSettings.values["Home2_name"] + ".";
-                document.getElementById("home2_pic").src = roamingSettings.values["Age_pic"];
-                document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Home2_name"] + " catagory." + " You have 3 steps left.";
+                document.getElementById("home2_p").textContent = roamingSettings.values["Home2_name"];
+                document.getElementById("home2_pic").src = roamingSettings.values["Home2_pic"];
+                document.getElementById("where_you_are").textContent = "You have choosen " + roamingSettings.values["Home2_name"] + "." + " You have 3 steps left.";
             }
 
             //milo: footer history & H1
@@ -77,6 +77,7 @@
             remove.pop_list(age_data.model.age);
             //milo: removing keepInfo data when back button is used from func page.
             remove.pop_list(age_data.model.info_page2_func);
+            remove.pop_list(age_data.model.info_page2)
             if (!keepInfo) {
                 remove.pop_list(age_data.model.info)
             }

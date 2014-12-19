@@ -35,16 +35,20 @@
 
                     if (roamingSettings.values["Cat_picked"] === "Protein") {
                         document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
-                        document.getElementById("choosen_age2").textContent = "Select Your " + roamingSettings.values["Age_name"] + "." + " Goal.";
+                        document.getElementById("choosen_age2").textContent = "Select Your " + roamingSettings.values["Age_name"] + " Goal.";
                     } else {
                         document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img5"];
-                        document.getElementById("choosen_age2").textContent = "Select Your " + roamingSettings.values["Age_name"] + "." + " Goal.";
+                        document.getElementById("choosen_age2").textContent = "Select Your " + roamingSettings.values["Age_name"] + " Goal.";
                     }
                 }
 
                 //milo: footer history & H1
                 if (roamingSettings.values["Cat_picked"] === "Competitive Sports") {
                     document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img4"];
+                    document.getElementById("home2_div").removeAttribute("hidden");
+                    document.getElementById("home2_p").textContent = roamingSettings.values["Home2_name"];
+                    document.getElementById("home2_pic").src = roamingSettings.values["Home2_pic"];
+
                 }
 
                 //milo: footer history 

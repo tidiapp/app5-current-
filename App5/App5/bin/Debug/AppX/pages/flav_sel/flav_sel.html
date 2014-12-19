@@ -38,7 +38,7 @@
                     <img class="flav_sel_sel_pic_class" id="flav_sel_sel_pic" data-win-bind="src:   sel_label" />
                     <img id="hidden_flav_pic" hidden="" data-win-bind="src: sel_pic" />
                     <button id="info_btn4" name="sel_btn" onclick="flav_sel_clicked.more_info(document.getElementById('flav_sel_sel_name').textContent)" type="submit">Learn More</button>
-                    <button id="sel_btn4" onclick="flav_sel_clicked.next_page_boost()" name="sel_btn2" type="submit">Choose your Flavor</button>
+                    <button id="sel_btn4" onclick="flav_sel_clicked.next_page_boost()" name="sel_btn2" type="submit">Choose your Flavor<br />finalize your mix</button>
                     <h2 id="flav_sel_sel_name" class="flac_sel_sel_name_class" data-win-bind="textContent: sel_name" ></h2>
                     <p id="flav_sel_sel_info" class="flac_sel_sel_info_class" data-win-bind="textContent: sel_info" ></p>
                     <p id="f_vend" hidden="" data-win-bind="textContent: f_vend"></p>
@@ -62,6 +62,11 @@
                  <p id="age_p" class="history_p"></p>
                  <img id="age_pic" class="history_pic" alt="This is a test" src="#" width="100" height="80" />
              </div>
+
+            <div hidden="" id="home2_div" class="history_div" onclick="WinJS.Navigation.back(4)">
+                <p id="home2_p" class="history_p"></p>
+                <img id="home2_pic" class="history_pic" alt="This is a test" src="#" width="100" height="80" />
+            </div>
 
              <!--Milo: home_ is really coming from home page -->
              <div id="home_div" class="history_div" onclick="flav_sel_clicked.footer_click()">

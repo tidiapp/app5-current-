@@ -20,6 +20,14 @@
             var id_sel = roamingSettings.values["Id_sel_func"];
             var cat_selected = roamingSettings.values["Cat_picked"];
 
+            //milo: footer history 
+            document.getElementById("age_p").textContent = roamingSettings.values["Cat_picked"];
+            document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];
+            document.getElementById("home_p").textContent = roamingSettings.values["Age_name"];
+            document.getElementById("func_p").textContent = roamingSettings.values["Func_name"];
+            document.getElementById("func_pic").src = roamingSettings.values["Func_pic"];
+
+
             //milo: footer history & H1 for Fitness & Excercise
             if (roamingSettings.values["Cat_picked"] === "Fitness & Exercise") {
                 //milo: if id_sel is id 1 from age db it is Recovery but id 1 from func db is Strength & Power, depends where you come from for bug fix when coming from Fitness&Excercise>recovery>and pick anyone the ids are from the func page but if coming from protein>recovery>and whatever the ids do not matter couse the roamingSettings.values["Cat_picked"] is protein which in this comment its Fitness the if statemnet is above. 
@@ -48,6 +56,17 @@
             //milo: footer history & H1
             if (roamingSettings.values["Cat_picked"] === "Competitive Sports") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img4"];
+                document.getElementById("choosen_age3").textContent = "Select Your Base Blend.";
+                document.getElementById("home2_div").removeAttribute("hidden");
+                document.getElementById("home2_p").textContent = roamingSettings.values["Home2_name"];
+                document.getElementById("home2_pic").src = roamingSettings.values["Home2_pic"];
+                if (id_sel == 28 || id_sel == 27){
+                    document.getElementById("where_you_are2").textContent = "You have choosen " + roamingSettings.values["Age_name"] + "." + " You have 2 steps left.";
+                } else {
+                    document.getElementById("func_div").removeAttribute("hidden");
+                    document.getElementById("where_you_are2").textContent = "You have choosen " + roamingSettings.values["Func_name"] + "." + " You have 2 steps left.";
+                }
+
             }
 
             //milo: footer history & H1
@@ -55,13 +74,6 @@
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
                 document.getElementById("func_div").removeAttribute("hidden");
             }
-
-            //milo: footer history 
-            document.getElementById("age_p").textContent = roamingSettings.values["Cat_picked"];
-            document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];
-            document.getElementById("home_p").textContent = roamingSettings.values["Age_name"];
-            document.getElementById("func_p").textContent = roamingSettings.values["Func_name"];
-            document.getElementById("func_pic").src = roamingSettings.values["Func_pic"];
 
             server.base(id_sel, cat_selected);
 

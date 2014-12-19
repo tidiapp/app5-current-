@@ -55,6 +55,17 @@
             }
 
             //milo: footer history 
+            document.getElementById("age_p").textContent = roamingSettings.values["Cat_picked"];
+            document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];
+            document.getElementById("home_p").textContent = roamingSettings.values["Age_name"];
+            document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];
+            document.getElementById("func_p").textContent = roamingSettings.values["Func_name"];
+            document.getElementById("func_pic").src = roamingSettings.values["Func_pic"];
+            document.getElementById("base_p").textContent = roamingSettings.values["Base_name"];
+            document.getElementById("base_pic").src = roamingSettings.values["Base_pic"];
+            document.getElementById("where_you_are4").textContent = "You have choosen the " + roamingSettings.values["Base_name"] + " Base." + " You have 1 step left.";
+
+            //milo: footer history 
             if (roamingSettings.values["Cat_picked"] === "Fitness & Exercise") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img5"];
             }
@@ -76,19 +87,12 @@
             //milo: footer history 
             if (roamingSettings.values["Cat_picked"] === "Competitive Sports") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img4"];
+                document.getElementById("home2_div").removeAttribute("hidden");
+                document.getElementById("home2_p").textContent = roamingSettings.values["Home2_name"];
+                document.getElementById("home2_pic").src = roamingSettings.values["Home2_pic"];
             }
 
-            //milo: footer history 
-            document.getElementById("age_p").textContent = roamingSettings.values["Cat_picked"];
-            document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];
-            document.getElementById("home_p").textContent = roamingSettings.values["Age_name"];
-            document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];
-            document.getElementById("func_p").textContent = roamingSettings.values["Func_name"];
-            document.getElementById("func_pic").src = roamingSettings.values["Func_pic"];
-            document.getElementById("base_p").textContent = roamingSettings.values["Base_name"];
-            document.getElementById("base_pic").src = roamingSettings.values["Base_pic"];
             document.getElementById("base_price_prev").textContent = roamingSettings.values["Base_price"];
-            document.getElementById("where_you_are4").textContent = "You have choosen the " + roamingSettings.values["Base_name"] + " Base." + " You have 1 step left.";
 
             //milo: show checkout button right away so some can buy without boost picked
             document.getElementById("btn_right").removeAttribute("hidden");
@@ -444,61 +448,20 @@
 
     WinJS.Namespace.define("boost_clicked", {
 
-        //clicked: function (name) {
-        //    remove.pop_list(age_data.model.info_page5);
-        //    var updated_name = name.replace(/^\s+/, '').replace(/\s+$/, '');
-        //    server.boost_sub(name);
-        //    keepInfo = false;
-        //    console.log(updated_name);
-        //},
-
-        //clicked: function (id) {
-        //    remove.pop_list(age_data.model.info_page5);
-       
-        //    //var updated_id = id.replace(/^\s+/, '').replace(/\s+$/, '');
-
-        //    var updated_id = id.replace(/^\s+/, '').replace(/\s+/, '').replace(/\s+$/, '');
-        //    //var updated_id = id.replace(/\n/g, '');
-
-        //    updated_id.slice(2);
-        //    console.log(updated_id.slice(4));
-
-        //    //console.log(updated_id)
-
-        //    server.boost_sub(updated_id);
-        //    keepInfo = false;
-        //},
-
-
         clicked: function (id, name) {
    
             remove.pop_list(age_data.model.info_page5);
-            //var updated_id = id.replace(/^\s+/, '').replace(/\s+/, '').replace(/\s+$/, '');
 
-            //when image is clicked numrical only allowed and id var pass through 
+            //milo: bug fixed, had issue with image and text being pressed were not the same results. dataBaseGather.js has the rest of the logic... 
+            //milo: when image is clicked numrical only allowed and id var pass through 
             var updated_id = id.slice(0,9).replace(/[^0-9]/g, '');
-            //var updated_id = id.replace(/^\s+/, '').replace(/\s*\r\s.*/, '');
-            //when h1 is clicked (bug passes what boost word is in the h1 tag) 
+            //milo: when h1 is clicked boost word is in the h1 tag passes through
             var updated_id2 = name.replace(/^\s+/, '').replace(/\s*\r\s.*/, '');
-
-            //var updated_id2 = name.replace(/[^a-zA-Z]+|\\s/g, '');
-            //var updated_id2 = name.replace(/^\s+/, '').replace(/\s+/, '').replace(/\s+$/, '');
-
-            //server.boost_sub(updated_id, updated_id2, roamingSettings.values["Id_sel_base"], roamingSettings.values["Id_sel_func"]);
             server.boost_sub(updated_id, updated_id2, roamingSettings.values["Cat_picked"], roamingSettings.values["Id_sel_func"], roamingSettings.values["Id_sel_sport"], roamingSettings.values["Id_sel_base"]);
 
             keepInfo = false;
 
         },
-
-        //clicked: function (id_sel_boost) {
-        //    console.log(id_sel_boost)
-        //    remove.pop_list(age_data.model.info_page5);
-
-        //    server.boost_sub(id_sel_boost);
-        //    keepInfo = false;
-        //},
-
 
        //milo: onclick from boost.html takes what was clicked and passes it to variable.
         clicked1: function (name, img, price, vend, label) {

@@ -97,14 +97,14 @@ overError {
 }
 
 #sel_btn3 {
-    /*margin-left: 5px;*/
+    /*Use xx-large insted of pixels there is a bug with the button shadow causing a white pixel border*/
+    font-size: large;
+    margin-left: 20px;
     margin-top: 128px;
     position: absolute;
     background-color: #FF7C00;
     height: 60px;
-    font-size: 20px;
     text-transform: uppercase;
-    /*margin-left: 20px;*/
     box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);
     border: 0;
 }
