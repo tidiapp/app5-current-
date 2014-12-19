@@ -20,47 +20,10 @@
             var id_sel = roamingSettings.values["Id_sel_func"];
             var cat_selected = roamingSettings.values["Cat_picked"];
 
-            ////milo: footer history & H1 Fitness>workout
-            ////Fitness>workout
-            ////Fitness>social
-            ////Fitness>recovery>strength *bug in footer where_you_ar2*
-            //if (roamingSettings.values["Cat_picked"] === "Fitness & Exercise") {
-            //    document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img5"];
-            //    document.getElementById("choosen_age3").textContent = "Select Your Base For " + roamingSettings.values["Age_name"] + ".";
-            //    document.getElementById("where_you_are2").textContent = "You have choosen " + roamingSettings.values["Age_name"] + "." + " You have 2 steps left.";
-            //}
-
-            ////milo: footer history & H1 
-            ////milo: Bug fixed here if you go down fitness & Energy, Recovery shows up which is the same as going from Protein catagory, The app was getting confused the path it came from this if else helps with footer cookie issues.  
-            //if (roamingSettings.values["Cat_picked"] === "Protein" || id_sel == 1 || id_sel == 2 || id_sel == 4 || id_sel == 5 || id_sel == 6) {
-            //    if (roamingSettings.values["Cat_picked"] === "Protein") {
-            //        //milo: Cat_picked_img2 image from Protein
-            //        document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
-            //        document.getElementById("where_you_are2").textContent = "You have choosen " + roamingSettings.values["Func_name"] + "." + " You have 2 steps left.";
-
-            //    } else {
-            //        //milo: Cat_picked_img5 image from Fitness & Exercise
-            //        //document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img5"];
-
-            //    }
-            //    document.getElementById("choosen_age3").textContent = "Select Your " + "Protein For " + roamingSettings.values["Func_name"] + ".";
-            //    document.getElementById("func_div").removeAttribute("hidden");
-            //}
-
-
-
-
-
-
-
-
-            //milo: footer history & H1 Fitness>workout
-            //Fitness>workout
-            //Fitness>social
-            //Fitness>recovery>strength *bug in footer where_you_ar2*
+            //milo: footer history & H1 for Fitness & Excercise
             if (roamingSettings.values["Cat_picked"] === "Fitness & Exercise") {
-               
-                if (id_sel == 1) {//recovery
+                //milo: if id_sel is id 1 from age db it is Recovery but id 1 from func db is Strength & Power, depends where you come from for bug fix when coming from Fitness&Excercise>recovery>and pick anyone the ids are from the func page but if coming from protein>recovery>and whatever the ids do not matter couse the roamingSettings.values["Cat_picked"] is protein which in this comment its Fitness the if statemnet is above. 
+                if (id_sel == 1 || id_sel == 2 || id_sel == 4 || id_sel == 5 || id_sel == 6) {
                     document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
                     document.getElementById("where_you_are2").textContent = "You have choosen " + roamingSettings.values["Func_name"] + "." + " You have 2 steps left.";
                     document.getElementById("choosen_age3").textContent = "Select Your " + "Protein For " + roamingSettings.values["Func_name"] + ".";
@@ -72,24 +35,15 @@
                 }
             }
 
-            //milo: footer history & H1 
-            //milo: Bug fixed here if you go down fitness & Energy, Recovery shows up which is the same as going from Protein catagory, The app was getting confused the path it came from this if else helps with footer cookie issues.  
+            //milo: footer history & H1 for Protein
+            //milo: Bug fixed, if you go down fitness & Energy, Recovery shows up which is the same recovery as going from Protein catagory, The app was getting confused the path it came from this helps with footer cookie issues only.  
             if (roamingSettings.values["Cat_picked"] === "Protein") {
-               
-                //milo: Cat_picked_img2 image from Protein
+                //milo: Cat_picked_img2 image from Protein launch_page.hmtl
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
                 document.getElementById("where_you_are2").textContent = "You have choosen " + roamingSettings.values["Func_name"] + "." + " You have 2 steps left.";
-
                 document.getElementById("choosen_age3").textContent = "Select Your " + "Protein For " + roamingSettings.values["Func_name"] + ".";
                 document.getElementById("func_div").removeAttribute("hidden");
             }
-
-
-
-
-
-
-
 
             //milo: footer history & H1
             if (roamingSettings.values["Cat_picked"] === "Competitive Sports") {
@@ -99,13 +53,13 @@
             //milo: footer history & H1
             if (roamingSettings.values["Cat_picked"] === "Energy") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
+                document.getElementById("func_div").removeAttribute("hidden");
             }
 
             //milo: footer history 
             document.getElementById("age_p").textContent = roamingSettings.values["Cat_picked"];
             document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];
             document.getElementById("home_p").textContent = roamingSettings.values["Age_name"];
-            document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];
             document.getElementById("func_p").textContent = roamingSettings.values["Func_name"];
             document.getElementById("func_pic").src = roamingSettings.values["Func_pic"];
 

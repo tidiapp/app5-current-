@@ -27,14 +27,17 @@
             document.getElementById("shop").setAttribute("hidden", true);
             var the_sel_age = roamingSettings.values["Cat_picked"];
             document.getElementById("choosen_age").textContent = the_sel_age + ".";
+            document.getElementById("age_p").textContent = the_sel_age;
+            document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory." + " You have 4 steps left.";
 
             //milo: footer history & H1
             if (the_sel_age === "Competitive Sports") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img4"];
                 document.getElementById("choosen_age").textContent = roamingSettings.values["Home2_name"] + ".";
-            } else {
-                document.getElementById("age_p").textContent = the_sel_age;
-                document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory." + " You have 4 steps left.";
+                document.getElementById("home2_div").removeAttribute("hidden");
+                document.getElementById("home2_p").textContent = roamingSettings.values["Home2_name"] + ".";
+                document.getElementById("home2_pic").src = roamingSettings.values["Age_pic"];
+                document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Home2_name"] + " catagory." + " You have 3 steps left.";
             }
 
             //milo: footer history & H1
@@ -42,7 +45,6 @@
                 document.getElementById("choosen_age").textContent = "Physical and daily activity can improve your health, energy, and mood.";
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img5"];
                 document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory." + " You have 3 steps left.";
-
             }
 
             //milo: footer history & H1
@@ -64,13 +66,6 @@
                 document.getElementById("choosen_age").textContent = "Choose Your Test Kit";
                 document.getElementById("nutrigenetics_price_div").removeAttribute("hidden");
             }
-
-                //gather the infomation from the database and displays it on the sreen
-                //if (the_sel_age === "Competitive Sports") {
-                //    server.home2(id);
-                //} else {
-                //    server.home(the_sel_age);
-                //}
 
             server.home(the_sel_age);
 

@@ -25,7 +25,7 @@
             //document.getElementById("more_info_home").setAttribute("hidden", true);
             //document.getElementById("shop").setAttribute("hidden", true);
 
-            document.getElementById("choosen_age22").textContent = roamingSettings.values["Cat_picked"] + ".";
+            document.getElementById("choosen_age22").textContent = "A team or individual compete against each other.";
             var the_sel_age = roamingSettings.values["Cat_picked"];
 
             document.getElementById("age_p22").textContent = the_sel_age;
@@ -118,9 +118,9 @@
                 var appData = Windows.Storage.ApplicationData.current;
                 var roamingSettings = appData.roamingSettings;
                 roamingSettings.values["Home2_name"] = _choosen_cat;
-                //roamingSettings.values["Age_pic"] = document.getElementById("sel_age_pic22").src;
-                //roamingSettings.values["Age_info"] = null;
-                //roamingSettings.values["Age_price"] = null;
+                roamingSettings.values["Age_pic"] = document.getElementById("sel_age_pic22").src;
+                roamingSettings.values["Age_info"] = null;
+                roamingSettings.values["Age_price"] = null;
                 roamingSettings.values["Id_sel_sport"] = id_sel;
         },
 
