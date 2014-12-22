@@ -36,8 +36,9 @@
             }
            
             //milo: footer history 
-            if (roamingSettings.values["Cat_picked"] === "Energy") {
+            if (roamingSettings.values["Cat_picked"] === "Energy" || roamingSettings.values["Cat_picked"] === "Weight Management" || roamingSettings.values["Cat_picked"] === "Lifestyle Diets" || roamingSettings.values["Cat_picked"] === "Wellness") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
+                document.getElementById("home_div").setAttribute("hidden");
             }
 
             //milo: footer history 
@@ -222,8 +223,33 @@
             } else {
                 WinJS.Navigation.back(4);
             }
-        }
+        },
 
+        footer_click3: function () {
+            var cat_selected_footer = roamingSettings.values["Cat_picked"];
+            var id_sel_footer = roamingSettings.values["Id_sel_age"];
+
+            if (cat_selected_footer === "Competitive Sports" && id_sel_footer == 1) {
+                WinJS.Navigation.back(5);
+                //milo: fixes small bug 
+                roamingSettings.values["Id_sel_age"] = "";
+
+            } else {
+                WinJS.Navigation.back(4);
+            }
+        },
+
+        footer_click4: function () {
+            var cat_selected_footer = roamingSettings.values["Cat_picked"];
+            var id_sel_footer = roamingSettings.values["Id_sel_age"];
+
+            if (cat_selected_footer === "Competitive Sports" && id_sel_footer == 1) {
+                WinJS.Navigation.back(6);
+
+            } else {
+                WinJS.Navigation.back(5);
+            }
+        }
 
     })
 

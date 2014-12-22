@@ -71,8 +71,9 @@
             }
 
             //milo: footer history 
-            if (roamingSettings.values["Cat_picked"] === "Energy") {
+            if (roamingSettings.values["Cat_picked"] === "Energy" || roamingSettings.values["Cat_picked"] === "Weight Management" || roamingSettings.values["Cat_picked"] === "Lifestyle Diets" || roamingSettings.values["Cat_picked"] === "Wellness") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
+                document.getElementById("home_div").setAttribute("hidden");
             }
             //milo: footer history 
             if (roamingSettings.values["Cat_picked"] === "Protein" || id_sel == 1) {
@@ -782,16 +783,25 @@
         footer_click: function () {
             var id_sel_footer = roamingSettings.values["Id_sel_func"];
 
-
-//************milo need to add another if statement or diff id roaming to get competetive to work without affecting the below code 
-
             if (id_sel_footer == 25 || id_sel_footer == 26 || id_sel_footer == 27 || id_sel_footer == 28) {
                 WinJS.Navigation.back(2);
 
             } else {
                 WinJS.Navigation.back(3);
             }
-        }
+        },
 
+        footer_click3: function () {
+            var cat_selected_footer = roamingSettings.values["Cat_picked"];
+            var id_sel_footer_age = roamingSettings.values["Id_sel_age"];
+
+            if (cat_selected_footer === "Competitive Sports" && id_sel_footer_age == 1) {
+                WinJS.Navigation.back(4);
+                //milo helps with small bug
+                roamingSettings.values["Id_sel_age"] = "";
+            } else {
+                WinJS.Navigation.back(3);
+            }
+        }
     })
 })();

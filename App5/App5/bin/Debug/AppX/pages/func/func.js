@@ -110,7 +110,32 @@
             roamingSettings.values["Clicked_cat"] = "func";
             WinJS.Navigation.navigate('pages/item_info/item_info.html');
             keepInfo = true;
+        },
+
+        footer_click4: function () {
+            var cat_selected_footer = roamingSettings.values["Cat_picked"];
+            var id_sel_footer = roamingSettings.values["Id_sel_age"];
+
+            if (cat_selected_footer === "Competitive Sports" && id_sel_footer == 1) {
+                WinJS.Navigation.back(3);
+
+            } else {
+                WinJS.Navigation.back(2);
+            }
+        },
+
+        footer_click3: function () {
+        var cat_selected_footer = roamingSettings.values["Cat_picked"];
+        var id_sel_footer = roamingSettings.values["Id_sel_age"];
+
+        if (cat_selected_footer === "Competitive Sports" && id_sel_footer == 1) {
+            WinJS.Navigation.back(2);
+
+        } else {
+            WinJS.Navigation.back(1);
         }
+        }
+
     })
 
 })();
