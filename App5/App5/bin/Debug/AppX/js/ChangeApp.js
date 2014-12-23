@@ -34,6 +34,10 @@
             document.getElementById("info_btn").style.backgroundColor = i;
             document.getElementById("sel_btn").style.backgroundColor = i;
         },
+        getHomeBorders: function (i){
+            document.getElementById("age_display").style.borderColor = i;
+            document.getElementById("age_div").style.borderColor = i;
+        },
 
         getHome2: function () {
             document.getElementById("main_footer").style.backgroundColor = i;
@@ -42,6 +46,9 @@
             document.getElementById("sel_age_pic22").style.borderColor = i;
             document.getElementById("info_btn22").style.backgroundColor = i;
             document.getElementById("sel_btn22").style.backgroundColor = i;
+        },
+        getHome2Boarders: function (i){
+            document.getElementById("age_display22").style.borderColor = i;
         },
 
         getFunc: function () {
@@ -52,6 +59,9 @@
             document.getElementById("info_btn6").style.backgroundColor = i;
             document.getElementById("sel_btn6").style.backgroundColor = i;
         },
+        getFuncBoarders: function (i){
+            document.getElementById("the_funcs").style.borderColor = i;
+        },
 
         getBase: function () {
             document.getElementById("main_footer").style.backgroundColor = i;
@@ -61,6 +71,10 @@
             document.getElementById("info_btn2").style.backgroundColor = i;
             document.getElementById("sel_btn2").style.backgroundColor = i;
         },
+        getBaseBoarders: function (i){
+            document.getElementById("the_bases").style.borderColor = i;
+        },
+
         getFlav: function () {
             document.getElementById("main_footer").style.backgroundColor = i;
             document.getElementById("appBar").style.backgroundColor = i;
@@ -76,6 +90,9 @@
 
             document.getElementById("info_btn4").style.backgroundColor = i;
             document.getElementById("sel_btn4").style.backgroundColor = i;
+        },
+        getFlavSelBorders: function (i) {
+            document.getElementById("the_flav_sel").style.borderColor = i;
         },
         getBoost: function () {
             document.getElementById("main_footer").style.backgroundColor = i;

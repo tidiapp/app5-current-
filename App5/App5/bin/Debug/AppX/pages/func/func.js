@@ -17,7 +17,7 @@
             WinJS.Binding.processAll(element, age_data.model);
             design.getFunc();
             design.changeTextColor();
-            //milo
+            design.getFuncBoarders("white");
             var id_sel = roamingSettings.values["Id_sel_age"];
             var cat_selected = roamingSettings.values["Cat_picked"];
             //var new_route = roamingSettings.values["New_route"];

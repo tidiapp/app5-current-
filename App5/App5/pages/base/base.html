@@ -26,7 +26,9 @@
                 <div id="bases" class="bases_class" data-win-control="WinJS.Binding.Template">
                     <div id="the_bases" onclick="base_clicked.clicked(event.srcElement.innerText);">
                         <img class="base_pic_class" id="base_pic1" data-win-bind="src: b_pic" />
-                        <h2 id="base_name" class="base_name_class" data-win-bind="textContent: b_name"></h2>
+                        <div class="underline_class">
+                            <a id="base_name" class="base_name_class" data-win-bind="textContent: b_name"></a>
+                        </div>                    
                     </div>
                 </div>
                 <div id="bases_placement" data-win-control="WinJS.UI.ListView" data-win-bind="winControl.itemDataSource: base.dataSource" data-win-options="{
@@ -34,7 +36,6 @@
                     selectionMode: 'none'
                 }"></div>
             </div>
-
 
             <div id="baseinfo_template_placement_winlistview">
                 <div id="bases_sel" class="bases_sel_class" data-win-control="WinJS.Binding.Template">
@@ -66,7 +67,6 @@
                     selectionMode: 'none'
                 }"></div>
             </div>
-
 
         </section>
         <footer id="main_footer">

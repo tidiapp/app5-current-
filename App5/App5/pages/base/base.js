@@ -16,6 +16,7 @@
             WinJS.Binding.processAll(element, age_data.model);
             design.getBase();
             design.changeTextColor();
+            design.getBaseBoarders("white");
             document.getElementById("home").removeAttribute("hidden");
             var id_sel = roamingSettings.values["Id_sel_func"];
             var cat_selected = roamingSettings.values["Cat_picked"];
@@ -26,7 +27,6 @@
             document.getElementById("home_p").textContent = roamingSettings.values["Age_name"];
             document.getElementById("func_p").textContent = roamingSettings.values["Func_name"];
             document.getElementById("func_pic").src = roamingSettings.values["Func_pic"];
-
 
             //milo: footer history & H1 for Fitness & Excercise
             if (roamingSettings.values["Cat_picked"] === "Fitness & Exercise") {
@@ -129,7 +129,6 @@
             //milo: the following makes a call to vend to check if we have enough product for the order if low it will not allow to move on. 
                 if (vendId != "" && vendId != "null") {
 
-                    //
 
                     WinJS.xhr({
                         //milo: using POST but not passing anything to vend until .then at which point it reads the api product inventory count and displays it back.  

@@ -27,11 +27,13 @@
             <div id="win_listview_host_boost_row">
                 <div id="boost_list" class="boost_list_class" data-win-control="WinJS.Binding.Template">
 
-                    <div  id="boost_list_id" data-win-bind="className: boost_name" onclick="boost_clicked.clicked(event.srcElement.innerText, event.srcElement.innerText);">
+                    <div id="boost_list_id" data-win-bind="className: boost_name" onclick="boost_clicked.clicked(event.srcElement.innerText, event.srcElement.innerText);">
                         <!--milo: DO NOT USE! event.srcElement.children.id_sel.innerText or event.srcElement.firstElementChild.innerText, in boost page app has issues if you click on the image, the event.srcElement.innerText if it has more then 1 thing to grab like 2 pices of text from a h1 and span tag in one div it will break app -->
-                        <span id="id_sel" data-win-bind="textContent: id_sel"></span>
+                        <span class="id_sel" id="id_sel" data-win-bind="textContent: id_sel"></span>
                         <img class="boost_bg_img_class" id="boost_bg_img" data-win-bind="src: boost_pic" />
-                        <h1 id="boost_name" class="boost_name_class" data-win-bind="textContent: boost_name"></h1>
+                        <div id="underline_boost" class="underline_class">
+                            <a id="boost_name" class="boost_name_class" data-win-bind="textContent: boost_name"></a>
+                        </div>                    
                     </div>
                 </div>
 

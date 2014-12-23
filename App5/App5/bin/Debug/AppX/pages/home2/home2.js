@@ -13,6 +13,7 @@
             WinJS.Binding.processAll(element, age_data.model);
             design.getHome2();
             design.changeTextColor();
+            design.getHome2Boarders("white");
             //console.log("Age page picked id READY() = " + roamingSettings.values["Id_sel_age"]);
             if (roamingSettings.values["not_cont"]) {
                 document.getElementById("youcurrentprice22").textContent = roamingSettings.values["the_complete_total"];

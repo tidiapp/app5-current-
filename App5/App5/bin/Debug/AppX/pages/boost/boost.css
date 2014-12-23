@@ -37,13 +37,17 @@
     /*margin-top: -105px;*/
 }
 
+#underline_boost {
+    margin-top: 90px;
+}
+
 #boost_name {
     width: auto;
     color: #fff;
     font-weight: 300;
-    margin-top: 105px;
+    margin-top: 95px;
     font-size: 18px;
-    padding-top: 5px;
+    /*padding-top: 5px;*/
     text-align: center;
 }
 

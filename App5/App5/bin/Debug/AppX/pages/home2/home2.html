@@ -31,9 +31,11 @@
             <div id="age_template_placement_winlistview22">
                 <div class="home2_template" data-win-control="WinJS.Binding.Template">
                     <div onclick="clicked_me2.clicked(event.srcElement.innerText);" id="age_display22">
-                        <img class="age_bg" data-win-bind="src: img" />
-                        <h2 id="user_age22" data-win-bind="textContent: home2"></h2>
-                    </div>
+                        <img class="age_bg2" data-win-bind="src: img" />
+                        <div id="underline_home2" class="underline_class">
+                            <a id="user_age22" data-win-bind="textContent: home2"></a>
+                        </div>
+                     </div>
                 </div><!-- ends user_age_template -->
 
                 <div id="age_template_placement22" data-win-control="WinJS.UI.ListView" data-win-bind="winControl.itemDataSource: func_home2.dataSource" data-win-options="{

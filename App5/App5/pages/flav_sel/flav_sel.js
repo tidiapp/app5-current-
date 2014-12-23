@@ -13,8 +13,10 @@
         ready: function (element, options) {
             // TODO: Initialize the page here.
             WinJS.Binding.processAll(element, age_data.model);
-            design.getFlavSel();
             design.changeTextColor();
+            design.getFlavSel();
+            design.getFlavSelBorders("white");
+
             var id_sel = roamingSettings.values["Id_sel_func"];
 
             document.getElementById("age_p").textContent = "Age: " + roamingSettings.values["Age_name"];

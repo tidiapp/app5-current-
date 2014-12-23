@@ -27,7 +27,9 @@
                 <div id="funcs" class="funcs_class" data-win-control="WinJS.Binding.Template">
                     <div id="the_funcs" onclick="func_clicked.clicked(event.srcElement.innerText);">
                         <img class="func_pic_class" id="func_pic" data-win-bind="src: img" />
-                        <h2 id="func_name" class="func_name_class" data-win-bind="textContent: func"></h2>
+                        <div class="underline_class">
+                            <a id="func_name" class="func_name_class" data-win-bind="textContent: func"></a>
+                        </div>
                     </div>
                 </div>
                 <div id="funcs_placement" data-win-control="WinJS.UI.ListView" data-win-bind="winControl.itemDataSource: func.dataSource" data-win-options="{
