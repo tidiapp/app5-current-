@@ -130,6 +130,33 @@
                 if (vendId != "" && vendId != "null") {
 
 
+
+                    ////milo: VEND OAuth 2.0 
+                    //var startURL = "https://secure.vendhq.com/connect?response_type=code&client_id=cv2T4BNlCZaaLrCr1aGqY35aqtZT3p5L&redirect_uri=http://thinkitdrinkit.com"; 
+
+                    //var startURI = new Windows.Foundation.Uri(startURL);
+
+                    //var authzInProgress = true; 
+                    //Windows.Security.Authentication.Web.WebAuthenticationBroker.authenticateAsync( 
+                    //    Windows.Security.Authentication.Web.WebAuthenticationOptions.none, startURI,endURI) 
+                    //    .done(function (result) { 
+                    //        //document.getElementById("AnyServiceReturnedToken").value = result.responseData; 
+                    //        //document.getElementById("AnyServiceDebugArea").value += "Status returned by WebAuth broker: " + result.responseStatus + "\r\n"; 
+                    //        if (result.responseStatus === Windows.Security.Authentication.Web.WebAuthenticationStatus.errorHttp) { 
+                    //            //document.getElementById("AnyServiceDebugArea").value += "Error returned: " + result.responseErrorDetail + "\r\n"; 
+                    //        } 
+                    //        authzInProgress = false; 
+                    //    }, function (err) { 
+                    //        WinJS.log("Error returned by WebAuth broker: " + err, "Web Authentication SDK Sample", "error");         
+                    //        //document.getElementById("AnyServiceDebugArea").value += " Error Message: " + err.message + "\r\n"; 
+                    //        authzInProgress = false; 
+                    //    }); 
+
+
+
+
+
+
                     WinJS.xhr({
                         //milo: using POST but not passing anything to vend until .then at which point it reads the api product inventory count and displays it back.  
                         type: "POST",
@@ -161,6 +188,11 @@
                     }, function error(err) {
                         console.log("fail", err.responseText)
                     });
+
+
+
+
+
                 } else if (vendId == "null" || vendId == undefined || vendId == "") {
                     document.getElementById("out_of_stock2").removeAttribute("hidden");
                     document.getElementById("out_of_stock2").textContent = "ID Missing in DB or Vend product does not exist.";
