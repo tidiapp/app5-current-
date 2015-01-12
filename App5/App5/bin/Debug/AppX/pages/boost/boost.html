@@ -105,7 +105,7 @@
                         <div id="btn_right" hidden="">
                             <p style="font-size: 20px" id="hidden_p">You have choosen <span id="the_number"></span> of up to 8 boosts choose another boost or add to cart.</p>
                             <button onclick="boost_clicked.release()" id="del_btn10" name="del_btn10" type="reset">Remove Last</button>
-                            <button id="sel_btn10" class="sel_look_btn" onclick="boost_clicked.finalKeepInfo(document.getElementById('choosen_name').textContent)" name="sel_btn10" type="submit">Add To Cart</button>
+                            <button id="sel_btn10" class="sel_look_btn" onclick="boost_clicked.finalKeepInfo(document.getElementById('choosen_name').textContent)" name="sel_btn10" type="submit">Next</button>
                         </div>
                     </div>
                 </div>
@@ -116,24 +116,24 @@
             <!--Milo: age_ is really coming from launch_page -->
             <div id="age_div" class="history_div" onclick="WinJS.Navigation.back(5)">
                 <p id="age_p" class="history_p"></p>
-                <img id="age_pic" class="history_pic" alt="This is a test" src="#" width="100" height="80" />
+                <img id="age_pic" class="history_pic" alt="This is a test" src="#" width="90" height="80" />
             </div>
 
             <div hidden="" id="home2_div" class="history_div" onclick="boost_clicked.footer_click3()">
                 <p id="home2_p" class="history_p"></p>
-                <img id="home2_pic" class="history_pic" alt="This is a test" src="#" width="100" height="80" />
+                <img id="home2_pic" class="history_pic" alt="This is a test" src="#" width="90" height="80" />
             </div>
 
             <!--Milo: home_ is really coming from home page -->
             <div id="home_div" class="history_div" onclick="boost_clicked.footer_click()">
                 <p id="home_p" class="history_p"></p>
-                <img id="home_pic" class="history_pic" alt="This is a test" src="#" width="100" height="80" />
+                <img id="home_pic" class="history_pic" alt="This is a test" src="#" width="90" height="80" />
             </div>
 
             <!--Milo: func_ is really coming from func page -->
             <div hidden="" id="func_div" class="history_div" onclick="WinJS.Navigation.back(2)">
                 <p id="func_p" class="history_p"></p>
-                <img id="func_pic" class="history_pic" alt="This is a test" src="#" width="100" height="80" />
+                <img id="func_pic" class="history_pic" alt="This is a test" src="#" width="90" height="80" />
             </div>
 
             <!--Milo: base_ is really coming from base page -->
@@ -143,11 +143,16 @@
                     <span id="base_price_prev"></span>
                 </div>
                 <p id="base_p" class="history_p"></p>
-                <img id="base_pic" class="history_pic" alt="This is a test" src="#" width="100" height="80" />
+                <img id="base_pic" class="history_pic" alt="This is a test" src="#" width="90" height="80" />
             </div>
             <div class="div_where_you_are">
                 <h2 id="where_you_are4"><span id="cal_co"></span></h2>
                 <!--<h1 id="footer_company_name"></h1>--><!-- this is being styled in the default.js folder -->
+                <div id="price_prev_div_total2">
+                    <span>Total</span>
+                    <span>$</span>
+                    <span id="base_price_prev2"></span>
+                </div>            
             </div>
 </footer>
     </div>

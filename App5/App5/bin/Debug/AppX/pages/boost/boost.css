@@ -374,9 +374,14 @@ button, input[type=button], input[type=submit], input[type=reset], input[type=fi
 
 #where_you_are4 {
     /*margin-left: 545px;*/
-    margin-top: 30px;
-    position: absolute;
+    /*margin-top: 30px;
+    position: absolute;*/
     font-size: 18px;
     color: #fff;
     font-weight: bold;
+}
+
+#price_prev_div_total2 {
+    font-size: 25px;
+    color: #fff;
 }

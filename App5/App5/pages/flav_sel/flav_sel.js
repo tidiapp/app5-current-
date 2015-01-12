@@ -83,14 +83,14 @@
             document.getElementById("boost_p7").textContent = roamingSettings.values["Boost7_name"];
             document.getElementById("boost_p8").textContent = roamingSettings.values["Boost8_name"];
 
-            if (roamingSettings.values["Boost1_name"] != "") { document.getElementById("boost_div").removeAttribute("hidden"); };
-            if (roamingSettings.values["Boost2_name"] != "") { document.getElementById("boost_div2").removeAttribute("hidden"); };
-            if (roamingSettings.values["Boost3_name"] != "") { document.getElementById("boost_div3").removeAttribute("hidden"); };
-            if (roamingSettings.values["Boost4_name"] != "") { document.getElementById("boost_div4").removeAttribute("hidden"); };
-            if (roamingSettings.values["Boost5_name"] != "") { document.getElementById("boost_div5").removeAttribute("hidden"); };
-            if (roamingSettings.values["Boost6_name"] != "") { document.getElementById("boost_div6").removeAttribute("hidden"); };
-            if (roamingSettings.values["Boost7_name"] != "") { document.getElementById("boost_div7").removeAttribute("hidden"); };
-            if (roamingSettings.values["Boost8_name"] != "") { document.getElementById("boost_div8").removeAttribute("hidden"); };
+            if (roamingSettings.values["Boost1_name"] != "") { document.getElementById("boost_div").removeAttribute("hidden"); document.getElementById("boost_pic").src = roamingSettings.values["Boost1_pic"]; };
+            if (roamingSettings.values["Boost2_name"] != "") { document.getElementById("boost_div2").removeAttribute("hidden"); document.getElementById("boost_pic2").src = roamingSettings.values["Boost2_pic"]; };
+            if (roamingSettings.values["Boost3_name"] != "") { document.getElementById("boost_div3").removeAttribute("hidden"); document.getElementById("boost_pic3").src = roamingSettings.values["Boost3_pic"]; };
+            if (roamingSettings.values["Boost4_name"] != "") { document.getElementById("boost_div4").removeAttribute("hidden"); document.getElementById("boost_pic4").src = roamingSettings.values["Boost4_pic"]; };
+            if (roamingSettings.values["Boost5_name"] != "") { document.getElementById("boost_div5").removeAttribute("hidden"); document.getElementById("boost_pic5").src = roamingSettings.values["Boost5_pic"]; };
+            if (roamingSettings.values["Boost6_name"] != "") { document.getElementById("boost_div6").removeAttribute("hidden"); document.getElementById("boost_pic6").src = roamingSettings.values["Boost6_pic"]; };
+            if (roamingSettings.values["Boost7_name"] != "") { document.getElementById("boost_div7").removeAttribute("hidden"); document.getElementById("boost_pic7").src = roamingSettings.values["Boost7_pic"]; };
+            if (roamingSettings.values["Boost8_name"] != "") { document.getElementById("boost_div8").removeAttribute("hidden"); document.getElementById("boost_pic8").src = roamingSettings.values["Boost8_pic"]; };
 
             roamingSettings.values["went_back"] = true;
             if (roamingSettings.values["went_back_back"]) {

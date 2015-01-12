@@ -94,6 +94,7 @@
             }
 
             document.getElementById("base_price_prev").textContent = roamingSettings.values["Base_price"];
+            document.getElementById("base_price_prev2").textContent = roamingSettings.values["Base_price"];
 
             //milo: show checkout button right away so some can buy without boost picked
             document.getElementById("btn_right").removeAttribute("hidden");

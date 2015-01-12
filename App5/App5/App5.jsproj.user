@@ -6,6 +6,6 @@
     <ShowAllFiles>false</ShowAllFiles>
     <AppxPackageIsForStore>False</AppxPackageIsForStore>
     <AppxShowAllApps>False</AppxShowAllApps>
-    <AppxBuildConfigurationSelection>x64</AppxBuildConfigurationSelection>
+    <AppxBuildConfigurationSelection>arm</AppxBuildConfigurationSelection>
   </PropertyGroup>
 </Project>
