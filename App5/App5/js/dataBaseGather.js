@@ -498,16 +498,16 @@
                             FlavName: results[i].FlavName, FlavPic: results[i].FlavImage, FlavID: results[i].FlavID, Cal: results[i].Caloric, Date: results[i].PurchaseDate, Amount: results[i].TotalPrice, Order: results[i].OrderNumber
                         });
                     }
-                    roamingSettings.values["numberOfPurchases"] = results.length;
-                    if ((roamingSettings.values["numberOfPurchases"] / 10) % 1 === 0 && (roamingSettings.values["numberOfPurchases"] / 15) % 1 != 0 && (roamingSettings.values["numberOfPurchases"] / 25) % 1 != 0) {
-                        server.tierSystem(document.getElementById("tier_one"));
+                    //roamingSettings.values["numberOfPurchases"] = results.length;
+                    //if ((roamingSettings.values["numberOfPurchases"] / 10) % 1 === 0 && (roamingSettings.values["numberOfPurchases"] / 15) % 1 != 0 && (roamingSettings.values["numberOfPurchases"] / 25) % 1 != 0) {
+                    //    server.tierSystem(document.getElementById("tier_one"));
 
-                    } else if ((roamingSettings.values["numberOfPurchases"] / 15) % 1 === 0) {
-                        server.tierSystem(document.getElementById("tier_two"));
+                    //} else if ((roamingSettings.values["numberOfPurchases"] / 15) % 1 === 0) {
+                    //    server.tierSystem(document.getElementById("tier_two"));
 
-                    } else if ((roamingSettings.values["numberOfPurchases"] / 25) % 1 === 0) {
-                        server.tierSystem(document.getElementById("tier_three"));
-                    }
+                    //} else if ((roamingSettings.values["numberOfPurchases"] / 25) % 1 === 0) {
+                    //    server.tierSystem(document.getElementById("tier_three"));
+                    //}
                 }, function (err) {
                     console.log(err);
                 });
@@ -527,7 +527,77 @@
                     tier.style.borderColor = "blue";
                     tier.style.boxShadow = "3px 3px 10px 1px #d1cfcf";
                 }
-            }
+            },
 
+            contSave: function () {
+                var appData = Windows.Storage.ApplicationData.current;
+                var roamingSettings = appData.roamingSettings;
+                roamingSettings.values["computerNumber"] = 1;
+                var Age = thinkitdrinkitDataClient.getTable("Nutrigenetic");
+                Age.insert({
+                    CNum: roamingSettings.values["computerNumber"],
+                    BaseName:roamingSettings.values["Base_name"],
+                    BaseVend:roamingSettings.values["Base_vend"],
+                    BaseImages:roamingSettings.values["Base_pic"],
+                    BasePrice:roamingSettings.values["Base_price"],
+                    BoostName:roamingSettings.values["Boost1_name"],
+                    BoostVend:roamingSettings.values["Boost1_Vend"],
+                    BoostImages:roamingSettings.values["Boost1_pic"],
+                    BoostPrice:roamingSettings.values["Boost2_price"],
+                    Boost2Name:roamingSettings.values["Boost2_name"],
+                    Boost2Vend:roamingSettings.values["Boost2_vend"],
+                    Boost2Images:roamingSettings.values["Boost2_pic"],
+                    Boost2Price:roamingSettings.values["Boost3_price"],
+                    Boost3Name:roamingSettings.values["Boost3_name"],
+                    Boost3Vend:roamingSettings.values["Boost3_vend"],
+                    Boost3Images:roamingSettings.values["Boost3_pic"],
+                    Boost3Price:roamingSettings.values["Boost4_price"],
+                    Boost4Name:roamingSettings.values["Boost4_name"],
+                    Boost4Vend:roamingSettings.values["Boost4_vend"],
+                    Boost4Images:roamingSettings.values["Boost4_pic"],
+                    Boost4Price:roamingSettings.values["Boost5_price"],
+                    Boost5Name:roamingSettings.values["Boost5_name"],
+                    Boost5Vend:roamingSettings.values["Boost5_vend"],
+                    Boost5Images:roamingSettings.values["Boost5_pic"],
+                    Boost5Price:roamingSettings.values["Boost6_price"],
+                    Boost6Name:roamingSettings.values["Boost6_name"],
+                    Boost6Vend:roamingSettings.values["Boost6_vend"],
+                    Boost6Images:roamingSettings.values["Boost6_pic"],
+                    Boost6Price:roamingSettings.values["Boost7_price"],
+                    Boost7Name:roamingSettings.values["Boost7_name"],
+                    Boost7Vend:roamingSettings.values["Boost7_vend"],
+                    Boost7Images:roamingSettings.values["Boost7_pic"],
+                    Boost7Price:roamingSettings.values["Boost8_price"],
+                    Boost8Name:roamingSettings.values["Boost8_name"],
+                    Boost8Vend:roamingSettings.values["Boost8_vend"],
+                    Boost8Images:roamingSettings.values["Boost8_pic"],
+                    Boost8Price:roamingSettings.values["Boost8_price"],
+                    FlavName:roamingSettings.values["FlavSel_name"],
+                    FlaveVend:roamingSettings.values["FlavSel_vend"],
+                    FlavIamge:roamingSettings.values["FlavSel_pic"],
+                    FlavPrice:roamingSettings.values["FlavSel_price"],
+                    TestName: roamingSettings.values["Nutrigenetics_name"],
+                    TestVend: roamingSettings.values["Nutrigenetics_vend"],
+                    TestImages: roamingSettings.values["Nutrigenetics_pic"],
+                    TestPrice: roamingSettings.values["Nutrigenetics_price"]
+                }).done(function (results) {
+                    console.log("This seems to  be working!!");
+                }, function (err) {
+                    console.log(err);
+                });
+            },
+            userOrderDone: function () {
+                var appData = Windows.Storage.ApplicationData.current;
+                var roamingSettings = appData.roamingSettings;
+                roamingSettings.values["computerNumber"] = 1;
+                var Age = thinkitdrinkitDataClient.getTable("Nutrigenetic");
+                Age.del({
+                    CNum: 1
+                }).done(function () {
+                    console.log("It's all gone!!! :)");
+                }, function (err) {
+                   console.log("Error: " + err);
+                });
+            }
         })
     })()

@@ -24,6 +24,48 @@
                 roamingSettings.values["true"] = false;
                 roamingSettings.values["not_cont"] = false;
                 roamingSettings.values["went_back"] = true;
+
+                roamingSettings.values.remove["Base_name"]
+                roamingSettings.values.remove["Base_pic"]
+                roamingSettings.values.remove["Base_price"]
+                roamingSettings.values.remove["Base_vend"]
+                roamingSettings.values.remove["FlavSel_name"]
+                roamingSettings.values.remove["FlavSel_pic"]
+                roamingSettings.values.remove["FlavSel_price"]
+                roamingSettings.values.remove["FlavSel_vend"]
+                roamingSettings.values.remove["Boost1_name"]
+                roamingSettings.values.remove["Boost1_pic"]
+                roamingSettings.values.remove["Boost1_price"]
+                roamingSettings.values.remove["Boost1_vend"]
+                roamingSettings.values.remove["Boost2_name"]
+                roamingSettings.values.remove["Boost2_pic"]
+                roamingSettings.values.remove["Boost2_price"]
+                roamingSettings.values.remove["Boost2_vend"]
+                roamingSettings.values.remove["Boost3_name"]
+                roamingSettings.values.remove["Boost3_pic"]
+                roamingSettings.values.remove["Boost3_price"]
+                roamingSettings.values.remove["Boost3_vend"]
+                roamingSettings.values.remove["Boost4_name"]
+                roamingSettings.values.remove["Boost4_pic"]
+                roamingSettings.values.remove["Boost4_price"]
+                roamingSettings.values.remove["Boost4_vend"]
+                roamingSettings.values.remove["Boost5_name"]
+                roamingSettings.values.remove["Boost5_pic"]
+                roamingSettings.values.remove["Boost5_price"]
+                roamingSettings.values.remove["Boost5_vend"]
+                roamingSettings.values.remove["Boost6_name"]
+                roamingSettings.values.remove["Boost6_pic"]
+                roamingSettings.values.remove["Boost6_price"]
+                roamingSettings.values.remove["Boost6_vend"]
+                roamingSettings.values.remove["Boost7_name"]
+                roamingSettings.values.remove["Boost7_pic"]
+                roamingSettings.values.remove["Boost7price"]
+                roamingSettings.values.remove["Boost7_vend"]
+                roamingSettings.values.remove["Boost8_name"]
+                roamingSettings.values.remove["Boost8_pic"]
+                roamingSettings.values.remove["Boost8_price"]
+                roamingSettings.values.remove["Boost8_vend"]
+
                 //This is the normal(default) app color in hex #BA5EB7
 
             } else {
