@@ -57,6 +57,7 @@ js\navigator.js
 js\print.js
 js\removeInfo.js
 js\showPopupUI.js
+js\tool.js
 js\vendCalls.js
 packages.config
 pages\all_products\all_products.css

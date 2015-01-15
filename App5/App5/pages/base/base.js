@@ -156,7 +156,7 @@
 
 
 
-
+//MILO TOOL.JS HAS BEGINNING OF OAUTH FOR VEND IT HAS THE QUERY BUILDER
                     WinJS.xhr({
                         //milo: using POST but not passing anything to vend until .then at which point it reads the api product inventory count and displays it back.  
                         type: "POST",
