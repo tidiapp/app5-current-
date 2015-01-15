@@ -136,6 +136,7 @@
     <Content Include="pages\home2\home2.html" />
     <Content Include="pages\home2\home2.js" />
     <Content Include="pages\info_home\info_home.js" />
+    <Content Include="pages\item_info\item_info - Copy.js" />
     <Content Include="pages\supl_sport_item_info\supl_sport_item_info.css" />
     <Content Include="pages\supl_sport_item_info\supl_sport_item_info.html" />
     <Content Include="pages\supl_sport_item_info\supl_sport_item_info.js" />

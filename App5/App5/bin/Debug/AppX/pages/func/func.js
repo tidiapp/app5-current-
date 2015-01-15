@@ -107,7 +107,7 @@
 
         more_info: function (clicked) {
             roamingSettings.values["Item_choosen"] = clicked;
-            roamingSettings.values["Clicked_cat"] = "func";
+            roamingSettings.values["Clicked_cat"] = "Func";
             WinJS.Navigation.navigate('pages/item_info/item_info.html');
             keepInfo = true;
         },

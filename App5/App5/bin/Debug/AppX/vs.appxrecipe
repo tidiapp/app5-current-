@@ -20,7 +20,7 @@
     <AppXManifest Include="C:\Users\milo\Desktop\app5-current-\App5\App5\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-01-13T21:13:52.503</Modified>
+      <Modified>2015-01-15T21:40:28.096</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -196,7 +196,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\js\ChangeApp.js">
       <PackagePath>js\ChangeApp.js</PackagePath>
-      <Modified>2014-12-23T20:48:14.470</Modified>
+      <Modified>2015-01-15T21:52:40.640</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\js\dataBaseGather.js">
       <PackagePath>js\dataBaseGather.js</PackagePath>
@@ -212,7 +212,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\js\tool.js">
       <PackagePath>js\tool.js</PackagePath>
-      <Modified>2015-01-14T16:42:07.591</Modified>
+      <Modified>2015-01-15T19:29:47.687</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\js\gatherInfo.js">
       <PackagePath>js\gatherInfo.js</PackagePath>
@@ -280,7 +280,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\func\func.js">
       <PackagePath>pages\func\func.js</PackagePath>
-      <Modified>2014-12-23T20:43:51.433</Modified>
+      <Modified>2015-01-15T20:45:32.663</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\home2\home2.js">
       <PackagePath>pages\home2\home2.js</PackagePath>
@@ -288,7 +288,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\info_home\info_home.js">
       <PackagePath>pages\info_home\info_home.js</PackagePath>
-      <Modified>2014-12-16T16:13:02.852</Modified>
+      <Modified>2015-01-15T21:42:27.553</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\item_info\item_info - Copy.js">
+      <PackagePath>pages\item_info\item_info - Copy.js</PackagePath>
+      <Modified>2015-01-15T20:37:11.519</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.js">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.js</PackagePath>
@@ -312,11 +316,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\home\home.js">
       <PackagePath>pages\home\home.js</PackagePath>
-      <Modified>2014-12-23T20:26:06.169</Modified>
+      <Modified>2015-01-15T20:31:56.472</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\item_info\item_info.js">
       <PackagePath>pages\item_info\item_info.js</PackagePath>
-      <Modified>2014-12-09T16:25:57.434</Modified>
+      <Modified>2015-01-15T22:19:34.691</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\launch_page\launch_page.js">
       <PackagePath>pages\launch_page\launch_page.js</PackagePath>
@@ -452,7 +456,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\item_info\item_info.html">
       <PackagePath>pages\item_info\item_info.html</PackagePath>
-      <Modified>2014-12-09T16:36:22.623</Modified>
+      <Modified>2015-01-15T21:58:21.741</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\launch_page\launch_page.html">
       <PackagePath>pages\launch_page\launch_page.html</PackagePath>
@@ -488,7 +492,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-01-13T21:13:52.011</Modified>
+      <Modified>2015-01-15T21:40:27.674</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

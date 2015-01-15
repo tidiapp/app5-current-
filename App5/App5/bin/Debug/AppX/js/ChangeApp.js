@@ -190,7 +190,7 @@
 
         item_info: function () {
             document.getElementById("main_footer").style.backgroundColor = i;
-            document.getElementById("item_info_pic").style.borderColor = i;
+            //document.getElementById("item_info_pic").style.borderColor = i;
         },
 
         login: function () {

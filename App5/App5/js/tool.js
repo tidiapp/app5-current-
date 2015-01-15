@@ -3,7 +3,7 @@
     WinJS.Namespace.define("tool", {
 
 //milo: classic alert box 
-        alert: function (content, title) {
+        alert: function (content, title) {//content small text below the title which is like H1
             var msgBox = new Windows.UI.Popups.MessageDialog(content, title);
             msgBox.showAsync();
         },

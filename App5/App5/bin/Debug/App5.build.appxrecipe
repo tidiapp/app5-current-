@@ -217,6 +217,9 @@
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\info_home\info_home.js">
       <PackagePath>pages\info_home\info_home.js</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\item_info\item_info - Copy.js">
+      <PackagePath>pages\item_info\item_info - Copy.js</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.js">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.js</PackagePath>
     </AppxPackagedFile>

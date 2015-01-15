@@ -95,21 +95,14 @@
     var _choosen_cat = "";
     var nutrigeneticsPrice = "";
 
-    //Milo: I defined this above and it needs to be done here to in order for it to work inside the WinJS
-    //var the_sel_age = "";
-    //console.log("Cat picked = " + roamingSettings.values["Cat_picked"] + " The sel age = " + the_sel_age);
-
     WinJS.Namespace.define('clicked_me', {
         //the clicked function will show the photo and the more indept information of the clicked age group
         //at the bottem of the home.html page
         clicked: function (me) {          
             var updated_answer = me.replace(/^\s+/, '').replace(/\s+$/, '');
             _choosen_cat = updated_answer;
-            //gather information from from the database as the user clicks on the diffent ages
-            //and then displays that information
 
             server.home_sub(updated_answer);
-
             //milo: some code does not work well from here 
 
         },

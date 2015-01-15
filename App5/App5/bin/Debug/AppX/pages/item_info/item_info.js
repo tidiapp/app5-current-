@@ -16,32 +16,44 @@
             design.item_info();
             design.changeTextColor();
             var updated_name = roamingSettings.values["Item_choosen"].replace(/^\s+/, '').replace(/\s+$/, '');
-            document.getElementById("item_name").textContent = "Information on the " + updated_name + " " + roamingSettings.values["Clicked_cat"] + ".";
+            document.getElementById("item_name").textContent = "Information on the " + updated_name + ".";
+
             server.item_info(updated_name, roamingSettings.values["Clicked_cat"]);
+
+            roamingSettings.values["dbUrl"] = document.getElementById("item_info_info").textContent;
+
+            var webviewControl = document.getElementById("webview");
+
+            webviewControl.navigate(roamingSettings.values["dbUrl"]);
+
+
+
+
             //document.body.innerHTML.replace("eros", "<span id='key_word' onclick=''>Eros<span>")
             //console.log(document.getElementById("item_info_info").innerHTML);
-            //console.log(console.log(document.getElementById("item_info_info").textContent))   
-            if (roamingSettings.values["Clicked_cat"] === "Age") {
-                document.getElementById("item_info_label").setAttribute("hidden", true);
-            }
+            //console.log(console.log(document.getElementById("item_info_info").textContent))  
 
-            if (updated_name === "Protein") {
-                document.getElementById("item_info_label").setAttribute("hidden", true);
-            }
+            //if (roamingSettings.values["Clicked_cat"] === "Age") {
+            //    document.getElementById("item_info_label").setAttribute("hidden", true);
+            //}
+
+            //if (updated_name === "Protein") {
+            //    document.getElementById("item_info_label").setAttribute("hidden", true);
+            //}
            
             document.onload = function () {
                 
                // console.log(document.getElementById("item_info_info").innerText.replace(/eros/g, "<span>cras</span>"));
-                if (document.getElementById("item_info_info2").textContent === "") {
-                    document.getElementById("item_info_info2").setAttribute("hidden", true)
-                }
-                if (document.getElementById("item_info_info3").textContent === "") {
-                    document.getElementById("item_info_info3").setAttribute("hidden", true)
-                }
-                function test() {
-                    document.getElementById("item_info_info").style.color = "blue";
-                };
-                test1 = test();
+                //if (document.getElementById("item_info_info2").textContent === "") {
+                //    document.getElementById("item_info_info2").setAttribute("hidden", true)
+                //}
+                //if (document.getElementById("item_info_info3").textContent === "") {
+                //    document.getElementById("item_info_info3").setAttribute("hidden", true)
+                //}
+                //function test() {
+                //    document.getElementById("item_info_info").style.color = "blue";
+                //};
+                //test1 = test();
 
             };
         },
@@ -59,6 +71,10 @@
             // TODO: Respond to changes in layout.
         }
     });
-   
+
+
+
+
+
     setTimeout(test1, 5000)
 })();
