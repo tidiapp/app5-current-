@@ -15,7 +15,7 @@
             design.getFinal();
             design.changeTextColor();
             var theNew = roamingSettings.values["Base_Vend"].replace(/^\s+/, '').replace(/\s+$/, '');
-
+            server.finalPageCall();
 //milo: looping for any db to update any part automatically using ids 
             //var EditDB = thinkitdrinkitDataClient.getTable("Boost");
             //for (var i = 11468; i <= 11504; i++) {
@@ -198,100 +198,106 @@
                 console.log("This is not the one I'm looking for: :( ")
                 if (roamingSettings.values["Boost2_price"] > 0 && roamingSettings.values["Boost3_price"] <= 0) {
                     roamingSettings.values["Boost3_name"] = 0;
-                    roamingSettings["Boost3_pic"] = 0;
+                    roamingSettings.values["Boost3_pic"] = 0;
                     roamingSettings.values["Boost3_price"] = 0;
-                    roamingSettings["Boost3_vend"] = 0;
-                    roamingSettings.value["Boost4_name"] = 0;
-                    roamingSettings.values["Boost4_pic"] = 0;
+                    roamingSettings.values["Boost3_vend"] = 0;
+                    roamingSettings.values["Boost4_name"] = "none";
+                    roamingSettings.values["Boost4_pic"] = "none";
                     roamingSettings.values["Boost4_price"] = 0;
-                    roamingSettings.value["Boost4_vend"] = 0;
-                    roamingSettings.values["Boost5_name"] = 0;
-                    roamingSettings.value["Boost5_pic"] = 0;
+                    roamingSettings.values["Boost4_vend"] = "none";
+                    roamingSettings.values["Boost5_name"] = "none";
+                    roamingSettings.values["Boost5_pic"] = "none";
                     roamingSettings.values["Boost5_price"] = 0;
-                    roamingSettings.values["Boost5_vend"] = 0;
-                    roamingSettings.values["Boost6_name"] = 0;
-                    roamingSettings.values["Boost6_pic"] = 0;
+                    roamingSettings.values["Boost5_vend"] = "none";
+                    roamingSettings.values["Boost6_name"] = "none";
+                    roamingSettings.values["Boost6_pic"] = "none";
                     roamingSettings.values["Boost6_price"] = 0;
-                    roamingSettings.values["Boost6_vend"] = 0;
-                    roamingSettings.values["Boost7_name"] = 0;
-                    roamingSettings.values["Boost7_pic"] = 0;
+                    roamingSettings.values["Boost6_vend"] = "none";
+                    roamingSettings.values["Boost7_name"] = "none";
+                    roamingSettings.values["Boost7_pic"] = "none";
                     roamingSettings.values["Boost7price"] = 0;
-                    roamingSettings.values["Boost7_vend"] = 0;
-                    roamingSettings.values["Boost8_name"] = 0;
-                    roamingSettings.values["Boost8_pic"] = 0;
+                    roamingSettings.values["Boost7_vend"] = "none";
+                    roamingSettings.values["Boost8_name"] = "none";
+                    roamingSettings.values["Boost8_pic"] = "none";
                     roamingSettings.values["Boost8_price"] = 0;
-                    roamingSettings.values["Boost8_vend"] = 0;
+                    roamingSettings.values["Boost8_vend"] = "none";
                 }
                 else if (roamingSettings.values["Boost3_price"] > 0 && roamingSettings.values["Boost4_price"] <= 0) {
-                    roamingSettings.value["Boost4_name"] = 0;
-                    roamingSettings.values["Boost4_pic"] = 0;
+                    roamingSettings.values["Boost4_name"] = "none";
+                    roamingSettings.values["Boost4_pic"] = "none";
                     roamingSettings.values["Boost4_price"] = 0;
-                    roamingSettings.value["Boost4_vend"] = 0;
-                    roamingSettings.values["Boost5_name"] = 0;
-                    roamingSettings.value["Boost5_pic"] = 0;
+                    roamingSettings.values["Boost4_vend"] = "none";
+                    roamingSettings.values["Boost5_name"] = "none";
+                    roamingSettings.values["Boost5_pic"] = "none";
                     roamingSettings.values["Boost5_price"] = 0;
-                    roamingSettings.values["Boost5_vend"] = 0;
-                    roamingSettings.values["Boost6_name"] = 0;
-                    roamingSettings.values["Boost6_pic"] = 0;
+                    roamingSettings.values["Boost5_vend"] = "none";
+                    roamingSettings.values["Boost6_name"] = "none";
+                    roamingSettings.values["Boost6_pic"] = "none";
                     roamingSettings.values["Boost6_price"] = 0;
-                    roamingSettings.values["Boost6_vend"] = 0;
-                    roamingSettings.values["Boost7_name"] = 0;
-                    roamingSettings.values["Boost7_pic"] = 0;
+                    roamingSettings.values["Boost6_vend"] = "none";
+                    roamingSettings.values["Boost7_name"] = "none";
+                    roamingSettings.values["Boost7_pic"] = "none";
                     roamingSettings.values["Boost7price"] = 0;
-                    roamingSettings.values["Boost7_vend"] = 0;
-                    roamingSettings.values["Boost8_name"] = 0;
-                    roamingSettings.values["Boost8_pic"] = 0;
+                    roamingSettings.values["Boost7_vend"] = "none";
+                    roamingSettings.values["Boost8_name"] = "none";
+                    roamingSettings.values["Boost8_pic"] = "none";
                     roamingSettings.values["Boost8_price"] = 0;
-                    roamingSettings.values["Boost8_vend"] = 0;
+                    roamingSettings.values["Boost8_vend"] = "none";
                 }
                 else if (roamingSettings.values["Boost4_price"] > 0 && roamingSettings.values["Boost5_price"] <= 0) {
-                    roamingSettings.values["Boost5_name"] = 0;
-                    roamingSettings.value["Boost5_pic"] = 0;
+                    roamingSettings.values["Boost5_name"] = "none";
+                    roamingSettings.values["Boost5_pic"] = "none";
                     roamingSettings.values["Boost5_price"] = 0;
-                    roamingSettings.values["Boost5_vend"] = 0;
-                    roamingSettings.values["Boost6_name"] = 0;
-                    roamingSettings.values["Boost6_pic"] = 0;
+                    roamingSettings.values["Boost5_vend"] = "none";
+                    roamingSettings.values["Boost6_name"] = "none";
+                    roamingSettings.values["Boost6_pic"] = "none";
                     roamingSettings.values["Boost6_price"] = 0;
-                    roamingSettings.values["Boost6_vend"] = 0;
-                    roamingSettings.values["Boost7_name"] = 0;
-                    roamingSettings.values["Boost7_pic"] = 0;
+                    roamingSettings.values["Boost6_vend"] = "none";
+                    roamingSettings.values["Boost7_name"] = "none";
+                    roamingSettings.values["Boost7_pic"] = "none";
                     roamingSettings.values["Boost7price"] = 0;
-                    roamingSettings.values["Boost7_vend"] = 0;
-                    roamingSettings.values["Boost8_name"] = 0;
-                    roamingSettings.values["Boost8_pic"] = 0;
+                    roamingSettings.values["Boost7_vend"] = "none";
+                    roamingSettings.values["Boost8_name"] = "none";
+                    roamingSettings.values["Boost8_pic"] = "none";
                     roamingSettings.values["Boost8_price"] = 0;
-                    roamingSettings.values["Boost8_vend"] = 0;
+                    roamingSettings.values["Boost8_vend"] = "none";
                 }
                 else if (roamingSettings.values["Boost5_price"] > 0 && roamingSettings.values["Boost6_price"] <= 0) {
-                    roamingSettings.values["Boost6_name"] = 0;
-                    roamingSettings.values["Boost6_pic"] = 0;
+                    roamingSettings.values["Boost6_name"] = "none";
+                    roamingSettings.values["Boost6_pic"] = "none";
                     roamingSettings.values["Boost6_price"] = 0;
-                    roamingSettings.values["Boost6_vend"] = 0;
-                    roamingSettings.values["Boost7_name"] = 0;
-                    roamingSettings.values["Boost7_pic"] = 0;
+                    roamingSettings.values["Boost6_vend"] = "none";
+                    roamingSettings.values["Boost7_name"] = "none";
+                    roamingSettings.values["Boost7_pic"] = "none";
                     roamingSettings.values["Boost7price"] = 0;
-                    roamingSettings.values["Boost7_vend"] = 0;
-                    roamingSettings.values["Boost8_name"] = 0;
-                    roamingSettings.values["Boost8_pic"] = 0;
+                    roamingSettings.values["Boost7_vend"] = "none";
+                    roamingSettings.values["Boost8_name"] = "none";
+                    roamingSettings.values["Boost8_pic"] = "none";
                     roamingSettings.values["Boost8_price"] = 0;
-                    roamingSettings.values["Boost8_vend"] = 0;
+                    roamingSettings.values["Boost8_vend"] = "none";
                 }
                 else if (roamingSettings.values["Boost6_price"] > 0 && roamingSettings.values["Boost7_price"] <= 0) {
-                    roamingSettings.values["Boost7_name"] = 0;
-                    roamingSettings.values["Boost7_pic"] = 0;
+                    roamingSettings.values["Boost7_name"] = "none";
+                    roamingSettings.values["Boost7_pic"] = "none";
                     roamingSettings.values["Boost7price"] = 0;
-                    roamingSettings.values["Boost7_vend"] = 0;
-                    roamingSettings.values["Boost8_name"] = 0;
-                    roamingSettings.values["Boost8_pic"] = 0;
+                    roamingSettings.values["Boost7_vend"] = "none";
+                    roamingSettings.values["Boost8_name"] = "none";
+                    roamingSettings.values["Boost8_pic"] = "none";
                     roamingSettings.values["Boost8_price"] = 0;
-                    roamingSettings.values["Boost8_vend"] = 0;
+                    roamingSettings.values["Boost8_vend"] = "none";
                 }
                 else if (roamingSettings.values["Boost7_price"] > 0 && roamingSettings.values["Boost8_price"] <= 0) {
-                    roamingSettings.values["Boost8_name"] = 0;
-                    roamingSettings.values["Boost8_pic"] = 0;
+                    roamingSettings.values["Boost8_name"] = "none";
+                    roamingSettings.values["Boost8_pic"] = "none";
                     roamingSettings.values["Boost8_price"] = 0;
-                    roamingSettings.values["Boost8_vend"] = 0;
+                    roamingSettings.values["Boost8_vend"] = "none";
                 }
+                if (roamingSettings.values["Nutrigenetics_price"] <= 0 || roamingSettings.values["Nutrigenetics_price"] == "") {
+                    roamingSettings.values["Nutrigenetics_name"] = "none";
+                    roamingSettings.values["Nutrigenetics_price"] = 0;
+                    roamingSettings.values["Nutrigenetics_vend"] = "none";
+                    roamingSettings.values["Nutrigenetics_pic"] = "none";
+                };
                 server.contSave()
                 roamingSettings.values.remove["Base_name"]
                 roamingSettings.values.remove["Base_pic"]

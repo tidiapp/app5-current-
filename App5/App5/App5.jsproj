@@ -88,6 +88,7 @@
     <Content Include="js\dataBaseGather.js" />
     <Content Include="js\dataStore.js" />
     <Content Include="js\default.js" />
+    <Content Include="js\finalpagelogic.js" />
     <Content Include="js\tool.js" />
     <Content Include="js\gatherInfo.js" />
     <Content Include="js\jquery.js" />

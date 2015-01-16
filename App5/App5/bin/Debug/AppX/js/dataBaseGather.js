@@ -528,58 +528,85 @@
                     tier.style.boxShadow = "3px 3px 10px 1px #d1cfcf";
                 }
             },
-
+            finalPageCall: function () {
+                var finalCall = thinkitdrinkitDataClient.getTable("Nutrigenetic");
+                var roamingSettings = appData.roamingSettings;
+                var query = finalCall.where({
+                    CNum: 1
+                }).read().done(function (results) {
+                    var totalOrderNum = 0;
+                    for (var i = 0; i < results.length; i++) {
+                        roamingSettings.values["Base" + i + "_price"] = results[i].BasePrice;
+                        roamingSettings.values["Boost1" + i + "_price"] = results[i].BoostPrice;
+                        roamingSettings.values["Boost2" + i + "_price"] = results[i].Boost2Price;
+                        roamingSettings.values["Boost3" + i + "_price"] = results[i].Boost3Price;
+                        roamingSettings.values["Boost4" + i + "_price"] = results[i].Boost4Price;
+                        roamingSettings.values["Boost5" + i + "_price"] = results[i].Boost5Price;
+                        roamingSettings.values["Boost6" + i + "_price"] = results[i].Boost6Price;
+                        roamingSettings.values["Boost7" + i + "_price"] = results[i].Boost7Price;
+                        roamingSettings.values["Boost8" + i + "_price"] = results[i].Boost8Price;
+                        roamingSettings.values["Nutrigenetics" + i + "_price"] = results[i].TestPrice;
+                        totalOrderNum += i;
+                    }
+                    roamingSettings.values["totalOrderNumber"] = results.length;
+                    console.log("The is the number of total orders: " + totalOrderNum + " This is a base price: " +  roamingSettings.values["Base0_price"]);
+                }, function (err) {
+                    console.log(err);
+                });
+            },
             contSave: function () {
                 var appData = Windows.Storage.ApplicationData.current;
                 var roamingSettings = appData.roamingSettings;
                 roamingSettings.values["computerNumber"] = 1;
+                var numoforders = 0;
+                numoforders += 1;
                 var Age = thinkitdrinkitDataClient.getTable("Nutrigenetic");
                 Age.insert({
                     CNum: roamingSettings.values["computerNumber"],
                     BaseName:roamingSettings.values["Base_name"],
                     BaseVend:roamingSettings.values["Base_vend"],
                     BaseImages:roamingSettings.values["Base_pic"],
-                    BasePrice:roamingSettings.values["Base_price"],
+                    BasePrice:parseFloat(roamingSettings.values["Base_price"]),
                     BoostName:roamingSettings.values["Boost1_name"],
                     BoostVend:roamingSettings.values["Boost1_Vend"],
                     BoostImages:roamingSettings.values["Boost1_pic"],
-                    BoostPrice:roamingSettings.values["Boost2_price"],
+                    BoostPrice:parseFloat(roamingSettings.values["Boost1_price"]),
                     Boost2Name:roamingSettings.values["Boost2_name"],
                     Boost2Vend:roamingSettings.values["Boost2_vend"],
                     Boost2Images:roamingSettings.values["Boost2_pic"],
-                    Boost2Price:roamingSettings.values["Boost3_price"],
+                    Boost2Price:parseFloat(roamingSettings.values["Boost2_price"]),
                     Boost3Name:roamingSettings.values["Boost3_name"],
                     Boost3Vend:roamingSettings.values["Boost3_vend"],
                     Boost3Images:roamingSettings.values["Boost3_pic"],
-                    Boost3Price:roamingSettings.values["Boost4_price"],
-                    Boost4Name:roamingSettings.values["Boost4_name"],
+                    Boost3Price: parseFloat(roamingSettings.values["Boost3_price"]),
+                    Boost4Name:roamingSettings.values["Boost3_name"],
                     Boost4Vend:roamingSettings.values["Boost4_vend"],
                     Boost4Images:roamingSettings.values["Boost4_pic"],
-                    Boost4Price:roamingSettings.values["Boost5_price"],
+                    Boost4Price:parseFloat(roamingSettings.values["Boost4_price"]),
                     Boost5Name:roamingSettings.values["Boost5_name"],
                     Boost5Vend:roamingSettings.values["Boost5_vend"],
                     Boost5Images:roamingSettings.values["Boost5_pic"],
-                    Boost5Price:roamingSettings.values["Boost6_price"],
+                    Boost5Price: parseFloat(roamingSettings.values["Boost5_price"]),
                     Boost6Name:roamingSettings.values["Boost6_name"],
                     Boost6Vend:roamingSettings.values["Boost6_vend"],
                     Boost6Images:roamingSettings.values["Boost6_pic"],
-                    Boost6Price:roamingSettings.values["Boost7_price"],
+                    Boost6Price:parseFloat(roamingSettings.values["Boost6_price"]),
                     Boost7Name:roamingSettings.values["Boost7_name"],
                     Boost7Vend:roamingSettings.values["Boost7_vend"],
                     Boost7Images:roamingSettings.values["Boost7_pic"],
-                    Boost7Price:roamingSettings.values["Boost8_price"],
+                    Boost7Price: parseFloat(roamingSettings.values["Boost7_price"]),
                     Boost8Name:roamingSettings.values["Boost8_name"],
                     Boost8Vend:roamingSettings.values["Boost8_vend"],
                     Boost8Images:roamingSettings.values["Boost8_pic"],
-                    Boost8Price:roamingSettings.values["Boost8_price"],
+                    Boost8Price:parseFloat(roamingSettings.values["Boost8_price"]),
                     FlavName:roamingSettings.values["FlavSel_name"],
                     FlaveVend:roamingSettings.values["FlavSel_vend"],
                     FlavIamge:roamingSettings.values["FlavSel_pic"],
-                    FlavPrice:roamingSettings.values["FlavSel_price"],
+                    FlavPrice: parseFloat(roamingSettings.values["FlavSel_price"]),
                     TestName: roamingSettings.values["Nutrigenetics_name"],
                     TestVend: roamingSettings.values["Nutrigenetics_vend"],
                     TestImages: roamingSettings.values["Nutrigenetics_pic"],
-                    TestPrice: roamingSettings.values["Nutrigenetics_price"]
+                    TestPrice: parseFloat(roamingSettings.values["Nutrigenetics_price"]),
                 }).done(function (results) {
                     console.log("This seems to  be working!!");
                 }, function (err) {
