@@ -20,13 +20,22 @@
 
             server.item_info(updated_name, roamingSettings.values["Clicked_cat"]);
 
-            roamingSettings.values["dbUrl"] = document.getElementById("item_info_info").textContent;
+            //roamingSettings.values["dbUrl"] = document.getElementById("item_info_info").textContent;
+            //var db_url = document.getElementById("item_info_info").textContent;
+
+            //tool.moreInfo(db_url);
+
+
+            //var webviewControl = document.getElementById("webview");
+            //webviewControl.navigate(roamingSettings.values["db_url"]);
+            
+            //document.getElementById("webview").navigate("http://www.google.com");
+            //document.getElementById("webview").navigate(event.srcElement.textContent);
 
             var webviewControl = document.getElementById("webview");
-
-            webviewControl.navigate(roamingSettings.values["dbUrl"]);
-
-
+            
+            //webviewControl.navigate(roamingSettings.values["db_url"]);
+            console.log("This is a test: " + roamingSettings.values["db_url"]);
 
 
             //document.body.innerHTML.replace("eros", "<span id='key_word' onclick=''>Eros<span>")
@@ -73,7 +82,7 @@
     });
 
 
-
+    //console.log(document.getElementById("item_info_info").textContent);
 
 
     setTimeout(test1, 5000)

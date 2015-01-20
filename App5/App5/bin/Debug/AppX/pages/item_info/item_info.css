@@ -33,3 +33,7 @@
 }#item_info_header{
     margin-top: -30px;
 }
+#webview {
+    width: 1250px;
+    height: 495px;
+}

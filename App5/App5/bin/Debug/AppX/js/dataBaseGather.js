@@ -428,16 +428,20 @@
                 });
             },
 
+//milo: more info working with webview
             item_info: function (clicked, sel) {
                 var Age = thinkitdrinkitDataClient.getTable(sel);
                 var query = Age.where({
                     Name: clicked
                 }).read().done(function (results) {
                     age_data.model.item_info.push({ name: results[0].Name, img: results[0].Image, info: results[0].Info, label: results[0].Label, info2: results[0].Info2, info3: results[0].Info3 });
-
+                    roamingSettings.values["db_url"] = results[0].Info;
+                    console.log(results[0].Info)
+                    console.log("This is a test: " + roamingSettings.values["db_url"]);
                 }, function (err) {
                     console.log(err);
                 });
+                //console.log(results[0].Info);
             },
             sport_info: function (clicked) {
                 var Spo = thinkitdrinkitDataClient.getTable("Sport");
