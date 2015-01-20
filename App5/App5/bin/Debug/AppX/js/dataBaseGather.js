@@ -7,7 +7,7 @@
         var roamingSettings = appData.roamingSettings;
 
         WinJS.Namespace.define("server", {
-//home.html
+            //home.html
             home: function (the_sel_age) {
                 remove.pop_list(age_data.model.age);
 
@@ -70,19 +70,19 @@
                 });
             },
 
-//func_home2 home2.html           
+            //func_home2 home2.html           
             func_home2: function () {
                 remove.pop_list(age_data.model.func_home2);
                 var Age = thinkitdrinkitDataClient.getTable("Func");
 
-                    var query = Age.where({
+                var query = Age.where({
                     Home2: true
                 }).orderBy("Name").read().done(function (results) {
-                        for (var i = 0; i < results.length; i++) {
-                            age_data.model.func_home2.push({ home2: results[i].Name, img: results[i].Image })
-                }
+                    for (var i = 0; i < results.length; i++) {
+                        age_data.model.func_home2.push({ home2: results[i].Name, img: results[i].Image })
+                    }
                 }, function (err) {
-                        console.log(err);
+                    console.log(err);
                 });                
             
             },
@@ -99,38 +99,38 @@
                 });
             },
 
-//func.html func.html
+            //func.html func.html
             //milo id_sel is coming from home.html and server.home_sub() above
             func: function (id_sel, cat_selected) {
                 remove.pop_list(age_data.model.func);
                 var Func = thinkitdrinkitDataClient.getTable("Func");
 
-                    //milo: id_sel is the id that was picked by user from the db and it equals the actual id number to display the correct business logic 
-                    //milo: in the if statement == 'whatever number' is the actual id from the thinkitdrinkitDataClient.Age table in azure db
-                    var query = Func.where({
-                        Age_id: id_sel
-                    }).orderBy("Order").read().done(function (results) {
-                        for (var i = 0; i < results.length; i++) {
-                            age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
-                        }
-                    }, function (err) {
-                        console.log(err);
-                    });
-                },
+                //milo: id_sel is the id that was picked by user from the db and it equals the actual id number to display the correct business logic 
+                //milo: in the if statement == 'whatever number' is the actual id from the thinkitdrinkitDataClient.Age table in azure db
+                var query = Func.where({
+                    Age_id: id_sel
+                }).orderBy("Order").read().done(function (results) {
+                    for (var i = 0; i < results.length; i++) {
+                        age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
+                    }
+                }, function (err) {
+                    console.log(err);
+                });
+            },
 
             func_sub: function (name) {
                 var Func = thinkitdrinkitDataClient.getTable("Func");
 
-                    var query = Func.where({
-                        Name: name
-                    }).read().done(function (results) {
-                        age_data.model.info_page2_func.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_img: results[0].Label, base_price: results[0].Price, the_pic: results[0].Image, b_vend: results[0].VendID, id_sel: results[0].id })
-                    }, function (err) {
-                        console.log(err);
-                    });
+                var query = Func.where({
+                    Name: name
+                }).read().done(function (results) {
+                    age_data.model.info_page2_func.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_img: results[0].Label, base_price: results[0].Price, the_pic: results[0].Image, b_vend: results[0].VendID, id_sel: results[0].id })
+                }, function (err) {
+                    console.log(err);
+                });
             },
 
-//base.html
+            //base.html
             base: function (id_sel, cat_selected) {
                 var Age = thinkitdrinkitDataClient.getTable("Base");
                 //milo: id_sel == whatever #, the whatever # is the id from thinkitdrinkitDataClient.Func db in azure
@@ -221,7 +221,7 @@
 
             },
 
-//flavor.html
+            //flavor.html
             flav_sel: function () {
                 var Age = thinkitdrinkitDataClient.getTable("Flavor");
                 //milo.orderBy is taking the most text in the Name column also can do orderByDescending or both http://azure.microsoft.com/en-us/documentation/articles/mobile-services-html-how-to-use-client-library/
@@ -247,7 +247,7 @@
                 })
             },
 
-//boost.html
+            //boost.html
             //milo: uses id from thinkitdrinkitData.Func table
             boost: function (cat_picked, id_func, id_sport, id_base) {
                 var Age = thinkitdrinkitDataClient.getTable("Boost");
@@ -351,11 +351,11 @@
                                 console.log(err);
                             })
                         }
-                }
+                    }
                 }
             },
 
-//login_sessions/info_home.js
+            //login_sessions/info_home.js
             info_home_setup: function () {
                 var Age = thinkitdrinkitDataClient.getTable("Base");
                 var Age2 = thinkitdrinkitDataClient.getTable("Boost");
@@ -389,7 +389,7 @@
                 });
             },
 
-//supl_sport.js
+            //supl_sport.js
             sport: function () {
                 remove.pop_list(age_data.model.sport);
                 var Sport = thinkitdrinkitDataClient.getTable("Sport");
@@ -534,25 +534,38 @@
                 var query = finalCall.where({
                     CNum: 1
                 }).read().done(function (results) {
-                    var totalOrderNum = 0;
-                    for (var i = 0; i < results.length; i++) {
-                        roamingSettings.values["Base" + i + "_price"] = results[i].BasePrice;
-                        roamingSettings.values["Boost1" + i + "_price"] = results[i].BoostPrice;
-                        roamingSettings.values["Boost2" + i + "_price"] = results[i].Boost2Price;
-                        roamingSettings.values["Boost3" + i + "_price"] = results[i].Boost3Price;
-                        roamingSettings.values["Boost4" + i + "_price"] = results[i].Boost4Price;
-                        roamingSettings.values["Boost5" + i + "_price"] = results[i].Boost5Price;
-                        roamingSettings.values["Boost6" + i + "_price"] = results[i].Boost6Price;
-                        roamingSettings.values["Boost7" + i + "_price"] = results[i].Boost7Price;
-                        roamingSettings.values["Boost8" + i + "_price"] = results[i].Boost8Price;
-                        roamingSettings.values["Nutrigenetics" + i + "_price"] = results[i].TestPrice;
-                        totalOrderNum += i;
+                    console.log("I made it here, Yay...");
+                    if (roamingSettings.values["totalOrderNumber"] > 0) {
+                        for (var i = 0; i < results.length; i++) {
+                            roamingSettings.values["t"] += parseFloat(results[i].BasePrice)  + parseFloat(results[i].BoostPrice) + parseFloat(results[i].Boost2Price)  + parseFloat(results[i].Boost3Price)  + parseFloat(results[i].Boost4Price)  + parseFloat(results[i].Boost5Price) + parseFloat(results[i].Boost6Price) + parseFloat(results[i].Boost7Price) + parseFloat(results[i].Boost8Price) + parseFloat(results[i].TestPrice)
+                        }
                     }
-                    roamingSettings.values["totalOrderNumber"] = results.length;
-                    console.log("The is the number of total orders: " + totalOrderNum + " This is a base price: " +  roamingSettings.values["Base0_price"]);
+                    roamingSettings.values["totalOrderNumber"]++;
+                    console.log("The is the number of total orders: " + roamingSettings.values["totalOrderNumber"] + "This is the total current cost: " + roamingSettings.values["t"]);
                 }, function (err) {
-                    console.log(err);
+                    console.log("This is the error: " + err);
                 });
+            },
+            VendPrep: function () {
+                var finalCall = thinkitdrinkitDataClient.getTable("Nutrigenetic");
+                var roamingSettings = appData.roamingSettings;
+                if (roamingSettings.values["totalOrderNumber"] > 0) {
+                var query = finalCall.where({
+                    CNum: 1
+                }).read().done(function (results) {
+                    var totalOrderNum = 1;
+                    for (var i = 0; i < roamingSettings.values["totalOrderNumber"]-1; i++) {
+                        console.log(results[i].BaseName + " " + results[i].id);
+                    //age_data.model.continue_order_save.push({
+                    //        product_id: roamingSettings.values["Base_vend"], quantity: 1, price: roamingSettings.values["Base_price"], tax: (roamingSettings.values["Base_price"] * .0636)
+                    //})
+                }
+                   
+                }, function (err) {
+                    console.log("This is the error: " + err);
+                });
+            }
+         
             },
             contSave: function () {
                 var appData = Windows.Storage.ApplicationData.current;
@@ -608,7 +621,7 @@
                     TestImages: roamingSettings.values["Nutrigenetics_pic"],
                     TestPrice: parseFloat(roamingSettings.values["Nutrigenetics_price"]),
                 }).done(function (results) {
-                    console.log("This seems to  be working!!");
+                    console.log("This seems to  be working!! " + results.id);
                 }, function (err) {
                     console.log(err);
                 });
