@@ -24,7 +24,7 @@
                 roamingSettings.values["true"] = false;
                 roamingSettings.values["not_cont"] = false;
                 roamingSettings.values["went_back"] = true;
-
+                roamingSettings.values["totalOrderNumber"] = 0;
                 roamingSettings.values.remove["Base_name"]
                 roamingSettings.values.remove["Base_pic"]
                 roamingSettings.values.remove["Base_price"]
