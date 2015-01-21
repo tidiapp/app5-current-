@@ -16,6 +16,7 @@
             design.changeTextColor();
             design.getFlavSel();
             design.getFlavSelBorders("white");
+            server.finalPageCall();
 
             var id_sel = roamingSettings.values["Id_sel_func"];
 

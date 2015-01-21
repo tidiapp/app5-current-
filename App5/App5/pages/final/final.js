@@ -15,8 +15,6 @@
             design.getFinal();
             design.changeTextColor();
             var theNew = roamingSettings.values["Base_Vend"].replace(/^\s+/, '').replace(/\s+$/, '');
-            server.finalPageCall();
-            server.VendPrep();
             //milo: looping for any db to update any part automatically using ids 
             //var EditDB = thinkitdrinkitDataClient.getTable("Boost");
             //for (var i = 11468; i <= 11504; i++) {
@@ -27,13 +25,6 @@
             //        Image: "https://thinkitdrinkit.blob.core.windows.net/thinkitdrinkitappimagesboost/purpose2/optimsmcurrent.png"
             //    })
             //}
-            if (roamingSettings.values["pass_through"] != 0) {
-                function sendToDatabase() {
-
-                }
-            }
-            roamingSettings.values["went_back"] = true;
-            if (roamingSettings.values["went_back_back"]) {
                 if (roamingSettings.values["Boost1_name"] == "" || roamingSettings.values["Boost1_name"] === !undefined) { roamingSettings.values["Boost1_price"] = 0 };
                 if (roamingSettings.values["Boost2_name"] == "" || roamingSettings.values["Boost2_name"] === !undefined) { roamingSettings.values["Boost2_price"] = 0 };
                 if (roamingSettings.values["Boost3_name"] == "" || roamingSettings.values["Boost3_name"] === !undefined) { roamingSettings.values["Boost3_price"] = 0 };
@@ -48,12 +39,11 @@
 
                 roamingSettings.values['Boost_total'] = (parseFloat(roamingSettings.values["Boost1_price"]) + parseFloat(roamingSettings.values["Boost2_price"]) + parseFloat(roamingSettings.values["Boost3_price"]) + parseFloat(roamingSettings.values["Boost4_price"]) + parseFloat(roamingSettings.values["Boost5_price"]) + parseFloat(roamingSettings.values["Boost6_price"]) + parseFloat(roamingSettings.values["Boost7_price"]) + parseFloat(roamingSettings.values["Boost8_price"]));
 
-                roamingSettings.values["total_price"] = parseFloat(roamingSettings.values["Base_price"]) + parseFloat(roamingSettings.values['Boost_total']) + parseFloat(roamingSettings.values["Nutrigenetics_price"]);
+                roamingSettings.values["the_complete_total"] = roamingSettings.values["t"] + parseFloat(roamingSettings.values["Base_price"]) + parseFloat(roamingSettings.values['Boost_total']) + parseFloat(roamingSettings.values["Nutrigenetics_price"]);
 
-                roamingSettings.values["the_complete_total"] += parseFloat(roamingSettings.values["total_price"]);
+               // roamingSettings.values["the_complete_total"] += parseFloat(roamingSettings.values["total_price"]);
                 roamingSettings.values["not_cont"] = true;
-                roamingSettings.values["went_back"] = false;
-            }
+
             document.getElementById("product_total").textContent = "$" + roamingSettings.values["the_complete_total"];
             document.getElementById("tax").textContent = "$" + Math.ceil((roamingSettings.values["the_complete_total"] * .0636) * 100) / 100;
             document.getElementById("total").textContent = "$" + Math.ceil(((roamingSettings.values["the_complete_total"] * .0636) + roamingSettings.values["the_complete_total"]) * 100) / 100;
@@ -88,7 +78,182 @@
     WinJS.Namespace.define("FinalClick", {
 
         clicked: function () {
-            server.userOrderDone();
+            // server.userOrderDone();
+            if (roamingSettings.values["Boost2_price"] > 0 && roamingSettings.values["Boost3_price"] <= 0) {
+                roamingSettings.values["Boost3_name"] = 0;
+                roamingSettings.values["Boost3_pic"] = 0;
+                roamingSettings.values["Boost3_price"] = 0;
+                roamingSettings.values["Boost3_vend"] = 0;
+                roamingSettings.values["Boost4_name"] = "none";
+                roamingSettings.values["Boost4_pic"] = "none";
+                roamingSettings.values["Boost4_price"] = 0;
+                roamingSettings.values["Boost4_vend"] = "none";
+                roamingSettings.values["Boost5_name"] = "none";
+                roamingSettings.values["Boost5_pic"] = "none";
+                roamingSettings.values["Boost5_price"] = 0;
+                roamingSettings.values["Boost5_vend"] = "none";
+                roamingSettings.values["Boost6_name"] = "none";
+                roamingSettings.values["Boost6_pic"] = "none";
+                roamingSettings.values["Boost6_price"] = 0;
+                roamingSettings.values["Boost6_vend"] = "none";
+                roamingSettings.values["Boost7_name"] = "none";
+                roamingSettings.values["Boost7_pic"] = "none";
+                roamingSettings.values["Boost7price"] = 0;
+                roamingSettings.values["Boost7_vend"] = "none";
+                roamingSettings.values["Boost8_name"] = "none";
+                roamingSettings.values["Boost8_pic"] = "none";
+                roamingSettings.values["Boost8_price"] = 0;
+                roamingSettings.values["Boost8_vend"] = "none";
+            }
+            else if (roamingSettings.values["Boost3_price"] > 0 && roamingSettings.values["Boost4_price"] <= 0) {
+                roamingSettings.values["Boost4_name"] = "none";
+                roamingSettings.values["Boost4_pic"] = "none";
+                roamingSettings.values["Boost4_price"] = 0;
+                roamingSettings.values["Boost4_vend"] = "none";
+                roamingSettings.values["Boost5_name"] = "none";
+                roamingSettings.values["Boost5_pic"] = "none";
+                roamingSettings.values["Boost5_price"] = 0;
+                roamingSettings.values["Boost5_vend"] = "none";
+                roamingSettings.values["Boost6_name"] = "none";
+                roamingSettings.values["Boost6_pic"] = "none";
+                roamingSettings.values["Boost6_price"] = 0;
+                roamingSettings.values["Boost6_vend"] = "none";
+                roamingSettings.values["Boost7_name"] = "none";
+                roamingSettings.values["Boost7_pic"] = "none";
+                roamingSettings.values["Boost7price"] = 0;
+                roamingSettings.values["Boost7_vend"] = "none";
+                roamingSettings.values["Boost8_name"] = "none";
+                roamingSettings.values["Boost8_pic"] = "none";
+                roamingSettings.values["Boost8_price"] = 0;
+                roamingSettings.values["Boost8_vend"] = "none";
+            }
+            else if (roamingSettings.values["Boost4_price"] > 0 && roamingSettings.values["Boost5_price"] <= 0) {
+                roamingSettings.values["Boost5_name"] = "none";
+                roamingSettings.values["Boost5_pic"] = "none";
+                roamingSettings.values["Boost5_price"] = 0;
+                roamingSettings.values["Boost5_vend"] = "none";
+                roamingSettings.values["Boost6_name"] = "none";
+                roamingSettings.values["Boost6_pic"] = "none";
+                roamingSettings.values["Boost6_price"] = 0;
+                roamingSettings.values["Boost6_vend"] = "none";
+                roamingSettings.values["Boost7_name"] = "none";
+                roamingSettings.values["Boost7_pic"] = "none";
+                roamingSettings.values["Boost7price"] = 0;
+                roamingSettings.values["Boost7_vend"] = "none";
+                roamingSettings.values["Boost8_name"] = "none";
+                roamingSettings.values["Boost8_pic"] = "none";
+                roamingSettings.values["Boost8_price"] = 0;
+                roamingSettings.values["Boost8_vend"] = "none";
+            }
+            else if (roamingSettings.values["Boost5_price"] > 0 && roamingSettings.values["Boost6_price"] <= 0) {
+                roamingSettings.values["Boost6_name"] = "none";
+                roamingSettings.values["Boost6_pic"] = "none";
+                roamingSettings.values["Boost6_price"] = 0;
+                roamingSettings.values["Boost6_vend"] = "none";
+                roamingSettings.values["Boost7_name"] = "none";
+                roamingSettings.values["Boost7_pic"] = "none";
+                roamingSettings.values["Boost7price"] = 0;
+                roamingSettings.values["Boost7_vend"] = "none";
+                roamingSettings.values["Boost8_name"] = "none";
+                roamingSettings.values["Boost8_pic"] = "none";
+                roamingSettings.values["Boost8_price"] = 0;
+                roamingSettings.values["Boost8_vend"] = "none";
+            }
+            else if (roamingSettings.values["Boost6_price"] > 0 && roamingSettings.values["Boost7_price"] <= 0) {
+                roamingSettings.values["Boost7_name"] = "none";
+                roamingSettings.values["Boost7_pic"] = "none";
+                roamingSettings.values["Boost7price"] = 0;
+                roamingSettings.values["Boost7_vend"] = "none";
+                roamingSettings.values["Boost8_name"] = "none";
+                roamingSettings.values["Boost8_pic"] = "none";
+                roamingSettings.values["Boost8_price"] = 0;
+                roamingSettings.values["Boost8_vend"] = "none";
+            }
+            else if (roamingSettings.values["Boost7_price"] > 0 && roamingSettings.values["Boost8_price"] <= 0) {
+                roamingSettings.values["Boost8_name"] = "none";
+                roamingSettings.values["Boost8_pic"] = "none";
+                roamingSettings.values["Boost8_price"] = 0;
+                roamingSettings.values["Boost8_vend"] = "none";
+            }
+            else {
+                roamingSettings.values["Boost2_name"] = 0;
+                roamingSettings.values["Boost2_pic"] = 0;
+                roamingSettings.values["Boost2_price"] = 0;
+                roamingSettings.values["Boost2_vend"] = 0;
+                roamingSettings.values["Boost3_name"] = 0;
+                roamingSettings.values["Boost3_pic"] = 0;
+                roamingSettings.values["Boost3_price"] = 0;
+                roamingSettings.values["Boost3_vend"] = 0;
+                roamingSettings.values["Boost4_name"] = "none";
+                roamingSettings.values["Boost4_pic"] = "none";
+                roamingSettings.values["Boost4_price"] = 0;
+                roamingSettings.values["Boost4_vend"] = "none";
+                roamingSettings.values["Boost5_name"] = "none";
+                roamingSettings.values["Boost5_pic"] = "none";
+                roamingSettings.values["Boost5_price"] = 0;
+                roamingSettings.values["Boost5_vend"] = "none";
+                roamingSettings.values["Boost6_name"] = "none";
+                roamingSettings.values["Boost6_pic"] = "none";
+                roamingSettings.values["Boost6_price"] = 0;
+                roamingSettings.values["Boost6_vend"] = "none";
+                roamingSettings.values["Boost7_name"] = "none";
+                roamingSettings.values["Boost7_pic"] = "none";
+                roamingSettings.values["Boost7price"] = 0;
+                roamingSettings.values["Boost7_vend"] = "none";
+                roamingSettings.values["Boost8_name"] = "none";
+                roamingSettings.values["Boost8_pic"] = "none";
+                roamingSettings.values["Boost8_price"] = 0;
+                roamingSettings.values["Boost8_vend"] = "none";
+            }
+            if (roamingSettings.values["Nutrigenetics_price"] <= 0 || roamingSettings.values["Nutrigenetics_price"] == "") {
+                roamingSettings.values["Nutrigenetics_name"] = "none";
+                roamingSettings.values["Nutrigenetics_price"] = 0;
+                roamingSettings.values["Nutrigenetics_vend"] = "none";
+                roamingSettings.values["Nutrigenetics_pic"] = "none";
+            };
+            server.contSave()
+            roamingSettings.values.remove["Base_name"]
+            roamingSettings.values.remove["Base_pic"]
+            roamingSettings.values.remove["Base_price"]
+            roamingSettings.values.remove["Base_vend"]
+            roamingSettings.values.remove["FlavSel_name"]
+            roamingSettings.values.remove["FlavSel_pic"]
+            roamingSettings.values.remove["FlavSel_price"]
+            roamingSettings.values.remove["FlavSel_vend"]
+            roamingSettings.values.remove["Boost1_name"]
+            roamingSettings.values.remove["Boost1_pic"]
+            roamingSettings.values.remove["Boost1_price"]
+            roamingSettings.values.remove["Boost1_vend"]
+            roamingSettings.values.remove["Boost2_name"]
+            roamingSettings.values.remove["Boost2_pic"]
+            roamingSettings.values.remove["Boost2_price"]
+            roamingSettings.values.remove["Boost2_vend"]
+            roamingSettings.values.remove["Boost3_name"]
+            roamingSettings.values.remove["Boost3_pic"]
+            roamingSettings.values.remove["Boost3_price"]
+            roamingSettings.values.remove["Boost3_vend"]
+            roamingSettings.values.remove["Boost4_name"]
+            roamingSettings.values.remove["Boost4_pic"]
+            roamingSettings.values.remove["Boost4_price"]
+            roamingSettings.values.remove["Boost4_vend"]
+            roamingSettings.values.remove["Boost5_name"]
+            roamingSettings.values.remove["Boost5_pic"]
+            roamingSettings.values.remove["Boost5_price"]
+            roamingSettings.values.remove["Boost5_vend"]
+            roamingSettings.values.remove["Boost6_name"]
+            roamingSettings.values.remove["Boost6_pic"]
+            roamingSettings.values.remove["Boost6_price"]
+            roamingSettings.values.remove["Boost6_vend"]
+            roamingSettings.values.remove["Boost7_name"]
+            roamingSettings.values.remove["Boost7_pic"]
+            roamingSettings.values.remove["Boost7price"]
+            roamingSettings.values.remove["Boost7_vend"]
+            roamingSettings.values.remove["Boost8_name"]
+            roamingSettings.values.remove["Boost8_pic"]
+            roamingSettings.values.remove["Boost8_price"]
+            roamingSettings.values.remove["Boost8_vend"]
+            console.log("This is the one I'm looking for: " + roamingSettings.values.remove["Boost1_name"]);
+            server.VendPrep();
             //milo: this might be array for continue order 
             // Always catch network exceptions for async methods
             var missName = document.getElementById("Cname").value;
@@ -103,98 +268,9 @@
                     // Details in reason.Message and ex.HResult.       
                 }
             }
-            //                    // roamingSettings.values["the_complete_total"] = 0;
-            //                    var query = Age.where({
-            //                    }).read().done(function (results) {
-
-            ////2 boosts
-            //                    if (roamingSettings.values["Boost2_price"] > 0 && roamingSettings.values["Boost3_price"] <= 0) {
-            //                        age_data.model.continue_order_save.push({
-            //                            product_id: roamingSettings.values["Base_vend"], quantity: 1, price: roamingSettings.values["Base_price"], tax: (roamingSettings.values["Base_price"] * .0636)
-            //                        }, { product_id: roamingSettings.values["FlavSel_vend"], quantity: 1, price: roamingSettings.values["FlavSel_price"], tax: (roamingSettings.values["FlavSel_price"] * .0636) }, { product_id: roamingSettings.values["Boost1_vend"], quantity: 1, price: roamingSettings.values["Boost1_price"], tax: (roamingSettings.values["Boost1_price"] * .0636) }, { product_id: roamingSettings.values["Boost2_vend"], quantity: 1, price: roamingSettings.values["Boost2_price"], tax: (roamingSettings.values["Boost2_price"] * .0636) });
-            ////3 boosts
-            //                    } else if (roamingSettings.values["Boost3_price"] > 0 && roamingSettings.values["Boost4_price"] <= 0) {
-            //                        age_data.model.continue_order_save.push({
-            //                            product_id: roamingSettings.values["Base_vend"], quantity: 1, price: roamingSettings.values["Base_price"], tax: (roamingSettings.values["Base_price"] * .0636)
-            //                        }, { product_id: roamingSettings.values["FlavSel_vend"], quantity: 1, price: roamingSettings.values["FlavSel_price"], tax: (roamingSettings.values["FlavSel_price"] * .0636) }, { product_id: roamingSettings.values["Boost1_vend"], quantity: 1, price: roamingSettings.values["Boost1_price"], tax: (roamingSettings.values["Boost1_price"] * .0636) }, { product_id: roamingSettings.values["Boost2_vend"], quantity: 1, price: roamingSettings.values["Boost2_price"], tax: (roamingSettings.values["Boost2_price"] * .0636) }, { product_id: roamingSettings.values["Boost3_vend"], quantity: 1, price: roamingSettings.values["Boost3_price"], tax: (roamingSettings.values["Boost3_price"] * .0636) });
-            ////4 boosts
-            //                    } else if (roamingSettings.values["Boost4_price"] > 0 && roamingSettings.values["Boost5_price"] <= 0) {
-            //                        age_data.model.continue_order_save.push({
-            //                            product_id: roamingSettings.values["Base_vend"], quantity: 1, price: roamingSettings.values["Base_price"], tax: (roamingSettings.values["Base_price"] * .0636)
-            //                        }, { product_id: roamingSettings.values["FlavSel_vend"], quantity: 1, price: roamingSettings.values["FlavSel_price"], tax: (roamingSettings.values["FlavSel_price"] * .0636) }, { product_id: roamingSettings.values["Boost1_vend"], quantity: 1, price: roamingSettings.values["Boost1_price"], tax: (roamingSettings.values["Boost1_price"] * .0636) }, { product_id: roamingSettings.values["Boost2_vend"], quantity: 1, price: roamingSettings.values["Boost2_price"], tax: (roamingSettings.values["Boost2_price"] * .0636) }, { product_id: roamingSettings.values["Boost3_vend"], quantity: 1, price: roamingSettings.values["Boost3_price"], tax: (roamingSettings.values["Boost3_price"] * .0636) }, { product_id: roamingSettings.values["Boost4_vend"], quantity: 1, price: roamingSettings.values["Boost4_price"], tax: (roamingSettings.values["Boost4_price"] * .0636) });
-            ////5 boost
-            //                    } else if (roamingSettings.values["Boost5_price"] > 0 && roamingSettings.values["Boost6_price"] <= 0) {
-            //                        age_data.model.continue_order_save.push({
-            //                            product_id: roamingSettings.values["Base_vend"], quantity: 1, price: roamingSettings.values["Base_price"], tax: (roamingSettings.values["Base_price"] * .0636)
-            //                        }, { product_id: roamingSettings.values["FlavSel_vend"], quantity: 1, price: roamingSettings.values["FlavSel_price"], tax: (roamingSettings.values["FlavSel_price"] * .0636) }, { product_id: roamingSettings.values["Boost1_vend"], quantity: 1, price: roamingSettings.values["Boost1_price"], tax: (roamingSettings.values["Boost1_price"] * .0636) }, { product_id: roamingSettings.values["Boost2_vend"], quantity: 1, price: roamingSettings.values["Boost2_price"], tax: (roamingSettings.values["Boost2_price"] * .0636) }, { product_id: roamingSettings.values["Boost3_vend"], quantity: 1, price: roamingSettings.values["Boost3_price"], tax: (roamingSettings.values["Boost3_price"] * .0636) }, { product_id: roamingSettings.values["Boost4_vend"], quantity: 1, price: roamingSettings.values["Boost4_price"], tax: (roamingSettings.values["Boost4_price"] * .0636) }, { product_id: roamingSettings.values["Boost5_vend"], quantity: 1, price: roamingSettings.values["Boost5_price"], tax: (roamingSettings.values["Boost5_price"] * .0636) });
-            ////6 boost
-            //                    } else if (roamingSettings.values["Boost6_price"] > 0 && roamingSettings.values["Boost7_price"] <= 0) {
-            //                        age_data.model.continue_order_save.push({
-            //                            product_id: roamingSettings.values["Base_vend"], quantity: 1, price: roamingSettings.values["Base_price"], tax: (roamingSettings.values["Base_price"] * .0636)
-            //                        }, { product_id: roamingSettings.values["FlavSel_vend"], quantity: 1, price: roamingSettings.values["FlavSel_price"], tax: (roamingSettings.values["FlavSel_price"] * .0636) }, { product_id: roamingSettings.values["Boost1_vend"], quantity: 1, price: roamingSettings.values["Boost1_price"], tax: (roamingSettings.values["Boost1_price"] * .0636) }, { product_id: roamingSettings.values["Boost2_vend"], quantity: 1, price: roamingSettings.values["Boost2_price"], tax: (roamingSettings.values["Boost2_price"] * .0636) }, { product_id: roamingSettings.values["Boost3_vend"], quantity: 1, price: roamingSettings.values["Boost3_price"], tax: (roamingSettings.values["Boost3_price"] * .0636) }, { product_id: roamingSettings.values["Boost4_vend"], quantity: 1, price: roamingSettings.values["Boost4_price"], tax: (roamingSettings.values["Boost4_price"] * .0636) }, { product_id: roamingSettings.values["Boost5_vend"], quantity: 1, price: roamingSettings.values["Boost5_price"], tax: (roamingSettings.values["Boost5_price"] * .0636) }, { product_id: roamingSettings.values["Boost6_vend"], quantity: 1, price: roamingSettings.values["Boost6_price"], tax: (roamingSettings.values["Boost6_price"] * .0636) });
-            ////7 boost
-            //                    } else if (roamingSettings.values["Boost7_price"] > 0 && roamingSettings.values["Boost8_price"] <= 0) {
-            //                        age_data.model.continue_order_save.push({
-            //                            product_id: roamingSettings.values["Base_vend"], quantity: 1, price: roamingSettings.values["Base_price"], tax: (roamingSettings.values["Base_price"] * .0636)
-            //                        }, { product_id: roamingSettings.values["FlavSel_vend"], quantity: 1, price: roamingSettings.values["FlavSel_price"], tax: (roamingSettings.values["FlavSel_price"] * .0636) }, { product_id: roamingSettings.values["Boost1_vend"], quantity: 1, price: roamingSettings.values["Boost1_price"], tax: (roamingSettings.values["Boost1_price"] * .0636) }, { product_id: roamingSettings.values["Boost2_vend"], quantity: 1, price: roamingSettings.values["Boost2_price"], tax: (roamingSettings.values["Boost2_price"] * .0636) }, { product_id: roamingSettings.values["Boost3_vend"], quantity: 1, price: roamingSettings.values["Boost3_price"], tax: (roamingSettings.values["Boost3_price"] * .0636) }, { product_id: roamingSettings.values["Boost4_vend"], quantity: 1, price: roamingSettings.values["Boost4_price"], tax: (roamingSettings.values["Boost4_price"] * .0636) }, { product_id: roamingSettings.values["Boost5_vend"], quantity: 1, price: roamingSettings.values["Boost5_price"], tax: (roamingSettings.values["Boost5_price"] * .0636) }, { product_id: roamingSettings.values["Boost6_vend"], quantity: 1, price: roamingSettings.values["Boost6_price"], tax: (roamingSettings.values["Boost6_price"] * .0636) }, { product_id: roamingSettings.values["Boost7_vend"], quantity: 1, price: roamingSettings.values["Boost7_price"], tax: (roamingSettings.values["Boost7_price"] * .0636) });
-            ////8 boost
-            //                    } else if (roamingSettings.values["Boost8_price"] > 0) {
-            //                        age_data.model.continue_order_save.push({
-            //                            product_id: roamingSettings.values["Base_vend"], quantity: 1, price: roamingSettings.values["Base_price"], tax: (roamingSettings.values["Base_price"] * .0636)
-            //                        }, { product_id: roamingSettings.values["FlavSel_vend"], quantity: 1, price: roamingSettings.values["FlavSel_price"], tax: (roamingSettings.values["FlavSel_price"] * .0636) }, { product_id: roamingSettings.values["Boost1_vend"], quantity: 1, price: roamingSettings.values["Boost1_price"], tax: (roamingSettings.values["Boost1_price"] * .0636) }, { product_id: roamingSettings.values["Boost2_vend"], quantity: 1, price: roamingSettings.values["Boost2_price"], tax: (roamingSettings.values["Boost2_price"] * .0636) }, { product_id: roamingSettings.values["Boost3_vend"], quantity: 1, price: roamingSettings.values["Boost3_price"], tax: (roamingSettings.values["Boost3_price"] * .0636) }, { product_id: roamingSettings.values["Boost4_vend"], quantity: 1, price: roamingSettings.values["Boost4_price"], tax: (roamingSettings.values["Boost4_price"] * .0636) }, { product_id: roamingSettings.values["Boost5_vend"], quantity: 1, price: roamingSettings.values["Boost5_price"], tax: (roamingSettings.values["Boost5_price"] * .0636) }, { product_id: roamingSettings.values["Boost6_vend"], quantity: 1, price: roamingSettings.values["Boost6_price"], tax: (roamingSettings.values["Boost6_price"] * .0636) }, { product_id: roamingSettings.values["Boost7_vend"], quantity: 1, price: roamingSettings.values["Boost7_price"], tax: (roamingSettings.values["Boost7_price"] * .0636) }, { product_id: roamingSettings.values["Boost8_vend"], quantity: 1, price: roamingSettings.values["Boost8_price"], tax: (roamingSettings.values["Boost8_price"] * .0636) });
-            ////1 boost
-            //                    } else {
-            //                        age_data.model.continue_order_save.push({
-            //                            product_id: roamingSettings.values["Base_vend"], quantity: 1, price: roamingSettings.values["Base_price"], tax: (roamingSettings.values["Base_price"] * .0636)
-            //                        }, { product_id: roamingSettings.values["FlavSel_vend"], quantity: 1, price: roamingSettings.values["FlavSel_price"], tax: (roamingSettings.values["FlavSel_price"] * .0636) }, { product_id: roamingSettings.values["Boost1_vend"], quantity: 1, price: roamingSettings.values["Boost1_price"], tax: (roamingSettings.values["Boost1_price"] * .0636) });
-            //                    }
-
+           
             ////'BUG for 2nd new order breaking after submit is hit' CODE ABOVE IS FINE... 
-            //                    var test_array = Array();
-            //                    var array_t = Array();
-            //                    var i = 0;
-            //                    var j = 1;
-            //                    while (age_data.model.continue_order_save.length > i) {
-            //                        test_array.push(age_data.model.continue_order_save)//age_data.model.continue_order_save first order shows _keyMap with object that has 3 items in it, _keys shows 1,2,3 and _currentKey shows # 3. Second NEW order _keyMap with object that has 3 items in it, _keys shows 4,5,6 and _currentKey shows # 6.  
-            //                        //console.log(test_array[0].tax);
-            //                        array_t.push({
-            //                            product_id: test_array[i]['_keyMap'][j]['data'].product_id, quantity: 1, price: test_array[i]['_keyMap'][j]['data'].price, tax: test_array[i]['_keyMap'][j]['data'].tax
-            //                        })
-            //                        //console.log(i);
-            //                        i++;
-            //                        j++;
-            //                    }
- 
-            //                    WinJS.xhr({
-            //                        type: "POST",
-            //                        url: "https://thinkitdrinkit.vendhq.com/api/register_sales",
-            //                        headers: { "Content-type": "application/json" },
-            //                        user: "milo@thinkitdrinkit.com",
-            //                        password: "agave2013",
-            //                        data: JSON.stringify({
-            //                            "register_id": "5ecccd41-3cbc-11e3-a29a-bc305bf5da20",
-            //                            "user_name": "",
-            //                            "customer_id": "",
-            //                            "status": "SAVED",
-            //                            "total_price": roamingSettings.values["the_complete_total"],
-            //                            "note": document.getElementById('Cname').value,
-            //                            "register_sale_products": array_t
-            //                        }),
-            //                    }).then(function sucess(res) {
-            //                        roamingSettings.values["Invoice_number"] = JSON.parse(res.responseText).register_sale.invoice_number;
-            //                        //milo "I_ordered used in login not so important"
-            //                        roamingSettings.values["I_ordered"] = "yes";
-            //                        roamingSettings.values["not_cont"] = true;
-            //                        roamingSettings.values["went_back"] = true;
-            //                        roamingSettings.values["the_complete_total"] = 0;
-            //                        roamingSettings.values["theComplete"] = document.getElementById("total").textContent;
-
-            //                    }, function error(err) {
-            //                        console.log("fail", err.responseText)
-            //                    });
-            //                })
-
-            //            }
+                              
         },
 
         the_continue: function () {
@@ -381,7 +457,8 @@
             else if (roamingSettings.values["Boost6_price"] > 0 && roamingSettings.values["Boost7_price"] <= 0) {boostCheck(); }
             else if (roamingSettings.values["Boost7_price"] > 0 && roamingSettings.values["Boost8_price"] <= 0) {boostCheck(); }
             else if (roamingSettings.values["Boost8_price"] > 0) {boostCheck(); }
-            else {boostCheck()}
+            else { boostCheck() }
+            roamingSettings.values["totalOrderNumber"]++;
             function boostCheck() {
                 roamingSettings.values["not_cont"] = false;
                 console.log(roamingSettings.values["Base_vend"] + ' ' + roamingSettings.values["Boost1_vend"]);
