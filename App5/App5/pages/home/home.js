@@ -105,6 +105,7 @@
             server.home_sub(updated_answer);
             //milo: some code does not work well from here 
 
+
         },
 
         next_page: function () {

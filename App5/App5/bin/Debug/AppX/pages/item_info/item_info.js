@@ -33,9 +33,36 @@
             //document.getElementById("webview").navigate(event.srcElement.textContent);
 
             var webviewControl = document.getElementById("webview");
+            webviewControl.addEventListener("MSWebViewNavigationStarting", navigationStarting);
+            webviewControl.addEventListener("MSWebViewNavigationCompleted", navigationCompleted);
+
+
             
-            //webviewControl.navigate(roamingSettings.values["db_url"]);
-            console.log("This is a test: " + roamingSettings.values["db_url"]);
+            webviewControl.navigate(roamingSettings.values["db_url"]);
+            //console.log("This is a test: " + roamingSettings.values["db_url"]);
+
+            function updateNavigatingState(isNavigating) {
+                document.getElementById("progressRing").style.visibility = (isNavigating ? "visible" : "hidden");
+
+            }
+
+
+            function navigationStarting(e) {
+                //appendLog && appendLog("Starting navigation to " + e.uri + ".\n");
+                //document.getElementById("urlField").value = e.uri;
+                updateNavigatingState(true);
+            }
+
+            function navigationCompleted(e) {
+                updateNavigatingState(false);
+
+                if (e.isSuccess) {
+                    console.log("Navigation completed successfully");
+                } else {
+                    console.log("Navigation failed with error code " + e.webErrorStatus);
+                }
+            }
+
 
 
             //document.body.innerHTML.replace("eros", "<span id='key_word' onclick=''>Eros<span>")
@@ -70,7 +97,8 @@
         unload: function () {
             // TODO: Respond to navigations away from this page.
             remove.pop_list(age_data.model.item_info);
-           // console.log(document.getElementById("item_info_info").innerHTML, "Hope?");
+            // console.log(document.getElementById("item_info_info").innerHTML, "Hope?");
+            //roamingSettings.values["db_url"] = "";
                       
         },
 
@@ -85,5 +113,5 @@
     //console.log(document.getElementById("item_info_info").textContent);
 
 
-    setTimeout(test1, 5000)
+    //setTimeout(test1, 5000)
 })();

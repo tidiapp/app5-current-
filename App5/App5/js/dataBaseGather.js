@@ -65,6 +65,8 @@
                     Name: name
                 }).read().done(function (results) {
                     age_data.model.info.push({ the_info: results[0].InfoLite, info_img: results[0].Image, info_name: results[0].Name, info_price: results[0].Price, id_sel: results[0].id })
+                    //milo: this saves the url link from db so it can be called for the next page, the early save fixes a bug which the timing if you were to put this on the page you were actually loading it would not show up.
+                    roamingSettings.values["db_url"] = results[0].Info;
                 }, function (err) {
                     console.log(err);
                 });
@@ -435,13 +437,9 @@
                     Name: clicked
                 }).read().done(function (results) {
                     age_data.model.item_info.push({ name: results[0].Name, img: results[0].Image, info: results[0].Info, label: results[0].Label, info2: results[0].Info2, info3: results[0].Info3 });
-                    roamingSettings.values["db_url"] = results[0].Info;
-                    console.log(results[0].Info)
-                    console.log("This is a test: " + roamingSettings.values["db_url"]);
                 }, function (err) {
                     console.log(err);
                 });
-                //console.log(results[0].Info);
             },
             sport_info: function (clicked) {
                 var Spo = thinkitdrinkitDataClient.getTable("Sport");

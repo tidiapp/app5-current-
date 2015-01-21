@@ -85,30 +85,30 @@
     // This function is called when navigation either starts or stops in the WebView.
     // This updates the UI, shows/hides the spinning progress indicator and enables or
     // disables buttons as appropriate.
-    //function updateNavigatingState(isNavigating) {
-    //    document.getElementById("progressRing").style.visibility = (isNavigating ? "visible" : "hidden");
+    function updateNavigatingState(isNavigating) {
+        document.getElementById("progressRing").style.visibility = (isNavigating ? "visible" : "hidden");
 
-    //    // The goOrStopButton can act as either a Go button or a Stop button depending on
-    //    // whether the WebView is navigating or not.  Change its label and its event
-    //    // listener according to the situation.
-    //    //var goOrStopButton = document.getElementById("goOrStopButton");
-    //    //goOrStopButton.innerText = (isNavigating ? "Stop" : "Go");
-    //    //goOrStopButton.removeEventListener("click", (isNavigating ? goToUrl : stopNavigation), false);
-    //    //goOrStopButton.addEventListener("click", (isNavigating ? stopNavigation : goToUrl), false);
+        // The goOrStopButton can act as either a Go button or a Stop button depending on
+        // whether the WebView is navigating or not.  Change its label and its event
+        // listener according to the situation.
+        //var goOrStopButton = document.getElementById("goOrStopButton");
+        //goOrStopButton.innerText = (isNavigating ? "Stop" : "Go");
+        //goOrStopButton.removeEventListener("click", (isNavigating ? goToUrl : stopNavigation), false);
+        //goOrStopButton.addEventListener("click", (isNavigating ? stopNavigation : goToUrl), false);
 
-    //    //if (!isNavigating) {
-    //    //    //document.getElementById("backButton").disabled = !(document.getElementById("webview").canGoBack);
-    //    //    //document.getElementById("forwardButton").disabled = !(document.getElementById("webview").canGoForward);
-    //    //}
-    //}
+        //if (!isNavigating) {
+        //    //document.getElementById("backButton").disabled = !(document.getElementById("webview").canGoBack);
+        //    //document.getElementById("forwardButton").disabled = !(document.getElementById("webview").canGoForward);
+        //}
+    }
 
     // NavigationStarting event is triggered when the WebView begins navigating to a new URL.
 
     //function navigationStarting(e) {
     //    // clear any previous error messages that were displayed with WinJS.log
-    //    WinJS.log && WinJS.log("", "sdksample", "status");
+    //    //WinJS.log && WinJS.log("", "sdksample", "status");
 
-    //    appendLog && appendLog("Starting navigation to " + e.uri + ".\n");
+    //    //appendLog && appendLog("Starting navigation to " + e.uri + ".\n");
     //    document.getElementById("urlField").value = e.uri;
     //    updateNavigatingState(true);
     //}
@@ -131,7 +131,7 @@
     //    if (e.isSuccess) {
     //        appendLog && appendLog("Navigation completed successfully.\n");
     //    } else {
-    //        WinJS.log && WinJS.log("Navigation failed with error code " + e.webErrorStatus, "sdksample", "error");
+    //        console.log("Navigation failed with error code " + e.webErrorStatus, "sdksample", "error");
     //    }
     //}
 

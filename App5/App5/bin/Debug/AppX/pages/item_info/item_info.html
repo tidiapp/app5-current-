@@ -20,19 +20,20 @@
             </h1>
         </header>
         <section aria-label="Main content" role="main">
+            <progress id="progressRing" class="win-ring win-medium" style="visibility: hidden"></progress>
             <!-- milo: webview will not work if its in a data-win-control="WinJS.Binding.Template" -->
             <x-ms-webview id="webview"></x-ms-webview>
 
-            <div id="item_info" class="item_info_class" data-win-control="WinJS.Binding.Template">
+            <!--<div id="item_info" class="item_info_class" data-win-control="WinJS.Binding.Template">
 
                    <div id="item_info1">
-                       <!--<img class="item_info_pic_class" id="item_info_pic" data-win-bind="src: img" />
-                       <img class="item_info_label_class" id="item_info_label" data-win-bind="src: label" />-->
+                       <img class="item_info_pic_class" id="item_info_pic" data-win-bind="src: img" />
+                       <img class="item_info_label_class" id="item_info_label" data-win-bind="src: label" />
                        <p id="item_info_info" data-win-bind="textContent: info"></p>
-                       <!--<p id="item_info_info2" class="item_info_info_class" data-win-bind="textContent: info2"></p>
-                       <p id="item_info_info3" class="item_info_info_class" data-win-bind="textContent: info3"></p>-->
+                       <p id="item_info_info2" class="item_info_info_class" data-win-bind="textContent: info2"></p>
+                       <p id="item_info_info3" class="item_info_info_class" data-win-bind="textContent: info3"></p>
                    </div>
-               </div>
+               </div>-->
             <div id="item_info_placement" data-win-control="WinJS.UI.ListView" data-win-bind="winControl.itemDataSource: item_info.dataSource" data-win-options="{
                         itemTemplate: select ('#item_info'),
                         selectionMode: 'none',
