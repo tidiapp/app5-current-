@@ -66,8 +66,23 @@
 
 //milo graying out buttons so they looked cliked 
         grayOut: function () {
-                        document.getElementById("sub_button").style.opacity = (.2);
+            document.getElementById("sub_button").style.opacity = (.2);
+        },
+
+//milo more info webview grabbing urls frm db
+        moreInfo: function (db_url) {
+            //var db_url = document.getElementById("item_info_info");
+
+            var webviewControl = document.getElementById("webview");
+            webviewControl.navigate("http://storeapp.thinkitdrinkit.com/soccer/");
+
+
+            //db_url.navigate(event.srcElement.textContent);
+            //document.getElementById("item_info_info").navigate(event.srcElement.textContent);
+
         }
+
+
 
     })
 
