@@ -82,6 +82,7 @@
             roamingSettings.values["Boost8_pic"] = "",
             roamingSettings.values["Boost8_vend"] = "",
             roamingSettings.values["Boost8_price"] = "",
+            roamingSettings.values["db_url"] = "",
 
             roamingSettings.values["FlavSel_name"] = "",
             roamingSettings.values["FlavSel_pic"] = "",
