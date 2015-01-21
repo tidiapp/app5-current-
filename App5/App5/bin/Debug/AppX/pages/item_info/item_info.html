@@ -20,7 +20,7 @@
             </h1>
         </header>
         <section aria-label="Main content" role="main">
-            <progress id="progressRing" class="win-ring win-medium" style="visibility: hidden"></progress>
+            <progress id="progressRing" class="win-ring win-large" style="visibility: hidden"></progress>
             <!-- milo: webview will not work if its in a data-win-control="WinJS.Binding.Template" -->
             <x-ms-webview id="webview"></x-ms-webview>
 
@@ -34,11 +34,12 @@
                        <p id="item_info_info3" class="item_info_info_class" data-win-bind="textContent: info3"></p>
                    </div>
                </div>-->
-            <div id="item_info_placement" data-win-control="WinJS.UI.ListView" data-win-bind="winControl.itemDataSource: item_info.dataSource" data-win-options="{
+            <!--<div id="item_info_placement" data-win-control="WinJS.UI.ListView" data-win-bind="winControl.itemDataSource: item_info.dataSource" data-win-options="{
                         itemTemplate: select ('#item_info'),
                         selectionMode: 'none',
                     tapBehavior: 'none'
-                    }"></div>
+                    }"></div>-->
+
         </section>
           <footer id="main_footer">
            <!--<h1 id="footer_company_name"></h1>--><!-- this is being styled in the default.js folder -->

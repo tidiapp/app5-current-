@@ -34,6 +34,20 @@
     margin-top: -30px;
 }
 #webview {
-    width: 1250px;
+    width: 1350px;
     height: 495px;
 }
+#progressRing {
+    position: absolute;
+    margin-left: 600px;
+    margin-top: 100px;
+}
+#progressRing.win-ring.win-large {
+    width: 100px;
+    height: 100px;
+}
+#progressRing:indeterminate {
+    color: orangered;
+}
+
+

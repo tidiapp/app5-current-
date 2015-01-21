@@ -67,8 +67,6 @@
                     age_data.model.info.push({ the_info: results[0].InfoLite, info_img: results[0].Image, info_name: results[0].Name, info_price: results[0].Price, id_sel: results[0].id })
                     //milo: this saves the url link from db so it can be called for the next page, the early save fixes a bug which the timing if you were to put this on the page you were actually loading it would not show up.
                     roamingSettings.values["db_url"] = results[0].Info;
-                    //console.log("This is a test: " + roamingSettings.values["db_url"]);
-
                 }, function (err) {
                     console.log(err);
                 });

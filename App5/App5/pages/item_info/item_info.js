@@ -20,29 +20,55 @@
 
             server.item_info(updated_name, roamingSettings.values["Clicked_cat"]);
 
-            var webviewControl = document.getElementById("webview");
-            webviewControl.addEventListener("MSWebViewNavigationStarting", navigationStarting);
-            webviewControl.addEventListener("MSWebViewNavigationCompleted", navigationCompleted);
-            webviewControl.navigate(roamingSettings.values["db_url"]);
-            //console.log("This is a test: " + roamingSettings.values["db_url"]);
-            function updateNavigatingState(isNavigating) {
-                document.getElementById("progressRing").style.visibility = (isNavigating ? "visible" : "hidden");
-
-            }
-            function navigationStarting(e) {
-                //appendLog && appendLog("Starting navigation to " + e.uri + ".\n");
-                //document.getElementById("urlField").value = e.uri;
-                updateNavigatingState(true);
-            }
-            function navigationCompleted(e) {
-                updateNavigatingState(false);
-
-                if (e.isSuccess) {
-                    console.log("Navigation completed successfully");
-                } else {
-                    console.log("Navigation failed with error code " + e.webErrorStatus);
+            //milo: verifies that the url is a real one from db 
+            function isValidUriString(uriString) {
+                var uri = null;
+                try {
+                    uri = new Windows.Foundation.Uri(uriString);
                 }
+                catch (err) {
+                }
+                return uri !== null;
             }
+            var urlVal = roamingSettings.values["db_url"];
+            if (!isValidUriString(urlVal)) {
+                console.log("Enter a Start URI", "error");
+                return;
+            }
+                var webviewControl = document.getElementById("webview");
+                webviewControl.addEventListener("MSWebViewNavigationStarting", navigationStarting);
+                webviewControl.addEventListener("MSWebViewNavigationCompleted", navigationCompleted);
+                webviewControl.addEventListener("MSWebViewContentLoading", contentLoading);
+                webviewControl.addEventListener("MSWebViewDOMContentLoaded", domContentLoaded);
+                webviewControl.addEventListener("MSWebViewUnviewableContentIdentified", unviewableContentIdentified);
+                //webviewControl.refresh();
+                webviewControl.navigate(roamingSettings.values["db_url"]);
+                //console.log("This is a test: " + roamingSettings.values["db_url"]);
+                function updateNavigatingState(isNavigating) {
+                    document.getElementById("progressRing").style.visibility = (isNavigating ? "visible" : "hidden");
+                }
+                function navigationStarting(e) {
+                    updateNavigatingState(true);
+                }
+                function contentLoading(e) {
+                    console.log("Loading content for " + e.uri + ".\n");
+                }
+                function domContentLoaded(e) {
+                    console.log("Content for " + e.uri + " has finished loading.\n");
+                }
+                function navigationCompleted(e) {
+                    updateNavigatingState(false);
+                    if (e.isSuccess) {
+                        //console.log("Navigation completed successfully");
+                    } else {
+                        console.log("Navigation failed with error code " + e.webErrorStatus);
+                    }
+                }
+                function unviewableContentIdentified(e) {
+                    updateNavigatingState(false);
+                    console.log(e.uri + " cannot be displayed in WebView", "sdksample", "error");
+                }
+            
 
             //document.body.innerHTML.replace("eros", "<span id='key_word' onclick=''>Eros<span>")
             //console.log(document.getElementById("item_info_info").innerHTML);
