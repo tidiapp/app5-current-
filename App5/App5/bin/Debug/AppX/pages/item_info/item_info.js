@@ -20,6 +20,7 @@
 
             server.item_info(updated_name, roamingSettings.values["Clicked_cat"]);
 
+            //milo: verifies that the url is a real one from db 
             function isValidUriString(uriString) {
                 var uri = null;
                 try {
@@ -34,7 +35,6 @@
                 console.log("Enter a Start URI", "error");
                 return;
             }
-
                 var webviewControl = document.getElementById("webview");
                 webviewControl.addEventListener("MSWebViewNavigationStarting", navigationStarting);
                 webviewControl.addEventListener("MSWebViewNavigationCompleted", navigationCompleted);

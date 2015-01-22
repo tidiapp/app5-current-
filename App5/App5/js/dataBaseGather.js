@@ -551,7 +551,7 @@
             VendPrep: function () {
                 var finalCall = thinkitdrinkitDataClient.getTable("Nutrigenetic");
                 var roamingSettings = appData.roamingSettings;
-                if (roamingSettings.values["totalOrderNumber"] > 0) {
+
                 var query = finalCall.where({
                     CNum: 1
                 }).read().done(function (results) {
@@ -618,7 +618,10 @@
                             })
                             //console.log(i);
                             i++;
+                            console.log("The following array is inside of a loop: ");
+                            console.log(array_t);
                         }
+                        console.log("This one is not inside of a loop: ")
                         console.log(array_t);
                        // console.log(age_data.model.order_final_call._keyMap[1].data.price);
                         WinJS.xhr({
@@ -634,7 +637,7 @@
                                 "status": "SAVED",
                                 "total_price": roamingSettings.values["the_complete_total"],
                                 "note": document.getElementById('Cname').value,
-                                "register_sale_products": age_data.model.order_final_call
+                                "register_sale_products": array_t
                             }),
                         }).then(function sucess(res) {
                             roamingSettings.values["Invoice_number"] = JSON.parse(res.responseText).register_sale.invoice_number;
@@ -652,7 +655,6 @@
                 }, function (err) {
                     console.log("This is the error: " + err);
                 });
-            }
          
             },
             contSave: function () {
