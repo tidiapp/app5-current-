@@ -101,11 +101,8 @@
         clicked: function (me) {          
             var updated_answer = me.replace(/^\s+/, '').replace(/\s+$/, '');
             _choosen_cat = updated_answer;
-
             server.home_sub(updated_answer);
             //milo: some code does not work well from here 
-
-
         },
 
         next_page: function () {
