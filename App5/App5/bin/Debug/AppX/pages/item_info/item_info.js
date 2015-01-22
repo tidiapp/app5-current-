@@ -37,7 +37,6 @@
                 return;
             }
                 var webviewControl = document.getElementById("webview");
-                //webviewControl.addEventListener("MSWebViewNavigationStarting", navigationRefresh);
                 webviewControl.addEventListener("MSWebViewNavigationStarting", navigationStarting);
                 webviewControl.addEventListener("MSWebViewNavigationCompleted", navigationCompleted);
                 webviewControl.addEventListener("MSWebViewContentLoading", contentLoading);
@@ -46,9 +45,6 @@
                 webviewControl.navigate(roamingSettings.values["db_url"]);
             //console.log("This is a test: " + roamingSettings.values["db_url"]);
 
-                function navigationRefresh() {
-                    webview.refresh();
-                }
                 function updateNavigatingState(isNavigating) {
                     document.getElementById("progressRing").style.visibility = (isNavigating ? "visible" : "hidden");
                 }
@@ -118,6 +114,15 @@
 
             // TODO: Respond to changes in layout.
         }
+    });
+
+    WinJS.Namespace.define("more", {
+
+        refresh: function () {
+            var webviewControl = document.getElementById("webview");
+                webviewControl.refresh();
+        }
+
     });
 
 })();
