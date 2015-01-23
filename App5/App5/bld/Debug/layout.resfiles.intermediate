@@ -4,6 +4,7 @@ images\another_logo.jpg
 images\another_logo.scale-100.jpg
 images\another_logo.scale-180.jpg
 images\bar1.jpg
+images\downarrow4.gif
 images\lemonLime.jpg
 images\LemonLimeZero.jpg
 images\logo.scale-100.png
@@ -18,6 +19,7 @@ images\SmallLogo.scale-140.png
 images\splash_screen_logo.scale-100.png
 images\splash_screen_logo.scale-180.png
 images\storelogo.scale-180.png
+images\uparrow4.gif
 js\app_bar.js
 js\auth.js
 js\ChangeApp.js

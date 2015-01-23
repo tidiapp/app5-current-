@@ -20,22 +20,12 @@
             </h1>
         </header>
         <section aria-label="Main content" role="main">
+
             <progress id="progressRing" class="win-ring win-large" style="visibility: hidden"></progress>
-            <!-- milo: webview will not work if its in a data-win-control="WinJS.Binding.Template" -->
-            <button data-win-control="WinJS.UI.AppBarCommand"
-                    data-win-options="{id:'helpButton',
-            type: 'button',
-            label:'Help',
-            tooltip:'Help',
-            icon:'help',
-            section:'global'
-            }"></button>
+
             <x-ms-webview id="webview"></x-ms-webview>
-
-            <button onclick="more.refresh();">Refresh Button</button>
-
-
-
+            <img id="upArrow" src="../../images/uparrow4.gif" />
+            <img id="downArrow" src="../../images/downarrow4.gif" />
             <!--<div id="item_info" class="item_info_class" data-win-control="WinJS.Binding.Template">
 
                    <div id="item_info1">
@@ -54,6 +44,8 @@
 
         </section>
           <footer id="main_footer">
+              <button onclick="more.refresh();">Refresh Button</button><!-- milo: webview will not work if its in a data-win-control="WinJS.Binding.Template" -->
+
            <!--<h1 id="footer_company_name"></h1>--><!-- this is being styled in the default.js folder -->
         </footer>
     </div>

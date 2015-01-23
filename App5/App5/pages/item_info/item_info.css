@@ -49,5 +49,14 @@
 #progressRing:indeterminate {
     color: orangered;
 }
-
+#downArrow {
+    position: absolute;
+    margin-top: 476px;
+    margin-left: -15px;
+}
+#upArrow {
+    position: absolute;
+    margin-left: -15px;
+    margin-top: 10px;
+}
 
