@@ -551,75 +551,87 @@
             VendPrep: function () {
                 var finalCall = thinkitdrinkitDataClient.getTable("Nutrigenetic");
                 var roamingSettings = appData.roamingSettings;
-
                 var query = finalCall.where({
                     CNum: 1
                 }).read().done(function (results) {
-                    var totalOrderNum = 1;
-                    for (var i = 0; i < roamingSettings.values["totalOrderNumber"]; i++) {
-                       // console.log(results[i].BaseName + " " + results[i].id);
-                        if (roamingSettings.values["Boost2_price"] > 0 && roamingSettings.values["Boost3_price"] <= 0) {
-                            age_data.model.order_final_call.push({
-                                                        product_id: results[i].BaseVend, quantity: 1, price: results[i].BasePrice,
-                            }, { product_id: results[i].FlaveVend, quantity: 1, price: results[i].FlavePrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice })
-                            passToVend()
-                            //3 boosts
-                                                } else if (roamingSettings.values["Boost3_price"] > 0 && roamingSettings.values["Boost4_price"] <= 0) {
-                                                    age_data.model.order_final_call.push({
-                                                        product_id: results[i].BaseVend, quantity: 1, price: results[i].BasePrice
-                                                    }, { product_id: results[i].FlaveVend, quantity: 1, price: results[i].FlavPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice })
-                                                    passToVend()
-                            //4 boosts
-                                                } else if (roamingSettings.values["Boost4_price"] > 0 && roamingSettings.values["Boost5_price"] <= 0) {
-                                                    age_data.model.order_final_call.push({
-                                                        product_id: results[i].BaseVend, quantity: 1, price: results[i].BasePrice
-                                                    }, { product_id: results[i].FlaveVend, quantity: 1, price: results[i].FlavePrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice })
-                                                    passToVend()
-                            //5 boost
-                                                } else if (roamingSettings.values["Boost5_price"] > 0 && roamingSettings.values["Boost6_price"] <= 0) {
-                                                    age_data.model.order_final_call.push({
-                                                        product_id: results[i].BaseVend, quantity: 1, price: results[i].BasePrice
-                                                    }, { product_id: results[i].FlaveVend, quantity: 1, price: results[i].FlavePrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice })
-                                                    passToVend()
-                            //6 boost
-                                                } else if (roamingSettings.values["Boost6_price"] > 0 && roamingSettings.values["Boost7_price"] <= 0) {
-                                                    age_data.model.order_final_call.push({
-                                                        product_id: results[i].BaseVend, quantity: 1, price: results[i].BasePrice
-                                                    }, { product_id: results[i].FlaveVend, quantity: 1, price: results[i].FlavePrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice })
-                                                    passToVend()
-                            //7 boost
-                                                } else if (roamingSettings.values["Boost7_price"] > 0 && roamingSettings.values["Boost8_price"] <= 0) {
-                                                    age_data.model.order_final_call.push({
-                                                        product_id: results[i].BaseVend, quantity: 1, price: results[i].BasePrice
-                                                    }, { product_id: results[i].FlaveVend, quantity: 1, price: results[i].FlavePrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice })
-                                                    passToVend()
-                            //8 boost
-                                                } else if (roamingSettings.values["Boost8_price"] > 0) {
-                                                    age_data.model.order_final_call.push({
-                                                        product_id: results[i].BaseVend, quantity: 1, price: results[i].BasePrice
-                                                    }, { product_id: results[i].FlaveVend, quantity: 1, price: results[i].FlavePrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice })
-                                                    passToVend()
-                            //1 boost
-                                                } else {
-                                                    age_data.model.order_final_call.push({
-                                                        product_id: results[i].BaseVend, quantity: 1, price: results[i].BasePrice
-                                                    }, { product_id: results[i].FlaveVend, quantity: 1, price: results[i].FlavPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice })
-                                                    passToVend()
-                                                }
-                    }
-                    function passToVend() {
+                    //var totalOrderNum = 1;
+                    //   // console.log(results[i].BaseName + " " + results[i].id);
+                    //if (roamingSettings.values["Boost2_price"] > 0 && roamingSettings.values["Boost3_price"] <= 0) {
+                    //    for (var i = 0; i < results.length; i++) {
+                    //        age_data.model.order_final_call.push({
+                    //            product_id: results[i].BaseVend, quantity: 1, price: results[i].BasePrice,
+                    //        }, { product_id: results[i].FlaveVend, quantity: 1, price: results[i].FlavePrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice })
+                    //    }
+                    //        passToVend()
+                    //        //3 boosts
+                    //} else if (roamingSettings.values["Boost3_price"] > 0 && roamingSettings.values["Boost4_price"] <= 0) {
+                    //    for (var i = 0; i < results.length; i++) {
+                    //        age_data.model.order_final_call.push({
+                    //            product_id: results[i].BaseVend, quantity: 1, price: results[i].BasePrice
+                    //        }, { product_id: results[i].FlaveVend, quantity: 1, price: results[i].FlavPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice })
+                    //    }
+                    //                                passToVend()
+                    //        //4 boosts
+                    //                            } else if (
+                    //                                roamingSettings.values["Boost4_price"] > 0 && roamingSettings.values["Boost5_price"] <= 0) {
+                    //                                for (var i = 0; i < results.length; i++) {
+                    //                                    age_data.model.order_final_call.push({
+                    //                                        product_id: results[i].BaseVend, quantity: 1, price: results[i].BasePrice
+                    //                                    }, { product_id: results[i].FlaveVend, quantity: 1, price: results[i].FlavePrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice })
+                    //                                }
+                    //                                passToVend()
+                    //        //5 boost
+                    //                            } else if (roamingSettings.values["Boost5_price"] > 0 && roamingSettings.values["Boost6_price"] <= 0) {
+                    //                                for (var i = 0; i < results.length; i++) {
+                    //                                    age_data.model.order_final_call.push({
+                    //                                        product_id: results[i].BaseVend, quantity: 1, price: results[i].BasePrice
+                    //                                    }, { product_id: results[i].FlaveVend, quantity: 1, price: results[i].FlavePrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice })
+                    //                                }
+                    //                                passToVend()
+                    //        //6 boost
+                    //                            } else if (roamingSettings.values["Boost6_price"] > 0 && roamingSettings.values["Boost7_price"] <= 0) {
+                    //                                for (var i = 0; i < results.length; i++) {
+                    //                                    age_data.model.order_final_call.push({
+                    //                                        product_id: results[i].BaseVend, quantity: 1, price: results[i].BasePrice
+                    //                                    }, { product_id: results[i].FlaveVend, quantity: 1, price: results[i].FlavePrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice })
+                    //                                }
+                    //                                passToVend()
+                    //        //7 boost
+                    //                            } else if (roamingSettings.values["Boost7_price"] > 0 && roamingSettings.values["Boost8_price"] <= 0) {
+                    //                                for (var i = 0; i < results.length; i++) {
+                    //                                    age_data.model.order_final_call.push({
+                    //                                        product_id: results[i].BaseVend, quantity: 1, price: results[i].BasePrice
+                    //                                    }, { product_id: results[i].FlaveVend, quantity: 1, price: results[i].FlavePrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice })
+                    //                                }
+                    //                                passToVend()
+                    //        //8 boost
+                    //                            } else if (roamingSettings.values["Boost8_price"] > 0) {
+                    //                                for (var i = 0; i < results.length; i++) {
+                    //                                    age_data.model.order_final_call.push({
+                    //                                        product_id: results[i].BaseVend, quantity: 1, price: results[i].BasePrice
+                    //                                    }, { product_id: results[i].FlaveVend, quantity: 1, price: results[i].FlavePrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice })
+                    //                                }
+                    //                                passToVend()
+                    //        //1 boost
+                    //                            } else {
+                    //                                for (var i = 0; i < results.length; i++) {
+                    //                                    age_data.model.order_final_call.push({
+                    //                                        product_id: results[i].BaseVend, quantity: 1, price: results[i].BasePrice
+                    //                                    }, { product_id: results[i].FlaveVend, quantity: 1, price: results[i].FlavPrice }, { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice })
+                    //                                }
+                    //                                passToVend()
+                    //                            }
+
                         var array_t = Array();
                         var i = 0;
-                        var j = 1;
-                        console.log(age_data.model.order_final_call.length);
-                        while (age_data.model.order_final_call.length > i) {
+                        var j = 3;
+                        console.log(age_data.model.order_final_call);
+                        for (var i = 0; i < age_data.model.order_final_call.length; i++) {
                             array_t.push({
                                 product_id: age_data.model.order_final_call._keyMap[j].data.product_id, quantity: 1, price: age_data.model.order_final_call._keyMap[j].data.price
                             })
+                            j++
                             //console.log(i);
-                            i++;
-                            console.log("The following array is inside of a loop: ");
-                            console.log(array_t);
                         }
                         console.log("This one is not inside of a loop: ")
                         console.log(array_t);
@@ -646,11 +658,11 @@
                             roamingSettings.values["went_back"] = true;
                             roamingSettings.values["the_complete_total"] = 0;
                             roamingSettings.values["theComplete"] = document.getElementById("total").textContent;
+                            WinJS.Navigation.navigate('pages/thankyou/thankyou.html');
 
                         }, function error(err) {
                             console.log("fail", err.responseText)
                         });
-                    }
                   
                 }, function (err) {
                     console.log("This is the error: " + err);
@@ -711,6 +723,7 @@
                     TestImages: roamingSettings.values["Nutrigenetics_pic"],
                     TestPrice: parseFloat(roamingSettings.values["Nutrigenetics_price"]),
                 }).done(function (results) {
+                    tool.finalpagelogic();
                    // console.log("This seems to  be working!! " + results.id);
                 }, function (err) {
                     console.log(err);

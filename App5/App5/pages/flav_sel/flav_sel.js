@@ -123,7 +123,7 @@
             //    document.getElementById("boost_p").innerHTML = text;
 
             document.getElementById("flav_sel_header").textContent = "Choose Your " + "Flavor.";
-
+          
             server.flav_sel();
         },
 
