@@ -96,6 +96,7 @@
                     Name: name
                 }).read().done(function (results) {
                     age_data.model.info_page2_func_home2.push({ the_info: results[0].InfoLite, info_img: results[0].Image, info_name: results[0].Name, id_sel: results[0].id })
+                    roamingSettings.values["db_url"] = results[0].Info;
                 }, function (err) {
                     console.log(err);
                 });
@@ -127,6 +128,7 @@
                     Name: name
                 }).read().done(function (results) {
                     age_data.model.info_page2_func.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_img: results[0].Label, base_price: results[0].Price, the_pic: results[0].Image, b_vend: results[0].VendID, id_sel: results[0].id })
+                    roamingSettings.values["db_url"] = results[0].Info;
                 }, function (err) {
                     console.log(err);
                 });
@@ -217,6 +219,7 @@
                     Name: name
                 }).read().done(function (results) {
                     age_data.model.info_page2.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_img: results[0].Label, base_price: results[0].Price, the_pic: results[0].Image, b_vend: results[0].VendID, b_vend_count: results[0].VendID_count, id_sel: results[0].id })
+                    roamingSettings.values["db_url"] = results[0].Info;
                 }, function (err) {
                     console.log(err);
                 })
@@ -244,6 +247,7 @@
                     Name: name
                 }).read().done(function (results) {
                     age_data.model.info_page4.push({ sel_name: results[0].Name, sel_info: results[0].InfoLite, sel_pic: results[0].Image, sel_label: results[0].Label, f_vend: results[0].VendID, f_vend_count: results[0].VendID_count })
+                    roamingSettings.values["db_url"] = results[0].Info;
                 }, function (err) {
                     console.log(err);
                 })
@@ -308,6 +312,7 @@
                         id: id
                     }).read().done(function (results) {
                         age_data.model.info_page5.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_label: results[0].Label, the_price: results[0].Price, bo_vend: results[0].VendID, id_sel: results[0].id })
+                        roamingSettings.values["db_url"] = results[0].Info;
                     }, function (err) {
                         console.log(err);
                     })
@@ -319,6 +324,7 @@
                             Name: name
                         }).read().done(function (results) {
                             age_data.model.info_page5.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_label: results[0].Label, the_price: results[0].Price, bo_vend: results[0].VendID, id_sel: results[0].id })
+                            roamingSettings.values["db_url"] = results[0].Info;
                         }, function (err) {
                             console.log(err);
                         })
@@ -331,6 +337,7 @@
                                 Name: name
                             }).read().done(function (results) {
                                 age_data.model.info_page5.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_label: results[0].Label, the_price: results[0].Price, bo_vend: results[0].VendID, id_sel: results[0].id })
+                                roamingSettings.values["db_url"] = results[0].Info;
                             }, function (err) {
                                 console.log(err);
                             })
@@ -340,6 +347,7 @@
                                 Name: name
                             }).read().done(function (results) {
                                 age_data.model.info_page5.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_label: results[0].Label, the_price: results[0].Price, bo_vend: results[0].VendID, id_sel: results[0].id })
+                                roamingSettings.values["db_url"] = results[0].Info;
                             }, function (err) {
                                 console.log(err);
                             })
@@ -349,6 +357,7 @@
                                 Name: name
                             }).read().done(function (results) {
                                 age_data.model.info_page5.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_label: results[0].Label, the_price: results[0].Price, bo_vend: results[0].VendID, id_sel: results[0].id })
+                                roamingSettings.values["db_url"] = results[0].Info;
                             }, function (err) {
                                 console.log(err);
                             })

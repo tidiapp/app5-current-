@@ -32,7 +32,8 @@
             }
             var urlVal = roamingSettings.values["db_url"];
             if (!isValidUriString(urlVal)) {
-                console.log("Enter a Start URI", "error");
+                console.log("Missing website for webview to load or not a website at all", "error");
+                tool.alert("Sorry for the inconvenience we will get this resolved as soon as possible.", "Learn More Content Missing");
                 return;
             }
                 var webviewControl = document.getElementById("webview");
@@ -41,9 +42,9 @@
                 webviewControl.addEventListener("MSWebViewContentLoading", contentLoading);
                 webviewControl.addEventListener("MSWebViewDOMContentLoaded", domContentLoaded);
                 webviewControl.addEventListener("MSWebViewUnviewableContentIdentified", unviewableContentIdentified);
-                //webviewControl.refresh();
                 webviewControl.navigate(roamingSettings.values["db_url"]);
-                //console.log("This is a test: " + roamingSettings.values["db_url"]);
+            //console.log("This is a test: " + roamingSettings.values["db_url"]);
+
                 function updateNavigatingState(isNavigating) {
                     document.getElementById("progressRing").style.visibility = (isNavigating ? "visible" : "hidden");
                 }
@@ -97,6 +98,7 @@
                 //test1 = test();
 
             };
+
         },
 
         unload: function () {
@@ -112,6 +114,15 @@
 
             // TODO: Respond to changes in layout.
         }
+    });
+
+    WinJS.Namespace.define("more", {
+
+        refresh: function () {
+            var webviewControl = document.getElementById("webview");
+                webviewControl.refresh();
+        }
+
     });
 
 })();
