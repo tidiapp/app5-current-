@@ -276,7 +276,7 @@
 //                                                     else if (err.readyState === 4 && err.status === 404) {
 //                                                         console.log("GET Request finished and response is ready but " + "status 404: Page not found");
 //                                                     }
-//                                                 });
+//                                                 }); 
 //                                        },
 //                                        function error(err) {
 //                                            // handle error conditions.
