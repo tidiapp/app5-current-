@@ -547,8 +547,8 @@
                 }).read().done(function (results) {
                     //console.log("I made it here, Yay...");
                     roamingSettings.values["t"] = 0;
-                    if (roamingSettings.values["totalOrderNumber"] > 0) {
-                        for (var i = 0; i < roamingSettings.values["totalOrderNumber"]; i++) {
+                    if (roamingSettings.values["totalOrderNumber1"] > 0) {
+                        for (var i = 0; i < roamingSettings.values["totalOrderNumber1"]; i++) {
                             roamingSettings.values["t"] += (parseFloat(results[i].BasePrice) + parseFloat(results[i].BoostPrice) + parseFloat(results[i].Boost2Price) + parseFloat(results[i].Boost3Price) +  parseFloat(results[i].Boost4Price) +  parseFloat(results[i].Boost5Price) + parseFloat(results[i].Boost6Price) + parseFloat(results[i].Boost7Price) + parseFloat(results[i].Boost8Price) + parseFloat(results[i].TestPrice));
                         }
                     }
@@ -560,20 +560,161 @@
             VendPrep: function () {
                 var finalCall = thinkitdrinkitDataClient.getTable("Nutrigenetic");
                 var roamingSettings = appData.roamingSettings;
+                var Age = thinkitdrinkitDataClient.getTable("Nutrigenetic");
+                Age.insert({
+                    CNum: roamingSettings.values["computerNumber"],
+                    BaseName: roamingSettings.values["Base_name"],
+                    BaseVend: roamingSettings.values["Base_vend"],
+                    BaseImages: roamingSettings.values["Base_pic"],
+                    BasePrice: parseFloat(roamingSettings.values["Base_price"]),
+                    BoostName: roamingSettings.values["Boost1_name"],
+                    BoostVend: roamingSettings.values["Boost1_Vend"],
+                    BoostImages: roamingSettings.values["Boost1_pic"],
+                    BoostPrice: parseFloat(roamingSettings.values["Boost1_price"]),
+                    Boost2Name: roamingSettings.values["Boost2_name"],
+                    Boost2Vend: roamingSettings.values["Boost2_vend"],
+                    Boost2Images: roamingSettings.values["Boost2_pic"],
+                    Boost2Price: parseFloat(roamingSettings.values["Boost2_price"]),
+                    Boost3Name: roamingSettings.values["Boost3_name"],
+                    Boost3Vend: roamingSettings.values["Boost3_vend"],
+                    Boost3Images: roamingSettings.values["Boost3_pic"],
+                    Boost3Price: parseFloat(roamingSettings.values["Boost3_price"]),
+                    Boost4Name: roamingSettings.values["Boost3_name"],
+                    Boost4Vend: roamingSettings.values["Boost4_vend"],
+                    Boost4Images: roamingSettings.values["Boost4_pic"],
+                    Boost4Price: parseFloat(roamingSettings.values["Boost4_price"]),
+                    Boost5Name: roamingSettings.values["Boost5_name"],
+                    Boost5Vend: roamingSettings.values["Boost5_vend"],
+                    Boost5Images: roamingSettings.values["Boost5_pic"],
+                    Boost5Price: parseFloat(roamingSettings.values["Boost5_price"]),
+                    Boost6Name: roamingSettings.values["Boost6_name"],
+                    Boost6Vend: roamingSettings.values["Boost6_vend"],
+                    Boost6Images: roamingSettings.values["Boost6_pic"],
+                    Boost6Price: parseFloat(roamingSettings.values["Boost6_price"]),
+                    Boost7Name: roamingSettings.values["Boost7_name"],
+                    Boost7Vend: roamingSettings.values["Boost7_vend"],
+                    Boost7Images: roamingSettings.values["Boost7_pic"],
+                    Boost7Price: parseFloat(roamingSettings.values["Boost7_price"]),
+                    Boost8Name: roamingSettings.values["Boost8_name"],
+                    Boost8Vend: roamingSettings.values["Boost8_vend"],
+                    Boost8Images: roamingSettings.values["Boost8_pic"],
+                    Boost8Price: parseFloat(roamingSettings.values["Boost8_price"]),
+                    FlavName: roamingSettings.values["FlavSel_name"],
+                    FlaveVend: roamingSettings.values["FlavSel_vend"],
+                    FlavIamge: roamingSettings.values["FlavSel_pic"],
+                    FlavPrice: parseFloat(roamingSettings.values["FlavSel_price"]),
+                    TestName: roamingSettings.values["Nutrigenetics_name"],
+                    TestVend: roamingSettings.values["Nutrigenetics_vend"],
+                    TestImages: roamingSettings.values["Nutrigenetics_pic"],
+                    TestPrice: parseFloat(roamingSettings.values["Nutrigenetics_price"]),
+                }).done(function (results1) {
+                    roamingSettings.values["totalOrderNumber"]++;
+                    roamingSettings.values["computer" + roamingSettings.values["totalOrderNumber"] + "Number"] = results1.id;
+                    var query = finalCall.where({
+                        CNum: 1
+                    }).read().done(function (results) {
+
+                        for (var i = 0; i < results.length; i++) {
+                            if (results[i].Boost2Price > 0 && results[i].Boost3Price <= 0) {
+                                age_data.model.order_final_call.push(
+                                { product_id: results[i].BaseVend, quantity: 1, price: results[i].BasePrice },
+                                { product_id: results[i].FlaveVend, quantity: 1, price: results[i].FlavPrice },
+                                { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice },
+                                { product_id: results[i].Boost2Vend, quantity: 1, price: results[i].Boost2Price }
+                                )
+                            }
+                            else if (results[i].Boost3Price > 0 && results[i].Boost4Price <= 0) {
+                                age_data.model.order_final_call.push(
+                                { product_id: results[i].BaseVend, quantity: 1, price: results[i].BasePrice },
+                                { product_id: results[i].FlaveVend, quantity: 1, price: results[i].FlavPrice },
+                                { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice },
+                                { product_id: results[i].Boost2Vend, quantity: 1, price: results[i].Boost2Price },
+                                { product_id: results[i].Boost3Vend, quantity: 1, price: results[i].Boost3Price }
+                                   )
+                            }
+                            else if (results[i].Boost4Price > 0 && results[i].Boost5Price <= 0) {
+                                age_data.model.order_final_call.push(
+                                { product_id: results[i].BaseVend, quantity: 1, price: results[i].BasePrice },
+                                { product_id: results[i].FlaveVend, quantity: 1, price: results[i].FlavPrice },
+                                { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice },
+                                { product_id: results[i].Boost2Vend, quantity: 1, price: results[i].Boost2Price },
+                                { product_id: results[i].Boost3Vend, quantity: 1, price: results[i].Boost3Price },
+                                { product_id: results[i].Boost4Vend, quantity: 1, price: results[i].Boost4Price }
+                                   )
+                            }
+                            else if (results[i].Boost5Price > 0 && results[i].Boost6Price <= 0) {
+                                age_data.model.order_final_call.push(
+                                { product_id: results[i].BaseVend, quantity: 1, price: results[i].BasePrice },
+                                { product_id: results[i].FlaveVend, quantity: 1, price: results[i].FlavPrice },
+                                { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice },
+                                { product_id: results[i].Boost2Vend, quantity: 1, price: results[i].Boost2Price },
+                                { product_id: results[i].Boost3Vend, quantity: 1, price: results[i].Boost3Price },
+                                { product_id: results[i].Boost4Vend, quantity: 1, price: results[i].Boost4Price },
+                                { product_id: results[i].Boost5Vend, quantity: 1, price: results[i].Boost5Price }
+                                   )
+                            }
+                            else if (results[i].Boost6Price > 0 && results[i].Boost7Price <= 0) {
+                                age_data.model.order_final_call.push(
+                                { product_id: results[i].BaseVend, quantity: 1, price: results[i].BasePrice },
+                                { product_id: results[i].FlaveVend, quantity: 1, price: results[i].FlavPrice },
+                                { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice },
+                                { product_id: results[i].Boost2Vend, quantity: 1, price: results[i].Boost2Price },
+                                { product_id: results[i].Boost3Vend, quantity: 1, price: results[i].Boost3Price },
+                                { product_id: results[i].Boost4Vend, quantity: 1, price: results[i].Boost4Price },
+                                { product_id: results[i].Boost5Vend, quantity: 1, price: results[i].Boost5Price },
+                                { product_id: results[i].Boost6Vend, quantity: 1, price: results[i].Boost6Price }
+                                   )
+                            }
+                            else if (results[i].Boost7Price > 0 && results[i].Boost8Price <= 0) {
+                                age_data.model.order_final_call.push(
+                                { product_id: results[i].BaseVend, quantity: 1, price: results[i].BasePrice },
+                                { product_id: results[i].FlaveVend, quantity: 1, price: results[i].FlavPrice },
+                                { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice },
+                                { product_id: results[i].Boost2Vend, quantity: 1, price: results[i].Boost2Price },
+                                { product_id: results[i].Boost3Vend, quantity: 1, price: results[i].Boost3Price },
+                                { product_id: results[i].Boost4Vend, quantity: 1, price: results[i].Boost4Price },
+                                { product_id: results[i].Boost5Vend, quantity: 1, price: results[i].Boost5Price },
+                                { product_id: results[i].Boost6Vend, quantity: 1, price: results[i].Boost6Price },
+                                { product_id: results[i].Boost7Vend, quantity: 1, price: results[i].Boost7Price }
+                                    )
+                            }
+                            else if (results[i].Boost8Price > 0) {
+                                age_data.model.order_final_call.push(
+
+                                { product_id: results[i].BaseVend, quantity: 1, price: results[i].BasePrice },
+                                { product_id: results[i].FlaveVend, quantity: 1, price: results[i].FlavPrice },
+                                { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice },
+                                { product_id: results[i].Boost2Vend, quantity: 1, price: results[i].Boost2Price },
+                                { product_id: results[i].Boost3Vend, quantity: 1, price: results[i].Boost3Price },
+                                { product_id: results[i].Boost4Vend, quantity: 1, price: results[i].Boost4Price },
+                                { product_id: results[i].Boost5Vend, quantity: 1, price: results[i].Boost5Price },
+                                { product_id: results[i].Boost6Vend, quantity: 1, price: results[i].Boost6Price },
+                                { product_id: results[i].Boost7Vend, quantity: 1, price: results[i].Boost7Price },
+                                { product_id: results[i].Boost8Vend, quantity: 1, price: results[i].Boost8Price }
+                               )
+                            }
+                            else {
+                                age_data.model.order_final_call.push(
+                               { product_id: results[i].BaseVend, quantity: 1, price: results[i].BasePrice },
+                               { product_id: results[i].FlaveVend, quantity: 1, price: results[i].FlavPrice },
+                               { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }
+                               )
+                            }
+                        }
                         var array_t = Array();
                         var i = 0;
-                        var j = 1;
+                        console.log(age_data.model.order_final_call.length)
                         console.log(age_data.model.order_final_call);
-                        for (var i = 0; i < age_data.model.order_final_call.length; i++) {
+                        while (age_data.model.order_final_call.length > i) {
                             array_t.push({
-                                product_id: age_data.model.order_final_call._keyMap[j].data.product_id, quantity: 1, price: age_data.model.order_final_call._keyMap[j].data.price
+                                product_id: age_data.model.order_final_call._keyMap[roamingSettings.values["i"]].data.product_id, quantity: 1, price: age_data.model.order_final_call._keyMap[roamingSettings.values["i"]].data.price
                             })
-                            j++
+                            roamingSettings.values["i"] += 1;
+                            i++
                             //console.log(i);
                         }
                         console.log("This one is not inside of a loop: ")
                         console.log(array_t);
-                       // console.log(age_data.model.order_final_call._keyMap[1].data.price);
                         WinJS.xhr({
                             type: "POST",
                             url: "https://thinkitdrinkit.vendhq.com/api/register_sales",
@@ -595,20 +736,45 @@
                             roamingSettings.values["not_cont"] = true;
                             roamingSettings.values["went_back"] = true;
                             roamingSettings.values["the_complete_total"] = 0;
+                            remove.pop_list(age_data.model.order_final_call);
+                           
                             roamingSettings.values["theComplete"] = document.getElementById("total").textContent;
+                            var Agee = thinkitdrinkitDataClient.getTable("Nutrigenetic");
+                            var k = 1;
+                            console.log("This is the lenght of what i'm looking for: " + roamingSettings.values["totalOrderNumber"]);
+                            while (roamingSettings.values["totalOrderNumber"]+2 > k)
+                            {
+                                Agee.del({
+                                    id: roamingSettings.values["computer" + k + "Number"]
+                                }).done(function () {
+                                    var l = 0;
+                                    age_data.model.order_final_call.length = 0;
+                                 
+                                }, function (err) {
+                                    console.log("Error: " + err);
+                                });
+                                roamingSettings.values.remove["computer" + k + "Number"]
+                                k++
+                            }
+                            roamingSettings.values["totalOrderNumber"] = 0;
+                            roamingSettings.values["totalOrderNumber1"] = 0;
                             WinJS.Navigation.navigate('pages/thankyou/thankyou.html');
 
                         }, function error(err) {
                             console.log("fail", err.responseText)
                         });
-         
+
+                    })
+                }, function (err) {
+                    console.log(err);
+                });
             },
             contSave: function () {
                 var appData = Windows.Storage.ApplicationData.current;
                 var roamingSettings = appData.roamingSettings;
                 roamingSettings.values["computerNumber"] = 1;
-                var numoforders = 0;
-                numoforders += 1;
+                roamingSettings.values["totalOrderNumber"]++;
+                roamingSettings.values["totalOrderNumber1"]++;
                 var Age = thinkitdrinkitDataClient.getTable("Nutrigenetic");
                 Age.insert({
                     CNum: roamingSettings.values["computerNumber"],
@@ -657,24 +823,16 @@
                     TestImages: roamingSettings.values["Nutrigenetics_pic"],
                     TestPrice: parseFloat(roamingSettings.values["Nutrigenetics_price"]),
                 }).done(function (results) {
-                    tool.finalpagelogic();
+                    console.log(results);
+                    roamingSettings.values["computer" + roamingSettings.values["totalOrderNumber"] + "Number"] = results.id;
+
                    // console.log("This seems to  be working!! " + results.id);
                 }, function (err) {
                     console.log(err);
                 });
             },
             userOrderDone: function () {
-                var appData = Windows.Storage.ApplicationData.current;
-                var roamingSettings = appData.roamingSettings;
-                roamingSettings.values["computerNumber"] = 1;
-                var Age = thinkitdrinkitDataClient.getTable("Nutrigenetic");
-                Age.del({
-                    CNum: 1
-                }).done(function () {
-                  //  console.log("It's all gone!!! :)");
-                }, function (err) {
-                   console.log("Error: " + err);
-                });
+               
             }
         })
     })()
