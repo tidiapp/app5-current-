@@ -25,7 +25,12 @@
             //        Image: "https://thinkitdrinkit.blob.core.windows.net/thinkitdrinkitappimagesboost/purpose2/optimsmcurrent.png"
             //    })
             //}
-                if (roamingSettings.values["Boost1_name"] == "" || roamingSettings.values["Boost1_name"] === !undefined) { roamingSettings.values["Boost1_price"] = 0 };
+            if (roamingSettings.values["Boost1_name"] == "" || roamingSettings.values["Boost1_name"] === !undefined)
+            { roamingSettings.values["Boost1_price"] = 0 
+            } else {
+                document.getElementById("boost_price1").textContent = roamingSettings.values["Boost1_price"];
+                document.getElementById("final_entire").removeAttribute("hidden");
+            }
                 if (roamingSettings.values["Boost2_name"] == "" || roamingSettings.values["Boost2_name"] === !undefined) { roamingSettings.values["Boost2_price"] = 0 };
                 if (roamingSettings.values["Boost3_name"] == "" || roamingSettings.values["Boost3_name"] === !undefined) { roamingSettings.values["Boost3_price"] = 0 };
                 if (roamingSettings.values["Boost4_name"] == "" || roamingSettings.values["Boost4_name"] === !undefined) { roamingSettings.values["Boost4_price"] = 0 };
@@ -41,7 +46,7 @@
 
                 roamingSettings.values["the_complete_total"] = roamingSettings.values["t"] + parseFloat(roamingSettings.values["Base_price"]) + parseFloat(roamingSettings.values['Boost_total']) + parseFloat(roamingSettings.values["Nutrigenetics_price"]);
 
-               // roamingSettings.values["the_complete_total"] += parseFloat(roamingSettings.values["total_price"]);
+               //roamingSettings.values["the_complete_total"] += parseFloat(roamingSettings.values["total_price"]);
                 roamingSettings.values["not_cont"] = true;
 
             document.getElementById("product_total").textContent = "$" + roamingSettings.values["the_complete_total"];

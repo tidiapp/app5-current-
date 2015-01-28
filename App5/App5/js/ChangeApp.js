@@ -113,16 +113,16 @@
         getFinal: function () {
             document.getElementById("main_footer").style.backgroundColor = i;
             document.getElementById("appBar").style.backgroundColor = i;
-            document.getElementById("my_flav_img_final").style.borderColor = i;
-            document.getElementById("my_base_img_final").style.borderColor = i;
-            document.getElementById("my_boost3_img_final").style.borderColor = i;
-            document.getElementById("my_boost2_img_final").style.borderColor = i;
-            document.getElementById("my_boost1_img_final").style.borderColor = i;
-            document.getElementById("sel_base_pic_final").style.borderColor = i;
-            document.getElementById("my_flav_label_img_final").style.borderColor = i;
-            document.getElementById("my_boost1_img_label_final").style.borderColor = i;
-            document.getElementById("my_boost2_img_label_final").style.borderColor = i;
-            document.getElementById("my_boost3_img_label_final").style.borderColor = i;
+            //document.getElementById("my_flav_img_final").style.borderColor = i;
+            //document.getElementById("my_base_img_final").style.borderColor = i;
+            //document.getElementById("my_boost3_img_final").style.borderColor = i;
+            //document.getElementById("my_boost2_img_final").style.borderColor = i;
+            //document.getElementById("my_boost1_img_final").style.borderColor = i;
+            //document.getElementById("sel_base_pic_final").style.borderColor = i;
+            //document.getElementById("my_flav_label_img_final").style.borderColor = i;
+            //document.getElementById("my_boost1_img_label_final").style.borderColor = i;
+            //document.getElementById("my_boost2_img_label_final").style.borderColor = i;
+            //document.getElementById("my_boost3_img_label_final").style.borderColor = i;
 
         },
 

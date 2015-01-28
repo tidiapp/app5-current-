@@ -412,18 +412,30 @@
                         }),
                     }).then(function sucess(res) {
                         //milo: below allows the real GET which is the count to come back to app. Notes accessing json>>> http://www.mkyong.com/javascript/how-to-access-json-object-in-javascript/
-                        var vendCount = JSON.parse(res.responseText).product.inventory[0].count;
-                        //console.log("Base Count from VEND ", vendCount);
-                        if (vendCount >= 1.00000) {
-                            WinJS.Navigation.navigate('pages/boost/boost.html')
-                        } else if (vendCount <= 0.00000) {
-                            document.getElementById("out_of_stock").removeAttribute("hidden");
-                            document.getElementById("out_of_stock").textContent = "OUT OF STOCK, PLEASE PICK ANOTHER BASE";
-                            document.getElementById("out_of_stock").style.color = "red";
-                            document.getElementById("out_of_stock").style.fontSize = "20px";
-                            document.getElementById("out_of_stock").style.marginTop = "120px";
-                            document.getElementById("out_of_stock").style.marginLeft = "290px";
-                            document.getElementById("out_of_stock").style.position = "Absolute";
+
+                        var vendIdIssue = JSON.parse(res.responseText).product;
+                        if (vendIdIssue == undefined) {//Vend product missing entirly even though there might be a id in azures db
+                            document.getElementById("out_of_stock2").removeAttribute("hidden");
+                            document.getElementById("out_of_stock2").textContent = "VEND product does not exist in VENDS website";
+                            document.getElementById("out_of_stock2").style.color = "red";
+                            document.getElementById("out_of_stock2").style.fontSize = "20px";
+                            document.getElementById("out_of_stock2").style.marginTop = "120px";
+                            document.getElementById("out_of_stock2").style.marginLeft = "290px";
+                            document.getElementById("out_of_stock2").style.position = "Absolute";
+                        } else {
+                            var vendCount = JSON.parse(res.responseText).product.inventory[0].count;
+                            //console.log("Base Count from VEND ", vendCount);
+                            if (vendCount >= 1.00000) {
+                                WinJS.Navigation.navigate('pages/boost/boost.html')
+                            } else if (vendCount <= 0.00000) {//If all works this is the check that looks for missing not enough quantity 
+                                document.getElementById("out_of_stock").removeAttribute("hidden");
+                                document.getElementById("out_of_stock").textContent = "OUT OF STOCK, PLEASE PICK ANOTHER BASE";
+                                document.getElementById("out_of_stock").style.color = "red";
+                                document.getElementById("out_of_stock").style.fontSize = "20px";
+                                document.getElementById("out_of_stock").style.marginTop = "120px";
+                                document.getElementById("out_of_stock").style.marginLeft = "290px";
+                                document.getElementById("out_of_stock").style.position = "Absolute";
+                            }
                         }
                     }, function error(err) {
                         console.log("fail", err.responseText)
@@ -431,11 +443,9 @@
 
 
 
-
-
-                } else if (vendId == "null" || vendId == undefined || vendId == "") {
+                } else if (vendId == "null" || vendId == undefined || vendId == "") {//id missing in azure db but product in vend exists
                     document.getElementById("out_of_stock2").removeAttribute("hidden");
-                    document.getElementById("out_of_stock2").textContent = "ID Missing in DB or Vend product does not exist.";
+                    document.getElementById("out_of_stock2").textContent = "ID Missing in Azure DB.";
                     document.getElementById("out_of_stock2").style.color = "red";
                     document.getElementById("out_of_stock2").style.fontSize = "20px";
                     document.getElementById("out_of_stock2").style.marginTop = "120px";
