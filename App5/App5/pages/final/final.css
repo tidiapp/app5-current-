@@ -83,9 +83,9 @@ input {
 }
 
 #section1 {
-    margin-top: -8px;
+    margin-top: 5px;
     height: 500px;
-    width: 610px;
+    width: 110px;
     float: left;
 }
 
@@ -132,15 +132,18 @@ font-size: 30px;}
 
 #the_name_con {
     float: right;
+    margin-top: 40px;
 }
 
-/*#sub_button {
-    margin-top: -58px;
+#sub_button {
+    /*margin-top: -58px;
     position: absolute;
     margin-left: 45px;
     box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);
-    border: 0;
-}*/
+    border: 0;*/
+
+    margin-left: 20px;
+}
 
 
 #my_boost1_img_final, #my_boost2_img_final, #my_boost3_img_final, #my_base_img_final, #my_flav_img_final, #my_base_label_img_final, #my_flav_label_img_final, #sel_base_pic_final, #my_boost1_img_label_final, #my_boost2_img_label_final, #my_boost3_img_label_final, #my_boost4_img_final, #my_boost5_img_final, #my_boost6_img_final, #my_boost7_img_final, #my_boost8_img_final, #my_boost9_img_final {
@@ -190,8 +193,9 @@ font-size: 30px;}
 
 #the_name_sub {
     float: right;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    /*margin-top: 30px;
+   */
 }
 
 #cus_name {
@@ -216,7 +220,27 @@ font-size: 30px;}
 
 #submit_wrap {
     float: left;
-    margin-top: -220px;
-    /*margin-top: -12px;*/ /*This is for the app in the office. Just commit out the line above*/
-    width: 1000px;
+    margin-top: -140px;
+    width: 1300px;
+}
+
+#total_wrap {
+    position: absolute;
+    margin-top: 500px;
+}
+
+#final_placement {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: auto;
+    float: left;
+}
+
+#final_div {
+    background-color: rgba(0,0,0,.6);
+    font-size: 18px;
+    font-weight: 500;
+    width: auto;
+    color: #fff;
+    padding-left: 2px;
 }

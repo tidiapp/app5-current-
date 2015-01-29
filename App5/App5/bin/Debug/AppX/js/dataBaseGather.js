@@ -758,6 +758,9 @@
                             }
                             roamingSettings.values["totalOrderNumber"] = 0;
                             roamingSettings.values["totalOrderNumber1"] = 0;
+
+                            remove.pop_list(age_data.model.order_final_read);
+
                             WinJS.Navigation.navigate('pages/thankyou/thankyou.html');
 
                         }, function error(err) {
@@ -833,6 +836,20 @@
             },
             userOrderDone: function () {
                
+            },
+
+            userOrderFinalRead: function () {
+                //milo: cleared remove.pop_list(age_data.model.order_final_read); in final page when leaving
+                var Age = thinkitdrinkitDataClient.getTable("Nutrigenetic");
+
+                var query = Age.where({
+                }).read().done(function (results) {
+                    for (var i = 0; i < results.length; i++) {
+                        age_data.model.order_final_read.push({ b_name: results[i].BaseName, b_price: results[i].BasePrice, f_name: results[i].FlavName, f_price: results[i].FlavPrice, bo_name: results[i].BoostName, bo_price: results[i].BoostPrice })
+                    }
+                }, function (err) {
+                    console.log(err);
+                });
             }
         })
     })()

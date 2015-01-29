@@ -67,6 +67,8 @@
             continue_order_save: new WinJS.Binding.List([
             ]),
             order_final_call: new WinJS.Binding.List([
+            ]),
+            order_final_read: new WinJS.Binding.List([
             ])
         })
     })

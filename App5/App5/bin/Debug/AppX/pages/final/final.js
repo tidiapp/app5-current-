@@ -10,6 +10,8 @@
         // This function is called whenever a user navigates to this page. It
         // populates the page elements with the app's data.
         ready: function (element, options) {
+            WinJS.Binding.processAll(element, age_data.model);
+
             // TODO: Initialize the page here.
             //roamingSettings.values["went_back"] = true;
             design.getFinal();
@@ -25,22 +27,82 @@
             //        Image: "https://thinkitdrinkit.blob.core.windows.net/thinkitdrinkitappimagesboost/purpose2/optimsmcurrent.png"
             //    })
             //}
-            if (roamingSettings.values["Boost1_name"] == "" || roamingSettings.values["Boost1_name"] === !undefined)
-            { roamingSettings.values["Boost1_price"] = 0 
+
+            if (roamingSettings.values["Boost1_name"] == "" || roamingSettings.values["Boost1_name"] === !undefined) {
+                roamingSettings.values["Boost1_price"] = 0
             } else {
-                document.getElementById("boost_price1").textContent = roamingSettings.values["Boost1_price"];
-                document.getElementById("final_entire").removeAttribute("hidden");
-            }
-                if (roamingSettings.values["Boost2_name"] == "" || roamingSettings.values["Boost2_name"] === !undefined) { roamingSettings.values["Boost2_price"] = 0 };
-                if (roamingSettings.values["Boost3_name"] == "" || roamingSettings.values["Boost3_name"] === !undefined) { roamingSettings.values["Boost3_price"] = 0 };
-                if (roamingSettings.values["Boost4_name"] == "" || roamingSettings.values["Boost4_name"] === !undefined) { roamingSettings.values["Boost4_price"] = 0 };
-                if (roamingSettings.values["Boost5_name"] == "" || roamingSettings.values["Boost5_name"] === !undefined) { roamingSettings.values["Boost5_price"] = 0 };
-                if (roamingSettings.values["Boost6_name"] == "" || roamingSettings.values["Boost6_name"] === !undefined) { roamingSettings.values["Boost6_price"] = 0 };
-                if (roamingSettings.values["Boost7_name"] == "" || roamingSettings.values["Boost7_name"] === !undefined) { roamingSettings.values["Boost7_price"] = 0 };
-                if (roamingSettings.values["Boost8_name"] == "" || roamingSettings.values["Boost8_name"] === !undefined) { roamingSettings.values["Boost8_price"] = 0 };
-                if (roamingSettings.values["Nutrigenetics_name"] == "" || roamingSettings.values["Nutrigenetics_name"] === !undefined) { roamingSettings.values["Nutrigenetics_price"] = 0 };
-                if (roamingSettings.values["Base_name"] == "" || roamingSettings.values["Base_name"] === !undefined) { roamingSettings.values["Base_price"] = 0 };
-                if (roamingSettings.values["FlavSel_name"] == "" || roamingSettings.values["FlavSel_name"] === !undefined) { roamingSettings.values["FlavSel_price"] = 0 };
+                document.getElementById("boost_price1").textContent = "$" + roamingSettings.values["Boost1_price"];
+                document.getElementById("my_boost1_name").textContent = roamingSettings.values["Boost1_name"];
+            };
+
+            if (roamingSettings.values["Boost2_name"] == "" || roamingSettings.values["Boost2_name"] === !undefined) {
+                roamingSettings.values["Boost2_price"] = 0
+            } else {
+                document.getElementById("boost_price2").textContent = "$" + roamingSettings.values["Boost2_price"];
+                document.getElementById("my_boost2_name").textContent = roamingSettings.values["Boost2_name"];
+            };
+
+            if (roamingSettings.values["Boost3_name"] == "" || roamingSettings.values["Boost3_name"] === !undefined) {
+                roamingSettings.values["Boost3_price"] = 0
+            } else {
+                document.getElementById("boost_price3").textContent = "$" + roamingSettings.values["Boost3_price"];
+                document.getElementById("my_boost3_name").textContent = roamingSettings.values["Boost3_name"];
+            };
+
+            if (roamingSettings.values["Boost4_name"] == "" || roamingSettings.values["Boost4_name"] === !undefined) {
+                roamingSettings.values["Boost4_price"] = 0
+            } else {
+                document.getElementById("boost_price4").textContent = "$" + roamingSettings.values["Boost4_price"];
+                document.getElementById("my_boost4_name").textContent = roamingSettings.values["Boost4_name"];
+            };
+
+            if (roamingSettings.values["Boost5_name"] == "" || roamingSettings.values["Boost5_name"] === !undefined) {
+                roamingSettings.values["Boost5_price"] = 0
+            } else {
+                document.getElementById("boost_price5").textContent = "$" + roamingSettings.values["Boost5_price"];
+                document.getElementById("my_boost5_name").textContent = roamingSettings.values["Boost5_name"];
+            };
+
+            if (roamingSettings.values["Boost6_name"] == "" || roamingSettings.values["Boost6_name"] === !undefined) {
+                roamingSettings.values["Boost6_price"] = 0
+            } else {
+                document.getElementById("boost_price6").textContent = "$" + roamingSettings.values["Boost6_price"];
+                document.getElementById("my_boost6_name").textContent = roamingSettings.values["Boost6_name"];
+            };
+
+            if (roamingSettings.values["Boost7_name"] == "" || roamingSettings.values["Boost7_name"] === !undefined) {
+                roamingSettings.values["Boost7_price"] = 0
+            } else {
+                document.getElementById("boost_price7").textContent = "$" + roamingSettings.values["Boost7_price"];
+                document.getElementById("my_boost7_name").textContent = roamingSettings.values["Boost7_name"];
+            };
+
+            if (roamingSettings.values["Boost8_name"] == "" || roamingSettings.values["Boost8_name"] === !undefined) {
+                roamingSettings.values["Boost8_price"] = 0
+            } else {
+                document.getElementById("boost_price8").textContent = "$" + roamingSettings.values["Boost8_price"];
+                document.getElementById("my_boost8_name").textContent = roamingSettings.values["Boost8_name"];
+            };
+
+            if (roamingSettings.values["Nutrigenetics_name"] == "" || roamingSettings.values["Nutrigenetics_name"] === !undefined) {
+                roamingSettings.values["Nutrigenetics_price"] = 0
+//milo: figure out what goes here
+            };
+
+            if (roamingSettings.values["Base_name"] == "" || roamingSettings.values["Base_name"] === !undefined) {
+                roamingSettings.values["Base_price"] = 0
+            } else {
+                document.getElementById("base_price").textContent = "$" + roamingSettings.values["Base_price"];
+                document.getElementById("my_base_name").textContent = roamingSettings.values["Base_name"];
+            };
+
+            if (roamingSettings.values["FlavSel_name"] == "" || roamingSettings.values["FlavSel_name"] === !undefined) {
+                roamingSettings.values["FlavSel_price"] = 0
+            } else {
+                document.getElementById("my_flav_name").textContent = roamingSettings.values["FlavSel_name"];
+            };
+
+            server.userOrderFinalRead();
 
                 roamingSettings.values['Boost_total'] = (parseFloat(roamingSettings.values["Boost1_price"]) + parseFloat(roamingSettings.values["Boost2_price"]) + parseFloat(roamingSettings.values["Boost3_price"]) + parseFloat(roamingSettings.values["Boost4_price"]) + parseFloat(roamingSettings.values["Boost5_price"]) + parseFloat(roamingSettings.values["Boost6_price"]) + parseFloat(roamingSettings.values["Boost7_price"]) + parseFloat(roamingSettings.values["Boost8_price"]));
 
@@ -52,6 +114,9 @@
             document.getElementById("product_total").textContent = "$" + roamingSettings.values["the_complete_total"];
             document.getElementById("tax").textContent = "$" + Math.ceil((roamingSettings.values["the_complete_total"] * .0636) * 100) / 100;
             document.getElementById("total").textContent = "$" + Math.ceil(((roamingSettings.values["the_complete_total"] * .0636) + roamingSettings.values["the_complete_total"]) * 100) / 100;
+
+
+
         },
 
         unload: function () {
@@ -66,7 +131,7 @@
             } else if (!roamingSettings.values["not_cont"]) {
 
             }
-
+            remove.pop_list(age_data.model.order_final_read);
         },
 
         updateLayout: function (element) {
