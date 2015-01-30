@@ -25,7 +25,7 @@
             <div id="total_wrap">
                 <div id="the_name">
                     <div id="the_name_total1">
-                        Your Total: <span class="print" id="product_total"></span>
+                        Your Total: <span id="product_total"></span>
                     </div>
                     <div id="the_name_total2">Your Tax: <span id="tax"></span></div>
                     <div id="the_name_total3">Your Grand Total: <span id="total"></span></div>
@@ -35,8 +35,6 @@
                         <ul>
                             <li><label for="Cname">Add your name to track the order.</label></li>
                             <li><input class="input" type="text" name="Cname" id="Cname" /></li>
-                            <!--<li><label for="Lname"></label></li>
-                    <li><input class="input" type="text" name="Lname" id="Lname" /></li>-->
                         </ul>
                     </form>
                     <div id="the_name_sub"><button id="sub_button" class="sel_look_btn" onclick="FinalClick.clicked()" type="submit">SUBMIT</button></div>
@@ -44,118 +42,119 @@
                 </div>
             </div>
 
-
-
-
-
             <div id="final_entire">
-
-
-
-
-
-
                 <div id="section1">
-                    <div class="print" id="my_base">
-                        <h2 class="print" id="my_base_name"></h2>
-                        <h2 id="base_price"></h2>
-                        <!--<img class="print" src="#" id="my_base_img_final" width="75" height="65" />
-                <img class="print" src="#" id="sel_base_pic_final" />-->
+                    <div id="my_base">
+                        <span>CURRENT ORDER</span>
+                        <img src="#" id="my_base_img_final" width="75" height="65" />
+                        <div class="final_surround">
+                            <span>BASE</span><br />
+                            <span id="my_base_name"></span>
+                            <span id="base_price"></span>
+                        </div>                       
                     </div>
-                    <div class="print" id="my_flav">
-                        <h2 class="print" id="my_flav_name"></h2>
-                        <h2>$0</h2>
-                        <!--<img class="print" src="#" id="my_flav_img_final" width="75" height="65" />
-                <img class="print" src="#" id="my_flav_label_img_final" />-->
-                    </div>
-                    <ul id="your_boost">
-                        <li>
-                            <div class="print" id="my_boost1">
-                                <h2 class="print" id="my_boost1_name"></h2>
-                                <h2 id="boost_price1"></h2>
-                                <!--<img class="print" src="#" id="my_boost1_img_final" width="75" height="65" />
-                <img class="print" src="#" id="my_boost1_img_label_final" />-->
-                            </div>
-                        </li>
-                        <li>
-                            <div class="print" id="my_boost2">
-                                <h2 class="print" id="my_boost2_name"></h2>
-                                <h2 id="boost_price2"></h2>
-                                <!--<img class="print" src="#" id="my_boost2_img_final" width="75" height="65" />
-                <img class="print" src="#" id="my_boost2_img_label_final" />-->
-                            </div>
-                        </li>
-                        <li>
-                            <div class="print" id="my_boost3">
-                                <h2 class="print" id="my_boost3_name"></h2>
-                                <h2 id="boost_price3"></h2>
-                                <!--<img class="print" src="#" id="my_boost3_img_final" width="75" height="65" />
-                <img class="print" src="#" id="my_boost3_img_label_final" />-->
-                            </div>
-                        </li>
-                        <li>
-                            <div class="print" id="my_boost4">
-                                <h2 class="print" id="my_boost4_name"></h2>
-                                <h2 id="boost_price4"></h2>
-                                <!--<img class="print" src="#" id="my_boost4_img_final" width="75" height="65" />
-                <img class="print" src="#" id="my_boost4_img_label_final" />-->
-                            </div>
-                        </li>
-                        <li>
-                            <div class="print" id="my_boost5">
-                                <h2 class="print" id="my_boost5_name"></h2>
-                                <h2 id="boost_price5"></h2>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="print" id="my_boost6">
-                                <h2 class="print" id="my_boost6_name"></h2>
-                                <h2 id="boost_price6"></h2>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="print" id="my_boost7">
-                                <h2 class="print" id="my_boost7_name"></h2>
-                                <h2 id="boost_price7"></h2>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="print" id="my_boost8">
-                                <h2 class="print" id="my_boost8_name"></h2>
-                                <h2 id="boost_price8"></h2>
-                            </div>
-                        </li>
-
-                    </ul>
-
+                    <div id="my_flav">
+                        <div class="final_surround">
+                            <span>FLAVOR</span><br />
+                            <span id="my_flav_name"></span>
+                            <span>$0</span>
+                        </div>
+                        </div>
+                        <div id="final_surround_div" class="final_surround">
+                            <span>BOOSTS</span><br />
+                                <div id="my_boost1">
+                                    <span id="my_boost1_name"></span>
+                                    <span id="boost_price1"></span>
+                                </div>
+                                <div id="my_boost2">
+                                    <span id="my_boost2_name"></span>
+                                    <span id="boost_price2"></span>
+                                </div>
+                                <div id="my_boost3">
+                                    <span id="my_boost3_name"></span>
+                                    <span id="boost_price3"></span>
+                                </div>
+                                <div id="my_boost4">
+                                    <span id="my_boost4_name"></span>
+                                    <span id="boost_price4"></span>
+                                </div>
+                                <div id="my_boost5">
+                                    <span id="my_boost5_name"></span>
+                                    <span id="boost_price5"></span>
+                                </div>
+                                <div id="my_boost6">
+                                    <span id="my_boost6_name"></span>
+                                    <span id="boost_price6"></span>
+                                </div>
+                                <div id="my_boost7">
+                                    <span id="my_boost7_name"></span>
+                                    <span id="boost_price7"></span>
+                                </div>
+                                <div id="my_boost8">
+                                    <span id="my_boost8_name"></span>
+                                    <span id="boost_price8"></span>
+                                </div>
+                        </div>
                 </div>
                 <!--<div id="scrollable">
                     <div id="scrollable_boost">
 
 
-
                     </div>
                 </div>-->
 
-
-
+                <!--milo: all coming from db of 2nd order and up -->
                 <div class="final_class" data-win-control="WinJS.Binding.Template">
-                    <div>
-                        <div id="final_div">
-                            <h2 id="base_name2" data-win-bind="textContent: b_name"></h2>
-                            <h2 id="base_price2" data-win-bind="textContent: b_price"></h2>
+                    <span>CART ORDER</span>
+                    <div id="final_wrap">
+                            <img id="base_img2" src="#" width="75" height="65" data-win-bind="src: b_img" />
+                        <div id="final_div" class="final_surround">
+                            <span>BASE</span><br />
+                            <span id="base_name2" data-win-bind="textContent: b_name"></span>
+                            <span id="base_price2" data-win-bind="textContent: b_price"></span>
                         </div>
-                        <div>
-                            <h2 id="flav_name2" data-win-bind="textContent: f_name"></h2>
-                            <h2 id="flav_price2" data-win-bind="textContent: f_price"></h2>
+                        <div class="final_surround">
+                            <span>FLAVOR</span><br />
+                            <span id="flav_name2" data-win-bind="textContent: f_name"></span>
+                            <span id="flav_price2" data-win-bind="textContent: f_price"></span>
                         </div>
-                        <div>
-                            <h2 id="boost_name2" data-win-bind="textContent: bo_name"></h2>
-                            <h2 id="boost_price2" data-win-bind="textContent: bo_price"></h2>
+                        <div class="final_surround">
+                            <span>BOOSTS</span><br />
+                            <div>
+                                <span id="boost_name1" data-win-bind="textContent: bo_name"></span>
+                                <span id="boost_price1" data-win-bind="textContent: bo_price"></span>
+                            </div>
+                            <div>
+                                <span id="boost_name2" data-win-bind="textContent: bo2_name"></span>
+                                <span id="boost_price2" data-win-bind="textContent: bo2_price"></span>
+                            </div>
+                            <div>
+                                <span id="boost_name3" data-win-bind="textContent: bo3_name"></span>
+                                <span id="boost_price3" data-win-bind="textContent: bo3_price"></span>
+                            </div>
+                            <div>
+                                <span id="boost_name4" data-win-bind="textContent: bo4_name"></span>
+                                <span id="boost_price4" data-win-bind="textContent: bo4_price"></span>
+                            </div>
+                            <div>
+                                <span id="boost_name5" data-win-bind="textContent: bo5_name"></span>
+                                <span id="boost_price5" data-win-bind="textContent: bo5_price"></span>
+                            </div>
+                            <div>
+                                <span id="boost_name6" data-win-bind="textContent: bo6_name"></span>
+                                <span id="boost_price6" data-win-bind="textContent: bo6_price"></span>
+                            </div>
+                            <div>
+                                <span id="boost_name7" data-win-bind="textContent: bo7_name"></span>
+                                <span id="boost_price7" data-win-bind="textContent: bo7_price"></span>
+                            </div>
+                            <div>
+                                <span id="boost_name8" data-win-bind="textContent: bo8_name"></span>
+                                <span id="boost_price8" data-win-bind="textContent: bo8_price"></span>
+                            </div>
                         </div>
-
-
                     </div>
+                    <button id="remove_final">x</button>
                 </div>
                 <div id="final_placement" data-win-control="WinJS.UI.ListView" data-win-bind="winControl.itemDataSource: order_final_read.dataSource" data-win-options="{
                     itemTemplate: select ('.final_class'),
@@ -164,20 +163,7 @@
 
 
 
-
-
-
-
-
-
-
-
             </div>
-
-
-
-
-
 
 
 

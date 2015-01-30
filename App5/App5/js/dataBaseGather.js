@@ -839,13 +839,13 @@
             },
 
             userOrderFinalRead: function () {
-                //milo: cleared remove.pop_list(age_data.model.order_final_read); in final page when leaving
+                //milo: remove.pop_list(age_data.model.order_final_read); HAPPENS in final page when leaving.
                 var Age = thinkitdrinkitDataClient.getTable("Nutrigenetic");
 
                 var query = Age.where({
                 }).read().done(function (results) {
                     for (var i = 0; i < results.length; i++) {
-                        age_data.model.order_final_read.push({ b_name: results[i].BaseName, b_price: results[i].BasePrice, f_name: results[i].FlavName, f_price: results[i].FlavPrice, bo_name: results[i].BoostName, bo_price: results[i].BoostPrice })
+                        age_data.model.order_final_read.push({ b_name: results[i].BaseName, b_img: results[i].BaseImages, b_price: results[i].BasePrice, f_name: results[i].FlavName, f_price: results[i].FlavPrice, bo_name: results[i].BoostName, bo_price: results[i].BoostPrice, bo2_name: results[i].Boost2Name, bo2_price: results[i].Boost2Price, bo3_name: results[i].Boost3Name, bo3_price: results[i].Boost3Price, bo4_name: results[i].Boost4Name, bo4_price: results[i].Boost4Price, bo5_name: results[i].Boost5Name, bo5_price: results[i].Boost5Price, bo6_name: results[i].Boost6Name, bo6_price: results[i].Boost6Price, bo7_name: results[i].Boost7Name, bo7_price: results[i].Boost7Price, bo8_name: results[i].Boost8Name, bo8_price: results[i].Boost8Price })
                     }
                 }, function (err) {
                     console.log(err);

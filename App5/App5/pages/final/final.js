@@ -33,6 +33,7 @@
             } else {
                 document.getElementById("boost_price1").textContent = "$" + roamingSettings.values["Boost1_price"];
                 document.getElementById("my_boost1_name").textContent = roamingSettings.values["Boost1_name"];
+                document.getElementById("my_base_img_final").src = roamingSettings.values["Base_pic"];
             };
 
             if (roamingSettings.values["Boost2_name"] == "" || roamingSettings.values["Boost2_name"] === !undefined) {
@@ -285,7 +286,8 @@
                     roamingSettings.values["Nutrigenetics_vend"] = "none";
                     roamingSettings.values["Nutrigenetics_pic"] = "none";
                 };
-                server.VendPrep();
+
+server.VendPrep();
                 roamingSettings.values.remove["Base_name"]
                 roamingSettings.values.remove["Base_pic"]
                 roamingSettings.values.remove["Base_price"]

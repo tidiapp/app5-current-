@@ -182,25 +182,41 @@
                     }),
                 }).then(function sucess(res) {
                     //milo: below allows the real GET which is the count to come back to app. Notes accessing json>>> http://www.mkyong.com/javascript/how-to-access-json-object-in-javascript/
-                    var vendCount = JSON.parse(res.responseText).product.inventory[0].count;
-                    console.log("Flavor Count from VEND ", vendCount);
-                    if (vendCount >= 1.00000) {
-                        WinJS.Navigation.navigate('pages/final/final.html')
-                    } else if (vendCount <= 0.00000) {
+
+
+                    var vendIdIssue = JSON.parse(res.responseText).product;
+                    if (vendIdIssue == undefined) {//Vend product missing entirly even though there might be a id in azures db
                         document.getElementById("out_of_stock2").removeAttribute("hidden");
-                        document.getElementById("out_of_stock2").textContent = "OUT OF STOCK, PLEASE PICK ANOTHER FLAVOR";
+                        document.getElementById("out_of_stock2").textContent = "VEND product does not exist in VENDS website";
                         document.getElementById("out_of_stock2").style.color = "red";
                         document.getElementById("out_of_stock2").style.fontSize = "20px";
                         document.getElementById("out_of_stock2").style.marginTop = "120px";
                         document.getElementById("out_of_stock2").style.marginLeft = "290px";
                         document.getElementById("out_of_stock2").style.position = "Absolute";
+                    } else {
+
+
+
+                        var vendCount = JSON.parse(res.responseText).product.inventory[0].count;
+                        console.log("Flavor Count from VEND ", vendCount);
+                        if (vendCount >= 1.00000) {
+                            WinJS.Navigation.navigate('pages/final/final.html')
+                        } else if (vendCount <= 0.00000) {
+                            document.getElementById("out_of_stock2").removeAttribute("hidden");
+                            document.getElementById("out_of_stock2").textContent = "OUT OF STOCK, PLEASE PICK ANOTHER FLAVOR";
+                            document.getElementById("out_of_stock2").style.color = "red";
+                            document.getElementById("out_of_stock2").style.fontSize = "20px";
+                            document.getElementById("out_of_stock2").style.marginTop = "120px";
+                            document.getElementById("out_of_stock2").style.marginLeft = "290px";
+                            document.getElementById("out_of_stock2").style.position = "Absolute";
+                        }
                     }
                 }, function error(err) {
                     console.log("fail", err.responseText)
                 });
             } else if (vendId == "null" || vendId == undefined || vendId == "") {
                 document.getElementById("out_of_stock2").removeAttribute("hidden");
-                document.getElementById("out_of_stock2").textContent = "ID Missing in DB or Vend product does not exist.";
+                document.getElementById("out_of_stock2").textContent = "ID Missing in Azure DB.";
                 document.getElementById("out_of_stock2").style.color = "red";
                 document.getElementById("out_of_stock2").style.fontSize = "20px";
                 document.getElementById("out_of_stock2").style.marginTop = "120px";
