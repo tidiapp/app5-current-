@@ -116,8 +116,6 @@
             document.getElementById("tax").textContent = "$" + Math.ceil((roamingSettings.values["the_complete_total"] * .0636) * 100) / 100;
             document.getElementById("total").textContent = "$" + Math.ceil(((roamingSettings.values["the_complete_total"] * .0636) + roamingSettings.values["the_complete_total"]) * 100) / 100;
 
-
-
         },
 
         unload: function () {
@@ -473,7 +471,7 @@
                 roamingSettings.values["Nutrigenetics_vend"] = "none";
                 roamingSettings.values["Nutrigenetics_pic"] = "none";
             };
-            console.log("I'm here 2!");
+            //console.log("I'm here 2!");
             server.contSave()
             if (roamingSettings.values["Boost2_price"] > 0 && roamingSettings.values["Boost3_price"] <= 0) {boostCheck();}
             else if (roamingSettings.values["Boost3_price"] > 0 && roamingSettings.values["Boost4_price"] <= 0) {boostCheck(); }
@@ -483,12 +481,24 @@
             else if (roamingSettings.values["Boost7_price"] > 0 && roamingSettings.values["Boost8_price"] <= 0) {boostCheck(); }
             else if (roamingSettings.values["Boost8_price"] > 0) {boostCheck(); }
             else { boostCheck() }
+            //roamingSettings.values["totalOrderNumber"]++;
             function boostCheck() {
                 roamingSettings.values["not_cont"] = false;
                 console.log(roamingSettings.values["Base_vend"] + ' ' + roamingSettings.values["Boost1_vend"]);
                 roamingSettings.values["went_back"] = true;
                 WinJS.Navigation.navigate('pages/launch_page/launch_page.html');
             }
+        },
+
+        howManyBoosts: function () {
+            if (age_data.model.order_final_read.length === 1) {
+                document.getElementById("boost1_div_hide").removeAttribute("hidden");
+            } else if (age_data.model.order_final_read.length === 2) {
+
+            } else if (age_data.model.order_final_read.length === 0) {
+
+            }
         }
+
     })
 })();
