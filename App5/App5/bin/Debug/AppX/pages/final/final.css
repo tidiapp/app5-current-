@@ -268,9 +268,9 @@ font-size: 30px;}
     margin-bottom: 10px;
 }
 #final_surround_div {
-    height: auto;
-    background-color: orange;    
+    background-color: orange;
     float: left;
+    width: 100%;
 }
 #remove_final {
     width: 20px;

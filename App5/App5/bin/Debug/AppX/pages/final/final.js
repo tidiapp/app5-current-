@@ -28,6 +28,7 @@
             //    })
             //}
 
+//milo: all these if's are for current order and giving the price a 0 which later is used to figure out some logic
             if (roamingSettings.values["Boost1_name"] == "" || roamingSettings.values["Boost1_name"] === !undefined) {
                 roamingSettings.values["Boost1_price"] = 0
             } else {
@@ -103,7 +104,7 @@
                 document.getElementById("my_flav_name").textContent = roamingSettings.values["FlavSel_name"];
             };
 
-            server.userOrderFinalRead();
+server.userOrderFinalRead();
 
                 roamingSettings.values['Boost_total'] = (parseFloat(roamingSettings.values["Boost1_price"]) + parseFloat(roamingSettings.values["Boost2_price"]) + parseFloat(roamingSettings.values["Boost3_price"]) + parseFloat(roamingSettings.values["Boost4_price"]) + parseFloat(roamingSettings.values["Boost5_price"]) + parseFloat(roamingSettings.values["Boost6_price"]) + parseFloat(roamingSettings.values["Boost7_price"]) + parseFloat(roamingSettings.values["Boost8_price"]));
 
