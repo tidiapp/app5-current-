@@ -155,10 +155,10 @@
                 tool.alert("", "Please add your name, thanks");
             } else {
                 if (roamingSettings.values["Boost2_price"] > 0 && roamingSettings.values["Boost3_price"] <= 0) {
-                    roamingSettings.values["Boost3_name"] = 0;
-                    roamingSettings.values["Boost3_pic"] = 0;
+                    roamingSettings.values["Boost3_name"] = "none";
+                    roamingSettings.values["Boost3_pic"] = "none";
                     roamingSettings.values["Boost3_price"] = 0;
-                    roamingSettings.values["Boost3_vend"] = 0;
+                    roamingSettings.values["Boost3_vend"] = "none";
                     roamingSettings.values["Boost4_name"] = "none";
                     roamingSettings.values["Boost4_pic"] = "none";
                     roamingSettings.values["Boost4_price"] = 0;
@@ -251,14 +251,14 @@
                     roamingSettings.values["Boost8_vend"] = "none";
                 }
                 else {
-                    roamingSettings.values["Boost2_name"] = 0;
-                    roamingSettings.values["Boost2_pic"] = 0;
+                    roamingSettings.values["Boost2_name"] = "none";
+                    roamingSettings.values["Boost2_pic"] = "none";
                     roamingSettings.values["Boost2_price"] = 0;
-                    roamingSettings.values["Boost2_vend"] = 0;
-                    roamingSettings.values["Boost3_name"] = 0;
-                    roamingSettings.values["Boost3_pic"] = 0;
+                    roamingSettings.values["Boost2_vend"] ="none";
+                    roamingSettings.values["Boost3_name"] = "none";
+                    roamingSettings.values["Boost3_pic"] = "none";
                     roamingSettings.values["Boost3_price"] = 0;
-                    roamingSettings.values["Boost3_vend"] = 0;
+                    roamingSettings.values["Boost3_vend"] = "none";
                     roamingSettings.values["Boost4_name"] = "none";
                     roamingSettings.values["Boost4_pic"] = "none";
                     roamingSettings.values["Boost4_price"] = 0;
@@ -287,7 +287,7 @@
                     roamingSettings.values["Nutrigenetics_pic"] = "none";
                 };
 
-server.VendPrep();
+                server.VendPrep();
                 roamingSettings.values.remove["Base_name"]
                 roamingSettings.values.remove["Base_pic"]
                 roamingSettings.values.remove["Base_price"]
@@ -340,7 +340,7 @@ server.VendPrep();
 
         the_continue: function () {
             //2 boosts      
-            console.log("This is not the one I'm looking for: :( ")
+            
             if (roamingSettings.values["Boost2_price"] > 0 && roamingSettings.values["Boost3_price"] <= 0) {
                 roamingSettings.values["Boost3_name"] = 0;
                 roamingSettings.values["Boost3_pic"] = 0;
@@ -473,6 +473,7 @@ server.VendPrep();
                 roamingSettings.values["Nutrigenetics_vend"] = "none";
                 roamingSettings.values["Nutrigenetics_pic"] = "none";
             };
+            console.log("I'm here 2!");
             server.contSave()
             if (roamingSettings.values["Boost2_price"] > 0 && roamingSettings.values["Boost3_price"] <= 0) {boostCheck();}
             else if (roamingSettings.values["Boost3_price"] > 0 && roamingSettings.values["Boost4_price"] <= 0) {boostCheck(); }
@@ -482,7 +483,6 @@ server.VendPrep();
             else if (roamingSettings.values["Boost7_price"] > 0 && roamingSettings.values["Boost8_price"] <= 0) {boostCheck(); }
             else if (roamingSettings.values["Boost8_price"] > 0) {boostCheck(); }
             else { boostCheck() }
-            roamingSettings.values["totalOrderNumber"]++;
             function boostCheck() {
                 roamingSettings.values["not_cont"] = false;
                 console.log(roamingSettings.values["Base_vend"] + ' ' + roamingSettings.values["Boost1_vend"]);

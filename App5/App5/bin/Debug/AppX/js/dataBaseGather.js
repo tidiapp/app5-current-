@@ -540,7 +540,7 @@
                 }
             },
             finalPageCall: function () {
-                var finalCall = thinkitdrinkitDataClient.getTable("Nutrigenetic");
+                var finalCall = thinkitdrinkitDataClient.getTable("ShopCart");
                 var roamingSettings = appData.roamingSettings;
                 var query = finalCall.where({
                     CNum: 1
@@ -558,9 +558,9 @@
                 });
             },
             VendPrep: function () {
-                var finalCall = thinkitdrinkitDataClient.getTable("Nutrigenetic");
+                var finalCall = thinkitdrinkitDataClient.getTable("ShopCart");
                 var roamingSettings = appData.roamingSettings;
-                var Age = thinkitdrinkitDataClient.getTable("Nutrigenetic");
+                var Age = thinkitdrinkitDataClient.getTable("ShopCart");
                 Age.insert({
                     CNum: roamingSettings.values["computerNumber"],
                     BaseName: roamingSettings.values["Base_name"],
@@ -739,7 +739,7 @@
                             remove.pop_list(age_data.model.order_final_call);
                            
                             roamingSettings.values["theComplete"] = document.getElementById("total").textContent;
-                            var Agee = thinkitdrinkitDataClient.getTable("Nutrigenetic");
+                            var Agee = thinkitdrinkitDataClient.getTable("ShopCart");
                             var k = 1;
                             console.log("This is the lenght of what i'm looking for: " + roamingSettings.values["totalOrderNumber"]);
                             while (roamingSettings.values["totalOrderNumber"]+2 > k)
@@ -778,7 +778,8 @@
                 roamingSettings.values["computerNumber"] = 1;
                 roamingSettings.values["totalOrderNumber"]++;
                 roamingSettings.values["totalOrderNumber1"]++;
-                var Age = thinkitdrinkitDataClient.getTable("Nutrigenetic");
+                var Age = thinkitdrinkitDataClient.getTable("ShopCart");
+                console.log("I'm here 1!")
                 Age.insert({
                     CNum: roamingSettings.values["computerNumber"],
                     BaseName:roamingSettings.values["Base_name"],
@@ -840,7 +841,7 @@
 
             userOrderFinalRead: function () {
                 //milo: remove.pop_list(age_data.model.order_final_read); HAPPENS in final page when leaving.
-                var Age = thinkitdrinkitDataClient.getTable("Nutrigenetic");
+                var Age = thinkitdrinkitDataClient.getTable("ShopCart");
 
                 var query = Age.where({
                 }).read().done(function (results) {
