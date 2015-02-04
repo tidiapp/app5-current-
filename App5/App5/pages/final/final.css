@@ -111,7 +111,7 @@ input {
     margin-top: 2px;
     position: absolute;
     font-size: 35px;
-    width: 1560px;
+    width: 760px;
     height: 80px;
 }
 
@@ -236,10 +236,45 @@ font-size: 30px;}
     margin-left: 10px;*/
     width: auto;
     float: left;
-    width: 1430px;
+    width: 210px;
     height: 435px;
 }
 
+#final_placement2 {
+    /*margin-top: 10px;
+    margin-left: 10px;*/
+    width: auto;
+    float: left;
+    width: 210px;
+    height: 435px;
+}
+
+#final_placement3 {
+    /*margin-top: 10px;
+    margin-left: 10px;*/
+    width: auto;
+    float: left;
+    width: 210px;
+    height: 435px;
+}
+
+#final_placement4 {
+    /*margin-top: 10px;
+    margin-left: 10px;*/
+    width: auto;
+    float: left;
+    width: 210px;
+    height: 435px;
+}
+
+#final_placement5 {
+    /*margin-top: 10px;
+    margin-left: 10px;*/
+    width: auto;
+    float: left;
+    width: 210px;
+    height: 435px;
+}
 /*#final_div {
     background-color: rgba(0,0,0,.6);
     font-size: 18px;
@@ -271,7 +306,14 @@ font-size: 30px;}
     height: auto;
     background-color: orange;    
     float: left;
+    width: 100%;
 }
 #remove_final {
     width: 20px;
+}
+#order1 {
+    float: left;
+}
+#order2 {
+    float: left;
 }

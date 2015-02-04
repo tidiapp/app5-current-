@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>final</title>
+
+    <!-- WinJS references -->
+    <link rel="stylesheet" href="print.css" type="text/css" media="print" />
+    <link href="//Microsoft.WinJS.2.0/css/ui-light.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+    <link href="final.css" rel="stylesheet" />
+    <script src="final.js"></script>
+</head>
+<body>
+    <div class="final fragment">
+        <header id="final_header" aria-label="Header content" role="banner">
+            <button data-win-control="WinJS.UI.BackButton"></button>
+            <h1 class="titlearea win-type-ellipsis">Please Review Your 15 day supply and Hit Submit.</h1>
+        </header>
+        <section aria-label="Main content" role="main">
+
+
+
+            <div id="total_wrap">
+                <div id="the_name">
+                    <div id="the_name_total1">
+                        Your Total: <span id="product_total"></span>
+                    </div>
+                    <div id="the_name_total2">Your Tax: <span id="tax"></span></div>
+                    <div id="the_name_total3">Your Grand Total: <span id="total"></span></div>
+                </div>
+                <div id="submit_wrap">
+                    <form id="cus_name" method="post">
+                        <ul>
+                            <li><label for="Cname">Add your name to track the order.</label></li>
+                            <li><input class="input" type="text" name="Cname" id="Cname" /></li>
+                        </ul>
+                    </form>
+                    <div id="the_name_sub"><button id="sub_button" class="sel_look_btn" onclick="FinalClick.clicked()" type="submit">SUBMIT</button></div>
+                    <div id="the_name_con"><button id="con_button" class="sel_look_btn" onclick="FinalClick.the_continue()" type="submit">Cont. Shopping</button></div>
+                </div>
+            </div>
+
+            <div id="final_entire">
+                <div id="section1">
+                    <div id="my_base">
+                        <span>CURRENT ORDER</span>
+                        <img src="#" id="my_base_img_final" width="90" />
+                        <div class="final_surround">
+                            <span>BASE</span><br />
+                            <span id="my_base_name"></span>
+                            <span id="base_price"></span>
+                        </div>                       
+                    </div>
+                    <div id="my_flav">
+                        <div class="final_surround">
+                            <span>FLAVOR</span><br />
+                            <span id="my_flav_name"></span>
+                            <span>$0</span>
+                        </div>
+                        </div>
+                        <div id="final_surround_div" class="final_surround">
+                            <span>BOOSTS</span><br />
+                                <div id="my_boost1">
+                                    <span id="my_boost1_name"></span>
+                                    <span id="boost_price1"></span>
+                                </div>
+                                <div id="my_boost2">
+                                    <span id="my_boost2_name"></span>
+                                    <span id="boost_price2"></span>
+                                </div>
+                                <div id="my_boost3">
+                                    <span id="my_boost3_name"></span>
+                                    <span id="boost_price3"></span>
+                                </div>
+                                <div id="my_boost4">
+                                    <span id="my_boost4_name"></span>
+                                    <span id="boost_price4"></span>
+                                </div>
+                                <div id="my_boost5">
+                                    <span id="my_boost5_name"></span>
+                                    <span id="boost_price5"></span>
+                                </div>
+                                <div id="my_boost6">
+                                    <span id="my_boost6_name"></span>
+                                    <span id="boost_price6"></span>
+                                </div>
+                                <div id="my_boost7">
+                                    <span id="my_boost7_name"></span>
+                                    <span id="boost_price7"></span>
+                                </div>
+                                <div id="my_boost8">
+                                    <span id="my_boost8_name"></span>
+                                    <span id="boost_price8"></span>
+                                </div>
+                        </div>
+                </div>
+                <!--<div id="scrollable">
+                    <div id="scrollable_boost">
+
+
+                    </div>
+                </div>-->
+
+                <!--milo: all coming from db of 2nd order and up -->
+                <div class="final_class" data-win-control="WinJS.Binding.Template">
+                    <span>CART ORDER</span>
+                    <div id="final_wrap">
+                            <img id="base_img2" src="#" width="90" data-win-bind="src: b_img" />
+                        <div id="final_div" class="final_surround">
+                            <span>BASE</span><br />
+                            <span id="base_name2" data-win-bind="textContent: b_name"></span>
+                            <span id="base_price2" data-win-bind="textContent: b_price"></span>
+                        </div>
+                        <div class="final_surround">
+                            <span>FLAVOR</span><br />
+                            <span id="flav_name2" data-win-bind="textContent: f_name"></span>
+                            <span id="flav_price2" data-win-bind="textContent: f_price"></span>
+                        </div>
+                        <div class="final_surround">
+                            <span>BOOSTS</span><br />
+                            <div id="boost1_div_hide" hidden="">
+                                <span id="boost_name1" data-win-bind="textContent: bo_name"></span>
+                                <span id="boost_price1" data-win-bind="textContent: bo_price"></span>
+                            </div>
+                            <div id="boost2_div_hide" hidden="">
+                                <span id="boost_name2" data-win-bind="textContent: bo2_name"></span>
+                                <span id="boost_price2" data-win-bind="textContent: bo2_price"></span>
+                            </div>
+                            <div id="boost3_div_hide" hidden="">
+                                <span id="boost_name3" data-win-bind="textContent: bo3_name"></span>
+                                <span id="boost_price3" data-win-bind="textContent: bo3_price"></span>
+                            </div>
+                            <div id="boost4_div_hide" hidden="">
+                                <span id="boost_name4" data-win-bind="textContent: bo4_name"></span>
+                                <span id="boost_price4" data-win-bind="textContent: bo4_price"></span>
+                            </div>
+                            <div id="boost5_div_hide" hidden="">
+                                <span id="boost_name5" data-win-bind="textContent: bo5_name"></span>
+                                <span id="boost_price5" data-win-bind="textContent: bo5_price"></span>
+                            </div>
+                            <div id="boost6_div_hide" hidden="">
+                                <span id="boost_name6" data-win-bind="textContent: bo6_name"></span>
+                                <span id="boost_price6" data-win-bind="textContent: bo6_price"></span>
+                            </div>
+                            <div id="boost7_div_hide" hidden="">
+                                <span id="boost_name7" data-win-bind="textContent: bo7_name"></span>
+                                <span id="boost_price7" data-win-bind="textContent: bo7_price"></span>
+                            </div>
+                            <div id="boost8_div_hide" hidden="" >
+                                <span id="boost_name8" data-win-bind="textContent: bo8_name"></span>
+                                <span id="boost_price8" data-win-bind="textContent: bo8_price"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="remove_final">x</button>
+                </div>
+                <div id="final_placement" data-win-control="WinJS.UI.ListView" data-win-bind="winControl.itemDataSource: order_final_read.dataSource" data-win-options="{
+                    itemTemplate: select ('.final_class'),
+                    selectionMode: 'none'
+                }"></div>
+
+
+
+            </div>
+
+
+
+<!--milo: data bind the saved stuff here --> 
+
+
+
+        </section>
+        <footer id="main_footer">
+
+
+            <!--<h1 id="footer_company_name"></h1>--><!-- this is being styled in the default.js folder -->
+        </footer>
+    </div>
+</body>
+</html>

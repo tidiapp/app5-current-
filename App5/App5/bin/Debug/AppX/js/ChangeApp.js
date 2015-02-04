@@ -113,6 +113,9 @@
         getFinal: function () {
             document.getElementById("main_footer").style.backgroundColor = i;
             document.getElementById("appBar").style.backgroundColor = i;
+            document.getElementById("con_button").style.backgroundColor = i;
+            document.getElementById("sub_button").style.backgroundColor = i;
+            
             //document.getElementById("my_flav_img_final").style.borderColor = i;
             //document.getElementById("my_base_img_final").style.borderColor = i;
             //document.getElementById("my_boost3_img_final").style.borderColor = i;
