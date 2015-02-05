@@ -131,6 +131,17 @@
 
             }
             remove.pop_list(age_data.model.order_final_read);
+            remove.pop_list(age_data.model.order_final_read2);
+            remove.pop_list(age_data.model.order_final_read3);
+            remove.pop_list(age_data.model.order_final_read4);
+            remove.pop_list(age_data.model.order_final_read5);
+            remove.pop_list(age_data.model.order_final_read6);
+            remove.pop_list(age_data.model.order_final_read7);
+            remove.pop_list(age_data.model.order_final_read8);
+            remove.pop_list(age_data.model.order_final_read9);
+            remove.pop_list(age_data.model.order_final_read10);
+
+
         },
 
         updateLayout: function (element) {
@@ -337,160 +348,169 @@
         },
 
         the_continue: function () {
-            //2 boosts      
-            
-            if (roamingSettings.values["Boost2_price"] > 0 && roamingSettings.values["Boost3_price"] <= 0) {
-                roamingSettings.values["Boost3_name"] = 0;
-                roamingSettings.values["Boost3_pic"] = 0;
-                roamingSettings.values["Boost3_price"] = 0;
-                roamingSettings.values["Boost3_vend"] = 0;
-                roamingSettings.values["Boost4_name"] = "none";
-                roamingSettings.values["Boost4_pic"] = "none";
-                roamingSettings.values["Boost4_price"] = 0;
-                roamingSettings.values["Boost4_vend"] = "none";
-                roamingSettings.values["Boost5_name"] = "none";
-                roamingSettings.values["Boost5_pic"] = "none";
-                roamingSettings.values["Boost5_price"] = 0;
-                roamingSettings.values["Boost5_vend"] = "none";
-                roamingSettings.values["Boost6_name"] = "none";
-                roamingSettings.values["Boost6_pic"] = "none";
-                roamingSettings.values["Boost6_price"] = 0;
-                roamingSettings.values["Boost6_vend"] = "none";
-                roamingSettings.values["Boost7_name"] = "none";
-                roamingSettings.values["Boost7_pic"] = "none";
-                roamingSettings.values["Boost7price"] = 0;
-                roamingSettings.values["Boost7_vend"] = "none";
-                roamingSettings.values["Boost8_name"] = "none";
-                roamingSettings.values["Boost8_pic"] = "none";
-                roamingSettings.values["Boost8_price"] = 0;
-                roamingSettings.values["Boost8_vend"] = "none";
+            //milo: if 8th order (7 orders plus 1 for current)
+            if (roamingSettings.values["totalOrderNumber1"] === 7) {
+                tool.alert("Close this page and hit Submit. If you would like to do more orders in the future pleas talk to the managment about expanding this ability, Thank you.", "We Currently Offer Only 8 Orders Per Customer.");
+                var el = document.getElementById("the_name_con");
+                el.parentNode.removeChild(el);
+
+            } else {
+                    if (roamingSettings.values["Boost2_price"] > 0 && roamingSettings.values["Boost3_price"] <= 0) {
+                        roamingSettings.values["Boost3_name"] = 0;
+                        roamingSettings.values["Boost3_pic"] = 0;
+                        roamingSettings.values["Boost3_price"] = 0;
+                        roamingSettings.values["Boost3_vend"] = 0;
+                        roamingSettings.values["Boost4_name"] = "none";
+                        roamingSettings.values["Boost4_pic"] = "none";
+                        roamingSettings.values["Boost4_price"] = 0;
+                        roamingSettings.values["Boost4_vend"] = "none";
+                        roamingSettings.values["Boost5_name"] = "none";
+                        roamingSettings.values["Boost5_pic"] = "none";
+                        roamingSettings.values["Boost5_price"] = 0;
+                        roamingSettings.values["Boost5_vend"] = "none";
+                        roamingSettings.values["Boost6_name"] = "none";
+                        roamingSettings.values["Boost6_pic"] = "none";
+                        roamingSettings.values["Boost6_price"] = 0;
+                        roamingSettings.values["Boost6_vend"] = "none";
+                        roamingSettings.values["Boost7_name"] = "none";
+                        roamingSettings.values["Boost7_pic"] = "none";
+                        roamingSettings.values["Boost7price"] = 0;
+                        roamingSettings.values["Boost7_vend"] = "none";
+                        roamingSettings.values["Boost8_name"] = "none";
+                        roamingSettings.values["Boost8_pic"] = "none";
+                        roamingSettings.values["Boost8_price"] = 0;
+                        roamingSettings.values["Boost8_vend"] = "none";
+                    }
+                    else if (roamingSettings.values["Boost3_price"] > 0 && roamingSettings.values["Boost4_price"] <= 0) {
+                        roamingSettings.values["Boost4_name"] = "none";
+                        roamingSettings.values["Boost4_pic"] = "none";
+                        roamingSettings.values["Boost4_price"] = 0;
+                        roamingSettings.values["Boost4_vend"] = "none";
+                        roamingSettings.values["Boost5_name"] = "none";
+                        roamingSettings.values["Boost5_pic"] = "none";
+                        roamingSettings.values["Boost5_price"] = 0;
+                        roamingSettings.values["Boost5_vend"] = "none";
+                        roamingSettings.values["Boost6_name"] = "none";
+                        roamingSettings.values["Boost6_pic"] = "none";
+                        roamingSettings.values["Boost6_price"] = 0;
+                        roamingSettings.values["Boost6_vend"] = "none";
+                        roamingSettings.values["Boost7_name"] = "none";
+                        roamingSettings.values["Boost7_pic"] = "none";
+                        roamingSettings.values["Boost7price"] = 0;
+                        roamingSettings.values["Boost7_vend"] = "none";
+                        roamingSettings.values["Boost8_name"] = "none";
+                        roamingSettings.values["Boost8_pic"] = "none";
+                        roamingSettings.values["Boost8_price"] = 0;
+                        roamingSettings.values["Boost8_vend"] = "none";
+                    }
+                    else if (roamingSettings.values["Boost4_price"] > 0 && roamingSettings.values["Boost5_price"] <= 0) {
+                        roamingSettings.values["Boost5_name"] = "none";
+                        roamingSettings.values["Boost5_pic"] = "none";
+                        roamingSettings.values["Boost5_price"] = 0;
+                        roamingSettings.values["Boost5_vend"] = "none";
+                        roamingSettings.values["Boost6_name"] = "none";
+                        roamingSettings.values["Boost6_pic"] = "none";
+                        roamingSettings.values["Boost6_price"] = 0;
+                        roamingSettings.values["Boost6_vend"] = "none";
+                        roamingSettings.values["Boost7_name"] = "none";
+                        roamingSettings.values["Boost7_pic"] = "none";
+                        roamingSettings.values["Boost7price"] = 0;
+                        roamingSettings.values["Boost7_vend"] = "none";
+                        roamingSettings.values["Boost8_name"] = "none";
+                        roamingSettings.values["Boost8_pic"] = "none";
+                        roamingSettings.values["Boost8_price"] = 0;
+                        roamingSettings.values["Boost8_vend"] = "none";
+                    }
+                    else if (roamingSettings.values["Boost5_price"] > 0 && roamingSettings.values["Boost6_price"] <= 0) {
+                        roamingSettings.values["Boost6_name"] = "none";
+                        roamingSettings.values["Boost6_pic"] = "none";
+                        roamingSettings.values["Boost6_price"] = 0;
+                        roamingSettings.values["Boost6_vend"] = "none";
+                        roamingSettings.values["Boost7_name"] = "none";
+                        roamingSettings.values["Boost7_pic"] = "none";
+                        roamingSettings.values["Boost7price"] = 0;
+                        roamingSettings.values["Boost7_vend"] = "none";
+                        roamingSettings.values["Boost8_name"] = "none";
+                        roamingSettings.values["Boost8_pic"] = "none";
+                        roamingSettings.values["Boost8_price"] = 0;
+                        roamingSettings.values["Boost8_vend"] = "none";
+                    }
+                    else if (roamingSettings.values["Boost6_price"] > 0 && roamingSettings.values["Boost7_price"] <= 0) {
+                        roamingSettings.values["Boost7_name"] = "none";
+                        roamingSettings.values["Boost7_pic"] = "none";
+                        roamingSettings.values["Boost7price"] = 0;
+                        roamingSettings.values["Boost7_vend"] = "none";
+                        roamingSettings.values["Boost8_name"] = "none";
+                        roamingSettings.values["Boost8_pic"] = "none";
+                        roamingSettings.values["Boost8_price"] = 0;
+                        roamingSettings.values["Boost8_vend"] = "none";
+                    }
+                    else if (roamingSettings.values["Boost7_price"] > 0 && roamingSettings.values["Boost8_price"] <= 0) {
+                        roamingSettings.values["Boost8_name"] = "none";
+                        roamingSettings.values["Boost8_pic"] = "none";
+                        roamingSettings.values["Boost8_price"] = 0;
+                        roamingSettings.values["Boost8_vend"] = "none";
+                    }
+                    else if (roamingSettings.values["Boost8_price"] > 0) {
+                        //milo:allows all to be shown
+                    }
+                    else {
+                        roamingSettings.values["Boost2_name"] = 0;
+                        roamingSettings.values["Boost2_pic"] = 0;
+                        roamingSettings.values["Boost2_price"] = 0;
+                        roamingSettings.values["Boost2_vend"] = 0;
+                        roamingSettings.values["Boost3_name"] = 0;
+                        roamingSettings.values["Boost3_pic"] = 0;
+                        roamingSettings.values["Boost3_price"] = 0;
+                        roamingSettings.values["Boost3_vend"] = 0;
+                        roamingSettings.values["Boost4_name"] = "none";
+                        roamingSettings.values["Boost4_pic"] = "none";
+                        roamingSettings.values["Boost4_price"] = 0;
+                        roamingSettings.values["Boost4_vend"] = "none";
+                        roamingSettings.values["Boost5_name"] = "none";
+                        roamingSettings.values["Boost5_pic"] = "none";
+                        roamingSettings.values["Boost5_price"] = 0;
+                        roamingSettings.values["Boost5_vend"] = "none";
+                        roamingSettings.values["Boost6_name"] = "none";
+                        roamingSettings.values["Boost6_pic"] = "none";
+                        roamingSettings.values["Boost6_price"] = 0;
+                        roamingSettings.values["Boost6_vend"] = "none";
+                        roamingSettings.values["Boost7_name"] = "none";
+                        roamingSettings.values["Boost7_pic"] = "none";
+                        roamingSettings.values["Boost7price"] = 0;
+                        roamingSettings.values["Boost7_vend"] = "none";
+                        roamingSettings.values["Boost8_name"] = "none";
+                        roamingSettings.values["Boost8_pic"] = "none";
+                        roamingSettings.values["Boost8_price"] = 0;
+                        roamingSettings.values["Boost8_vend"] = "none";
+                    }
+                    if (roamingSettings.values["Nutrigenetics_price"] <= 0 || roamingSettings.values["Nutrigenetics_price"] == "") {
+                        roamingSettings.values["Nutrigenetics_name"] = "none";
+                        roamingSettings.values["Nutrigenetics_price"] = 0;
+                        roamingSettings.values["Nutrigenetics_vend"] = "none";
+                        roamingSettings.values["Nutrigenetics_pic"] = "none";
+                    };
+                    //console.log("I'm here 2!");
+                    server.contSave()
+
+
+                        if (roamingSettings.values["Boost2_price"] > 0 && roamingSettings.values["Boost3_price"] <= 0) {boostCheck();}
+                            else if (roamingSettings.values["Boost3_price"] > 0 && roamingSettings.values["Boost4_price"] <= 0) {boostCheck(); }
+                            else if (roamingSettings.values["Boost4_price"] > 0 && roamingSettings.values["Boost5_price"] <= 0) {boostCheck(); }
+                            else if (roamingSettings.values["Boost5_price"] > 0 && roamingSettings.values["Boost6_price"] <= 0) {boostCheck(); }
+                            else if (roamingSettings.values["Boost6_price"] > 0 && roamingSettings.values["Boost7_price"] <= 0) {boostCheck(); }
+                            else if (roamingSettings.values["Boost7_price"] > 0 && roamingSettings.values["Boost8_price"] <= 0) {boostCheck(); }
+                            else if (roamingSettings.values["Boost8_price"] > 0) {boostCheck(); }
+                            else { boostCheck() }
+                                roamingSettings.values["totalOrderNumber"]++;
+                        function boostCheck() {
+                            roamingSettings.values["not_cont"] = false;
+                            console.log(roamingSettings.values["Base_vend"] + ' ' + roamingSettings.values["Boost1_vend"]);
+                            roamingSettings.values["went_back"] = true;
+                            WinJS.Navigation.navigate('pages/launch_page/launch_page.html');
+                        }
             }
-            else if (roamingSettings.values["Boost3_price"] > 0 && roamingSettings.values["Boost4_price"] <= 0) {
-                roamingSettings.values["Boost4_name"] = "none";
-                roamingSettings.values["Boost4_pic"] = "none";
-                roamingSettings.values["Boost4_price"] = 0;
-                roamingSettings.values["Boost4_vend"] = "none";
-                roamingSettings.values["Boost5_name"] = "none";
-                roamingSettings.values["Boost5_pic"] = "none";
-                roamingSettings.values["Boost5_price"] = 0;
-                roamingSettings.values["Boost5_vend"] = "none";
-                roamingSettings.values["Boost6_name"] = "none";
-                roamingSettings.values["Boost6_pic"] = "none";
-                roamingSettings.values["Boost6_price"] = 0;
-                roamingSettings.values["Boost6_vend"] = "none";
-                roamingSettings.values["Boost7_name"] = "none";
-                roamingSettings.values["Boost7_pic"] = "none";
-                roamingSettings.values["Boost7price"] = 0;
-                roamingSettings.values["Boost7_vend"] = "none";
-                roamingSettings.values["Boost8_name"] = "none";
-                roamingSettings.values["Boost8_pic"] = "none";
-                roamingSettings.values["Boost8_price"] = 0;
-                roamingSettings.values["Boost8_vend"] = "none";
-            }
-            else if (roamingSettings.values["Boost4_price"] > 0 && roamingSettings.values["Boost5_price"] <= 0) {
-                roamingSettings.values["Boost5_name"] = "none";
-                roamingSettings.values["Boost5_pic"] = "none";
-                roamingSettings.values["Boost5_price"] = 0;
-                roamingSettings.values["Boost5_vend"] = "none";
-                roamingSettings.values["Boost6_name"] = "none";
-                roamingSettings.values["Boost6_pic"] = "none";
-                roamingSettings.values["Boost6_price"] = 0;
-                roamingSettings.values["Boost6_vend"] = "none";
-                roamingSettings.values["Boost7_name"] = "none";
-                roamingSettings.values["Boost7_pic"] = "none";
-                roamingSettings.values["Boost7price"] = 0;
-                roamingSettings.values["Boost7_vend"] = "none";
-                roamingSettings.values["Boost8_name"] = "none";
-                roamingSettings.values["Boost8_pic"] = "none";
-                roamingSettings.values["Boost8_price"] = 0;
-                roamingSettings.values["Boost8_vend"] = "none";
-            }
-            else if (roamingSettings.values["Boost5_price"] > 0 && roamingSettings.values["Boost6_price"] <= 0) {
-                roamingSettings.values["Boost6_name"] = "none";
-                roamingSettings.values["Boost6_pic"] = "none";
-                roamingSettings.values["Boost6_price"] = 0;
-                roamingSettings.values["Boost6_vend"] = "none";
-                roamingSettings.values["Boost7_name"] = "none";
-                roamingSettings.values["Boost7_pic"] = "none";
-                roamingSettings.values["Boost7price"] = 0;
-                roamingSettings.values["Boost7_vend"] = "none";
-                roamingSettings.values["Boost8_name"] = "none";
-                roamingSettings.values["Boost8_pic"] = "none";
-                roamingSettings.values["Boost8_price"] = 0;
-                roamingSettings.values["Boost8_vend"] = "none";
-            }
-            else if (roamingSettings.values["Boost6_price"] > 0 && roamingSettings.values["Boost7_price"] <= 0) {
-                roamingSettings.values["Boost7_name"] = "none";
-                roamingSettings.values["Boost7_pic"] = "none";
-                roamingSettings.values["Boost7price"] = 0;
-                roamingSettings.values["Boost7_vend"] = "none";
-                roamingSettings.values["Boost8_name"] = "none";
-                roamingSettings.values["Boost8_pic"] = "none";
-                roamingSettings.values["Boost8_price"] = 0;
-                roamingSettings.values["Boost8_vend"] = "none";
-            }
-            else if (roamingSettings.values["Boost7_price"] > 0 && roamingSettings.values["Boost8_price"] <= 0) {
-                roamingSettings.values["Boost8_name"] = "none";
-                roamingSettings.values["Boost8_pic"] = "none";
-                roamingSettings.values["Boost8_price"] = 0;
-                roamingSettings.values["Boost8_vend"] = "none";
-            }
-            else if (roamingSettings.values["Boost8_price"] > 0) {
-                //milo:allows all to be shown
-            }
-            else {
-                roamingSettings.values["Boost2_name"] = 0;
-                roamingSettings.values["Boost2_pic"] = 0;
-                roamingSettings.values["Boost2_price"] = 0;
-                roamingSettings.values["Boost2_vend"] = 0;
-                roamingSettings.values["Boost3_name"] = 0;
-                roamingSettings.values["Boost3_pic"] = 0;
-                roamingSettings.values["Boost3_price"] = 0;
-                roamingSettings.values["Boost3_vend"] = 0;
-                roamingSettings.values["Boost4_name"] = "none";
-                roamingSettings.values["Boost4_pic"] = "none";
-                roamingSettings.values["Boost4_price"] = 0;
-                roamingSettings.values["Boost4_vend"] = "none";
-                roamingSettings.values["Boost5_name"] = "none";
-                roamingSettings.values["Boost5_pic"] = "none";
-                roamingSettings.values["Boost5_price"] = 0;
-                roamingSettings.values["Boost5_vend"] = "none";
-                roamingSettings.values["Boost6_name"] = "none";
-                roamingSettings.values["Boost6_pic"] = "none";
-                roamingSettings.values["Boost6_price"] = 0;
-                roamingSettings.values["Boost6_vend"] = "none";
-                roamingSettings.values["Boost7_name"] = "none";
-                roamingSettings.values["Boost7_pic"] = "none";
-                roamingSettings.values["Boost7price"] = 0;
-                roamingSettings.values["Boost7_vend"] = "none";
-                roamingSettings.values["Boost8_name"] = "none";
-                roamingSettings.values["Boost8_pic"] = "none";
-                roamingSettings.values["Boost8_price"] = 0;
-                roamingSettings.values["Boost8_vend"] = "none";
-            }
-            if (roamingSettings.values["Nutrigenetics_price"] <= 0 || roamingSettings.values["Nutrigenetics_price"] == "") {
-                roamingSettings.values["Nutrigenetics_name"] = "none";
-                roamingSettings.values["Nutrigenetics_price"] = 0;
-                roamingSettings.values["Nutrigenetics_vend"] = "none";
-                roamingSettings.values["Nutrigenetics_pic"] = "none";
-            };
-            //console.log("I'm here 2!");
-            server.contSave()
-            if (roamingSettings.values["Boost2_price"] > 0 && roamingSettings.values["Boost3_price"] <= 0) {boostCheck();}
-            else if (roamingSettings.values["Boost3_price"] > 0 && roamingSettings.values["Boost4_price"] <= 0) {boostCheck(); }
-            else if (roamingSettings.values["Boost4_price"] > 0 && roamingSettings.values["Boost5_price"] <= 0) {boostCheck(); }
-            else if (roamingSettings.values["Boost5_price"] > 0 && roamingSettings.values["Boost6_price"] <= 0) {boostCheck(); }
-            else if (roamingSettings.values["Boost6_price"] > 0 && roamingSettings.values["Boost7_price"] <= 0) {boostCheck(); }
-            else if (roamingSettings.values["Boost7_price"] > 0 && roamingSettings.values["Boost8_price"] <= 0) {boostCheck(); }
-            else if (roamingSettings.values["Boost8_price"] > 0) {boostCheck(); }
-            else { boostCheck() }
-            roamingSettings.values["totalOrderNumber"]++;
-            function boostCheck() {
-                roamingSettings.values["not_cont"] = false;
-                console.log(roamingSettings.values["Base_vend"] + ' ' + roamingSettings.values["Boost1_vend"]);
-                roamingSettings.values["went_back"] = true;
-                WinJS.Navigation.navigate('pages/launch_page/launch_page.html');
-            }
+
         },
 
         howManyBoosts: function (results) {
@@ -634,8 +654,10 @@
                         })
                         document.getElementById("boost1_div_hide").removeAttribute("hidden");
                     }
+                }
+
 //milo 2nd order
-                } else if (results[i].OrderNum === 2) {
+                 else if (results[i].OrderNum === 2) {
                     document.getElementById("order2").removeAttribute("hidden");
                     if (results[1].Boost2Price > 0 && results[1].Boost3Price <= 0) {
                         age_data.model.order_final_read2.push(
@@ -774,8 +796,10 @@
                         })
                         document.getElementById("boost1_div_hide2").removeAttribute("hidden");
                     }
+                }
+
 //milo: 3rd order
-                } else if (results[i].OrderNum === 3) {
+                 else if (results[i].OrderNum === 3) {
                     document.getElementById("order3").removeAttribute("hidden");
                     if (results[2].Boost2Price > 0 && results[2].Boost3Price <= 0) {
                         age_data.model.order_final_read3.push(
@@ -916,59 +940,579 @@
                     }
                 }
 
+//milo: 4th order
+                 else if (results[i].OrderNum === 4) {
+                    document.getElementById("order4").removeAttribute("hidden");
+                    if (results[3].Boost2Price > 0 && results[3].Boost3Price <= 0) {
+                        age_data.model.order_final_read4.push(
+                        {
+                            b_name: results[3].BaseName, b_img: results[3].BaseImages, b_price: "$" + results[3].BasePrice,
+                            f_name: results[3].FlavName, f_price: "$" + results[3].FlavPrice,
+                            bo_name: results[3].BoostName, bo_price: "$" + results[3].BoostPrice,
+                            bo2_name: results[3].Boost2Name, bo2_price: "$" + results[3].Boost2Price,
+                            order: "ORDER " + results[3].OrderNum
+                        })
+                        document.getElementById("boost1_div_hide4").removeAttribute("hidden");
+                        document.getElementById("boost2_div_hide4").removeAttribute("hidden");
+                    }
+                    else if (results[3].Boost3Price > 0 && results[3].Boost4Price <= 0) {
+                        age_data.model.order_final_read4.push(
+                        {
+                            b_name: results[3].BaseName, b_img: results[3].BaseImages, b_price: "$" + results[3].BasePrice,
+                            f_name: results[3].FlavName, f_price: "$" + results[3].FlavPrice,
+                            bo_name: results[3].BoostName, bo_price: "$" + results[3].BoostPrice,
+                            bo2_name: results[3].Boost2Name, bo2_price: "$" + results[3].Boost2Price,
+                            bo3_name: results[3].Boost3Name, bo3_price: "$" + results[3].Boost3Price,
+                            order: "ORDER " + results[3].OrderNum
+                        })
+                        document.getElementById("boost1_div_hide4").removeAttribute("hidden");
+                        document.getElementById("boost2_div_hide4").removeAttribute("hidden");
+                        document.getElementById("boost3_div_hide4").removeAttribute("hidden");
+
+                    }
+                    else if (results[3].Boost4Price > 0 && results[3].Boost5Price <= 0) {
+                        age_data.model.order_final_read4.push(
+                        {
+                            b_name: results[3].BaseName, b_img: results[3].BaseImages, b_price: "$" + results[3].BasePrice,
+                            f_name: results[3].FlavName, f_price: "$" + results[3].FlavPrice,
+                            bo_name: results[3].BoostName, bo_price: "$" + results[3].BoostPrice,
+                            bo2_name: results[3].Boost2Name, bo2_price: "$" + results[3].Boost2Price,
+                            bo3_name: results[3].Boost3Name, bo3_price: "$" + results[3].Boost3Price,
+                            bo4_name: results[3].Boost4Name, bo4_price: "$" + results[3].Boost4Price,
+                            order: "ORDER " + results[3].OrderNum
+                        })
+                        document.getElementById("boost1_div_hide4").removeAttribute("hidden");
+                        document.getElementById("boost2_div_hide4").removeAttribute("hidden");
+                        document.getElementById("boost3_div_hide4").removeAttribute("hidden");
+                        document.getElementById("boost4_div_hide4").removeAttribute("hidden");
+                    }
+                    else if (results[3].Boost5Price > 0 && results[3].Boost6Price <= 0) {
+                        age_data.model.order_final_read4.push(
+                        {
+                            b_name: results[3].BaseName, b_img: results[3].BaseImages, b_price: "$" + results[3].BasePrice,
+                            f_name: results[3].FlavName, f_price: "$" + results[3].FlavPrice,
+                            bo_name: results[3].BoostName, bo_price: "$" + results[3].BoostPrice,
+                            bo2_name: results[3].Boost2Name, bo2_price: "$" + results[3].Boost2Price,
+                            bo3_name: results[3].Boost3Name, bo3_price: "$" + results[3].Boost3Price,
+                            bo4_name: results[3].Boost4Name, bo4_price: "$" + results[3].Boost4Price,
+                            bo5_name: results[3].Boost5Name, bo5_price: "$" + results[3].Boost5Price,
+                            order: "ORDER " + results[3].OrderNum
+                        })
+                        document.getElementById("boost1_div_hide4").removeAttribute("hidden");
+                        document.getElementById("boost2_div_hide4").removeAttribute("hidden");
+                        document.getElementById("boost3_div_hide4").removeAttribute("hidden");
+                        document.getElementById("boost4_div_hide4").removeAttribute("hidden");
+                        document.getElementById("boost5_div_hide4").removeAttribute("hidden");
+                    }
+                    else if (results[3].Boost6Price > 0 && results[3].Boost7Price <= 0) {
+                        age_data.model.order_final_read4.push(
+                        {
+                            b_name: results[3].BaseName, b_img: results[3].BaseImages, b_price: "$" + results[3].BasePrice,
+                            f_name: results[3].FlavName, f_price: "$" + results[3].FlavPrice,
+                            bo_name: results[3].BoostName, bo_price: "$" + results[3].BoostPrice,
+                            bo2_name: results[3].Boost2Name, bo2_price: "$" + results[3].Boost2Price,
+                            bo3_name: results[3].Boost3Name, bo3_price: "$" + results[3].Boost3Price,
+                            bo4_name: results[3].Boost4Name, bo4_price: "$" + results[3].Boost4Price,
+                            bo5_name: results[3].Boost5Name, bo5_price: "$" + results[3].Boost5Price,
+                            bo6_name: results[3].Boost6Name, bo6_price: "$" + results[3].Boost6Price,
+                            order: "ORDER " + results[3].OrderNum
+                        })
+                        document.getElementById("boost1_div_hide4").removeAttribute("hidden");
+                        document.getElementById("boost2_div_hide4").removeAttribute("hidden");
+                        document.getElementById("boost3_div_hide4").removeAttribute("hidden");
+                        document.getElementById("boost4_div_hide4").removeAttribute("hidden");
+                        document.getElementById("boost5_div_hide4").removeAttribute("hidden");
+                        document.getElementById("boost6_div_hide4").removeAttribute("hidden");
+                    }
+                    else if (results[3].Boost7Price > 0 && results[3].Boost8Price <= 0) {
+                        age_data.model.order_final_read4.push(
+                        {
+                            b_name: results[3].BaseName, b_img: results[3].BaseImages, b_price: "$" + results[3].BasePrice,
+                            f_name: results[3].FlavName, f_price: "$" + results[3].FlavPrice,
+                            bo_name: results[3].BoostName, bo_price: "$" + results[3].BoostPrice,
+                            bo2_name: results[3].Boost2Name, bo2_price: "$" + results[3].Boost2Price,
+                            bo3_name: results[3].Boost3Name, bo3_price: "$" + results[3].Boost3Price,
+                            bo4_name: results[3].Boost4Name, bo4_price: "$" + results[3].Boost4Price,
+                            bo5_name: results[3].Boost5Name, bo5_price: "$" + results[3].Boost5Price,
+                            bo6_name: results[3].Boost6Name, bo6_price: "$" + results[3].Boost6Price,
+                            bo7_name: results[3].Boost7Name, bo7_price: "$" + results[3].Boost7Price,
+                            order: "ORDER " + results[3].OrderNum
+                        })
+                        document.getElementById("boost1_div_hide4").removeAttribute("hidden");
+                        document.getElementById("boost2_div_hide4").removeAttribute("hidden");
+                        document.getElementById("boost3_div_hide4").removeAttribute("hidden");
+                        document.getElementById("boost4_div_hide4").removeAttribute("hidden");
+                        document.getElementById("boost5_div_hide4").removeAttribute("hidden");
+                        document.getElementById("boost6_div_hide4").removeAttribute("hidden");
+                        document.getElementById("boost7_div_hide4").removeAttribute("hidden");
+                    }
+                    else if (results[3].Boost8Price > 0) {
+                        age_data.model.order_final_read4.push(
+                        {
+                            b_name: results[3].BaseName, b_img: results[3].BaseImages, b_price: "$" + results[3].BasePrice,
+                            f_name: results[3].FlavName, f_price: "$" + results[3].FlavPrice,
+                            bo_name: results[3].BoostName, bo_price: "$" + results[3].BoostPrice,
+                            bo2_name: results[3].Boost2Name, bo2_price: "$" + results[3].Boost2Price,
+                            bo3_name: results[3].Boost3Name, bo3_price: "$" + results[3].Boost3Price,
+                            bo4_name: results[3].Boost4Name, bo4_price: "$" + results[3].Boost4Price,
+                            bo5_name: results[3].Boost5Name, bo5_price: "$" + results[3].Boost5Price,
+                            bo6_name: results[3].Boost6Name, bo6_price: "$" + results[3].Boost6Price,
+                            bo7_name: results[3].Boost7Name, bo7_price: "$" + results[3].Boost7Price,
+                            bo8_name: results[3].Boost8Name, bo8_price: "$" + results[3].Boost8Price,
+                            order: "ORDER " + results[3].OrderNum
+                        })
+                        document.getElementById("boost1_div_hide4").removeAttribute("hidden");
+                        document.getElementById("boost2_div_hide4").removeAttribute("hidden");
+                        document.getElementById("boost3_div_hide4").removeAttribute("hidden");
+                        document.getElementById("boost4_div_hide4").removeAttribute("hidden");
+                        document.getElementById("boost5_div_hide4").removeAttribute("hidden");
+                        document.getElementById("boost6_div_hide4").removeAttribute("hidden");
+                        document.getElementById("boost7_div_hide4").removeAttribute("hidden");
+                        document.getElementById("boost8_div_hide4").removeAttribute("hidden");
+                    }
+                    else {
+                        age_data.model.order_final_read4.push(
+                        {
+                            b_name: results[3].BaseName, b_img: results[3].BaseImages, b_price: "$" + results[3].BasePrice,
+                            f_name: results[3].FlavName, f_price: "$" + results[3].FlavPrice,
+                            bo_name: results[3].BoostName, bo_price: "$" + results[3].BoostPrice,
+                            order: "ORDER " + results[3].OrderNum
+                        })
+                        document.getElementById("boost1_div_hide4").removeAttribute("hidden");
+                    }
+                }
+
+//milo 5th order
+                 else if (results[i].OrderNum === 5) {
+                    document.getElementById("order5").removeAttribute("hidden");
+                    if (results[4].Boost2Price > 0 && results[4].Boost3Price <= 0) {
+                        age_data.model.order_final_read5.push(
+                        {
+                            b_name: results[4].BaseName, b_img: results[4].BaseImages, b_price: "$" + results[4].BasePrice,
+                            f_name: results[4].FlavName, f_price: "$" + results[4].FlavPrice,
+                            bo_name: results[4].BoostName, bo_price: "$" + results[4].BoostPrice,
+                            bo2_name: results[4].Boost2Name, bo2_price: "$" + results[4].Boost2Price,
+                            order: "ORDER " + results[4].OrderNum
+                        })
+                        document.getElementById("boost1_div_hide5").removeAttribute("hidden");
+                        document.getElementById("boost2_div_hide5").removeAttribute("hidden");
+                    }
+                    else if (results[4].Boost3Price > 0 && results[4].Boost4Price <= 0) {
+                        age_data.model.order_final_read5.push(
+                        {
+                            b_name: results[4].BaseName, b_img: results[4].BaseImages, b_price: "$" + results[4].BasePrice,
+                            f_name: results[4].FlavName, f_price: "$" + results[4].FlavPrice,
+                            bo_name: results[4].BoostName, bo_price: "$" + results[4].BoostPrice,
+                            bo2_name: results[4].Boost2Name, bo2_price: "$" + results[4].Boost2Price,
+                            bo3_name: results[4].Boost3Name, bo3_price: "$" + results[4].Boost3Price,
+                            order: "ORDER " + results[4].OrderNum
+                        })
+                        document.getElementById("boost1_div_hide5").removeAttribute("hidden");
+                        document.getElementById("boost2_div_hide5").removeAttribute("hidden");
+                        document.getElementById("boost3_div_hide5").removeAttribute("hidden");
+
+                    }
+                    else if (results[4].Boost4Price > 0 && results[4].Boost5Price <= 0) {
+                        age_data.model.order_final_read5.push(
+                        {
+                            b_name: results[4].BaseName, b_img: results[4].BaseImages, b_price: "$" + results[4].BasePrice,
+                            f_name: results[4].FlavName, f_price: "$" + results[4].FlavPrice,
+                            bo_name: results[4].BoostName, bo_price: "$" + results[4].BoostPrice,
+                            bo2_name: results[4].Boost2Name, bo2_price: "$" + results[4].Boost2Price,
+                            bo3_name: results[4].Boost3Name, bo3_price: "$" + results[4].Boost3Price,
+                            bo4_name: results[4].Boost4Name, bo4_price: "$" + results[4].Boost4Price,
+                            order: "ORDER " + results[4].OrderNum
+                        })
+                        document.getElementById("boost1_div_hide5").removeAttribute("hidden");
+                        document.getElementById("boost2_div_hide5").removeAttribute("hidden");
+                        document.getElementById("boost3_div_hide5").removeAttribute("hidden");
+                        document.getElementById("boost4_div_hide5").removeAttribute("hidden");
+                    }
+                    else if (results[4].Boost5Price > 0 && results[4].Boost6Price <= 0) {
+                        age_data.model.order_final_read5.push(
+                        {
+                            b_name: results[4].BaseName, b_img: results[4].BaseImages, b_price: "$" + results[4].BasePrice,
+                            f_name: results[4].FlavName, f_price: "$" + results[4].FlavPrice,
+                            bo_name: results[4].BoostName, bo_price: "$" + results[4].BoostPrice,
+                            bo2_name: results[4].Boost2Name, bo2_price: "$" + results[4].Boost2Price,
+                            bo3_name: results[4].Boost3Name, bo3_price: "$" + results[4].Boost3Price,
+                            bo4_name: results[4].Boost4Name, bo4_price: "$" + results[4].Boost4Price,
+                            bo5_name: results[4].Boost5Name, bo5_price: "$" + results[4].Boost5Price,
+                            order: "ORDER " + results[4].OrderNum
+                        })
+                        document.getElementById("boost1_div_hide5").removeAttribute("hidden");
+                        document.getElementById("boost2_div_hide5").removeAttribute("hidden");
+                        document.getElementById("boost3_div_hide5").removeAttribute("hidden");
+                        document.getElementById("boost4_div_hide5").removeAttribute("hidden");
+                        document.getElementById("boost5_div_hide5").removeAttribute("hidden");
+                    }
+                    else if (results[4].Boost6Price > 0 && results[4].Boost7Price <= 0) {
+                        age_data.model.order_final_read5.push(
+                        {
+                            b_name: results[4].BaseName, b_img: results[4].BaseImages, b_price: "$" + results[4].BasePrice,
+                            f_name: results[4].FlavName, f_price: "$" + results[4].FlavPrice,
+                            bo_name: results[4].BoostName, bo_price: "$" + results[4].BoostPrice,
+                            bo2_name: results[4].Boost2Name, bo2_price: "$" + results[4].Boost2Price,
+                            bo3_name: results[4].Boost3Name, bo3_price: "$" + results[4].Boost3Price,
+                            bo4_name: results[4].Boost4Name, bo4_price: "$" + results[4].Boost4Price,
+                            bo5_name: results[4].Boost5Name, bo5_price: "$" + results[4].Boost5Price,
+                            bo6_name: results[4].Boost6Name, bo6_price: "$" + results[4].Boost6Price,
+                            order: "ORDER " + results[4].OrderNum
+                        })
+                        document.getElementById("boost1_div_hide5").removeAttribute("hidden");
+                        document.getElementById("boost2_div_hide5").removeAttribute("hidden");
+                        document.getElementById("boost3_div_hide5").removeAttribute("hidden");
+                        document.getElementById("boost4_div_hide5").removeAttribute("hidden");
+                        document.getElementById("boost5_div_hide5").removeAttribute("hidden");
+                        document.getElementById("boost6_div_hide5").removeAttribute("hidden");
+                    }
+                    else if (results[4].Boost7Price > 0 && results[4].Boost8Price <= 0) {
+                        age_data.model.order_final_read5.push(
+                        {
+                            b_name: results[4].BaseName, b_img: results[4].BaseImages, b_price: "$" + results[4].BasePrice,
+                            f_name: results[4].FlavName, f_price: "$" + results[4].FlavPrice,
+                            bo_name: results[4].BoostName, bo_price: "$" + results[4].BoostPrice,
+                            bo2_name: results[4].Boost2Name, bo2_price: "$" + results[4].Boost2Price,
+                            bo3_name: results[4].Boost3Name, bo3_price: "$" + results[4].Boost3Price,
+                            bo4_name: results[4].Boost4Name, bo4_price: "$" + results[4].Boost4Price,
+                            bo5_name: results[4].Boost5Name, bo5_price: "$" + results[4].Boost5Price,
+                            bo6_name: results[4].Boost6Name, bo6_price: "$" + results[4].Boost6Price,
+                            bo7_name: results[4].Boost7Name, bo7_price: "$" + results[4].Boost7Price,
+                            order: "ORDER " + results[4].OrderNum
+                        })
+                        document.getElementById("boost1_div_hide5").removeAttribute("hidden");
+                        document.getElementById("boost2_div_hide5").removeAttribute("hidden");
+                        document.getElementById("boost3_div_hide5").removeAttribute("hidden");
+                        document.getElementById("boost4_div_hide5").removeAttribute("hidden");
+                        document.getElementById("boost5_div_hide5").removeAttribute("hidden");
+                        document.getElementById("boost6_div_hide5").removeAttribute("hidden");
+                        document.getElementById("boost7_div_hide5").removeAttribute("hidden");
+                    }
+                    else if (results[4].Boost8Price > 0) {
+                        age_data.model.order_final_read5.push(
+                        {
+                            b_name: results[4].BaseName, b_img: results[4].BaseImages, b_price: "$" + results[4].BasePrice,
+                            f_name: results[4].FlavName, f_price: "$" + results[4].FlavPrice,
+                            bo_name: results[4].BoostName, bo_price: "$" + results[4].BoostPrice,
+                            bo2_name: results[4].Boost2Name, bo2_price: "$" + results[4].Boost2Price,
+                            bo3_name: results[4].Boost3Name, bo3_price: "$" + results[4].Boost3Price,
+                            bo4_name: results[4].Boost4Name, bo4_price: "$" + results[4].Boost4Price,
+                            bo5_name: results[4].Boost5Name, bo5_price: "$" + results[4].Boost5Price,
+                            bo6_name: results[4].Boost6Name, bo6_price: "$" + results[4].Boost6Price,
+                            bo7_name: results[4].Boost7Name, bo7_price: "$" + results[4].Boost7Price,
+                            bo8_name: results[4].Boost8Name, bo8_price: "$" + results[4].Boost8Price,
+                            order: "ORDER " + results[4].OrderNum
+                        })
+                        document.getElementById("boost1_div_hide5").removeAttribute("hidden");
+                        document.getElementById("boost2_div_hide5").removeAttribute("hidden");
+                        document.getElementById("boost3_div_hide5").removeAttribute("hidden");
+                        document.getElementById("boost4_div_hide5").removeAttribute("hidden");
+                        document.getElementById("boost5_div_hide5").removeAttribute("hidden");
+                        document.getElementById("boost6_div_hide5").removeAttribute("hidden");
+                        document.getElementById("boost7_div_hide5").removeAttribute("hidden");
+                        document.getElementById("boost8_div_hide5").removeAttribute("hidden");
+                    }
+                    else {
+                        age_data.model.order_final_read5.push(
+                        {
+                            b_name: results[4].BaseName, b_img: results[4].BaseImages, b_price: "$" + results[4].BasePrice,
+                            f_name: results[4].FlavName, f_price: "$" + results[4].FlavPrice,
+                            bo_name: results[4].BoostName, bo_price: "$" + results[4].BoostPrice,
+                            order: "ORDER " + results[4].OrderNum
+                        })
+                        document.getElementById("boost1_div_hide5").removeAttribute("hidden");
+                    }
+                }
+
+//milo: 6th order
+                else if (results[i].OrderNum === 6) {
+                        document.getElementById("order6").removeAttribute("hidden");
+                        if (results[5].Boost2Price > 0 && results[5].Boost3Price <= 0) {
+                        age_data.model.order_final_read6.push(
+                        {
+                            b_name: results[5].BaseName, b_img: results[5].BaseImages, b_price: "$" + results[5].BasePrice,
+                            f_name: results[5].FlavName, f_price: "$" + results[5].FlavPrice,
+                            bo_name: results[5].BoostName, bo_price: "$" + results[5].BoostPrice,
+                            bo2_name: results[5].Boost2Name, bo2_price: "$" + results[5].Boost2Price,
+                            order: "ORDER " + results[5].OrderNum
+                        })
+                        document.getElementById("boost1_div_hide6").removeAttribute("hidden");
+                        document.getElementById("boost2_div_hide6").removeAttribute("hidden");
+                    }
+                    else if (results[5].Boost3Price > 0 && results[5].Boost4Price <= 0) {
+                        age_data.model.order_final_read6.push(
+                        {
+                            b_name: results[5].BaseName, b_img: results[5].BaseImages, b_price: "$" + results[5].BasePrice,
+                            f_name: results[5].FlavName, f_price: "$" + results[5].FlavPrice,
+                            bo_name: results[5].BoostName, bo_price: "$" + results[5].BoostPrice,
+                            bo2_name: results[5].Boost2Name, bo2_price: "$" + results[5].Boost2Price,
+                            bo3_name: results[5].Boost3Name, bo3_price: "$" + results[5].Boost3Price,
+                            order: "ORDER " + results[5].OrderNum
+                        })
+                        document.getElementById("boost1_div_hide6").removeAttribute("hidden");
+                        document.getElementById("boost2_div_hide6").removeAttribute("hidden");
+                        document.getElementById("boost3_div_hide6").removeAttribute("hidden");
+
+                    }
+                    else if (results[5].Boost4Price > 0 && results[5].Boost5Price <= 0) {
+                        age_data.model.order_final_read6.push(
+                        {
+                            b_name: results[5].BaseName, b_img: results[5].BaseImages, b_price: "$" + results[5].BasePrice,
+                            f_name: results[5].FlavName, f_price: "$" + results[5].FlavPrice,
+                            bo_name: results[5].BoostName, bo_price: "$" + results[5].BoostPrice,
+                            bo2_name: results[5].Boost2Name, bo2_price: "$" + results[5].Boost2Price,
+                            bo3_name: results[5].Boost3Name, bo3_price: "$" + results[5].Boost3Price,
+                            bo4_name: results[5].Boost4Name, bo4_price: "$" + results[5].Boost4Price,
+                            order: "ORDER " + results[5].OrderNum
+                        })
+                        document.getElementById("boost1_div_hide6").removeAttribute("hidden");
+                        document.getElementById("boost2_div_hide6").removeAttribute("hidden");
+                        document.getElementById("boost3_div_hide6").removeAttribute("hidden");
+                        document.getElementById("boost4_div_hide6").removeAttribute("hidden");
+                    }
+                    else if (results[5].Boost5Price > 0 && results[5].Boost6Price <= 0) {
+                        age_data.model.order_final_read6.push(
+                        {
+                            b_name: results[5].BaseName, b_img: results[5].BaseImages, b_price: "$" + results[5].BasePrice,
+                            f_name: results[5].FlavName, f_price: "$" + results[5].FlavPrice,
+                            bo_name: results[5].BoostName, bo_price: "$" + results[5].BoostPrice,
+                            bo2_name: results[5].Boost2Name, bo2_price: "$" + results[5].Boost2Price,
+                            bo3_name: results[5].Boost3Name, bo3_price: "$" + results[5].Boost3Price,
+                            bo4_name: results[5].Boost4Name, bo4_price: "$" + results[5].Boost4Price,
+                            bo5_name: results[5].Boost5Name, bo5_price: "$" + results[5].Boost5Price,
+                            order: "ORDER " + results[5].OrderNum
+                        })
+                        document.getElementById("boost1_div_hide6").removeAttribute("hidden");
+                        document.getElementById("boost2_div_hide6").removeAttribute("hidden");
+                        document.getElementById("boost3_div_hide6").removeAttribute("hidden");
+                        document.getElementById("boost4_div_hide6").removeAttribute("hidden");
+                        document.getElementById("boost5_div_hide6").removeAttribute("hidden");
+                    }
+                    else if (results[5].Boost6Price > 0 && results[5].Boost7Price <= 0) {
+                        age_data.model.order_final_read6.push(
+                        {
+                            b_name: results[5].BaseName, b_img: results[5].BaseImages, b_price: "$" + results[5].BasePrice,
+                            f_name: results[5].FlavName, f_price: "$" + results[5].FlavPrice,
+                            bo_name: results[5].BoostName, bo_price: "$" + results[5].BoostPrice,
+                            bo2_name: results[5].Boost2Name, bo2_price: "$" + results[5].Boost2Price,
+                            bo3_name: results[5].Boost3Name, bo3_price: "$" + results[5].Boost3Price,
+                            bo4_name: results[5].Boost4Name, bo4_price: "$" + results[5].Boost4Price,
+                            bo5_name: results[5].Boost5Name, bo5_price: "$" + results[5].Boost5Price,
+                            bo6_name: results[5].Boost6Name, bo6_price: "$" + results[5].Boost6Price,
+                            order: "ORDER " + results[5].OrderNum
+                        })
+                        document.getElementById("boost1_div_hide6").removeAttribute("hidden");
+                        document.getElementById("boost2_div_hide6").removeAttribute("hidden");
+                        document.getElementById("boost3_div_hide6").removeAttribute("hidden");
+                        document.getElementById("boost4_div_hide6").removeAttribute("hidden");
+                        document.getElementById("boost5_div_hide6").removeAttribute("hidden");
+                        document.getElementById("boost6_div_hide6").removeAttribute("hidden");
+                    }
+                    else if (results[5].Boost7Price > 0 && results[5].Boost8Price <= 0) {
+                        age_data.model.order_final_read6.push(
+                        {
+                            b_name: results[5].BaseName, b_img: results[5].BaseImages, b_price: "$" + results[5].BasePrice,
+                            f_name: results[5].FlavName, f_price: "$" + results[5].FlavPrice,
+                            bo_name: results[5].BoostName, bo_price: "$" + results[5].BoostPrice,
+                            bo2_name: results[5].Boost2Name, bo2_price: "$" + results[5].Boost2Price,
+                            bo3_name: results[5].Boost3Name, bo3_price: "$" + results[5].Boost3Price,
+                            bo4_name: results[5].Boost4Name, bo4_price: "$" + results[5].Boost4Price,
+                            bo5_name: results[5].Boost5Name, bo5_price: "$" + results[5].Boost5Price,
+                            bo6_name: results[5].Boost6Name, bo6_price: "$" + results[5].Boost6Price,
+                            bo7_name: results[5].Boost7Name, bo7_price: "$" + results[5].Boost7Price,
+                            order: "ORDER " + results[5].OrderNum
+                        })
+                        document.getElementById("boost1_div_hide6").removeAttribute("hidden");
+                        document.getElementById("boost2_div_hide6").removeAttribute("hidden");
+                        document.getElementById("boost3_div_hide6").removeAttribute("hidden");
+                        document.getElementById("boost4_div_hide6").removeAttribute("hidden");
+                        document.getElementById("boost5_div_hide6").removeAttribute("hidden");
+                        document.getElementById("boost6_div_hide6").removeAttribute("hidden");
+                        document.getElementById("boost7_div_hide6").removeAttribute("hidden");
+                    }
+                    else if (results[5].Boost8Price > 0) {
+                        age_data.model.order_final_read6.push(
+                        {
+                            b_name: results[5].BaseName, b_img: results[5].BaseImages, b_price: "$" + results[5].BasePrice,
+                            f_name: results[5].FlavName, f_price: "$" + results[5].FlavPrice,
+                            bo_name: results[5].BoostName, bo_price: "$" + results[5].BoostPrice,
+                            bo2_name: results[5].Boost2Name, bo2_price: "$" + results[5].Boost2Price,
+                            bo3_name: results[5].Boost3Name, bo3_price: "$" + results[5].Boost3Price,
+                            bo4_name: results[5].Boost4Name, bo4_price: "$" + results[5].Boost4Price,
+                            bo5_name: results[5].Boost5Name, bo5_price: "$" + results[5].Boost5Price,
+                            bo6_name: results[5].Boost6Name, bo6_price: "$" + results[5].Boost6Price,
+                            bo7_name: results[5].Boost7Name, bo7_price: "$" + results[5].Boost7Price,
+                            bo8_name: results[5].Boost8Name, bo8_price: "$" + results[5].Boost8Price,
+                            order: "ORDER " + results[5].OrderNum
+                        })
+                        document.getElementById("boost1_div_hide6").removeAttribute("hidden");
+                        document.getElementById("boost2_div_hide6").removeAttribute("hidden");
+                        document.getElementById("boost3_div_hide6").removeAttribute("hidden");
+                        document.getElementById("boost4_div_hide6").removeAttribute("hidden");
+                        document.getElementById("boost5_div_hide6").removeAttribute("hidden");
+                        document.getElementById("boost6_div_hide6").removeAttribute("hidden");
+                        document.getElementById("boost7_div_hide6").removeAttribute("hidden");
+                        document.getElementById("boost8_div_hide6").removeAttribute("hidden");
+                    }
+                    else {
+                        age_data.model.order_final_read6.push(
+                        {
+                            b_name: results[5].BaseName, b_img: results[5].BaseImages, b_price: "$" + results[5].BasePrice,
+                            f_name: results[5].FlavName, f_price: "$" + results[5].FlavPrice,
+                            bo_name: results[5].BoostName, bo_price: "$" + results[5].BoostPrice,
+                            order: "ORDER " + results[5].OrderNum
+                        })
+                        document.getElementById("boost1_div_hide6").removeAttribute("hidden");
+                    }
+                }
+
+//milo: 7th order
+                 else if (results[i].OrderNum === 7) {
+                    document.getElementById("order7").removeAttribute("hidden");
+                    if (results[6].Boost2Price > 0 && results[6].Boost3Price <= 0) {
+                        age_data.model.order_final_read7.push(
+                        {
+                            b_name: results[6].BaseName, b_img: results[6].BaseImages, b_price: "$" + results[6].BasePrice,
+                            f_name: results[6].FlavName, f_price: "$" + results[6].FlavPrice,
+                            bo_name: results[6].BoostName, bo_price: "$" + results[6].BoostPrice,
+                            bo2_name: results[6].Boost2Name, bo2_price: "$" + results[6].Boost2Price,
+                            order: "ORDER " + results[6].OrderNum
+                        })
+                        document.getElementById("boost1_div_hide7").removeAttribute("hidden");
+                        document.getElementById("boost2_div_hide7").removeAttribute("hidden");
+                    }
+                    else if (results[6].Boost3Price > 0 && results[6].Boost4Price <= 0) {
+                        age_data.model.order_final_read7.push(
+                        {
+                            b_name: results[6].BaseName, b_img: results[6].BaseImages, b_price: "$" + results[6].BasePrice,
+                            f_name: results[6].FlavName, f_price: "$" + results[6].FlavPrice,
+                            bo_name: results[6].BoostName, bo_price: "$" + results[6].BoostPrice,
+                            bo2_name: results[6].Boost2Name, bo2_price: "$" + results[6].Boost2Price,
+                            bo3_name: results[6].Boost3Name, bo3_price: "$" + results[6].Boost3Price,
+                            order: "ORDER " + results[6].OrderNum
+                        })
+                        document.getElementById("boost1_div_hide7").removeAttribute("hidden");
+                        document.getElementById("boost2_div_hide7").removeAttribute("hidden");
+                        document.getElementById("boost3_div_hide7").removeAttribute("hidden");
+
+                    }
+                    else if (results[6].Boost4Price > 0 && results[6].Boost5Price <= 0) {
+                        age_data.model.order_final_read7.push(
+                        {
+                            b_name: results[6].BaseName, b_img: results[6].BaseImages, b_price: "$" + results[6].BasePrice,
+                            f_name: results[6].FlavName, f_price: "$" + results[6].FlavPrice,
+                            bo_name: results[6].BoostName, bo_price: "$" + results[6].BoostPrice,
+                            bo2_name: results[6].Boost2Name, bo2_price: "$" + results[6].Boost2Price,
+                            bo3_name: results[6].Boost3Name, bo3_price: "$" + results[6].Boost3Price,
+                            bo4_name: results[6].Boost4Name, bo4_price: "$" + results[6].Boost4Price,
+                            order: "ORDER " + results[6].OrderNum
+                        })
+                        document.getElementById("boost1_div_hide7").removeAttribute("hidden");
+                        document.getElementById("boost2_div_hide7").removeAttribute("hidden");
+                        document.getElementById("boost3_div_hide7").removeAttribute("hidden");
+                        document.getElementById("boost4_div_hide7").removeAttribute("hidden");
+                    }
+                    else if (results[6].Boost5Price > 0 && results[6].Boost6Price <= 0) {
+                        age_data.model.order_final_read7.push(
+                        {
+                            b_name: results[6].BaseName, b_img: results[6].BaseImages, b_price: "$" + results[6].BasePrice,
+                            f_name: results[6].FlavName, f_price: "$" + results[6].FlavPrice,
+                            bo_name: results[6].BoostName, bo_price: "$" + results[6].BoostPrice,
+                            bo2_name: results[6].Boost2Name, bo2_price: "$" + results[6].Boost2Price,
+                            bo3_name: results[6].Boost3Name, bo3_price: "$" + results[6].Boost3Price,
+                            bo4_name: results[6].Boost4Name, bo4_price: "$" + results[6].Boost4Price,
+                            bo5_name: results[6].Boost5Name, bo5_price: "$" + results[6].Boost5Price,
+                            order: "ORDER " + results[6].OrderNum
+                        })
+                        document.getElementById("boost1_div_hide7").removeAttribute("hidden");
+                        document.getElementById("boost2_div_hide7").removeAttribute("hidden");
+                        document.getElementById("boost3_div_hide7").removeAttribute("hidden");
+                        document.getElementById("boost4_div_hide7").removeAttribute("hidden");
+                        document.getElementById("boost5_div_hide7").removeAttribute("hidden");
+                    }
+                    else if (results[6].Boost6Price > 0 && results[6].Boost7Price <= 0) {
+                        age_data.model.order_final_read7.push(
+                        {
+                            b_name: results[6].BaseName, b_img: results[6].BaseImages, b_price: "$" + results[6].BasePrice,
+                            f_name: results[6].FlavName, f_price: "$" + results[6].FlavPrice,
+                            bo_name: results[6].BoostName, bo_price: "$" + results[6].BoostPrice,
+                            bo2_name: results[6].Boost2Name, bo2_price: "$" + results[6].Boost2Price,
+                            bo3_name: results[6].Boost3Name, bo3_price: "$" + results[6].Boost3Price,
+                            bo4_name: results[6].Boost4Name, bo4_price: "$" + results[6].Boost4Price,
+                            bo5_name: results[6].Boost5Name, bo5_price: "$" + results[6].Boost5Price,
+                            bo6_name: results[6].Boost6Name, bo6_price: "$" + results[6].Boost6Price,
+                            order: "ORDER " + results[6].OrderNum
+                        })
+                        document.getElementById("boost1_div_hide7").removeAttribute("hidden");
+                        document.getElementById("boost2_div_hide7").removeAttribute("hidden");
+                        document.getElementById("boost3_div_hide7").removeAttribute("hidden");
+                        document.getElementById("boost4_div_hide7").removeAttribute("hidden");
+                        document.getElementById("boost5_div_hide7").removeAttribute("hidden");
+                        document.getElementById("boost6_div_hide7").removeAttribute("hidden");
+                    }
+                    else if (results[6].Boost7Price > 0 && results[6].Boost8Price <= 0) {
+                        age_data.model.order_final_read7.push(
+                        {
+                            b_name: results[6].BaseName, b_img: results[6].BaseImages, b_price: "$" + results[6].BasePrice,
+                            f_name: results[6].FlavName, f_price: "$" + results[6].FlavPrice,
+                            bo_name: results[6].BoostName, bo_price: "$" + results[6].BoostPrice,
+                            bo2_name: results[6].Boost2Name, bo2_price: "$" + results[6].Boost2Price,
+                            bo3_name: results[6].Boost3Name, bo3_price: "$" + results[6].Boost3Price,
+                            bo4_name: results[6].Boost4Name, bo4_price: "$" + results[6].Boost4Price,
+                            bo5_name: results[6].Boost5Name, bo5_price: "$" + results[6].Boost5Price,
+                            bo6_name: results[6].Boost6Name, bo6_price: "$" + results[6].Boost6Price,
+                            bo7_name: results[6].Boost7Name, bo7_price: "$" + results[6].Boost7Price,
+                            order: "ORDER " + results[6].OrderNum
+                        })
+                        document.getElementById("boost1_div_hide7").removeAttribute("hidden");
+                        document.getElementById("boost2_div_hide7").removeAttribute("hidden");
+                        document.getElementById("boost3_div_hide7").removeAttribute("hidden");
+                        document.getElementById("boost4_div_hide7").removeAttribute("hidden");
+                        document.getElementById("boost5_div_hide7").removeAttribute("hidden");
+                        document.getElementById("boost6_div_hide7").removeAttribute("hidden");
+                        document.getElementById("boost7_div_hide7").removeAttribute("hidden");
+                    }
+                    else if (results[6].Boost8Price > 0) {
+                        age_data.model.order_final_read7.push(
+                        {
+                            b_name: results[6].BaseName, b_img: results[6].BaseImages, b_price: "$" + results[6].BasePrice,
+                            f_name: results[6].FlavName, f_price: "$" + results[6].FlavPrice,
+                            bo_name: results[6].BoostName, bo_price: "$" + results[6].BoostPrice,
+                            bo2_name: results[6].Boost2Name, bo2_price: "$" + results[6].Boost2Price,
+                            bo3_name: results[6].Boost3Name, bo3_price: "$" + results[6].Boost3Price,
+                            bo4_name: results[6].Boost4Name, bo4_price: "$" + results[6].Boost4Price,
+                            bo5_name: results[6].Boost5Name, bo5_price: "$" + results[6].Boost5Price,
+                            bo6_name: results[6].Boost6Name, bo6_price: "$" + results[6].Boost6Price,
+                            bo7_name: results[6].Boost7Name, bo7_price: "$" + results[6].Boost7Price,
+                            bo8_name: results[6].Boost8Name, bo8_price: "$" + results[6].Boost8Price,
+                            order: "ORDER " + results[6].OrderNum
+                        })
+                        document.getElementById("boost1_div_hide7").removeAttribute("hidden");
+                        document.getElementById("boost2_div_hide7").removeAttribute("hidden");
+                        document.getElementById("boost3_div_hide7").removeAttribute("hidden");
+                        document.getElementById("boost4_div_hide7").removeAttribute("hidden");
+                        document.getElementById("boost5_div_hide7").removeAttribute("hidden");
+                        document.getElementById("boost6_div_hide7").removeAttribute("hidden");
+                        document.getElementById("boost7_div_hide7").removeAttribute("hidden");
+                        document.getElementById("boost8_div_hide7").removeAttribute("hidden");
+                    }
+                    else {
+                        age_data.model.order_final_read7.push(
+                        {
+                            b_name: results[6].BaseName, b_img: results[6].BaseImages, b_price: "$" + results[6].BasePrice,
+                            f_name: results[6].FlavName, f_price: "$" + results[6].FlavPrice,
+                            bo_name: results[6].BoostName, bo_price: "$" + results[6].BoostPrice,
+                            order: "ORDER " + results[6].OrderNum
+                        })
+                        document.getElementById("boost1_div_hide7").removeAttribute("hidden");
+                    }
+                 }
 
 
 
 
-            }
 
-            //if (age_data.model.order_final_read.length === 1) {
-            //    document.getElementById("boost1_div_hide").removeAttribute("hidden");
-            //    document.getElementById("boost2_div_hide").removeAttribute("hidden");
-            //} else if (age_data.model.order_final_read.length === 2) {
-            //    document.getElementById("boost1_div_hide").removeAttribute("hidden");
-            //    document.getElementById("boost2_div_hide").removeAttribute("hidden");
-            //    document.getElementById("boost3_div_hide").removeAttribute("hidden");
-            //} else if (age_data.model.order_final_read.length === 3) {
-            //    document.getElementById("boost1_div_hide").removeAttribute("hidden");
-            //    document.getElementById("boost2_div_hide").removeAttribute("hidden");
-            //    document.getElementById("boost3_div_hide").removeAttribute("hidden");
-            //    document.getElementById("boost4_div_hide").removeAttribute("hidden");
-            //} else if (age_data.model.order_final_read.length === 4) {
-            //    document.getElementById("boost1_div_hide").removeAttribute("hidden");
-            //    document.getElementById("boost2_div_hide").removeAttribute("hidden");
-            //    document.getElementById("boost3_div_hide").removeAttribute("hidden");
-            //    document.getElementById("boost4_div_hide").removeAttribute("hidden");
-            //    document.getElementById("boost5_div_hide").removeAttribute("hidden");
-            //} else if (age_data.model.order_final_read.length === 5) {
-            //    document.getElementById("boost1_div_hide").removeAttribute("hidden");
-            //    document.getElementById("boost2_div_hide").removeAttribute("hidden");
-            //    document.getElementById("boost3_div_hide").removeAttribute("hidden");
-            //    document.getElementById("boost4_div_hide").removeAttribute("hidden");
-            //    document.getElementById("boost5_div_hide").removeAttribute("hidden");
-            //    document.getElementById("boost6_div_hide").removeAttribute("hidden");
-            //} else if (age_data.model.order_final_read.length === 6) {
-            //    document.getElementById("boost1_div_hide").removeAttribute("hidden");
-            //    document.getElementById("boost2_div_hide").removeAttribute("hidden");
-            //    document.getElementById("boost3_div_hide").removeAttribute("hidden");
-            //    document.getElementById("boost4_div_hide").removeAttribute("hidden");
-            //    document.getElementById("boost5_div_hide").removeAttribute("hidden");
-            //    document.getElementById("boost6_div_hide").removeAttribute("hidden");
-            //    document.getElementById("boost7_div_hide").removeAttribute("hidden");
-            //} else if (age_data.model.order_final_read.length === 7) {
-            //    document.getElementById("boost1_div_hide").removeAttribute("hidden");
-            //    document.getElementById("boost2_div_hide").removeAttribute("hidden");
-            //    document.getElementById("boost3_div_hide").removeAttribute("hidden");
-            //    document.getElementById("boost4_div_hide").removeAttribute("hidden");
-            //    document.getElementById("boost5_div_hide").removeAttribute("hidden");
-            //    document.getElementById("boost6_div_hide").removeAttribute("hidden");
-            //    document.getElementById("boost7_div_hide").removeAttribute("hidden");
-            //    document.getElementById("boost8_div_hide").removeAttribute("hidden");
-            //} else if (age_data.model.order_final_read.length === 0) {
-            //    document.getElementById("boost1_div_hide").removeAttribute("hidden");
-            //}
-
+            }//end of for loop
         }
-
     })
 })();

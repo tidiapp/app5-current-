@@ -20,7 +20,7 @@
     <AppXManifest Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-02-04T15:49:10.500</Modified>
+      <Modified>2015-02-05T14:53:08.717</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -66,7 +66,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\final\final.css">
       <PackagePath>pages\final\final.css</PackagePath>
-      <Modified>2015-02-04T20:44:54.233</Modified>
+      <Modified>2015-02-05T22:04:09.909</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\final\print.css">
       <PackagePath>pages\final\print.css</PackagePath>
@@ -208,7 +208,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\js\dataBaseGather.js">
       <PackagePath>js\dataBaseGather.js</PackagePath>
-      <Modified>2015-02-04T18:04:18.175</Modified>
+      <Modified>2015-02-05T15:45:14.002</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\js\dataStore.js">
       <PackagePath>js\dataStore.js</PackagePath>
@@ -228,7 +228,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\js\gatherInfo.js">
       <PackagePath>js\gatherInfo.js</PackagePath>
-      <Modified>2015-02-04T20:41:26.634</Modified>
+      <Modified>2015-02-05T15:45:14.053</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\js\jquery.js">
       <PackagePath>js\jquery.js</PackagePath>
@@ -290,6 +290,10 @@
       <PackagePath>pages\boost\boost.js</PackagePath>
       <Modified>2015-01-15T16:53:05.728</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\final\final - Copy.js">
+      <PackagePath>pages\final\final - Copy.js</PackagePath>
+      <Modified>2015-02-05T14:47:54.561</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\func\func.js">
       <PackagePath>pages\func\func.js</PackagePath>
       <Modified>2015-01-15T22:34:53.245</Modified>
@@ -320,7 +324,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\final\final.js">
       <PackagePath>pages\final\final.js</PackagePath>
-      <Modified>2015-02-04T20:41:26.713</Modified>
+      <Modified>2015-02-05T18:16:31.975</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\flav_sel\flav_sel.js">
       <PackagePath>pages\flav_sel\flav_sel.js</PackagePath>
@@ -456,7 +460,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\final\final.html">
       <PackagePath>pages\final\final.html</PackagePath>
-      <Modified>2015-02-04T20:41:26.666</Modified>
+      <Modified>2015-02-05T21:52:15.149</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\flav_sel\flav_sel.html">
       <PackagePath>pages\flav_sel\flav_sel.html</PackagePath>
@@ -508,7 +512,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-02-04T15:49:09.748</Modified>
+      <Modified>2015-02-05T14:53:08.260</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -217,6 +217,9 @@
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\boost\boost.js">
       <PackagePath>pages\boost\boost.js</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\final\final - Copy.js">
+      <PackagePath>pages\final\final - Copy.js</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\func\func.js">
       <PackagePath>pages\func\func.js</PackagePath>
     </AppxPackagedFile>

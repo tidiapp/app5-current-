@@ -73,6 +73,20 @@
             order_final_read2: new WinJS.Binding.List([
             ]),
             order_final_read3: new WinJS.Binding.List([
+            ]),
+            order_final_read4: new WinJS.Binding.List([
+            ]),
+            order_final_read5: new WinJS.Binding.List([
+            ]),
+            order_final_read6: new WinJS.Binding.List([
+            ]),
+            order_final_read7: new WinJS.Binding.List([
+            ]),
+            order_final_read8: new WinJS.Binding.List([
+            ]),
+            order_final_read9: new WinJS.Binding.List([
+            ]),
+            order_final_read10: new WinJS.Binding.List([
             ])
         })
     })

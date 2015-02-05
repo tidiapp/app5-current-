@@ -133,6 +133,7 @@
     <Content Include="pages\boost\boost.html" />
     <Content Include="pages\boost\boost.js" />
     <Content Include="pages\final\final - Copy.html" />
+    <Content Include="pages\final\final - Copy.js" />
     <Content Include="pages\func\func.css" />
     <Content Include="pages\func\func.html" />
     <Content Include="pages\func\func.js" />

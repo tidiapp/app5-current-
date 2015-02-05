@@ -78,17 +78,19 @@ input {
 #final_entire {
     height: 370px;
     width: 2010px;
+    margin-left: 90px;
 }
 
 #section1 {
-    margin-right: 55px;    
-    height: 380px;
-    width: 90px;
+    margin-right: 105px;
+    /*height: 380px;
+    width: 145px;*/
     float: left;
+    margin-top: -30px;
 }
-    #section1 span {
-   font-size: 14px
-}
+        #section1 span {
+           font-size: 19px
+    }
 
 
 #scrollable {
@@ -110,7 +112,7 @@ input {
     float: left;
     margin-top: 2px;
     position: absolute;
-    font-size: 35px;
+    font-size: 32px;
     width: 760px;
     height: 80px;
 }
@@ -156,17 +158,17 @@ font-size: 30px;}
 }
 
 #my_base, #my_boost1, #my_boost2, #my_boost3, #my_boost4, #my_boost5, #my_boost6, #my_boost7, #my_boost8, #my_boost9 {
-    width: auto;
+    /*width: auto;
     float: left;
-    width: 100%;
+    width: 100%;*/
     /*margin-left: 15px;*/
 }
 
 #my_flav {
     /*position: absolute;*/
     width: auto;
-    float: left;
-    width: 100%;
+    /*float: left;
+    width: 100%;*/
     /*margin-left: 15px;*/
 }
 
@@ -232,49 +234,70 @@ font-size: 30px;}
 }
 
 #final_placement {
-    /*margin-top: 10px;
-    margin-left: 10px;*/
     width: auto;
     float: left;
-    width: 210px;
     height: 435px;
+    margin-right: 20px;
 }
 
 #final_placement2 {
-    /*margin-top: 10px;
-    margin-left: 10px;*/
     width: auto;
     float: left;
-    width: 210px;
     height: 435px;
+    margin-right: 20px;
 }
 
 #final_placement3 {
-    /*margin-top: 10px;
-    margin-left: 10px;*/
     width: auto;
     float: left;
-    width: 210px;
     height: 435px;
+    margin-right: 20px;
 }
 
 #final_placement4 {
-    /*margin-top: 10px;
-    margin-left: 10px;*/
     width: auto;
     float: left;
-    width: 210px;
-    height: 435px;
+    height: 480px;
+    margin-right: 20px;
 }
 
 #final_placement5 {
-    /*margin-top: 10px;
-    margin-left: 10px;*/
     width: auto;
     float: left;
-    width: 210px;
     height: 435px;
+    margin-right: 20px;
 }
+#final_placement6 {
+    width: auto;
+    float: left;
+    height: 435px;
+    margin-right: 20px;
+}
+#final_placement7 {
+    width: auto;
+    float: left;
+    height: 435px;
+    margin-right: 20px;
+}
+#final_placement8 {
+    width: auto;
+    float: left;
+    height: 435px;
+    margin-right: 20px;
+}
+#final_placement9 {
+    width: auto;
+    float: left;
+    height: 435px;
+    margin-right: 20px;
+}
+#final_placement10 {
+    width: auto;
+    float: left;
+    height: 435px;
+    margin-right: 20px;
+}
+
 /*#final_div {
     background-color: rgba(0,0,0,.6);
     font-size: 18px;
@@ -284,15 +307,14 @@ font-size: 30px;}
     padding-left: 2px;
 }*/
 
-#final_placement .win-container{
+/*#final_placement .win-container{
     width: 75px;
-    /*height: 273px;*/
     margin-top: 0px;
     margin-left: 0px;
     margin-right: 55px;
     margin-bottom: 0px;
     width: auto;
-}
+}*/
 
 #final_wrap span {
     font-size: 14px;
@@ -301,12 +323,13 @@ font-size: 30px;}
 .final_surround {
     background-color: orange;
     margin-bottom: 10px;
+    padding: 5px;
 }
 #final_surround_div {
     height: auto;
     background-color: orange;    
-    float: left;
-    width: 100%;
+    /*float: left;
+    width: 100%;*/
 }
 #remove_final {
     width: 20px;
@@ -316,4 +339,7 @@ font-size: 30px;}
 }
 #order2 {
     float: left;
+}
+#wrap_orders {
+    /*float: left;*/
 }

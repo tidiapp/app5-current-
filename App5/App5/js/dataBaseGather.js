@@ -842,7 +842,7 @@
             },
 
             userOrderFinalRead: function () {
-                //milo: remove.pop_list(age_data.model.order_final_read); HAPPENS in final page when leaving.
+                //milo: remove.pop_list(age_data.model.order_final_read); HAPPENS in final page when leaving, if here does not remove in time i believe.
                 var Age = thinkitdrinkitDataClient.getTable("ShopCart");
 
                 var query = Age.where({
