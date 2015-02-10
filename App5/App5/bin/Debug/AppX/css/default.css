@@ -72,7 +72,7 @@ footer {
     width: auto;
     height: 110px;
     background-color: #F89B1E;
-    margin-top: 668px;
+    margin-top: 680px;
     /*margin-top: 532px;*/
     padding-top: 10px;
 }
@@ -249,14 +249,15 @@ h1, .win-type-xx-large {
     height: 60px;
     margin-left: 120px;
     text-transform: uppercase;
-    box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);
+    /*box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);*/
     border: 0;
+    border-radius: 7px;
 }
 
 .div_where_you_are {
     float: left;
     margin-left: 10px;
-    margin-top: 30px;
+    /*margin-top: 30px;*/
 }
 
 .id_sel {

@@ -79,7 +79,7 @@ overError {
     overflow: auto;
     width: 630px;
     background-color: #fff;
-    height: 200px;
+    height: 300px;
     /*margin-top: 2px;*/
 }
 
@@ -94,9 +94,9 @@ overError {
     height: 60px;
     margin-top: 128px;
     position: absolute;
-    margin-left: 233px;
+    margin-left: 183px;
     font-size: 15px;
-    box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);
+    /*box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);*/
     border: 0;
 }
 
@@ -109,7 +109,7 @@ overError {
     background-color: #FF7C00;
     height: 60px;
     text-transform: uppercase;
-    box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);
+    /*box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);*/
     border: 0;
 }
 
@@ -243,7 +243,17 @@ overError {
     height: 60px;
     position: absolute;
     font-size: 15px;
-    box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);
+    /*box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);*/
+    border: 0;
+    margin-left: 0px;
+}
+
+#sel_btn10 {
+    margin-left: 115px;
+    height: 60px;
+    position: absolute;
+    font-size: 15px;
+    /*box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);*/
     border: 0;
 }
 
@@ -315,14 +325,14 @@ button, input[type=button], input[type=submit], input[type=reset], input[type=fi
 }
 
 #win_listview_host_boost_choosen .win-listview {
-    height: 200px;
+    height: 310px;
     width: 645px;
     float: left;
 }
 
 #choosen_boost_info_placement .win-viewport {
     overflow-x: hidden;
-    height: 220px;
+    height: 225px;
     /*border: 2px solid green;*/
     width: 640px;
 }

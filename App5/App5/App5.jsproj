@@ -63,7 +63,14 @@
       <SubType>Designer</SubType>
     </AppxManifest>
     <None Include="App5_TemporaryKey.pfx" />
+    <Content Include="css\bootstrap-theme.css" />
+    <Content Include="css\bootstrap.css" />
     <Content Include="css\default.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="images\another_logo.jpg" />
     <Content Include="images\another_logo.scale-100.jpg" />
     <Content Include="images\another_logo.scale-180.jpg" />
@@ -86,6 +93,7 @@
     <Content Include="images\uparrow4.gif" />
     <Content Include="js\app_bar.js" />
     <Content Include="js\auth.js" />
+    <Content Include="js\bootstrap.min.js" />
     <Content Include="js\ChangeApp.js" />
     <Content Include="js\dataBaseGather.js" />
     <Content Include="js\dataStore.js" />

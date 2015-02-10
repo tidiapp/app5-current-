@@ -1,5 +1,12 @@
+css\bootstrap.css
+css\bootstrap-theme.css
 css\default.css
 default.html
+fonts\glyphicons-halflings-regular.eot
+fonts\glyphicons-halflings-regular.svg
+fonts\glyphicons-halflings-regular.ttf
+fonts\glyphicons-halflings-regular.woff
+fonts\glyphicons-halflings-regular.woff2
 images\another_logo.jpg
 images\another_logo.scale-100.jpg
 images\another_logo.scale-180.jpg
@@ -22,6 +29,7 @@ images\storelogo.scale-180.png
 images\uparrow4.gif
 js\app_bar.js
 js\auth.js
+js\bootstrap.min.js
 js\ChangeApp.js
 js\dataBaseGather.js
 js\dataStore.js

@@ -75,9 +75,9 @@
     height: 60px;
     margin-top: 128px;
     position: absolute;
-    margin-left: 267px;
+    margin-left: 207px;
     font-size: 15px;
-    box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);
+    /*box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);*/
     border: 0;
 }
 
@@ -91,7 +91,7 @@
     background-color: #FF7C00;
     height: 60px;
     text-transform: uppercase;
-    box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);
+    /*box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);*/
     border: 0;
 }
 
@@ -116,7 +116,7 @@
 /*Milo this actually works to fix glictch when too many products are hit at the same time, it DOES NOT SHOW UP IN THE CSS DOM eXPLORER DUNNO WHY BUT IT WORKS!!*/
 
 #age_template_placement_winlistview .win-listview {
-    height: 325px;
+    height: 270px;
     /*border: 2px solid pink;*/
     width: 1580px;
     /*dont use margins here use in .win-surface*/

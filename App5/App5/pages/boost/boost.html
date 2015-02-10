@@ -49,8 +49,8 @@
                     <div class="the_choosen_boost">
                         <img id="choosen_bg_img" class="choosen_bg_img_class" data-win-bind="src: the_label" />
                         <img id="choosen_img" hidden="" class="choosen_img_class" data-win-bind="src: the_pic" />
-                        <button id="info_btn3" name="sel_btn" onclick="boost_clicked.more_info(document.getElementById('choosen_name').textContent)" type="submit">More Info</button>
-                        <button id="sel_btn3" onclick="boost_clicked.clicked1(document.getElementById('choosen_name').textContent, document.getElementById('choosen_img').src, document.getElementById('choosen_price').textContent, document.getElementById('bo_vend').textContent, document.getElementById('choosen_bg_img').src)" name="sel_btn2" type="submit">Choose This Boost</button>
+                        <button id="info_btn3" class="sel_look_btn btn btn-warning" name="sel_btn" onclick="boost_clicked.more_info(document.getElementById('choosen_name').textContent)" type="submit">More Info</button>
+                        <button id="sel_btn3" class="sel_look_btn btn btn-warning" onclick="boost_clicked.clicked1(document.getElementById('choosen_name').textContent, document.getElementById('choosen_img').src, document.getElementById('choosen_price').textContent, document.getElementById('bo_vend').textContent, document.getElementById('choosen_bg_img').src)" name="sel_btn2" type="submit">Choose This Boost</button>
                         <h2 id="choosen_name" class="choosen_name_class" data-win-bind="textContent: the_name"></h2>
                         <p id="choosen_price" hidden="" data-win-bind="textContent: the_price"></p>
                         <p id="choosen_info" class="choosen_info_class" data-win-bind="textContent: the_info"></p>
@@ -104,8 +104,8 @@
                         </div>
                         <div id="btn_right" hidden="">
                             <p style="font-size: 20px" id="hidden_p">You have choosen <span id="the_number"></span> of up to 8 boosts choose another boost or add to cart.</p>
-                            <button onclick="boost_clicked.release()" id="del_btn10" name="del_btn10" type="reset">Remove Last</button>
-                            <button id="sel_btn10" class="sel_look_btn" onclick="boost_clicked.finalKeepInfo(document.getElementById('choosen_name').textContent)" name="sel_btn10" type="submit">Next</button>
+                            <button onclick="boost_clicked.release()" id="del_btn10" class="sel_look_btn btn btn-warning" name="del_btn10" type="reset">Remove Last</button>
+                            <button id="sel_btn10" class="sel_look_btn btn btn-warning" onclick="boost_clicked.finalKeepInfo(document.getElementById('choosen_name').textContent)" name="sel_btn10" type="submit">Next</button>
                         </div>
                     </div>
                 </div>

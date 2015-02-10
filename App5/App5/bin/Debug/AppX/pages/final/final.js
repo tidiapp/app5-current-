@@ -28,6 +28,7 @@
             //    })
             //}
 
+
             if (roamingSettings.values["Boost1_name"] == "" || roamingSettings.values["Boost1_name"] === !undefined) {
                 roamingSettings.values["Boost1_price"] = 0
             } else {

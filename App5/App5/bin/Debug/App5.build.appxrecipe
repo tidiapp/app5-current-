@@ -16,6 +16,12 @@
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\css\bootstrap-theme.css">
+      <PackagePath>css\bootstrap-theme.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\css\bootstrap.css">
+      <PackagePath>css\bootstrap.css</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\css\default.css">
       <PackagePath>css\default.css</PackagePath>
     </AppxPackagedFile>
@@ -78,6 +84,21 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\welcome\welcome.css">
       <PackagePath>pages\welcome\welcome.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\fonts\glyphicons-halflings-regular.eot">
+      <PackagePath>fonts\glyphicons-halflings-regular.eot</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\fonts\glyphicons-halflings-regular.svg">
+      <PackagePath>fonts\glyphicons-halflings-regular.svg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\fonts\glyphicons-halflings-regular.ttf">
+      <PackagePath>fonts\glyphicons-halflings-regular.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\fonts\glyphicons-halflings-regular.woff">
+      <PackagePath>fonts\glyphicons-halflings-regular.woff</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\fonts\glyphicons-halflings-regular.woff2">
+      <PackagePath>fonts\glyphicons-halflings-regular.woff2</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\images\another_logo.jpg">
       <PackagePath>images\another_logo.jpg</PackagePath>
@@ -150,6 +171,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\js\auth.js">
       <PackagePath>js\auth.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\js\bootstrap.min.js">
+      <PackagePath>js\bootstrap.min.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\js\ChangeApp.js">
       <PackagePath>js\ChangeApp.js</PackagePath>

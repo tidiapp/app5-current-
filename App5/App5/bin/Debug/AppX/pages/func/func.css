@@ -58,9 +58,9 @@
     height: 60px;
     margin-top: 130px;
     position: absolute;
-    margin-left: 222px;
+    margin-left: 182px;
     font-size: 15px;
-    box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);
+    /*box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);*/
     border: 0;
 }
 
@@ -73,7 +73,7 @@
     background-color: #FF7C00;
     height: 60px;
     text-transform: uppercase;
-    box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);
+    /*box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);*/
     border: 0;
 }
 
@@ -94,7 +94,7 @@
 }
 
 #win_listview_funcs_placement_row .win-listview {
-    height: 325px;
+    height: 280px;
     /*border: 2px solid pink;*/
     width: 1580px;
 /*dont use margins here use in .win-surface*/
@@ -130,7 +130,7 @@
 }*/
 
 #funcs_placement .win-viewport {
-    height: 320px;
+    height: 280px;
     /*border: 2px solid green;*/
     width: 1578px;
 }
@@ -147,6 +147,8 @@
 #funcs_placement .win-surface {
     /*width: 1550px;*/
     margin: 5px;
+    /*margin-top: 45px;*/
+
     /*border: 2px solid blue;*/
 }
 

@@ -73,7 +73,7 @@
     position: absolute;
     margin-left: 255px;
     font-size: 15px;
-    box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);
+    /*box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);*/
     border: 0;
 }
 
@@ -86,8 +86,9 @@
     text-transform: uppercase;
     font-size: 20px;
     /*margin-left: 20px;*/
-    box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);
+    /*box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);*/
     border: 0;
+    margin-left: 0px;
 }
 
 #flav_div {
@@ -135,7 +136,7 @@
     width: auto;
     height: 100px;
     float: left;
-    margin-top: 30px;
+    /*margin-top: 30px;*/
 }
 
 #price_prev_div_total {

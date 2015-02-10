@@ -20,13 +20,21 @@
     <AppXManifest Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-02-05T14:53:08.717</Modified>
+      <Modified>2015-02-10T18:05:36.107</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\css\bootstrap-theme.css">
+      <PackagePath>css\bootstrap-theme.css</PackagePath>
+      <Modified>2015-02-10T21:24:29.784</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\css\bootstrap.css">
+      <PackagePath>css\bootstrap.css</PackagePath>
+      <Modified>2015-02-10T21:20:38.133</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\css\default.css">
       <PackagePath>css\default.css</PackagePath>
-      <Modified>2015-01-29T16:48:23.374</Modified>
+      <Modified>2015-02-10T20:53:30.389</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\libs\prettify\prettify.css">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\libs\prettify\prettify.css</PackagePath>
@@ -38,15 +46,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\boost\boost.css">
       <PackagePath>pages\boost\boost.css</PackagePath>
-      <Modified>2015-01-15T16:53:05.708</Modified>
+      <Modified>2015-02-10T22:20:58.040</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\func\func.css">
       <PackagePath>pages\func\func.css</PackagePath>
-      <Modified>2015-01-15T16:53:05.761</Modified>
+      <Modified>2015-02-10T22:20:57.931</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\home2\home2.css">
       <PackagePath>pages\home2\home2.css</PackagePath>
-      <Modified>2015-01-15T16:53:05.769</Modified>
+      <Modified>2015-02-10T22:17:58.051</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.css">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.css</PackagePath>
@@ -62,11 +70,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\base\base.css">
       <PackagePath>pages\base\base.css</PackagePath>
-      <Modified>2015-01-29T20:52:56.891</Modified>
+      <Modified>2015-02-10T22:20:57.995</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\final\final.css">
       <PackagePath>pages\final\final.css</PackagePath>
-      <Modified>2015-02-05T22:04:09.909</Modified>
+      <Modified>2015-02-10T21:29:08.207</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\final\print.css">
       <PackagePath>pages\final\print.css</PackagePath>
@@ -74,11 +82,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\flav_sel\flav_sel.css">
       <PackagePath>pages\flav_sel\flav_sel.css</PackagePath>
-      <Modified>2015-01-15T16:53:05.743</Modified>
+      <Modified>2015-02-10T20:58:49.921</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\home\home.css">
       <PackagePath>pages\home\home.css</PackagePath>
-      <Modified>2015-01-15T16:53:05.765</Modified>
+      <Modified>2015-02-10T22:20:57.979</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\info_home\info_home.css">
       <PackagePath>pages\info_home\info_home.css</PackagePath>
@@ -90,7 +98,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\launch_page\launch_page.css">
       <PackagePath>pages\launch_page\launch_page.css</PackagePath>
-      <Modified>2015-01-06T14:32:49.063</Modified>
+      <Modified>2015-02-10T16:53:01.423</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\login\login.css">
       <PackagePath>pages\login\login.css</PackagePath>
@@ -107,6 +115,26 @@
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\welcome\welcome.css">
       <PackagePath>pages\welcome\welcome.css</PackagePath>
       <Modified>2014-10-24T19:09:14.297</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\fonts\glyphicons-halflings-regular.eot">
+      <PackagePath>fonts\glyphicons-halflings-regular.eot</PackagePath>
+      <Modified>2015-02-10T16:26:57.113</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\fonts\glyphicons-halflings-regular.svg">
+      <PackagePath>fonts\glyphicons-halflings-regular.svg</PackagePath>
+      <Modified>2015-02-10T16:26:57.144</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\fonts\glyphicons-halflings-regular.ttf">
+      <PackagePath>fonts\glyphicons-halflings-regular.ttf</PackagePath>
+      <Modified>2015-02-10T16:26:57.181</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\fonts\glyphicons-halflings-regular.woff">
+      <PackagePath>fonts\glyphicons-halflings-regular.woff</PackagePath>
+      <Modified>2015-02-10T16:26:57.202</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\fonts\glyphicons-halflings-regular.woff2">
+      <PackagePath>fonts\glyphicons-halflings-regular.woff2</PackagePath>
+      <Modified>2015-02-10T16:26:57.224</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\images\another_logo.jpg">
       <PackagePath>images\another_logo.jpg</PackagePath>
@@ -202,9 +230,13 @@
       <PackagePath>js\auth.js</PackagePath>
       <Modified>2014-10-24T19:09:08.895</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\js\bootstrap.min.js">
+      <PackagePath>js\bootstrap.min.js</PackagePath>
+      <Modified>2015-02-10T16:26:57.327</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\js\ChangeApp.js">
       <PackagePath>js\ChangeApp.js</PackagePath>
-      <Modified>2015-02-04T16:25:05.602</Modified>
+      <Modified>2015-02-10T16:55:17.862</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\js\dataBaseGather.js">
       <PackagePath>js\dataBaseGather.js</PackagePath>
@@ -216,7 +248,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-      <Modified>2015-01-28T15:38:09.336</Modified>
+      <Modified>2015-02-10T18:42:48.581</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\js\finalpagelogic.js">
       <PackagePath>js\finalpagelogic.js</PackagePath>
@@ -324,7 +356,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\final\final.js">
       <PackagePath>pages\final\final.js</PackagePath>
-      <Modified>2015-02-05T18:16:31.975</Modified>
+      <Modified>2015-02-10T18:05:34.098</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\flav_sel\flav_sel.js">
       <PackagePath>pages\flav_sel\flav_sel.js</PackagePath>
@@ -424,23 +456,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\default.html">
       <PackagePath>default.html</PackagePath>
-      <Modified>2015-01-29T17:37:56.403</Modified>
+      <Modified>2015-02-10T18:05:34.054</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\boost\boost.html">
       <PackagePath>pages\boost\boost.html</PackagePath>
-      <Modified>2015-01-15T16:53:05.714</Modified>
+      <Modified>2015-02-10T18:38:37.339</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\final\final - Copy.html">
       <PackagePath>pages\final\final - Copy.html</PackagePath>
-      <Modified>2015-02-03T20:30:41.853</Modified>
+      <Modified>2015-02-10T18:38:37.313</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\func\func.html">
       <PackagePath>pages\func\func.html</PackagePath>
-      <Modified>2015-01-15T16:53:05.763</Modified>
+      <Modified>2015-02-10T18:38:37.258</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\home2\home2.html">
       <PackagePath>pages\home2\home2.html</PackagePath>
-      <Modified>2015-01-15T16:53:05.771</Modified>
+      <Modified>2015-02-10T18:38:37.201</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.html">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.html</PackagePath>
@@ -448,7 +480,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\supl_sport\supl_sport.html">
       <PackagePath>pages\supl_sport\supl_sport.html</PackagePath>
-      <Modified>2014-10-24T19:09:14.117</Modified>
+      <Modified>2015-02-10T18:38:37.105</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\all_products\all_products.html">
       <PackagePath>pages\all_products\all_products.html</PackagePath>
@@ -456,19 +488,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\base\base.html">
       <PackagePath>pages\base\base.html</PackagePath>
-      <Modified>2015-01-15T16:53:05.697</Modified>
+      <Modified>2015-02-10T18:33:06.087</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\final\final.html">
       <PackagePath>pages\final\final.html</PackagePath>
-      <Modified>2015-02-05T21:52:15.149</Modified>
+      <Modified>2015-02-10T21:00:38.859</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\flav_sel\flav_sel.html">
       <PackagePath>pages\flav_sel\flav_sel.html</PackagePath>
-      <Modified>2015-02-03T19:13:07.264</Modified>
+      <Modified>2015-02-10T18:38:37.286</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\home\home.html">
       <PackagePath>pages\home\home.html</PackagePath>
-      <Modified>2015-01-15T16:53:05.767</Modified>
+      <Modified>2015-02-10T18:38:37.225</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\info_home\info_home.html">
       <PackagePath>pages\info_home\info_home.html</PackagePath>
@@ -476,23 +508,23 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\item_info\item_info.html">
       <PackagePath>pages\item_info\item_info.html</PackagePath>
-      <Modified>2015-01-28T15:38:09.365</Modified>
+      <Modified>2015-02-10T18:38:37.171</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\launch_page\launch_page.html">
       <PackagePath>pages\launch_page\launch_page.html</PackagePath>
-      <Modified>2015-01-15T16:53:05.773</Modified>
+      <Modified>2015-02-10T16:53:01.122</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\login\login.html">
       <PackagePath>pages\login\login.html</PackagePath>
-      <Modified>2014-10-24T19:09:30.610</Modified>
+      <Modified>2015-02-10T18:38:37.150</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\signup\signup.html">
       <PackagePath>pages\signup\signup.html</PackagePath>
-      <Modified>2014-10-24T19:09:30.663</Modified>
+      <Modified>2015-02-10T18:38:37.129</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\thankyou\thankyou.html">
       <PackagePath>pages\thankyou\thankyou.html</PackagePath>
-      <Modified>2014-10-24T19:09:30.676</Modified>
+      <Modified>2015-02-10T18:38:37.056</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\pages\welcome\welcome.html">
       <PackagePath>pages\welcome\welcome.html</PackagePath>
@@ -512,7 +544,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Anthony\Desktop\App Git Hub Clone\app5-current-\App5\App5\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-02-05T14:53:08.260</Modified>
+      <Modified>2015-02-10T18:05:35.705</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
