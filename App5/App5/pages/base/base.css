@@ -82,7 +82,7 @@
 }
 
 #the_sel_bases {
-    width: 700px;
+    width: 750px;
     background-color: #fff;
     height: 280px;
     overflow: auto;
@@ -125,7 +125,7 @@
 
 #baseinfo_template_placement_winlistview .win-listview {
     height: 290px;
-    width: 715px;
+    width: 760px;
     float: left;
     /*border: 2px solid black;*/
     /*dont use margins here use in .win-surface*/
@@ -156,6 +156,7 @@
 
 #base_price_doller {
     position: absolute;
+    margin-top: 15px;
 }
 
 #base_price_div {

@@ -56,7 +56,7 @@
 
 .the_float:hover {
     cursor: pointer;
-    box-shadow: 3px 3px 3px #808080;
+    /*box-shadow: 3px 3px 3px #808080;*/
 }
 
 #explain {

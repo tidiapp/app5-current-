@@ -514,18 +514,25 @@
                 </div>
 
 
+            </div>
 
-
-
-
+            <div id="total_wrap">
+                <div id="submit_wrap">
+                    <div class="form-group">
+                        <form id="cus_name" method="post">
+                            <input class="input form-control" placeholder="REQUIRED! PLEASE ADD YOUR NAME HERE FOR US TO CALL YOU WHEN YOUR ORDER IS DONE." type="text" name="Cname" id="Cname" />
+                        </form>
+                    </div>                    
+                    <div id="the_name_sub"><button id="sub_button" class="sel_look_btn btn btn-warning" onclick="FinalClick.clicked()" type="submit">SUBMIT</button></div>
+                    <div id="the_name_con"><button id="con_button" class="sel_look_btn btn btn-warning" onclick="FinalClick.the_continue()" type="submit">Continue Shopping</button></div>
+                </div>
             </div>
 
 
-        </section>
+</section>
         <footer id="main_footer">
 
             <!--<h1 id="footer_company_name"></h1>--><!-- this is being styled in the default.js folder -->
-            <div id="total_wrap">
                 <div id="the_name">
                     <div id="the_name_total1">
                         Your Total: <span id="product_total"></span>
@@ -533,17 +540,6 @@
                     <div id="the_name_total2">Your Tax: <span id="tax"></span></div>
                     <div id="the_name_total3">Your Grand Total: <span id="total"></span></div>
                 </div>
-                <div id="submit_wrap">
-                    <form id="cus_name" method="post">
-                        <ul>
-                            <li><label for="Cname">Add your name to track the order.</label></li>
-                            <li><input class="input" type="text" name="Cname" id="Cname" /></li>
-                        </ul>
-                    </form>
-                    <div id="the_name_sub"><button id="sub_button" class="sel_look_btn btn btn-warning" onclick="FinalClick.clicked()" type="submit">SUBMIT</button></div>
-                    <div id="the_name_con"><button id="con_button" class="sel_look_btn btn btn-warning" onclick="FinalClick.the_continue()" type="submit">Cont. Shopping</button></div>
-                </div>
-            </div>
 
         </footer>
     </div>

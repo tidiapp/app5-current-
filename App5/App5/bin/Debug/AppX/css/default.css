@@ -282,3 +282,11 @@ h1, .win-type-xx-large {
     .underline_class a:active {
         color: #fff;
     }
+:not(.win-selectionstylefilled).win-listview .win-selected.win-container .win-selectionborder, :not(.win-selectionstylefilled).win-selected.win-container.win-itemcontainer .win-selectionborder {
+    border-color: orange;
+}
+
+:not(.win-selectionstylefilled).win-listview .win-selectioncheckmarkbackground, :not(.win-selectionstylefilled).win-itemcontainer .win-selectioncheckmarkbackground {
+    border-top-color: orange;
+    border-right-color: orange;
+}

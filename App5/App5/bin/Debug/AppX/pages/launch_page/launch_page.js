@@ -115,6 +115,39 @@
                 document.getElementById("youcurrentprice").removeAttribute("hidden");
                 document.getElementById("thewordsforcurrentprice").removeAttribute("hidden");
             }
+
+            learn_more.addEventListener("pointerdown", onPointerDown, false);
+            learn_more.addEventListener("pointerup", onPointerUp, false);
+            supl_sport2.addEventListener("pointerdown", onPointerDown, false);
+            supl_sport2.addEventListener("pointerup", onPointerUp, false);
+            supl_sport.addEventListener("pointerdown", onPointerDown, false);
+            supl_sport.addEventListener("pointerup", onPointerUp, false);
+            make_drink.addEventListener("pointerdown", onPointerDown, false);
+            make_drink.addEventListener("pointerup", onPointerUp, false);
+            make_drink2.addEventListener("pointerdown", onPointerDown, false);
+            make_drink2.addEventListener("pointerup", onPointerUp, false);
+            supl_sport3.addEventListener("pointerdown", onPointerDown, false);
+            supl_sport3.addEventListener("pointerup", onPointerUp, false);
+            supl_sport4.addEventListener("pointerdown", onPointerDown, false);
+            supl_sport4.addEventListener("pointerup", onPointerUp, false);
+            supl_sport5.addEventListener("pointerdown", onPointerDown, false);
+            supl_sport5.addEventListener("pointerup", onPointerUp, false);
+            nutrigenetics.addEventListener("pointerdown", onPointerDown, false);
+            nutrigenetics.addEventListener("pointerup", onPointerUp, false);
+
+
+            function onPointerDown(evt) {
+                WinJS.UI.Animation.pointerDown(evt.srcElement);
+            }
+
+            function onPointerUp(evt) {
+                WinJS.UI.Animation.pointerUp(evt.srcElement);
+            }
+
+
+
+
+
         },
 
         unload: function () {
@@ -158,6 +191,15 @@
     WinJS.Namespace.define("cat_clicked", {
         
         next_page: function (me) {
+
+            //WinJS.UI.Animation.pointerDown(document.getElementById("make_drink2")).done( /* Your success and error handlers */
+            //   // tool.alert("", "Yup")
+            //    );
+
+
+
+
+
 
             var cat_picked = me.replace(/^\s+/, '').replace(/\s+$/, '');
 

@@ -325,14 +325,14 @@ button, input[type=button], input[type=submit], input[type=reset], input[type=fi
 }
 
 #win_listview_host_boost_choosen .win-listview {
-    height: 310px;
+    height: 305px;
     width: 645px;
     float: left;
 }
 
 #choosen_boost_info_placement .win-viewport {
     overflow-x: hidden;
-    height: 225px;
+    height: 310px;
     /*border: 2px solid green;*/
     width: 640px;
 }

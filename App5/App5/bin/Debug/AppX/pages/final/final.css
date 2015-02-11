@@ -110,14 +110,12 @@ input {
 }
 
 #the_name {
-    float: left;
-    margin-top: 25px;
-    position: absolute;
-    font-size: 32px;
-    width: 760px;
-    margin-left: 20px;
+    float: right;
+    margin-top: 4px;
+    font-size: 52px;
+    margin-right: 100px;
+    /*position: absolute;*/
 }
-
 
 #the_total {
 font-size: 30px;}
@@ -138,7 +136,7 @@ font-size: 30px;}
 
 #the_name_con {
     float: right;
-    margin-top: 15px;
+    margin-top: -10px;
 }
 
 #sub_button {
@@ -199,7 +197,7 @@ font-size: 30px;}
 
 #the_name_sub {
     float: right;
-    margin-top: 15px;
+    margin-top: -10px;
     /*margin-top: 30px;
    */
 }
@@ -207,31 +205,38 @@ font-size: 30px;}
 #cus_name {
     float: left;
 }
+    #cus_name input {
+        border-color: orange;
+        width: 457px;
+    }
 
-#cus_name ul {
+
+/*#cus_name ul {
     font-size: 27px;
     margin-top: 14px;
-}
+}*/
 
-#cus_name ul li {
+/*#cus_name ul li {
     line-height: 20px;
-    list-style: none;
+    list-style: none;*/
 }
 
-    #cus_name ul li input {
+    /*#cus_name ul li input {
         border-color: orange;
         margin-bottom: 5px;
         width: 407px;
-    }
+    }*/
 
 #submit_wrap {
     float: left;
-    margin-top: -95px;
-    width: 900px;
+    margin-top: 135px;
+    /*width: 900px;*/
 }
 
 #total_wrap {
     position: absolute;
+    margin-top: 140px;
+    margin-left: 85px;
     /*margin-top: 500px;*/
 }
 
@@ -344,4 +349,8 @@ font-size: 30px;}
 }
 #wrap_orders {
     /*float: left;*/
+}
+#cname_id {
+    font-weight: normal;
+    margin-bottom: 3px;
 }
