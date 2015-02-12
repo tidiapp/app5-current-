@@ -246,12 +246,12 @@ h1, .win-type-xx-large {
 .sel_look_btn {
 /*Use xx-large insted of pixels there is a bug with the button shadow causing a white pixel border*/
     font-size: x-large;
-    height: 60px;
+    height: 80px; 
     margin-left: 120px;
     text-transform: uppercase;
     /*box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);*/
     border: 0;
-    border-radius: 7px;
+    border-radius: 40px;
 }
 
 .div_where_you_are {

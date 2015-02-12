@@ -16,7 +16,7 @@
     <div class="final fragment">
         <header id="final_header" aria-label="Header content" role="banner">
             <button data-win-control="WinJS.UI.BackButton"></button>
-            <h1 class="titlearea win-type-ellipsis">Review Your 15 Servings and Hit Submit.</h1>
+            <h1 class="titlearea win-type-ellipsis">Please Review Your 15 day supply and Hit Submit.</h1>
         </header>
         <section aria-label="Main content" role="main">
 
@@ -134,7 +134,7 @@
                                         <span id="boost_price8" data-win-bind="textContent: bo8_price"></span>
                                     </div>
                                 </div>
-                                <button id="remove_final" class="btn btn-warning">X</button>
+                                <button id="remove_final" class="btn btn-warning">x</button>
                             </div>
 
                         </div>
@@ -197,7 +197,7 @@
                                         <span id="boost_price8" data-win-bind="textContent: bo8_price"></span>
                                     </div>
                                 </div>
-                                <button id="remove_final2" class="btn btn-warning">X</button>
+                                <button id="remove_final2" class="btn btn-warning">x</button>
                             </div>
                         </div>
 
@@ -258,7 +258,7 @@
                                         <span data-win-bind="textContent: bo8_price"></span>
                                     </div>
                                 </div>
-                                <button id="remove_final3" class="btn btn-warning">X</button>
+                                <button id="remove_final3" class="btn btn-warning">x</button>
                             </div>
                         </div>
 
@@ -319,7 +319,7 @@
                                         <span data-win-bind="textContent: bo8_price"></span>
                                     </div>
                                 </div>
-                                <button id="remove_final4" class="btn btn-warning">X</button>
+                                <button id="remove_final4" class="btn btn-warning">x</button>
                             </div>
                         </div>
 
@@ -380,7 +380,7 @@
                                         <span data-win-bind="textContent: bo8_price"></span>
                                     </div>
                                 </div>
-                                <button id="remove_final5" class="btn btn-warning">X</button>
+                                <button id="remove_final5" class="btn btn-warning">x</button>
                             </div>
                         </div>
 
@@ -441,7 +441,7 @@
                                         <span data-win-bind="textContent: bo8_price"></span>
                                     </div>
                                 </div>
-                                <button id="remove_final6" class="btn btn-warning">X</button>
+                                <button id="remove_final6" class="btn btn-warning">x</button>
                             </div>
                         </div>
 
@@ -502,7 +502,7 @@
                                         <span data-win-bind="textContent: bo8_price"></span>
                                     </div>
                                 </div>
-                                <button id="remove_final7" class="btn btn-warning">X</button>
+                                <button id="remove_final7" class="btn btn-warning">x</button>
                             </div>
                         </div>
 
@@ -520,7 +520,7 @@
                 <div id="submit_wrap">
                     <div class="form-group">
                         <form id="cus_name" method="post">
-                            <input class="input form-control" placeholder="ADD YOUR NAME HERE" type="text" name="Cname" id="Cname" />
+                            <input class="input form-control" placeholder="REQUIRED! PLEASE ADD YOUR NAME HERE FOR US TO CALL YOU WHEN YOUR ORDER IS DONE." type="text" name="Cname" id="Cname" />
                         </form>
                     </div>                    
                     <div id="the_name_sub"><button id="sub_button" class="sel_look_btn btn btn-warning" onclick="FinalClick.clicked()" type="submit">SUBMIT</button></div>
@@ -537,9 +537,8 @@
                     <div id="the_name_total1">
                         Your Total: <span id="product_total"></span>
                     </div>
-                    <!-- milo hidden since we are not using them might affect total -->
-                    <div id="the_name_total2" hidden="">Your Tax: <span id="tax"></span></div>
-                    <div id="the_name_total3" hidden="">Your Grand Total: <span id="total"></span></div>
+                    <div id="the_name_total2">Your Tax: <span id="tax"></span></div>
+                    <div id="the_name_total3">Your Grand Total: <span id="total"></span></div>
                 </div>
 
         </footer>

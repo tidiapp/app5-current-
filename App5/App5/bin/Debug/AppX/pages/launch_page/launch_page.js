@@ -19,6 +19,7 @@
             document.getElementById("learn_more").style.border = 0;
             document.getElementById("supl_sport").style.border = 0;
             document.getElementById("make_drink2").style.border = 0;
+            document.getElementById("make_drink6").style.border = 0;
             document.getElementById("nutrigenetics").style.border = 0;
             document.getElementById("company_name").textContent = "Let's Customize";
             document.getElementById("appBar").winControl.show();
@@ -126,6 +127,8 @@
             make_drink.addEventListener("pointerup", onPointerUp, false);
             make_drink2.addEventListener("pointerdown", onPointerDown, false);
             make_drink2.addEventListener("pointerup", onPointerUp, false);
+            make_drink6.addEventListener("pointerdown", onPointerDown, false);
+            make_drink6.addEventListener("pointerup", onPointerUp, false);
             supl_sport3.addEventListener("pointerdown", onPointerDown, false);
             supl_sport3.addEventListener("pointerup", onPointerUp, false);
             supl_sport4.addEventListener("pointerdown", onPointerDown, false);
@@ -196,11 +199,6 @@
             //   // tool.alert("", "Yup")
             //    );
 
-
-
-
-
-
             var cat_picked = me.replace(/^\s+/, '').replace(/\s+$/, '');
 
             if(cat_picked === "Competitive Sports"){
@@ -210,7 +208,7 @@
                 roamingSettings.values["Cat_picked"] = cat_picked;
                 roamingSettings.values["Cat_picked_img4"] = document.getElementById("make_sport_drink_img").src;
     
-            } else if (cat_picked === "Energy" || cat_picked === "Weight Management" || cat_picked === "Lifestyle Diets" || cat_picked === "Wellness") {
+            } else if (cat_picked === "Energy" || cat_picked === "Weight Management" || cat_picked === "Lifestyle Diets" || cat_picked === "Wellness" || cat_picked === "Beauty") {
                 WinJS.Navigation.navigate('pages/base/base.html');
                 var appData = Windows.Storage.ApplicationData.current;
                 var roamingSettings = appData.roamingSettings;

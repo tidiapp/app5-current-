@@ -33,6 +33,7 @@
             document.getElementById("sel_age_pic").style.borderColor = i;
             document.getElementById("info_btn").style.backgroundColor = i;
             document.getElementById("sel_btn").style.backgroundColor = i;
+            document.getElementById("age_pic").style.borderColor = i;   
         },
         getHomeBorders: function (i){
             document.getElementById("age_display").style.borderColor = i;
@@ -69,7 +70,8 @@
             document.getElementById("the_bases").style.borderColor = i;
             document.getElementById("sel_base_pic").style.borderColor = i;
             document.getElementById("info_btn2").style.backgroundColor = i;
-            document.getElementById("sel_btn2").style.backgroundColor = i;
+            document.getElementById("sel_btn2").style.backgroundColor = i; 
+            document.getElementById("age_pic").style.borderColor = i;
         },
         getBaseBoarders: function (i){
             document.getElementById("the_bases").style.borderColor = i;

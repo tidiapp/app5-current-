@@ -160,6 +160,16 @@
                     }, function (err) {
                         console.log(err);
                     });
+                } else if (cat_selected === "Beauty") {
+                    var query = Age.where({
+                        Access: 5
+                    }).orderBy("Name").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[i].Price })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
                 } else if (cat_selected === "Energy") {
                     var query = Age.where({
                         Access: 1
@@ -272,6 +282,18 @@
                     if (cat_picked === "Protein") {
                         var query = Age.where({
                             FuncDBfunc_id: id_func
+                        }).orderBy("Name").read().done(function (results) {
+                            for (var i = 0; i < results.length; i++) {
+                                age_data.model.boost.push({ boost_name: results[i].Name, boost_pic: results[i].Image, id_sel: results[i].id })
+                            }
+                        }, function (err) {
+                            console.log(err);
+                        });
+                        //milo not sure if this is correct for beauty
+                    } else if (cat_picked === "Beauty") {
+                        var query = Age.where({
+                            FuncDBsport_id: id_sport,
+                            BaseDBbase_id: id_base
                         }).orderBy("Name").read().done(function (results) {
                             for (var i = 0; i < results.length; i++) {
                                 age_data.model.boost.push({ boost_name: results[i].Name, boost_pic: results[i].Image, id_sel: results[i].id })
