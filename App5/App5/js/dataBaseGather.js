@@ -290,17 +290,6 @@
                             console.log(err);
                         });
                         //milo not sure if this is correct for beauty
-                    } else if (cat_picked === "Beauty") {
-                        var query = Age.where({
-                            FuncDBsport_id: id_sport,
-                            BaseDBbase_id: id_base
-                        }).orderBy("Name").read().done(function (results) {
-                            for (var i = 0; i < results.length; i++) {
-                                age_data.model.boost.push({ boost_name: results[i].Name, boost_pic: results[i].Image, id_sel: results[i].id })
-                            }
-                        }, function (err) {
-                            console.log(err);
-                        });
                     } else if (cat_picked === "Competitive Sports") {
                         var query = Age.where({
                             FuncDBsport_id: id_sport,
@@ -312,7 +301,7 @@
                         }, function (err) {
                             console.log(err);
                         });
-                    } else if (cat_picked === "Energy" || cat_picked === "Fitness & Exercise" || cat_picked === "Weight Management" || cat_picked === "Lifestyle Diets" || cat_picked === "Wellness") {
+                    } else if (cat_picked === "Energy" || cat_picked === "Fitness & Exercise" || cat_picked === "Weight Management" || cat_picked === "Lifestyle Diets" || cat_picked === "Wellness" || cat_picked === "Beauty") {
                         var query = Age.where({
                             BaseDBbase_id: id_base
                         }).orderBy("Name").read().done(function (results) {
@@ -373,7 +362,7 @@
                             }, function (err) {
                                 console.log(err);
                             })
-                        } else if (cat_picked === "Energy" || cat_picked === "Fitness & Exercise" || cat_picked === "Weight Management" || cat_picked === "Lifestyle Diets" || cat_picked === "Wellness") {
+                        } else if (cat_picked === "Energy" || cat_picked === "Fitness & Exercise" || cat_picked === "Weight Management" || cat_picked === "Lifestyle Diets" || cat_picked === "Wellness" || cat_picked === "Beauty") {
                             var query = Age.where({
                                 BaseDBbase_id: id_base,
                                 Name: name

@@ -72,7 +72,7 @@ overError {
     height: auto;
     background-color: #fff;
     border: 2px solid #c8060c;
-    margin-right: 10px;
+    margin-right: 25px;
 }
 
 .the_choosen_boost {
@@ -92,9 +92,9 @@ overError {
 
 #info_btn3 {
     height: 60px;
-    margin-top: 128px;
+    margin-top: 223px;
     position: absolute;
-    margin-left: 183px;
+    margin-left: 180px;
     font-size: 15px;
     /*box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);*/
     border: 0;
@@ -104,7 +104,7 @@ overError {
     /*Use xx-large insted of pixels there is a bug with the button shadow causing a white pixel border*/
     font-size: large;
     margin-left: 20px;
-    margin-top: 128px;
+    margin-top: 223px;
     position: absolute;
     background-color: #FF7C00;
     height: 60px;
@@ -137,7 +137,7 @@ overError {
 #btn_right {
     margin-left: 430px;
     position: absolute;
-    margin-top: 60px;
+    margin-top: 160px;
     width: 350px;
     float: left;
 }
@@ -155,7 +155,7 @@ overError {
     -ms-overflow-style: scrollbar;
     -ms-scrollbar-base-color: activeborder;
     overflow-y: auto;
-    margin-top: 18px;
+    margin-top: 110px;
     /*width: 490px;    
     height: 200px;*/
     float: left;
@@ -168,7 +168,7 @@ overError {
 }
 
 #choosen_info {
-    font-size: 12px;
+    font-size: 16px;
 }
 
 #flav2_div {
@@ -395,3 +395,18 @@ button, input[type=button], input[type=submit], input[type=reset], input[type=fi
     font-size: 25px;
     color: #fff;
 }
+
+#choosen_price_div {
+    float: right;
+    margin-right: 70px;
+    font-size: 30px;
+}
+
+#choosen_price {
+    position: absolute;
+}
+#boost_price_doller {
+    position: absolute;
+    margin-top: 15px;
+}
+
