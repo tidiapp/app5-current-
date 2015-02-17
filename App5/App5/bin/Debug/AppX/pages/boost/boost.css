@@ -91,7 +91,7 @@ overError {
 }
 
 #info_btn3 {
-    height: 60px;
+    height: 70px;
     margin-top: 223px;
     position: absolute;
     margin-left: 180px;
@@ -107,7 +107,7 @@ overError {
     margin-top: 223px;
     position: absolute;
     background-color: #FF7C00;
-    height: 60px;
+    height: 70px;
     text-transform: uppercase;
     /*box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);*/
     border: 0;
@@ -169,6 +169,7 @@ overError {
 
 #choosen_info {
     font-size: 16px;
+    margin-right: 10px;
 }
 
 #flav2_div {
@@ -240,7 +241,7 @@ overError {
 }
 
 #del_btn10 {
-    height: 60px;
+    height: 70px;
     position: absolute;
     font-size: 15px;
     /*box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);*/
@@ -250,7 +251,7 @@ overError {
 
 #sel_btn10 {
     margin-left: 115px;
-    height: 60px;
+    height: 70px;
     position: absolute;
     font-size: 15px;
     /*box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);*/
@@ -398,8 +399,10 @@ button, input[type=button], input[type=submit], input[type=reset], input[type=fi
 
 #choosen_price_div {
     float: right;
-    margin-right: 70px;
+    margin-right: 20px;
     font-size: 30px;
+    position: relative;
+    margin-top: 15px;
 }
 
 #choosen_price {

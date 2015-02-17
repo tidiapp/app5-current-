@@ -74,9 +74,11 @@ packages.config
 pages\all_products\all_products.css
 pages\all_products\all_products.html
 pages\all_products\all_products.js
+pages\base\base - Copy.js
 pages\base\base.css
 pages\base\base.html
 pages\base\base.js
+pages\base\url_functions.js
 pages\boost\boost.css
 pages\boost\boost.html
 pages\boost\boost.js

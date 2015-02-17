@@ -136,7 +136,9 @@
     <Content Include="js\showPopupUI.js" />
     <Content Include="js\vendCalls.js" />
     <Content Include="packages.config" />
+    <Content Include="pages\base\base - Copy.js" />
     <Content Include="pages\base\base.js" />
+    <Content Include="pages\base\url_functions.js" />
     <Content Include="pages\boost\boost.css" />
     <Content Include="pages\boost\boost.html" />
     <Content Include="pages\boost\boost.js" />

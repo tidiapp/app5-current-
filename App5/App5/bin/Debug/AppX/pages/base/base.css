@@ -55,27 +55,27 @@
     height: auto;
     background-color: #fff;
     border: 2px solid #c8060c;
-    margin-right: 10px;
+    margin-right: 25px;
 }
 
 #info_btn2 {
-    height: 60px;
-    margin-top: 130px;
+    height: 70px;
+    margin-top: 196px;
     position: absolute;
     margin-left: 176px;
     font-size: 15px;
     /*box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);*/
     border: 0;
 }
-
 #sel_btn2 {
+
     /*Use xx-large insted of pixels there is a bug with the button shadow causing a white pixel border*/
     font-size: large;
     margin-left: 20px;
-    margin-top: 130px;
+    margin-top: 196px;
     position: absolute;
     background-color: #FF7C00;
-    height: 60px;
+    height: 70px;
     text-transform: uppercase;
     /*box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);*/
     border: 0;
@@ -152,17 +152,23 @@
 
 #base_price {
     /*position: absolute;*/
+        margin-right: -10px;
 }
 
 #base_price_doller {
-    position: absolute;
-    margin-top: 15px;
+    /*position: absolute;
+    margin-top: 15px;*/
 }
 
 #base_price_div {
-    float: right;
+    /*float: right;
     margin-right: 70px;
+    font-size: 30px;*/
+    float: right;
+    margin-right: 20px;
     font-size: 30px;
+    position: relative;
+    margin-top: 15px;
 }
 
 #base_price_doll {

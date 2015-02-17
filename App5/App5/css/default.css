@@ -290,3 +290,9 @@ h1, .win-type-xx-large {
     border-top-color: orange;
     border-right-color: orange;
 }
+.perdays {
+    /*position: absolute;
+    margin-top: 32px;*/
+    font-size: small;
+    margin-left: 10px;
+}

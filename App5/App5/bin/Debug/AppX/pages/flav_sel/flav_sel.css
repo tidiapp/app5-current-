@@ -9,10 +9,11 @@
 }
 
 .flav_sel_pic_class {
-    width: 300px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     position: absolute;
     z-index: -1;
+    margin-right: 10px;
 }
 
 #flav_sel_name {
@@ -28,8 +29,8 @@
 }
 
 #the_flav_sel {
-    width: 300px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border: 3px solid;
 }
 
@@ -49,7 +50,7 @@
     height: auto;
     background-color: #fff;
     border: 2px solid #c8060c;
-    margin-right: 10px;
+    margin-right: 25px;
 }
 
 #the_flav_sel_sel {
@@ -68,8 +69,8 @@
 }
 
 #info_btn4 {
-    height: 60px;
-    margin-top: 128px;
+    height: 70px;
+    margin-top: 155px;
     position: absolute;
     margin-left: 195px;
     font-size: 15px;
@@ -79,10 +80,10 @@
 
 #sel_btn4 {
     /*margin-left: 5px;*/
-    margin-top: 128px;
+    margin-top: 155px;
     position: absolute;
     background-color: #FF7C00;
-    height: 60px;
+    height: 70px;
     text-transform: uppercase;
     font-size: 20px;
     /*margin-left: 20px;*/
