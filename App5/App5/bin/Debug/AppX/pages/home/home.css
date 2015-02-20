@@ -123,7 +123,7 @@
 }
 
 #info_template_placement_winlistview .win-listview {
-    height: 200px;
+    height: 290px;
     width: 715px;
     float: left;
     /*border: 2px solid black;*/
@@ -186,5 +186,6 @@
 #nutrigenetics_price_div {
     float: right;
     margin-right: 70px;
+    height: 280px;
 }
 

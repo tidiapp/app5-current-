@@ -69,16 +69,17 @@ js\print.js
 js\removeInfo.js
 js\showPopupUI.js
 js\tool.js
+js\url_functions.js
 js\vendCalls.js
 packages.config
 pages\all_products\all_products.css
 pages\all_products\all_products.html
 pages\all_products\all_products.js
 pages\base\base - Copy.js
+pages\base\base copy 3.js
 pages\base\base.css
 pages\base\base.html
 pages\base\base.js
-pages\base\url_functions.js
 pages\boost\boost.css
 pages\boost\boost.html
 pages\boost\boost.js

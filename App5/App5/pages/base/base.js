@@ -123,15 +123,12 @@
                 roamingSettings.values["Base_price"] = document.getElementById("base_price").textContent;
                 roamingSettings.values["Base_label"] = document.getElementById("sel_base_pic").src;
                 roamingSettings.values["Id_sel_base"] = document.getElementById("id_sel3").textContent;
-                //console.log("Base page picked id = " + roamingSettings.values["Id_sel_base"]);
-                
+            //console.log("Base page picked id = " + roamingSettings.values["Id_sel_base"]);
+
+
+
+            //milo This is the VEND LOGIN and saves the info so other pages just use roamingSettings.values["Token"]   
                 if (vendId != "" && vendId != "null") {
-
-
-
-
-
-
 
                     function isValidUriString(uriString) {
                         var uri = null;
@@ -142,8 +139,6 @@
                         }
                         return uri !== null;
                     }
-
-                    var authzInProgress = false;
 
                     launchAnyServiceWebAuth();
 
@@ -170,19 +165,9 @@
                                 return;
                             }
 
-                            if (authzInProgress) {
-                                //document.getElementById("AnyServiceDebugArea").value += "\r\nAuthorization already in Progress ...";
-                                return;
-                            }
-
                             var startURI = new Windows.Foundation.Uri(serviceRequestURI);
                             var endURI = new Windows.Foundation.Uri(callbackURL);
-
-                            //document.getElementById("AnyServiceDebugArea").value += "Navigating to: " + serviceRequestURI + "\r\n";
-
-                            authzInProgress = true;
-
-                            Windows.Security.Authentication.Web.WebAuthenticationBroker.authenticateAsync(
+                            Windows.Security.Authentication.Web.WebAuthenticationBroker.authenticateAsync(//milo this also has a issue if its in a Class being called from another script file
                                 Windows.Security.Authentication.Web.WebAuthenticationOptions.none, startURI, endURI)
                                 .done(function (result) {
 
@@ -207,10 +192,12 @@
                                             redirect_uri: "https://thinkitdrinkitdata.azure-mobile.net/"
                                         };
 
+                                        //milo http_build_query breaks if I try to add it to a Class currently it works with script link in the base.html and located in the url_functions.js
                                         data = http_build_query(data, '');
                                         data = urldecode(data);
                                         console.log("Build of the Query about to send to VEND " + data);
                                         //milo: as of 1/26 NEW BUG was working before looks like its getting to here and maybe the WinJS.xhr is not fireing
+
                                         WinJS.xhr({
                                             type: "POST",
                                             url: "https://thinkitdrinkit.vendhq.com/api/1.0/token" + "?" + data
@@ -227,25 +214,50 @@
                                             var vendTokenType = vendTokenResults.token_type;
                                             console.log("Vend Token from POST" + vendToken);
 
-                                            // milo@thinkitdrinkit.com
                                             WinJS.xhr({
-                                                type: "GET",
+                                                type: "POST",
                                                 headers: {
                                                     "Authorization": vendTokenType + " " + vendToken,
                                                     "Content-type": "application/json"
                                                 },
                                                 url: "https://thinkitdrinkit.vendhq.com/api/products",
-                                                //data: JSON.stringify({
+                                                data: JSON.stringify({
 
-                                                //    //wont work with this in there need to copy all this new token code to app. 
-                                                //    "id": vendId,
-                                                //    "inventory": [{
-                                                //    }]
-                                                //}),
+                                                    //wont work with this in there need to copy all this new token code to app. 
+                                                    "id": vendId,
+                                                    "inventory": [{
+                                                    }]
+                                                }),
 
                                             }).done(function completed(result) {
                                                 console.log(result);
-                                                var vendResults = JSON.parse(result.responseText);
+
+                                                var vendIdIssue = JSON.parse(result.responseText).product;
+                                                if (vendIdIssue == undefined) {//Vend product missing entirly even though there might be a id in azures db
+                                                    document.getElementById("out_of_stock2").removeAttribute("hidden");
+                                                    document.getElementById("out_of_stock2").textContent = "VEND product does not exist in VENDS website";
+                                                    document.getElementById("out_of_stock2").style.color = "red";
+                                                    document.getElementById("out_of_stock2").style.fontSize = "20px";
+                                                    document.getElementById("out_of_stock2").style.marginTop = "120px";
+                                                    document.getElementById("out_of_stock2").style.marginLeft = "290px";
+                                                    document.getElementById("out_of_stock2").style.position = "Absolute";
+                                                } else {
+                                                    var vendCount = JSON.parse(result.responseText).product.inventory[0].count;
+                                                    //console.log("Base Count from VEND ", vendCount);
+                                                    if (vendCount >= 1.00000) {
+                                                        WinJS.Navigation.navigate('pages/boost/boost.html')
+                                                    } else if (vendCount <= 0.00000) {//If all works this is the check that looks for missing not enough quantity 
+                                                        document.getElementById("out_of_stock").removeAttribute("hidden");
+                                                        document.getElementById("out_of_stock").textContent = "OUT OF STOCK, PLEASE PICK ANOTHER BASE";
+                                                        document.getElementById("out_of_stock").style.color = "red";
+                                                        document.getElementById("out_of_stock").style.fontSize = "20px";
+                                                        document.getElementById("out_of_stock").style.marginTop = "120px";
+                                                        document.getElementById("out_of_stock").style.marginLeft = "290px";
+                                                        document.getElementById("out_of_stock").style.position = "Absolute";
+                                                    }
+                                                }
+
+
                                             },
                                                  function error(err) {
                                                      // handle error conditions.
@@ -306,16 +318,9 @@
 
 
 
-                                    //document.getElementById("AnyServiceDebugArea").value += "Status returned by WebAuth broker: " + result.responseStatus + "\r\n";
-                                    //if (result.responseStatus === Windows.Security.Authentication.Web.WebAuthenticationStatus.errorHttp) {
-                                    //    document.getElementById("AnyServiceDebugArea").value += "Error returned: " + result.responseErrorDetail + "\r\n";
-                                    //}
-                                    authzInProgress = false;
 
                                 }, function (err) {
                                     console.log("Error returned by WebAuth broker: " + err, "Web Authentication SDK Sample", "error");
-                                    //document.getElementById("AnyServiceDebugArea").value += " Error Message: " + err.message + "\r\n";
-                                    authzInProgress = false;
                                 });
 
 
@@ -339,22 +344,32 @@
 
                             }).done(function completed(result) {
                                  console.log(result);
-                                 var vendResults = JSON.parse(result.responseText);
-
                                  //milo: below allows the real GET which is the count to come back to app. Notes accessing json>>> http://www.mkyong.com/javascript/how-to-access-json-object-in-javascript/
-                                 var vendCount = JSON.parse(result.responseText).product.inventory[0].count;
-                                 console.log("Base Count from VEND ", vendCount);
-                                 if (vendCount >= 1.00000) {
-                                     WinJS.Navigation.navigate('pages/boost/boost.html')
-                                 } else if (vendCount <= 0.00000) {
-                                     document.getElementById("out_of_stock").removeAttribute("hidden");
-                                     document.getElementById("out_of_stock").textContent = "OUT OF STOCK, PLEASE PICK ANOTHER BASE";
-                                     document.getElementById("out_of_stock").style.color = "red";
-                                     document.getElementById("out_of_stock").style.fontSize = "20px";
-                                     document.getElementById("out_of_stock").style.marginTop = "120px";
-                                     document.getElementById("out_of_stock").style.marginLeft = "290px";
-                                     document.getElementById("out_of_stock").style.position = "Absolute";
-                                 }
+
+                                    var vendIdIssue = JSON.parse(result.responseText).product;
+                                    if (vendIdIssue == undefined) {//Vend product missing entirly even though there might be a id in azures db
+                                        document.getElementById("out_of_stock2").removeAttribute("hidden");
+                                        document.getElementById("out_of_stock2").textContent = "VEND product does not exist in VENDS website";
+                                        document.getElementById("out_of_stock2").style.color = "red";
+                                        document.getElementById("out_of_stock2").style.fontSize = "20px";
+                                        document.getElementById("out_of_stock2").style.marginTop = "120px";
+                                        document.getElementById("out_of_stock2").style.marginLeft = "290px";
+                                        document.getElementById("out_of_stock2").style.position = "Absolute";
+                                    } else {
+                                        var vendCount = JSON.parse(result.responseText).product.inventory[0].count;
+                                        //console.log("Base Count from VEND ", vendCount);
+                                        if (vendCount >= 1.00000) {
+                                            WinJS.Navigation.navigate('pages/boost/boost.html')
+                                        } else if (vendCount <= 0.00000) {//If all works this is the check that looks for missing not enough quantity 
+                                            document.getElementById("out_of_stock").removeAttribute("hidden");
+                                            document.getElementById("out_of_stock").textContent = "OUT OF STOCK, PLEASE PICK ANOTHER BASE";
+                                            document.getElementById("out_of_stock").style.color = "red";
+                                            document.getElementById("out_of_stock").style.fontSize = "20px";
+                                            document.getElementById("out_of_stock").style.marginTop = "120px";
+                                            document.getElementById("out_of_stock").style.marginLeft = "290px";
+                                            document.getElementById("out_of_stock").style.position = "Absolute";
+                                        }
+                                    }
 
                              },
                              function error(err) {
@@ -390,70 +405,9 @@
 
                              });
 
-
                         }
 
-
                     }
-
-
-
-
-
-
-
-
-
-                    ////milo: OLD CODE NONE OAuth2.0 the following makes a call to vend to check if we have enough product for the order if low it will not allow to move on. 
-                    //WinJS.xhr({
-                    //    //milo: using POST but not passing anything to vend until .then at which point it reads the api product inventory count and displays it back.  
-                    //    type: "POST",
-                    //    url: "https://thinkitdrinkit.vendhq.com/api/products",
-                    //    user: "milo@thinkitdrinkit.com",
-                    //    password: "agave2013",
-                    //    headers: { "Content-type": "application/json" },
-                    //    data: JSON.stringify({
-                    //        //milo: in this object its the id part >>> GET /api/register_sales/{id} >>> that VEND wants which is below
-                    //        "id": vendId,
-                    //        "inventory": [{
-                    //        }]
-                    //    }),
-                    //}).then(function sucess(res) {
-                    //    //milo: below allows the real GET which is the count to come back to app. Notes accessing json>>> http://www.mkyong.com/javascript/how-to-access-json-object-in-javascript/
-
-                    //    var vendIdIssue = JSON.parse(res.responseText).product;
-                    //    if (vendIdIssue == undefined) {//Vend product missing entirly even though there might be a id in azures db
-                    //        document.getElementById("out_of_stock2").removeAttribute("hidden");
-                    //        document.getElementById("out_of_stock2").textContent = "VEND product does not exist in VENDS website";
-                    //        document.getElementById("out_of_stock2").style.color = "red";
-                    //        document.getElementById("out_of_stock2").style.fontSize = "20px";
-                    //        document.getElementById("out_of_stock2").style.marginTop = "120px";
-                    //        document.getElementById("out_of_stock2").style.marginLeft = "290px";
-                    //        document.getElementById("out_of_stock2").style.position = "Absolute";
-                    //    } else {
-                    //        var vendCount = JSON.parse(res.responseText).product.inventory[0].count;
-                    //        //console.log("Base Count from VEND ", vendCount);
-                    //        if (vendCount >= 1.00000) {
-                    //            WinJS.Navigation.navigate('pages/boost/boost.html')
-                    //        } else if (vendCount <= 0.00000) {//If all works this is the check that looks for missing not enough quantity 
-                    //            document.getElementById("out_of_stock").removeAttribute("hidden");
-                    //            document.getElementById("out_of_stock").textContent = "OUT OF STOCK, PLEASE PICK ANOTHER BASE";
-                    //            document.getElementById("out_of_stock").style.color = "red";
-                    //            document.getElementById("out_of_stock").style.fontSize = "20px";
-                    //            document.getElementById("out_of_stock").style.marginTop = "120px";
-                    //            document.getElementById("out_of_stock").style.marginLeft = "290px";
-                    //            document.getElementById("out_of_stock").style.position = "Absolute";
-                    //        }
-                    //    }
-                    //}, function error(err) {
-                    //    console.log("fail", err.responseText)
-                    //});
-
-
-
-
-
-
 
                 } else if (vendId == "null" || vendId == undefined || vendId == "") {//id missing in azure db but product in vend exists
                     document.getElementById("out_of_stock2").removeAttribute("hidden");

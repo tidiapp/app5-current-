@@ -77,7 +77,7 @@ overError {
 
 .the_choosen_boost {
     overflow: auto;
-    width: 630px;
+    width: 655px;
     background-color: #fff;
     height: 300px;
     /*margin-top: 2px;*/
@@ -327,7 +327,7 @@ button, input[type=button], input[type=submit], input[type=reset], input[type=fi
 
 #win_listview_host_boost_choosen .win-listview {
     height: 305px;
-    width: 645px;
+    width: 665px;
     float: left;
 }
 
@@ -335,8 +335,16 @@ button, input[type=button], input[type=submit], input[type=reset], input[type=fi
     overflow-x: hidden;
     height: 310px;
     /*border: 2px solid green;*/
-    width: 640px;
+    width: 660px;
 }
+
+#choosen_boost_info_placement .win-listview {
+    height: 310px;
+    /*border: 2px solid pink;*/
+    width: 670px;
+/*dont use margins here use .win-surface*/
+}
+
 
 #boost_list_placement .win-viewport {
     height: 230px;
