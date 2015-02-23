@@ -119,7 +119,6 @@
                 roamingSettings.values["Nutrigenetics_price"] = document.getElementById("nutrigenetics_price").textContent;
                 //milo This is the VEND LOGIN and saves the info so other pages just use roamingSettings.values["Token"]   
                 if (vendId != "" && vendId != "null") {
-
                     function isValidUriString(uriString) {
                         var uri = null;
                         try {
@@ -129,14 +128,9 @@
                         }
                         return uri !== null;
                     }
-
                     launchAnyServiceWebAuth();
-
                     function launchAnyServiceWebAuth() {
-
-                        //roamingSettings.values["Token"] = ""; //refresh token n65TjSuNYhI1nZaGt2c9sY81B4zRRw1kTqPVnBR2
-                        //Dp86YkRH2FIqSKthikq8dT5gF6PbizG4DHSk4zck
-
+                        //roamingSettings.values["Token"] = ""; 
                         if (roamingSettings.values["Token"] == undefined || roamingSettings.values["Token"] == "") {// || roamingSettings.values["newToken"]
                             //milo need to use refresh token instead
                             //roamingSettings.values["newToken"] = false;
@@ -160,20 +154,14 @@
                             Windows.Security.Authentication.Web.WebAuthenticationBroker.authenticateAsync(//milo this also has a issue if its in a Class being called from another script file
                                 Windows.Security.Authentication.Web.WebAuthenticationOptions.none, startURI, endURI)
                                 .done(function (result) {
-
                                     var resultURI = result.responseData;
-                                    //document.getElementById("AnyServiceReturnedToken").value = resultURI;
                                     var accessURI = new Windows.Foundation.Uri(resultURI);
-
                                     var vendQuery = accessURI.queryParsed;
-
                                     var check = vendQuery[0].name;
                                     var code = vendQuery[0].value;
 
                                     if (check == "code") {
-
                                         var data = {};
-
                                         data = {
                                             code: vendQuery[0].value,
                                             client_id: "cv2T4BNlCZaaLrCr1aGqY35aqtZT3p5L",
@@ -181,29 +169,23 @@
                                             grant_type: "authorization_code",
                                             redirect_uri: "https://thinkitdrinkitdata.azure-mobile.net/"
                                         };
-
                                         //milo http_build_query breaks if I try to add it to a Class currently it works with script link in the base.html and located in the url_functions.js
                                         data = http_build_query(data, '');
                                         data = urldecode(data);
                                         console.log("Build of the Query about to send to VEND " + data);
                                         //milo: as of 1/26 NEW BUG was working before looks like its getting to here and maybe the WinJS.xhr is not fireing
-
                                         WinJS.xhr({
                                             type: "POST",
                                             url: "https://thinkitdrinkit.vendhq.com/api/1.0/token" + "?" + data
-
                                         }).done(function completed(result) {
                                             //milo: Token data 
                                             console.log(result);
                                             var vendTokenResults = JSON.parse(result.responseText);
                                             var vendToken = vendTokenResults.access_token;
-
                                             //milo vendToken send to azure db and then call it 
-
                                             roamingSettings.values["Token"] = vendToken;
                                             var vendTokenType = vendTokenResults.token_type;
                                             console.log("Vend Token from POST" + vendToken);
-
                                             WinJS.xhr({
                                                 type: "POST",
                                                 headers: {
@@ -221,7 +203,6 @@
 
                                             }).done(function completed(result) {
                                                 console.log(result);
-
                                                 var vendIdIssue = JSON.parse(result.responseText).product;
                                                 if (vendIdIssue == undefined) {//Vend product missing entirly even though there might be a id in azures db
                                                     document.getElementById("out_of_stock4").removeAttribute("hidden");
@@ -246,8 +227,6 @@
                                                         document.getElementById("out_of_stock3").style.position = "Absolute";
                                                     }
                                                 }
-
-
                                             },
                                                  function error(err) {
                                                      // handle error conditions.
@@ -300,23 +279,15 @@
                                                     console.log("POST Request finished and response is ready but " + "status 404: Page not found");
                                                 }
                                             });
-
-
                                     } else if (check == "error") {
                                         console.log("Requesting authorisation code to VEND Declined access");
                                     }
-
-
-
-
                                 }, function (err) {
                                     console.log("Error returned by WebAuth broker: " + err, "Web Authentication SDK Sample", "error");
                                 });
 
-
                             //milo this may work until it expires but I still saved the # in roaming so expect weird errors
                         } else if (roamingSettings.values["Token"] != "" && roamingSettings.values["Token"] != isNaN) {
-
                             WinJS.xhr({
                                 type: "POST",
                                 headers: {
@@ -325,17 +296,14 @@
                                 }, //milo: x-www-form-urlencoded swaped out for json
                                 url: "https://thinkitdrinkit.vendhq.com/api/products",
                                 data: JSON.stringify({
-
                                     //wont work with this in there need to copy all this new token code to app. 
                                     "id": vendId,
                                     "inventory": [{
                                     }]
                                 }),
-
                             }).done(function completed(result) {
                                 console.log(result);
                                 //milo: below allows the real GET which is the count to come back to app. Notes accessing json>>> http://www.mkyong.com/javascript/how-to-access-json-object-in-javascript/
-
                                 var vendIdIssue = JSON.parse(result.responseText).product;
                                 if (vendIdIssue == undefined) {//Vend product missing entirly even though there might be a id in azures db
                                     document.getElementById("out_of_stock4").removeAttribute("hidden");
@@ -360,7 +328,6 @@
                                         document.getElementById("out_of_stock3").style.position = "Absolute";
                                     }
                                 }
-
                             },
                              function error(err) {
                                  // handle error conditions.
@@ -394,11 +361,8 @@
                                  }
 
                              });
-
                         }
-
                     }
-
                 } else if (vendId == "null" || vendId == undefined || vendId == "") {//id missing in azure db but product in vend exists
                     document.getElementById("out_of_stock4").removeAttribute("hidden");
                     document.getElementById("out_of_stock4").textContent = "ID Missing in Azure DB.";
@@ -407,14 +371,11 @@
                     document.getElementById("out_of_stock4").style.marginTop = "120px";
                     document.getElementById("out_of_stock4").style.marginLeft = "290px";
                     document.getElementById("out_of_stock4").style.position = "Absolute";
-                    //WinJS.Navigation.navigate('pages/boost/boost.html')
                 }
             }
-            
             //milo: id's coming from Age DB
             else if (id_sel == 25 || id_sel == 26 || id_sel == 27 || id_sel == 28) {
                 WinJS.Navigation.navigate('pages/base/base.html');
-                //roamingSettings.values["New_route"] = func3;
                 var appData = Windows.Storage.ApplicationData.current;
                 var roamingSettings = appData.roamingSettings;
                 roamingSettings.values["Age_name"] = _choosen_cat;
@@ -434,9 +395,7 @@
                 roamingSettings.values["Age_info"] = null;
                 roamingSettings.values["Age_price"] = null;
                 roamingSettings.values["Id_sel_age"] = id_sel;
-                //console.log("Age page picked id = " + roamingSettings.values["Id_sel_age"]);
             }
-
         },
 
         more_info: function (clicked) {
