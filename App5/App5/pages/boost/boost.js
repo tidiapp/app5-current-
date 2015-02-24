@@ -757,10 +757,10 @@
 
         finalKeepInfo: function () {
             if (age_data.model.the_boost_sel.length === 0) {
-                //thename0 = name;
+                thename0 = age_data.model.the_boost_sel.length;
                 document.getElementById("the_number").textContent = age_data.model.the_boost_sel.length;
                 document.getElementById("the_num").textContent = age_data.model.the_boost_sel.length;
-                //roamingSettings.values["Boost0_name"] = name;
+                roamingSettings.values["Boost0_name"] = thename0;
                 roamingSettings.values["Boost_total_num"] = age_data.model.the_boost_sel.length;
                 document.getElementById("the_test");
                 keepInfo = false;

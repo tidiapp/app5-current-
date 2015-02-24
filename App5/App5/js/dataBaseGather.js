@@ -705,11 +705,17 @@
                                 { product_id: results[i].Boost8Vend, quantity: 1, price: results[i].Boost8Price }
                                )
                             }
+                            else if (results[i].BoostPrice > 0 && results[i].Boost2Price <= 0) {
+                                age_data.model.order_final_call.push(
+                                { product_id: results[i].BaseVend, quantity: 1, price: results[i].BasePrice },
+                                { product_id: results[i].FlaveVend, quantity: 1, price: results[i].FlavPrice },
+                                { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }
+                                   )
+                            }
                             else {
                                 age_data.model.order_final_call.push(
                                { product_id: results[i].BaseVend, quantity: 1, price: results[i].BasePrice },
-                               { product_id: results[i].FlaveVend, quantity: 1, price: results[i].FlavPrice },
-                               { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }
+                               { product_id: results[i].FlaveVend, quantity: 1, price: results[i].FlavPrice }
                                )
                             }
                         }

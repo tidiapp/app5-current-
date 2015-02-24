@@ -86,6 +86,12 @@
                 document.getElementById("my_boost8_name").textContent = roamingSettings.values["Boost8_name"];
             };
 
+            if (roamingSettings.values["Boost0_name"] === 0) {
+                roamingSettings.values["Boost0_price"] = 0
+            } else {
+                document.getElementById("boost_price0").textContent = "$" + roamingSettings.values["Boost0_price"];
+            };
+
             if (roamingSettings.values["Nutrigenetics_name"] == "" || roamingSettings.values["Nutrigenetics_name"] === !undefined) {
                 roamingSettings.values["Nutrigenetics_price"] = 0
 //milo: figure out what goes here
@@ -260,7 +266,44 @@
                     roamingSettings.values["Boost8_price"] = 0;
                     roamingSettings.values["Boost8_vend"] = "none";
                 }
-                else {
+                else if (roamingSettings.values["Boost8_price"] > 0) {
+//milo:allows all 8 to be shown
+                }
+                else if (roamingSettings.values["Boost1_price"] > 0 && roamingSettings.values["Boost2_price"] <= 0) {
+                    roamingSettings.values["Boost2_name"] = "none";
+                    roamingSettings.values["Boost2_pic"] = "none";
+                    roamingSettings.values["Boost2_price"] = 0;
+                    roamingSettings.values["Boost2_vend"] ="none";
+                    roamingSettings.values["Boost3_name"] = "none";
+                    roamingSettings.values["Boost3_pic"] = "none";
+                    roamingSettings.values["Boost3_price"] = 0;
+                    roamingSettings.values["Boost3_vend"] = "none";
+                    roamingSettings.values["Boost4_name"] = "none";
+                    roamingSettings.values["Boost4_pic"] = "none";
+                    roamingSettings.values["Boost4_price"] = 0;
+                    roamingSettings.values["Boost4_vend"] = "none";
+                    roamingSettings.values["Boost5_name"] = "none";
+                    roamingSettings.values["Boost5_pic"] = "none";
+                    roamingSettings.values["Boost5_price"] = 0;
+                    roamingSettings.values["Boost5_vend"] = "none";
+                    roamingSettings.values["Boost6_name"] = "none";
+                    roamingSettings.values["Boost6_pic"] = "none";
+                    roamingSettings.values["Boost6_price"] = 0;
+                    roamingSettings.values["Boost6_vend"] = "none";
+                    roamingSettings.values["Boost7_name"] = "none";
+                    roamingSettings.values["Boost7_pic"] = "none";
+                    roamingSettings.values["Boost7price"] = 0;
+                    roamingSettings.values["Boost7_vend"] = "none";
+                    roamingSettings.values["Boost8_name"] = "none";
+                    roamingSettings.values["Boost8_pic"] = "none";
+                    roamingSettings.values["Boost8_price"] = 0;
+                    roamingSettings.values["Boost8_vend"] = "none";
+                }
+                else {//milo 0 boosts picked
+                    roamingSettings.values["Boost1_name"] = "none";
+                    roamingSettings.values["Boost1_pic"] = "none";
+                    roamingSettings.values["Boost1_price"] = 0;
+                    roamingSettings.values["Boost1_vend"] = "none";
                     roamingSettings.values["Boost2_name"] = "none";
                     roamingSettings.values["Boost2_pic"] = "none";
                     roamingSettings.values["Boost2_price"] = 0;
@@ -455,42 +498,76 @@
                     else if (roamingSettings.values["Boost8_price"] > 0) {
                         //milo:allows all to be shown
                     }
-                    else {
-                        roamingSettings.values["Boost2_name"] = 0;
-                        roamingSettings.values["Boost2_pic"] = 0;
-                        roamingSettings.values["Boost2_price"] = 0;
-                        roamingSettings.values["Boost2_vend"] = 0;
-                        roamingSettings.values["Boost3_name"] = 0;
-                        roamingSettings.values["Boost3_pic"] = 0;
-                        roamingSettings.values["Boost3_price"] = 0;
-                        roamingSettings.values["Boost3_vend"] = 0;
-                        roamingSettings.values["Boost4_name"] = "none";
-                        roamingSettings.values["Boost4_pic"] = "none";
-                        roamingSettings.values["Boost4_price"] = 0;
-                        roamingSettings.values["Boost4_vend"] = "none";
-                        roamingSettings.values["Boost5_name"] = "none";
-                        roamingSettings.values["Boost5_pic"] = "none";
-                        roamingSettings.values["Boost5_price"] = 0;
-                        roamingSettings.values["Boost5_vend"] = "none";
-                        roamingSettings.values["Boost6_name"] = "none";
-                        roamingSettings.values["Boost6_pic"] = "none";
-                        roamingSettings.values["Boost6_price"] = 0;
-                        roamingSettings.values["Boost6_vend"] = "none";
-                        roamingSettings.values["Boost7_name"] = "none";
-                        roamingSettings.values["Boost7_pic"] = "none";
-                        roamingSettings.values["Boost7price"] = 0;
-                        roamingSettings.values["Boost7_vend"] = "none";
-                        roamingSettings.values["Boost8_name"] = "none";
-                        roamingSettings.values["Boost8_pic"] = "none";
-                        roamingSettings.values["Boost8_price"] = 0;
-                        roamingSettings.values["Boost8_vend"] = "none";
-                    }
-                    if (roamingSettings.values["Nutrigenetics_price"] <= 0 || roamingSettings.values["Nutrigenetics_price"] == "") {
-                        roamingSettings.values["Nutrigenetics_name"] = "none";
-                        roamingSettings.values["Nutrigenetics_price"] = 0;
-                        roamingSettings.values["Nutrigenetics_vend"] = "none";
-                        roamingSettings.values["Nutrigenetics_pic"] = "none";
-                    };
+                    else if (roamingSettings.values["Boost1_price"] > 0 && roamingSettings.values["Boost2_price"] <= 0) {
+                            roamingSettings.values["Boost2_name"] = "none";
+                            roamingSettings.values["Boost2_pic"] = "none";
+                            roamingSettings.values["Boost2_price"] = 0;
+                            roamingSettings.values["Boost2_vend"] = "none";
+                            roamingSettings.values["Boost3_name"] = "none";
+                            roamingSettings.values["Boost3_pic"] = "none";
+                            roamingSettings.values["Boost3_price"] = 0;
+                            roamingSettings.values["Boost3_vend"] = "none";
+                            roamingSettings.values["Boost4_name"] = "none";
+                            roamingSettings.values["Boost4_pic"] = "none";
+                            roamingSettings.values["Boost4_price"] = 0;
+                            roamingSettings.values["Boost4_vend"] = "none";
+                            roamingSettings.values["Boost5_name"] = "none";
+                            roamingSettings.values["Boost5_pic"] = "none";
+                            roamingSettings.values["Boost5_price"] = 0;
+                            roamingSettings.values["Boost5_vend"] = "none";
+                            roamingSettings.values["Boost6_name"] = "none";
+                            roamingSettings.values["Boost6_pic"] = "none";
+                            roamingSettings.values["Boost6_price"] = 0;
+                            roamingSettings.values["Boost6_vend"] = "none";
+                            roamingSettings.values["Boost7_name"] = "none";
+                            roamingSettings.values["Boost7_pic"] = "none";
+                            roamingSettings.values["Boost7price"] = 0;
+                            roamingSettings.values["Boost7_vend"] = "none";
+                            roamingSettings.values["Boost8_name"] = "none";
+                            roamingSettings.values["Boost8_pic"] = "none";
+                            roamingSettings.values["Boost8_price"] = 0;
+                            roamingSettings.values["Boost8_vend"] = "none";
+                        }
+                        else {//milo 0 boosts picked
+                            roamingSettings.values["Boost1_name"] = "none";
+                            roamingSettings.values["Boost1_pic"] = "none";
+                            roamingSettings.values["Boost1_price"] = 0;
+                            roamingSettings.values["Boost1_vend"] = "none";
+                            roamingSettings.values["Boost2_name"] = "none";
+                            roamingSettings.values["Boost2_pic"] = "none";
+                            roamingSettings.values["Boost2_price"] = 0;
+                            roamingSettings.values["Boost2_vend"] = "none";
+                            roamingSettings.values["Boost3_name"] = "none";
+                            roamingSettings.values["Boost3_pic"] = "none";
+                            roamingSettings.values["Boost3_price"] = 0;
+                            roamingSettings.values["Boost3_vend"] = "none";
+                            roamingSettings.values["Boost4_name"] = "none";
+                            roamingSettings.values["Boost4_pic"] = "none";
+                            roamingSettings.values["Boost4_price"] = 0;
+                            roamingSettings.values["Boost4_vend"] = "none";
+                            roamingSettings.values["Boost5_name"] = "none";
+                            roamingSettings.values["Boost5_pic"] = "none";
+                            roamingSettings.values["Boost5_price"] = 0;
+                            roamingSettings.values["Boost5_vend"] = "none";
+                            roamingSettings.values["Boost6_name"] = "none";
+                            roamingSettings.values["Boost6_pic"] = "none";
+                            roamingSettings.values["Boost6_price"] = 0;
+                            roamingSettings.values["Boost6_vend"] = "none";
+                            roamingSettings.values["Boost7_name"] = "none";
+                            roamingSettings.values["Boost7_pic"] = "none";
+                            roamingSettings.values["Boost7price"] = 0;
+                            roamingSettings.values["Boost7_vend"] = "none";
+                            roamingSettings.values["Boost8_name"] = "none";
+                            roamingSettings.values["Boost8_pic"] = "none";
+                            roamingSettings.values["Boost8_price"] = 0;
+                            roamingSettings.values["Boost8_vend"] = "none";
+                        }
+                        if (roamingSettings.values["Nutrigenetics_price"] <= 0 || roamingSettings.values["Nutrigenetics_price"] == "") {
+                            roamingSettings.values["Nutrigenetics_name"] = "none";
+                            roamingSettings.values["Nutrigenetics_price"] = 0;
+                            roamingSettings.values["Nutrigenetics_vend"] = "none";
+                            roamingSettings.values["Nutrigenetics_pic"] = "none";
+                        };
                     //console.log("I'm here 2!");
                     server.contSave()
 
@@ -516,7 +593,7 @@
 
         howManyBoosts: function (results) {
             for (var i = 0; i < results.length; i++) {
-
+                //milo all this code was set up so bug that removes attribute from one order to another does not show up as 0 or none. 
                 if (results[i].OrderNum === 1) {
                     if (results[0].Boost2Price > 0 && results[0].Boost3Price <= 0) {
                         age_data.model.order_final_read.push(

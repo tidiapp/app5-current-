@@ -16,7 +16,7 @@
             design.getHomeBorders("white");
             //var id = roamingSettings.values["Id_sel_sport"];
             //console.log("Age page picked id READY() = " + roamingSettings.values["Id_sel_age"]);
-            if (roamingSettings.values["not_cont"]) {
+            if (!roamingSettings.values["not_cont"]) {
                 document.getElementById("youcurrentprice").textContent = roamingSettings.values["the_complete_total"];
                 document.getElementById("youcurrentprice").removeAttribute("hidden");
                 document.getElementById("thewordsforcurrentprice").removeAttribute("hidden");

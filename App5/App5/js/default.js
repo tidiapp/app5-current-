@@ -22,7 +22,7 @@
                 roamingSettings.values["the_complete_total"] = 0;
                 design.colorChange("#C5E3BF", "white");//#F89B1E new as of 2/2014 #FE5000
                 roamingSettings.values["true"] = false;
-                roamingSettings.values["not_cont"] = false;
+                roamingSettings.values["not_cont"] = true;
                 roamingSettings.values["went_back"] = true;
                 roamingSettings.values["totalOrderNumber"] = 0;
                 roamingSettings.values["totalOrderNumber1"] = 0;
