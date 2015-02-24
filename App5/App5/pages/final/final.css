@@ -331,13 +331,13 @@ font-size: 30px;}
 }
 
 .final_surround {
-    background-color: #FFEDCC;
+    /*background-color: #FFEDCC;*/
     margin-bottom: 5px;
     padding: 5px;
 }
 #final_surround_div {
     height: auto;
-    background-color: #FFEDCC;    
+    /*background-color: #FFEDCC;*/    
     /*float: left;
     width: 100%;*/
 }
