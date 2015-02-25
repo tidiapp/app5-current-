@@ -129,8 +129,7 @@
 
 
 
-            //milo This is the VEND LOGIN and saves the info so other pages just use roamingSettings.values["Token"]   
-
+//milo: This is the ONLY PLACE in app VEND NEEDS to LOGIN, saves the info so other pages just use roamingSettings.values["Token"] and refresh token till the refresh token itself expires   
                 if (vendId != "" && vendId != "null") {
 
                     function isValidUriString(uriString) {
@@ -143,6 +142,8 @@
                         return uri !== null;
                     }
 
+                    refreshTokenSwitch();
+
                     function refreshTokenSwitch() {
                         var data = {};
 console.log("Refresh token trigered ");
@@ -151,7 +152,7 @@ console.log("Refresh token trigered ");
                             refresh_token: roamingSettings.values["refreshToken"],
                             client_id: "cv2T4BNlCZaaLrCr1aGqY35aqtZT3p5L",
                             client_secret: "G6hgTRflMJFgfsT7A83YOZhopNfWUTvZ",
-                            grant_type: "authorization_code",
+                            grant_type: "refresh_token",
                             //redirect_uri: "https://thinkitdrinkitdata.azure-mobile.net/"
                         };
 
@@ -174,7 +175,7 @@ console.log("Refresh token results " + result);
                             roamingSettings.values["Token"] = vendToken;
                             roamingSettings.values["refreshToken"] = vendRefreshToken;
                             var vendTokenType = vendTokenResults.token_type;
-console.log("Vend refreshToken from POST" + vendToken);
+console.log("Vend refreshToken from POST " + vendToken);
 
                             WinJS.xhr({
                                 type: "POST",
@@ -268,8 +269,8 @@ console.log("Vend refreshToken from POST" + vendToken);
                             });
                     }
 
-                    launchAnyServiceWebAuth();
-                    function launchAnyServiceWebAuth() {
+                    //launchAnyServiceWebAuth();
+                    //function launchAnyServiceWebAuth() {
 
 //roamingSettings.values["Token"] = "";
 //milo: Token expired or empty
@@ -508,7 +509,8 @@ console.log("Vend Token from POST" + vendToken);
                                  }
                              });
                         }
-                    }
+                  // }//milo launchAnyServiceWebAuth()
+
                 } else if (vendId == "null" || vendId == undefined || vendId == "") {//id missing in azure db but product in vend exists
                     document.getElementById("out_of_stock2").removeAttribute("hidden");
                     document.getElementById("out_of_stock2").textContent = "ID Missing in Azure DB.";
