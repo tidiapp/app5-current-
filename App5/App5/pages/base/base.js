@@ -142,7 +142,6 @@
                         return uri !== null;
                     }
 
-                    refreshTokenSwitch();
 
                     function refreshTokenSwitch() {
                         var data = {};
