@@ -38,7 +38,7 @@
 }
 
 #underline_boost {
-    margin-top: 90px;
+    margin-top: 110px;
 }
 
 #boost_name {
@@ -276,13 +276,14 @@ button, input[type=button], input[type=submit], input[type=reset], input[type=fi
     background-color: rgba(0,0,0,.6);
     color: #fff;
     width: 75px;
-    height: 32px;
-    margin-top: -46px;
+    height: 22px;
+    margin-top: -28px;
     padding-left: 5px;
     margin-left: 2px;
     position: relative;
     font-size: 12px;
     padding-top: 4px;
+    text-align: center;
 }
 
 #contenthost {

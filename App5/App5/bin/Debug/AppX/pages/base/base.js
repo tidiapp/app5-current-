@@ -29,8 +29,6 @@
             document.getElementById("func_pic").src = roamingSettings.values["Func_pic"];
 
             //document.getElementById("id_sel4").textContent;
-
-
             //milo: footer history & H1 for Fitness & Excercise
             if (roamingSettings.values["Cat_picked"] === "Fitness & Exercise") {
                 //milo: if id_sel is id 1 from age db it is Recovery but id 1 from func db is Strength & Power, depends where you come from for bug fix when coming from Fitness&Excercise>recovery>and pick anyone the ids are from the func page but if coming from protein>recovery>and whatever the ids do not matter couse the roamingSettings.values["Cat_picked"] is protein which in this comment its Fitness the if statemnet is above. 
@@ -77,7 +75,6 @@
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
                 document.getElementById("home_div").setAttribute("hidden");
                 document.getElementById("where_you_are2").textContent = "You have choosen " + roamingSettings.values["Cat_picked"] + "." + " You have 2 steps left.";
-
             }
 
             server.base(id_sel, cat_selected);
@@ -127,8 +124,6 @@
                 roamingSettings.values["Id_sel_base"] = document.getElementById("id_sel3").textContent;
             //console.log("Base page picked id = " + roamingSettings.values["Id_sel_base"]);
 
-
-
 //milo: This is the ONLY PLACE in app VEND NEEDS to LOGIN, saves the info so other pages just use roamingSettings.values["Token"] and refresh token till the refresh token itself expires   
                 if (vendId != "" && vendId != "null") {
 
@@ -141,7 +136,6 @@
                         }
                         return uri !== null;
                     }
-
 
                     function refreshTokenSwitch() {
                         var data = {};
@@ -267,11 +261,6 @@ console.log("Vend refreshToken from POST " + vendToken);
                                 }
                             });
                     }
-
-                    //launchAnyServiceWebAuth();
-                    //function launchAnyServiceWebAuth() {
-
-//roamingSettings.values["Token"] = "";
 //milo: Token expired or empty
                         if (roamingSettings.values["Token"] == undefined || roamingSettings.values["Token"] == "") {
                             var serviceRequestURI = "https://secure.vendhq.com/connect?response_type=code&client_id=cv2T4BNlCZaaLrCr1aGqY35aqtZT3p5L&redirect_uri=https://thinkitdrinkitdata.azure-mobile.net/";
@@ -429,7 +418,6 @@ console.log("Vend Token from POST" + vendToken);
                                     console.log("Error returned by WebAuth broker: " + err, "Web Authentication SDK Sample", "error");
                                 });
 
-
 //milo: If Token is not expired sign in automatically. If it is expired but saved in roaming then this will still fire but see it and empty the roaming and fire from launchAnyServiceWebAuth()
                         } else if (roamingSettings.values["Token"] != "" && roamingSettings.values["Token"] != isNaN) {
 
@@ -504,12 +492,9 @@ console.log("Vend Token from POST" + vendToken);
 //milo: fires off when VEND expires the token 
                                      roamingSettings.values["Token"] = "";
                                      refreshTokenSwitch();
-                                     //launchAnyServiceWebAuth();
                                  }
                              });
                         }
-                  // }//milo launchAnyServiceWebAuth()
-
                 } else if (vendId == "null" || vendId == undefined || vendId == "") {//id missing in azure db but product in vend exists
                     document.getElementById("out_of_stock2").removeAttribute("hidden");
                     document.getElementById("out_of_stock2").textContent = "ID Missing in Azure DB.";

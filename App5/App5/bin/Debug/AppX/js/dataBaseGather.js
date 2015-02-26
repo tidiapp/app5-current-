@@ -143,7 +143,7 @@
                 if (id_sel == 25 || id_sel == 26) {
                     var query = Age.where({
                         Age_id: id_sel
-                    }).orderBy("Name").read().done(function (results) {
+                    }).orderBy("Order").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[i].Price, id_sel: results[i].id })
                         }
@@ -173,7 +173,7 @@
                 } else if (cat_selected === "Energy") {
                     var query = Age.where({
                         Access: 1
-                    }).orderBy("Name").read().done(function (results) {
+                    }).orderBy("Order").orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[i].Price, id_sel: results[i].id })
                         }
@@ -304,7 +304,7 @@
                     } else if (cat_picked === "Energy" || cat_picked === "Fitness & Exercise" || cat_picked === "Weight Management" || cat_picked === "Lifestyle Diets" || cat_picked === "Wellness" || cat_picked === "Beauty") {
                         var query = Age.where({
                             BaseDBbase_id: id_base
-                        }).orderBy("Name").read().done(function (results) {
+                        }).orderBy("Order").read().done(function (results) {
                             for (var i = 0; i < results.length; i++) {
                                 age_data.model.boost.push({ boost_name: results[i].Name, boost_pic: results[i].Image, id_sel: results[i].id })
                             }
@@ -735,11 +735,18 @@
                         console.log(array_t);
                         WinJS.xhr({
                             type: "POST",
+                            //url: "https://thinkitdrinkit.vendhq.com/api/register_sales",
+                            //headers: { "Content-type": "application/json" },
+                            //user: "milo@thinkitdrinkit.com",
+                            //password: "agave2013",
+                            //data: JSON.stringify
+                            headers: {
+                                "Authorization": "Bearer" + " " + roamingSettings.values["Token"],
+                                "Content-type": "application/json"
+                            },
                             url: "https://thinkitdrinkit.vendhq.com/api/register_sales",
-                            headers: { "Content-type": "application/json" },
-                            user: "milo@thinkitdrinkit.com",
-                            password: "agave2013",
-                            data: JSON.stringify({
+                            data: JSON.stringify
+                                ({
                                 "register_id": "5ecccd41-3cbc-11e3-a29a-bc305bf5da20",
                                 "user_name": "",
                                 "customer_id": "",
@@ -871,8 +878,6 @@
                     //for (var i = 0; i < results.length; i++) {
                     //    age_data.model.order_final_read.push({ b_name: results[i].BaseName, b_img: results[i].BaseImages, b_price: results[i].BasePrice, f_name: results[i].FlavName, f_price: results[i].FlavPrice, bo_name: results[i].BoostName, bo_price: results[i].BoostPrice, bo2_name: results[i].Boost2Name, bo2_price: results[i].Boost2Price, bo3_name: results[i].Boost3Name, bo3_price: results[i].Boost3Price, bo4_name: results[i].Boost4Name, bo4_price: results[i].Boost4Price, bo5_name: results[i].Boost5Name, bo5_price: results[i].Boost5Price, bo6_name: results[i].Boost6Name, bo6_price: results[i].Boost6Price, bo7_name: results[i].Boost7Name, bo7_price: results[i].Boost7Price, bo8_name: results[i].Boost8Name, bo8_price: results[i].Boost8Price })
                     //}
-
-
 
                 }, function (err) {
                     console.log(err);

@@ -262,11 +262,12 @@ h1, .win-type-xx-large {
 
 .id_sel {
     position: absolute;
+    color: #fff;
     /*margin-top: -100px;*/
 }
 
 .underline_class {
-    margin-top: 125px;
+    margin-top: 135px;
     text-align: center;
     /*margin-left: 6px;*/
 }
