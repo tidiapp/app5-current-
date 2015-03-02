@@ -89,11 +89,12 @@
                 roamingSettings.values["Boost0_price"] = 0
                 document.getElementById("my_boost0").setAttribute("hidden");
                 document.getElementById("my_base_img_final").src = roamingSettings.values["Base_pic"];
-            } else {
             };
 
             if (roamingSettings.values["Nutrigenetics_name"] == "" || roamingSettings.values["Nutrigenetics_name"] === !undefined) {
                 roamingSettings.values["Nutrigenetics_price"] = 0
+            } else {
+                document.getElementById("my_base_img_final").src = roamingSettings.values["Nutrigenetics_pic"];
             };
 
             if (roamingSettings.values["Base_name"] == "" || roamingSettings.values["Base_name"] === !undefined) {

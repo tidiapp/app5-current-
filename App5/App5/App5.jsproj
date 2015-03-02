@@ -53,7 +53,7 @@
     <DefaultLanguage>en-US</DefaultLanguage>
     <PackageCertificateKeyFile>App5_TemporaryKey.pfx</PackageCertificateKeyFile>
     <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
-    <AppxPackageDir>C:\Users\milo\Desktop\AppTIDI\</AppxPackageDir>
+    <AppxPackageDir>C:\Users\milo\Desktop\</AppxPackageDir>
     <AppxBundlePlatforms>x64</AppxBundlePlatforms>
     <AppxBundle>Never</AppxBundle>
     <PackageCertificateThumbprint>67CD0641678268A7E8881FEC197AE6FA255F05C5</PackageCertificateThumbprint>
