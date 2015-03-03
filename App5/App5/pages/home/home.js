@@ -66,6 +66,8 @@
                 document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " kit catagory.";
                 document.getElementById("choosen_age").textContent = "Choose Your Test Kit";
                 document.getElementById("nutrigenetics_price_div").removeAttribute("hidden");
+//milo: so if other kits or orders are continued this will allow the adding of them all
+                server.finalPageCall();
             }
 
             server.home(the_sel_age);
@@ -115,6 +117,7 @@
 
             if (roamingSettings.values["Cat_picked"] === "Nutrigenetic Test") {
                 roamingSettings.values["Nutrigenetics_name"] = _choosen_cat;
+                roamingSettings.values["Nutrigenetics_vend"] = vendId;
                 roamingSettings.values["Nutrigenetics_pic"] = document.getElementById("sel_age_pic").src;
                 roamingSettings.values["Nutrigenetics_price"] = document.getElementById("nutrigenetics_price").textContent;
                 //milo: This is the ONLY PLACE in app VEND NEEDS to LOGIN, saves the info so other pages just use roamingSettings.values["Token"] and refresh token till the refresh token itself expires   
@@ -183,11 +186,6 @@
                                 if (vendIdIssue == undefined) {//Vend product missing entirly even though there might be a id in azures db
                                     document.getElementById("out_of_stock4").removeAttribute("hidden");
                                     document.getElementById("out_of_stock4").textContent = "VEND product does not exist in VENDS website";
-                                    document.getElementById("out_of_stock4").style.color = "red";
-                                    document.getElementById("out_of_stock4").style.fontSize = "20px";
-                                    document.getElementById("out_of_stock4").style.marginTop = "120px";
-                                    document.getElementById("out_of_stock4").style.marginLeft = "290px";
-                                    document.getElementById("out_of_stock4").style.position = "Absolute";
                                 } else {
                                     var vendCount = JSON.parse(result.responseText).product.inventory[0].count;
                                     //console.log("Base Count from VEND ", vendCount);
@@ -196,11 +194,6 @@
                                     } else if (vendCount <= 0.00000) {//If all works this is the check that looks for missing not enough quantity 
                                         document.getElementById("out_of_stock3").removeAttribute("hidden");
                                         document.getElementById("out_of_stock3").textContent = "OUT OF STOCK, PLEASE PICK ANOTHER KIT";
-                                        document.getElementById("out_of_stock3").style.color = "red";
-                                        document.getElementById("out_of_stock3").style.fontSize = "20px";
-                                        document.getElementById("out_of_stock3").style.marginTop = "120px";
-                                        document.getElementById("out_of_stock3").style.marginLeft = "290px";
-                                        document.getElementById("out_of_stock3").style.position = "Absolute";
                                     }
                                 }
                             },
@@ -333,11 +326,6 @@
                                             if (vendIdIssue == undefined) {//Vend product missing entirly even though there might be a id in azures db
                                                 document.getElementById("out_of_stock4").removeAttribute("hidden");
                                                 document.getElementById("out_of_stock4").textContent = "VEND product does not exist in VENDS website";
-                                                document.getElementById("out_of_stock4").style.color = "red";
-                                                document.getElementById("out_of_stock4").style.fontSize = "20px";
-                                                document.getElementById("out_of_stock4").style.marginTop = "120px";
-                                                document.getElementById("out_of_stock4").style.marginLeft = "290px";
-                                                document.getElementById("out_of_stock4").style.position = "Absolute";
                                             } else {
                                                 var vendCount = JSON.parse(result.responseText).product.inventory[0].count;
                                                 //console.log("Base Count from VEND ", vendCount);
@@ -346,11 +334,6 @@
                                                 } else if (vendCount <= 0.00000) {//If all works this is the check that looks for missing not enough quantity 
                                                     document.getElementById("out_of_stock3").removeAttribute("hidden");
                                                     document.getElementById("out_of_stock3").textContent = "OUT OF STOCK, PLEASE PICK ANOTHER KIT";
-                                                    document.getElementById("out_of_stock3").style.color = "red";
-                                                    document.getElementById("out_of_stock3").style.fontSize = "20px";
-                                                    document.getElementById("out_of_stock3").style.marginTop = "120px";
-                                                    document.getElementById("out_of_stock3").style.marginLeft = "290px";
-                                                    document.getElementById("out_of_stock3").style.position = "Absolute";
                                                 }
                                             }
                                         },
@@ -435,11 +418,6 @@
                             if (vendIdIssue == undefined) {//Vend product missing entirly even though there might be a id in azures db
                                 document.getElementById("out_of_stock4").removeAttribute("hidden");
                                 document.getElementById("out_of_stock4").textContent = "VEND product does not exist in VENDS website";
-                                document.getElementById("out_of_stock4").style.color = "red";
-                                document.getElementById("out_of_stock4").style.fontSize = "20px";
-                                document.getElementById("out_of_stock4").style.marginTop = "120px";
-                                document.getElementById("out_of_stock4").style.marginLeft = "290px";
-                                document.getElementById("out_of_stock4").style.position = "Absolute";
                             } else {
                                 var vendCount = JSON.parse(result.responseText).product.inventory[0].count;
                                 //console.log("Base Count from VEND ", vendCount);
@@ -448,11 +426,6 @@
                                 } else if (vendCount <= 0.00000) {//If all works this is the check that looks for missing not enough quantity 
                                     document.getElementById("out_of_stock3").removeAttribute("hidden");
                                     document.getElementById("out_of_stock3").textContent = "OUT OF STOCK, PLEASE PICK ANOTHER KIT";
-                                    document.getElementById("out_of_stock3").style.color = "red";
-                                    document.getElementById("out_of_stock3").style.fontSize = "20px";
-                                    document.getElementById("out_of_stock3").style.marginTop = "120px";
-                                    document.getElementById("out_of_stock3").style.marginLeft = "290px";
-                                    document.getElementById("out_of_stock3").style.position = "Absolute";
                                 }
                             }
                         },
@@ -491,11 +464,6 @@
                 } else if (vendId == "null" || vendId == undefined || vendId == "") {//id missing in azure db but product in vend exists
                     document.getElementById("out_of_stock4").removeAttribute("hidden");
                     document.getElementById("out_of_stock4").textContent = "ID Missing in Azure DB.";
-                    document.getElementById("out_of_stock4").style.color = "red";
-                    document.getElementById("out_of_stock4").style.fontSize = "20px";
-                    document.getElementById("out_of_stock4").style.marginTop = "120px";
-                    document.getElementById("out_of_stock4").style.marginLeft = "290px";
-                    document.getElementById("out_of_stock4").style.position = "Absolute";
                 }
             }
             //milo: id's coming from Age DB

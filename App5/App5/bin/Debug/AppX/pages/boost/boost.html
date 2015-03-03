@@ -51,6 +51,8 @@
                         <img id="choosen_img" hidden="" class="choosen_img_class" data-win-bind="src: the_pic" />
                         <button id="info_btn3" class="sel_look_btn btn btn-warning" name="sel_btn" onclick="boost_clicked.more_info(document.getElementById('choosen_name').textContent)" type="submit">More Info</button>
                         <button id="sel_btn3" class="sel_look_btn btn btn-warning" onclick="boost_clicked.clicked1(document.getElementById('choosen_name').textContent, document.getElementById('choosen_img').src, document.getElementById('choosen_price').textContent, document.getElementById('bo_vend').textContent, document.getElementById('choosen_bg_img').src)" name="sel_btn2" type="submit">Choose This Boost</button>
+                        <div id="out_of_stock3" hidden=""></div>
+                        <div id="out_of_stock4" hidden=""></div>
                         <div id="choosen_price_div">
                             <span id="base_price_doller">$<span id="choosen_price" data-win-bind="textContent: the_price"></span></span>
                             <span class="perdays">per 15 days</span>                        
@@ -58,8 +60,6 @@
                         <h2 id="choosen_name" class="choosen_name_class" data-win-bind="textContent: the_name"></h2>                       
                         <p id="choosen_info" class="choosen_info_class" data-win-bind="textContent: the_info"></p>
                         <p id="bo_vend" hidden="" data-win-bind="textContent: bo_vend"></p>
-                        <div id="out_of_stock3" hidden=""></div>
-                        <div id="out_of_stock4" hidden=""></div>
                     </div>
                 </div>
                 <div id="boost_selected_submit_wrap_outer">
@@ -153,11 +153,12 @@
             <div class="div_where_you_are">
                 <h2 id="where_you_are4"><span id="cal_co"></span></h2>
                 <!--<h1 id="footer_company_name"></h1>--><!-- this is being styled in the default.js folder -->
-                <div id="price_prev_div_total2">
+                <div id="price_prev_div_total">
                     <span>Total</span>
                     <span>$</span>
                     <span id="base_price_prev2"></span>
-                </div>            
+                </div>     
+                <p hidden="" id="thewordsforcurrentprice">You Current Total is: $<span hidden="" id="youcurrentprice"></span></p>       
             </div>
 </footer>
     </div>

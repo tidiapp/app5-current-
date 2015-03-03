@@ -560,7 +560,7 @@
                     roamingSettings.values["t"] = 0;
                     if (roamingSettings.values["totalOrderNumber1"] > 0) {
                         for (var i = 0; i < roamingSettings.values["totalOrderNumber1"]; i++) {
-                            roamingSettings.values["t"] += (parseFloat(results[i].BasePrice) + parseFloat(results[i].BoostPrice) + parseFloat(results[i].Boost2Price) + parseFloat(results[i].Boost3Price) +  parseFloat(results[i].Boost4Price) +  parseFloat(results[i].Boost5Price) + parseFloat(results[i].Boost6Price) + parseFloat(results[i].Boost7Price) + parseFloat(results[i].Boost8Price) + parseFloat(results[i].TestPrice));
+                            roamingSettings.values["t"] += (parseFloat(results[i].BasePrice) + parseFloat(results[i].BoostPrice) + parseFloat(results[i].Boost2Price) + parseFloat(results[i].Boost3Price) + parseFloat(results[i].Boost4Price) + parseFloat(results[i].Boost5Price) + parseFloat(results[i].Boost6Price) + parseFloat(results[i].Boost7Price) + parseFloat(results[i].Boost8Price) + parseFloat(results[i].NutrigeneticsPrice));
                         }
                     }
                   //  console.log("The is the number of total orders: " + roamingSettings.values["totalOrderNumber"] + ". This is the total current cost: " + roamingSettings.values["t"]);
@@ -613,12 +613,12 @@
                     Boost8Price: parseFloat(roamingSettings.values["Boost8_price"]),
                     FlavName: roamingSettings.values["FlavSel_name"],
                     FlaveVend: roamingSettings.values["FlavSel_vend"],
-                    FlavIamge: roamingSettings.values["FlavSel_pic"],
+                    FlavImages: roamingSettings.values["FlavSel_pic"],
                     FlavPrice: parseFloat(roamingSettings.values["FlavSel_price"]),
-                    TestName: roamingSettings.values["Nutrigenetics_name"],
-                    TestVend: roamingSettings.values["Nutrigenetics_vend"],
-                    TestImages: roamingSettings.values["Nutrigenetics_pic"],
-                    TestPrice: parseFloat(roamingSettings.values["Nutrigenetics_price"]),
+                    NutrigeneticsName: roamingSettings.values["Nutrigenetics_name"],
+                    NutrigeneticsVend: roamingSettings.values["Nutrigenetics_vend"],
+                    NutrigeneticsImages: roamingSettings.values["Nutrigenetics_pic"],
+                    NutrigeneticsPrice: parseFloat(roamingSettings.values["Nutrigenetics_price"]),
                 }).done(function (results1) {
                     roamingSettings.values["totalOrderNumber"]++;
                     roamingSettings.values["computer" + roamingSettings.values["totalOrderNumber"] + "Number"] = results1.id;
@@ -633,7 +633,7 @@
                                 { product_id: results[i].FlaveVend, quantity: 1, price: results[i].FlavPrice },
                                 { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice },
                                 { product_id: results[i].Boost2Vend, quantity: 1, price: results[i].Boost2Price }
-                                )
+                                   )
                             }
                             else if (results[i].Boost3Price > 0 && results[i].Boost4Price <= 0) {
                                 age_data.model.order_final_call.push(
@@ -688,7 +688,7 @@
                                 { product_id: results[i].Boost5Vend, quantity: 1, price: results[i].Boost5Price },
                                 { product_id: results[i].Boost6Vend, quantity: 1, price: results[i].Boost6Price },
                                 { product_id: results[i].Boost7Vend, quantity: 1, price: results[i].Boost7Price }
-                                    )
+                                   )
                             }
                             else if (results[i].Boost8Price > 0) {
                                 age_data.model.order_final_call.push(
@@ -703,20 +703,25 @@
                                 { product_id: results[i].Boost6Vend, quantity: 1, price: results[i].Boost6Price },
                                 { product_id: results[i].Boost7Vend, quantity: 1, price: results[i].Boost7Price },
                                 { product_id: results[i].Boost8Vend, quantity: 1, price: results[i].Boost8Price }
-                               )
+                                    )
                             }
                             else if (results[i].BoostPrice > 0 && results[i].Boost2Price <= 0) {
                                 age_data.model.order_final_call.push(
                                 { product_id: results[i].BaseVend, quantity: 1, price: results[i].BasePrice },
                                 { product_id: results[i].FlaveVend, quantity: 1, price: results[i].FlavPrice },
                                 { product_id: results[i].BoostVend, quantity: 1, price: results[i].BoostPrice }
-                                   )
+                                    )
+                            }
+                            else if (results[i].NutrigeneticsPrice > 0) {
+                                age_data.model.order_final_call.push(
+                                { product_id: results[i].NutrigeneticsVend, quantity: 1, price: results[i].NutrigeneticsPrice }
+                                    )
                             }
                             else {
                                 age_data.model.order_final_call.push(
                                { product_id: results[i].BaseVend, quantity: 1, price: results[i].BasePrice },
                                { product_id: results[i].FlaveVend, quantity: 1, price: results[i].FlavPrice }
-                               )
+                                    )
                             }
                         }
                         var array_t = Array();
@@ -846,12 +851,12 @@
                     Boost8Price:parseFloat(roamingSettings.values["Boost8_price"]),
                     FlavName:roamingSettings.values["FlavSel_name"],
                     FlaveVend:roamingSettings.values["FlavSel_vend"],
-                    FlavIamge:roamingSettings.values["FlavSel_pic"],
+                    FlavImages:roamingSettings.values["FlavSel_pic"],
                     FlavPrice: parseFloat(roamingSettings.values["FlavSel_price"]),
-                    TestName: roamingSettings.values["Nutrigenetics_name"],
-                    TestVend: roamingSettings.values["Nutrigenetics_vend"],
-                    TestImages: roamingSettings.values["Nutrigenetics_pic"],
-                    TestPrice: parseFloat(roamingSettings.values["Nutrigenetics_price"]),
+                    NutrigeneticsName: roamingSettings.values["Nutrigenetics_name"],
+                    NutrigeneticsVend: roamingSettings.values["Nutrigenetics_vend"],
+                    NutrigeneticsImages: roamingSettings.values["Nutrigenetics_pic"],
+                    NutrigeneticsPrice: parseFloat(roamingSettings.values["Nutrigenetics_price"]),
                 }).done(function (results) {
                     console.log(results);
                     roamingSettings.values["computer" + roamingSettings.values["totalOrderNumber"] + "Number"] = results.id;

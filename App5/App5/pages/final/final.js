@@ -16,7 +16,7 @@
             //roamingSettings.values["went_back"] = true;
             design.getFinal();
             design.changeTextColor();
-            var theNew = roamingSettings.values["Base_Vend"].replace(/^\s+/, '').replace(/\s+$/, '');
+            var theNew = roamingSettings.values["Base_vend"].replace(/^\s+/, '').replace(/\s+$/, '');
             //milo: looping for any db to update any part automatically using ids 
             //var EditDB = thinkitdrinkitDataClient.getTable("Boost");
             //for (var i = 11468; i <= 11504; i++) {
@@ -114,6 +114,7 @@
 
                 roamingSettings.values['Boost_total'] = (parseFloat(roamingSettings.values["Boost1_price"]) + parseFloat(roamingSettings.values["Boost2_price"]) + parseFloat(roamingSettings.values["Boost3_price"]) + parseFloat(roamingSettings.values["Boost4_price"]) + parseFloat(roamingSettings.values["Boost5_price"]) + parseFloat(roamingSettings.values["Boost6_price"]) + parseFloat(roamingSettings.values["Boost7_price"]) + parseFloat(roamingSettings.values["Boost8_price"]));
 
+//milo: roamingSettings.values["t"] is from previous order after continue is hit
                 roamingSettings.values["the_complete_total"] = roamingSettings.values["t"] + parseFloat(roamingSettings.values["Base_price"]) + parseFloat(roamingSettings.values['Boost_total']) + parseFloat(roamingSettings.values["Nutrigenetics_price"]);
 
                //roamingSettings.values["the_complete_total"] += parseFloat(roamingSettings.values["total_price"]);
@@ -333,9 +334,19 @@
                     roamingSettings.values["Nutrigenetics_price"] = 0;
                     roamingSettings.values["Nutrigenetics_vend"] = "none";
                     roamingSettings.values["Nutrigenetics_pic"] = "none";
+
+                } else if (roamingSettings.values["Nutrigenetics_price"] > 0) {
+                    roamingSettings.values["FlavSel_name"] = "none";
+                    roamingSettings.values["FlavSel_vend"] = "none";
+                    roamingSettings.values["FlavSel_pic"] = "none";
+                    roamingSettings.values["Base_name"] = "none";
+                    roamingSettings.values["Base_vend"] = "none";
+                    roamingSettings.values["Base_pic"] = "none";
                 };
 
+//milo: Server Call
                 server.VendPrep();
+
                 roamingSettings.values.remove["Base_name"]
                 roamingSettings.values.remove["Base_pic"]
                 roamingSettings.values.remove["Base_price"]
@@ -562,8 +573,17 @@
                         roamingSettings.values["Nutrigenetics_price"] = 0;
                         roamingSettings.values["Nutrigenetics_vend"] = "none";
                         roamingSettings.values["Nutrigenetics_pic"] = "none";
+                    } else if (roamingSettings.values["Nutrigenetics_price"] > 0) {
+                        roamingSettings.values["FlavSel_name"] = "none";
+                        roamingSettings.values["FlavSel_vend"] = "none";
+                        roamingSettings.values["FlavSel_pic"] = "none";
+                        roamingSettings.values["Base_name"] = "none";
+                        roamingSettings.values["Base_vend"] = "none";
+                        roamingSettings.values["Base_pic"] = "none";
                     };
-                    //console.log("I'm here 2!");
+                //console.log("I'm here 2!");
+
+//milo: Server Call
                     server.contSave()
 
                         if (roamingSettings.values["Boost2_price"] > 0 && roamingSettings.values["Boost3_price"] <= 0) {boostCheck();}

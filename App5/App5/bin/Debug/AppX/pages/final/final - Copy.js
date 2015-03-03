@@ -16,7 +16,7 @@
             //roamingSettings.values["went_back"] = true;
             design.getFinal();
             design.changeTextColor();
-            var theNew = roamingSettings.values["Base_Vend"].replace(/^\s+/, '').replace(/\s+$/, '');
+            var theNew = roamingSettings.values["Base_vend"].replace(/^\s+/, '').replace(/\s+$/, '');
             //milo: looping for any db to update any part automatically using ids 
             //var EditDB = thinkitdrinkitDataClient.getTable("Boost");
             //for (var i = 11468; i <= 11504; i++) {

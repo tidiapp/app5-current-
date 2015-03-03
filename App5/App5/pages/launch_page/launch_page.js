@@ -119,6 +119,7 @@
                 document.getElementById("thewordsforcurrentprice").removeAttribute("hidden");
             }
 
+            //milo click animation on imgs
             learn_more.addEventListener("pointerdown", onPointerDown, false);
             learn_more.addEventListener("pointerup", onPointerUp, false);
             supl_sport2.addEventListener("pointerdown", onPointerDown, false);
@@ -140,7 +141,6 @@
             nutrigenetics.addEventListener("pointerdown", onPointerDown, false);
             nutrigenetics.addEventListener("pointerup", onPointerUp, false);
 
-
             function onPointerDown(evt) {
                 WinJS.UI.Animation.pointerDown(evt.srcElement);
             }
@@ -148,10 +148,6 @@
             function onPointerUp(evt) {
                 WinJS.UI.Animation.pointerUp(evt.srcElement);
             }
-
-
-
-
 
         },
 

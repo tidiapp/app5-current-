@@ -28,7 +28,6 @@
             document.getElementById("func_p").textContent = roamingSettings.values["Func_name"];
             document.getElementById("func_pic").src = roamingSettings.values["Func_pic"];
 
-            //document.getElementById("id_sel4").textContent;
             //milo: footer history & H1 for Fitness & Excercise
             if (roamingSettings.values["Cat_picked"] === "Fitness & Exercise") {
                 //milo: if id_sel is id 1 from age db it is Recovery but id 1 from func db is Strength & Power, depends where you come from for bug fix when coming from Fitness&Excercise>recovery>and pick anyone the ids are from the func page but if coming from protein>recovery>and whatever the ids do not matter couse the roamingSettings.values["Cat_picked"] is protein which in this comment its Fitness the if statemnet is above. 
@@ -77,6 +76,12 @@
                 document.getElementById("where_you_are2").textContent = "You have choosen " + roamingSettings.values["Cat_picked"] + "." + " You have 2 steps left.";
             }
 
+            if (!roamingSettings.values["not_cont"]) {
+                document.getElementById("youcurrentprice").textContent = roamingSettings.values["the_complete_total"];
+                document.getElementById("youcurrentprice").removeAttribute("hidden");
+                document.getElementById("thewordsforcurrentprice").removeAttribute("hidden");
+            }
+
             server.base(id_sel, cat_selected);
 
             document.getElementById("base_price_div").removeAttribute("hidden");
@@ -115,7 +120,7 @@
                 var vendId = document.getElementById("b_vend").innerHTML;
                 var vendId_count = document.getElementById("b_vend_count").innerHTML;
                 roamingSettings.values["Base_protein"] = false;
-                roamingSettings.values["Base_Vend"] = vendId;
+                roamingSettings.values["Base_vend"] = vendId;
                 roamingSettings.values["Base_name"] = base3;
                 roamingSettings.values["Base_pic"] = document.getElementById("choosen_base_carry").src;
                 roamingSettings.values["Base_info"] = document.getElementById("sel_base_info").textContent;
@@ -190,11 +195,6 @@ console.log("Vend refreshToken from POST " + vendToken);
                                 if (vendIdIssue == undefined) {//Vend product missing entirly even though there might be a id in azures db
                                     document.getElementById("out_of_stock2").removeAttribute("hidden");
                                     document.getElementById("out_of_stock2").textContent = "VEND product does not exist in VENDS website";
-                                    document.getElementById("out_of_stock2").style.color = "red";
-                                    document.getElementById("out_of_stock2").style.fontSize = "20px";
-                                    document.getElementById("out_of_stock2").style.marginTop = "120px";
-                                    document.getElementById("out_of_stock2").style.marginLeft = "290px";
-                                    document.getElementById("out_of_stock2").style.position = "Absolute";
                                 } else {
                                     var vendCount = JSON.parse(result.responseText).product.inventory[0].count;
                                     //console.log("Base Count from VEND ", vendCount);
@@ -203,11 +203,6 @@ console.log("Vend refreshToken from POST " + vendToken);
                                     } else if (vendCount <= 0.00000) {//If all works this is the check that looks for missing not enough quantity 
                                         document.getElementById("out_of_stock").removeAttribute("hidden");
                                         document.getElementById("out_of_stock").textContent = "OUT OF STOCK, PLEASE PICK ANOTHER BASE";
-                                        document.getElementById("out_of_stock").style.color = "red";
-                                        document.getElementById("out_of_stock").style.fontSize = "20px";
-                                        document.getElementById("out_of_stock").style.marginTop = "120px";
-                                        document.getElementById("out_of_stock").style.marginLeft = "290px";
-                                        document.getElementById("out_of_stock").style.position = "Absolute";
                                     }
                                 }
                             },
@@ -340,11 +335,6 @@ console.log("Vend Token from POST" + vendToken);
                                                 if (vendIdIssue == undefined) {//Vend product missing entirly even though there might be a id in azures db
                                                     document.getElementById("out_of_stock2").removeAttribute("hidden");
                                                     document.getElementById("out_of_stock2").textContent = "VEND product does not exist in VENDS website";
-                                                    document.getElementById("out_of_stock2").style.color = "red";
-                                                    document.getElementById("out_of_stock2").style.fontSize = "20px";
-                                                    document.getElementById("out_of_stock2").style.marginTop = "120px";
-                                                    document.getElementById("out_of_stock2").style.marginLeft = "290px";
-                                                    document.getElementById("out_of_stock2").style.position = "Absolute";
                                                 } else {
                                                     var vendCount = JSON.parse(result.responseText).product.inventory[0].count;
                                                     //console.log("Base Count from VEND ", vendCount);
@@ -353,11 +343,6 @@ console.log("Vend Token from POST" + vendToken);
                                                     } else if (vendCount <= 0.00000) {//If all works this is the check that looks for missing not enough quantity 
                                                         document.getElementById("out_of_stock").removeAttribute("hidden");
                                                         document.getElementById("out_of_stock").textContent = "OUT OF STOCK, PLEASE PICK ANOTHER BASE";
-                                                        document.getElementById("out_of_stock").style.color = "red";
-                                                        document.getElementById("out_of_stock").style.fontSize = "20px";
-                                                        document.getElementById("out_of_stock").style.marginTop = "120px";
-                                                        document.getElementById("out_of_stock").style.marginLeft = "290px";
-                                                        document.getElementById("out_of_stock").style.position = "Absolute";
                                                     }
                                                 }
                                             },
@@ -442,11 +427,6 @@ console.log("Vend Token from POST" + vendToken);
                                     if (vendIdIssue == undefined) {//Vend product missing entirly even though there might be a id in azures db
                                         document.getElementById("out_of_stock2").removeAttribute("hidden");
                                         document.getElementById("out_of_stock2").textContent = "VEND product does not exist in VENDS website";
-                                        document.getElementById("out_of_stock2").style.color = "red";
-                                        document.getElementById("out_of_stock2").style.fontSize = "20px";
-                                        document.getElementById("out_of_stock2").style.marginTop = "120px";
-                                        document.getElementById("out_of_stock2").style.marginLeft = "290px";
-                                        document.getElementById("out_of_stock2").style.position = "Absolute";
                                     } else {
                                         var vendCount = JSON.parse(result.responseText).product.inventory[0].count;
                                         //console.log("Base Count from VEND ", vendCount);
@@ -455,11 +435,6 @@ console.log("Vend Token from POST" + vendToken);
                                         } else if (vendCount <= 0.00000) {//If all works this is the check that looks for missing not enough quantity 
                                             document.getElementById("out_of_stock").removeAttribute("hidden");
                                             document.getElementById("out_of_stock").textContent = "OUT OF STOCK, PLEASE PICK ANOTHER BASE";
-                                            document.getElementById("out_of_stock").style.color = "red";
-                                            document.getElementById("out_of_stock").style.fontSize = "20px";
-                                            document.getElementById("out_of_stock").style.marginTop = "120px";
-                                            document.getElementById("out_of_stock").style.marginLeft = "290px";
-                                            document.getElementById("out_of_stock").style.position = "Absolute";
                                         }
                                     }
                              },
@@ -498,11 +473,6 @@ console.log("Vend Token from POST" + vendToken);
                 } else if (vendId == "null" || vendId == undefined || vendId == "") {//id missing in azure db but product in vend exists
                     document.getElementById("out_of_stock2").removeAttribute("hidden");
                     document.getElementById("out_of_stock2").textContent = "ID Missing in Azure DB.";
-                    document.getElementById("out_of_stock2").style.color = "red";
-                    document.getElementById("out_of_stock2").style.fontSize = "20px";
-                    document.getElementById("out_of_stock2").style.marginTop = "120px";
-                    document.getElementById("out_of_stock2").style.marginLeft = "290px";
-                    document.getElementById("out_of_stock2").style.position = "Absolute";
                 }
         },
 

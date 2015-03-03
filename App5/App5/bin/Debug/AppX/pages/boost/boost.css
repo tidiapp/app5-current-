@@ -401,11 +401,6 @@ button, input[type=button], input[type=submit], input[type=reset], input[type=fi
     font-weight: bold;
 }
 
-#price_prev_div_total2 {
-    font-size: 25px;
-    color: #fff;
-}
-
 #choosen_price_div {
     float: right;
     margin-right: 20px;

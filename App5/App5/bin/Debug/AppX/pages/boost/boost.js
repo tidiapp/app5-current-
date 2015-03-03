@@ -54,6 +54,13 @@
                 roamingSettings.values["went_back_back"] = true;
             }
 
+            if (!roamingSettings.values["not_cont"]) {
+                document.getElementById("youcurrentprice").textContent = roamingSettings.values["the_complete_total"] + parseInt(roamingSettings.values["Base_price"]);
+                document.getElementById("youcurrentprice").removeAttribute("hidden");
+                document.getElementById("thewordsforcurrentprice").removeAttribute("hidden");
+                document.getElementById("price_prev_div_total").setAttribute("hidden");
+            }
+
             //milo: footer history 
             document.getElementById("age_p").textContent = roamingSettings.values["Cat_picked"];
             document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];
@@ -506,11 +513,6 @@
                             if (vendIdIssue == undefined) {//Vend product missing entirly even though there might be a id in azures db
                                 document.getElementById("out_of_stock4").removeAttribute("hidden");
                                 document.getElementById("out_of_stock4").textContent = "VEND product does not exist in VENDS website";
-                                document.getElementById("out_of_stock4").style.color = "red";
-                                document.getElementById("out_of_stock4").style.fontSize = "20px";
-                                document.getElementById("out_of_stock4").style.marginTop = "120px";
-                                document.getElementById("out_of_stock4").style.marginLeft = "290px";
-                                document.getElementById("out_of_stock4").style.position = "Absolute";
                             } else {
                                 var vendCount = JSON.parse(result.responseText).product.inventory[0].count;
                                 //console.log("Base Count from VEND ", vendCount);
@@ -661,21 +663,11 @@
                                 } else if (vendCount <= 0.00000) {//If all works this is the check that looks for missing not enough quantity 
                                     document.getElementById("out_of_stock3").removeAttribute("hidden");
                                     document.getElementById("out_of_stock3").textContent = "OUT OF STOCK, PLEASE PICK ANOTHER BASE";
-                                    document.getElementById("out_of_stock3").style.color = "red";
-                                    document.getElementById("out_of_stock3").style.fontSize = "20px";
-                                    document.getElementById("out_of_stock3").style.marginTop = "120px";
-                                    document.getElementById("out_of_stock3").style.marginLeft = "290px";
-                                    document.getElementById("out_of_stock3").style.position = "Absolute";
                                 }
                             }
                         } else if (vend == "null" || vend == undefined || vend == "") {//id missing in azure db but product in vend exists
                             document.getElementById("out_of_stock4").removeAttribute("hidden");
                             document.getElementById("out_of_stock4").textContent = "ID Missing in Azure DB.";
-                            document.getElementById("out_of_stock4").style.color = "red";
-                            document.getElementById("out_of_stock4").style.fontSize = "20px";
-                            document.getElementById("out_of_stock4").style.marginTop = "120px";
-                            document.getElementById("out_of_stock4").style.marginLeft = "290px";
-                            document.getElementById("out_of_stock4").style.position = "Absolute";
                         }
                     },
                             function error(err) {

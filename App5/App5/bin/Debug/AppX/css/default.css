@@ -227,22 +227,6 @@ h1, .win-type-xx-large {
     width: 37px;
     height: 26px;
 }
-
-/*#price_prev_div_total {
-    position: absolute;
-    margin-left: 79px;
-    margin-top: 2px;
-    font-size: 25px;
-    color: #fff;
-    background-color: rgba(0,0,0,0.6);
-    width: 38px;
-    height: 26px;
-}*/
-
-/*#choosen_age {
-    width: 1300px;
-}*/
-
 .sel_look_btn {
 /*Use xx-large insted of pixels there is a bug with the button shadow causing a white pixel border*/
     font-size: x-large;
@@ -296,4 +280,17 @@ h1, .win-type-xx-large {
     margin-top: 32px;*/
     font-size: small;
     margin-left: 10px;
+}
+#thewordsforcurrentprice {
+    font-size: 25px;
+    color: #fff;
+    margin-left: 15px;
+    float: left;
+}
+#out_of_stock, #out_of_stock2, #out_of_stock3, #out_of_stock4 {
+    position: absolute;
+    margin-left: 290px;
+    margin-top: 215px;
+    font-size: 20px;
+    color: red;
 }

@@ -116,7 +116,7 @@
                 var vendId = document.getElementById("b_vend").innerHTML;
                 var vendId_count = document.getElementById("b_vend_count").innerHTML;
                 roamingSettings.values["Base_protein"] = false;
-                roamingSettings.values["Base_Vend"] = vendId;
+                roamingSettings.values["Base_vend"] = vendId;
                 roamingSettings.values["Base_name"] = base3;
                 roamingSettings.values["Base_pic"] = document.getElementById("choosen_base_carry").src;
                 roamingSettings.values["Base_info"] = document.getElementById("sel_base_info").textContent;

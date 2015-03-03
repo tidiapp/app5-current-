@@ -52,15 +52,14 @@
                             <img class="sel_base_pic_class" id="sel_base_pic" data-win-bind="src: the_img" />
                             <button id="info_btn2" class="sel_look_btn btn btn-warning" name="sel_btn" onclick="base_clicked.more_info(document.getElementById('sel_base_name').textContent)" type="submit">Learn More</button>
                             <button id="sel_btn2" class="sel_look_btn btn btn-warning" onclick="base_clicked.next_page_flavor(document.getElementById('sel_base_pic').src)" name="sel_btn2" type="submit">Choose This Base</button>
+                            <div id="out_of_stock" hidden=""></div>
+                            <div id="out_of_stock2" hidden=""></div>
                             <h2 id="sel_base_name" class="sel_base_name_class" data-win-bind="textContent: the_name"></h2>
                             <p id="base_price" hidden="" data-win-bind="textContent: base_price"></p>
                             <p id="sel_base_info" class="sel_base_info_class" data-win-bind="textContent: the_info"></p>
                             <p hidden="" id="b_vend" data-win-bind="textContent: b_vend"></p>
                             <p hidden="" id="b_vend_count" data-win-bind="textContent: b_vend_count"></p>
                             <span hidden="" id="id_sel3" data-win-bind="textContent: id_sel"></span>
-                            <div id="out_of_stock" hidden=""></div>
-                            <div id="out_of_stock2" hidden=""></div>
-
                         </div>
                     </div>
                 </div>
@@ -98,6 +97,7 @@
             <div class="div_where_you_are">
                 <h2 id="where_you_are2"></h2>
                 <!--<h1 id="footer_company_name"></h1>--><!-- this is being styled in the default.js folder -->
+                <p hidden="" id="thewordsforcurrentprice">You Current Total is: $<span hidden="" id="youcurrentprice"></span></p>
             </div>
 </footer>
     </div>

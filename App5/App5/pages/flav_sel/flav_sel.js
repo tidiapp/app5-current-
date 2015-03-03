@@ -114,6 +114,14 @@
             document.getElementById("flav_sel_header").textContent = "Choose Your " + "Flavor.";
           
             server.flav_sel();
+
+            if (!roamingSettings.values["not_cont"]) {
+                document.getElementById("youcurrentprice").removeAttribute("hidden");
+                document.getElementById("thewordsforcurrentprice").removeAttribute("hidden");
+                document.getElementById("price_prev_div_total").setAttribute("hidden");
+                document.getElementById("youcurrentprice").textContent = roamingSettings.values["the_complete_total"] + (parseInt(roamingSettings.values["Base_price"]) + parseInt(roamingSettings.values["Boost1_price"]) + parseInt(roamingSettings.values["Boost2_price"]) + parseInt(roamingSettings.values["Boost3_price"]) + parseInt(roamingSettings.values["Boost4_price"]) + parseInt(roamingSettings.values["Boost5_price"]) + parseInt(roamingSettings.values["Boost6_price"]) + parseInt(roamingSettings.values["Boost7_price"]) + parseInt(roamingSettings.values["Boost8_price"]));
+            }
+
         },
 
         unload: function () {
@@ -130,6 +138,7 @@
 
             // TODO: Respond to changes in layout.
         }
+
     });
     var the_choosenFlav = "";
     WinJS.Namespace.define("flav_sel_clicked", {
@@ -177,11 +186,6 @@
                     if (vendIdIssue == undefined) {//Vend product missing entirly even though there might be a id in azures db
                         document.getElementById("out_of_stock2").removeAttribute("hidden");
                         document.getElementById("out_of_stock2").textContent = "VEND product does not exist in VENDS website";
-                        document.getElementById("out_of_stock2").style.color = "red";
-                        document.getElementById("out_of_stock2").style.fontSize = "20px";
-                        document.getElementById("out_of_stock2").style.marginTop = "120px";
-                        document.getElementById("out_of_stock2").style.marginLeft = "290px";
-                        document.getElementById("out_of_stock2").style.position = "Absolute";
                     } else {
                         var vendCount = JSON.parse(result.responseText).product.inventory[0].count;
                         //console.log("Base Count from VEND ", vendCount);
@@ -190,11 +194,6 @@
                         } else if (vendCount <= 0.00000) {//If all works this is the check that looks for missing not enough quantity 
                             document.getElementById("out_of_stock").removeAttribute("hidden");
                             document.getElementById("out_of_stock").textContent = "OUT OF STOCK, PLEASE PICK ANOTHER BASE";
-                            document.getElementById("out_of_stock").style.color = "red";
-                            document.getElementById("out_of_stock").style.fontSize = "20px";
-                            document.getElementById("out_of_stock").style.marginTop = "120px";
-                            document.getElementById("out_of_stock").style.marginLeft = "290px";
-                            document.getElementById("out_of_stock").style.position = "Absolute";
                         }
                     }
                 },
@@ -232,12 +231,6 @@
             } else if (vendId == "null" || vendId == undefined || vendId == "") {
                 document.getElementById("out_of_stock2").removeAttribute("hidden");
                 document.getElementById("out_of_stock2").textContent = "ID Missing in Azure DB.";
-                document.getElementById("out_of_stock2").style.color = "red";
-                document.getElementById("out_of_stock2").style.fontSize = "20px";
-                document.getElementById("out_of_stock2").style.marginTop = "120px";
-                document.getElementById("out_of_stock2").style.marginLeft = "290px";
-                document.getElementById("out_of_stock2").style.position = "Absolute";
-                //WinJS.Navigation.navigate('pages/final/final.html')
             }
         },
         more_info: function (clicked) {
@@ -284,7 +277,5 @@
                 WinJS.Navigation.back(5);
             }
         }
-
     })
-
 })();
