@@ -48,6 +48,7 @@
             design.getBoost();
             design.changeTextColor();
             design.getBoostBorders("white");
+            //server.finalPageCall();
 
             roamingSettings.values["went_back_back"] = false;
             if (roamingSettings.values["went_back"]) {
@@ -55,9 +56,6 @@
             }
 
             if (!roamingSettings.values["not_cont"]) {
-                document.getElementById("youcurrentprice").textContent = roamingSettings.values["the_complete_total"] + parseInt(roamingSettings.values["Base_price"]);
-                document.getElementById("youcurrentprice").removeAttribute("hidden");
-                document.getElementById("thewordsforcurrentprice").removeAttribute("hidden");
                 document.getElementById("price_prev_div_total").setAttribute("hidden");
             }
 

@@ -20,6 +20,8 @@
             design.getFuncBoarders("white");
             var id_sel = roamingSettings.values["Id_sel_age"];
             var cat_selected = roamingSettings.values["Cat_picked"];
+            //server.finalPageCall();
+
             //var new_route = roamingSettings.values["New_route"];
 
             //console.log("Func page picked id READY() = " + roamingSettings.values["Id_sel_age"]);

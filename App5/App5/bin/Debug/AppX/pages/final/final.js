@@ -112,13 +112,13 @@
 
             server.userOrderFinalRead();
 
-                roamingSettings.values['Boost_total'] = (parseFloat(roamingSettings.values["Boost1_price"]) + parseFloat(roamingSettings.values["Boost2_price"]) + parseFloat(roamingSettings.values["Boost3_price"]) + parseFloat(roamingSettings.values["Boost4_price"]) + parseFloat(roamingSettings.values["Boost5_price"]) + parseFloat(roamingSettings.values["Boost6_price"]) + parseFloat(roamingSettings.values["Boost7_price"]) + parseFloat(roamingSettings.values["Boost8_price"]));
+            roamingSettings.values['Boost_total'] = (parseFloat(roamingSettings.values["Boost1_price"]) + parseFloat(roamingSettings.values["Boost2_price"]) + parseFloat(roamingSettings.values["Boost3_price"]) + parseFloat(roamingSettings.values["Boost4_price"]) + parseFloat(roamingSettings.values["Boost5_price"]) + parseFloat(roamingSettings.values["Boost6_price"]) + parseFloat(roamingSettings.values["Boost7_price"]) + parseFloat(roamingSettings.values["Boost8_price"]));
 
-//milo: roamingSettings.values["t"] is from previous order after continue is hit
-                roamingSettings.values["the_complete_total"] = roamingSettings.values["t"] + parseFloat(roamingSettings.values["Base_price"]) + parseFloat(roamingSettings.values['Boost_total']) + parseFloat(roamingSettings.values["Nutrigenetics_price"]);
+            //milo: roamingSettings.values["t"] is from previous order after continue is hit
+            roamingSettings.values["the_complete_total"] = roamingSettings.values["t"] + parseFloat(roamingSettings.values["Base_price"]) + parseFloat(roamingSettings.values['Boost_total']) + parseFloat(roamingSettings.values["Nutrigenetics_price"]);
 
-               //roamingSettings.values["the_complete_total"] += parseFloat(roamingSettings.values["total_price"]);
-                roamingSettings.values["not_cont"] = true;
+            //roamingSettings.values["the_complete_total"] += parseFloat(roamingSettings.values["total_price"]);
+            //roamingSettings.values["not_cont"] = true;
 
             document.getElementById("product_total").textContent = "$" + roamingSettings.values["the_complete_total"];
             document.getElementById("tax").textContent = "$" + Math.ceil((roamingSettings.values["the_complete_total"] * .0636) * 100) / 100;
@@ -586,6 +586,9 @@
 //milo: Server Call
                     server.contSave()
 
+                    server.finalPageCall();
+
+
                         if (roamingSettings.values["Boost2_price"] > 0 && roamingSettings.values["Boost3_price"] <= 0) {boostCheck();}
                             else if (roamingSettings.values["Boost3_price"] > 0 && roamingSettings.values["Boost4_price"] <= 0) {boostCheck(); }
                             else if (roamingSettings.values["Boost4_price"] > 0 && roamingSettings.values["Boost5_price"] <= 0) {boostCheck(); }
@@ -597,7 +600,7 @@
                                 roamingSettings.values["totalOrderNumber"]++;
                         function boostCheck() {
                             roamingSettings.values["not_cont"] = false;
-                            console.log(roamingSettings.values["Base_vend"] + ' ' + roamingSettings.values["Boost1_vend"]);
+                            console.log("Why? boostcheck()" + roamingSettings.values["Base_vend"] + ' ' + roamingSettings.values["Boost1_vend"]);
                             roamingSettings.values["went_back"] = true;
                             WinJS.Navigation.navigate('pages/launch_page/launch_page.html');
                         }

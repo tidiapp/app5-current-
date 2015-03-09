@@ -14,14 +14,10 @@
             design.getHome();
             design.changeTextColor();
             design.getHomeBorders("white");
+            server.finalPageCall();
+
             //var id = roamingSettings.values["Id_sel_sport"];
             //console.log("Age page picked id READY() = " + roamingSettings.values["Id_sel_age"]);
-            if (!roamingSettings.values["not_cont"]) {
-                document.getElementById("youcurrentprice").textContent = roamingSettings.values["the_complete_total"];
-                document.getElementById("youcurrentprice").removeAttribute("hidden");
-                document.getElementById("thewordsforcurrentprice").removeAttribute("hidden");
-            }
-
             //roamingSettings.values["I_ordered"] = "no";
             document.getElementById("home").removeAttribute("hidden");
             document.getElementById("more_info_home").setAttribute("hidden", true);
@@ -67,7 +63,6 @@
                 document.getElementById("choosen_age").textContent = "Choose Your Test Kit";
                 document.getElementById("nutrigenetics_price_div").removeAttribute("hidden");
 //milo: so if other kits or orders are continued this will allow the adding of them all
-                server.finalPageCall();
             }
 
             server.home(the_sel_age);

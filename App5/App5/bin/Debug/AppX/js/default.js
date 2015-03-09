@@ -19,8 +19,9 @@
                 //this changes the theme color of the entire app
                 //it accepts some colors written as a string and all in hex
                 //www.html-color-codes.info is a good website to obtain hex color values
+
                 roamingSettings.values["the_complete_total"] = 0;
-                design.colorChange("#C5E3BF", "white");//#F89B1E new as of 2/2014 #FE5000
+                design.colorChange("#FE5000", "white");//#F89B1E new as of 2/2014 #FE5000 #C5E3BF
                 roamingSettings.values["true"] = false;
                 roamingSettings.values["not_cont"] = true;
                 roamingSettings.values["went_back"] = true;

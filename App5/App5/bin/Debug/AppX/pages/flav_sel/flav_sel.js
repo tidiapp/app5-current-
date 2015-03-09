@@ -16,7 +16,7 @@
             design.changeTextColor();
             design.getFlavSel();
             design.getFlavSelBorders("white");
-            server.finalPageCall();
+            //server.finalPageCall();
 
             var id_sel = roamingSettings.values["Id_sel_func"];
 
@@ -116,10 +116,9 @@
             server.flav_sel();
 
             if (!roamingSettings.values["not_cont"]) {
-                document.getElementById("youcurrentprice").removeAttribute("hidden");
                 document.getElementById("thewordsforcurrentprice").removeAttribute("hidden");
                 document.getElementById("price_prev_div_total").setAttribute("hidden");
-                document.getElementById("youcurrentprice").textContent = roamingSettings.values["the_complete_total"] + (parseInt(roamingSettings.values["Base_price"]) + parseInt(roamingSettings.values["Boost1_price"]) + parseInt(roamingSettings.values["Boost2_price"]) + parseInt(roamingSettings.values["Boost3_price"]) + parseInt(roamingSettings.values["Boost4_price"]) + parseInt(roamingSettings.values["Boost5_price"]) + parseInt(roamingSettings.values["Boost6_price"]) + parseInt(roamingSettings.values["Boost7_price"]) + parseInt(roamingSettings.values["Boost8_price"]));
+                document.getElementById("base_price_total").setAttribute("hidden");
             }
 
         },
@@ -127,7 +126,7 @@
         unload: function () {
             // TODO: Respond to navigations away from this page.
                 remove.pop_list(age_data.model.flavor1);
-            
+                roamingSettings.values['Boost_total_footer'] = "";
             if (!keepInfo) {
                 remove.pop_list(age_data.model.info_page4);
             }

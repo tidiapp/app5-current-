@@ -294,3 +294,7 @@ h1, .win-type-xx-large {
     font-size: 20px;
     color: red;
 }
+#price_prev_div_total {
+    font-size: 25px;
+    color: #fff;
+}

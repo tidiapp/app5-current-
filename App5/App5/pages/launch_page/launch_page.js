@@ -14,6 +14,7 @@
 
             design.launch();
             design.changeTextColor();
+
             //milo: used to be borderColer = "white"
             document.getElementById("make_drink").style.border = 0;
             document.getElementById("learn_more").style.border = 0;
@@ -85,6 +86,7 @@
             roamingSettings.values["Boost8_price"] = "",
             roamingSettings.values["Boost0_name"] = "",
             roamingSettings.values["Boost0_price"] = "",
+            roamingSettings.values['Boost_total_footer'] = "",
             roamingSettings.values["db_url"] = "",
 
             roamingSettings.values["FlavSel_name"] = "",
@@ -100,21 +102,20 @@
             roamingSettings.values["Nutrigenetics_price"] = "",
             roamingSettings.values["creat_cust"] = "",
             roamingSettings.values["creat_last"] = ""
-
-            //if (!roamingSettings.values["not_cont"]){
-            //    roamingSettings.values["Invoice_number"] = "";
-            //}
             
             remove.pop_list(age_data.model.info_page2);
             remove.pop_list(age_data.model.the_boost_sel);
             remove.pop_list(age_data.model.info);
             remove.pop_list(age_data.model.info_sport);
             roamingSettings.values["I_ordered"] = "no";
+
             if (roamingSettings.values["not_cont"]) {
                 roamingSettings.values["the_complete_total"] = 0;         
             }
-            if (!roamingSettings.values["not_cont"]) {
-                document.getElementById("youcurrentprice").textContent = roamingSettings.values["the_complete_total"];
+
+            if (!roamingSettings.values["not_cont"]) {//milo: bug fix, needed to put it here, above code took too long to execute, below code used to be in each page  
+                //document.getElementById("youcurrentprice").textContent = roamingSettings.values["t"];
+                document.getElementById("youcurrentprice").textContent = roamingSettings.values["tCartPrice"];
                 document.getElementById("youcurrentprice").removeAttribute("hidden");
                 document.getElementById("thewordsforcurrentprice").removeAttribute("hidden");
             }

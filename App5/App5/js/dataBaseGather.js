@@ -550,22 +550,52 @@
                     tier.style.boxShadow = "3px 3px 10px 1px #d1cfcf";
                 }
             },
-            finalPageCall: function () {
+            finalPageCall: function () {/* This is now being used for every page, future: move to own function or page*/
                 var finalCall = thinkitdrinkitDataClient.getTable("ShopCart");
                 var roamingSettings = appData.roamingSettings;
+                roamingSettings.values["t"] = 0;
                 var query = finalCall.where({
                     CNum: 1
                 }).read().done(function (results) {
                     //console.log("I made it here, Yay...");
-                    roamingSettings.values["t"] = 0;
                     if (roamingSettings.values["totalOrderNumber1"] > 0) {
                         for (var i = 0; i < roamingSettings.values["totalOrderNumber1"]; i++) {
                             roamingSettings.values["t"] += (parseFloat(results[i].BasePrice) + parseFloat(results[i].BoostPrice) + parseFloat(results[i].Boost2Price) + parseFloat(results[i].Boost3Price) + parseFloat(results[i].Boost4Price) + parseFloat(results[i].Boost5Price) + parseFloat(results[i].Boost6Price) + parseFloat(results[i].Boost7Price) + parseFloat(results[i].Boost8Price) + parseFloat(results[i].NutrigeneticsPrice));
+                            console.log("Inside finalpagecall loop");
+                        }
+                        if (!roamingSettings.values["not_cont"]) {//milo: bug fix, needed to put it here, above code took too long to execute, below code used to be in each page  
+                            //document.getElementById("youcurrentprice").textContent = roamingSettings.values["t"];
+                            roamingSettings.values["tCartPrice"] = roamingSettings.values["t"];
+                            //document.getElementById("youcurrentprice").removeAttribute("hidden");
+                            //document.getElementById("thewordsforcurrentprice").removeAttribute("hidden");
+                            //if (roamingSettings.values['Boost_total_footer'] != "") {
+                            //    document.getElementById("youcurrentprice").textContent = roamingSettings.values["t"] + parseFloat(roamingSettings.values['Boost_total_footer']);
+                            //}
                         }
                     }
                   //  console.log("The is the number of total orders: " + roamingSettings.values["totalOrderNumber"] + ". This is the total current cost: " + roamingSettings.values["t"]);
-                }, function (err) {
-                    console.log("This is the error: " + err);
+                }, function error(err) {
+                    if (err.readyState === 0) {
+                        console.log("Request not initialized ");
+                    }
+                    else if (err.readyState === 1) {
+                        console.log("Server connection established");
+                    }
+                    else if (err.readyState === 2) {
+                        console.log("Request received");
+                    }
+                    else if (err.readyState === 3) {
+                        console.log("Processing request");
+                    }
+                    else if (err.readyState === 4 && err.status === 200) {
+                        console.log("Request finished response is ready and " + "status 200: OK");
+                    }
+                    else if (err.readyState === 4 && err.status === 400) {
+                        console.log("Bad Request " + "status 400: Bad Request");
+                    }
+                    else if (err.readyState === 4 && err.status === 404) {
+                        console.log("Request finished and response is ready but " + "status 404: Page not found");
+                    }
                 });
             },
             VendPrep: function () {
@@ -860,10 +890,29 @@
                 }).done(function (results) {
                     console.log(results);
                     roamingSettings.values["computer" + roamingSettings.values["totalOrderNumber"] + "Number"] = results.id;
-
                    // console.log("This seems to  be working!! " + results.id);
-                }, function (err) {
-                    console.log(err);
+                }, function error(err) {
+                    if (err.readyState === 0) {
+                        console.log("Request not initialized ");
+                    }
+                    else if (err.readyState === 1) {
+                        console.log("Server connection established");
+                    }
+                    else if (err.readyState === 2) {
+                        console.log("Request received");
+                    }
+                    else if (err.readyState === 3) {
+                        console.log("Processing request");
+                    }
+                    else if (err.readyState === 4 && err.status === 200) {
+                        console.log("Request finished response is ready and " + "status 200: OK");
+                    }
+                    else if (err.readyState === 4 && err.status === 400) {
+                        console.log("Bad Request " + "status 400: Bad Request");
+                    }
+                    else if (err.readyState === 4 && err.status === 404) {
+                        console.log("Request finished and response is ready but " + "status 404: Page not found");
+                    }
                 });
             },
             userOrderDone: function () {
@@ -878,7 +927,7 @@
 
                }).read().done(function (results) {
 
-                   FinalClick.howManyBoosts(results);
+                   FinalClick.howManyBoosts(results);/*Put this function on to its own page*/
 
                     //for (var i = 0; i < results.length; i++) {
                     //    age_data.model.order_final_read.push({ b_name: results[i].BaseName, b_img: results[i].BaseImages, b_price: results[i].BasePrice, f_name: results[i].FlavName, f_price: results[i].FlavPrice, bo_name: results[i].BoostName, bo_price: results[i].BoostPrice, bo2_name: results[i].Boost2Name, bo2_price: results[i].Boost2Price, bo3_name: results[i].Boost3Name, bo3_price: results[i].Boost3Price, bo4_name: results[i].Boost4Name, bo4_price: results[i].Boost4Price, bo5_name: results[i].Boost5Name, bo5_price: results[i].Boost5Price, bo6_name: results[i].Boost6Name, bo6_price: results[i].Boost6Price, bo7_name: results[i].Boost7Name, bo7_price: results[i].Boost7Price, bo8_name: results[i].Boost8Name, bo8_price: results[i].Boost8Price })
