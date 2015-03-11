@@ -114,10 +114,10 @@
             }
 
             if (!roamingSettings.values["not_cont"]) {//milo: bug fix, needed to put it here, above code took too long to execute, below code used to be in each page  
-                //document.getElementById("youcurrentprice").textContent = roamingSettings.values["t"];
-                document.getElementById("youcurrentprice").textContent = roamingSettings.values["tCartPrice"];
-                document.getElementById("youcurrentprice").removeAttribute("hidden");
-                document.getElementById("thewordsforcurrentprice").removeAttribute("hidden");
+                ////document.getElementById("youcurrentprice").textContent = roamingSettings.values["t"];
+                //document.getElementById("youcurrentprice").textContent = roamingSettings.values["tCartPrice"];
+                //document.getElementById("youcurrentprice").removeAttribute("hidden");
+                //document.getElementById("thewordsforcurrentprice").removeAttribute("hidden");
             }
 
             //milo click animation on imgs

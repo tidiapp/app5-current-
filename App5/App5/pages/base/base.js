@@ -82,10 +82,10 @@
             document.getElementById("base_price_div").removeAttribute("hidden");
 
             if (!roamingSettings.values["not_cont"]) {//milo: bug fix, needed to put it here, above code took too long to execute, below code used to be in each page  
-                //document.getElementById("youcurrentprice").textContent = roamingSettings.values["t"];
-                document.getElementById("youcurrentprice").textContent = roamingSettings.values["tCartPrice"];
-                document.getElementById("youcurrentprice").removeAttribute("hidden");
-                document.getElementById("thewordsforcurrentprice").removeAttribute("hidden");
+                ////document.getElementById("youcurrentprice").textContent = roamingSettings.values["t"];
+                //document.getElementById("youcurrentprice").textContent = roamingSettings.values["tCartPrice"];
+                //document.getElementById("youcurrentprice").removeAttribute("hidden");
+                //document.getElementById("thewordsforcurrentprice").removeAttribute("hidden");
             }
 
         },
@@ -112,24 +112,25 @@
     WinJS.Namespace.define("base_clicked", {
 
         clicked: function (base) {
+            //milo: keep roamingSettings.values["Id_sel_base"] here (was a bug, was getting id from another product, it had the same name id db but grabed 1st one instead of further down)
+            roamingSettings.values["Id_sel_base"] = document.getElementById("id_sel4").textContent;
+
             remove.pop_list(age_data.model.info_page2);
             var updated_base = base.replace(/^\s+/, '').replace(/\s+$/, '');
             base3 = updated_base;
             server.base_sub(updated_base);
         },
 
-        next_page_flavor: function () {
-                keepInfo = true;
-                var vendId = document.getElementById("b_vend").innerHTML;
-                var vendId_count = document.getElementById("b_vend_count").innerHTML;
-                roamingSettings.values["Base_protein"] = false;
-                roamingSettings.values["Base_vend"] = vendId;
-                roamingSettings.values["Base_name"] = base3;
-                roamingSettings.values["Base_pic"] = document.getElementById("choosen_base_carry").src;
-                roamingSettings.values["Base_info"] = document.getElementById("sel_base_info").textContent;
-                roamingSettings.values["Base_price"] = document.getElementById("base_price").textContent;
-                roamingSettings.values["Base_label"] = document.getElementById("sel_base_pic").src;
-                roamingSettings.values["Id_sel_base"] = document.getElementById("id_sel3").textContent;
+        next_page_flavor: function (img) {
+            keepInfo = true;
+            var vendId = document.getElementById("b_vend").innerHTML;
+            roamingSettings.values["Base_protein"] = false;
+            roamingSettings.values["Base_vend"] = vendId;
+            roamingSettings.values["Base_name"] = base3;
+            roamingSettings.values["Base_pic"] = document.getElementById("choosen_base_carry").src;
+            roamingSettings.values["Base_info"] = document.getElementById("sel_base_info").textContent;
+            roamingSettings.values["Base_price"] = document.getElementById("base_price").textContent;
+            roamingSettings.values["Base_label"] = document.getElementById("sel_base_pic").src;
             //console.log("Base page picked id = " + roamingSettings.values["Id_sel_base"]);
 
 

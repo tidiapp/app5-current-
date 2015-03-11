@@ -14,7 +14,6 @@
             design.getHome();
             design.changeTextColor();
             design.getHomeBorders("white");
-            server.finalPageCall();
 
             //var id = roamingSettings.values["Id_sel_sport"];
             //console.log("Age page picked id READY() = " + roamingSettings.values["Id_sel_age"]);
@@ -62,6 +61,8 @@
                 document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " kit catagory.";
                 document.getElementById("choosen_age").textContent = "Choose Your Test Kit";
                 document.getElementById("nutrigenetics_price_div").removeAttribute("hidden");
+                server.finalPageCall();//if this moved to any other page and final page is not after this page then if will have a bug "BasePrice missing" 
+
 //milo: so if other kits or orders are continued this will allow the adding of them all
             }
 

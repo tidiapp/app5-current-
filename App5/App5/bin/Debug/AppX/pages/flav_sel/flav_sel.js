@@ -16,7 +16,7 @@
             design.changeTextColor();
             design.getFlavSel();
             design.getFlavSelBorders("white");
-            //server.finalPageCall();
+            server.finalPageCall();//if this moved to any other page and final page is not after this page then if will have a bug "BasePrice missing"
 
             var id_sel = roamingSettings.values["Id_sel_func"];
 
@@ -156,7 +156,6 @@
             roamingSettings.values["FlavSel_pic"] = document.getElementById("hidden_flav_pic").src;
             roamingSettings.values["FlavSel_vend"] = document.getElementById("f_vend").textContent;
             var vendId = roamingSettings.values["FlavSel_vend"];
-            var vendId_count = document.getElementById("f_vend_count").textContent;
             roamingSettings.values["FlavSel_info"] = null;
             roamingSettings.values["FlavSel_price"] = 0;
             roamingSettings.values["FlavSel_label"] = document.getElementById("flav_sel_sel_pic").src;

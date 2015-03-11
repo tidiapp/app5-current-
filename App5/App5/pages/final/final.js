@@ -17,16 +17,45 @@
             design.getFinal();
             design.changeTextColor();
             var theNew = roamingSettings.values["Base_vend"].replace(/^\s+/, '').replace(/\s+$/, '');
-            //milo: looping for any db to update any part automatically using ids 
+
+            //milo: looping for any db to update any part automatically using ids
+            //http://azure.microsoft.com/en-us/documentation/articles/mobile-services-html-how-to-use-client-library/
             //var EditDB = thinkitdrinkitDataClient.getTable("Boost");
-            //for (var i = 11468; i <= 11504; i++) {
+            //for (var i = 3710; i <= 3771; i++) {
             //    var query = EditDB.update({
             //        id: i,
             //        //BaseDBbase_id: 147
             //        //Price: "7"
-            //        Image: "https://thinkitdrinkit.blob.core.windows.net/thinkitdrinkitappimagesboost/purpose2/optimsmcurrent.png"
+            //        //Image: "https://thinkitdrinkit.blob.core.windows.net/thinkitdrinkitappimagesboost/purpose2/optimsmcurrent.png"
+            //        Name: "***",
+            //        FuncDBsport_id: 0,
+            //        BaseDBbase_id: 0
             //    })
             //}
+
+            //var EditDB = thinkitdrinkitDataClient.getTable("Flavor");
+            //for (var i = 1; i <= 4; i++) {
+            //    var query = EditDB.where({
+            //        id: i,
+            //        Name: "Vanilla"
+            //    }).read().done(function (results) {
+            //        console.log("Done ", results);
+
+            //        var EditDB2 = thinkitdrinkitDataClient.getTable("Flavor");
+            //        for (var i = 1; i <= 4; i++) {
+            //            var query = EditDB2.update({
+            //                id: i,
+            //                //BaseDBbase_id: 147
+            //                //Price: "7"
+            //                Image: "https://thinkitdrinkit.blob.core.windows.net/thinkitdrinkitappimagesboost/purpose2/optimsmcurrent.png"
+            //            })
+            //        }
+
+            //    }, function (err) {
+            //        console.log(err);
+            //    });
+            //}
+
 
             if (roamingSettings.values["Boost1_name"] == "" || roamingSettings.values["Boost1_name"] === !undefined) {
                 roamingSettings.values["Boost1_price"] = 0
@@ -577,17 +606,17 @@
                         roamingSettings.values["FlavSel_name"] = "none";
                         roamingSettings.values["FlavSel_vend"] = "none";
                         roamingSettings.values["FlavSel_pic"] = "none";
+                        roamingSettings.values["FlavSel_price"] = 0;
                         roamingSettings.values["Base_name"] = "none";
                         roamingSettings.values["Base_vend"] = "none";
                         roamingSettings.values["Base_pic"] = "none";
+                        roamingSettings.values["Base_price"] = 0;
+
                     };
                 //console.log("I'm here 2!");
 
 //milo: Server Call
                     server.contSave()
-
-                    server.finalPageCall();
-
 
                         if (roamingSettings.values["Boost2_price"] > 0 && roamingSettings.values["Boost3_price"] <= 0) {boostCheck();}
                             else if (roamingSettings.values["Boost3_price"] > 0 && roamingSettings.values["Boost4_price"] <= 0) {boostCheck(); }
@@ -600,7 +629,7 @@
                                 roamingSettings.values["totalOrderNumber"]++;
                         function boostCheck() {
                             roamingSettings.values["not_cont"] = false;
-                            console.log("Why? boostcheck()" + roamingSettings.values["Base_vend"] + ' ' + roamingSettings.values["Boost1_vend"]);
+                            console.log("Why? boostcheck()" + roamingSettings.values["Base_vend"] + ' ' + roamingSettings.values["Boost1_vend"] + " " + roamingSettings.values["Base_price"]);
                             roamingSettings.values["went_back"] = true;
                             WinJS.Navigation.navigate('pages/launch_page/launch_page.html');
                         }

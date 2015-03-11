@@ -228,7 +228,7 @@
                 var query = Age.where({
                     Name: name
                 }).read().done(function (results) {
-                    age_data.model.info_page2.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_img: results[0].Label, base_price: results[0].Price, the_pic: results[0].Image, b_vend: results[0].VendID, b_vend_count: results[0].VendID_count, id_sel: results[0].id })
+                    age_data.model.info_page2.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_img: results[0].Label, base_price: results[0].Price, the_pic: results[0].Image, b_vend: results[0].VendID, id_sel: results[0].id })
                     roamingSettings.values["db_url"] = results[0].Info;
                 }, function (err) {
                     console.log(err);
@@ -256,7 +256,7 @@
                 var query = Age.where({
                     Name: name
                 }).read().done(function (results) {
-                    age_data.model.info_page4.push({ sel_name: results[0].Name, sel_info: results[0].InfoLite, sel_pic: results[0].Image, sel_label: results[0].Label, f_vend: results[0].VendID, f_vend_count: results[0].VendID_count })
+                    age_data.model.info_page4.push({ sel_name: results[0].Name, sel_info: results[0].InfoLite, sel_pic: results[0].Image, sel_label: results[0].Label, f_vend: results[0].VendID })
                     roamingSettings.values["db_url"] = results[0].Info;
                 }, function (err) {
                     console.log(err);
@@ -303,11 +303,21 @@
                         });
                     } else if (cat_picked === "Energy" || cat_picked === "Fitness & Exercise" || cat_picked === "Weight Management" || cat_picked === "Lifestyle Diets" || cat_picked === "Wellness" || cat_picked === "Beauty") {
                         var query = Age.where({
-                            BaseDBbase_id: id_base
+                            BaseDBbase_id: id_base,
                         }).orderBy("Order").read().done(function (results) {
                             for (var i = 0; i < results.length; i++) {
                                 age_data.model.boost.push({ boost_name: results[i].Name, boost_pic: results[i].Image, id_sel: results[i].id })
                             }
+                                //milo: standard boosts that show up in most catagories.
+                                var query = Age.where({
+                                    Access2: 1
+                                }).orderBy("Order").read().done(function (results) {
+                                    for (var i = 0; i < results.length; i++) {
+                                        age_data.model.boost.push({ boost_name: results[i].Name, boost_pic: results[i].Image, id_sel: results[i].id })
+                                    }
+                                }, function (err) {
+                                    console.log(err);
+                                });
                         }, function (err) {
                             console.log(err);
                         });
@@ -557,22 +567,33 @@
                 var query = finalCall.where({
                     CNum: 1
                 }).read().done(function (results) {
-                    //console.log("I made it here, Yay...");
-                    if (roamingSettings.values["totalOrderNumber1"] > 0) {
-                        for (var i = 0; i < roamingSettings.values["totalOrderNumber1"]; i++) {
-                            roamingSettings.values["t"] += (parseFloat(results[i].BasePrice) + parseFloat(results[i].BoostPrice) + parseFloat(results[i].Boost2Price) + parseFloat(results[i].Boost3Price) + parseFloat(results[i].Boost4Price) + parseFloat(results[i].Boost5Price) + parseFloat(results[i].Boost6Price) + parseFloat(results[i].Boost7Price) + parseFloat(results[i].Boost8Price) + parseFloat(results[i].NutrigeneticsPrice));
-                            console.log("Inside finalpagecall loop");
-                        }
-                        if (!roamingSettings.values["not_cont"]) {//milo: bug fix, needed to put it here, above code took too long to execute, below code used to be in each page  
-                            //document.getElementById("youcurrentprice").textContent = roamingSettings.values["t"];
-                            roamingSettings.values["tCartPrice"] = roamingSettings.values["t"];
-                            //document.getElementById("youcurrentprice").removeAttribute("hidden");
-                            //document.getElementById("thewordsforcurrentprice").removeAttribute("hidden");
-                            //if (roamingSettings.values['Boost_total_footer'] != "") {
-                            //    document.getElementById("youcurrentprice").textContent = roamingSettings.values["t"] + parseFloat(roamingSettings.values['Boost_total_footer']);
+                    console.log("I made it here, Yay...");
+                    console.log("This is the results number: " + results.length);
+                    if (results.length > 0) {
+                        if (roamingSettings.values["totalOrderNumber1"] > 0) {
+                            //milo: DB ShopCart if its empty and allos to get into here it will couse BasePrice bug to break app
+                            for (var i = 0; i < roamingSettings.values["totalOrderNumber1"]; i++) {
+                                roamingSettings.values["t"] += (parseFloat(results[i].BasePrice) + parseFloat(results[i].BoostPrice) + parseFloat(results[i].Boost2Price) + parseFloat(results[i].Boost3Price) + parseFloat(results[i].Boost4Price) + parseFloat(results[i].Boost5Price) + parseFloat(results[i].Boost6Price) + parseFloat(results[i].Boost7Price) + parseFloat(results[i].Boost8Price) + parseFloat(results[i].NutrigeneticsPrice));
+                                console.log("Inside finalpagecall loop");
+
+                            }
+                            //if (!roamingSettings.values["not_cont"]) {//milo: bug fix, needed to put it here, above code took too long to execute, below code used to be in each page  
+                            //    //document.getElementById("youcurrentprice").textContent = roamingSettings.values["t"];
+                            //    roamingSettings.values["tCartPrice"] = roamingSettings.values["t"];
+                            //    //document.getElementById("youcurrentprice").removeAttribute("hidden");
+                            //    //document.getElementById("thewordsforcurrentprice").removeAttribute("hidden");
+                            //    //if (roamingSettings.values['Boost_total_footer'] != "") {
+                            //    //    document.getElementById("youcurrentprice").textContent = roamingSettings.values["t"] + parseFloat(roamingSettings.values['Boost_total_footer']);
+                            //    //}
                             //}
                         }
                     }
+                    //else
+                    //{
+                    //    tool.alert('Shoping Cart is most likely empty.');
+                    //    //'DB ShopCart is most likely empty due this >>>> roamingSettings.values["totalOrderNumber1"] allowing to get into code above
+                    //}
+                    
                   //  console.log("The is the number of total orders: " + roamingSettings.values["totalOrderNumber"] + ". This is the total current cost: " + roamingSettings.values["t"]);
                 }, function error(err) {
                     if (err.readyState === 0) {
