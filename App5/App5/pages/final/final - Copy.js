@@ -146,6 +146,9 @@
     var the_full_order = Array;
  
     WinJS.Namespace.define("FinalClick", {
+        del_btn: function (id) {
+
+        },
         clicked: function () {
             // server.userOrderDone();
             var missName = document.getElementById("Cname").value;

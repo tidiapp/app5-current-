@@ -189,6 +189,10 @@
     var the_full_order = Array;
  
     WinJS.Namespace.define("FinalClick", {
+        del_btn: function (id) {
+            server.the_del_btn(id);
+            //$('#order1').setAttr('hidden',true);
+        },
         clicked: function () {
             // server.userOrderDone();
             var missName = document.getElementById("Cname").value;
@@ -643,6 +647,7 @@
                     if (results[0].Boost2Price > 0 && results[0].Boost3Price <= 0) {
                         age_data.model.order_final_read.push(
                         {
+                            the_id: results[0].id,
                             b_name: results[0].BaseName, b_img: results[0].BaseImages, b_price: "$" + results[0].BasePrice,
                             f_name: results[0].FlavName, f_price: "$" + results[0].FlavPrice,
                             bo_name: results[0].BoostName, bo_price: "$" + results[0].BoostPrice,
@@ -655,6 +660,7 @@
                     else if (results[0].Boost3Price > 0 && results[0].Boost4Price <= 0) {
                         age_data.model.order_final_read.push(
                         {
+                            the_id: results[0].id,
                             b_name: results[0].BaseName, b_img: results[0].BaseImages, b_price: "$" + results[0].BasePrice,
                             f_name: results[0].FlavName, f_price: "$" + results[0].FlavPrice,
                             bo_name: results[0].BoostName, bo_price: "$" + results[0].BoostPrice,
@@ -670,6 +676,7 @@
                     else if (results[0].Boost4Price > 0 && results[0].Boost5Price <= 0) {
                         age_data.model.order_final_read.push(
                         {
+                            the_id: results[0].id,
                             b_name: results[0].BaseName, b_img: results[0].BaseImages, b_price: "$" + results[0].BasePrice,
                             f_name: results[0].FlavName, f_price: "$" + results[0].FlavPrice,
                             bo_name: results[0].BoostName, bo_price: "$" + results[0].BoostPrice,
@@ -686,6 +693,7 @@
                     else if (results[0].Boost5Price > 0 && results[0].Boost6Price <= 0) {
                         age_data.model.order_final_read.push(
                         {
+                            the_id: results[0].id,
                             b_name: results[0].BaseName, b_img: results[0].BaseImages, b_price: "$" + results[0].BasePrice,
                             f_name: results[0].FlavName, f_price: "$" + results[0].FlavPrice,
                             bo_name: results[0].BoostName, bo_price: "$" + results[0].BoostPrice,
@@ -704,6 +712,7 @@
                     else if (results[0].Boost6Price > 0 && results[0].Boost7Price <= 0) {
                         age_data.model.order_final_read.push(
                         {
+                            the_id: results[0].id,
                             b_name: results[0].BaseName, b_img: results[0].BaseImages, b_price: "$" + results[0].BasePrice,
                             f_name: results[0].FlavName, f_price: "$" + results[0].FlavPrice,
                             bo_name: results[0].BoostName, bo_price: "$" + results[0].BoostPrice,
@@ -724,6 +733,7 @@
                     else if (results[0].Boost7Price > 0 && results[0].Boost8Price <= 0) {
                         age_data.model.order_final_read.push(
                         {
+                            the_id: results[0].id,
                             b_name: results[0].BaseName, b_img: results[0].BaseImages, b_price: "$" + results[0].BasePrice,
                             f_name: results[0].FlavName, f_price: "$" + results[0].FlavPrice,
                             bo_name: results[0].BoostName, bo_price: "$" + results[0].BoostPrice,
@@ -746,6 +756,7 @@
                     else if (results[0].Boost8Price > 0) {
                         age_data.model.order_final_read.push(
                         {
+                            the_id: results[0].id,
                             b_name: results[0].BaseName, b_img: results[0].BaseImages, b_price: "$" + results[0].BasePrice,
                             f_name: results[0].FlavName, f_price: "$" + results[0].FlavPrice,
                             bo_name: results[0].BoostName, bo_price: "$" + results[0].BoostPrice,
@@ -770,6 +781,7 @@
                     else if (results[0].BoostPrice > 0 && results[0].Boost2Price <= 0) {
                         age_data.model.order_final_read.push(
                         {
+                            the_id: results[0].id,
                             b_name: results[0].BaseName, b_img: results[0].BaseImages, b_price: "$" + results[0].BasePrice,
                             f_name: results[0].FlavName, f_price: "$" + results[0].FlavPrice,
                             bo_name: results[0].BoostName, bo_price: "$" + results[0].BoostPrice,
@@ -780,6 +792,7 @@
                     else {
                             age_data.model.order_final_read.push(
                             {
+                                the_id: results[0].id,
                                 b_name: results[0].BaseName, b_img: results[0].BaseImages, b_price: "$" + results[0].BasePrice,
                                 f_name: results[0].FlavName, f_price: "$" + results[0].FlavPrice,
                                 order: "ORDER " + results[0].OrderNum
@@ -794,6 +807,7 @@
                     if (results[1].Boost2Price > 0 && results[1].Boost3Price <= 0) {
                         age_data.model.order_final_read2.push(
                         {
+                            the_id: results[1].id,
                             b_name: results[1].BaseName, b_img: results[1].BaseImages, b_price: "$" + results[1].BasePrice,
                             f_name: results[1].FlavName, f_price: "$" + results[1].FlavPrice,
                             bo_name: results[1].BoostName, bo_price: "$" + results[1].BoostPrice,
@@ -806,6 +820,7 @@
                     else if (results[1].Boost3Price > 0 && results[1].Boost4Price <= 0) {
                         age_data.model.order_final_read2.push(
                         {
+                            the_id: results[1].id,
                             b_name: results[1].BaseName, b_img: results[1].BaseImages, b_price: "$" + results[1].BasePrice,
                             f_name: results[1].FlavName, f_price: "$" + results[1].FlavPrice,
                             bo_name: results[1].BoostName, bo_price: "$" + results[1].BoostPrice,
@@ -821,6 +836,7 @@
                     else if (results[1].Boost4Price > 0 && results[1].Boost5Price <= 0) {
                         age_data.model.order_final_read2.push(
                         {
+                            the_id: results[1].id,
                             b_name: results[1].BaseName, b_img: results[1].BaseImages, b_price: "$" + results[1].BasePrice,
                             f_name: results[1].FlavName, f_price: "$" + results[1].FlavPrice,
                             bo_name: results[1].BoostName, bo_price: "$" + results[1].BoostPrice,
@@ -837,6 +853,7 @@
                     else if (results[1].Boost5Price > 0 && results[1].Boost6Price <= 0) {
                         age_data.model.order_final_read2.push(
                         {
+                            the_id: results[1].id,
                             b_name: results[1].BaseName, b_img: results[1].BaseImages, b_price: "$" + results[1].BasePrice,
                             f_name: results[1].FlavName, f_price: "$" + results[1].FlavPrice,
                             bo_name: results[1].BoostName, bo_price: "$" + results[1].BoostPrice,
@@ -855,6 +872,7 @@
                     else if (results[1].Boost6Price > 0 && results[1].Boost7Price <= 0) {
                         age_data.model.order_final_read2.push(
                         {
+                            the_id: results[1].id,
                             b_name: results[1].BaseName, b_img: results[1].BaseImages, b_price: "$" + results[1].BasePrice,
                             f_name: results[1].FlavName, f_price: "$" + results[1].FlavPrice,
                             bo_name: results[1].BoostName, bo_price: "$" + results[1].BoostPrice,
@@ -875,6 +893,7 @@
                     else if (results[1].Boost7Price > 0 && results[1].Boost8Price <= 0) {
                         age_data.model.order_final_read2.push(
                         {
+                            the_id: results[1].id,
                             b_name: results[1].BaseName, b_img: results[1].BaseImages, b_price: "$" + results[1].BasePrice,
                             f_name: results[1].FlavName, f_price: "$" + results[1].FlavPrice,
                             bo_name: results[1].BoostName, bo_price: "$" + results[1].BoostPrice,
@@ -897,6 +916,7 @@
                     else if (results[1].Boost8Price > 0) {
                         age_data.model.order_final_read2.push(
                         {
+                            the_id: results[1].id,
                             b_name: results[1].BaseName, b_img: results[1].BaseImages, b_price: "$" + results[1].BasePrice,
                             f_name: results[1].FlavName, f_price: "$" + results[1].FlavPrice,
                             bo_name: results[1].BoostName, bo_price: "$" + results[1].BoostPrice,
@@ -921,6 +941,7 @@
                     else if (results[1].BoostPrice > 0 && results[1].Boost2Price <= 0) {
                         age_data.model.order_final_read2.push(
                         {
+                            the_id: results[1].id,
                             b_name: results[1].BaseName, b_img: results[1].BaseImages, b_price: "$" + results[1].BasePrice,
                             f_name: results[1].FlavName, f_price: "$" + results[1].FlavPrice,
                             bo_name: results[1].BoostName, bo_price: "$" + results[1].BoostPrice,
@@ -931,6 +952,7 @@
                     else {
                         age_data.model.order_final_read2.push(
                         {
+                            the_id: results[1].id,
                             b_name: results[1].BaseName, b_img: results[1].BaseImages, b_price: "$" + results[1].BasePrice,
                             f_name: results[1].FlavName, f_price: "$" + results[1].FlavPrice,
                             order: "ORDER " + results[1].OrderNum
@@ -945,6 +967,7 @@
                     if (results[2].Boost2Price > 0 && results[2].Boost3Price <= 0) {
                         age_data.model.order_final_read3.push(
                         {
+                            the_id: results[2].id,
                             b_name: results[2].BaseName, b_img: results[2].BaseImages, b_price: "$" + results[2].BasePrice,
                             f_name: results[2].FlavName, f_price: "$" + results[2].FlavPrice,
                             bo_name: results[2].BoostName, bo_price: "$" + results[2].BoostPrice,
@@ -957,6 +980,7 @@
                     else if (results[2].Boost3Price > 0 && results[2].Boost4Price <= 0) {
                         age_data.model.order_final_read3.push(
                         {
+                            the_id: results[2].id,
                             b_name: results[2].BaseName, b_img: results[2].BaseImages, b_price: "$" + results[2].BasePrice,
                             f_name: results[2].FlavName, f_price: "$" + results[2].FlavPrice,
                             bo_name: results[2].BoostName, bo_price: "$" + results[2].BoostPrice,
@@ -972,6 +996,7 @@
                     else if (results[2].Boost4Price > 0 && results[2].Boost5Price <= 0) {
                         age_data.model.order_final_read3.push(
                         {
+                            the_id: results[2].id,
                             b_name: results[2].BaseName, b_img: results[2].BaseImages, b_price: "$" + results[2].BasePrice,
                             f_name: results[2].FlavName, f_price: "$" + results[2].FlavPrice,
                             bo_name: results[2].BoostName, bo_price: "$" + results[2].BoostPrice,
@@ -988,6 +1013,7 @@
                     else if (results[2].Boost5Price > 0 && results[2].Boost6Price <= 0) {
                         age_data.model.order_final_read3.push(
                         {
+                            the_id: results[2].id,
                             b_name: results[2].BaseName, b_img: results[2].BaseImages, b_price: "$" + results[2].BasePrice,
                             f_name: results[2].FlavName, f_price: "$" + results[2].FlavPrice,
                             bo_name: results[2].BoostName, bo_price: "$" + results[2].BoostPrice,
@@ -1006,6 +1032,7 @@
                     else if (results[2].Boost6Price > 0 && results[2].Boost7Price <= 0) {
                         age_data.model.order_final_read3.push(
                         {
+                            the_id: results[2].id,
                             b_name: results[2].BaseName, b_img: results[2].BaseImages, b_price: "$" + results[2].BasePrice,
                             f_name: results[2].FlavName, f_price: "$" + results[2].FlavPrice,
                             bo_name: results[2].BoostName, bo_price: "$" + results[2].BoostPrice,
@@ -1026,6 +1053,7 @@
                     else if (results[2].Boost7Price > 0 && results[2].Boost8Price <= 0) {
                         age_data.model.order_final_read3.push(
                         {
+                            the_id: results[2].id,
                             b_name: results[2].BaseName, b_img: results[2].BaseImages, b_price: "$" + results[2].BasePrice,
                             f_name: results[2].FlavName, f_price: "$" + results[2].FlavPrice,
                             bo_name: results[2].BoostName, bo_price: "$" + results[2].BoostPrice,
@@ -1048,6 +1076,7 @@
                     else if (results[2].Boost8Price > 0) {
                         age_data.model.order_final_read3.push(
                         {
+                            the_id: results[2].id,
                             b_name: results[2].BaseName, b_img: results[2].BaseImages, b_price: "$" + results[2].BasePrice,
                             f_name: results[2].FlavName, f_price: "$" + results[2].FlavPrice,
                             bo_name: results[2].BoostName, bo_price: "$" + results[2].BoostPrice,
@@ -1072,6 +1101,7 @@
                     else if (results[2].BoostPrice > 0 && results[2].Boost2Price <= 0) {
                         age_data.model.order_final_read3.push(
                         {
+                            the_id: results[2].id,
                             b_name: results[2].BaseName, b_img: results[2].BaseImages, b_price: "$" + results[2].BasePrice,
                             f_name: results[2].FlavName, f_price: "$" + results[2].FlavPrice,
                             bo_name: results[2].BoostName, bo_price: "$" + results[2].BoostPrice,
@@ -1082,6 +1112,7 @@
                     else {
                             age_data.model.order_final_read3.push(
                             {
+                                the_id: results[2].id,
                                 b_name: results[2].BaseName, b_img: results[2].BaseImages, b_price: "$" + results[2].BasePrice,
                                 f_name: results[2].FlavName, f_price: "$" + results[2].FlavPrice,
                                 order: "ORDER " + results[2].OrderNum
@@ -1096,6 +1127,7 @@
                     if (results[3].Boost2Price > 0 && results[3].Boost3Price <= 0) {
                         age_data.model.order_final_read4.push(
                         {
+                            the_id: results[3].id,
                             b_name: results[3].BaseName, b_img: results[3].BaseImages, b_price: "$" + results[3].BasePrice,
                             f_name: results[3].FlavName, f_price: "$" + results[3].FlavPrice,
                             bo_name: results[3].BoostName, bo_price: "$" + results[3].BoostPrice,
@@ -1108,6 +1140,7 @@
                     else if (results[3].Boost3Price > 0 && results[3].Boost4Price <= 0) {
                         age_data.model.order_final_read4.push(
                         {
+                            the_id: results[3].id,
                             b_name: results[3].BaseName, b_img: results[3].BaseImages, b_price: "$" + results[3].BasePrice,
                             f_name: results[3].FlavName, f_price: "$" + results[3].FlavPrice,
                             bo_name: results[3].BoostName, bo_price: "$" + results[3].BoostPrice,
@@ -1123,6 +1156,7 @@
                     else if (results[3].Boost4Price > 0 && results[3].Boost5Price <= 0) {
                         age_data.model.order_final_read4.push(
                         {
+                            the_id: results[3].id,
                             b_name: results[3].BaseName, b_img: results[3].BaseImages, b_price: "$" + results[3].BasePrice,
                             f_name: results[3].FlavName, f_price: "$" + results[3].FlavPrice,
                             bo_name: results[3].BoostName, bo_price: "$" + results[3].BoostPrice,
@@ -1139,6 +1173,7 @@
                     else if (results[3].Boost5Price > 0 && results[3].Boost6Price <= 0) {
                         age_data.model.order_final_read4.push(
                         {
+                            the_id: results[3].id,
                             b_name: results[3].BaseName, b_img: results[3].BaseImages, b_price: "$" + results[3].BasePrice,
                             f_name: results[3].FlavName, f_price: "$" + results[3].FlavPrice,
                             bo_name: results[3].BoostName, bo_price: "$" + results[3].BoostPrice,
@@ -1157,6 +1192,7 @@
                     else if (results[3].Boost6Price > 0 && results[3].Boost7Price <= 0) {
                         age_data.model.order_final_read4.push(
                         {
+                            the_id: results[3].id,
                             b_name: results[3].BaseName, b_img: results[3].BaseImages, b_price: "$" + results[3].BasePrice,
                             f_name: results[3].FlavName, f_price: "$" + results[3].FlavPrice,
                             bo_name: results[3].BoostName, bo_price: "$" + results[3].BoostPrice,
@@ -1177,6 +1213,7 @@
                     else if (results[3].Boost7Price > 0 && results[3].Boost8Price <= 0) {
                         age_data.model.order_final_read4.push(
                         {
+                            the_id: results[3].id,
                             b_name: results[3].BaseName, b_img: results[3].BaseImages, b_price: "$" + results[3].BasePrice,
                             f_name: results[3].FlavName, f_price: "$" + results[3].FlavPrice,
                             bo_name: results[3].BoostName, bo_price: "$" + results[3].BoostPrice,
@@ -1199,6 +1236,7 @@
                     else if (results[3].Boost8Price > 0) {
                         age_data.model.order_final_read4.push(
                         {
+                            the_id: results[3].id,
                             b_name: results[3].BaseName, b_img: results[3].BaseImages, b_price: "$" + results[3].BasePrice,
                             f_name: results[3].FlavName, f_price: "$" + results[3].FlavPrice,
                             bo_name: results[3].BoostName, bo_price: "$" + results[3].BoostPrice,
@@ -1223,6 +1261,7 @@
                     else if (results[3].BoostPrice > 0 && results[3].Boost2Price <= 0) {
                         age_data.model.order_final_read4.push(
                         {
+                            the_id: results[3].id,
                             b_name: results[3].BaseName, b_img: results[3].BaseImages, b_price: "$" + results[3].BasePrice,
                             f_name: results[3].FlavName, f_price: "$" + results[3].FlavPrice,
                             bo_name: results[3].BoostName, bo_price: "$" + results[3].BoostPrice,
@@ -1233,6 +1272,7 @@
                     else {
                             age_data.model.order_final_read4.push(
                             {
+                                the_id: results[3].id,
                                 b_name: results[3].BaseName, b_img: results[3].BaseImages, b_price: "$" + results[3].BasePrice,
                                 f_name: results[3].FlavName, f_price: "$" + results[3].FlavPrice,
                                 order: "ORDER " + results[3].OrderNum
@@ -1247,6 +1287,7 @@
                     if (results[4].Boost2Price > 0 && results[4].Boost3Price <= 0) {
                         age_data.model.order_final_read5.push(
                         {
+                            the_id: results[4].id,
                             b_name: results[4].BaseName, b_img: results[4].BaseImages, b_price: "$" + results[4].BasePrice,
                             f_name: results[4].FlavName, f_price: "$" + results[4].FlavPrice,
                             bo_name: results[4].BoostName, bo_price: "$" + results[4].BoostPrice,
@@ -1259,6 +1300,7 @@
                     else if (results[4].Boost3Price > 0 && results[4].Boost4Price <= 0) {
                         age_data.model.order_final_read5.push(
                         {
+                            the_id: results[4].id,
                             b_name: results[4].BaseName, b_img: results[4].BaseImages, b_price: "$" + results[4].BasePrice,
                             f_name: results[4].FlavName, f_price: "$" + results[4].FlavPrice,
                             bo_name: results[4].BoostName, bo_price: "$" + results[4].BoostPrice,
@@ -1274,6 +1316,7 @@
                     else if (results[4].Boost4Price > 0 && results[4].Boost5Price <= 0) {
                         age_data.model.order_final_read5.push(
                         {
+                            the_id: results[4].id,
                             b_name: results[4].BaseName, b_img: results[4].BaseImages, b_price: "$" + results[4].BasePrice,
                             f_name: results[4].FlavName, f_price: "$" + results[4].FlavPrice,
                             bo_name: results[4].BoostName, bo_price: "$" + results[4].BoostPrice,
@@ -1290,6 +1333,7 @@
                     else if (results[4].Boost5Price > 0 && results[4].Boost6Price <= 0) {
                         age_data.model.order_final_read5.push(
                         {
+                            the_id: results[4].id,
                             b_name: results[4].BaseName, b_img: results[4].BaseImages, b_price: "$" + results[4].BasePrice,
                             f_name: results[4].FlavName, f_price: "$" + results[4].FlavPrice,
                             bo_name: results[4].BoostName, bo_price: "$" + results[4].BoostPrice,
@@ -1308,6 +1352,7 @@
                     else if (results[4].Boost6Price > 0 && results[4].Boost7Price <= 0) {
                         age_data.model.order_final_read5.push(
                         {
+                            the_id: results[4].id,
                             b_name: results[4].BaseName, b_img: results[4].BaseImages, b_price: "$" + results[4].BasePrice,
                             f_name: results[4].FlavName, f_price: "$" + results[4].FlavPrice,
                             bo_name: results[4].BoostName, bo_price: "$" + results[4].BoostPrice,
@@ -1328,6 +1373,7 @@
                     else if (results[4].Boost7Price > 0 && results[4].Boost8Price <= 0) {
                         age_data.model.order_final_read5.push(
                         {
+                            the_id: results[4].id,
                             b_name: results[4].BaseName, b_img: results[4].BaseImages, b_price: "$" + results[4].BasePrice,
                             f_name: results[4].FlavName, f_price: "$" + results[4].FlavPrice,
                             bo_name: results[4].BoostName, bo_price: "$" + results[4].BoostPrice,
@@ -1350,6 +1396,7 @@
                     else if (results[4].Boost8Price > 0) {
                         age_data.model.order_final_read5.push(
                         {
+                            the_id: results[4].id,
                             b_name: results[4].BaseName, b_img: results[4].BaseImages, b_price: "$" + results[4].BasePrice,
                             f_name: results[4].FlavName, f_price: "$" + results[4].FlavPrice,
                             bo_name: results[4].BoostName, bo_price: "$" + results[4].BoostPrice,
@@ -1374,6 +1421,7 @@
                     else if (results[4].BoostPrice > 0 && results[4].Boost2Price <= 0) {
                         age_data.model.order_final_read5.push(
                         {
+                            the_id: results[4].id,
                             b_name: results[4].BaseName, b_img: results[4].BaseImages, b_price: "$" + results[4].BasePrice,
                             f_name: results[4].FlavName, f_price: "$" + results[4].FlavPrice,
                             bo_name: results[4].BoostName, bo_price: "$" + results[4].BoostPrice,
@@ -1384,6 +1432,7 @@
                     else {
                             age_data.model.order_final_read5.push(
                             {
+                                the_id: results[4].id,
                                 b_name: results[4].BaseName, b_img: results[4].BaseImages, b_price: "$" + results[4].BasePrice,
                                 f_name: results[4].FlavName, f_price: "$" + results[4].FlavPrice,
                                 order: "ORDER " + results[4].OrderNum
@@ -1399,6 +1448,7 @@
                         if (results[5].Boost2Price > 0 && results[5].Boost3Price <= 0) {
                         age_data.model.order_final_read6.push(
                         {
+                            the_id: results[5].id,
                             b_name: results[5].BaseName, b_img: results[5].BaseImages, b_price: "$" + results[5].BasePrice,
                             f_name: results[5].FlavName, f_price: "$" + results[5].FlavPrice,
                             bo_name: results[5].BoostName, bo_price: "$" + results[5].BoostPrice,
@@ -1411,6 +1461,7 @@
                     else if (results[5].Boost3Price > 0 && results[5].Boost4Price <= 0) {
                         age_data.model.order_final_read6.push(
                         {
+                            the_id: results[5].id,
                             b_name: results[5].BaseName, b_img: results[5].BaseImages, b_price: "$" + results[5].BasePrice,
                             f_name: results[5].FlavName, f_price: "$" + results[5].FlavPrice,
                             bo_name: results[5].BoostName, bo_price: "$" + results[5].BoostPrice,
@@ -1426,6 +1477,7 @@
                     else if (results[5].Boost4Price > 0 && results[5].Boost5Price <= 0) {
                         age_data.model.order_final_read6.push(
                         {
+                            the_id: results[5].id,
                             b_name: results[5].BaseName, b_img: results[5].BaseImages, b_price: "$" + results[5].BasePrice,
                             f_name: results[5].FlavName, f_price: "$" + results[5].FlavPrice,
                             bo_name: results[5].BoostName, bo_price: "$" + results[5].BoostPrice,
@@ -1442,6 +1494,7 @@
                     else if (results[5].Boost5Price > 0 && results[5].Boost6Price <= 0) {
                         age_data.model.order_final_read6.push(
                         {
+                            the_id: results[5].id,
                             b_name: results[5].BaseName, b_img: results[5].BaseImages, b_price: "$" + results[5].BasePrice,
                             f_name: results[5].FlavName, f_price: "$" + results[5].FlavPrice,
                             bo_name: results[5].BoostName, bo_price: "$" + results[5].BoostPrice,
@@ -1460,6 +1513,7 @@
                     else if (results[5].Boost6Price > 0 && results[5].Boost7Price <= 0) {
                         age_data.model.order_final_read6.push(
                         {
+                            the_id: results[5].id,
                             b_name: results[5].BaseName, b_img: results[5].BaseImages, b_price: "$" + results[5].BasePrice,
                             f_name: results[5].FlavName, f_price: "$" + results[5].FlavPrice,
                             bo_name: results[5].BoostName, bo_price: "$" + results[5].BoostPrice,
@@ -1480,6 +1534,7 @@
                     else if (results[5].Boost7Price > 0 && results[5].Boost8Price <= 0) {
                         age_data.model.order_final_read6.push(
                         {
+                            the_id: results[5].id,
                             b_name: results[5].BaseName, b_img: results[5].BaseImages, b_price: "$" + results[5].BasePrice,
                             f_name: results[5].FlavName, f_price: "$" + results[5].FlavPrice,
                             bo_name: results[5].BoostName, bo_price: "$" + results[5].BoostPrice,
@@ -1502,6 +1557,7 @@
                     else if (results[5].Boost8Price > 0) {
                         age_data.model.order_final_read6.push(
                         {
+                            the_id: results[5].id,
                             b_name: results[5].BaseName, b_img: results[5].BaseImages, b_price: "$" + results[5].BasePrice,
                             f_name: results[5].FlavName, f_price: "$" + results[5].FlavPrice,
                             bo_name: results[5].BoostName, bo_price: "$" + results[5].BoostPrice,
@@ -1526,6 +1582,7 @@
                     else if (results[5].BoostPrice > 0 && results[5].Boost2Price <= 0) {
                         age_data.model.order_final_read6.push(
                         {
+                            the_id: results[5].id,
                             b_name: results[5].BaseName, b_img: results[5].BaseImages, b_price: "$" + results[5].BasePrice,
                             f_name: results[5].FlavName, f_price: "$" + results[5].FlavPrice,
                             bo_name: results[5].BoostName, bo_price: "$" + results[5].BoostPrice,
@@ -1536,6 +1593,7 @@
                     else {
                         age_data.model.order_final_read6.push(
                         {
+                            the_id: results[5].id,
                             b_name: results[5].BaseName, b_img: results[5].BaseImages, b_price: "$" + results[5].BasePrice,
                             f_name: results[5].FlavName, f_price: "$" + results[5].FlavPrice,
                             order: "ORDER " + results[5].OrderNum
@@ -1550,6 +1608,7 @@
                     if (results[6].Boost2Price > 0 && results[6].Boost3Price <= 0) {
                         age_data.model.order_final_read7.push(
                         {
+                            the_id: results[6].id,
                             b_name: results[6].BaseName, b_img: results[6].BaseImages, b_price: "$" + results[6].BasePrice,
                             f_name: results[6].FlavName, f_price: "$" + results[6].FlavPrice,
                             bo_name: results[6].BoostName, bo_price: "$" + results[6].BoostPrice,
@@ -1562,6 +1621,7 @@
                     else if (results[6].Boost3Price > 0 && results[6].Boost4Price <= 0) {
                         age_data.model.order_final_read7.push(
                         {
+                            the_id: results[6].id,
                             b_name: results[6].BaseName, b_img: results[6].BaseImages, b_price: "$" + results[6].BasePrice,
                             f_name: results[6].FlavName, f_price: "$" + results[6].FlavPrice,
                             bo_name: results[6].BoostName, bo_price: "$" + results[6].BoostPrice,
@@ -1577,6 +1637,7 @@
                     else if (results[6].Boost4Price > 0 && results[6].Boost5Price <= 0) {
                         age_data.model.order_final_read7.push(
                         {
+                            the_id: results[6].id,
                             b_name: results[6].BaseName, b_img: results[6].BaseImages, b_price: "$" + results[6].BasePrice,
                             f_name: results[6].FlavName, f_price: "$" + results[6].FlavPrice,
                             bo_name: results[6].BoostName, bo_price: "$" + results[6].BoostPrice,
@@ -1593,6 +1654,7 @@
                     else if (results[6].Boost5Price > 0 && results[6].Boost6Price <= 0) {
                         age_data.model.order_final_read7.push(
                         {
+                            the_id: results[6].id,
                             b_name: results[6].BaseName, b_img: results[6].BaseImages, b_price: "$" + results[6].BasePrice,
                             f_name: results[6].FlavName, f_price: "$" + results[6].FlavPrice,
                             bo_name: results[6].BoostName, bo_price: "$" + results[6].BoostPrice,
@@ -1611,6 +1673,7 @@
                     else if (results[6].Boost6Price > 0 && results[6].Boost7Price <= 0) {
                         age_data.model.order_final_read7.push(
                         {
+                            the_id: results[6].id,
                             b_name: results[6].BaseName, b_img: results[6].BaseImages, b_price: "$" + results[6].BasePrice,
                             f_name: results[6].FlavName, f_price: "$" + results[6].FlavPrice,
                             bo_name: results[6].BoostName, bo_price: "$" + results[6].BoostPrice,
@@ -1631,6 +1694,7 @@
                     else if (results[6].Boost7Price > 0 && results[6].Boost8Price <= 0) {
                         age_data.model.order_final_read7.push(
                         {
+                            the_id: results[6].id,
                             b_name: results[6].BaseName, b_img: results[6].BaseImages, b_price: "$" + results[6].BasePrice,
                             f_name: results[6].FlavName, f_price: "$" + results[6].FlavPrice,
                             bo_name: results[6].BoostName, bo_price: "$" + results[6].BoostPrice,
@@ -1653,6 +1717,7 @@
                     else if (results[6].Boost8Price > 0) {
                         age_data.model.order_final_read7.push(
                         {
+                            the_id: results[6].id,
                             b_name: results[6].BaseName, b_img: results[6].BaseImages, b_price: "$" + results[6].BasePrice,
                             f_name: results[6].FlavName, f_price: "$" + results[6].FlavPrice,
                             bo_name: results[6].BoostName, bo_price: "$" + results[6].BoostPrice,
@@ -1677,6 +1742,7 @@
                     else if (results[6].BoostPrice > 0 && results[6].Boost2Price <= 0) {
                         age_data.model.order_final_read7.push(
                         {
+                            the_id: results[6].id,
                             b_name: results[6].BaseName, b_img: results[6].BaseImages, b_price: "$" + results[6].BasePrice,
                             f_name: results[6].FlavName, f_price: "$" + results[6].FlavPrice,
                             bo_name: results[6].BoostName, bo_price: "$" + results[6].BoostPrice,
@@ -1687,6 +1753,7 @@
                     else {
                             age_data.model.order_final_read7.push(
                             {
+                                the_id: results[6].id,
                                 b_name: results[6].BaseName, b_img: results[6].BaseImages, b_price: "$" + results[6].BasePrice,
                                 f_name: results[6].FlavName, f_price: "$" + results[6].FlavPrice,
                                 order: "ORDER " + results[6].OrderNum

@@ -8,6 +8,18 @@
 
         WinJS.Namespace.define("server", {
             //home.html
+
+            the_del_btn: function (id) {
+                var Age = thinkitdrinkitDataClient.getTable("ShopCart");
+                Age.del({
+                    id: id
+                }).done(function () {
+                    console.log("This is working!!");
+                    roamingSettings.values["totalOrderNumber1"]--;
+                }, function (err) {
+                    console.log("Error: " + err);
+                });
+            },
             home: function (the_sel_age) {
                 remove.pop_list(age_data.model.age);
 
@@ -308,6 +320,7 @@
                             for (var i = 0; i < results.length; i++) {
                                 age_data.model.boost.push({ boost_name: results[i].Name, boost_pic: results[i].Image, id_sel: results[i].id })
                             }
+                                //milo: standard boosts that show up in most catagories.
                                 var query = Age.where({
                                     Access2: 1
                                 }).orderBy("Order").read().done(function (results) {

@@ -8,6 +8,18 @@
 
         WinJS.Namespace.define("server", {
             //home.html
+
+            the_del_btn: function (id) {
+                var Age = thinkitdrinkitDataClient.getTable("ShopCart");
+                Age.del({
+                    id: id
+                }).done(function () {
+                    console.log("This is working!!");
+                    roamingSettings.values["totalOrderNumber1"]--;
+                }, function (err) {
+                    console.log("Error: " + err);
+                });
+            },
             home: function (the_sel_age) {
                 remove.pop_list(age_data.model.age);
 
