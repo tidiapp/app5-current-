@@ -643,6 +643,8 @@
         howManyBoosts: function (results) {
             for (var i = 0; i < results.length; i++) {
                 //milo all this code was set up so bug that removes attribute from one order to another does not show up as 0 or none. 
+                roamingSettings.values["OrderNum"] = results[i].OrderNum;
+
                 if (results[i].OrderNum === 1) {
                     if (results[0].Boost2Price > 0 && results[0].Boost3Price <= 0) {
                         age_data.model.order_final_read.push(

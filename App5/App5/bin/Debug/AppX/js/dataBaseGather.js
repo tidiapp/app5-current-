@@ -13,9 +13,12 @@
                 var Age = thinkitdrinkitDataClient.getTable("ShopCart");
                 Age.del({
                     id: id
-                }).done(function () {
-                    console.log("This is working!!");
+                }).done(function (results) {
+                    //console.log("This is working!!");
                     roamingSettings.values["totalOrderNumber1"]--;
+                    roamingSettings.values["the_complete_total"] = parseFloat(roamingSettings.values["the_complete_total"]) - parseFloat(roamingSettings.values["t"]);
+                    //+ parseFloat(roamingSettings.values["Base_price"]) + parseFloat(roamingSettings.values['Boost_total']) + parseFloat(roamingSettings.values["Nutrigenetics_price"]);
+                    document.getElementById("product_total").textContent = "$" + roamingSettings.values["the_complete_total"];
                 }, function (err) {
                     console.log("Error: " + err);
                 });
