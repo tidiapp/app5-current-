@@ -123,7 +123,7 @@
             if (roamingSettings.values["Nutrigenetics_name"] == "" || roamingSettings.values["Nutrigenetics_name"] === !undefined) {
                 roamingSettings.values["Nutrigenetics_price"] = 0
             } else {
-                document.getElementById("my_base_img_final").src = roamingSettings.values["Nutrigenetics_pic"];
+                //document.getElementById("my_base_img_final").src = roamingSettings.values["Nutrigenetics_pic"];
             };
 
             if (roamingSettings.values["Base_name"] == "" || roamingSettings.values["Base_name"] === !undefined) {
@@ -420,6 +420,11 @@
                 roamingSettings.values.remove["Boost8_pic"]
                 roamingSettings.values.remove["Boost8_price"]
                 roamingSettings.values.remove["Boost8_vend"]
+                roamingSettings.values.remove["Nutrigenetics_name"]
+                roamingSettings.values.remove["Nutrigenetics_vend"]
+                roamingSettings.values.remove["Nutrigenetics_pic"]
+                roamingSettings.values.remove["Nutrigenetics_price"]
+
                 //grays out submit button
                 tool.grayOut();
 
@@ -642,7 +647,7 @@
 
         howManyBoosts: function (results) {
             for (var i = 0; i < results.length; i++) {
-                //milo all this code was set up so bug that removes attribute from one order to another does not show up as 0 or none. 
+                //milo all this code was set up so a bug that kept showing undefined undefined in does not show. Ex I pick nutrigenetics which is a single item in the final page it should just show up as only that instead it used to show up with Boost undefined undefined and Flavor undefined undefined.
                 roamingSettings.values["OrderNum"] = results[i].OrderNum;
 
                 if (results[i].OrderNum === 1) {
@@ -790,6 +795,16 @@
                             order: "ORDER " + results[0].OrderNum
                         })
                         document.getElementById("boost1_div_hide").removeAttribute("hidden");
+                    } else if (results[0].NutrigeneticsPrice > 0) {
+                        age_data.model.order_final_read.push(
+                        {
+                            the_id: results[0].id,
+                            b_name: results[0].NutrigeneticsName, b_img: results[0].NutrigeneticsImages, b_price: "$" + results[0].NutrigeneticsPrice,
+                            order: "ORDER " + results[0].OrderNum
+                        })
+                        document.getElementById("boost_order1").setAttribute("hidden", true);
+                        document.getElementById("flavor_order1").setAttribute("hidden", true);
+                        document.getElementById("base_order1").setAttribute("hidden", true);
                     }
                     else {
                             age_data.model.order_final_read.push(
@@ -950,6 +965,16 @@
                             order: "ORDER " + results[1].OrderNum
                         })
                         document.getElementById("boost1_div_hide").removeAttribute("hidden");
+                    } else if (results[1].NutrigeneticsPrice > 0) {
+                        age_data.model.order_final_read2.push(
+                        {
+                            the_id: results[1].id,
+                            b_name: results[1].NutrigeneticsName, b_img: results[1].NutrigeneticsImages, b_price: "$" + results[1].NutrigeneticsPrice,
+                            order: "ORDER " + results[1].OrderNum
+                        })
+                        document.getElementById("boost_order2").setAttribute("hidden", true);
+                        document.getElementById("flavor_order2").setAttribute("hidden", true);
+                        document.getElementById("base_order2").setAttribute("hidden", true);
                     }
                     else {
                         age_data.model.order_final_read2.push(
@@ -1110,6 +1135,16 @@
                             order: "ORDER " + results[2].OrderNum
                         })
                         document.getElementById("boost1_div_hide3").removeAttribute("hidden");
+                    } else if (results[2].NutrigeneticsPrice > 0) {
+                        age_data.model.order_final_read3.push(
+                        {
+                            the_id: results[2].id,
+                            b_name: results[2].NutrigeneticsName, b_img: results[2].NutrigeneticsImages, b_price: "$" + results[2].NutrigeneticsPrice,
+                            order: "ORDER " + results[2].OrderNum
+                        })
+                        document.getElementById("boost_order3").setAttribute("hidden", true);
+                        document.getElementById("flavor_order3").setAttribute("hidden", true);
+                        document.getElementById("base_order3").setAttribute("hidden", true);
                     }
                     else {
                             age_data.model.order_final_read3.push(
@@ -1271,6 +1306,17 @@
                         })
                         document.getElementById("boost1_div_hide4").removeAttribute("hidden");
                     }
+                    else if (results[3].NutrigeneticsPrice > 0) {
+                        age_data.model.order_final_read4.push(
+                        {
+                            the_id: results[3].id,
+                            b_name: results[3].NutrigeneticsName, b_img: results[3].NutrigeneticsImages, b_price: "$" + results[3].NutrigeneticsPrice,
+                            order: "ORDER " + results[3].OrderNum
+                        })
+                        document.getElementById("boost_order4").setAttribute("hidden", true);
+                        document.getElementById("flavor_order4").setAttribute("hidden", true);
+                        document.getElementById("base_order4").setAttribute("hidden", true);
+                    }
                     else {
                             age_data.model.order_final_read4.push(
                             {
@@ -1430,6 +1476,17 @@
                             order: "ORDER " + results[4].OrderNum
                         })
                         document.getElementById("boost1_div_hide5").removeAttribute("hidden");
+                    }
+                    else if (results[4].NutrigeneticsPrice > 0) {
+                        age_data.model.order_final_read5.push(
+                        {
+                            the_id: results[4].id,
+                            b_name: results[4].NutrigeneticsName, b_img: results[4].NutrigeneticsImages, b_price: "$" + results[4].NutrigeneticsPrice,
+                            order: "ORDER " + results[4].OrderNum
+                        })
+                        document.getElementById("boost_order5").setAttribute("hidden", true);
+                        document.getElementById("flavor_order5").setAttribute("hidden", true);
+                        document.getElementById("base_order5").setAttribute("hidden", true);
                     }
                     else {
                             age_data.model.order_final_read5.push(
@@ -1592,6 +1649,17 @@
                         })
                         document.getElementById("boost1_div_hide6").removeAttribute("hidden");
                     }
+                    else if (results[5].NutrigeneticsPrice > 0) {
+                        age_data.model.order_final_read6.push(
+                        {
+                            the_id: results[5].id,
+                            b_name: results[5].NutrigeneticsName, b_img: results[5].NutrigeneticsImages, b_price: "$" + results[5].NutrigeneticsPrice,
+                            order: "ORDER " + results[5].OrderNum
+                        })
+                        document.getElementById("boost_order6").setAttribute("hidden", true);
+                        document.getElementById("flavor_order6").setAttribute("hidden", true);
+                        document.getElementById("base_order6").setAttribute("hidden", true);
+                    }
                     else {
                         age_data.model.order_final_read6.push(
                         {
@@ -1751,6 +1819,17 @@
                             order: "ORDER " + results[6].OrderNum
                         })
                         document.getElementById("boost1_div_hide7").removeAttribute("hidden");
+                    }
+                    else if (results[6].NutrigeneticsPrice > 0) {
+                        age_data.model.order_final_read7.push(
+                        {
+                            the_id: results[6].id,
+                            b_name: results[6].NutrigeneticsName, b_img: results[6].NutrigeneticsImages, b_price: "$" + results[6].NutrigeneticsPrice,
+                            order: "ORDER " + results[6].OrderNum
+                        })
+                        document.getElementById("boost_order7").setAttribute("hidden", true);
+                        document.getElementById("flavor_order7").setAttribute("hidden", true);
+                        document.getElementById("base_order7").setAttribute("hidden", true);
                     }
                     else {
                             age_data.model.order_final_read7.push(

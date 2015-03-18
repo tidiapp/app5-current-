@@ -11,17 +11,32 @@
 
             the_del_btn: function (id) {
                 var Age = thinkitdrinkitDataClient.getTable("ShopCart");
-                Age.del({
+
+                Age.where({
                     id: id
-                }).done(function (results) {
-                    //console.log("This is working!!");
-                    roamingSettings.values["totalOrderNumber1"]--;
-                    roamingSettings.values["the_complete_total"] = parseFloat(roamingSettings.values["the_complete_total"]) - parseFloat(roamingSettings.values["t"]);
-                    //+ parseFloat(roamingSettings.values["Base_price"]) + parseFloat(roamingSettings.values['Boost_total']) + parseFloat(roamingSettings.values["Nutrigenetics_price"]);
-                    document.getElementById("product_total").textContent = "$" + roamingSettings.values["the_complete_total"];
+                }).read().done(function (results) {
+
+                    roamingSettings.values["t"] = results[0].NutrigeneticsPrice + results[0].BasePrice + results[0].BoostPrice + results[0].Boost2Price + results[0].Boost3Price + results[0].Boost4Price + results[0].Boost5Price + results[0].Boost6Price + results[0].Boost7Price + results[0].Boost8Price ;
+
+                    Age.del({
+                        id: id
+                    }).done(function (results) {
+                        //console.log("This is working!!");
+                        roamingSettings.values["totalOrderNumber1"]--;
+                        roamingSettings.values["the_complete_total"] = parseFloat(roamingSettings.values["the_complete_total"]) - parseFloat(roamingSettings.values["t"]);
+                        //+ parseFloat(roamingSettings.values["Base_price"]) + parseFloat(roamingSettings.values['Boost_total']) + parseFloat(roamingSettings.values["Nutrigenetics_price"]);
+                        document.getElementById("product_total").textContent = "$" + roamingSettings.values["the_complete_total"];
+                    }, function (err) {
+                        console.log("Error: " + err);
+                    });
+
+
                 }, function (err) {
                     console.log("Error: " + err);
                 });
+
+
+         
             },
             home: function (the_sel_age) {
                 remove.pop_list(age_data.model.age);
@@ -586,7 +601,7 @@
                     console.log("This is the results number: " + results.length);
                     if (results.length > 0) {
                         if (roamingSettings.values["totalOrderNumber1"] > 0) {
-                            //milo: DB ShopCart if its empty and allos to get into here it will couse BasePrice bug to break app
+                            //milo: DB ShopCart if its empty and allows to get into here it will couse BasePrice bug to break app
                             for (var i = 0; i < roamingSettings.values["totalOrderNumber1"]; i++) {
                                 roamingSettings.values["t"] += (parseFloat(results[i].BasePrice) + parseFloat(results[i].BoostPrice) + parseFloat(results[i].Boost2Price) + parseFloat(results[i].Boost3Price) + parseFloat(results[i].Boost4Price) + parseFloat(results[i].Boost5Price) + parseFloat(results[i].Boost6Price) + parseFloat(results[i].Boost7Price) + parseFloat(results[i].Boost8Price) + parseFloat(results[i].NutrigeneticsPrice));
                                 console.log("Inside finalpagecall loop");
@@ -958,6 +973,16 @@
             userOrderFinalRead: function () {
                 //milo: remove.pop_list(age_data.model.order_final_read); HAPPENS in final page when leaving, if here does not remove in time i believe.
                 var Age = thinkitdrinkitDataClient.getTable("ShopCart");
+
+
+
+
+
+//milo issue setAttribute in here 
+
+
+
+
 
                 var query = Age.where({
 
