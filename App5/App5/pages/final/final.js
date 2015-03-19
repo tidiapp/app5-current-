@@ -123,7 +123,11 @@
             if (roamingSettings.values["Nutrigenetics_name"] == "" || roamingSettings.values["Nutrigenetics_name"] === !undefined) {
                 roamingSettings.values["Nutrigenetics_price"] = 0
             } else {
-                //document.getElementById("my_base_img_final").src = roamingSettings.values["Nutrigenetics_pic"];
+                document.getElementById("my_base_img_final").src = roamingSettings.values["Nutrigenetics_pic"];
+                document.getElementById("titlearea").textContent = "Review your kit order, add your name and hit submit.";
+                document.getElementById("my_flav").setAttribute("hidden");
+                document.getElementById("final_surround_div").setAttribute("hidden");
+                document.getElementById("my_base_final").textContent = roamingSettings.values["Nutrigenetics_name"];
             };
 
             if (roamingSettings.values["Base_name"] == "" || roamingSettings.values["Base_name"] === !undefined) {
@@ -152,6 +156,17 @@
             document.getElementById("product_total").textContent = "$" + roamingSettings.values["the_complete_total"];
             document.getElementById("tax").textContent = "$" + Math.ceil((roamingSettings.values["the_complete_total"] * .0636) * 100) / 100;
             document.getElementById("total").textContent = "$" + Math.ceil(((roamingSettings.values["the_complete_total"] * .0636) + roamingSettings.values["the_complete_total"]) * 100) / 100;
+
+            //var key = WinJS.Utilities.Key;
+            //var textBox = document.getElementById("Cname");
+            //textBox.addEventListener("keydown", function (e) {
+            //    if(e.keyCode == key.enter){
+            //        //FinalClick.clicked();
+            //        console.log("enter hit");
+            //    }
+            //});
+           
+
         },
 
         unload: function () {
@@ -193,6 +208,21 @@
             server.the_del_btn(id);
             //$('#order1').setAttr('hidden',true);
         },
+
+        //keyPressed: function () {
+        //    var key = WinJS.Utilities.Key;
+        //    var textBox = document.getElementById("Cname");
+        //    textBox.addEventListener("keydown", function (e) {
+
+        //        if (e.keyCode == key.enter) {
+        //            WinJS.Navigation.navigate('pages/final/final.html')
+        //        }
+        //            //if(e.keyCode == key.enter){
+        //            //    FinalClick.clicked();
+        //            //}
+        //        });
+        //},
+
         clicked: function () {
             // server.userOrderDone();
             var missName = document.getElementById("Cname").value;
@@ -1135,7 +1165,8 @@
                             order: "ORDER " + results[2].OrderNum
                         })
                         document.getElementById("boost1_div_hide3").removeAttribute("hidden");
-                    } else if (results[2].NutrigeneticsPrice > 0) {
+                    }
+                    else if (results[2].NutrigeneticsPrice > 0) {
                         age_data.model.order_final_read3.push(
                         {
                             the_id: results[2].id,
@@ -1827,6 +1858,9 @@
                             b_name: results[6].NutrigeneticsName, b_img: results[6].NutrigeneticsImages, b_price: "$" + results[6].NutrigeneticsPrice,
                             order: "ORDER " + results[6].OrderNum
                         })
+                        //document.getElementById("boost_order7").setAttribute("hidden", true);
+                        //document.getElementById("flavor_order7").setAttribute("hidden", true);
+                        //document.getElementById("base_order7").setAttribute("hidden", true);
                         document.getElementById("boost_order7").setAttribute("hidden", true);
                         document.getElementById("flavor_order7").setAttribute("hidden", true);
                         document.getElementById("base_order7").setAttribute("hidden", true);
@@ -1839,7 +1873,7 @@
                                 f_name: results[6].FlavName, f_price: "$" + results[6].FlavPrice,
                                 order: "ORDER " + results[6].OrderNum
                             })
-                        document.getElementById("boost_order7").setAttribute("hidden");
+                            document.getElementById("boost_order7").setAttribute("hidden", true);
                     }
 
                  }

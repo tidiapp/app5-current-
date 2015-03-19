@@ -16,7 +16,7 @@
     <div class="final fragment">
         <header id="final_header" aria-label="Header content" role="banner">
             <button data-win-control="WinJS.UI.BackButton"></button>
-            <h1 class="titlearea win-type-ellipsis">Review Your 15 Servings and Hit Submit.</h1>
+            <h1 id="titlearea" class="titlearea win-type-ellipsis">Review your 15 servings, add your name and hit submit.</h1>
         </header>
         <section aria-label="Main content" role="main">
 
@@ -30,7 +30,7 @@
                             <h3 id="current_order">CURRENT ORDER</h3>
                             <img src="#" id="my_base_img_final" width="110" />
                             <div class="final_surround">
-                                <span>BASE</span><br />
+                                <span id="my_base_final">BASE</span><br />
                                 <span id="my_base_name"></span>
                                 <span id="base_price"></span>
                             </div>
@@ -462,7 +462,7 @@
                     selectionMode: 'none'
                 }"></div>
 
-                    <!-- Order 7 -->
+<!-- Order 7 -->
                     <div class="final_class7" data-win-control="WinJS.Binding.Template">
                         <div id="order7" hidden="">
                             <div id="final_wrap">
@@ -470,7 +470,7 @@
                                 <img id="base_img7" src="#" width="90" data-win-bind="src: b_img" />
                                 <p id="the_id7" data-win-bind="textContent: the_id" hidden=""></p>
                                 <div id="final_div" class="final_surround">
-                                    <span id="base_order">BASE</span><br />
+                                    <span id="base_order7">BASE</span><br />
                                     <span data-win-bind="textContent: b_name"></span>
                                     <span data-win-bind="textContent: b_price"></span>
                                 </div>
@@ -530,9 +530,16 @@
             <div id="total_wrap">
                 <div id="submit_wrap"><!--milo: dont remove styles dont show but seem to work -->
                     <div id="nameWrap" class="form-group">
-                        <form id="cus_name" method="post">
-                            <input class="input form-control" placeholder="ADD YOUR NAME HERE" type="text" name="Cname" id="Cname" />
-                        </form>
+
+                        <!--<form id="cus_name" method="post">-->
+                        <table id="cus_name">
+                            <tr>
+                                <td>
+                                    <input method="post" class="input form-control" placeholder="ADD YOUR NAME HERE" type="search" name="Cname" id="Cname">
+                                </td>
+                            </tr>
+                        </table>                        
+                        <!--</form>-->
                     </div>                    
                     <div id="the_name_sub"><button id="sub_button" class="sel_look_btn btn btn-warning" onclick="FinalClick.clicked()" type="submit">SUBMIT</button></div>
                     <div id="the_name_con"><button id="con_button" class="sel_look_btn btn btn-warning" onclick="FinalClick.the_continue()" type="submit">Continue Shopping</button></div>
