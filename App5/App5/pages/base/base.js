@@ -112,7 +112,8 @@
     WinJS.Namespace.define("base_clicked", {
 
         clicked: function (base) {
-            //milo: keep roamingSettings.values["Id_sel_base"] here (was a bug, was getting id from another product, it had the same name id db but grabed 1st one instead of further down)
+            //milo update comment below was buggie again instead grabbing id from server.base_sub call and then applying to roaming settings
+            //milo keep roamingSettings.values["Id_sel_base"] here (was a bug, was getting id from another product, it had the same name id db but grabed 1st one instead of further down)
             roamingSettings.values["Id_sel_base"] = document.getElementById("id_sel4").textContent;
 
             remove.pop_list(age_data.model.info_page2);

@@ -128,6 +128,8 @@
                 document.getElementById("my_flav").setAttribute("hidden");
                 document.getElementById("final_surround_div").setAttribute("hidden");
                 document.getElementById("my_base_final").textContent = roamingSettings.values["Nutrigenetics_name"];
+                document.getElementById("my_nutrikit_price").removeAttribute("hidden");
+                document.getElementById("my_nutrikit_name").textContent = "$" + roamingSettings.values["Nutrigenetics_price"];
             };
 
             if (roamingSettings.values["Base_name"] == "" || roamingSettings.values["Base_name"] === !undefined) {

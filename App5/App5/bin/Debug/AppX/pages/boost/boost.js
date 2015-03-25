@@ -81,7 +81,7 @@
                 document.getElementById("home_div").setAttribute("hidden");
             }
             //milo: footer history 
-            if (roamingSettings.values["Cat_picked"] === "Protein" || id_sel == 1) {
+            if (roamingSettings.values["Cat_picked"] === "Protein" || id_sel == 1 || id_sel == 2 || id_sel == 4 || id_sel == 6) {
                 if (roamingSettings.values["Cat_picked"] === "Protein") {
                     document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
                 } else {
@@ -697,6 +697,7 @@
                                     //milo: fires off when VEND expires the token 
                                     //roamingSettings.values["Token"] = "";
                                     //refreshTokenSwitch();
+                                    tool.alert("Go into nutrigenetics page, most likely in base page vend token refresh is commented off", "Vend Token Expired");
                                 }
                             });
 

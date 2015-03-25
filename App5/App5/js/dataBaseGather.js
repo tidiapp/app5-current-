@@ -255,14 +255,33 @@
             base_sub: function (name) {
                 var Age = thinkitdrinkitDataClient.getTable("Base");
 
-                var query = Age.where({
-                    Name: name
-                }).read().done(function (results) {
-                    age_data.model.info_page2.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_img: results[0].Label, base_price: results[0].Price, the_pic: results[0].Image, b_vend: results[0].VendID, id_sel: results[0].id })
-                    roamingSettings.values["db_url"] = results[0].Info;
-                }, function (err) {
-                    console.log(err);
-                })
+
+                //var query = Age.where({
+                //    Name: name,
+                //}).read().done(function (results) {
+                    
+                //    age_data.model.info_page2.push({id_sel: results[0].id })
+
+                    var query = Age.where({
+                        Name: name,
+                    }).read().done(function (results) {
+                        age_data.model.info_page2.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_img: results[0].Label, base_price: results[0].Price, the_pic: results[0].Image, b_vend: results[0].VendID, id_sel: results[0].id })
+                        roamingSettings.values["db_url"] = results[0].Info;
+                        roamingSettings.values["Id_sel_base"] = results[0].id;
+                    }, function (err) {
+                        console.log(err);
+                    })
+
+
+
+
+                //}, function (err) {
+                //    console.log(err);
+                //})
+
+
+
+
 
             },
 
@@ -298,10 +317,10 @@
             boost: function (cat_picked, id_func, id_sport, id_base) {
                 var Age = thinkitdrinkitDataClient.getTable("Boost");
 
-                if (id_func == 1) {//milo: bug fix helps show boosts when id_func == 1 (which is recover) is hit. it needs to be the first thing checked if its not then the boost will not show up since it ends up reading the next code down.   
+                if (id_func == 1 || id_func == 2 || id_func == 4 || id_func == 6) {//milo: bug fix helps show boosts when id_func == 1 (which is recover) is hit. it needs to be the first thing checked if its not then the boost will not show up since it ends up reading the next code down.   
                     var query = Age.where({
                         FuncDBfunc_id: id_func
-                    }).orderBy("Name").read().done(function (results) {
+                    }).orderBy("Order").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.boost.push({ boost_name: results[i].Name, boost_pic: results[i].Image, id_sel: results[i].id })
                         }
@@ -312,7 +331,7 @@
                     if (cat_picked === "Protein") {
                         var query = Age.where({
                             FuncDBfunc_id: id_func
-                        }).orderBy("Name").read().done(function (results) {
+                        }).orderBy("Order").read().done(function (results) {
                             for (var i = 0; i < results.length; i++) {
                                 age_data.model.boost.push({ boost_name: results[i].Name, boost_pic: results[i].Image, id_sel: results[i].id })
                             }
@@ -338,16 +357,16 @@
                             for (var i = 0; i < results.length; i++) {
                                 age_data.model.boost.push({ boost_name: results[i].Name, boost_pic: results[i].Image, id_sel: results[i].id })
                             }
-                                //milo: standard boosts that show up in most catagories.
-                                var query = Age.where({
-                                    Access2: 1
-                                }).orderBy("Order").read().done(function (results) {
-                                    for (var i = 0; i < results.length; i++) {
-                                        age_data.model.boost.push({ boost_name: results[i].Name, boost_pic: results[i].Image, id_sel: results[i].id })
-                                    }
-                                }, function (err) {
-                                    console.log(err);
-                                });
+                                ////milo: standard boosts that show up in most catagories.
+                                //var query = Age.where({
+                                //    Access2: 1
+                                //}).orderBy("Order").read().done(function (results) {
+                                //    for (var i = 0; i < results.length; i++) {
+                                //        age_data.model.boost.push({ boost_name: results[i].Name, boost_pic: results[i].Image, id_sel: results[i].id })
+                                //    }
+                                //}, function (err) {
+                                //    console.log(err);
+                                //});
                         }, function (err) {
                             console.log(err);
                         });
@@ -369,7 +388,7 @@
                     })
                     //milo: bug continued, now if the h1 did get hit we have to compare the name in the db with the id
                 } else {
-                    if (id_func == 1){
+                    if (id_func == 1 || id_func == 2 || id_func == 4 || id_func == 6) {
                         var query = Age.where({
                             FuncDBfunc_id: id_func,
                             Name: name
