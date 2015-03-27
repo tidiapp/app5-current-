@@ -291,7 +291,7 @@
                 //milo.orderBy is taking the most text in the Name column also can do orderByDescending or both http://azure.microsoft.com/en-us/documentation/articles/mobile-services-html-how-to-use-client-library/
 
                 var query = Age.where({
-                }).orderBy("Name").read().done(function (results) {
+                }).read().done(function (results) {
                     for (var i = 0; i < results.length; i++) {
                         age_data.model.flavor1.push({ sel_flav_name: results[i].Name, sel_flav_pic: results[i].Image })
                     }
