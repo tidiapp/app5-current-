@@ -111,32 +111,15 @@
     var base3 = "";
     WinJS.Namespace.define("base_clicked", {
 
-        clicked: function (id, name) {
+        clicked: function (base) {
+            //milo update comment below was buggie again instead grabbing id from server.base_sub call and then applying to roaming settings
+            //milo keep roamingSettings.values["Id_sel_base"] here (was a bug, was getting id from another product, it had the same name id db but grabed 1st one instead of further down)
+            roamingSettings.values["Id_sel_base"] = document.getElementById("id_sel4").textContent;
 
             remove.pop_list(age_data.model.info_page2);
-            //milo: bug fixed. event.srcElement.innerText grabs 2 things has issues with it so code below is needed. dataBaseGather.js has the rest of the logic... 
-            var updated_id = id.slice(0, 9).replace(/[^0-9]/g, '');
-            //milo: when a tag is clicked boost word is in the a tag passes through
-            var updated_id2 = name.replace(/^\s+/, '').replace(/\s+$/, '');
-
-                //milo this fixed a bug that seems intermittent but if 2 exact names are in the db it reads the first one which is no bueno. it also uses age_data.model.base which I can read from aswell, previously impossible to do. 
-                var list = age_data.model.base;
-                var str = "";
-                for (var i = 0; i < list.length; i++) {
-                    str += list.getItem(i).data;
-                    var b_name = list.getItem(i).data.b_name;
-                    //milo: hitting the a tag or image to be consistent, there was a bug that just would read the name only and in the db it would the first name that mattached, usually it was wrong and really needed to match the id with the name to get the correct item.
-
-                    if (b_name == updated_id2) {
-                        var id_sel = list.getItem(i).data.id_sel;
-                        roamingSettings.values["Id_sel_base"] = id_sel;
-                        //console.log("Milo " + id_sel);
-                    }
-                }
-
-            //SERVER CALL
-            server.base_sub(updated_id, updated_id2);
-
+            var updated_base = base.replace(/^\s+/, '').replace(/\s+$/, '');
+            base3 = updated_base;
+            server.base_sub(updated_base);
         },
 
         next_page_flavor: function (img) {

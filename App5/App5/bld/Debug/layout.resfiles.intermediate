@@ -31,6 +31,7 @@ js\app_bar.js
 js\auth.js
 js\bootstrap.min.js
 js\ChangeApp.js
+js\dataBaseGather - Copy.js
 js\dataBaseGather.js
 js\dataStore.js
 js\default.js
@@ -75,6 +76,9 @@ packages.config
 pages\all_products\all_products.css
 pages\all_products\all_products.html
 pages\all_products\all_products.js
+pages\base\base - Copy (2).js
+pages\base\base - Copy (3).js
+pages\base\base - Copy.html
 pages\base\base - Copy.js
 pages\base\base copy 3.js
 pages\base\base.css

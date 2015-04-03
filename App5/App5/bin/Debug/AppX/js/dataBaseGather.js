@@ -2,7 +2,7 @@
 //http://azure.microsoft.com/en-us/documentation/articles/mobile-services-javascript-backend-windows-universal-javascript-get-started-data/
 
     (function () {
-        "use strict";
+        //"use strict";
         var appData = Windows.Storage.ApplicationData.current;
         var roamingSettings = appData.roamingSettings;
 
@@ -165,7 +165,7 @@
             },
 
             //base.html
-            base: function (id_sel, cat_selected) {
+            base: function (id_sel, cat_selected, base_name) {
                 var Age = thinkitdrinkitDataClient.getTable("Base");
                 //milo: id_sel == whatever #, the whatever # is the id from thinkitdrinkitDataClient.Func db in azure
 
@@ -236,7 +236,12 @@
                     }).orderBy("Name").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[i].Price, id_sel: results[i].id })
+
+                            // IF id is grabbed here it will get all ids as it loops not a solution ... roamingSettings.values["Id_sel_func"]
+                            //AND this for the page load so my issue is when I select the base thats the id I need and thats where the bug is. 
                         }
+
+
                     }, function (err) {
                         console.log(err);
                     });
@@ -252,36 +257,36 @@
                     });
                 }
             },
-            base_sub: function (name) {
+            base_sub: function (id, name) {
                 var Age = thinkitdrinkitDataClient.getTable("Base");
 
+                //milo: this is for a bug in boost.html if clicking on image this fires if clicked on h1 else fires (the issue is coming from boost.html when div grabs event.srcElement.innerText there are two text areas h1 and span that couse issues) 
 
-                //var query = Age.where({
-                //    Name: name,
-                //}).read().done(function (results) {
-                    
-                //    age_data.model.info_page2.push({id_sel: results[0].id })
-
+                if (id != isNaN && id != "") {
                     var query = Age.where({
-                        Name: name,
+                        id: id
                     }).read().done(function (results) {
-                        age_data.model.info_page2.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_img: results[0].Label, base_price: results[0].Price, the_pic: results[0].Image, b_vend: results[0].VendID, id_sel: results[0].id })
+                        age_data.model.info_page2.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_img: results[0].Label, base_price: results[0].Price, b_vend: results[0].VendID, id_sel: results[0].id })
                         roamingSettings.values["db_url"] = results[0].Info;
                         roamingSettings.values["Id_sel_base"] = results[0].id;
                     }, function (err) {
                         console.log(err);
                     })
+                    //milo: bug continued, now if the h1 did get hit we have to compare the name in the db with the id
+                } else {
 
+                    var query = Age.where({
+                        Name: name
+                    }).read().done(function (results) {
+                        age_data.model.info_page2.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_img: results[0].Label, base_price: results[0].Price, the_pic: results[0].Image, b_vend: results[0].VendID, id_sel: results[0].id })
+                        roamingSettings.values["db_url"] = results[0].Info;
+                        //roamingSettings.values["Id_sel_base"] = results[0].id;
+                        // TOO late for id here this is after the name goes over the db and grabs the first same name, roamingSettings.values["Id_sel_base"] = results[0].id;
 
-
-
-                //}, function (err) {
-                //    console.log(err);
-                //})
-
-
-
-
+                    }, function (err) {
+                        console.log(err);
+                    })
+                }
 
             },
 

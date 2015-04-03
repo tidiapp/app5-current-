@@ -95,6 +95,7 @@
     <Content Include="js\auth.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\ChangeApp.js" />
+    <Content Include="js\dataBaseGather - Copy.js" />
     <Content Include="js\dataBaseGather.js" />
     <Content Include="js\dataStore.js" />
     <Content Include="js\default.js" />
@@ -137,6 +138,9 @@
     <Content Include="js\url_functions.js" />
     <Content Include="js\vendCalls.js" />
     <Content Include="packages.config" />
+    <Content Include="pages\base\base - Copy (2).js" />
+    <Content Include="pages\base\base - Copy (3).js" />
+    <Content Include="pages\base\base - Copy.html" />
     <Content Include="pages\base\base.js" />
     <Content Include="pages\base\base - Copy.js" />
     <Content Include="pages\base\base copy 3.js" />

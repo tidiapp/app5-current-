@@ -239,8 +239,34 @@
 
                             // IF id is grabbed here it will get all ids as it loops not a solution ... roamingSettings.values["Id_sel_func"]
                             //AND this for the page load so my issue is when I select the base thats the id I need and thats where the bug is. 
+
                         }
 
+                        
+                        //console.log("MILO " + age_data.model.base);
+                        if (base_name != undefined) {
+
+                            for (var i = 0; i < age_data.model.base.length; i++) {
+
+                                //if (base_name == results[i].Name) {
+
+                                //    roamingSettings.values["Id_sel_base"] = results[0].id;
+
+                                //}
+
+                                //age_data.model.base[i].Name == base_name
+
+                                // function dick(){
+                                //     console.log("MILO yes it ran" );
+                                //} 
+
+                                 //age_data.model.base.filter(dick(), [base_name == b_name]);
+                                 //age_data.model.base.createFiltered(base_name == results[i].Name)
+
+
+                                //age_data.model.base[i]({b_name:})
+                            }
+                        }
 
                     }, function (err) {
                         console.log(err);
@@ -257,36 +283,42 @@
                     });
                 }
             },
-            base_sub: function (id, name) {
+            base_sub: function (name) {
                 var Age = thinkitdrinkitDataClient.getTable("Base");
 
-                //milo: this is for a bug in boost.html if clicking on image this fires if clicked on h1 else fires (the issue is coming from boost.html when div grabs event.srcElement.innerText there are two text areas h1 and span that couse issues) 
+                //server.base(roamingSettings.values["Id_sel_func"], roamingSettings.values["Cat_picked"], name);
 
-                if (id != isNaN && id != "") {
-                    var query = Age.where({
-                        id: id
-                    }).read().done(function (results) {
-                        age_data.model.info_page2.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_img: results[0].Label, base_price: results[0].Price, b_vend: results[0].VendID, id_sel: results[0].id })
-                        roamingSettings.values["db_url"] = results[0].Info;
-                        roamingSettings.values["Id_sel_base"] = results[0].id;
-                    }, function (err) {
-                        console.log(err);
-                    })
-                    //milo: bug continued, now if the h1 did get hit we have to compare the name in the db with the id
-                } else {
+                //var query = Age.where({
+                //    Name: name,
+                //}).read().done(function (results) {
+                    
+                //    age_data.model.info_page2.push({id_sel: results[0].id })
 
                     var query = Age.where({
                         Name: name
+                        
                     }).read().done(function (results) {
                         age_data.model.info_page2.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_img: results[0].Label, base_price: results[0].Price, the_pic: results[0].Image, b_vend: results[0].VendID, id_sel: results[0].id })
                         roamingSettings.values["db_url"] = results[0].Info;
-                        //roamingSettings.values["Id_sel_base"] = results[0].id;
                         // TOO late for id here this is after the name goes over the db and grabs the first same name, roamingSettings.values["Id_sel_base"] = results[0].id;
+
+
+
 
                     }, function (err) {
                         console.log(err);
                     })
-                }
+
+
+
+
+                //}, function (err) {
+                //    console.log(err);
+                //})
+
+
+
+
 
             },
 

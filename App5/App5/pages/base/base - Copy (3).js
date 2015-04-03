@@ -119,21 +119,19 @@
             //milo: when a tag is clicked boost word is in the a tag passes through
             var updated_id2 = name.replace(/^\s+/, '').replace(/\s+$/, '');
 
-                //milo this fixed a bug that seems intermittent but if 2 exact names are in the db it reads the first one which is no bueno. it also uses age_data.model.base which I can read from aswell, previously impossible to do. 
-                var list = age_data.model.base;
-                var str = "";
-                for (var i = 0; i < list.length; i++) {
-                    str += list.getItem(i).data;
-                    var b_name = list.getItem(i).data.b_name;
-                    //milo: hitting the a tag or image to be consistent, there was a bug that just would read the name only and in the db it would the first name that mattached, usually it was wrong and really needed to match the id with the name to get the correct item.
-
-                    if (b_name == updated_id2) {
-                        var id_sel = list.getItem(i).data.id_sel;
-                        roamingSettings.values["Id_sel_base"] = id_sel;
-                        //console.log("Milo " + id_sel);
-                    }
+            //milo this fixed a bug. it also uses age_data.model.base which I can read from aswell, previously impossible to do. 
+            var list = age_data.model.base;
+            var str = "";
+            for (var i = 0; i < list.length; i++) {
+                str += list.getItem(i).data;
+                var b_name = list.getItem(i).data.b_name;
+            //milo: hitting the a tag or image to be consistent, there was a bug that just would read the name only and in the db it would the first name that mattached, usually it was wrong and really needed to match the id with the name to get the correct item.
+                if (b_name == updated_id2) {
+                    var id_sel = list.getItem(i).data.id_sel;
+                    roamingSettings.values["Id_sel_base"] = id_sel;
+                    //console.log("Milo " + id_sel);
                 }
-
+            }
             //SERVER CALL
             server.base_sub(updated_id, updated_id2);
 

@@ -1,4 +1,5 @@
-﻿(function () {
+﻿//https://msdn.microsoft.com/en-us/library/windows/apps/hh700774.aspx
+(function () {
     "use strict";
     WinJS.Namespace.define("age_data", {
         /* this model will take the needed information being gathered from the json file and store it in a n array that will be used
