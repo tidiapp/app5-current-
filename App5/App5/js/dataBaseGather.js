@@ -267,8 +267,11 @@
                         id: id
                     }).read().done(function (results) {
                         age_data.model.info_page2.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_img: results[0].Label, base_price: results[0].Price, b_vend: results[0].VendID, id_sel: results[0].id })
+                        //milo these are here becouse there is timing issues 
                         roamingSettings.values["db_url"] = results[0].Info;
                         roamingSettings.values["Id_sel_base"] = results[0].id;
+                        roamingSettings.values["Base_name"] = results[0].Name;
+
                     }, function (err) {
                         console.log(err);
                     })

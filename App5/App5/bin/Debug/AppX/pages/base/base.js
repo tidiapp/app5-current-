@@ -137,6 +137,13 @@
             //SERVER CALL
             server.base_sub(updated_id, updated_id2);
 
+            //var list2 = age_data.model.info_page2;
+            //var str2 = "";
+            //for (var i = 0; i < list.length; i++) {
+            //    str2 += list2.getItem(i).data;
+            //    var the_name = list2.getItem(i).data.the_name;
+            //}
+
         },
 
         next_page_flavor: function (img) {
@@ -144,7 +151,7 @@
             var vendId = document.getElementById("b_vend").innerHTML;
             roamingSettings.values["Base_protein"] = false;
             roamingSettings.values["Base_vend"] = vendId;
-            roamingSettings.values["Base_name"] = base3;
+            roamingSettings.values["Base_name"]; //milo coming from dataBaseGather.js
             roamingSettings.values["Base_pic"] = document.getElementById("choosen_base_carry").src;
             roamingSettings.values["Base_info"] = document.getElementById("sel_base_info").textContent;
             roamingSettings.values["Base_price"] = document.getElementById("base_price").textContent;
@@ -155,7 +162,8 @@
 
 
             //milo make sure to remove this if vend login below is uncommented
-                WinJS.Navigation.navigate('pages/boost/boost.html')
+            //WinJS.Navigation.navigate('pages/boost/boost.html')
+
 //milo: This is the ONLY PLACE in app VEND NEEDS to LOGIN, saves the info so other pages just use roamingSettings.values["Token"] and refresh token till the refresh token itself expires   
                 if (vendId != "" && vendId != "null") {
 
