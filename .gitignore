@@ -68,3 +68,8 @@ App5/App5/bin/Debug/App5.build.appxrecipe
 App5/App5/bin/x64/Debug/App5.build.appxrecipe
 App5/App5/bld/x64/Debug/pri.resfiles
 App5/App5/bld/x64/Debug/ProjectArchitectures.txt
+App5/App5/bld/Debug/ProjectArchitectures.txt
+App5/App5/bld/Debug/pri.resfiles.intermediate
+App5/App5/bld/Debug/pri.resfiles
+App5/App5/bin/Debug/AppX/vs.appxrecipe
+App5/App5/bin/Debug/App5.build.appxrecipe
