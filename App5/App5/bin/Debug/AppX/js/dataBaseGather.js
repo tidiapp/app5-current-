@@ -911,7 +911,7 @@
             contSave: function () {
                 var appData = Windows.Storage.ApplicationData.current;
                 var roamingSettings = appData.roamingSettings;
-                roamingSettings.values["computerNumber"] = 1;
+                roamingSettings.values["computerNumber"] = 6;
                 roamingSettings.values["totalOrderNumber"]++;
                 roamingSettings.values["totalOrderNumber1"]++;
                 var Age = thinkitdrinkitDataClient.getTable("ShopCart");
