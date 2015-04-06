@@ -156,351 +156,351 @@
 
             //milo make sure to remove this if vend login below is uncommented
                 WinJS.Navigation.navigate('pages/boost/boost.html')
-////milo: This is the ONLY PLACE in app VEND NEEDS to LOGIN, saves the info so other pages just use roamingSettings.values["Token"] and refresh token till the refresh token itself expires   
-//                if (vendId != "" && vendId != "null") {
+//milo: This is the ONLY PLACE in app VEND NEEDS to LOGIN, saves the info so other pages just use roamingSettings.values["Token"] and refresh token till the refresh token itself expires   
+                if (vendId != "" && vendId != "null") {
 
-//                    function isValidUriString(uriString) {
-//                        var uri = null;
-//                        try {
-//                            uri = new Windows.Foundation.Uri(uriString);
-//                        }
-//                        catch (err) {
-//                        }
-//                        return uri !== null;
-//                    }
+                    function isValidUriString(uriString) {
+                        var uri = null;
+                        try {
+                            uri = new Windows.Foundation.Uri(uriString);
+                        }
+                        catch (err) {
+                        }
+                        return uri !== null;
+                    }
 
-//                    function refreshTokenSwitch() {
-//                        var data = {};
-//console.log("Refresh token trigered ");
+                    function refreshTokenSwitch() {
+                        var data = {};
+console.log("Refresh token trigered ");
 
-//                        data = {
-//                            refresh_token: roamingSettings.values["refreshToken"],
-//                            client_id: "cv2T4BNlCZaaLrCr1aGqY35aqtZT3p5L",
-//                            client_secret: "G6hgTRflMJFgfsT7A83YOZhopNfWUTvZ",
-//                            grant_type: "refresh_token",
-//                            //redirect_uri: "https://thinkitdrinkitdata.azure-mobile.net/"
-//                        };
+                        data = {
+                            refresh_token: roamingSettings.values["refreshToken"],
+                            client_id: "cv2T4BNlCZaaLrCr1aGqY35aqtZT3p5L",
+                            client_secret: "G6hgTRflMJFgfsT7A83YOZhopNfWUTvZ",
+                            grant_type: "refresh_token",
+                            //redirect_uri: "https://thinkitdrinkitdata.azure-mobile.net/"
+                        };
 
-//                        //milo: http_build_query breaks if I try to add it to a Class currently it works with script link in the base.html and located in the url_functions.js
-//                        //milo: Build Query to get Access from VEND
-//                        data = http_build_query(data, '');
-//                        data = urldecode(data);
-//console.log("Refresh token query Built for VEND " + data);
+                        //milo: http_build_query breaks if I try to add it to a Class currently it works with script link in the base.html and located in the url_functions.js
+                        //milo: Build Query to get Access from VEND
+                        data = http_build_query(data, '');
+                        data = urldecode(data);
+console.log("Refresh token query Built for VEND " + data);
 
-//                        WinJS.xhr({
-//                            type: "POST",
-//                            url: "https://thinkitdrinkit.vendhq.com/api/1.0/token" + "?" + data
+                        WinJS.xhr({
+                            type: "POST",
+                            url: "https://thinkitdrinkit.vendhq.com/api/1.0/token" + "?" + data
 
-//                        }).done(function completed(result) {
-//                            //milo: Results from VEND Token/refresh Token  
-//console.log("Refresh token results " + result);
-//                            var vendTokenResults = JSON.parse(result.responseText);
-//                            var vendToken = vendTokenResults.access_token;
-//                            var vendRefreshToken = vendTokenResults.refresh_token;
-//                            roamingSettings.values["Token"] = vendToken;
-//                            roamingSettings.values["refreshToken"] = vendRefreshToken;
-//                            var vendTokenType = vendTokenResults.token_type;
-//console.log("Vend refreshToken from POST " + vendToken);
+                        }).done(function completed(result) {
+                            //milo: Results from VEND Token/refresh Token  
+console.log("Refresh token results " + result);
+                            var vendTokenResults = JSON.parse(result.responseText);
+                            var vendToken = vendTokenResults.access_token;
+                            var vendRefreshToken = vendTokenResults.refresh_token;
+                            roamingSettings.values["Token"] = vendToken;
+                            roamingSettings.values["refreshToken"] = vendRefreshToken;
+                            var vendTokenType = vendTokenResults.token_type;
+console.log("Vend refreshToken from POST " + vendToken);
 
-//                            WinJS.xhr({
-//                                type: "POST",
-//                                headers: {
-//                                    "Authorization": vendTokenType + " " + vendToken,
-//                                    "Content-type": "application/json"
-//                                },
-//                                url: "https://thinkitdrinkit.vendhq.com/api/products",
-//                                data: JSON.stringify({
-//                                    "id": vendId,
-//                                    "inventory": [{
-//                                    }]
-//                                }),
+                            WinJS.xhr({
+                                type: "POST",
+                                headers: {
+                                    "Authorization": vendTokenType + " " + vendToken,
+                                    "Content-type": "application/json"
+                                },
+                                url: "https://thinkitdrinkit.vendhq.com/api/products",
+                                data: JSON.stringify({
+                                    "id": vendId,
+                                    "inventory": [{
+                                    }]
+                                }),
 
-//                            }).done(function completed(result) {
-//                                console.log(result);
+                            }).done(function completed(result) {
+                                console.log(result);
 
-//                                var vendIdIssue = JSON.parse(result.responseText).product;
-//                                if (vendIdIssue == undefined) {//Vend product missing entirly even though there might be a id in azures db
-//                                    document.getElementById("out_of_stock2").removeAttribute("hidden");
-//                                    document.getElementById("out_of_stock2").textContent = "VEND product does not exist in VENDS website";
-//                                } else {
-//                                    var vendCount = JSON.parse(result.responseText).product.inventory[0].count;
-//                                    //console.log("Base Count from VEND ", vendCount);
-//                                    if (vendCount >= 1.00000) {
-//                                        WinJS.Navigation.navigate('pages/boost/boost.html')
-//                                    } else if (vendCount <= 0.00000) {//If all works this is the check that looks for missing not enough quantity 
-//                                        document.getElementById("out_of_stock").removeAttribute("hidden");
-//                                        document.getElementById("out_of_stock").textContent = "OUT OF STOCK, PLEASE PICK ANOTHER BASE";
-//                                    }
-//                                }
-//                            },
-//                                 function error(err) {
-//                                     //console.log("GET fail", err.responseText)
-//                                     if (err.readyState === 0) {
-//                                         console.log("GET Token Request not initialized ");
-//                                     }
-//                                     else if (err.readyState === 1) {
-//                                         console.log("GET Token Server connection established");
-//                                     }
-//                                     else if (err.readyState === 2) {
-//                                         console.log("GET Token Request received");
-//                                     }
-//                                     else if (err.readyState === 3) {
-//                                         console.log("GET Token Processing request");
-//                                     }
-//                                     else if (err.readyState === 4 && err.status === 200) {
-//                                         console.log("GET Token Request finished response is ready and " + "status 200: OK");
-//                                     }
-//                                     else if (err.readyState === 4 && err.status === 400) {
-//                                         console.log("GET Token Bad Request " + "status 400: Bad Request");
-//                                     }
-//                                     else if (err.readyState === 4 && err.status === 404) {
-//                                         console.log("GET Token Request finished and response is ready but " + "status 404: Page not found");
-//                                     }
-//                                 });
-//                        },
-//                            function error(err) {
-//                                //console.log("POST fail", err.responseText)
-//                                if (err.readyState === 0) {
-//                                    console.log("POST Request not initialized ");
-//                                }
-//                                else if (err.readyState === 1) {
-//                                    console.log("POST Server connection established");
-//                                }
-//                                else if (err.readyState === 2) {
-//                                    console.log("POST Request received");
-//                                }
-//                                else if (err.readyState === 3) {
-//                                    console.log("POST Processing request");
-//                                }
-//                                else if (err.readyState === 4 && err.status === 200) {
-//                                    console.log("POST Request finished response is ready and " + "status 200: OK");
-//                                }
-//                                else if (err.readyState === 4 && err.status === 400) {
-//                                    console.log("POST Bad Request " + "status 400: Bad Request");
-//                                }
-//                                else if (err.readyState === 4 && err.status === 404) {
-//                                    console.log("POST Request finished and response is ready but " + "status 404: Page not found");
-//                                }
-//                            });
-//                    }
-////milo: Token expired or empty
-//                        if (roamingSettings.values["Token"] == undefined || roamingSettings.values["Token"] == "") {
-//                            var serviceRequestURI = "https://secure.vendhq.com/connect?response_type=code&client_id=cv2T4BNlCZaaLrCr1aGqY35aqtZT3p5L&redirect_uri=https://thinkitdrinkitdata.azure-mobile.net/";
+                                var vendIdIssue = JSON.parse(result.responseText).product;
+                                if (vendIdIssue == undefined) {//Vend product missing entirly even though there might be a id in azures db
+                                    document.getElementById("out_of_stock2").removeAttribute("hidden");
+                                    document.getElementById("out_of_stock2").textContent = "VEND product does not exist in VENDS website";
+                                } else {
+                                    var vendCount = JSON.parse(result.responseText).product.inventory[0].count;
+                                    //console.log("Base Count from VEND ", vendCount);
+                                    if (vendCount >= 1.00000) {
+                                        WinJS.Navigation.navigate('pages/boost/boost.html')
+                                    } else if (vendCount <= 0.00000) {//If all works this is the check that looks for missing not enough quantity 
+                                        document.getElementById("out_of_stock").removeAttribute("hidden");
+                                        document.getElementById("out_of_stock").textContent = "OUT OF STOCK, PLEASE PICK ANOTHER BASE";
+                                    }
+                                }
+                            },
+                                 function error(err) {
+                                     //console.log("GET fail", err.responseText)
+                                     if (err.readyState === 0) {
+                                         console.log("GET Token Request not initialized ");
+                                     }
+                                     else if (err.readyState === 1) {
+                                         console.log("GET Token Server connection established");
+                                     }
+                                     else if (err.readyState === 2) {
+                                         console.log("GET Token Request received");
+                                     }
+                                     else if (err.readyState === 3) {
+                                         console.log("GET Token Processing request");
+                                     }
+                                     else if (err.readyState === 4 && err.status === 200) {
+                                         console.log("GET Token Request finished response is ready and " + "status 200: OK");
+                                     }
+                                     else if (err.readyState === 4 && err.status === 400) {
+                                         console.log("GET Token Bad Request " + "status 400: Bad Request");
+                                     }
+                                     else if (err.readyState === 4 && err.status === 404) {
+                                         console.log("GET Token Request finished and response is ready but " + "status 404: Page not found");
+                                     }
+                                 });
+                        },
+                            function error(err) {
+                                //console.log("POST fail", err.responseText)
+                                if (err.readyState === 0) {
+                                    console.log("POST Request not initialized ");
+                                }
+                                else if (err.readyState === 1) {
+                                    console.log("POST Server connection established");
+                                }
+                                else if (err.readyState === 2) {
+                                    console.log("POST Request received");
+                                }
+                                else if (err.readyState === 3) {
+                                    console.log("POST Processing request");
+                                }
+                                else if (err.readyState === 4 && err.status === 200) {
+                                    console.log("POST Request finished response is ready and " + "status 200: OK");
+                                }
+                                else if (err.readyState === 4 && err.status === 400) {
+                                    console.log("POST Bad Request " + "status 400: Bad Request");
+                                }
+                                else if (err.readyState === 4 && err.status === 404) {
+                                    console.log("POST Request finished and response is ready but " + "status 404: Page not found");
+                                }
+                            });
+                    }
+//milo: Token expired or empty
+                        if (roamingSettings.values["Token"] == undefined || roamingSettings.values["Token"] == "") {
+                            var serviceRequestURI = "https://secure.vendhq.com/connect?response_type=code&client_id=cv2T4BNlCZaaLrCr1aGqY35aqtZT3p5L&redirect_uri=https://thinkitdrinkitdata.azure-mobile.net/";
 
-//                            if (!isValidUriString(serviceRequestURI)) {
-//                                console.log("Enter a Start URI", "Web Authentication SDK Sample", "error");
-//                                return;
-//                            }
+                            if (!isValidUriString(serviceRequestURI)) {
+                                console.log("Enter a Start URI", "Web Authentication SDK Sample", "error");
+                                return;
+                            }
 
-//                            var callbackURL = "https://thinkitdrinkitdata.azure-mobile.net/";
-//                            if (!isValidUriString(callbackURL)) {
-//                                console.log("Enter an End URI", "Web Authentication SDK Sample", "error");
-//                                return;
-//                            }
+                            var callbackURL = "https://thinkitdrinkitdata.azure-mobile.net/";
+                            if (!isValidUriString(callbackURL)) {
+                                console.log("Enter an End URI", "Web Authentication SDK Sample", "error");
+                                return;
+                            }
 
-//                            var startURI = new Windows.Foundation.Uri(serviceRequestURI);
-//                            var endURI = new Windows.Foundation.Uri(callbackURL);
-//                            Windows.Security.Authentication.Web.WebAuthenticationBroker.authenticateAsync(//milo this also has a issue if its in a Class being called from another script file
-//                                Windows.Security.Authentication.Web.WebAuthenticationOptions.none, startURI, endURI)
-//                                .done(function (result) {
+                            var startURI = new Windows.Foundation.Uri(serviceRequestURI);
+                            var endURI = new Windows.Foundation.Uri(callbackURL);
+                            Windows.Security.Authentication.Web.WebAuthenticationBroker.authenticateAsync(//milo this also has a issue if its in a Class being called from another script file
+                                Windows.Security.Authentication.Web.WebAuthenticationOptions.none, startURI, endURI)
+                                .done(function (result) {
 
-//                                    var resultURI = result.responseData;
-//                                    //document.getElementById("AnyServiceReturnedToken").value = resultURI;
-//                                    var accessURI = new Windows.Foundation.Uri(resultURI);
-//                                    var vendQuery = accessURI.queryParsed;
-//                                    var check = vendQuery[0].name;
-//                                    var code = vendQuery[0].value;
+                                    var resultURI = result.responseData;
+                                    //document.getElementById("AnyServiceReturnedToken").value = resultURI;
+                                    var accessURI = new Windows.Foundation.Uri(resultURI);
+                                    var vendQuery = accessURI.queryParsed;
+                                    var check = vendQuery[0].name;
+                                    var code = vendQuery[0].value;
 
-//                                    if (check == "code") {
-//                                        var data = {};
+                                    if (check == "code") {
+                                        var data = {};
 
-//                                        data = {
-//                                            code: vendQuery[0].value,
-//                                            client_id: "cv2T4BNlCZaaLrCr1aGqY35aqtZT3p5L",
-//                                            client_secret: "G6hgTRflMJFgfsT7A83YOZhopNfWUTvZ",
-//                                            grant_type: "authorization_code",
-//                                            redirect_uri: "https://thinkitdrinkitdata.azure-mobile.net/"
-//                                        };
+                                        data = {
+                                            code: vendQuery[0].value,
+                                            client_id: "cv2T4BNlCZaaLrCr1aGqY35aqtZT3p5L",
+                                            client_secret: "G6hgTRflMJFgfsT7A83YOZhopNfWUTvZ",
+                                            grant_type: "authorization_code",
+                                            redirect_uri: "https://thinkitdrinkitdata.azure-mobile.net/"
+                                        };
 
-//                                        //milo: http_build_query breaks if I try to add it to a Class currently it works with script link in the base.html and located in the url_functions.js
-////milo: Build Query to get Access from VEND
-//                                        data = http_build_query(data, '');
-//                                        data = urldecode(data);
-//console.log("Build of the Query about to send to VEND " + data);
-//                                        WinJS.xhr({
-//                                            type: "POST",
-//                                            url: "https://thinkitdrinkit.vendhq.com/api/1.0/token" + "?" + data
+                                        //milo: http_build_query breaks if I try to add it to a Class currently it works with script link in the base.html and located in the url_functions.js
+//milo: Build Query to get Access from VEND
+                                        data = http_build_query(data, '');
+                                        data = urldecode(data);
+console.log("Build of the Query about to send to VEND " + data);
+                                        WinJS.xhr({
+                                            type: "POST",
+                                            url: "https://thinkitdrinkit.vendhq.com/api/1.0/token" + "?" + data
 
-//                                        }).done(function completed(result) {
-////milo: Results from VEND Token/refresh Token  
-//                                            console.log(result);
-//                                            var vendTokenResults = JSON.parse(result.responseText);
-//                                            var vendToken = vendTokenResults.access_token;
-//                                            var vendRefreshToken = vendTokenResults.refresh_token;
-//                                            roamingSettings.values["Token"] = vendToken;
-//                                            roamingSettings.values["refreshToken"] = vendRefreshToken;
-//                                            var vendTokenType = vendTokenResults.token_type;
-//console.log("Vend Token from POST" + vendToken);
+                                        }).done(function completed(result) {
+//milo: Results from VEND Token/refresh Token  
+                                            console.log(result);
+                                            var vendTokenResults = JSON.parse(result.responseText);
+                                            var vendToken = vendTokenResults.access_token;
+                                            var vendRefreshToken = vendTokenResults.refresh_token;
+                                            roamingSettings.values["Token"] = vendToken;
+                                            roamingSettings.values["refreshToken"] = vendRefreshToken;
+                                            var vendTokenType = vendTokenResults.token_type;
+console.log("Vend Token from POST" + vendToken);
 
-//                                            WinJS.xhr({
-//                                                type: "POST",
-//                                                headers: {
-//                                                    "Authorization": vendTokenType + " " + vendToken,
-//                                                    "Content-type": "application/json"
-//                                                },
-//                                                url: "https://thinkitdrinkit.vendhq.com/api/products",
-//                                                data: JSON.stringify({
-//                                                    "id": vendId,
-//                                                    "inventory": [{
-//                                                    }]
-//                                                }),
+                                            WinJS.xhr({
+                                                type: "POST",
+                                                headers: {
+                                                    "Authorization": vendTokenType + " " + vendToken,
+                                                    "Content-type": "application/json"
+                                                },
+                                                url: "https://thinkitdrinkit.vendhq.com/api/products",
+                                                data: JSON.stringify({
+                                                    "id": vendId,
+                                                    "inventory": [{
+                                                    }]
+                                                }),
 
-//                                            }).done(function completed(result) {
-//                                                console.log(result);
+                                            }).done(function completed(result) {
+                                                console.log(result);
 
-//                                                var vendIdIssue = JSON.parse(result.responseText).product;
-//                                                if (vendIdIssue == undefined) {//Vend product missing entirly even though there might be a id in azures db
-//                                                    document.getElementById("out_of_stock2").removeAttribute("hidden");
-//                                                    document.getElementById("out_of_stock2").textContent = "VEND product does not exist in VENDS website";
-//                                                } else {
-//                                                    var vendCount = JSON.parse(result.responseText).product.inventory[0].count;
-//                                                    //console.log("Base Count from VEND ", vendCount);
-//                                                    if (vendCount >= 1.00000) {
-//                                                        WinJS.Navigation.navigate('pages/boost/boost.html')
-//                                                    } else if (vendCount <= 0.00000) {//If all works this is the check that looks for missing not enough quantity 
-//                                                        document.getElementById("out_of_stock").removeAttribute("hidden");
-//                                                        document.getElementById("out_of_stock").textContent = "OUT OF STOCK, PLEASE PICK ANOTHER BASE";
-//                                                    }
-//                                                }
-//                                            },
-//                                                 function error(err) {
-//                                                     //console.log("GET fail", err.responseText)
-//                                                     if (err.readyState === 0) {
-//                                                         console.log("GET Token Request not initialized ");
-//                                                     }
-//                                                     else if (err.readyState === 1) {
-//                                                         console.log("GET Token Server connection established");
-//                                                     }
-//                                                     else if (err.readyState === 2) {
-//                                                         console.log("GET Token Request received");
-//                                                     }
-//                                                     else if (err.readyState === 3) {
-//                                                         console.log("GET Token Processing request");
-//                                                     }
-//                                                     else if (err.readyState === 4 && err.status === 200) {
-//                                                         console.log("GET Token Request finished response is ready and " + "status 200: OK");
-//                                                     }
-//                                                     else if (err.readyState === 4 && err.status === 400) {
-//                                                         console.log("GET Token Bad Request " + "status 400: Bad Request");
-//                                                     }
-//                                                     else if (err.readyState === 4 && err.status === 404) {
-//                                                         console.log("GET Token Request finished and response is ready but " + "status 404: Page not found");
-//                                                     }
-//                                                 });
-//                                        },
-//                                            function error(err) {
-//                                                //console.log("POST fail", err.responseText)
-//                                                if (err.readyState === 0) {
-//                                                    console.log("POST Request not initialized ");
-//                                                }
-//                                                else if (err.readyState === 1) {
-//                                                    console.log("POST Server connection established");
-//                                                }
-//                                                else if (err.readyState === 2) {
-//                                                    console.log("POST Request received");
-//                                                }
-//                                                else if (err.readyState === 3) {
-//                                                    console.log("POST Processing request");
-//                                                }
-//                                                else if (err.readyState === 4 && err.status === 200) {
-//                                                    console.log("POST Request finished response is ready and " + "status 200: OK");
-//                                                }
-//                                                else if (err.readyState === 4 && err.status === 400) {
-//                                                    console.log("POST Bad Request " + "status 400: Bad Request");
-//                                                }
-//                                                else if (err.readyState === 4 && err.status === 404) {
-//                                                    console.log("POST Request finished and response is ready but " + "status 404: Page not found");
-//                                                }
-//                                            });
-//                                    } else if (check == "error") {
-//                                        console.log("Requesting authorisation code to VEND Declined access");
-//                                    }
+                                                var vendIdIssue = JSON.parse(result.responseText).product;
+                                                if (vendIdIssue == undefined) {//Vend product missing entirly even though there might be a id in azures db
+                                                    document.getElementById("out_of_stock2").removeAttribute("hidden");
+                                                    document.getElementById("out_of_stock2").textContent = "VEND product does not exist in VENDS website";
+                                                } else {
+                                                    var vendCount = JSON.parse(result.responseText).product.inventory[0].count;
+                                                    //console.log("Base Count from VEND ", vendCount);
+                                                    if (vendCount >= 1.00000) {
+                                                        WinJS.Navigation.navigate('pages/boost/boost.html')
+                                                    } else if (vendCount <= 0.00000) {//If all works this is the check that looks for missing not enough quantity 
+                                                        document.getElementById("out_of_stock").removeAttribute("hidden");
+                                                        document.getElementById("out_of_stock").textContent = "OUT OF STOCK, PLEASE PICK ANOTHER BASE";
+                                                    }
+                                                }
+                                            },
+                                                 function error(err) {
+                                                     //console.log("GET fail", err.responseText)
+                                                     if (err.readyState === 0) {
+                                                         console.log("GET Token Request not initialized ");
+                                                     }
+                                                     else if (err.readyState === 1) {
+                                                         console.log("GET Token Server connection established");
+                                                     }
+                                                     else if (err.readyState === 2) {
+                                                         console.log("GET Token Request received");
+                                                     }
+                                                     else if (err.readyState === 3) {
+                                                         console.log("GET Token Processing request");
+                                                     }
+                                                     else if (err.readyState === 4 && err.status === 200) {
+                                                         console.log("GET Token Request finished response is ready and " + "status 200: OK");
+                                                     }
+                                                     else if (err.readyState === 4 && err.status === 400) {
+                                                         console.log("GET Token Bad Request " + "status 400: Bad Request");
+                                                     }
+                                                     else if (err.readyState === 4 && err.status === 404) {
+                                                         console.log("GET Token Request finished and response is ready but " + "status 404: Page not found");
+                                                     }
+                                                 });
+                                        },
+                                            function error(err) {
+                                                //console.log("POST fail", err.responseText)
+                                                if (err.readyState === 0) {
+                                                    console.log("POST Request not initialized ");
+                                                }
+                                                else if (err.readyState === 1) {
+                                                    console.log("POST Server connection established");
+                                                }
+                                                else if (err.readyState === 2) {
+                                                    console.log("POST Request received");
+                                                }
+                                                else if (err.readyState === 3) {
+                                                    console.log("POST Processing request");
+                                                }
+                                                else if (err.readyState === 4 && err.status === 200) {
+                                                    console.log("POST Request finished response is ready and " + "status 200: OK");
+                                                }
+                                                else if (err.readyState === 4 && err.status === 400) {
+                                                    console.log("POST Bad Request " + "status 400: Bad Request");
+                                                }
+                                                else if (err.readyState === 4 && err.status === 404) {
+                                                    console.log("POST Request finished and response is ready but " + "status 404: Page not found");
+                                                }
+                                            });
+                                    } else if (check == "error") {
+                                        console.log("Requesting authorisation code to VEND Declined access");
+                                    }
 
-//                                }, function (err) {
-//                                    console.log("Error returned by WebAuth broker: " + err, "Web Authentication SDK Sample", "error");
-//                                });
+                                }, function (err) {
+                                    console.log("Error returned by WebAuth broker: " + err, "Web Authentication SDK Sample", "error");
+                                });
 
-////milo: If Token is not expired sign in automatically. If it is expired but saved in roaming then this will still fire but see it and empty the roaming and fire from launchAnyServiceWebAuth()
-//                        } else if (roamingSettings.values["Token"] != "" && roamingSettings.values["Token"] != isNaN) {
+//milo: If Token is not expired sign in automatically. If it is expired but saved in roaming then this will still fire but see it and empty the roaming and fire from launchAnyServiceWebAuth()
+                        } else if (roamingSettings.values["Token"] != "" && roamingSettings.values["Token"] != isNaN) {
 
-//                            WinJS.xhr({
-//                                type: "POST",
-//                                headers: {
-//                                    "Authorization": "Bearer" + " " + roamingSettings.values["Token"],
-//                                    "Content-type": "application/json"
-//                                }, 
-//                                url: "https://thinkitdrinkit.vendhq.com/api/products",
-//                                data: JSON.stringify({
-//                                    "id": vendId,
-//                                    "inventory": [{
-//                                    }]
-//                                }),
+                            WinJS.xhr({
+                                type: "POST",
+                                headers: {
+                                    "Authorization": "Bearer" + " " + roamingSettings.values["Token"],
+                                    "Content-type": "application/json"
+                                }, 
+                                url: "https://thinkitdrinkit.vendhq.com/api/products",
+                                data: JSON.stringify({
+                                    "id": vendId,
+                                    "inventory": [{
+                                    }]
+                                }),
 
-//                            }).done(function completed(result) {
-//                                 console.log(result);
-//                                 //milo: below allows the real GET which is the count to come back to app. Notes accessing json>>> http://www.mkyong.com/javascript/how-to-access-json-object-in-javascript/
+                            }).done(function completed(result) {
+                                 console.log(result);
+                                 //milo: below allows the real GET which is the count to come back to app. Notes accessing json>>> http://www.mkyong.com/javascript/how-to-access-json-object-in-javascript/
 
-//                                    var vendIdIssue = JSON.parse(result.responseText).product;
-//                                    if (vendIdIssue == undefined) {//Vend product missing entirly even though there might be a id in azures db
-//                                        document.getElementById("out_of_stock2").removeAttribute("hidden");
-//                                        document.getElementById("out_of_stock2").textContent = "VEND product does not exist in VENDS website";
-//                                    } else {
-//                                        var vendCount = JSON.parse(result.responseText).product.inventory[0].count;
-//                                        //console.log("Base Count from VEND ", vendCount);
-//                                        if (vendCount >= 1.00000) {
-//                                            WinJS.Navigation.navigate('pages/boost/boost.html')
-//                                        } else if (vendCount <= 0.00000) {//If all works this is the check that looks for missing not enough quantity 
-//                                            document.getElementById("out_of_stock").removeAttribute("hidden");
-//                                            document.getElementById("out_of_stock").textContent = "OUT OF STOCK, PLEASE PICK ANOTHER BASE";
-//                                        }
-//                                    }
-//                             },
-//                             function error(err) {
-//                                 // handle error conditions.
-//                                 //console.log("GET fail", err.responseText)
-//                                 if (err.readyState === 0) {
-//                                     console.log("GET Request not initialized ");
-//                                 }
-//                                 else if (err.readyState === 1) {
-//                                     console.log("GET Server connection established");
-//                                 }
-//                                 else if (err.readyState === 2) {
-//                                     console.log("GET Request received");
-//                                 }
-//                                 else if (err.readyState === 3) {
-//                                     console.log("GET Processing request");
-//                                 }
-//                                 else if (err.readyState === 4 && err.status === 200) {
-//                                     console.log("GET Request finished response is ready and " + "status 200: OK");
-//                                 }
-//                                 else if (err.readyState === 4 && err.status === 400) {
-//                                     console.log("GET Bad Request " + "status 400: Bad Request");
-//                                 }
-//                                 else if (err.readyState === 4 && err.status === 404) {
-//                                     console.log("GET Request finished and response is ready but " + "status 404: Page not found");
-//                                 }
-//                                 else if (err.status === 401) {
-//                                     console.log("GET status 401: User ID and password were invalid maybe because of VEND's expired TOKEN");
-////milo: fires off when VEND expires the token 
-//                                     roamingSettings.values["Token"] = "";
-//                                     refreshTokenSwitch();
-//                                 }
-//                             });
-//                        }
-//                } else if (vendId == "null" || vendId == undefined || vendId == "") {//id missing in azure db but product in vend exists
-//                    document.getElementById("out_of_stock2").removeAttribute("hidden");
-//                    document.getElementById("out_of_stock2").textContent = "ID Missing in Azure DB.";
-//                }
+                                    var vendIdIssue = JSON.parse(result.responseText).product;
+                                    if (vendIdIssue == undefined) {//Vend product missing entirly even though there might be a id in azures db
+                                        document.getElementById("out_of_stock2").removeAttribute("hidden");
+                                        document.getElementById("out_of_stock2").textContent = "VEND product does not exist in VENDS website";
+                                    } else {
+                                        var vendCount = JSON.parse(result.responseText).product.inventory[0].count;
+                                        //console.log("Base Count from VEND ", vendCount);
+                                        if (vendCount >= 1.00000) {
+                                            WinJS.Navigation.navigate('pages/boost/boost.html')
+                                        } else if (vendCount <= 0.00000) {//If all works this is the check that looks for missing not enough quantity 
+                                            document.getElementById("out_of_stock").removeAttribute("hidden");
+                                            document.getElementById("out_of_stock").textContent = "OUT OF STOCK, PLEASE PICK ANOTHER BASE";
+                                        }
+                                    }
+                             },
+                             function error(err) {
+                                 // handle error conditions.
+                                 //console.log("GET fail", err.responseText)
+                                 if (err.readyState === 0) {
+                                     console.log("GET Request not initialized ");
+                                 }
+                                 else if (err.readyState === 1) {
+                                     console.log("GET Server connection established");
+                                 }
+                                 else if (err.readyState === 2) {
+                                     console.log("GET Request received");
+                                 }
+                                 else if (err.readyState === 3) {
+                                     console.log("GET Processing request");
+                                 }
+                                 else if (err.readyState === 4 && err.status === 200) {
+                                     console.log("GET Request finished response is ready and " + "status 200: OK");
+                                 }
+                                 else if (err.readyState === 4 && err.status === 400) {
+                                     console.log("GET Bad Request " + "status 400: Bad Request");
+                                 }
+                                 else if (err.readyState === 4 && err.status === 404) {
+                                     console.log("GET Request finished and response is ready but " + "status 404: Page not found");
+                                 }
+                                 else if (err.status === 401) {
+                                     console.log("GET status 401: User ID and password were invalid maybe because of VEND's expired TOKEN");
+//milo: fires off when VEND expires the token 
+                                     roamingSettings.values["Token"] = "";
+                                     refreshTokenSwitch();
+                                 }
+                             });
+                        }
+                } else if (vendId == "null" || vendId == undefined || vendId == "") {//id missing in azure db but product in vend exists
+                    document.getElementById("out_of_stock2").removeAttribute("hidden");
+                    document.getElementById("out_of_stock2").textContent = "ID Missing in Azure DB.";
+                }
         },
 
         more_info: function (clicked) {
