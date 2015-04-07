@@ -260,14 +260,14 @@
             base_sub: function (id, name) {
                 var Age = thinkitdrinkitDataClient.getTable("Base");
 
-                //milo: this is for a bug in boost.html if clicking on image this fires if clicked on h1 else fires (the issue is coming from boost.html when div grabs event.srcElement.innerText there are two text areas h1 and span that couse issues) 
+                //milo: this is for a bug in base.html if clicking on id(a tag) this fires if clicked on image else fires (the issue is coming from base.html when div grabs event.srcElement.innerText there are two text areas a tag and span tag that couse this issue) 
 
                 if (id != isNaN && id != "") {
                     var query = Age.where({
                         id: id
                     }).read().done(function (results) {
                         age_data.model.info_page2.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_img: results[0].Label, base_price: results[0].Price, b_vend: results[0].VendID, id_sel: results[0].id })
-                        //milo these are here becouse there is timing issues 
+                        //milo these are here because there is a timing issue 
                         roamingSettings.values["db_url"] = results[0].Info;
                         roamingSettings.values["Id_sel_base"] = results[0].id;
                         roamingSettings.values["Base_name"] = results[0].Name;
@@ -275,7 +275,6 @@
                     }, function (err) {
                         console.log(err);
                     })
-                    //milo: bug continued, now if the h1 did get hit we have to compare the name in the db with the id
                 } else {
 
                     var query = Age.where({
@@ -283,6 +282,8 @@
                     }).read().done(function (results) {
                         age_data.model.info_page2.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_img: results[0].Label, base_price: results[0].Price, the_pic: results[0].Image, b_vend: results[0].VendID, id_sel: results[0].id })
                         roamingSettings.values["db_url"] = results[0].Info;
+                        roamingSettings.values["Id_sel_base"] = results[0].id;
+                        roamingSettings.values["Base_name"] = results[0].Name;
                         //roamingSettings.values["Id_sel_base"] = results[0].id;
                         // TOO late for id here this is after the name goes over the db and grabs the first same name, roamingSettings.values["Id_sel_base"] = results[0].id;
 

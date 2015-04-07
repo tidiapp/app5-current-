@@ -126,23 +126,14 @@
                     str += list.getItem(i).data;
                     var b_name = list.getItem(i).data.b_name;
                     //milo: hitting the a tag or image to be consistent, there was a bug that just would read the name only and in the db it would the first name that mattached, usually it was wrong and really needed to match the id with the name to get the correct item.
-
                     if (b_name == updated_id2) {
                         var id_sel = list.getItem(i).data.id_sel;
                         roamingSettings.values["Id_sel_base"] = id_sel;
-                        //console.log("Milo " + id_sel);
                     }
                 }
 
             //SERVER CALL
             server.base_sub(updated_id, updated_id2);
-
-            //var list2 = age_data.model.info_page2;
-            //var str2 = "";
-            //for (var i = 0; i < list.length; i++) {
-            //    str2 += list2.getItem(i).data;
-            //    var the_name = list2.getItem(i).data.the_name;
-            //}
 
         },
 
@@ -164,7 +155,7 @@
             //milo make sure to remove this if vend login below is uncommented
             //WinJS.Navigation.navigate('pages/boost/boost.html')
 
-//milo: This is the ONLY PLACE in app VEND NEEDS to LOGIN, saves the info so other pages just use roamingSettings.values["Token"] and refresh token till the refresh token itself expires   
+            //milo: This is the ONLY PLACE in app VEND NEEDS to LOGIN, saves the info so other pages just use roamingSettings.values["Token"] and refresh token till the refresh token itself expires   
                 if (vendId != "" && vendId != "null") {
 
                     function isValidUriString(uriString) {
