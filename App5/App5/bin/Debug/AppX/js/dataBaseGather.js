@@ -5,6 +5,8 @@
         //"use strict";
         var appData = Windows.Storage.ApplicationData.current;
         var roamingSettings = appData.roamingSettings;
+        roamingSettings.values["computerNumber"] = 1;
+        CNum = roamingSettings.values["computerNumber"];
 
         WinJS.Namespace.define("server", {
             //home.html
@@ -623,8 +625,7 @@
                 var roamingSettings = appData.roamingSettings;
                 roamingSettings.values["t"] = 0;
                 var query = finalCall.where({
-                    //milo also computer # change below too roamingSettings.values["computerNumber"]
-                    CNum: 6
+                    CNum: CNum
                 }).read().done(function (results) {
                     console.log("I made it here, Yay...");
                     console.log("This is the results number: " + results.length);
@@ -679,11 +680,16 @@
                 });
             },
             VendPrep: function () {
+
                 var finalCall = thinkitdrinkitDataClient.getTable("ShopCart");
                 var roamingSettings = appData.roamingSettings;
                 var Age = thinkitdrinkitDataClient.getTable("ShopCart");
+                console.log("Milo 1 " + roamingSettings.values["computerNumber"]);
+                console.log("Milo 2 " + CNum);
+
+
                 Age.insert({
-                    CNum: roamingSettings.values["computerNumber"],
+                    CNum: CNum,
                     OrderNum: roamingSettings.values["totalOrderNumber1"],
                     BaseName: roamingSettings.values["Base_name"],
                     BaseVend: roamingSettings.values["Base_vend"],
@@ -733,8 +739,10 @@
                     console.log("Results1 " + results1);
                     roamingSettings.values["totalOrderNumber"]++;
                     roamingSettings.values["computer" + roamingSettings.values["totalOrderNumber"] + "Number"] = results1.id;
+                    console.log("Milo 3 " + CNum);
+
                     var query = finalCall.where({
-                        CNum: 6
+                        CNum: CNum
                     }).read().done(function (results) {
 
                         for (var i = 0; i < results.length; i++) {
@@ -847,8 +855,7 @@
                             i++
                             //console.log(i);
                         }
-                        console.log("Milo")
-                        console.log(array_t);
+                        console.log("Milo " + array_t)
                         WinJS.xhr({
                             type: "POST",
                             //url: "https://thinkitdrinkit.vendhq.com/api/register_sales",
@@ -916,13 +923,12 @@
             contSave: function () {
                 var appData = Windows.Storage.ApplicationData.current;
                 var roamingSettings = appData.roamingSettings;
-                roamingSettings.values["computerNumber"] = 6;//milo also change on line 627 and 737
                 roamingSettings.values["totalOrderNumber"]++;
                 roamingSettings.values["totalOrderNumber1"]++;
                 var Age = thinkitdrinkitDataClient.getTable("ShopCart");
                 //console.log("I'm here 1!")
                 Age.insert({
-                    CNum: roamingSettings.values["computerNumber"],
+                    CNum: CNum,
                     OrderNum: roamingSettings.values["totalOrderNumber1"],
                     BaseName:roamingSettings.values["Base_name"],
                     BaseVend:roamingSettings.values["Base_vend"],
