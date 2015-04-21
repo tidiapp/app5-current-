@@ -35,7 +35,7 @@
                 if (id_sel == 1 || id_sel == 2 || id_sel == 4 || id_sel == 5 || id_sel == 6) {
                     document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
                     document.getElementById("where_you_are2").textContent = "You have choosen " + roamingSettings.values["Func_name"] + "." + " You have 2 steps left.";
-                    document.getElementById("choosen_age3").textContent = "Select Your " + "Protein For " + roamingSettings.values["Func_name"] + ".";
+                    document.getElementById("choosen_age3").textContent = "Select Your " + "Base For " + roamingSettings.values["Func_name"] + ".";
                     document.getElementById("func_div").removeAttribute("hidden");
                 } else {
                     document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img5"];
@@ -50,7 +50,7 @@
                 //milo: Cat_picked_img2 image from Protein launch_page.hmtl
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
                 document.getElementById("where_you_are2").textContent = "You have choosen " + roamingSettings.values["Func_name"] + "." + " You have 2 steps left.";
-                document.getElementById("choosen_age3").textContent = "Select Your " + "Protein For " + roamingSettings.values["Func_name"] + ".";
+                document.getElementById("choosen_age3").textContent = "Select Your " + "Base For " + roamingSettings.values["Func_name"] + ".";
                 document.getElementById("func_div").removeAttribute("hidden");
             }
 
