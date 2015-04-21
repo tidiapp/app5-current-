@@ -56,7 +56,7 @@
             }
 
             if (!roamingSettings.values["not_cont"]) {
-                document.getElementById("price_prev_div_total").setAttribute("hidden");
+                //document.getElementById("price_prev_div_total").setAttribute("hidden");
             }
 
             //milo: footer history 

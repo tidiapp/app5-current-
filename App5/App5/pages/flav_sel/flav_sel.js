@@ -116,9 +116,9 @@
             server.flav_sel();
 
             if (!roamingSettings.values["not_cont"]) {
-                document.getElementById("thewordsforcurrentprice").removeAttribute("hidden");
-                document.getElementById("price_prev_div_total").setAttribute("hidden");
-                document.getElementById("base_price_total").setAttribute("hidden");
+                //document.getElementById("thewordsforcurrentprice").removeAttribute("hidden");
+                //document.getElementById("price_prev_div_total").setAttribute("hidden");
+                //document.getElementById("base_price_total").setAttribute("hidden");
             }
 
         },

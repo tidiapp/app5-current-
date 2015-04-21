@@ -623,7 +623,8 @@
                 var roamingSettings = appData.roamingSettings;
                 roamingSettings.values["t"] = 0;
                 var query = finalCall.where({
-                    CNum: 1
+                    //milo also computer # change below too roamingSettings.values["computerNumber"]
+                    CNum: 6
                 }).read().done(function (results) {
                     console.log("I made it here, Yay...");
                     console.log("This is the results number: " + results.length);
@@ -733,7 +734,7 @@
                     roamingSettings.values["totalOrderNumber"]++;
                     roamingSettings.values["computer" + roamingSettings.values["totalOrderNumber"] + "Number"] = results1.id;
                     var query = finalCall.where({
-                        CNum: 1
+                        CNum: 6
                     }).read().done(function (results) {
 
                         for (var i = 0; i < results.length; i++) {
@@ -846,7 +847,7 @@
                             i++
                             //console.log(i);
                         }
-                        console.log("This one is not inside of a loop: ")
+                        console.log("Milo")
                         console.log(array_t);
                         WinJS.xhr({
                             type: "POST",
@@ -915,7 +916,7 @@
             contSave: function () {
                 var appData = Windows.Storage.ApplicationData.current;
                 var roamingSettings = appData.roamingSettings;
-                roamingSettings.values["computerNumber"] = 6;
+                roamingSettings.values["computerNumber"] = 6;//milo also must change on line 627 and 737 (search for CNum: #)
                 roamingSettings.values["totalOrderNumber"]++;
                 roamingSettings.values["totalOrderNumber1"]++;
                 var Age = thinkitdrinkitDataClient.getTable("ShopCart");

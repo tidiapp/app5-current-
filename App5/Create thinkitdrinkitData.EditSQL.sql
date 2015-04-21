@@ -2,7 +2,12 @@
 GO
 
 UPDATE thinkitdrinkitData.Boost
-Set --[VendID] = 'b8ca3a65-0166-11e4-fbb5-a70304160cf6',
-	[Name] = 'FibreGum'
+Set 
+	--[Name] = 'VinOserae', 
+	[VendID] = '',
+	[Image] = '',
+	[Label] = '',
+	[Price] = '',
+	[InfoLite] = ''
 
-WHERE Name = 'Fibersol 2'
+WHERE Name = 'Vinoserae'
