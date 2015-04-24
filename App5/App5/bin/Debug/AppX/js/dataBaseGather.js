@@ -5,7 +5,7 @@
         //"use strict";
         var appData = Windows.Storage.ApplicationData.current;
         var roamingSettings = appData.roamingSettings;
-        roamingSettings.values["computerNumber"] = 1;
+        roamingSettings.values["computerNumber"] = 6;
         CNum = roamingSettings.values["computerNumber"];
 
         WinJS.Namespace.define("server", {
@@ -684,8 +684,8 @@
                 var finalCall = thinkitdrinkitDataClient.getTable("ShopCart");
                 var roamingSettings = appData.roamingSettings;
                 var Age = thinkitdrinkitDataClient.getTable("ShopCart");
-                console.log("Milo 1 " + roamingSettings.values["computerNumber"]);
-                console.log("Milo 2 " + CNum);
+                //console.log("Milo 1 " + roamingSettings.values["computerNumber"]);
+                //console.log("Milo 2 " + CNum);
 
 
                 Age.insert({
@@ -698,7 +698,7 @@
                     BoostName: roamingSettings.values["Boost1_name"],
                     BoostVend: roamingSettings.values["Boost1_Vend"],
                     BoostImages: roamingSettings.values["Boost1_pic"],
-                    BoostPrice: parseFloat(roamingSettings.values["Boost1_price"]),
+                    BoostPrice: roamingSettings.values["Boost1_price"],
                     Boost2Name: roamingSettings.values["Boost2_name"],
                     Boost2Vend: roamingSettings.values["Boost2_vend"],
                     Boost2Images: roamingSettings.values["Boost2_pic"],
@@ -736,14 +736,43 @@
                     NutrigeneticsImages: roamingSettings.values["Nutrigenetics_pic"],
                     NutrigeneticsPrice: parseFloat(roamingSettings.values["Nutrigenetics_price"]),
                 }).done(function (results1) {
-                    console.log("Results1 " + results1);
+                    console.log("Results1 before sent to vend " + results1);
                     roamingSettings.values["totalOrderNumber"]++;
                     roamingSettings.values["computer" + roamingSettings.values["totalOrderNumber"] + "Number"] = results1.id;
-                    console.log("Milo 3 " + CNum);
+                    console.log("Milo Computer # " + CNum);
+
+
+
+
+
+
+
+
+//milo BUG wont write this log but bug is it will loose the $.66 somewhere between here and the other log just below here 
+                    for (var i = 0; i < results1.length; i++) {
+                        //not going in here dunno why
+                        console.log("Milo BoostPrice before " + results1[i].BoostPrice);
+                    }
+
+
 
                     var query = finalCall.where({
                         CNum: CNum
                     }).read().done(function (results) {
+
+
+
+//milo by the time this log reads the .66 is gone dont know why, the db in the cart has only one 0 but when I hover over results1 it says .66 but when I look at db cart is is only 0 but now with lo below is shows up as 0.00 
+                        for (var i = 0; i < results.length; i++) {
+                            console.log("Milo BoostPrice after " + parseFloat(results[i].BoostPrice).toFixed(2));
+                        }
+
+
+
+
+
+
+
 
                         for (var i = 0; i < results.length; i++) {
                             if (results[i].Boost2Price > 0 && results[i].Boost3Price <= 0) {
@@ -824,7 +853,7 @@
                                 { product_id: results[i].Boost8Vend, quantity: 1, price: results[i].Boost8Price }
                                     )
                             }
-                            else if (results[i].BoostPrice > 0 && results[i].Boost2Price <= 0) {
+                            else if (results[i].BoostPrice > 0.00 && results[i].Boost2Price <= 0.00) {
                                 age_data.model.order_final_call.push(
                                 { product_id: results[i].BaseVend, quantity: 1, price: results[i].BasePrice },
                                 { product_id: results[i].FlaveVend, quantity: 1, price: results[i].FlavPrice },
@@ -845,7 +874,7 @@
                         }
                         var array_t = Array();
                         var i = 0;
-                        console.log(age_data.model.order_final_call.length)
+                        console.log("Milo how many products are there " + age_data.model.order_final_call.length)
                         console.log(age_data.model.order_final_call);
                         while (age_data.model.order_final_call.length > i) {
                             array_t.push({
@@ -858,11 +887,6 @@
                         console.log("Milo " + array_t)
                         WinJS.xhr({
                             type: "POST",
-                            //url: "https://thinkitdrinkit.vendhq.com/api/register_sales",
-                            //headers: { "Content-type": "application/json" },
-                            //user: "milo@thinkitdrinkit.com",
-                            //password: "agave2013",
-                            //data: JSON.stringify
                             headers: {
                                 "Authorization": "Bearer" + " " + roamingSettings.values["Token"],
                                 "Content-type": "application/json"
