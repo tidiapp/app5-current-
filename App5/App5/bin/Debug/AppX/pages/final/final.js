@@ -227,7 +227,6 @@
 
         clicked: function () {
             // server.userOrderDone();
-            
             var missName = document.getElementById("Cname").value;
             if (missName == null || missName == "") {
                 tool.alert("", "Please add your name, thanks");
@@ -322,43 +321,43 @@
                     roamingSettings.values["Boost8_price"] = 0;
                     roamingSettings.values["Boost8_vend"] = "none";
                 }
-                else if (roamingSettings.values["Boost7_price"] > 0.00 && roamingSettings.values["Boost8_price"] <= 0.00) {
+                else if (roamingSettings.values["Boost7_price"] > 0 && roamingSettings.values["Boost8_price"] <= 0) {
                     roamingSettings.values["Boost8_name"] = "none";
                     roamingSettings.values["Boost8_pic"] = "none";
-                    roamingSettings.values["Boost8_price"] = 0.00;
+                    roamingSettings.values["Boost8_price"] = 0;
                     roamingSettings.values["Boost8_vend"] = "none";
                 }
                 else if (roamingSettings.values["Boost8_price"] > 0) {
 //milo:allows all 8 to be shown
                 }
-                else if (roamingSettings.values["Boost1_price"] > 0.00 && roamingSettings.values["Boost2_price"] <= 0.00) {
+                else if (roamingSettings.values["Boost1_price"] > 0 && roamingSettings.values["Boost2_price"] <= 0) {
                     roamingSettings.values["Boost2_name"] = "none";
                     roamingSettings.values["Boost2_pic"] = "none";
-                    roamingSettings.values["Boost2_price"] = 0.00;
+                    roamingSettings.values["Boost2_price"] = 0;
                     roamingSettings.values["Boost2_vend"] ="none";
                     roamingSettings.values["Boost3_name"] = "none";
                     roamingSettings.values["Boost3_pic"] = "none";
-                    roamingSettings.values["Boost3_price"] = 0.00;
+                    roamingSettings.values["Boost3_price"] = 0;
                     roamingSettings.values["Boost3_vend"] = "none";
                     roamingSettings.values["Boost4_name"] = "none";
                     roamingSettings.values["Boost4_pic"] = "none";
-                    roamingSettings.values["Boost4_price"] = 0.00;
+                    roamingSettings.values["Boost4_price"] = 0;
                     roamingSettings.values["Boost4_vend"] = "none";
                     roamingSettings.values["Boost5_name"] = "none";
                     roamingSettings.values["Boost5_pic"] = "none";
-                    roamingSettings.values["Boost5_price"] = 0.00;
+                    roamingSettings.values["Boost5_price"] = 0;
                     roamingSettings.values["Boost5_vend"] = "none";
                     roamingSettings.values["Boost6_name"] = "none";
                     roamingSettings.values["Boost6_pic"] = "none";
-                    roamingSettings.values["Boost6_price"] = 0.00;
+                    roamingSettings.values["Boost6_price"] = 0;
                     roamingSettings.values["Boost6_vend"] = "none";
                     roamingSettings.values["Boost7_name"] = "none";
                     roamingSettings.values["Boost7_pic"] = "none";
-                    roamingSettings.values["Boost7price"] = 0.00;
+                    roamingSettings.values["Boost7price"] = 0;
                     roamingSettings.values["Boost7_vend"] = "none";
                     roamingSettings.values["Boost8_name"] = "none";
                     roamingSettings.values["Boost8_pic"] = "none";
-                    roamingSettings.values["Boost8_price"] = 0.00;
+                    roamingSettings.values["Boost8_price"] = 0;
                     roamingSettings.values["Boost8_vend"] = "none";
                 }
                 else {//milo 0 boosts picked
@@ -470,7 +469,6 @@
 
         the_continue: function () {
             //milo: if 8th order (7 orders plus 1 for current)
-            console.log('This is the price of boost one when it\'s on the final page: ' + roamingSettings.values["Boost1_price"]);
             if (roamingSettings.values["totalOrderNumber1"] === 7) {
                 tool.alert("Close this page and hit Submit. If you would like to do more orders in the future pleas talk to the managment about expanding this ability, Thank you.", "We Currently Offer Only 8 Orders Per Customer.");
                 var el = document.getElementById("the_name_con");
@@ -567,10 +565,10 @@
                         roamingSettings.values["Boost8_price"] = 0;
                         roamingSettings.values["Boost8_vend"] = "none";
                     }
-                    else if (roamingSettings.values["Boost7_price"] > 0.00 && roamingSettings.values["Boost8_price"] <= 0.00) {
+                    else if (roamingSettings.values["Boost7_price"] > 0 && roamingSettings.values["Boost8_price"] <= 0) {
                         roamingSettings.values["Boost8_name"] = "none";
                         roamingSettings.values["Boost8_pic"] = "none";
-                        roamingSettings.values["Boost8_price"] = 0.00;
+                        roamingSettings.values["Boost8_price"] = 0;
                         roamingSettings.values["Boost8_vend"] = "none";
                     }
                     else if (roamingSettings.values["Boost8_price"] > 0) {
@@ -677,7 +675,6 @@
                             WinJS.Navigation.navigate('pages/launch_page/launch_page.html');
                         }
             }
-            console.log('This is the price of boost one when it\'s on the final page (at the end): ' + roamingSettings.values["Boost1_price"]);
         },
 
         howManyBoosts: function (results) {

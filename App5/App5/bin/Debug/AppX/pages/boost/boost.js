@@ -467,7 +467,7 @@
 
        //milo: onclick from boost.html takes what was clicked and passes it to variable.
         clicked1: function (name, img, price, vend, label) {
-            console.log('This is the price of boost one: ' + price);
+
             if (age_data.model.the_boost_sel.length < 8) {
                 //console.log(thename1, thename2, thename3, thename4, thename5, thename6, thename7, thename8, thename9);
                 //var fix1 = age_data.model.the_boost_sel.length;
