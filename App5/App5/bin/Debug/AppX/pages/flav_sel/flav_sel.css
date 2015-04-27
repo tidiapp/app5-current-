@@ -69,10 +69,10 @@
 }
 
 #info_btn4 {
-    height: 70px;
-    margin-top: 155px;
+    height: 50px;
+    margin-top: 180px;
     position: absolute;
-    margin-left: 195px;
+    margin-left: 165px;
     font-size: 15px;
     /*box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);*/
     border: 0;
@@ -80,12 +80,12 @@
 
 #sel_btn4 {
     /*margin-left: 5px;*/
-    margin-top: 155px;
+    margin-top: 180px;
     position: absolute;
     background-color: #FF7C00;
-    height: 70px;
+    height: 50px;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 16px;
     /*margin-left: 20px;*/
     /*box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);*/
     border: 0;

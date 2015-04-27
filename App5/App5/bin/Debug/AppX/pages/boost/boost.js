@@ -465,6 +465,19 @@
 
         },
 
+        perServing: function (priceAll) {
+
+            //var priceAll = document.getElementById("choosen_price").textContent;
+            var perServ = (priceAll /= 15).toFixed(2);
+            //var perServ = parseFloat(priceAll / 15).toFixed(2);
+
+            //milo breaking app with the below uncommented
+            document.getElementById("per_serving").removeAttribute("hidden");
+            document.getElementById("per_serving").textContent = "$" + perServ + " per serving";
+            console.log("Milo price per ser " + perServ);
+        },
+
+
        //milo: onclick from boost.html takes what was clicked and passes it to variable.
         clicked1: function (name, img, price, vend, label) {
 
@@ -521,6 +534,7 @@
                                     //console.log("double " + thename1 +" "+ thename2 +" "+ thename3 +" "+ name)
                                     roamingSettings.values["Boost_total_num"] = age_data.model.the_boost_sel.length;
                                     //if statements should be placed here for the 1 boost condition
+
                                     if (age_data.model.the_boost_sel.length === 1) {
                                         thename1 = name;
                                         document.getElementById("the_number").textContent = age_data.model.the_boost_sel.length;

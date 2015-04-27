@@ -55,10 +55,10 @@
 }
 
 #info_btn6 {
-    height: 60px;
-    margin-top: 130px;
+    height: 50px;
+    margin-top: 150px;
     position: absolute;
-    margin-left: 182px;
+    margin-left: 177px;
     font-size: 15px;
     /*box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);*/
     border: 0;
@@ -68,10 +68,10 @@
     /*Use xx-large insted of pixels there is a bug with the button shadow causing a white pixel border*/
     font-size: large;
     margin-left: 20px;
-    margin-top: 130px;
+    margin-top: 150px;
     position: absolute;
     background-color: #FF7C00;
-    height: 60px;
+    height: 50px;
     text-transform: uppercase;
     /*box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);*/
     border: 0;

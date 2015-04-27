@@ -5,7 +5,7 @@
         //"use strict";
         var appData = Windows.Storage.ApplicationData.current;
         var roamingSettings = appData.roamingSettings;
-        roamingSettings.values["computerNumber"] = 1;
+        roamingSettings.values["computerNumber"] = 6;
         CNum = roamingSettings.values["computerNumber"];
 
         WinJS.Namespace.define("server", {
@@ -394,6 +394,16 @@
                     }).read().done(function (results) {
                         age_data.model.info_page5.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_label: results[0].Label, the_price: results[0].Price, bo_vend: results[0].VendID, id_sel: results[0].id })
                         roamingSettings.values["db_url"] = results[0].Info;
+
+
+
+                        //var priceAll = results[0].Price;
+                        //var perServ = parseFloat(priceAll /= 15).toFixed(2);
+                        ////console.log("Milo price per ser " + priceAll);
+                        //document.getElementById("per_serving").textContent = "$" + perServ + " per serving";
+
+                        boost_clicked.perServing(results[0].Price);
+
                     }, function (err) {
                         console.log(err);
                     })
@@ -439,6 +449,9 @@
                             }).read().done(function (results) {
                                 age_data.model.info_page5.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_label: results[0].Label, the_price: results[0].Price, bo_vend: results[0].VendID, id_sel: results[0].id })
                                 roamingSettings.values["db_url"] = results[0].Info;
+
+
+
                             }, function (err) {
                                 console.log(err);
                             })

@@ -80,10 +80,10 @@
 }
 
 #info_btn22 {
-    height: 60px;
-    margin-top: 128px;
+    height: 50px;
+    margin-top: 150px;
     position: absolute;
-    margin-left: 217px;
+    margin-left: 223px;
     font-size: 15px;
     /*box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);*/
     border: 0;
@@ -91,10 +91,10 @@
 
 #sel_btn22 {
     /*margin-left: 5px;*/
-    margin-top: 128px;
+    margin-top: 150px;
     position: absolute;
     background-color: #FF7C00;
-    height: 60px;
+    height: 50px;
     font-size: 20px;
     text-transform: uppercase;
     /*box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);*/

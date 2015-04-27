@@ -45,6 +45,8 @@
             </div>
 
             <div id="win_listview_host_boost_choosen" >
+
+
                 <div id="choosen_boost_info" class="choosen_boost_info_class" data-win-control="WinJS.Binding.Template">
                     <div class="the_choosen_boost">
                         <img id="choosen_bg_img" class="choosen_bg_img_class" data-win-bind="src: the_label" />
@@ -55,9 +57,11 @@
                         <div id="out_of_stock4" hidden=""></div>
                         <div id="choosen_price_div">
                             <span id="base_price_doller">$<span id="choosen_price" data-win-bind="textContent: the_price"></span></span>
-                            <span class="perdays">per 15 days</span>                        
-                        </div> 
-                        <h2 id="choosen_name" class="choosen_name_class" data-win-bind="textContent: the_name"></h2>                       
+                            <span id="perdays2">per 15 days</span>                     
+                        </div>
+                        
+                        <h2 id="choosen_name" class="choosen_name_class" data-win-bind="textContent: the_name"></h2>
+                                               
                         <p id="choosen_info" class="choosen_info_class" data-win-bind="textContent: the_info"></p>
                         <p id="bo_vend" hidden="" data-win-bind="textContent: bo_vend"></p>
                     </div>
@@ -67,6 +71,9 @@
                     itemTemplate: select ('.choosen_boost_info_class'),
                     selectionMode: 'none'
                 }"></div>
+
+                    <p id="per_serving" hidden=""></p>
+
 
                     <div id="boost_selected_submit_wrap">
                         <div id="scroll_boosts_picked">

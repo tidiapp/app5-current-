@@ -91,10 +91,10 @@ overError {
 }
 
 #info_btn3 {
-    height: 70px;
-    margin-top: 223px;
+    height: 50px;
+    margin-top: 250px;
     position: absolute;
-    margin-left: 180px;
+    margin-left: 160px;
     font-size: 15px;
     /*box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);*/
     border: 0;
@@ -104,10 +104,10 @@ overError {
     /*Use xx-large insted of pixels there is a bug with the button shadow causing a white pixel border*/
     font-size: large;
     margin-left: 20px;
-    margin-top: 223px;
+    margin-top: 250px;
     position: absolute;
     background-color: #FF7C00;
-    height: 70px;
+    height: 50px;
     text-transform: uppercase;
     /*box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);*/
     border: 0;
@@ -137,7 +137,7 @@ overError {
 #btn_right {
     margin-left: 430px;
     position: absolute;
-    margin-top: 160px;
+    margin-top: 188px;
     width: 350px;
     float: left;
 }
@@ -241,7 +241,7 @@ overError {
 }
 
 #del_btn10 {
-    height: 70px;
+    height: 50px;
     position: absolute;
     font-size: 15px;
     /*box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);*/
@@ -251,7 +251,7 @@ overError {
 
 #sel_btn10 {
     margin-left: 115px;
-    height: 70px;
+    height: 50px;
     position: absolute;
     font-size: 15px;
     /*box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);*/
@@ -385,11 +385,10 @@ button, input[type=button], input[type=submit], input[type=reset], input[type=fi
     float: left;
     margin-left: 60px;
 }
-
 #boost_selected_submit_wrap_outer {
     width: 1400px;
     height: 200px;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 #where_you_are4 {
@@ -402,11 +401,16 @@ button, input[type=button], input[type=submit], input[type=reset], input[type=fi
 }
 
 #choosen_price_div {
-    float: right;
+    font-size: 25px;
+    position: absolute;
+    margin-top: 245px;
+    margin-left: 535px;
+
+    /*float: right;
     margin-right: 20px;
     font-size: 30px;
     position: relative;
-    margin-top: 15px;
+    margin-top: 15px;*/
 }
 
 #choosen_price {
@@ -415,5 +419,17 @@ button, input[type=button], input[type=submit], input[type=reset], input[type=fi
 #boost_price_doller {
     position: absolute;
     margin-top: 15px;
+}
+#perdays2 {
+    /*position: absolute;
+    margin-top: 32px;*/
+    font-size: small;
+    margin-left: 35px;
+}
+#per_serving {
+    float: left;
+    position: absolute;
+    margin-left: 461px;
+    margin-top: 280px;
 }
 

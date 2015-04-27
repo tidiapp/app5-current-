@@ -221,7 +221,7 @@ h1, .win-type-xx-large {
     position: absolute;
     margin-left: 65px;
     margin-top: 2px;
-    font-size: 25px;
+    font-size: 15px;
     color: #fff;
     background-color: rgba(0,0,0,0.6);
     width: 37px;
@@ -230,7 +230,7 @@ h1, .win-type-xx-large {
 .sel_look_btn {
 /*Use xx-large insted of pixels there is a bug with the button shadow causing a white pixel border*/
     font-size: x-large;
-    height: 80px; 
+    height: 50px; 
     margin-left: 120px;
     text-transform: uppercase;
     /*box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);*/
@@ -275,12 +275,6 @@ h1, .win-type-xx-large {
 :not(.win-selectionstylefilled).win-listview .win-selectioncheckmarkbackground, :not(.win-selectionstylefilled).win-itemcontainer .win-selectioncheckmarkbackground {
     border-top-color: orange;
     border-right-color: orange;
-}
-.perdays {
-    /*position: absolute;
-    margin-top: 32px;*/
-    font-size: small;
-    margin-left: 10px;
 }
 #thewordsforcurrentprice {
     font-size: 25px;
