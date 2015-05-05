@@ -245,9 +245,9 @@ h1, .win-type-xx-large {
 }
 
 .id_sel {
-    margin-left: 10px;
+    margin-left: 30px;
     position: absolute;
-    color: #fff;
+    color: red;
     /*margin-top: -100px;*/
 }
 

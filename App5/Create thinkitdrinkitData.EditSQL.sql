@@ -1,13 +1,16 @@
-﻿USE [thinkitdrinkitData_db]
+﻿--http://www.w3schools.com/sql/sql_where.asp
+USE [thinkitdrinkitData_db]
 GO
 
 UPDATE thinkitdrinkitData.Boost
 Set 
-	--[Name] = 'VinOserae', 
-	[VendID] = '',
-	[Image] = '',
-	[Label] = '',
-	[Price] = '',
-	[InfoLite] = ''
+	[Name] = 'Clarinol*' 
+	--[VendID] = '',
+	--[Image] = '',
+	--[Label] = '',
+	--[Price] = '',
+	--[InfoLite] = ''
 
-WHERE Name = 'Vinoserae'
+WHERE Name = 'Weight management*' 
+		--AND 
+	  --id = 12775

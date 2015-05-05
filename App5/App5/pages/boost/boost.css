@@ -103,7 +103,7 @@ overError {
 #sel_btn3 {
     /*Use xx-large insted of pixels there is a bug with the button shadow causing a white pixel border*/
     font-size: large;
-    margin-left: 20px;
+    margin-left: 0px;
     margin-top: 250px;
     position: absolute;
     background-color: #FF7C00;
@@ -403,7 +403,7 @@ button, input[type=button], input[type=submit], input[type=reset], input[type=fi
 #choosen_price_div {
     font-size: 25px;
     position: absolute;
-    margin-top: 245px;
+    margin-top: 250px;
     margin-left: 535px;
 
     /*float: right;
@@ -430,6 +430,6 @@ button, input[type=button], input[type=submit], input[type=reset], input[type=fi
     float: left;
     position: absolute;
     margin-left: 461px;
-    margin-top: 280px;
+    margin-top: 284px;
 }
 
