@@ -466,12 +466,9 @@
         },
 
         perServing: function (priceAll) {
-
-            //var priceAll = document.getElementById("choosen_price").textContent;
+            //milo do not put per_serving into template winjs listview has issues
             var perServ = (priceAll /= 15).toFixed(2);
-            //var perServ = parseFloat(priceAll / 15).toFixed(2);
 
-            //milo breaking app with the below uncommented
             document.getElementById("per_serving").removeAttribute("hidden");
             document.getElementById("per_serving").textContent = "$" + perServ + " per serving";
             console.log("Milo price per ser " + perServ);
