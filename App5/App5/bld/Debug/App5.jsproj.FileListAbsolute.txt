@@ -44,7 +44,6 @@ C:\Users\milo\Desktop\app5-current-\App5\App5\bld\Debug\pri.resfiles.intermediat
 C:\Users\milo\Desktop\app5-current-\App5\App5\bld\Debug\qualifiers.txt
 C:\Users\milo\Desktop\app5-current-\App5\App5\bld\Debug\qualifiers.txt.intermediate
 C:\Users\milo\Desktop\app5-current-\App5\App5\bld\Debug\MultipleQualifiersPerDimensionFound.txt
-C:\Users\milo\Desktop\app5-current-\App5\App5\bld\Debug\MobileServices.pri.xml
 C:\Users\milo\Desktop\app5-current-\App5\App5\bld\Debug\ProjectArchitectures.txt
 C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\bin\Debug\resources.pri
 C:\Users\ANTHONY\Desktop\app5-current-\App5\App5\bin\Debug\AppxManifest.xml

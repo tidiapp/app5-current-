@@ -1,0 +1,17 @@
+{
+  "name": "thinkitdrinkitData",
+  "version": "1.0.0",
+  "description": "thinkitdrinkitData - hosted on Windows Azure Mobile Services",
+  "main": "server.js",
+  "engines": {
+    "node": ">= 0.8.19"
+  },
+  "dependencies": {
+    "node-uuid": "^1.4.3"
+  },
+  "devDependencies": {},
+  "scripts": {},
+  "author": "unknown",
+  "licenses": [],
+  "keywords": []
+}
