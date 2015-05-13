@@ -71,6 +71,15 @@
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\MYRIADPRO-BOLD.OTF" />
+    <Content Include="fonts\MYRIADPRO-BOLDCOND.OTF" />
+    <Content Include="fonts\MYRIADPRO-BOLDCONDIT.OTF" />
+    <Content Include="fonts\MYRIADPRO-BOLDIT.OTF" />
+    <Content Include="fonts\MYRIADPRO-COND.OTF" />
+    <Content Include="fonts\MYRIADPRO-CONDIT.OTF" />
+    <Content Include="fonts\MYRIADPRO-REGULAR.OTF" />
+    <Content Include="fonts\MYRIADPRO-SEMIBOLD.OTF" />
+    <Content Include="fonts\MYRIADPRO-SEMIBOLDIT.OTF" />
     <Content Include="images\another_logo.jpg" />
     <Content Include="images\another_logo.scale-100.jpg" />
     <Content Include="images\another_logo.scale-180.jpg" />
@@ -100,6 +109,7 @@
     <Content Include="js\dataStore.js" />
     <Content Include="js\default.js" />
     <Content Include="js\finalpagelogic.js" />
+    <Content Include="js\myAzure.js" />
     <Content Include="js\tool.js" />
     <Content Include="js\gatherInfo.js" />
     <Content Include="js\jquery.js" />
@@ -125,11 +135,6 @@
     <Content Include="js\lib\jQuery-slimScroll-1.3.0\jquery.slimscroll.min.js" />
     <Content Include="js\lib\jQuery-slimScroll-1.3.0\README.md" />
     <Content Include="js\lib\jQuery-slimScroll-1.3.0\slimScroll.jquery.json" />
-    <Content Include="js\MobileServices.intellisense.js" />
-    <Content Include="js\MobileServices.js" />
-    <Content Include="js\MobileServices.min.js" />
-    <Content Include="js\MobileServices.pri" />
-    <Content Include="js\myAzure.js" />
     <Content Include="js\navigator.js" />
     <Content Include="default.html" />
     <Content Include="js\print.js" />
@@ -137,13 +142,8 @@
     <Content Include="js\showPopupUI.js" />
     <Content Include="js\url_functions.js" />
     <Content Include="js\vendCalls.js" />
-    <Content Include="packages.config" />
-    <Content Include="pages\base\base - Copy (2).js" />
-    <Content Include="pages\base\base - Copy (3).js" />
-    <Content Include="pages\base\base - Copy.html" />
+    <Content Include="mobile_services\connect.js" />
     <Content Include="pages\base\base.js" />
-    <Content Include="pages\base\base - Copy.js" />
-    <Content Include="pages\base\base copy 3.js" />
     <Content Include="pages\boost\boost.css" />
     <Content Include="pages\boost\boost.html" />
     <Content Include="pages\boost\boost.js" />
@@ -199,9 +199,6 @@
     <Content Include="pages\welcome\welcome.css" />
     <Content Include="pages\welcome\welcome.html" />
     <Content Include="pages\welcome\welcome.js" />
-    <Content Include="services\mobile services\thinkitdrinkitData\service.js">
-      <ConnectedServiceReference>thinkitdrinkitData</ConnectedServiceReference>
-    </Content>
     <None Include="App5_TemporaryKey.pfx.backup" />
   </ItemGroup>
   <ItemGroup>
