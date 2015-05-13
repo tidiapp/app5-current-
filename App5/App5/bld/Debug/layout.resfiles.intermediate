@@ -7,15 +7,6 @@ fonts\glyphicons-halflings-regular.svg
 fonts\glyphicons-halflings-regular.ttf
 fonts\glyphicons-halflings-regular.woff
 fonts\glyphicons-halflings-regular.woff2
-fonts\MYRIADPRO-BOLD.OTF
-fonts\MYRIADPRO-BOLDCOND.OTF
-fonts\MYRIADPRO-BOLDCONDIT.OTF
-fonts\MYRIADPRO-BOLDIT.OTF
-fonts\MYRIADPRO-COND.OTF
-fonts\MYRIADPRO-CONDIT.OTF
-fonts\MYRIADPRO-REGULAR.OTF
-fonts\MYRIADPRO-SEMIBOLD.OTF
-fonts\MYRIADPRO-SEMIBOLDIT.OTF
 images\another_logo.jpg
 images\another_logo.scale-100.jpg
 images\another_logo.scale-180.jpg
@@ -69,7 +60,11 @@ js\lib\jQuery-slimScroll-1.3.0\jquery.slimscroll.js
 js\lib\jQuery-slimScroll-1.3.0\jquery.slimscroll.min.js
 js\lib\jQuery-slimScroll-1.3.0\README.md
 js\lib\jQuery-slimScroll-1.3.0\slimScroll.jquery.json
-js\myAzureNew.js
+js\MobileServices.intellisense.js
+js\MobileServices.js
+js\MobileServices.min.js
+js\MobileServices.pri
+js\myAzure.js
 js\navigator.js
 js\print.js
 js\removeInfo.js
@@ -77,7 +72,7 @@ js\showPopupUI.js
 js\tool.js
 js\url_functions.js
 js\vendCalls.js
-mobile_services\connect.js
+packages.config
 pages\all_products\all_products.css
 pages\all_products\all_products.html
 pages\all_products\all_products.js
@@ -139,3 +134,4 @@ pages\thankyou\thankyou.js
 pages\welcome\welcome.css
 pages\welcome\welcome.html
 pages\welcome\welcome.js
+services\mobile services\thinkitdrinkitData\service.js
