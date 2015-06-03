@@ -247,12 +247,12 @@ h1, .win-type-xx-large {
 .id_sel {
     margin-left: 30px;
     position: absolute;
-    color: red;
-    /*margin-top: -100px;*/
+    color: black;
+    font-size: 30px;
 }
 
 .underline_class {
-    margin-top: 135px;
+    margin-top: 163px;
     text-align: center;
     /*margin-left: 6px;*/
 }
@@ -261,9 +261,9 @@ h1, .win-type-xx-large {
         color: #fff;
         font-size: 20px;
         text-decoration: none;
-        border-bottom-width: 2px;
+        /*border-bottom-width: 2px;
         border-bottom-style: solid;
-        padding-bottom: 2px;
+        padding-bottom: 2px;*/
     }
     .underline_class a:active {
         color: #fff;

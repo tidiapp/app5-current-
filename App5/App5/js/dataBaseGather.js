@@ -32,13 +32,10 @@
                         console.log("Error: " + err);
                     });
 
-
                 }, function (err) {
                     console.log("Error: " + err);
                 });
 
-
-         
             },
             home: function (the_sel_age) {
                 remove.pop_list(age_data.model.age);
@@ -70,7 +67,7 @@
                 } else if (the_sel_age === "Nutrigenetic Test") {
                     var query = Age.where({
                         AccessNG: true
-                    }).orderBy("Name").read().done(function (results) {
+                    }).orderBy("Order").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.age.push({ age: results[i].Name, img: results[i].Image, info_price: results[i].Price })
                         }
@@ -185,7 +182,7 @@
                 } else if (id_sel == 27 || id_sel == 28) {
                     var query = Age.where({
                         AgeDBhome_id: id_sel
-                    }).orderBy("Name").read().done(function (results) {
+                    }).orderBy("Order").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[i].Price, id_sel: results[i].id })
                         }
@@ -195,7 +192,7 @@
                 } else if (cat_selected === "Beauty") {
                     var query = Age.where({
                         Access: 5
-                    }).orderBy("Name").read().done(function (results) {
+                    }).orderBy("Order").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[i].Price, id_sel: results[i].id })
                         }
@@ -215,7 +212,7 @@
                 } else if (cat_selected === "Weight Management") {
                     var query = Age.where({
                         Access: 2
-                    }).orderBy("Name").read().done(function (results) {
+                    }).orderBy("Order").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[i].Price, id_sel: results[i].id })
                         }
@@ -225,7 +222,7 @@
                 } else if (cat_selected === "Lifestyle Diets") {
                     var query = Age.where({
                         Access: 3
-                    }).orderBy("Name").read().done(function (results) {
+                    }).orderBy("Order").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[i].Price, id_sel: results[i].id })
                         }
@@ -235,15 +232,13 @@
                 } else if (cat_selected === "Wellness") {
                     var query = Age.where({
                         Access: 4
-                    }).orderBy("Name").read().done(function (results) {
+                    }).orderBy("Order").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[i].Price, id_sel: results[i].id })
 
                             // IF id is grabbed here it will get all ids as it loops not a solution ... roamingSettings.values["Id_sel_func"]
                             //AND this for the page load so my issue is when I select the base thats the id I need and thats where the bug is. 
                         }
-
-
                     }, function (err) {
                         console.log(err);
                     });
@@ -354,7 +349,7 @@
                         var query = Age.where({
                             FuncDBsport_id: id_sport,
                             BaseDBbase_id: id_base
-                        }).orderBy("Name").read().done(function (results) {
+                        }).orderBy("Order").read().done(function (results) {
                             for (var i = 0; i < results.length; i++) {
                                 age_data.model.boost.push({ boost_name: results[i].Name, boost_pic: results[i].Image, id_sel: results[i].id })
                             }

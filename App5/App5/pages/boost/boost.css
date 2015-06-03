@@ -30,6 +30,7 @@
     height: 170px;
     position: absolute;
     z-index: -1;
+    border-radius: 15px;
 }
 
 #boost_name_div {
@@ -38,7 +39,7 @@
 }
 
 #underline_boost {
-    margin-top: 125px;
+    margin-top: 131px;
 }
 
 #boost_name {
@@ -49,6 +50,7 @@
     font-size: 18px;
     /*padding-top: 5px;*/
     text-align: center;
+    line-height: 15px;
 }
 
 #flav2_pic {

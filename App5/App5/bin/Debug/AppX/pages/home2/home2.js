@@ -20,7 +20,8 @@
             if (roamingSettings.values["not_cont"]) {
                 document.getElementById("youcurrentprice22").textContent = roamingSettings.values["the_complete_total"];
                 document.getElementById("youcurrentprice22").removeAttribute('hidden');
-                document.getElementById("thewordsforcurrentprice22").removeAttribute("hidden");
+                //milo: this was used for shopping cart total
+                //document.getElementById("thewordsforcurrentprice22").removeAttribute("hidden");
             }
 
             //roamingSettings.values["I_ordered"] = "no";

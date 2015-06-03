@@ -19,7 +19,7 @@
 }
 
 .underline_div {
-    margin-top: 130px;
+    margin-top: 140px;
     text-align: center;
     margin-left: 6px;
 }    
@@ -40,9 +40,9 @@
     color: #fff;
     font-size: 20px;
     text-decoration: none;
-    border-bottom-width: 2px;
+    /*border-bottom-width: 2px;
     border-bottom-style: solid;
-    padding-bottom: 2px;
+    padding-bottom: 2px;*/
 }
 
 .underline_div a:active {
@@ -67,14 +67,24 @@
 }
 
 #intro_text {
-    font-size: 20px;
-    margin-left: 80px;
+    /*font-size: 20px;
+    margin-left: 80px;*/
 }
 
 #intro_text_section {
     /*margin-left: -40px;*/
-    margin-right: 170px;
+    margin-left: 260px;
     float: left;
     /*margin-top: 30px;*/
 }
 
+#intro_text_section h2 {
+    margin-top: 0px;
+}
+
+#intro_text_section ul, ol {
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}

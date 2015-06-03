@@ -34,6 +34,7 @@
                 document.getElementById("home2_p").textContent = roamingSettings.values["Home2_name"];
                 document.getElementById("home2_pic").src = roamingSettings.values["Home2_pic"];
                 document.getElementById("where_you_are").textContent = "You have choosen " + roamingSettings.values["Home2_name"] + "." + " You have 3 steps left.";
+                document.getElementById("hide_this").setAttribute("hidden", true);
             }
 
             //milo: footer history & H1
@@ -41,6 +42,7 @@
                 document.getElementById("choosen_age").textContent = "Physical and daily activity can improve your health, energy, and mood.";
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img5"];
                 document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " catagory." + " You have 3 steps left.";
+                document.getElementById("hide_this").setAttribute("hidden", true);
             }
 
             //milo: footer history & H1

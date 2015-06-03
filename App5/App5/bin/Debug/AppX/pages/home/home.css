@@ -63,7 +63,7 @@
     width: 200px;
     height: auto;
     background-color: #fff;
-    border: 2px solid #c8060c;
+    border: 0;
 }
 
 #age_info_template {
@@ -102,7 +102,7 @@
 }
 
 #info_text {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 #sel_age_pic {
@@ -185,7 +185,7 @@
 
 #nutrigenetics_price_div {
     float: right;
-    margin-right: 70px;
+    margin-right: 75px;
     height: 280px;
 }
 

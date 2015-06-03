@@ -71,7 +71,7 @@
     width: 200px;
     height: auto;
     background-color: #fff;
-    border: 2px solid #c8060c;
+    border: 0;
 }
 
 #age_info_template {
