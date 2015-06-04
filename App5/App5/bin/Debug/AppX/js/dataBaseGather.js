@@ -32,13 +32,10 @@
                         console.log("Error: " + err);
                     });
 
-
                 }, function (err) {
                     console.log("Error: " + err);
                 });
 
-
-         
             },
             home: function (the_sel_age) {
                 remove.pop_list(age_data.model.age);

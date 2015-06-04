@@ -88,3 +88,24 @@
     margin-bottom: 10px;
     font-size: 16px;
 }
+
+
+
+
+@media (min-width: 1000px) {
+
+        #launch_sel {
+            margin-left: 130px;
+            width: 1135px;
+            margin-top: -40px;
+        }
+
+
+        #explain {
+            font-size: 45px;
+            margin-left: 280px;
+            margin-top: 15px;
+        }
+
+
+}
