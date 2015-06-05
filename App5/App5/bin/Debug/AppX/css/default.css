@@ -56,7 +56,7 @@
 
     #main_header {
         width: auto;
-        height: 110px;
+        height: 90px;
         background-color: #F89B1E;
         padding-top: 10px;
         /*margin-top: -30px;*/
@@ -71,22 +71,22 @@
 
     footer {
         width: auto;
-        height: 110px;
+        height: 90px;
         background-color: #F89B1E;
-        margin-top: 680px;
+        margin-top: 700px;
         /*margin-top: 532px;*/
         padding-top: 10px;
     }
 
     #company_name {
-        margin-top: 15px;
+        margin-top: 5px;
         margin-left: 35px;
         font-size: 60px;
         color: rgb(255, 255, 255);
     }
 
     #company_name1 {
-        margin-top: 15px;
+        margin-top: 5px;
         margin-left: 35px;
         font-size: 60px;
         color: rgb(255, 255, 255);
@@ -114,7 +114,7 @@
     #appBar {
         text-align: right;
         font-size: 0px;
-        min-height: 110px;
+        min-height: 90px;
         background-color: #F89B1E;
         color: rgb(255, 255, 255);
         /*milo the padding bellow is there to fix a glitch with be inline with the non appBar header*/
@@ -316,13 +316,24 @@
         }
 
         #appBar {
-            height: 50px;
+            height: 70px;
             top: -50px;
+        }
+
+        button.win-command {
+            background: none;
+            background-clip: border-box;
+            padding-top: 5px;
+            margin: 0;
+            text-align: center;
+            font-size: x-large;
+            line-height: 16px;
         }
 
         #contenthost {
             height: 100%;
             width: 100%;
+            margin-top: 30px;
         }
 
         .fragment {
@@ -398,7 +409,7 @@
         }
 
         #company_name {
-            margin-top: 0px;
+            margin-top: 8px;
             margin-left: 10px;
             font-size: 50px;
             color: rgb(255, 255, 255);
@@ -448,7 +459,7 @@
             height: 50px;
             float: right;
             background-image: url(../../images/logo_footer.png);
-            margin: 0px;
+            margin-top: 10px;
             /*margin-top: 20px;*/
             /*background: no-repeat;*/
         }

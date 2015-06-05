@@ -92,7 +92,7 @@
 
 
 
-@media (min-width: 1000px) {
+@media (min-width: 600px ) and (max-device-width: 1370px){
 
         #launch_sel {
             margin-left: 130px;
