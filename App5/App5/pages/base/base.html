@@ -44,15 +44,17 @@
                 <div id="bases_sel" class="bases_sel_class" data-win-control="WinJS.Binding.Template">
                     <div class="the_sel_base_scroll">
                         <div id="the_sel_bases">
-                            <div hidden="" id="base_price_div">
-                                <span id="base_price_doller">$<span id="base_price" data-win-bind="textContent: base_price"></span></span>
-                                <span id="perdays">per 15 days</span>
-                            </div>
-
                             <img id="choosen_base_carry" hidden="" data-win-bind="src: the_pic" />
                             <img class="sel_base_pic_class" id="sel_base_pic" data-win-bind="src: the_img" />
-                            <button id="info_btn2" class="sel_look_btn btn btn-warning" name="sel_btn" onclick="base_clicked.more_info(document.getElementById('sel_base_name').textContent)" type="submit">Learn More</button>
-                            <button id="sel_btn2" class="sel_look_btn btn btn-warning" onclick="base_clicked.next_page_flavor(document.getElementById('sel_base_pic').src)" name="sel_btn2" type="submit">Choose This Base</button>
+                            <div id="white_box">
+                                <button id="info_btn2" class="sel_look_btn btn btn-warning" name="sel_btn" onclick="base_clicked.more_info(document.getElementById('sel_base_name').textContent)" type="submit">Learn More</button>
+                                <button id="sel_btn2" class="sel_look_btn btn btn-warning" onclick="base_clicked.next_page_flavor(document.getElementById('sel_base_pic').src)" name="sel_btn2" type="submit">Choose This Base</button>
+                                <div hidden="" id="base_price_div">
+                                    <span id="base_price_doller">$<span id="base_price" data-win-bind="textContent: base_price"></span></span>
+                                    <span id="perdays">per 15 days</span>
+                                    <p id="per_serving_b" data-win-bind="textContent: per_serv_b"></p>
+                                </div>
+                            </div>
                             <div id="out_of_stock" hidden=""></div>
                             <div id="out_of_stock2" hidden=""></div>
                             <h2 id="sel_base_name" class="sel_base_name_class" data-win-bind="textContent: the_name"></h2>

@@ -20,7 +20,7 @@
     <AppXManifest Include="C:\Users\milo\Desktop\app5-current-\App5\App5\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-06-05T14:22:00.322</Modified>
+      <Modified>2015-06-09T14:39:42.765</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -30,11 +30,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\css\bootstrap.css">
       <PackagePath>css\bootstrap.css</PackagePath>
-      <Modified>2015-02-11T15:00:54.033</Modified>
+      <Modified>2015-06-08T15:43:05.262</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\css\default.css">
       <PackagePath>css\default.css</PackagePath>
-      <Modified>2015-06-05T19:49:50.314</Modified>
+      <Modified>2015-06-09T20:25:59.786</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\libs\prettify\prettify.css">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\libs\prettify\prettify.css</PackagePath>
@@ -46,11 +46,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\boost\boost.css">
       <PackagePath>pages\boost\boost.css</PackagePath>
-      <Modified>2015-06-05T19:52:41.074</Modified>
+      <Modified>2015-06-09T19:42:22.687</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\func\func.css">
       <PackagePath>pages\func\func.css</PackagePath>
-      <Modified>2015-06-05T19:58:17.106</Modified>
+      <Modified>2015-06-09T16:36:36.304</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\home2\home2.css">
       <PackagePath>pages\home2\home2.css</PackagePath>
@@ -70,11 +70,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\base\base.css">
       <PackagePath>pages\base\base.css</PackagePath>
-      <Modified>2015-06-05T19:43:39.130</Modified>
+      <Modified>2015-06-09T16:38:44.329</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\final\final.css">
       <PackagePath>pages\final\final.css</PackagePath>
-      <Modified>2015-04-27T18:49:58.871</Modified>
+      <Modified>2015-06-09T20:58:33.615</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\final\print.css">
       <PackagePath>pages\final\print.css</PackagePath>
@@ -82,11 +82,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\flav_sel\flav_sel.css">
       <PackagePath>pages\flav_sel\flav_sel.css</PackagePath>
-      <Modified>2015-06-05T19:55:07.859</Modified>
+      <Modified>2015-06-09T20:05:02.337</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\home\home.css">
       <PackagePath>pages\home\home.css</PackagePath>
-      <Modified>2015-06-03T20:09:45.932</Modified>
+      <Modified>2015-06-09T16:35:56.482</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\info_home\info_home.css">
       <PackagePath>pages\info_home\info_home.css</PackagePath>
@@ -94,11 +94,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\item_info\item_info.css">
       <PackagePath>pages\item_info\item_info.css</PackagePath>
-      <Modified>2015-02-17T18:11:45.912</Modified>
+      <Modified>2015-06-09T16:45:10.021</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\launch_page\launch_page.css">
       <PackagePath>pages\launch_page\launch_page.css</PackagePath>
-      <Modified>2015-06-05T19:20:12.456</Modified>
+      <Modified>2015-06-09T17:04:44.111</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\login\login.css">
       <PackagePath>pages\login\login.css</PackagePath>
@@ -280,7 +280,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\js\dataBaseGather.js">
       <PackagePath>js\dataBaseGather.js</PackagePath>
-      <Modified>2015-06-03T21:01:58.545</Modified>
+      <Modified>2015-06-09T14:56:18.197</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\js\dataStore.js">
       <PackagePath>js\dataStore.js</PackagePath>
@@ -356,7 +356,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\boost\boost.js">
       <PackagePath>pages\boost\boost.js</PackagePath>
-      <Modified>2015-05-06T15:09:10.527</Modified>
+      <Modified>2015-06-08T17:23:10.840</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\final\final - Copy.js">
       <PackagePath>pages\final\final - Copy.js</PackagePath>
@@ -492,7 +492,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\boost\boost.html">
       <PackagePath>pages\boost\boost.html</PackagePath>
-      <Modified>2015-04-27T19:43:29.571</Modified>
+      <Modified>2015-06-09T19:31:04.226</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\final\final - Copy %282%29.html">
       <PackagePath>pages\final\final - Copy %282%29.html</PackagePath>
@@ -524,7 +524,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\base\base.html">
       <PackagePath>pages\base\base.html</PackagePath>
-      <Modified>2015-06-04T16:11:56.770</Modified>
+      <Modified>2015-06-09T15:01:09.460</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\final\final.html">
       <PackagePath>pages\final\final.html</PackagePath>
@@ -576,7 +576,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-06-05T14:21:58.520</Modified>
+      <Modified>2015-06-09T14:39:41.991</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

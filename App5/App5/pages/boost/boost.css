@@ -96,7 +96,7 @@ overError {
     height: 50px;
     margin-top: 250px;
     position: absolute;
-    margin-left: 160px;
+    margin-left: 260px;
     font-size: 15px;
     /*box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);*/
     border: 0;
@@ -105,7 +105,7 @@ overError {
 #sel_btn3 {
     /*Use xx-large insted of pixels there is a bug with the button shadow causing a white pixel border*/
     font-size: large;
-    margin-left: 0px;
+    margin-left: 100px;
     margin-top: 250px;
     position: absolute;
     background-color: #FF7C00;
@@ -137,7 +137,7 @@ overError {
 }
 
 #btn_right {
-    margin-left: 430px;
+    margin-left: 410px;
     position: absolute;
     margin-top: 188px;
     width: 350px;
@@ -240,6 +240,7 @@ overError {
 
 #choosen_name {
     font-weight: bold;
+    margin-top: 10px;
 }
 
 #del_btn10 {
@@ -405,9 +406,8 @@ button, input[type=button], input[type=submit], input[type=reset], input[type=fi
 #choosen_price_div {
     font-size: 25px;
     position: absolute;
-    margin-top: 250px;
-    margin-left: 535px;
-
+    margin-top: 253px;
+    margin-left: 265px;
     /*float: right;
     margin-right: 20px;
     font-size: 30px;
@@ -426,14 +426,15 @@ button, input[type=button], input[type=submit], input[type=reset], input[type=fi
     /*position: absolute;
     margin-top: 32px;*/
     font-size: small;
-    margin-left: 35px;
+    margin-left: 43px;
 }
 #per_serving {
     float: left;
     position: absolute;
-    margin-left: 461px;
-    margin-top: 284px;
+    font-size: small;
+    line-height: 0.5;
 }
+
 
 
 
@@ -442,6 +443,63 @@ button, input[type=button], input[type=submit], input[type=reset], input[type=fi
 @media (min-width: 600px ) and (max-device-width: 1370px) {
    
      #contenthost {
-        margin-top: 30px;
+        margin-top: 40px;
     }
+
+    .boost section[role=main] {
+        margin-top: -30px;
+    }
+
+    #win_listview_host_boost_row .win-listview {
+        height: 235px;
+        /*border: 2px solid pink;*/
+        width: 1360px;
+    /*dont use margins here use .win-surface*/
+    }
+    #boost_list_placement .win-viewport {
+        height: 230px;
+        /*border: 2px solid green;*/
+        width: 1360px;
+    }
+
+    #win_listview_host_boost_choosen .win-listview {
+        height: 290px;
+    }
+
+    .the_choosen_boost {
+        height: 290px;
+    }
+
+    #choosen_price_div {
+        margin-top: 230px;
+    }
+
+    #info_btn3 {
+        margin-top: 230px;
+    }
+
+    #sel_btn3 {
+        margin-top: 230px;
+    }
+
+    #where_you_are4 {
+        margin-top: 10px;
+        margin-bottom: 0px;
+        padding: 0;
+    }
+
+    #scroll_boosts_picked {
+        margin-top: 50px;
+    }
+
+    #btn_right {
+        margin-left: 400px;
+        margin-top: 168px;
+        width: 250px;
+    }
+
+    #boost_selected_submit_wrap {
+        margin-left: 10px;
+    }
+
 }

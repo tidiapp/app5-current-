@@ -303,3 +303,30 @@ font-size: 30px;}
 #nameWrap {
     margin-bottom: 0px;
 }
+
+
+
+
+@media (min-width: 600px ) and (max-device-width: 1370px) {
+
+    #current_order {
+        margin-top: 0;
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+
+    #total_wrap {
+        margin-top: 100px;
+    }
+
+    #final_placement, #final_placement2, #final_placement3, #final_placement4, #final_placement5, #final_placement6, #final_placement7, #final_placement8 {
+        margin-top: -30px;
+    }
+
+    #final_wrap h3 {
+        margin: 0;
+        font-size: 20px;
+    }
+
+
+}

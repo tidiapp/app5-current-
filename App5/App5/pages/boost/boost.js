@@ -465,14 +465,14 @@
 
         },
 
-        perServing: function (priceAll) {
-            //milo do not put per_serving into template winjs listview has issues
-            var perServ = (priceAll /= 15).toFixed(2);
+        //perServing: function (priceAll) {
+        //    //milo do not put per_serving into template winjs listview has issues
+        //    var perServ = (priceAll /= 15).toFixed(2);
 
-            document.getElementById("per_serving").removeAttribute("hidden");
-            document.getElementById("per_serving").textContent = "$" + perServ + " per serving";
-            console.log("Milo price per ser " + perServ);
-        },
+        //    document.getElementById("per_serving").removeAttribute("hidden");
+        //    document.getElementById("per_serving").textContent = "$" + perServ + " per serving";
+        //    console.log("Milo price per ser " + perServ);
+        //},
 
 
        //milo: onclick from boost.html takes what was clicked and passes it to variable.

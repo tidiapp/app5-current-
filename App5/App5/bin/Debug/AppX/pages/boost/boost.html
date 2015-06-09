@@ -51,15 +51,18 @@
                     <div class="the_choosen_boost">
                         <img id="choosen_bg_img" class="choosen_bg_img_class" data-win-bind="src: the_label" />
                         <img id="choosen_img" hidden="" class="choosen_img_class" data-win-bind="src: the_pic" />
+
+                        <div id="choosen_price_div">
+                            <span id="base_price_doller">$<span id="choosen_price" data-win-bind="textContent: the_price"></span></span>
+                            <span id="perdays2">per 15 days</span>
+                            <p id="per_serving" data-win-bind="textContent: per_serv"></p>
+                        </div>
+
+
                         <button id="info_btn3" class="sel_look_btn btn btn-warning" name="sel_btn" onclick="boost_clicked.more_info(document.getElementById('choosen_name').textContent)" type="submit">More Info</button>
                         <button id="sel_btn3" class="sel_look_btn btn btn-warning" onclick="boost_clicked.clicked1(document.getElementById('choosen_name').textContent, document.getElementById('choosen_img').src, document.getElementById('choosen_price').textContent, document.getElementById('bo_vend').textContent, document.getElementById('choosen_bg_img').src)" name="sel_btn2" type="submit">Choose This Boost</button>
                         <div id="out_of_stock3" hidden=""></div>
                         <div id="out_of_stock4" hidden=""></div>
-                        <div id="choosen_price_div">
-                            <span id="base_price_doller">$<span id="choosen_price" data-win-bind="textContent: the_price"></span></span>
-                            <span id="perdays2">per 15 days</span>                     
-                        </div>
-                        
                         <h2 id="choosen_name" class="choosen_name_class" data-win-bind="textContent: the_name"></h2>
                                                
                         <p id="choosen_info" class="choosen_info_class" data-win-bind="textContent: the_info"></p>
@@ -72,8 +75,8 @@
                     selectionMode: 'none'
                 }"></div>
 
-                    <p id="per_serving" hidden=""></p>
-
+                    <!--milo: keep outside of winjs.ui.listview or it will not work  -->
+                    <!--<p id="per_serving" hidden=""></p>-->
 
                     <div id="boost_selected_submit_wrap">
                         <div id="scroll_boosts_picked">

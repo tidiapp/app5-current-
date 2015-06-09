@@ -9,6 +9,6 @@
     <AppxBuildConfigurationSelection>x64</AppxBuildConfigurationSelection>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DebuggerFlavor>AppHostLocalDebugger</DebuggerFlavor>
+    <DebuggerFlavor>AppHostSimulatorDebugger</DebuggerFlavor>
   </PropertyGroup>
 </Project>

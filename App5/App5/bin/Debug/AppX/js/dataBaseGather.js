@@ -263,7 +263,12 @@
                     var query = Age.where({
                         id: id
                     }).read().done(function (results) {
-                        age_data.model.info_page2.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_img: results[0].Label, base_price: results[0].Price, b_vend: results[0].VendID, id_sel: results[0].id })
+
+                        var price_result = results[0].Price;
+                        var result_dev = (price_result /= 15).toFixed(2);
+                        var perServ = "$" + result_dev + " per serving";
+
+                        age_data.model.info_page2.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_img: results[0].Label, base_price: results[0].Price, b_vend: results[0].VendID, id_sel: results[0].id, per_serv_b: perServ })
                         //milo these are here because there is a timing issue 
                         roamingSettings.values["db_url"] = results[0].Info;
                         roamingSettings.values["Id_sel_base"] = results[0].id;
@@ -277,7 +282,12 @@
                     var query = Age.where({
                         Name: name
                     }).read().done(function (results) {
-                        age_data.model.info_page2.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_img: results[0].Label, base_price: results[0].Price, the_pic: results[0].Image, b_vend: results[0].VendID, id_sel: results[0].id })
+
+                        var price_result = results[0].Price;
+                        var result_dev = (price_result /= 15).toFixed(2);
+                        var perServ = "$" + result_dev + " per serving";
+
+                        age_data.model.info_page2.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_img: results[0].Label, base_price: results[0].Price, the_pic: results[0].Image, b_vend: results[0].VendID, id_sel: results[0].id, per_serv_b: perServ })
                         roamingSettings.values["db_url"] = results[0].Info;
                         roamingSettings.values["Id_sel_base"] = results[0].id;
                         roamingSettings.values["Base_name"] = results[0].Name;
@@ -387,10 +397,15 @@
                     var query = Age.where({
                         id: id
                     }).read().done(function (results) {
-                        age_data.model.info_page5.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_label: results[0].Label, the_price: results[0].Price, bo_vend: results[0].VendID, id_sel: results[0].id })
+
+                        var price_result = results[0].Price;
+                        var result_dev = (price_result /= 15).toFixed(2);
+                        var perServ = "$" + result_dev + " per serving";
+
+                        age_data.model.info_page5.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_label: results[0].Label, the_price: results[0].Price, bo_vend: results[0].VendID, id_sel: results[0].id, per_serv: perServ })
                         roamingSettings.values["db_url"] = results[0].Info;
 
-                        boost_clicked.perServing(results[0].Price);
+                        //boost_clicked.perServing(results[0].Price);
 
                     }, function (err) {
                         console.log(err);
@@ -402,10 +417,15 @@
                             FuncDBfunc_id: id_func,
                             Name: name
                         }).read().done(function (results) {
-                            age_data.model.info_page5.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_label: results[0].Label, the_price: results[0].Price, bo_vend: results[0].VendID, id_sel: results[0].id })
+
+                            var price_result = results[0].Price;
+                            var result_dev = (price_result /= 15).toFixed(2);
+                            var perServ = "$" + result_dev + " per serving";
+
+                            age_data.model.info_page5.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_label: results[0].Label, the_price: results[0].Price, bo_vend: results[0].VendID, id_sel: results[0].id, per_serv: perServ })
                             roamingSettings.values["db_url"] = results[0].Info;
 
-                            boost_clicked.perServing(results[0].Price);
+                            //boost_clicked.perServing(results[0].Price);
 
                         }, function (err) {
                             console.log(err);
@@ -418,9 +438,14 @@
                                 BaseDBbase_id: id_base,
                                 Name: name
                             }).read().done(function (results) {
-                                age_data.model.info_page5.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_label: results[0].Label, the_price: results[0].Price, bo_vend: results[0].VendID, id_sel: results[0].id })
+
+                                var price_result = results[0].Price;
+                                var result_dev = (price_result /= 15).toFixed(2);
+                                var perServ = "$" + result_dev + " per serving";
+
+                                age_data.model.info_page5.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_label: results[0].Label, the_price: results[0].Price, bo_vend: results[0].VendID, id_sel: results[0].id, per_serv: perServ })
                                 roamingSettings.values["db_url"] = results[0].Info;
-                                boost_clicked.perServing(results[0].Price);
+                                //boost_clicked.perServing(results[0].Price);
 
                             }, function (err) {
                                 console.log(err);
@@ -430,9 +455,14 @@
                                 FuncDBfunc_id: id_func,
                                 Name: name
                             }).read().done(function (results) {
-                                age_data.model.info_page5.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_label: results[0].Label, the_price: results[0].Price, bo_vend: results[0].VendID, id_sel: results[0].id })
+
+                                var price_result = results[0].Price;
+                                var result_dev = (price_result /= 15).toFixed(2);
+                                var perServ = "$" + result_dev + " per serving";
+
+                                age_data.model.info_page5.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_label: results[0].Label, the_price: results[0].Price, bo_vend: results[0].VendID, id_sel: results[0].id, per_serv: perServ })
                                 roamingSettings.values["db_url"] = results[0].Info;
-                                boost_clicked.perServing(results[0].Price);
+                                //boost_clicked.perServing(results[0].Price);
 
                             }, function (err) {
                                 console.log(err);
@@ -442,10 +472,16 @@
                                 BaseDBbase_id: id_base,
                                 Name: name
                             }).read().done(function (results) {
-                                age_data.model.info_page5.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_label: results[0].Label, the_price: results[0].Price, bo_vend: results[0].VendID, id_sel: results[0].id })
+
+                                var price_result = results[0].Price;
+                                var result_dev = (price_result /= 15).toFixed(2);
+                                var perServ = "$" + result_dev + " per serving";
+                                
+                                age_data.model.info_page5.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_label: results[0].Label, the_price: results[0].Price, bo_vend: results[0].VendID, id_sel: results[0].id, per_serv: perServ })
                                 roamingSettings.values["db_url"] = results[0].Info;
 
-                                boost_clicked.perServing(results[0].Price);
+                                //console.log("Milo price per ser " + perServ);
+                                //boost_clicked.perServing(results[0].Price);
 
                             }, function (err) {
                                 console.log(err);

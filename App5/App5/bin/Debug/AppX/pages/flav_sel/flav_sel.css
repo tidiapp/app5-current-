@@ -41,7 +41,7 @@
 #flav_sel_placement {
     margin-top: -15px;
     margin-left: -100px;
-    height: 290px;
+    height: 255px;
 }
 
 .flav_sel_sel_pic_class {
@@ -149,6 +149,16 @@
 @media (min-width: 600px ) and (max-device-width: 1370px) {
    
      #contenthost {
-        margin-top: 30px;
+        margin-top: 40px;
     }
+
+    .flav_sel section[role=main] {
+        margin-top: -30px;
+    }
+
+    #where_you_are3 {
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
 }

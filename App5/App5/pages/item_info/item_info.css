@@ -63,3 +63,20 @@
     font-size: small;
     height: 10px;
 }
+
+@media (min-width: 600px ) and (max-device-width: 1370px) {
+   
+     #contenthost {
+        margin-top: 40px;
+    }
+
+     #webview {
+        width: 1120px;
+        height: 495px;
+    }
+
+     .item_info section[role=main] {
+        margin-top: -40px;
+    }
+
+}

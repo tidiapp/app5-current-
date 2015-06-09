@@ -57,35 +57,45 @@
     background-color: #fff;
     border: 0;
     margin-right: 25px;
-}
+}    
 
 #info_btn2 {
     height: 50px;
+    font-size: 15px;
+    border: 0;
+    float: right;
+    margin-left: 20px;
+    /*height: 50px;
     margin-top: 220px;
     position: absolute;
-    margin-left: 176px;
     font-size: 15px;
+    border: 0;*/
     /*box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);*/
-    border: 0;
 }
-#sel_btn2 {
 
-    /*Use xx-large insted of pixels there is a bug with the button shadow causing a white pixel border*/
+ #sel_btn2 {
     font-size: large;
+    background-color: #FF7C00;
+    height: 50px;
+    text-transform: uppercase;
+    border: 0;
+    float: right;
     margin-left: 20px;
+    /*Use xx-large insted of pixels there is a bug with the button shadow causing a white pixel border*/
+    /*font-size: large;
     margin-top: 220px;
     position: absolute;
     background-color: #FF7C00;
     height: 50px;
     text-transform: uppercase;
+    border: 0;*/
     /*box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);*/
-    border: 0;
 }
 
 #the_sel_bases {
     width: 750px;
     background-color: #fff;
-    height: 280px;
+    height: 310px;
     overflow: auto;
     /*direction: rtl;*/
 }
@@ -106,6 +116,7 @@
 
 #sel_base_name {
     font-weight: bold;
+    margin-top: 5px;
 }
 
 #where_you_are2 {
@@ -125,7 +136,7 @@
 }
 
 #baseinfo_template_placement_winlistview .win-listview {
-    height: 290px;
+    height: 310px;
     width: 760px;
     float: left;
     /*border: 2px solid black;*/
@@ -138,7 +149,7 @@
     height: 210px;
     overflow-y: auto;
     height: 270px;*/
-    margin-top: 30px;
+    margin-top: 5px;
     margin-left: -105px;
 }
 
@@ -165,11 +176,17 @@
     /*float: right;
     margin-right: 70px;
     font-size: 30px;*/
-    float: right;
-    margin-right: 20px;
+    float: left;
+    margin-left: 10px;
     font-size: 30px;
     position: relative;
-    margin-top: 15px;
+}
+
+#choosen_price_div {
+    font-size: 25px;
+    position: absolute;
+    margin-top: 253px;
+    margin-left: 265px;
 }
 
 #base_price_doll {
@@ -178,7 +195,9 @@
 
 #sel_base_info {
     font-size: 16px;
+    margin-right: 30px;
 }
+
 #perdays {
     /*position: absolute;
     margin-top: 32px;*/
@@ -186,11 +205,54 @@
     margin-left: 10px;
 }
 
+#white_box {
+    width: 460px;
+    height: 57px;
+    background-color: white;
+    position: absolute;
+    margin-top: 244px;
+    margin-left: 260px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
 
+#per_serving_b {
+    float: left;
+    position: absolute;
+    font-size: small;
+    line-height: 0.5;
+}
 
 @media (min-width: 600px ) and (max-device-width: 1370px) {
+
+    .base section[role=main] {
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: -30px;
+    }
    
      #contenthost {
-        margin-top: 30px;
+        margin-top: 40px;
     }
+
+     #baseinfo_template_placement_winlistview .win-listview {
+    height: 270px;
+    width: 760px;
+    float: left;
+    /*border: 2px solid black;*/
+    /*dont use margins here use in .win-surface*/
+    }
+
+     #the_sel_bases {
+    width: 750px;
+    background-color: #fff;
+    height: 270px;
+    overflow: auto;
+    /*direction: rtl;*/
+    }
+
+     #white_box {
+    margin-top: 204px;
+    }
+
 }
