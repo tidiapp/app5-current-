@@ -148,6 +148,8 @@
             remove.pop_list(age_data.model.info_page4);
             the_choosenFlav = updated_flav1;
             server.flav_sel_sub(updated_flav1);
+            document.getElementById("hide_this_flav").setAttribute("hidden", true);
+
         },
 
         next_page_boost: function () {

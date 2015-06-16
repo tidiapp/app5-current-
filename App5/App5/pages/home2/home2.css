@@ -199,3 +199,18 @@
     position: absolute;
     margin-top: -100px;
 }
+
+
+
+
+@media (min-width: 600px ) and (max-device-width: 1370px) {
+
+    #age_template_placement_winlistview22 .win-listview {
+        margin-top: -50px;
+    }
+
+    #info_template_placement22 .win-surface {
+        margin-top: 20px;
+    }
+
+}

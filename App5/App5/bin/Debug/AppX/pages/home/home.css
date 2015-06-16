@@ -192,15 +192,19 @@
 @media (min-width: 600px ) and (max-device-width: 1370px) {
 
     #contenthost {
-    margin-top: 40px;
+        margin-top: 40px;
     }
 
    #home_content {
-    margin-left: 10px;
-    color: #000;
-    font-size: 30px;
-    margin-top: -30px;
-    width: 100%;
+        margin-left: 10px;
+        color: #000;
+        font-size: 30px;
+        margin-top: -30px;
+        width: 100%;
+    }
+
+   #info_template_placement_winlistview .win-listview {
+        height: 270px;
     }
 
 }

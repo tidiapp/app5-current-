@@ -44,7 +44,9 @@
                             <img id="choosen_func_carry" hidden="" data-win-bind="src: the_pic" />
                             <img class="sel_func_pic_class" id="sel_func_pic" data-win-bind="src: the_img" />
                             <button id="sel_btn6" class="sel_look_btn btn btn-warning" onclick="func_clicked.next_page_flavor( document.getElementById('sel_func_pic').src)" name="sel_btn6" type="submit">Choose This goal</button>
-                            <button id="info_btn6" class="sel_look_btn btn btn-warning" name="sel_btn" onclick="func_clicked.more_info(document.getElementById('sel_func_name').textContent)" type="submit">Learn More</button>
+                            <div id="hide_this_func">
+                                <button id="info_btn6" class="sel_look_btn btn btn-warning" name="sel_btn" onclick="func_clicked.more_info(document.getElementById('sel_func_name').textContent)" type="submit">Learn More</button>
+                            </div>
                             <h2 id="sel_func_name" class="sel_func_name_class" data-win-bind="textContent: the_name"></h2>
                             <p id="func_price" hidden="" data-win-bind="textContent: func_price"></p>
                             <p id="sel_func_info" class="sel_func_info_class" data-win-bind="textContent: the_info"></p>

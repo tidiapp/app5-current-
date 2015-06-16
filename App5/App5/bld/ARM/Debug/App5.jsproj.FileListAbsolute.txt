@@ -12,7 +12,6 @@ C:\Users\milo\Desktop\app5-current-\App5\App5\bld\ARM\Debug\pri.resfiles.interme
 C:\Users\milo\Desktop\app5-current-\App5\App5\bld\ARM\Debug\qualifiers.txt
 C:\Users\milo\Desktop\app5-current-\App5\App5\bld\ARM\Debug\qualifiers.txt.intermediate
 C:\Users\milo\Desktop\app5-current-\App5\App5\bld\ARM\Debug\MultipleQualifiersPerDimensionFound.txt
-C:\Users\milo\Desktop\app5-current-\App5\App5\bld\ARM\Debug\MobileServices.pri.xml
 C:\Users\milo\Desktop\app5-current-\App5\App5\bld\ARM\Debug\ProjectArchitectures.txt
 C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\bin\ARM\Debug\resources.pri
 C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\bin\ARM\Debug\AppxManifest.xml

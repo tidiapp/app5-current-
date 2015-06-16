@@ -42,6 +42,8 @@
                         document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img5"];
                         document.getElementById("choosen_age2").textContent = "Select Your " + roamingSettings.values["Age_name"] + " Goal.";
                     }
+                    document.getElementById("hide_this_func").setAttribute("hidden", true);
+
                 }
 
                 //milo: footer history & H1

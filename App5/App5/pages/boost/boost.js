@@ -522,8 +522,9 @@
                                 document.getElementById("out_of_stock4").removeAttribute("hidden");
                                 document.getElementById("out_of_stock4").textContent = "VEND product does not exist in VENDS website";
                             } else {
-                                var vendCount = JSON.parse(result.responseText).product.inventory[0].count;
-                                //console.log("Base Count from VEND ", vendCount);
+                                var vendCount = "";
+                                vendCount = JSON.parse(result.responseText).product.inventory[0].count;
+                                //console.log("Boost Inventory from VEND ", JSON.parse(result.responseText).product.inventory);
                                 if (vendCount >= 1.00000) {
                                     //WinJS.Navigation.navigate('pages/boost/boost.html')
                                     age_data.model.the_boost_sel.push({ the_name: name, the_pic: img });

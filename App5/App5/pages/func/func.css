@@ -221,4 +221,9 @@
      #contenthost {
         margin-top: 40px;
     }
+
+     .func section[role=main] {
+        margin-top: -30px;
+    }
+
 }

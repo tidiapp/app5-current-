@@ -55,6 +55,7 @@
             if (the_sel_age === "Protein") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img2"];
                 document.getElementById("choosen_age").innerHTML = roamingSettings.values["Cat_picked"] + ", " + " The foundation (building block) of human nutrition, health and well being.";
+                document.getElementById("hide_this").setAttribute("hidden", true);
             }
 
             //milo: footer history & H1

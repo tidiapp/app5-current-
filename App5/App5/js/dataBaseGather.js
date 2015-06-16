@@ -156,7 +156,7 @@
                 var query = Func.where({
                     Name: name
                 }).read().done(function (results) {
-                    age_data.model.info_page2_func.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_img: results[0].Label, base_price: results[0].Price, the_pic: results[0].Image, b_vend: results[0].VendID, id_sel: results[0].id })
+                    age_data.model.info_page2_func.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_img: results[0].Image, base_price: results[0].Price, the_pic: results[0].Image, b_vend: results[0].VendID, id_sel: results[0].id })
                     roamingSettings.values["db_url"] = results[0].Info;
                 }, function (err) {
                     console.log(err);
