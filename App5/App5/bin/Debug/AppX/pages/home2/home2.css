@@ -58,12 +58,12 @@
 }
 
 #info_text22 {
-    width: 500px;
-    height: 40px;
+    /*width: 500px;
+    height: 40px;*/
     color: #000;
     font-weight: 500;
-    margin-left: 210px;
-    font-size: 14px;
+    /*margin-left: 210px;*/
+    font-size: 16px;
 }
 
 .info_pic {
@@ -103,13 +103,11 @@
 }
 
 #sel_age_name22 {
-    margin-bottom: 0;
     font-weight: bold;
-    padding-left: 100px;
 }
 
 #sel_age_pic22 {
-    margin-right: 10px;
+    margin-right: 30px;
 }
 
 /*Do not ever use this its a class, use only CURRENTLY in default.css*/
@@ -127,10 +125,15 @@
 
 #info_template_placement_winlistview22 .win-listview {
     height: 260px;
-    width: 715px;
+    width: 580px;
     float: left;
     /*border: 2px solid black;*/
     /*dont use margins here use in .win-surface*/
+}
+#home2_wrap {
+    width: 580px;
+    margin-top: -20px;
+    margin-left: 20px;
 }
 
 #info_template_placement22 {

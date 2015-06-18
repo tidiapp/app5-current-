@@ -54,17 +54,22 @@
 }
 
 #the_flav_sel_sel {
-    width: 700px;
+    width: 670px;
     background-color: #fff;
-    height: 235px;
+    height: 280px;
     /*added this for scrollable nutritional lable*/
     overflow: auto;
+}
+
+#flav_sel_sel_info {
+    font-size: 16px;
+    margin-right: 10px;
 }
 
 #flav_sel_sel_placement {
     margin-left: -100px;
     width: 710px;
-    height: 240px;
+    height: 280px;
     margin-top: 22px;
 }
 
@@ -79,17 +84,14 @@
 }
 
 #sel_btn4 {
-    /*margin-left: 5px;*/
-    margin-top: 180px;
+    margin-top: 225px;
     position: absolute;
+    margin-left: 215px;
     background-color: #FF7C00;
     height: 50px;
     text-transform: uppercase;
-    font-size: 16px;
-    /*margin-left: 20px;*/
-    /*box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);*/
+    font-size: large;
     border: 0;
-    margin-left: 0px;
 }
 
 #flav_div {
@@ -140,11 +142,24 @@
     /*margin-top: 30px;*/
 }
 
+#choosen_price_div3 {
+    font-size: 25px;
+    position: absolute;
+    margin-top: 226px;
+    margin-left: 265px;
+}
 
+#perdays3 {
+    /*position: absolute;
+    margin-top: 32px;*/
+    font-size: small;
+    /*margin-left: 43px;*/
+}
 
-
-
-
+#per_serving3 {
+    font-size: small;
+    line-height: 0.5;
+}
 
 @media (min-width: 600px ) and (max-device-width: 1370px) {
    

@@ -145,7 +145,7 @@ overError {
 }
 
 .area_img_class {
-    border: 2px solid #FF7C00;
+    border: 2px solid white;
     /*position: absolute;*/
     z-index: -1;
     /*-ms-filter: grey(100%);*/
@@ -276,11 +276,11 @@ button, input[type=button], input[type=submit], input[type=reset], input[type=fi
     float: left;
 }
 #div_boost1_name, #div_boost2_name, #div_boost3_name, #div_boost4_name, #div_boost5_name, #div_boost6_name, #div_boost7_name, #div_boost8_name {
-    background-color: rgba(0,0,0,.6);
+    background-color: #484849;
     color: #fff;
     width: 75px;
     height: 22px;
-    margin-top: -28px;
+    margin-top: -38px;
     padding-left: 5px;
     margin-left: 2px;
     position: relative;
@@ -415,9 +415,6 @@ button, input[type=button], input[type=submit], input[type=reset], input[type=fi
     margin-top: 15px;*/
 }
 
-#choosen_price {
-    position: absolute;
-}
 #boost_price_doller {
     position: absolute;
     margin-top: 15px;
@@ -426,11 +423,8 @@ button, input[type=button], input[type=submit], input[type=reset], input[type=fi
     /*position: absolute;
     margin-top: 32px;*/
     font-size: small;
-    margin-left: 43px;
 }
 #per_serving {
-    float: left;
-    position: absolute;
     font-size: small;
     line-height: 0.5;
 }

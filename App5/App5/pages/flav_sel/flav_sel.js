@@ -111,7 +111,7 @@
             //milo: footer history 
             document.getElementById("where_you_are3").textContent = "You have choosen " + roamingSettings.values["Boost_total_num"] + " Boosts.";
 
-            document.getElementById("flav_sel_header").textContent = "Choose Your " + "Flavor.";
+            document.getElementById("flav_sel_header").textContent = "Choose Your Flavor and Finalize Your Mix.";
           
             server.flav_sel();
 
@@ -148,7 +148,7 @@
             remove.pop_list(age_data.model.info_page4);
             the_choosenFlav = updated_flav1;
             server.flav_sel_sub(updated_flav1);
-            document.getElementById("hide_this_flav").setAttribute("hidden", true);
+            //document.getElementById("hide_this_flav").setAttribute("hidden", true);
 
         },
 

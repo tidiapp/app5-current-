@@ -321,7 +321,12 @@
                 var query = Age.where({
                     Name: name
                 }).read().done(function (results) {
-                    age_data.model.info_page4.push({ sel_name: results[0].Name, sel_info: results[0].InfoLite, sel_pic: results[0].Image, sel_label: results[0].Label, f_vend: results[0].VendID })
+
+                    var price_result = results[0].Price;
+                    var result_dev = (price_result /= 15).toFixed(2);
+                    var perServ = "$" + result_dev + " per serving";
+
+                    age_data.model.info_page4.push({ sel_name: results[0].Name, sel_info: results[0].InfoLite, sel_pic: results[0].Image, sel_label: results[0].Label, f_vend: results[0].VendID, flav_price: results[0].Price, per_serv_f: perServ })
                     roamingSettings.values["db_url"] = results[0].Info;
                 }, function (err) {
                     console.log(err);

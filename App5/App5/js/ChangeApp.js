@@ -90,7 +90,7 @@
             document.getElementById("the_flav_sel").style.borderColor = i;
             document.getElementById("flav_sel_sel_pic").style.borderColor = i;
 
-            document.getElementById("info_btn4").style.backgroundColor = i;
+            //document.getElementById("info_btn4").style.backgroundColor = i;
             document.getElementById("sel_btn4").style.backgroundColor = i;
         },
         getFlavSelBorders: function (i) {
