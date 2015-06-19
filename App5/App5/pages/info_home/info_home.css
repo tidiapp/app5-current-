@@ -1,6 +1,7 @@
 ﻿.info_home section[role=main] {
     margin-left: 120px;
     margin-right: 120px;
+    margin-top: -50px;
 }
 
 #info1_bases, #info1_boost, #info1_flav, #info1_age {
@@ -72,24 +73,20 @@
 }
 
 #webview {
-    width: 850px;
-    height: 495px;
+    width: 1350px;
+    height: 575px;
 }
 
 button{
     margin-right:15px;
 }
 
-
-
-
-
 #scenario1_left {
-    width: 65%;
-    height: 100%;
+    /*width: 65%;
+    height: 100%;*/
     float: left;
     box-sizing: border-box;
-    border: 1px solid silver;
+    /*border: 1px solid silver;*/
 }
 
 #scenario1_right {

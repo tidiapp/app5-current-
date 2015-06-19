@@ -41,22 +41,18 @@
                         <button id="info_btn4" class="sel_look_btn btn btn-warning" name="sel_btn" onclick="flav_sel_clicked.more_info(document.getElementById('flav_sel_sel_name').textContent)" type="submit">Learn More</button>
                     </div>-->
                     <div id="choosen_price_div3">
-                        <span id="base_price_doller3">$<span id="f_vend_count" data-win-bind="textContent: flav_price"></span></span>
+                        <span id="base_price_doller3">$<span id="f_price" data-win-bind="textContent: flav_price"></span></span>
                         <span id="perdays3">per 15 days</span>
                         <p id="per_serving3" data-win-bind="textContent: per_serv_f"></p>
                     </div>
 
-                    <button id="sel_btn4" class="sel_look_btn btn btn-warning" onclick="flav_sel_clicked.next_page_boost()" name="sel_btn2" type="submit">Choose your Flavor</button>
+                    <button id="sel_btn4" class="sel_look_btn btn btn-warning" onclick="flav_sel_clicked.next_page_boost(document.getElementById('f_price').textContent)" name="sel_btn2" type="submit">Choose your Flavor</button>
                     <div id="out_of_stock2" hidden=""></div>
                     <div id="out_of_stock" hidden=""></div>
                     <h2 id="flav_sel_sel_name" class="flac_sel_sel_name_class" data-win-bind="textContent: sel_name"></h2>
                     <p id="flav_sel_sel_info" class="flac_sel_sel_info_class" data-win-bind="textContent: sel_info"></p>
                     <p id="f_vend" hidden="" data-win-bind="textContent: f_vend"></p>
-
-
-
-
-                    <!--<p id="f_vend_count" data-win-bind="textContent: flav_price"></p>
+                    <!--<p id="f_price" data-win-bind="textContent: flav_price"></p>
                     <p data-win-bind="textContent: per_serv_f"></p>-->
 
                     </div>

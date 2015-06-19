@@ -17,7 +17,6 @@
             document.getElementById("home").removeAttribute("hidden");
             document.getElementById("company_name").textContent = roamingSettings.values["Clicked_cat"];
 
-
             //document.getElementById("goOrStopButton").addEventListener("click", goToUrl, false);
             //document.getElementById("backButton").addEventListener("click", goBack, false);
             //document.getElementById("forwardButton").addEventListener("click", goForward, false);
@@ -31,9 +30,7 @@
             //webviewControl.addEventListener("MSWebViewNavigationCompleted", navigationCompleted);
             //webviewControl.addEventListener("MSWebViewUnviewableContentIdentified", unviewableContentIdentified);
             //webviewControl.refresh();
-            webviewControl.navigate("http://storeapp.thinkitdrinkit.com/soccer/");
-
-
+            webviewControl.navigate("http://storeapp.thinkitdrinkit.com/learn/");
 
         },
 
@@ -47,11 +44,8 @@
         updateLayout: function (element) {
             // TODO: Respond to changes in layout.
 
-
         }
     });
-
-
 
     //function goToUrl() {
     //    var destinationUrl = document.getElementById("urlField").value;
@@ -150,7 +144,5 @@
     //    logArea.value += message;
     //    logArea.scrollTop = logArea.scrollHeight;
     //}
-
-
 
 })();

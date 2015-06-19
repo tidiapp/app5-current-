@@ -50,12 +50,10 @@
             //                Image: "https://thinkitdrinkit.blob.core.windows.net/thinkitdrinkitappimagesboost/purpose2/optimsmcurrent.png"
             //            })
             //        }
-
             //    }, function (err) {
             //        console.log(err);
             //    });
             //}
-
 
             if (roamingSettings.values["Boost1_name"] == "" || roamingSettings.values["Boost1_name"] === !undefined) {
                 roamingSettings.values["Boost1_price"] = 0
@@ -143,6 +141,7 @@
                 roamingSettings.values["FlavSel_price"] = 0
             } else {
                 document.getElementById("my_flav_name").textContent = roamingSettings.values["FlavSel_name"];
+                document.getElementById("my_flav_price").textContent = "$" + roamingSettings.values["FlavSel_price"];
             };
 
             server.userOrderFinalRead();
@@ -150,7 +149,7 @@
             roamingSettings.values['Boost_total'] = (parseFloat(roamingSettings.values["Boost1_price"]) + parseFloat(roamingSettings.values["Boost2_price"]) + parseFloat(roamingSettings.values["Boost3_price"]) + parseFloat(roamingSettings.values["Boost4_price"]) + parseFloat(roamingSettings.values["Boost5_price"]) + parseFloat(roamingSettings.values["Boost6_price"]) + parseFloat(roamingSettings.values["Boost7_price"]) + parseFloat(roamingSettings.values["Boost8_price"]));
 
             //milo: roamingSettings.values["t"] is from previous order after continue is hit
-            roamingSettings.values["the_complete_total"] = roamingSettings.values["t"] + parseFloat(roamingSettings.values["Base_price"]) + parseFloat(roamingSettings.values['Boost_total']) + parseFloat(roamingSettings.values["Nutrigenetics_price"]);
+            roamingSettings.values["the_complete_total"] = roamingSettings.values["t"] + parseFloat(roamingSettings.values["Base_price"]) + parseFloat(roamingSettings.values['Boost_total']) + parseFloat(roamingSettings.values['FlavSel_price']) + parseFloat(roamingSettings.values["Nutrigenetics_price"]);
 
             //roamingSettings.values["the_complete_total"] += parseFloat(roamingSettings.values["total_price"]);
             //roamingSettings.values["not_cont"] = true;
@@ -167,7 +166,6 @@
             //        console.log("enter hit");
             //    }
             //});
-           
 
         },
 
@@ -996,7 +994,7 @@
                             bo_name: results[1].BoostName, bo_price: "$" + results[1].BoostPrice,
                             order: "ORDER " + results[1].OrderNum
                         })
-                        document.getElementById("boost1_div_hide").removeAttribute("hidden");
+                        document.getElementById("boost1_div_hide2").removeAttribute("hidden");
                     } else if (results[1].NutrigeneticsPrice > 0) {
                         age_data.model.order_final_read2.push(
                         {

@@ -152,14 +152,14 @@
 
         },
 
-        next_page_boost: function () {
+        next_page_boost: function (price) {
             keepInfo = true;
             roamingSettings.values["FlavSel_name"] = the_choosenFlav;
             roamingSettings.values["FlavSel_pic"] = document.getElementById("hidden_flav_pic").src;
             roamingSettings.values["FlavSel_vend"] = document.getElementById("f_vend").textContent;
             var vendId = roamingSettings.values["FlavSel_vend"];
             roamingSettings.values["FlavSel_info"] = null;
-            roamingSettings.values["FlavSel_price"] = 0;
+            roamingSettings.values["FlavSel_price"] = price;
             roamingSettings.values["FlavSel_label"] = document.getElementById("flav_sel_sel_pic").src;
 
             //milo: the following makes a call to vend to check if we have enough product for the order if low it will not allow to move on. 
@@ -193,7 +193,7 @@
                             WinJS.Navigation.navigate('pages/final/final.html')
                         } else if (vendCount <= 0.00000) {//If all works this is the check that looks for missing not enough quantity 
                             document.getElementById("out_of_stock").removeAttribute("hidden");
-                            document.getElementById("out_of_stock").textContent = "OUT OF STOCK, PLEASE PICK ANOTHER BASE";
+                            document.getElementById("out_of_stock").textContent = "OUT OF STOCK, PLEASE PICK ANOTHER FLAVOR";
                         }
                     }
                 },

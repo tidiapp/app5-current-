@@ -18,7 +18,7 @@
                     id: id
                 }).read().done(function (results) {
 
-                    roamingSettings.values["t"] = results[0].NutrigeneticsPrice + results[0].BasePrice + results[0].BoostPrice + results[0].Boost2Price + results[0].Boost3Price + results[0].Boost4Price + results[0].Boost5Price + results[0].Boost6Price + results[0].Boost7Price + results[0].Boost8Price ;
+                    roamingSettings.values["t"] = results[0].NutrigeneticsPrice + results[0].BasePrice + results[0].BoostPrice + results[0].Boost2Price + results[0].Boost3Price + results[0].Boost4Price + results[0].Boost5Price + results[0].Boost6Price + results[0].Boost7Price + results[0].Boost8Price + results[0].FlavPrice;
 
                     Age.del({
                         id: id
@@ -682,7 +682,7 @@
                         if (roamingSettings.values["totalOrderNumber1"] > 0) {
                             //milo: DB ShopCart if its empty and allows to get into here it will couse BasePrice bug to break app
                             for (var i = 0; i < roamingSettings.values["totalOrderNumber1"]; i++) {
-                                roamingSettings.values["t"] += (parseFloat(results[i].BasePrice) + parseFloat(results[i].BoostPrice) + parseFloat(results[i].Boost2Price) + parseFloat(results[i].Boost3Price) + parseFloat(results[i].Boost4Price) + parseFloat(results[i].Boost5Price) + parseFloat(results[i].Boost6Price) + parseFloat(results[i].Boost7Price) + parseFloat(results[i].Boost8Price) + parseFloat(results[i].NutrigeneticsPrice));
+                                roamingSettings.values["t"] += (parseFloat(results[i].BasePrice) + parseFloat(results[i].BoostPrice) + parseFloat(results[i].Boost2Price) + parseFloat(results[i].Boost3Price) + parseFloat(results[i].Boost4Price) + parseFloat(results[i].Boost5Price) + parseFloat(results[i].Boost6Price) + parseFloat(results[i].Boost7Price) + parseFloat(results[i].Boost8Price) + parseFloat(results[i].NutrigeneticsPrice) + parseFloat(results[i].FlavPrice));
                                 console.log("Inside finalpagecall loop");
 
                             }
