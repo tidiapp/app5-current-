@@ -104,8 +104,12 @@
                 if (roamingSettings.values["Boost7_name"] == "" || roamingSettings.values["Boost7_name"] === !undefined) { roamingSettings.values["Boost7_price"] = 0 };
                 if (roamingSettings.values["Boost8_name"] == "" || roamingSettings.values["Boost8_name"] === !undefined) { roamingSettings.values["Boost8_price"] = 0 };
 
-                roamingSettings.values['Boost_total_footer'] = (parseFloat(roamingSettings.values["Base_price"]) + parseFloat(roamingSettings.values["Boost1_price"]) + parseFloat(roamingSettings.values["Boost2_price"]) + parseFloat(roamingSettings.values["Boost3_price"]) + parseFloat(roamingSettings.values["Boost4_price"]) + parseFloat(roamingSettings.values["Boost5_price"]) + parseFloat(roamingSettings.values["Boost6_price"]) + parseFloat(roamingSettings.values["Boost7_price"]) + parseFloat(roamingSettings.values["Boost8_price"]));
-                document.getElementById("base_price_total").textContent = roamingSettings.values['Boost_total_footer'];
+                var completeTotal = (parseFloat(roamingSettings.values["Base_price"]) + parseFloat(roamingSettings.values["Boost1_price"]) + parseFloat(roamingSettings.values["Boost2_price"]) + parseFloat(roamingSettings.values["Boost3_price"]) + parseFloat(roamingSettings.values["Boost4_price"]) + parseFloat(roamingSettings.values["Boost5_price"]) + parseFloat(roamingSettings.values["Boost6_price"]) + parseFloat(roamingSettings.values["Boost7_price"]) + parseFloat(roamingSettings.values["Boost8_price"]));
+                //document.getElementById("base_price_total").textContent = roamingSettings.values['Boost_total_footer'];
+                var completeTotalTwoDec = completeTotal.toFixed(2);
+                roamingSettings.values['Boost_total_footer'] = completeTotalTwoDec;
+                document.getElementById("base_price_total").textContent = completeTotalTwoDec;
+
             }
 
             //milo: footer history 

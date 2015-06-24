@@ -85,6 +85,11 @@
     /*direction: rtl;*/
 }
 
+#the_sel_funcs p {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
 #sel_func_name {
     font-weight: bold;
 }
@@ -108,7 +113,7 @@
 
 #win_listview_funcs_placement_sel .win-listview {
     height: 220px;
-    width: 630px;
+    width: 730px;
     float: left;
     /*border: 2px solid black;*/
     /*dont use margins here use in .win-surface or directly in id*/
@@ -214,6 +219,7 @@
     margin-top: 250px;
     margin-left: 750px;
 }
+
 
 
 @media (min-width: 600px ) and (max-device-width: 1370px) {

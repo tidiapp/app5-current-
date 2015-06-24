@@ -148,8 +148,12 @@
 
             roamingSettings.values['Boost_total'] = (parseFloat(roamingSettings.values["Boost1_price"]) + parseFloat(roamingSettings.values["Boost2_price"]) + parseFloat(roamingSettings.values["Boost3_price"]) + parseFloat(roamingSettings.values["Boost4_price"]) + parseFloat(roamingSettings.values["Boost5_price"]) + parseFloat(roamingSettings.values["Boost6_price"]) + parseFloat(roamingSettings.values["Boost7_price"]) + parseFloat(roamingSettings.values["Boost8_price"]));
 
+            //roamingSettings.values['Boost_total'] = totalBoost.toFixed(2);
+
             //milo: roamingSettings.values["t"] is from previous order after continue is hit
-            roamingSettings.values["the_complete_total"] = roamingSettings.values["t"] + parseFloat(roamingSettings.values["Base_price"]) + parseFloat(roamingSettings.values['Boost_total']) + parseFloat(roamingSettings.values['FlavSel_price']) + parseFloat(roamingSettings.values["Nutrigenetics_price"]);
+            var completeTotal = roamingSettings.values["t"] + parseFloat(roamingSettings.values["Base_price"]) + parseFloat(roamingSettings.values['Boost_total']) + parseFloat(roamingSettings.values['FlavSel_price']) + parseFloat(roamingSettings.values["Nutrigenetics_price"]);
+
+             roamingSettings.values["the_complete_total"] = completeTotal.toFixed(2);
 
             //roamingSettings.values["the_complete_total"] += parseFloat(roamingSettings.values["total_price"]);
             //roamingSettings.values["not_cont"] = true;

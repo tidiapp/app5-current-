@@ -50,7 +50,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\func\func.css">
       <PackagePath>pages\func\func.css</PackagePath>
-      <Modified>2015-06-10T13:50:00.331</Modified>
+      <Modified>2015-06-24T20:25:01.982</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\home2\home2.css">
       <PackagePath>pages\home2\home2.css</PackagePath>
@@ -392,11 +392,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\final\final.js">
       <PackagePath>pages\final\final.js</PackagePath>
-      <Modified>2015-06-19T19:13:47.962</Modified>
+      <Modified>2015-06-24T16:51:13.215</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\flav_sel\flav_sel.js">
       <PackagePath>pages\flav_sel\flav_sel.js</PackagePath>
-      <Modified>2015-06-19T16:46:56.189</Modified>
+      <Modified>2015-06-24T20:41:38.868</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\home\home.js">
       <PackagePath>pages\home\home.js</PackagePath>
