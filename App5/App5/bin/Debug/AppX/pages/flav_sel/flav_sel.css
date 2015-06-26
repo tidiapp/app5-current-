@@ -176,4 +176,19 @@
         margin-bottom: 0;
     }
 
+    #flav_sel_sel_placement {
+        height: 250px;
+    }
+
+    #the_flav_sel_sel {
+        height: 250px;
+    }
+
+    #choosen_price_div3 {
+        margin-top: 195px;
+    }
+
+    #sel_btn4 {
+        margin-top: 195px;
+    }
 }

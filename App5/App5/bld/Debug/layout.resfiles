@@ -40,7 +40,6 @@ js\app_bar.js
 js\auth.js
 js\bootstrap.min.js
 js\ChangeApp.js
-js\dataBaseGather - Copy.js
 js\dataBaseGather.js
 js\dataStore.js
 js\default.js
@@ -87,9 +86,6 @@ pages\base\base.js
 pages\boost\boost.css
 pages\boost\boost.html
 pages\boost\boost.js
-pages\final\final - Copy (2).html
-pages\final\final - Copy.html
-pages\final\final - Copy.js
 pages\final\final.css
 pages\final\final.html
 pages\final\final.js
@@ -109,7 +105,6 @@ pages\home2\home2.js
 pages\info_home\info_home.css
 pages\info_home\info_home.html
 pages\info_home\info_home.js
-pages\item_info\item_info - Copy.js
 pages\item_info\item_info.css
 pages\item_info\item_info.html
 pages\item_info\item_info.js

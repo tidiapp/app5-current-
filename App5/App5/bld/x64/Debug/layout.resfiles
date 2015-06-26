@@ -7,6 +7,15 @@ fonts\glyphicons-halflings-regular.svg
 fonts\glyphicons-halflings-regular.ttf
 fonts\glyphicons-halflings-regular.woff
 fonts\glyphicons-halflings-regular.woff2
+fonts\MYRIADPRO-BOLD.OTF
+fonts\MYRIADPRO-BOLDCOND.OTF
+fonts\MYRIADPRO-BOLDCONDIT.OTF
+fonts\MYRIADPRO-BOLDIT.OTF
+fonts\MYRIADPRO-COND.OTF
+fonts\MYRIADPRO-CONDIT.OTF
+fonts\MYRIADPRO-REGULAR.OTF
+fonts\MYRIADPRO-SEMIBOLD.OTF
+fonts\MYRIADPRO-SEMIBOLDIT.OTF
 images\another_logo.jpg
 images\another_logo.scale-100.jpg
 images\another_logo.scale-180.jpg
@@ -59,10 +68,6 @@ js\lib\jQuery-slimScroll-1.3.0\jquery.slimscroll.js
 js\lib\jQuery-slimScroll-1.3.0\jquery.slimscroll.min.js
 js\lib\jQuery-slimScroll-1.3.0\README.md
 js\lib\jQuery-slimScroll-1.3.0\slimScroll.jquery.json
-js\MobileServices.intellisense.js
-js\MobileServices.js
-js\MobileServices.min.js
-js\MobileServices.pri
 js\myAzure.js
 js\navigator.js
 js\print.js
@@ -71,21 +76,16 @@ js\showPopupUI.js
 js\tool.js
 js\url_functions.js
 js\vendCalls.js
-packages.config
+mobile_services\connect.js
 pages\all_products\all_products.css
 pages\all_products\all_products.html
 pages\all_products\all_products.js
-pages\base\base - Copy.js
-pages\base\base copy 3.js
 pages\base\base.css
 pages\base\base.html
 pages\base\base.js
 pages\boost\boost.css
 pages\boost\boost.html
 pages\boost\boost.js
-pages\final\final - Copy (2).html
-pages\final\final - Copy.html
-pages\final\final - Copy.js
 pages\final\final.css
 pages\final\final.html
 pages\final\final.js
@@ -105,7 +105,6 @@ pages\home2\home2.js
 pages\info_home\info_home.css
 pages\info_home\info_home.html
 pages\info_home\info_home.js
-pages\item_info\item_info - Copy.js
 pages\item_info\item_info.css
 pages\item_info\item_info.html
 pages\item_info\item_info.js
@@ -130,4 +129,3 @@ pages\thankyou\thankyou.js
 pages\welcome\welcome.css
 pages\welcome\welcome.html
 pages\welcome\welcome.js
-services\mobile services\thinkitdrinkitData\service.js

@@ -652,5 +652,4 @@ C:\Users\milo\Desktop\app5-current-\App5\App5\bld\x64\Debug\pri.resfiles.interme
 C:\Users\milo\Desktop\app5-current-\App5\App5\bld\x64\Debug\qualifiers.txt
 C:\Users\milo\Desktop\app5-current-\App5\App5\bld\x64\Debug\qualifiers.txt.intermediate
 C:\Users\milo\Desktop\app5-current-\App5\App5\bld\x64\Debug\MultipleQualifiersPerDimensionFound.txt
-C:\Users\milo\Desktop\app5-current-\App5\App5\bld\x64\Debug\MobileServices.pri.xml
 C:\Users\milo\Desktop\app5-current-\App5\App5\bld\x64\Debug\ProjectArchitectures.txt

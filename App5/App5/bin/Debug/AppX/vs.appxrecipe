@@ -8,19 +8,19 @@
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>e3f10fc1-365d-4d2e-b488-7e61baad9bf4</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\milo\Desktop\app5-current-\App5\App5\bld\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>B7E9F8484BDFE4D49DE2DCB604091D0F0BAD02ABBCDFD4D32AF10B57DF425E57</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>e3f10fc1-365d-4d2e-b488-7e61baad9bf4_1.0.0.34_neutral__t66pgecwyvnzw</RegisteredPackageMoniker>
+    <RegisteredManifestChecksum>8623CD6905EE412872C77788070BE024DE34F431BBDEFA7E4AC4BFE604AB044B</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>e3f10fc1-365d-4d2e-b488-7e61baad9bf4_1.0.0.39_neutral__t66pgecwyvnzw</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>e3f10fc1-365d-4d2e-b488-7e61baad9bf4_t66pgecwyvnzw!App</RegisteredUserModeAppID>
     <RegisteredPackageID>e3f10fc1-365d-4d2e-b488-7e61baad9bf4</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=Patrick</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.0.34</RegisteredVersion>
+    <RegisteredVersion>1.0.0.39</RegisteredVersion>
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\milo\Desktop\app5-current-\App5\App5\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-06-10T14:59:19.103</Modified>
+      <Modified>2015-06-26T17:04:27.109</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -46,7 +46,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\boost\boost.css">
       <PackagePath>pages\boost\boost.css</PackagePath>
-      <Modified>2015-06-18T20:59:53.080</Modified>
+      <Modified>2015-06-26T16:51:41.190</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\func\func.css">
       <PackagePath>pages\func\func.css</PackagePath>
@@ -82,7 +82,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\flav_sel\flav_sel.css">
       <PackagePath>pages\flav_sel\flav_sel.css</PackagePath>
-      <Modified>2015-06-18T20:58:50.623</Modified>
+      <Modified>2015-06-26T17:01:13.691</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\home\home.css">
       <PackagePath>pages\home\home.css</PackagePath>
@@ -274,13 +274,9 @@
       <PackagePath>js\ChangeApp.js</PackagePath>
       <Modified>2015-06-17T16:15:16.412</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\js\dataBaseGather - Copy.js">
-      <PackagePath>js\dataBaseGather - Copy.js</PackagePath>
-      <Modified>2015-04-02T14:28:24.794</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\js\dataBaseGather.js">
       <PackagePath>js\dataBaseGather.js</PackagePath>
-      <Modified>2015-06-19T19:29:46.698</Modified>
+      <Modified>2015-06-26T17:04:26.582</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\js\dataStore.js">
       <PackagePath>js\dataStore.js</PackagePath>
@@ -356,11 +352,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\boost\boost.js">
       <PackagePath>pages\boost\boost.js</PackagePath>
-      <Modified>2015-06-15T16:56:42.960</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\final\final - Copy.js">
-      <PackagePath>pages\final\final - Copy.js</PackagePath>
-      <Modified>2015-03-12T20:38:02.195</Modified>
+      <Modified>2015-06-26T16:49:15.572</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\func\func.js">
       <PackagePath>pages\func\func.js</PackagePath>
@@ -373,10 +365,6 @@
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\info_home\info_home.js">
       <PackagePath>pages\info_home\info_home.js</PackagePath>
       <Modified>2015-06-19T17:20:32.752</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\item_info\item_info - Copy.js">
-      <PackagePath>pages\item_info\item_info - Copy.js</PackagePath>
-      <Modified>2015-01-16T15:26:49.797</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.js">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.js</PackagePath>
@@ -392,7 +380,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\final\final.js">
       <PackagePath>pages\final\final.js</PackagePath>
-      <Modified>2015-06-24T16:51:13.215</Modified>
+      <Modified>2015-06-25T19:02:17.630</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\flav_sel\flav_sel.js">
       <PackagePath>pages\flav_sel\flav_sel.js</PackagePath>
@@ -494,14 +482,6 @@
       <PackagePath>pages\boost\boost.html</PackagePath>
       <Modified>2015-06-18T17:36:07.811</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\final\final - Copy %282%29.html">
-      <PackagePath>pages\final\final - Copy %282%29.html</PackagePath>
-      <Modified>2015-02-11T22:47:57.150</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\final\final - Copy.html">
-      <PackagePath>pages\final\final - Copy.html</PackagePath>
-      <Modified>2015-02-11T15:00:54.099</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\func\func.html">
       <PackagePath>pages\func\func.html</PackagePath>
       <Modified>2015-06-12T19:28:54.478</Modified>
@@ -528,7 +508,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\final\final.html">
       <PackagePath>pages\final\final.html</PackagePath>
-      <Modified>2015-06-19T18:36:41.945</Modified>
+      <Modified>2015-06-26T15:53:12.407</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\flav_sel\flav_sel.html">
       <PackagePath>pages\flav_sel\flav_sel.html</PackagePath>
@@ -576,7 +556,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-06-10T14:59:18.909</Modified>
+      <Modified>2015-06-26T17:04:26.909</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

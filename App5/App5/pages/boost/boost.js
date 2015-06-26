@@ -718,7 +718,7 @@
                 document.getElementById("overError").textContent = " Sorry, You May Only Choose 8 Boosts. If You Want To Change Boosts, Please Click the Remove Last Button";
                 document.getElementById("overError").style.color = "red";
                 document.getElementById("overError").style.fontSize = "30px";
-                document.getElementById("overError").style.marginTop = "100px";
+                //document.getElementById("overError").style.marginTop = "100px";
                 document.getElementById("overError").style.position = "Absolute";
             }
         },

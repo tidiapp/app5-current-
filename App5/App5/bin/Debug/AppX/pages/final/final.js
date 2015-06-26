@@ -681,7 +681,7 @@
 
         howManyBoosts: function (results) {
             for (var i = 0; i < results.length; i++) {
-                //milo all this code was set up so a bug that kept showing undefined undefined in does not show. Ex I pick nutrigenetics which is a single item in the final page it should just show up as only that instead it used to show up with Boost undefined undefined and Flavor undefined undefined.
+                //milo all this code was set up so a bug that kept showing double undefined undefined. Ex I pick nutrigenetics which is a single item in the final page it should just show up as only that instead it used to show up with Boost undefined undefined and Flavor undefined undefined.
                 roamingSettings.values["OrderNum"] = results[i].OrderNum;
 
                 if (results[i].OrderNum === 1) {

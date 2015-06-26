@@ -100,6 +100,33 @@
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\fonts\glyphicons-halflings-regular.woff2">
       <PackagePath>fonts\glyphicons-halflings-regular.woff2</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\fonts\MYRIADPRO-BOLD.OTF">
+      <PackagePath>fonts\MYRIADPRO-BOLD.OTF</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\fonts\MYRIADPRO-BOLDCOND.OTF">
+      <PackagePath>fonts\MYRIADPRO-BOLDCOND.OTF</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\fonts\MYRIADPRO-BOLDCONDIT.OTF">
+      <PackagePath>fonts\MYRIADPRO-BOLDCONDIT.OTF</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\fonts\MYRIADPRO-BOLDIT.OTF">
+      <PackagePath>fonts\MYRIADPRO-BOLDIT.OTF</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\fonts\MYRIADPRO-COND.OTF">
+      <PackagePath>fonts\MYRIADPRO-COND.OTF</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\fonts\MYRIADPRO-CONDIT.OTF">
+      <PackagePath>fonts\MYRIADPRO-CONDIT.OTF</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\fonts\MYRIADPRO-REGULAR.OTF">
+      <PackagePath>fonts\MYRIADPRO-REGULAR.OTF</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\fonts\MYRIADPRO-SEMIBOLD.OTF">
+      <PackagePath>fonts\MYRIADPRO-SEMIBOLD.OTF</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\fonts\MYRIADPRO-SEMIBOLDIT.OTF">
+      <PackagePath>fonts\MYRIADPRO-SEMIBOLDIT.OTF</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\images\another_logo.jpg">
       <PackagePath>images\another_logo.jpg</PackagePath>
     </AppxPackagedFile>
@@ -190,6 +217,9 @@
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\js\finalpagelogic.js">
       <PackagePath>js\finalpagelogic.js</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\js\myAzure.js">
+      <PackagePath>js\myAzure.js</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\js\tool.js">
       <PackagePath>js\tool.js</PackagePath>
     </AppxPackagedFile>
@@ -207,18 +237,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\jquery.slimscroll.min.js">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\jquery.slimscroll.min.js</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\js\MobileServices.intellisense.js">
-      <PackagePath>js\MobileServices.intellisense.js</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\js\MobileServices.js">
-      <PackagePath>js\MobileServices.js</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\js\MobileServices.min.js">
-      <PackagePath>js\MobileServices.min.js</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\js\myAzure.js">
-      <PackagePath>js\myAzure.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\js\navigator.js">
       <PackagePath>js\navigator.js</PackagePath>
@@ -238,20 +256,14 @@
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\js\vendCalls.js">
       <PackagePath>js\vendCalls.js</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\mobile_services\connect.js">
+      <PackagePath>mobile_services\connect.js</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\base\base.js">
       <PackagePath>pages\base\base.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\base\base - Copy.js">
-      <PackagePath>pages\base\base - Copy.js</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\base\base copy 3.js">
-      <PackagePath>pages\base\base copy 3.js</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\boost\boost.js">
       <PackagePath>pages\boost\boost.js</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\final\final - Copy.js">
-      <PackagePath>pages\final\final - Copy.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\func\func.js">
       <PackagePath>pages\func\func.js</PackagePath>
@@ -261,9 +273,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\info_home\info_home.js">
       <PackagePath>pages\info_home\info_home.js</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\item_info\item_info - Copy.js">
-      <PackagePath>pages\item_info\item_info - Copy.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.js">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.js</PackagePath>
@@ -300,9 +309,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\welcome\welcome.js">
       <PackagePath>pages\welcome\welcome.js</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\services\mobile services\thinkitdrinkitData\service.js">
-      <PackagePath>services\mobile services\thinkitdrinkitData\service.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\allow-page-scroll.html">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\allow-page-scroll.html</PackagePath>
@@ -354,12 +360,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\boost\boost.html">
       <PackagePath>pages\boost\boost.html</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\final\final - Copy %282%29.html">
-      <PackagePath>pages\final\final - Copy %282%29.html</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\final\final - Copy.html">
-      <PackagePath>pages\final\final - Copy.html</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\pages\func\func.html">
       <PackagePath>pages\func\func.html</PackagePath>
@@ -414,9 +414,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\slimScroll.jquery.json">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\slimScroll.jquery.json</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\packages.config">
-      <PackagePath>packages.config</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Desktop\app5-current-\App5\App5\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
