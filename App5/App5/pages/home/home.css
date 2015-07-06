@@ -60,7 +60,7 @@
 
 .info_pic {
     float: left;
-    width: 200px;
+    width: 250px;
     height: auto;
     background-color: #fff;
     border: 0;
@@ -73,9 +73,9 @@
 
 #info_btn {
     height: 50px;
-    margin-top: 150px;
+    margin-top: 200px;
     position: absolute;
-    margin-left: 207px;
+    margin-left: 350px;
     font-size: 15px;
     /*box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);*/
     border: 0;
@@ -84,9 +84,9 @@
 #sel_btn {
     /*Use xx-large insted of pixels there is a bug with the button shadow causing a white pixel border*/
     font-size: large;
-    margin-left: 20px;
+    margin-left: 160px;
     /*margin-left: 5px;*/
-    margin-top: 150px;
+    margin-top: 200px;
     position: absolute;
     background-color: #FF7C00;
     height: 50px;
@@ -96,7 +96,7 @@
 }
 
 #sel_age_name {
-    margin-bottom: 0;
+    margin-bottom: 10px;
     font-weight: bold;
     padding-left: 100px;
 }
@@ -106,7 +106,7 @@
 }
 
 #sel_age_pic {
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 /*Do not ever use this its a class, use only CURRENTLY in default.css*/
@@ -181,6 +181,10 @@
 #nutrigenetics_price {
     position: absolute;
 
+}
+
+#wrap_sel {
+    height: 260px;
 }
 
 #nutrigenetics_price_div {

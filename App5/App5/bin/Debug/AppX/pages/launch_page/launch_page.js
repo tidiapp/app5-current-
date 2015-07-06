@@ -101,7 +101,8 @@
             roamingSettings.values["Nutrigenetics_pic"] = "",
             roamingSettings.values["Nutrigenetics_price"] = "",
             roamingSettings.values["creat_cust"] = "",
-            roamingSettings.values["creat_last"] = ""
+            roamingSettings.values["creat_last"] = "",
+            roamingSettings.values["cust_name"] = ""
             
             remove.pop_list(age_data.model.info_page2);
             remove.pop_list(age_data.model.the_boost_sel);
@@ -213,6 +214,15 @@
                 var roamingSettings = appData.roamingSettings;
                 roamingSettings.values["Cat_picked"] = cat_picked;
                 roamingSettings.values["Cat_picked_img"] = document.getElementById("make_drink_img").src;
+
+            } else if (cat_picked === "Performance Testing") {
+                WinJS.Navigation.navigate('pages/func/func.html');
+                var appData = Windows.Storage.ApplicationData.current;
+                var roamingSettings = appData.roamingSettings;
+                roamingSettings.values["Cat_picked"] = cat_picked;
+                roamingSettings.values["Cat_picked_img2"] = document.getElementById("make_drink_img2").src;
+                roamingSettings.values["Cat_picked_img3"] = document.getElementById("nutrigenetics_img").src;
+                roamingSettings.values["Cat_picked_img5"] = document.getElementById("make_sport_drink_img2").src;
 
             } else {
                 WinJS.Navigation.navigate('pages/home/home.html');

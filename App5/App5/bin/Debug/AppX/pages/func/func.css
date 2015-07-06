@@ -51,7 +51,7 @@
     height: auto;
     background-color: #fff;
     border: 0;
-    margin-right: 10px;
+    margin-right: 25px;
 }
 
 #info_btn6 {
@@ -67,8 +67,8 @@
 #sel_btn6 {
     /*Use xx-large insted of pixels there is a bug with the button shadow causing a white pixel border*/
     font-size: large;
-    margin-left: 20px;
-    margin-top: 150px;
+    margin-left: 210px;
+    margin-top: 200px;
     position: absolute;
     background-color: #FF7C00;
     height: 50px;
@@ -80,7 +80,7 @@
 #the_sel_funcs {
     width: 620px;
     background-color: #fff;
-    height: 200px;
+    height: 280px;
     overflow: auto;
     /*direction: rtl;*/
 }
@@ -112,7 +112,7 @@
 }
 
 #win_listview_funcs_placement_sel .win-listview {
-    height: 220px;
+    height: 290px;
     width: 730px;
     float: left;
     /*border: 2px solid black;*/
@@ -122,7 +122,7 @@
 #sel_funcs_placement .win-viewport {
     /*Milo overflow-x hidden works to fix glitch when too many products are hit at the same time, it DOES NOT SHOW UP IN THE CSS DOM eXPLORER DUNNO WHY BUT IT WORKS!!*/
     overflow-x: hidden;
-    height: 220px;
+    height: 280px;
     /*border: 2px solid green;*/
     /*width: 640px;*/
 }

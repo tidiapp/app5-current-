@@ -104,3 +104,16 @@ button{
     box-sizing: border-box;
     border: none; /* override inherited style */
 }
+
+#progressRing {
+    position: absolute;
+    margin-left: 600px;
+    margin-top: 100px;
+}
+#progressRing.win-ring.win-large {
+    width: 100px;
+    height: 100px;
+}
+#progressRing:indeterminate {
+    color: orangered;
+}

@@ -28,7 +28,7 @@
             document.getElementById("home").removeAttribute("hidden");
 
                 //milo: footer history & H1
-                if (roamingSettings.values["Cat_picked"] === "Energy") {
+            if (roamingSettings.values["Cat_picked"] === "Energy" || roamingSettings.values["Cat_picked"] === "Performance Testing") {
                     document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
                 }
 

@@ -59,7 +59,7 @@
             }
 
             //milo: footer history & H1
-            if (the_sel_age === "Nutrigenetic Test") {
+            if (the_sel_age === "Performance Testing") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img3"];
                 document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " kit catagory.";
                 document.getElementById("choosen_age").textContent = "Choose Your Test Kit";
@@ -114,7 +114,7 @@
             var id_sel = document.getElementById("id_sel").textContent;
             var vendId = document.getElementById("b_vend2").innerHTML;
 
-            if (roamingSettings.values["Cat_picked"] === "Nutrigenetic Test") {
+            if (roamingSettings.values["Cat_picked"] === "Performance Testing") {
                 roamingSettings.values["Nutrigenetics_name"] = _choosen_cat;
                 roamingSettings.values["Nutrigenetics_vend"] = vendId;
                 roamingSettings.values["Nutrigenetics_pic"] = document.getElementById("sel_age_pic").src;

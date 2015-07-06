@@ -2,6 +2,9 @@
     margin-left: 20px;
 }
 
+h3 {
+    font-size: 20px;
+}
 
 /*#boost_pic1, #boost_pic2, #boost_pic3 {
     border: 3px solid #fff;
@@ -213,6 +216,10 @@ font-size: 30px;}
         font-size: 25px;
     }
 
+#current_order {
+    margin-top: 30px;
+    font-size: 21px;
+}
 
 /*#cus_name ul {
     font-size: 27px;
@@ -239,7 +246,7 @@ font-size: 30px;}
 
 #total_wrap {
     position: absolute;
-    margin-top: 140px;
+    margin-top: 180px;
     margin-left: 90px;
     /*margin-top: 500px;*/
 }
@@ -303,6 +310,11 @@ font-size: 30px;}
 #nameWrap {
     margin-bottom: 0px;
 }
+
+#final_wrap {
+    width: 180px;
+}
+
 
 
 

@@ -24,13 +24,42 @@
             // Register for navigation-related events in the WebView control.  These don't include
             // navigation events within sub-frames -- there are separate MSWebViewFrame* events for those.
             var webviewControl = document.getElementById("webview");
-            //webviewControl.addEventListener("MSWebViewNavigationStarting", navigationStarting);
-            //webviewControl.addEventListener("MSWebViewContentLoading", contentLoading);
-            //webviewControl.addEventListener("MSWebViewDOMContentLoaded", domContentLoaded);
-            //webviewControl.addEventListener("MSWebViewNavigationCompleted", navigationCompleted);
-            //webviewControl.addEventListener("MSWebViewUnviewableContentIdentified", unviewableContentIdentified);
-            //webviewControl.refresh();
+            webviewControl.addEventListener("MSWebViewNavigationStarting", navigationStarting);
+            webviewControl.addEventListener("MSWebViewNavigationCompleted", navigationCompleted);
+            webviewControl.addEventListener("MSWebViewContentLoading", contentLoading);
+            webviewControl.addEventListener("MSWebViewDOMContentLoaded", domContentLoaded);
+            webviewControl.addEventListener("MSWebViewUnviewableContentIdentified", unviewableContentIdentified);
             webviewControl.navigate("http://storeapp.thinkitdrinkit.com/learn/");
+
+            function updateNavigatingState(isNavigating) {
+                document.getElementById("progressRing").style.visibility = (isNavigating ? "visible" : "hidden");
+            }
+            function navigationStarting(e) {
+                updateNavigatingState(true);
+            }
+            function contentLoading(e) {
+                console.log("Loading content for " + e.uri + ".\n");
+            }
+            function domContentLoaded(e) {
+                console.log("Content for " + e.uri + " has finished loading.\n");
+            }
+            function navigationCompleted(e) {
+                updateNavigatingState(false);
+                if (e.isSuccess) {
+                    console.log("Navigation completed successfully");
+                } else {
+                    console.log("Navigation failed with error code " + e.webErrorStatus);
+                }
+            }
+            function unviewableContentIdentified(e) {
+                updateNavigatingState(false);
+                console.log(e.uri + " cannot be displayed in WebView", "sdksample", "error");
+            }
+
+
+
+
+
 
         },
 

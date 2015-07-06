@@ -122,7 +122,6 @@
                 roamingSettings.values["Nutrigenetics_price"] = 0
             } else {
                 document.getElementById("my_base_img_final").src = roamingSettings.values["Nutrigenetics_pic"];
-                document.getElementById("titlearea").textContent = "Review your kit order, add your name and hit submit.";
                 document.getElementById("my_flav").setAttribute("hidden");
                 document.getElementById("final_surround_div").setAttribute("hidden");
                 document.getElementById("my_base_final").textContent = roamingSettings.values["Nutrigenetics_name"];
@@ -153,12 +152,17 @@
             //milo: roamingSettings.values["t"] is from previous order after continue is hit
             var completeTotal = roamingSettings.values["t"] + parseFloat(roamingSettings.values["Base_price"]) + parseFloat(roamingSettings.values['Boost_total']) + parseFloat(roamingSettings.values['FlavSel_price']) + parseFloat(roamingSettings.values["Nutrigenetics_price"]);
 
-             roamingSettings.values["the_complete_total"] = completeTotal.toFixed(2);
+            roamingSettings.values["the_complete_total"] = completeTotal.toFixed(2);
 
             //roamingSettings.values["the_complete_total"] += parseFloat(roamingSettings.values["total_price"]);
             //roamingSettings.values["not_cont"] = true;
 
-            document.getElementById("product_total").textContent = "$" + roamingSettings.values["the_complete_total"];
+            //var result_dev = (roamingSettings.values["the_complete_total"] /= 15);
+            //var perServ = "$" + result_dev + " per serving";
+
+            var total_out = roamingSettings.values["the_complete_total"];
+
+            document.getElementById("product_total").textContent = "$" + total_out + " (15 servings @ $" + (total_out /= 15).toFixed(2) + ")";
             document.getElementById("tax").textContent = "$" + Math.ceil((roamingSettings.values["the_complete_total"] * .0636) * 100) / 100;
             document.getElementById("total").textContent = "$" + Math.ceil(((roamingSettings.values["the_complete_total"] * .0636) + roamingSettings.values["the_complete_total"]) * 100) / 100;
 
@@ -233,6 +237,8 @@
             if (missName == null || missName == "") {
                 tool.alert("", "Please add your name, thanks");
             } else {
+                roamingSettings.values["cust_name"] = missName;
+
                 if (roamingSettings.values["Boost2_price"] > 0 && roamingSettings.values["Boost3_price"] <= 0) {
                     roamingSettings.values["Boost3_name"] = "none";
                     roamingSettings.values["Boost3_pic"] = "none";

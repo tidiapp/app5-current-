@@ -16,7 +16,7 @@
             design.item_info();
             design.changeTextColor();
             var updated_name = roamingSettings.values["Item_choosen"].replace(/^\s+/, '').replace(/\s+$/, '');
-            document.getElementById("item_name").textContent = "Information on the " + updated_name + ".";
+            document.getElementById("item_name").textContent = "Information on " + updated_name + ".";
 
             server.item_info(updated_name, roamingSettings.values["Clicked_cat"]);
 

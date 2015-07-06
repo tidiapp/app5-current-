@@ -16,9 +16,9 @@
             // TODO: Initialize the page here.
             design.getThanks();
             design.changeTextColor();
-            document.getElementById("thanks_h1").textContent = "Thank you, an associate will take your payment at the counter.";
+            document.getElementById("thanks_h1").textContent = "Thank you " + roamingSettings.values["cust_name"] + ", an associate will take your payment at the counter.";
             document.getElementById("thanks_h2").textContent = "Your order number is: " + (roamingSettings.values["Invoice_number"]) + ".";
-            document.getElementById("new_btn").textContent = "Make a New Order";
+            document.getElementById("new_btn").textContent = "Would you like to create a new formula";
             console.log("thankyou order#", roamingSettings.values["Invoice_number"]);
 
         },

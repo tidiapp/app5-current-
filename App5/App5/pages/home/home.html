@@ -48,21 +48,23 @@
 
             <div id="info_template_placement_winlistview">
                 <div id="age_info_template" data-win-control="WinJS.Binding.Template">
-                    <div hidden="" id="nutrigenetics_price_div">
-                        <span>$</span>
-                        <span id="nutrigenetics_price" data-win-bind="textContent: info_price"></span>
+                    <div id="wrap_sel">
+                        <div hidden="" id="nutrigenetics_price_div">
+                            <span>$</span>
+                            <span id="nutrigenetics_price" data-win-bind="textContent: info_price"></span>
+                        </div>
+                        <img id="sel_age_pic" class="info_pic" data-win-bind="src: info_img" />
+                        <div id="hide_this">
+                            <button id="info_btn" class="sel_look_btn btn btn-warning" name="sel_btn" onclick="clicked_me.more_info(document.getElementById('sel_age_name').textContent)" type="submit">Learn More</button>
+                        </div>
+                        <button onclick="clicked_me.next_page()" id="sel_btn" class="sel_look_btn btn btn-warning" name="sel_btn" type="submit">Choose This Category</button>
+                        <div id="out_of_stock3" hidden=""></div>
+                        <div id="out_of_stock4" hidden=""></div>
+                        <h2 id="sel_age_name" class="sel_age_name_class" data-win-bind="textContent: info_name"></h2>
+                        <p id="info_text" data-win-bind="textContent: the_info"></p>
+                        <span hidden="" id="id_sel" data-win-bind="textContent: id_sel"></span>
+                        <p hidden="" id="b_vend2" data-win-bind="textContent: b_vend"></p>
                     </div>
-                    <img id="sel_age_pic" class="info_pic" data-win-bind="src: info_img" />
-                    <div id="hide_this">
-                        <button id="info_btn" class="sel_look_btn btn btn-warning" name="sel_btn" onclick="clicked_me.more_info(document.getElementById('sel_age_name').textContent)" type="submit">Learn More</button>
-                    </div>                    
-                    <button onclick="clicked_me.next_page()" id="sel_btn" class="sel_look_btn btn btn-warning" name="sel_btn" type="submit">Choose This Category</button>
-                    <div id="out_of_stock3" hidden=""></div>
-                    <div id="out_of_stock4" hidden=""></div>
-                    <h2 id="sel_age_name" class="sel_age_name_class" data-win-bind="textContent: info_name"></h2>
-                    <p id="info_text" data-win-bind="textContent: the_info"></p>
-                    <span hidden="" id="id_sel" data-win-bind="textContent: id_sel"></span>
-                    <p hidden="" id="b_vend2" data-win-bind="textContent: b_vend"></p>
                 </div>
 
                 <div id="info_template_placement" data-win-control="WinJS.UI.ListView" data-win-bind="winControl.itemDataSource: info.dataSource" data-win-options="{

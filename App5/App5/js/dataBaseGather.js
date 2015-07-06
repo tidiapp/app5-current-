@@ -64,7 +64,7 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Nutrigenetic Test") {
+                } else if (the_sel_age === "Performance Testing") {
                     var query = Age.where({
                         AccessNG: true
                     }).orderBy("Order").read().done(function (results) {
@@ -139,15 +139,28 @@
 
                 //milo: id_sel is the id that was picked by user from the db and it equals the actual id number to display the correct business logic 
                 //milo: in the if statement == 'whatever number' is the actual id from the thinkitdrinkitDataClient.Age table in azure db
-                var query = Func.where({
-                    Age_id: id_sel
-                }).orderBy("Order").read().done(function (results) {
-                    for (var i = 0; i < results.length; i++) {
-                        age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
-                    }
-                }, function (err) {
-                    console.log(err);
-                });
+                if(id_sel == "" && cat_selected == "Performance Testing") {
+                    var query = Func.where({
+                        Access: 3
+                    }).orderBy("Order").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+
+                } else {
+                    var query = Func.where({
+                        Age_id: id_sel
+                    }).orderBy("Order").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                }
             },
 
             func_sub: function (name) {
