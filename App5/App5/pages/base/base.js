@@ -70,7 +70,7 @@
             }
 
             //milo: footer history & H1
-            if (roamingSettings.values["Cat_picked"] === "Energy" || roamingSettings.values["Cat_picked"] === "Weight Management" || roamingSettings.values["Cat_picked"] === "Lifestyle Diets" || roamingSettings.values["Cat_picked"] === "Wellness" || roamingSettings.values["Cat_picked"] === "Beauty") {
+            if (roamingSettings.values["Cat_picked"] === "Energy" || roamingSettings.values["Cat_picked"] === "Weight Management" || roamingSettings.values["Cat_picked"] === "Lifestyle Diets" || roamingSettings.values["Cat_picked"] === "Functional Health" || roamingSettings.values["Cat_picked"] === "Beauty") {
                 document.getElementById("choosen_age3").textContent = "Select Your Base Blend.";
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
                 document.getElementById("home_div").setAttribute("hidden");

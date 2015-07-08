@@ -58,18 +58,18 @@
                 document.getElementById("hide_this").setAttribute("hidden", true);
             }
 
+            var var1 = roamingSettings.values["New_route"];
             //milo: footer history & H1
-            if (the_sel_age === "Performance Testing") {
+            if (var1 === "Nutrigenetic Testing" || var1 === "Stress & Recovery Monitoring") {
                 document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img3"];
                 document.getElementById("where_you_are").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + " kit catagory.";
                 document.getElementById("choosen_age").textContent = "Choose Your Test Kit";
                 document.getElementById("nutrigenetics_price_div").removeAttribute("hidden");
                 server.finalPageCall();//if this moved to any other page and final page is not after this page then if will have a bug "BasePrice missing" 
-
 //milo: so if other kits or orders are continued this will allow the adding of them all
             }
 
-            server.home(the_sel_age);
+            server.home(the_sel_age, var1);
 
         },
 

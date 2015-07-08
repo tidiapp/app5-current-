@@ -102,7 +102,8 @@
             roamingSettings.values["Nutrigenetics_price"] = "",
             roamingSettings.values["creat_cust"] = "",
             roamingSettings.values["creat_last"] = "",
-            roamingSettings.values["cust_name"] = ""
+            roamingSettings.values["cust_name"] = "",
+            roamingSettings.values["New_route"] = ""
             
             remove.pop_list(age_data.model.info_page2);
             remove.pop_list(age_data.model.the_boost_sel);
@@ -208,7 +209,7 @@
                 roamingSettings.values["Cat_picked"] = cat_picked;
                 roamingSettings.values["Cat_picked_img4"] = document.getElementById("make_sport_drink_img").src;
     
-            } else if (cat_picked === "Energy" || cat_picked === "Weight Management" || cat_picked === "Lifestyle Diets" || cat_picked === "Wellness" || cat_picked === "Beauty") {
+            } else if (cat_picked === "Energy" || cat_picked === "Weight Management" || cat_picked === "Lifestyle Diets" || cat_picked === "Functional Health" || cat_picked === "Beauty") {
                 WinJS.Navigation.navigate('pages/base/base.html');
                 var appData = Windows.Storage.ApplicationData.current;
                 var roamingSettings = appData.roamingSettings;

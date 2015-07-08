@@ -28,9 +28,9 @@
             document.getElementById("home").removeAttribute("hidden");
 
                 //milo: footer history & H1
-            if (roamingSettings.values["Cat_picked"] === "Energy" || roamingSettings.values["Cat_picked"] === "Performance Testing") {
-                    document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
-                }
+            //if (roamingSettings.values["Cat_picked"] === "Energy") {
+            //        document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img"];
+            //    }
 
                 //milo: footer history & H1
                 if (roamingSettings.values["Cat_picked"] === "Protein" || id_sel == 1) {
@@ -52,7 +52,6 @@
                     document.getElementById("home2_div").removeAttribute("hidden");
                     document.getElementById("home2_p").textContent = roamingSettings.values["Home2_name"];
                     document.getElementById("home2_pic").src = roamingSettings.values["Home2_pic"];
-
                 }
 
                 //milo: footer history 
@@ -61,6 +60,15 @@
                 document.getElementById("home_p").textContent = roamingSettings.values["Age_name"];
                 document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];
                 document.getElementById("where_you_are1").textContent = "You have choosen the " + roamingSettings.values["Age_name"] + "." + " You have 3 steps left.";
+
+            //milo: footer history & H1
+                if (roamingSettings.values["Cat_picked"] === "Performance Testing") {
+                    document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img3"];
+                    document.getElementById("choosen_age2").textContent = "Select Your " + roamingSettings.values["Age_name"] + " Goal.";
+                    document.getElementById("home_div").setAttribute("hidden", true);
+                    document.getElementById("where_you_are1").textContent = "You have choosen the " + roamingSettings.values["Cat_picked"] + "." + " You have 2 steps left.";
+                    document.getElementById("hide_this_func").setAttribute("hidden", true);
+                }
 
                 server.func(id_sel, cat_selected);
 
@@ -93,10 +101,10 @@
         },
 
         next_page_flavor: function () {
-            //if (func3 === "Recovery") {
-            //    WinJS.Navigation.navigate('pages/func/func.html');
-            //    roamingSettings.values["New_route"] = func3;
-            //} else {
+            if (func3 == "Nutrigenetic Testing" || func3 == "Stress & Recovery Monitoring") {
+                WinJS.Navigation.navigate('pages/home/home.html');
+                roamingSettings.values["New_route"] = func3;
+            } else {
                 keepInfo = false;
                 WinJS.Navigation.navigate('pages/base/base.html')
                 roamingSettings.values["Func_name"] = func3;
@@ -106,7 +114,7 @@
                 roamingSettings.values["Func_label"] = document.getElementById("sel_func_pic").src;
                 roamingSettings.values["Id_sel_func"] = document.getElementById("id_sel2").textContent;
                 console.log("Func page picked id = " + roamingSettings.values["Id_sel_func"]);
-            //}
+            }
         },
 
         more_info: function (clicked) {

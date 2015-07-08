@@ -37,7 +37,7 @@
                 });
 
             },
-            home: function (the_sel_age) {
+            home: function (the_sel_age, var1) {
                 remove.pop_list(age_data.model.age);
 
                 //milo: withFilter var Age = thinkitdrinkitDataClient.withFilter(noCachingFilter).getTable("Age"); suposed to not cache, great way to test for same name pictures being replaced never seems to refresh the new pic unless name is changed. 
@@ -64,9 +64,19 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Performance Testing") {
+                } else if (var1 === "Nutrigenetic Testing") {
                     var query = Age.where({
                         AccessNG: true
+                    }).orderBy("Order").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.age.push({ age: results[i].Name, img: results[i].Image, info_price: results[i].Price })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                } else if (var1 === "Stress & Recovery Monitoring") {
+                    var query = Age.where({
+                        AccessN: true
                     }).orderBy("Order").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.age.push({ age: results[i].Name, img: results[i].Image, info_price: results[i].Price })
@@ -242,7 +252,7 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (cat_selected === "Wellness") {
+                } else if (cat_selected === "Functional Health") {
                     var query = Age.where({
                         Access: 4
                     }).orderBy("Order").read().done(function (results) {
