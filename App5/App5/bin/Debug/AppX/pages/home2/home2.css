@@ -108,6 +108,11 @@
 
 #sel_age_pic22 {
     margin-right: 30px;
+    float: left;
+    width: 200px;
+    height: auto;
+    background-color: #fff;
+    border: 0;
 }
 
 /*Do not ever use this its a class, use only CURRENTLY in default.css*/
