@@ -227,7 +227,7 @@ console.log("Vend refreshToken from POST " + vendToken);
                                     var vendCount = JSON.parse(result.responseText).product.inventory[0].count;
                                     //console.log("Base Count from VEND ", vendCount);
                                     if (vendCount >= 1.00000) {
-                                        console.log('Something')
+                                        
                                         WinJS.Navigation.navigate('pages/boost/boost.html')
                                     } else if (vendCount <= 0.00000) {//If all works this is the check that looks for missing not enough quantity 
                                         document.getElementById("out_of_stock").removeAttribute("hidden");
