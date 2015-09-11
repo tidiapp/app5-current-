@@ -6,23 +6,37 @@
     <SolutionConfiguration>Debug|x64</SolutionConfiguration>
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>e3f10fc1-365d-4d2e-b488-7e61baad9bf4</PackageIdentityName>
+<<<<<<< HEAD
     <RegisteredManifestChecksum>4CE466EC6D445D0DC84F3FB927C0C4B003406C01F5549BDFC288B50A2BC0FF8E</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>e3f10fc1-365d-4d2e-b488-7e61baad9bf4_1.0.0.21_x64__bkvjexddj2nfj</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>e3f10fc1-365d-4d2e-b488-7e61baad9bf4_bkvjexddj2nfj!App</RegisteredUserModeAppID>
     <RegisteredPackageID>e3f10fc1-365d-4d2e-b488-7e61baad9bf4</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=Anthony</RegisteredPackagePublisher>
     <RegisteredVersion>1.0.0.21</RegisteredVersion>
+=======
+    <RegisteredManifestChecksum>19EEA814A311BEBC439FDF89044EE2597F331993F213197524BCA39F72569613</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>e3f10fc1-365d-4d2e-b488-7e61baad9bf4_1.0.0.16_x64__bkvjexddj2nfj</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>e3f10fc1-365d-4d2e-b488-7e61baad9bf4_bkvjexddj2nfj!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>e3f10fc1-365d-4d2e-b488-7e61baad9bf4</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Anthony</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.16</RegisteredVersion>
+>>>>>>> master
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\bin\x64\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+<<<<<<< HEAD
       <Modified>2014-10-17T21:04:36.745</Modified>
+=======
+      <Modified>2014-08-14T14:26:18.256</Modified>
+>>>>>>> master
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\css\default.css">
       <PackagePath>css\default.css</PackagePath>
+<<<<<<< HEAD
       <Modified>2014-10-20T14:18:21.156</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\libs\prettify\prettify.css">
@@ -52,6 +66,17 @@
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\supl_sport\supl_sport.css">
       <PackagePath>pages\supl_sport\supl_sport.css</PackagePath>
       <Modified>2014-09-10T14:43:07.332</Modified>
+=======
+      <Modified>2014-08-14T14:23:13.512</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.css">
+      <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.css</PackagePath>
+      <Modified>2014-08-14T14:23:14.290</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\supl_sport\supl_sport.css">
+      <PackagePath>pages\supl_sport\supl_sport.css</PackagePath>
+      <Modified>2014-08-14T14:23:14.273</Modified>
+>>>>>>> master
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\all_products\all_products.css">
       <PackagePath>pages\all_products\all_products.css</PackagePath>
@@ -59,6 +84,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\base\base.css">
       <PackagePath>pages\base\base.css</PackagePath>
+<<<<<<< HEAD
       <Modified>2014-10-15T15:30:53.516</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\boost.bck\boost.css">
@@ -68,11 +94,23 @@
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\final\final.css">
       <PackagePath>pages\final\final.css</PackagePath>
       <Modified>2014-10-02T13:35:45.321</Modified>
+=======
+      <Modified>2014-08-14T14:23:13.934</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\boost\boost.css">
+      <PackagePath>pages\boost\boost.css</PackagePath>
+      <Modified>2014-08-14T14:23:13.939</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\final\final.css">
+      <PackagePath>pages\final\final.css</PackagePath>
+      <Modified>2014-08-14T14:23:13.956</Modified>
+>>>>>>> master
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\final\print.css">
       <PackagePath>pages\final\print.css</PackagePath>
       <Modified>2014-08-14T14:23:13.976</Modified>
     </AppxPackagedFile>
+<<<<<<< HEAD
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\flav_sel\flav_sel.css">
       <PackagePath>pages\flav_sel\flav_sel.css</PackagePath>
       <Modified>2014-10-20T14:18:21.141</Modified>
@@ -80,6 +118,19 @@
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\home\home.css">
       <PackagePath>pages\home\home.css</PackagePath>
       <Modified>2014-10-15T15:30:53.497</Modified>
+=======
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\flavor\flavor.css">
+      <PackagePath>pages\flavor\flavor.css</PackagePath>
+      <Modified>2014-08-14T14:23:14.007</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\flav_sel\flav_sel.css">
+      <PackagePath>pages\flav_sel\flav_sel.css</PackagePath>
+      <Modified>2014-08-14T14:23:13.978</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\home\home.css">
+      <PackagePath>pages\home\home.css</PackagePath>
+      <Modified>2014-08-14T14:23:14.015</Modified>
+>>>>>>> master
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\info_home\info_home.css">
       <PackagePath>pages\info_home\info_home.css</PackagePath>
@@ -91,12 +142,32 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\launch_page\launch_page.css">
       <PackagePath>pages\launch_page\launch_page.css</PackagePath>
+<<<<<<< HEAD
       <Modified>2014-10-14T20:46:15.189</Modified>
+=======
+      <Modified>2014-08-14T14:23:14.046</Modified>
+>>>>>>> master
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login\login.css">
       <PackagePath>pages\login\login.css</PackagePath>
       <Modified>2014-08-14T14:23:14.075</Modified>
+<<<<<<< HEAD
     </AppxPackagedFile>
+=======
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\all_products\all_products.css">
+      <PackagePath>pages\login_sessions\all_products\all_products.css</PackagePath>
+      <Modified>2014-08-14T14:23:14.086</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\profile\profile.css">
+      <PackagePath>pages\login_sessions\profile\profile.css</PackagePath>
+      <Modified>2014-08-14T14:23:14.227</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\protein\protein.css">
+      <PackagePath>pages\protein\protein.css</PackagePath>
+      <Modified>2014-08-14T14:23:14.257</Modified>
+    </AppxPackagedFile>
+>>>>>>> master
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\signup\signup.css">
       <PackagePath>pages\signup\signup.css</PackagePath>
       <Modified>2014-08-14T14:23:14.261</Modified>
@@ -197,11 +268,19 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\ChangeApp.js">
       <PackagePath>js\ChangeApp.js</PackagePath>
+<<<<<<< HEAD
       <Modified>2014-10-21T19:58:26.512</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\dataBaseGather.js">
       <PackagePath>js\dataBaseGather.js</PackagePath>
       <Modified>2014-10-14T20:26:15.619</Modified>
+=======
+      <Modified>2014-08-14T14:23:13.608</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\dataBaseGather.js">
+      <PackagePath>js\dataBaseGather.js</PackagePath>
+      <Modified>2014-08-14T14:23:13.704</Modified>
+>>>>>>> master
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\dataStore.js">
       <PackagePath>js\dataStore.js</PackagePath>
@@ -209,15 +288,24 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\default.js">
       <PackagePath>js\default.js</PackagePath>
+<<<<<<< HEAD
       <Modified>2014-10-16T19:59:09.719</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\gatherInfo.js">
       <PackagePath>js\gatherInfo.js</PackagePath>
       <Modified>2014-09-25T14:01:56.351</Modified>
+=======
+      <Modified>2014-08-14T14:23:13.707</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\gatherInfo.js">
+      <PackagePath>js\gatherInfo.js</PackagePath>
+      <Modified>2014-08-14T14:23:13.708</Modified>
+>>>>>>> master
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\jquery.js">
       <PackagePath>js\jquery.js</PackagePath>
       <Modified>2014-08-14T14:23:13.747</Modified>
+<<<<<<< HEAD
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\libs\prettify\prettify.js">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\libs\prettify\prettify.js</PackagePath>
@@ -231,6 +319,9 @@
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\jquery.slimscroll.min.js</PackagePath>
       <Modified>2014-08-25T14:51:37.317</Modified>
     </AppxPackagedFile>
+=======
+    </AppxPackagedFile>
+>>>>>>> master
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\MobileServices.intellisense.js">
       <PackagePath>js\MobileServices.intellisense.js</PackagePath>
       <Modified>2014-08-14T14:23:13.614</Modified>
@@ -258,6 +349,7 @@
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\removeInfo.js">
       <PackagePath>js\removeInfo.js</PackagePath>
       <Modified>2014-08-14T14:23:13.767</Modified>
+<<<<<<< HEAD
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\showPopupUI.js">
       <PackagePath>js\showPopupUI.js</PackagePath>
@@ -294,10 +386,21 @@
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\supl_sport\supl_sport.js">
       <PackagePath>pages\supl_sport\supl_sport.js</PackagePath>
       <Modified>2014-08-20T17:04:22.965</Modified>
+=======
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.js">
+      <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.js</PackagePath>
+      <Modified>2014-08-14T14:23:14.297</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\supl_sport\supl_sport.js">
+      <PackagePath>pages\supl_sport\supl_sport.js</PackagePath>
+      <Modified>2014-08-14T14:23:14.284</Modified>
+>>>>>>> master
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\all_products\all_products.js">
       <PackagePath>pages\all_products\all_products.js</PackagePath>
       <Modified>2014-08-14T14:23:13.928</Modified>
+<<<<<<< HEAD
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\boost.bck\boost.js">
       <PackagePath>pages\boost.bck\boost.js</PackagePath>
@@ -322,11 +425,50 @@
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\launch_page\launch_page.js">
       <PackagePath>pages\launch_page\launch_page.js</PackagePath>
       <Modified>2014-10-17T15:06:32.861</Modified>
+=======
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\base\base.js">
+      <PackagePath>pages\base\base.js</PackagePath>
+      <Modified>2014-08-14T14:23:13.937</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\boost\boost.js">
+      <PackagePath>pages\boost\boost.js</PackagePath>
+      <Modified>2014-08-14T14:23:13.955</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\final\final.js">
+      <PackagePath>pages\final\final.js</PackagePath>
+      <Modified>2014-08-14T14:23:13.974</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\flavor\flavor.js">
+      <PackagePath>pages\flavor\flavor.js</PackagePath>
+      <Modified>2014-08-14T14:23:14.010</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\flav_sel\flav_sel.js">
+      <PackagePath>pages\flav_sel\flav_sel.js</PackagePath>
+      <Modified>2014-08-14T14:23:13.982</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\home\home.js">
+      <PackagePath>pages\home\home.js</PackagePath>
+      <Modified>2014-08-14T14:23:14.018</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\info_home\info_home.js">
+      <PackagePath>pages\info_home\info_home.js</PackagePath>
+      <Modified>2014-08-14T14:23:14.035</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\item_info\item_info.js">
+      <PackagePath>pages\item_info\item_info.js</PackagePath>
+      <Modified>2014-08-14T14:23:14.044</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\launch_page\launch_page.js">
+      <PackagePath>pages\launch_page\launch_page.js</PackagePath>
+      <Modified>2014-08-14T14:23:14.073</Modified>
+>>>>>>> master
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login\login.js">
       <PackagePath>pages\login\login.js</PackagePath>
       <Modified>2014-08-14T14:23:14.085</Modified>
     </AppxPackagedFile>
+<<<<<<< HEAD
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\signup\signup.js">
       <PackagePath>pages\signup\signup.js</PackagePath>
       <Modified>2014-08-14T14:23:14.272</Modified>
@@ -426,6 +568,87 @@
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.html">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.html</PackagePath>
       <Modified>2014-09-10T14:43:07.336</Modified>
+=======
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\all_products\all_products.js">
+      <PackagePath>pages\login_sessions\all_products\all_products.js</PackagePath>
+      <Modified>2014-08-14T14:23:14.089</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\base\base.js">
+      <PackagePath>pages\login_sessions\base\base.js</PackagePath>
+      <Modified>2014-08-14T14:23:14.093</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\boost\boost.js">
+      <PackagePath>pages\login_sessions\boost\boost.js</PackagePath>
+      <Modified>2014-08-14T14:23:14.107</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\final\final.js">
+      <PackagePath>pages\login_sessions\final\final.js</PackagePath>
+      <Modified>2014-08-14T14:23:14.145</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\flavor\flavor.js">
+      <PackagePath>pages\login_sessions\flavor\flavor.js</PackagePath>
+      <Modified>2014-08-14T14:23:14.163</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\flav_sel\flav_sel.js">
+      <PackagePath>pages\login_sessions\flav_sel\flav_sel.js</PackagePath>
+      <Modified>2014-08-14T14:23:14.157</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\home\home.js">
+      <PackagePath>pages\login_sessions\home\home.js</PackagePath>
+      <Modified>2014-08-14T14:23:14.170</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\info_home\info_home.js">
+      <PackagePath>pages\login_sessions\info_home\info_home.js</PackagePath>
+      <Modified>2014-08-14T14:23:14.199</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\item_info\item_info.js">
+      <PackagePath>pages\login_sessions\item_info\item_info.js</PackagePath>
+      <Modified>2014-08-14T14:23:14.204</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\launch_page\launch_page.js">
+      <PackagePath>pages\login_sessions\launch_page\launch_page.js</PackagePath>
+      <Modified>2014-08-14T14:23:14.225</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\profile\profile.js">
+      <PackagePath>pages\login_sessions\profile\profile.js</PackagePath>
+      <Modified>2014-08-14T14:23:14.241</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\protein\protein.js">
+      <PackagePath>pages\login_sessions\protein\protein.js</PackagePath>
+      <Modified>2014-08-14T14:23:14.247</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\thankyou\thankyou.js">
+      <PackagePath>pages\login_sessions\thankyou\thankyou.js</PackagePath>
+      <Modified>2014-08-14T14:23:14.254</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\protein\protein.js">
+      <PackagePath>pages\protein\protein.js</PackagePath>
+      <Modified>2014-08-14T14:23:14.259</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\signup\signup.js">
+      <PackagePath>pages\signup\signup.js</PackagePath>
+      <Modified>2014-08-14T14:23:14.272</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\thankyou\thankyou.js">
+      <PackagePath>pages\thankyou\thankyou.js</PackagePath>
+      <Modified>2014-08-14T14:23:14.301</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\welcome\welcome.js">
+      <PackagePath>pages\welcome\welcome.js</PackagePath>
+      <Modified>2014-08-14T14:23:14.305</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\services\mobile services\thinkitdrinkitData\service.js">
+      <PackagePath>services\mobile services\thinkitdrinkitData\service.js</PackagePath>
+      <Modified>2014-08-14T14:23:14.307</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\default.html">
+      <PackagePath>default.html</PackagePath>
+      <Modified>2014-08-14T14:23:13.517</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.html">
+      <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.html</PackagePath>
+      <Modified>2014-08-14T14:23:14.294</Modified>
+>>>>>>> master
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\supl_sport\supl_sport.html">
       <PackagePath>pages\supl_sport\supl_sport.html</PackagePath>
@@ -437,6 +660,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\base\base.html">
       <PackagePath>pages\base\base.html</PackagePath>
+<<<<<<< HEAD
       <Modified>2014-10-15T20:11:35.932</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\boost.bck\boost.html">
@@ -454,6 +678,29 @@
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\home\home.html">
       <PackagePath>pages\home\home.html</PackagePath>
       <Modified>2014-10-15T20:11:35.912</Modified>
+=======
+      <Modified>2014-08-14T14:23:13.935</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\boost\boost.html">
+      <PackagePath>pages\boost\boost.html</PackagePath>
+      <Modified>2014-08-14T14:23:13.943</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\final\final.html">
+      <PackagePath>pages\final\final.html</PackagePath>
+      <Modified>2014-08-14T14:23:13.962</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\flavor\flavor.html">
+      <PackagePath>pages\flavor\flavor.html</PackagePath>
+      <Modified>2014-08-14T14:23:14.008</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\flav_sel\flav_sel.html">
+      <PackagePath>pages\flav_sel\flav_sel.html</PackagePath>
+      <Modified>2014-08-14T14:23:13.980</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\home\home.html">
+      <PackagePath>pages\home\home.html</PackagePath>
+      <Modified>2014-08-14T14:23:14.017</Modified>
+>>>>>>> master
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\info_home\info_home.html">
       <PackagePath>pages\info_home\info_home.html</PackagePath>
@@ -465,23 +712,92 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\launch_page\launch_page.html">
       <PackagePath>pages\launch_page\launch_page.html</PackagePath>
+<<<<<<< HEAD
       <Modified>2014-10-14T20:29:43.504</Modified>
+=======
+      <Modified>2014-08-14T14:23:14.048</Modified>
+>>>>>>> master
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login\login.html">
       <PackagePath>pages\login\login.html</PackagePath>
       <Modified>2014-08-14T14:23:14.076</Modified>
+<<<<<<< HEAD
     </AppxPackagedFile>
+=======
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\all_products\all_products.html">
+      <PackagePath>pages\login_sessions\all_products\all_products.html</PackagePath>
+      <Modified>2014-08-14T14:23:14.088</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\base\base.html">
+      <PackagePath>pages\login_sessions\base\base.html</PackagePath>
+      <Modified>2014-08-14T14:23:14.092</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\boost\boost.html">
+      <PackagePath>pages\login_sessions\boost\boost.html</PackagePath>
+      <Modified>2014-08-14T14:23:14.097</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\final\final.html">
+      <PackagePath>pages\login_sessions\final\final.html</PackagePath>
+      <Modified>2014-08-14T14:23:14.136</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\flavor\flavor.html">
+      <PackagePath>pages\login_sessions\flavor\flavor.html</PackagePath>
+      <Modified>2014-08-14T14:23:14.160</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\flav_sel\flav_sel.html">
+      <PackagePath>pages\login_sessions\flav_sel\flav_sel.html</PackagePath>
+      <Modified>2014-08-14T14:23:14.152</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\home\home.html">
+      <PackagePath>pages\login_sessions\home\home.html</PackagePath>
+      <Modified>2014-08-14T14:23:14.169</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\info_home\info_home.html">
+      <PackagePath>pages\login_sessions\info_home\info_home.html</PackagePath>
+      <Modified>2014-08-14T14:23:14.172</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\item_info\item_info.html">
+      <PackagePath>pages\login_sessions\item_info\item_info.html</PackagePath>
+      <Modified>2014-08-14T14:23:14.201</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\launch_page\launch_page.html">
+      <PackagePath>pages\login_sessions\launch_page\launch_page.html</PackagePath>
+      <Modified>2014-08-14T14:23:14.207</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\profile\profile.html">
+      <PackagePath>pages\login_sessions\profile\profile.html</PackagePath>
+      <Modified>2014-08-14T14:23:14.233</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\protein\protein.html">
+      <PackagePath>pages\login_sessions\protein\protein.html</PackagePath>
+      <Modified>2014-08-14T14:23:14.244</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\thankyou\thankyou.html">
+      <PackagePath>pages\login_sessions\thankyou\thankyou.html</PackagePath>
+      <Modified>2014-08-14T14:23:14.252</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\protein\protein.html">
+      <PackagePath>pages\protein\protein.html</PackagePath>
+      <Modified>2014-08-14T14:23:14.258</Modified>
+    </AppxPackagedFile>
+>>>>>>> master
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\signup\signup.html">
       <PackagePath>pages\signup\signup.html</PackagePath>
       <Modified>2014-08-14T14:23:14.263</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\thankyou\thankyou.html">
       <PackagePath>pages\thankyou\thankyou.html</PackagePath>
+<<<<<<< HEAD
       <Modified>2014-10-21T20:05:40.001</Modified>
+=======
+      <Modified>2014-08-14T14:23:14.300</Modified>
+>>>>>>> master
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\welcome\welcome.html">
       <PackagePath>pages\welcome\welcome.html</PackagePath>
       <Modified>2014-08-14T14:23:14.303</Modified>
+<<<<<<< HEAD
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\README.md">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\README.md</PackagePath>
@@ -498,6 +814,68 @@
     <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <Modified>2014-10-17T21:05:05.177</Modified>
+=======
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\packages.config">
+      <PackagePath>packages.config</PackagePath>
+      <Modified>2014-08-14T14:23:13.772</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\base\base.css_notused">
+      <PackagePath>pages\login_sessions\base\base.css_notused</PackagePath>
+      <Modified>2014-08-14T14:23:14.090</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\final\final.css_notused">
+      <PackagePath>pages\login_sessions\final\final.css_notused</PackagePath>
+      <Modified>2014-08-14T14:23:14.135</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\flavor\flavor.css_notused">
+      <PackagePath>pages\login_sessions\flavor\flavor.css_notused</PackagePath>
+      <Modified>2014-08-14T14:23:14.159</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\flav_sel\flav_sel.css_notused">
+      <PackagePath>pages\login_sessions\flav_sel\flav_sel.css_notused</PackagePath>
+      <Modified>2014-08-14T14:23:14.148</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\home\home.css_notused">
+      <PackagePath>pages\login_sessions\home\home.css_notused</PackagePath>
+      <Modified>2014-08-14T14:23:14.165</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\info_home\info_home.css_notused">
+      <PackagePath>pages\login_sessions\info_home\info_home.css_notused</PackagePath>
+      <Modified>2014-08-14T14:23:14.171</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\item_info\item_info.css_notused">
+      <PackagePath>pages\login_sessions\item_info\item_info.css_notused</PackagePath>
+      <Modified>2014-08-14T14:23:14.200</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\launch_page\launch_page.css_notused">
+      <PackagePath>pages\login_sessions\launch_page\launch_page.css_notused</PackagePath>
+      <Modified>2014-08-14T14:23:14.206</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\base\base.js_bck">
+      <PackagePath>pages\login_sessions\base\base.js_bck</PackagePath>
+      <Modified>2014-08-14T14:23:14.095</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\boost\boost.js_bck">
+      <PackagePath>pages\login_sessions\boost\boost.js_bck</PackagePath>
+      <Modified>2014-08-14T14:23:14.133</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\boost\boost.html_bck">
+      <PackagePath>pages\login_sessions\boost\boost.html_bck</PackagePath>
+      <Modified>2014-08-14T14:23:14.102</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\protein\protein.css_notusing">
+      <PackagePath>pages\login_sessions\protein\protein.css_notusing</PackagePath>
+      <Modified>2014-08-14T14:23:14.243</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\pages\login_sessions\thankyou\thankyou.css_bck">
+      <PackagePath>pages\login_sessions\thankyou\thankyou.css_bck</PackagePath>
+      <Modified>2014-08-14T14:23:14.251</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\bin\x64\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2014-08-14T14:26:17.485</Modified>
+>>>>>>> master
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

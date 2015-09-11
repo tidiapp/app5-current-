@@ -21,7 +21,7 @@
             var id_sel = roamingSettings.values["Id_sel_func"];
             var cat_selected = roamingSettings.values["Cat_picked"];
             //server.finalPageCall();
-
+            console.log('hi')
             //milo: footer history 
             document.getElementById("age_p").textContent = roamingSettings.values["Cat_picked"];
             document.getElementById("home_pic").src = roamingSettings.values["Age_pic"];
@@ -37,6 +37,7 @@
                     document.getElementById("where_you_are2").textContent = "You have choosen " + roamingSettings.values["Func_name"] + "." + " You have 2 steps left.";
                     document.getElementById("choosen_age3").textContent = "Select Your " + "Base For " + roamingSettings.values["Func_name"] + ".";
                     document.getElementById("func_div").removeAttribute("hidden");
+                    
                 } else {
                     document.getElementById("age_pic").src = roamingSettings.values["Cat_picked_img5"];
                     document.getElementById("choosen_age3").textContent = "Select Your Base For " + roamingSettings.values["Age_name"] + ".";
@@ -112,7 +113,7 @@
     WinJS.Namespace.define("base_clicked", {
 
         clicked: function (id, name) {
-
+            console.log("Base page picked id = " + roamingSettings.values["Id_sel_base"]);
             remove.pop_list(age_data.model.info_page2);
             //milo: bug fixed. event.srcElement.innerText grabs 2 things has issues with it so code below is needed. dataBaseGather.js has the rest of the logic... 
             var updated_id = id.slice(0, 9).replace(/[^0-9]/g, '');
@@ -129,6 +130,7 @@
                     if (b_name == updated_id2) {
                         var id_sel = list.getItem(i).data.id_sel;
                         roamingSettings.values["Id_sel_base"] = id_sel;
+                        
                     }
                 }
 
@@ -147,7 +149,7 @@
             roamingSettings.values["Base_info"] = document.getElementById("sel_base_info").textContent;
             roamingSettings.values["Base_price"] = document.getElementById("base_price").textContent;
             roamingSettings.values["Base_label"] = document.getElementById("sel_base_pic").src;
-            //console.log("Base page picked id = " + roamingSettings.values["Id_sel_base"]);
+           // console.log("Base page picked id = " + roamingSettings.values["Id_sel_base"]);
 
 
 
@@ -225,6 +227,7 @@ console.log("Vend refreshToken from POST " + vendToken);
                                     var vendCount = JSON.parse(result.responseText).product.inventory[0].count;
                                     //console.log("Base Count from VEND ", vendCount);
                                     if (vendCount >= 1.00000) {
+                                        
                                         WinJS.Navigation.navigate('pages/boost/boost.html')
                                     } else if (vendCount <= 0.00000) {//If all works this is the check that looks for missing not enough quantity 
                                         document.getElementById("out_of_stock").removeAttribute("hidden");
