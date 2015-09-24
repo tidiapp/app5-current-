@@ -1,19 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>THINKITDRINKIT1</Machine>
-    <WindowsUser>Anthony</WindowsUser>
+    <Machine>LINNER</Machine>
+    <WindowsUser>linner_destwin</WindowsUser>
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>e3f10fc1-365d-4d2e-b488-7e61baad9bf4</PackageIdentityName>
-<<<<<<< HEAD
     <IntermediateOutputPath>C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\bld\Debug\</IntermediateOutputPath>
     <RegisteredManifestChecksum>C77C447FF3940DFEF1BAC5D2001A9D7A15220BC97502465A895429AAB85E4608</RegisteredManifestChecksum>
-=======
-    <IntermediateOutputPath>C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\bld\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>EF8D8656E2A9E4D3E5BF9344EEE15D817E8795E2F6E15194CE48F6AF04F3758E</RegisteredManifestChecksum>
->>>>>>> origin/getting-app-ready
     <RegisteredPackageMoniker>e3f10fc1-365d-4d2e-b488-7e61baad9bf4_1.0.0.39_neutral__t66pgecwyvnzw</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>e3f10fc1-365d-4d2e-b488-7e61baad9bf4_t66pgecwyvnzw!App</RegisteredUserModeAppID>
     <RegisteredPackageID>e3f10fc1-365d-4d2e-b488-7e61baad9bf4</RegisteredPackageID>
@@ -22,946 +17,554 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\bin\Debug\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-<<<<<<< HEAD
-      <Modified>2015-08-20T15:47:22.351</Modified>
-=======
-      <Modified>2015-08-03T17:56:56.565</Modified>
->>>>>>> origin/getting-app-ready
+      <Modified>2015-09-11T02:51:46.438</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\css\bootstrap-theme.css">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\css\bootstrap-theme.css">
       <PackagePath>css\bootstrap-theme.css</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.574</Modified>
-=======
-      <Modified>2015-07-14T16:28:21.824</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\css\bootstrap.css">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\css\bootstrap.css">
       <PackagePath>css\bootstrap.css</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.591</Modified>
-=======
-      <Modified>2015-07-14T16:28:21.831</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\css\default.css">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\css\default.css">
       <PackagePath>css\default.css</PackagePath>
-<<<<<<< HEAD
-      <Modified>2015-08-07T17:15:11.596</Modified>
-=======
-      <Modified>2015-07-30T19:08:59.450</Modified>
->>>>>>> origin/getting-app-ready
+      <Modified>2015-09-11T02:26:52.864</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\libs\prettify\prettify.css">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\libs\prettify\prettify.css">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\libs\prettify\prettify.css</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.910</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.256</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\style.css">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\style.css">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\style.css</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.922</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.363</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\boost\boost.css">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\boost\boost.css">
       <PackagePath>pages\boost\boost.css</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.957</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.415</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\func\func.css">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\func\func.css">
       <PackagePath>pages\func\func.css</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.972</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.497</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\home2\home2.css">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\home2\home2.css">
       <PackagePath>pages\home2\home2.css</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.981</Modified>
-=======
-      <Modified>2015-07-14T17:25:21.688</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.css">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.css">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.css</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:12.009</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.573</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\supl_sport\supl_sport.css">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\supl_sport\supl_sport.css">
       <PackagePath>pages\supl_sport\supl_sport.css</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:12.005</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.563</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\all_products\all_products.css">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\all_products\all_products.css">
       <PackagePath>pages\all_products\all_products.css</PackagePath>
-      <Modified>2015-07-14T16:25:01.432</Modified>
+      <Modified>2015-07-16T13:13:00.935</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\base\base.css">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\base\base.css">
       <PackagePath>pages\base\base.css</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.950</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.394</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\final\final.css">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\final\final.css">
       <PackagePath>pages\final\final.css</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.961</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.442</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\final\print.css">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\final\print.css">
       <PackagePath>pages\final\print.css</PackagePath>
-      <Modified>2015-07-14T16:25:01.525</Modified>
+      <Modified>2015-07-16T13:13:00.948</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\flav_sel\flav_sel.css">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\flav_sel\flav_sel.css">
       <PackagePath>pages\flav_sel\flav_sel.css</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.967</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.478</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\home\home.css">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\home\home.css">
       <PackagePath>pages\home\home.css</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.976</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.501</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\info_home\info_home.css">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\info_home\info_home.css">
       <PackagePath>pages\info_home\info_home.css</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.987</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.528</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\item_info\item_info.css">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\item_info\item_info.css">
       <PackagePath>pages\item_info\item_info.css</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.992</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.533</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\launch_page\launch_page.css">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\launch_page\launch_page.css">
       <PackagePath>pages\launch_page\launch_page.css</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.996</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.545</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\login\login.css">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\login\login.css">
       <PackagePath>pages\login\login.css</PackagePath>
-      <Modified>2015-07-14T16:25:01.577</Modified>
+      <Modified>2015-07-16T13:13:00.965</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\signup\signup.css">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\signup\signup.css">
       <PackagePath>pages\signup\signup.css</PackagePath>
-      <Modified>2015-07-14T16:25:01.735</Modified>
+      <Modified>2015-07-16T13:13:01.027</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\thankyou\thankyou.css">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\thankyou\thankyou.css">
       <PackagePath>pages\thankyou\thankyou.css</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:12.013</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.578</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\welcome\welcome.css">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\welcome\welcome.css">
       <PackagePath>pages\welcome\welcome.css</PackagePath>
-      <Modified>2015-07-14T16:25:01.813</Modified>
+      <Modified>2015-07-16T13:13:01.045</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\fonts\glyphicons-halflings-regular.eot">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\fonts\glyphicons-halflings-regular.eot">
       <PackagePath>fonts\glyphicons-halflings-regular.eot</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.866</Modified>
-=======
-      <Modified>2015-07-14T16:28:21.948</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\fonts\glyphicons-halflings-regular.svg">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\fonts\glyphicons-halflings-regular.svg">
       <PackagePath>fonts\glyphicons-halflings-regular.svg</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.869</Modified>
-=======
-      <Modified>2015-07-14T16:28:21.957</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\fonts\glyphicons-halflings-regular.ttf">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\fonts\glyphicons-halflings-regular.ttf">
       <PackagePath>fonts\glyphicons-halflings-regular.ttf</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.871</Modified>
-=======
-      <Modified>2015-07-14T16:28:21.963</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\fonts\glyphicons-halflings-regular.woff">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\fonts\glyphicons-halflings-regular.woff">
       <PackagePath>fonts\glyphicons-halflings-regular.woff</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.873</Modified>
-=======
-      <Modified>2015-07-14T16:28:21.968</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\fonts\glyphicons-halflings-regular.woff2">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\fonts\glyphicons-halflings-regular.woff2">
       <PackagePath>fonts\glyphicons-halflings-regular.woff2</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.874</Modified>
-=======
-      <Modified>2015-07-14T16:28:21.973</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\fonts\MYRIADPRO-BOLD.OTF">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\fonts\MYRIADPRO-BOLD.OTF">
       <PackagePath>fonts\MYRIADPRO-BOLD.OTF</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.599</Modified>
-=======
-      <Modified>2015-07-14T16:28:21.849</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\fonts\MYRIADPRO-BOLDCOND.OTF">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\fonts\MYRIADPRO-BOLDCOND.OTF">
       <PackagePath>fonts\MYRIADPRO-BOLDCOND.OTF</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.602</Modified>
-=======
-      <Modified>2015-07-14T16:28:21.856</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\fonts\MYRIADPRO-BOLDCONDIT.OTF">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\fonts\MYRIADPRO-BOLDCONDIT.OTF">
       <PackagePath>fonts\MYRIADPRO-BOLDCONDIT.OTF</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.847</Modified>
-=======
-      <Modified>2015-07-14T16:28:21.865</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\fonts\MYRIADPRO-BOLDIT.OTF">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\fonts\MYRIADPRO-BOLDIT.OTF">
       <PackagePath>fonts\MYRIADPRO-BOLDIT.OTF</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.854</Modified>
-=======
-      <Modified>2015-07-14T16:28:21.872</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\fonts\MYRIADPRO-COND.OTF">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\fonts\MYRIADPRO-COND.OTF">
       <PackagePath>fonts\MYRIADPRO-COND.OTF</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.856</Modified>
-=======
-      <Modified>2015-07-14T16:28:21.880</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\fonts\MYRIADPRO-CONDIT.OTF">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\fonts\MYRIADPRO-CONDIT.OTF">
       <PackagePath>fonts\MYRIADPRO-CONDIT.OTF</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.859</Modified>
-=======
-      <Modified>2015-07-14T16:28:21.887</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\fonts\MYRIADPRO-REGULAR.OTF">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\fonts\MYRIADPRO-REGULAR.OTF">
       <PackagePath>fonts\MYRIADPRO-REGULAR.OTF</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.860</Modified>
-=======
-      <Modified>2015-07-14T16:28:21.895</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\fonts\MYRIADPRO-SEMIBOLD.OTF">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\fonts\MYRIADPRO-SEMIBOLD.OTF">
       <PackagePath>fonts\MYRIADPRO-SEMIBOLD.OTF</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.863</Modified>
-=======
-      <Modified>2015-07-14T16:28:21.902</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\fonts\MYRIADPRO-SEMIBOLDIT.OTF">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\fonts\MYRIADPRO-SEMIBOLDIT.OTF">
       <PackagePath>fonts\MYRIADPRO-SEMIBOLDIT.OTF</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.865</Modified>
-=======
-      <Modified>2015-07-14T16:28:21.933</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\images\another_logo.jpg">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\images\another_logo.jpg">
       <PackagePath>images\another_logo.jpg</PackagePath>
-      <Modified>2015-07-14T16:25:01.156</Modified>
+      <Modified>2015-07-16T13:13:00.894</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\images\another_logo.scale-100.jpg">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\images\another_logo.scale-100.jpg">
       <PackagePath>images\another_logo.scale-100.jpg</PackagePath>
-      <Modified>2015-07-14T16:25:01.161</Modified>
+      <Modified>2015-07-16T13:13:00.895</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\images\another_logo.scale-180.jpg">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\images\another_logo.scale-180.jpg">
       <PackagePath>images\another_logo.scale-180.jpg</PackagePath>
-      <Modified>2015-07-14T16:25:01.168</Modified>
+      <Modified>2015-07-16T13:13:00.896</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\images\bar1.jpg">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\images\bar1.jpg">
       <PackagePath>images\bar1.jpg</PackagePath>
-      <Modified>2015-07-14T16:25:01.174</Modified>
+      <Modified>2015-07-16T13:13:00.897</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\images\lemonLime.jpg">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\images\lemonLime.jpg">
       <PackagePath>images\lemonLime.jpg</PackagePath>
-      <Modified>2015-07-14T16:25:01.179</Modified>
+      <Modified>2015-07-16T13:13:00.898</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\images\LemonLimeZero.jpg">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\images\LemonLimeZero.jpg">
       <PackagePath>images\LemonLimeZero.jpg</PackagePath>
-      <Modified>2015-07-14T16:25:01.149</Modified>
+      <Modified>2015-07-16T13:13:00.892</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\images\logo1.jpg">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\images\logo1.jpg">
       <PackagePath>images\logo1.jpg</PackagePath>
-      <Modified>2015-07-14T16:25:01.188</Modified>
+      <Modified>2015-07-16T13:13:00.900</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\images\pomAcia.jpg">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\images\pomAcia.jpg">
       <PackagePath>images\pomAcia.jpg</PackagePath>
-      <Modified>2015-07-14T16:25:01.222</Modified>
+      <Modified>2015-07-16T13:13:00.908</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\images\downarrow4.gif">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\images\downarrow4.gif">
       <PackagePath>images\downarrow4.gif</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.875</Modified>
-=======
-      <Modified>2015-07-14T16:28:21.974</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\images\uparrow4.gif">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\images\uparrow4.gif">
       <PackagePath>images\uparrow4.gif</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.876</Modified>
-=======
-      <Modified>2015-07-14T16:28:21.976</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\images\logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\images\logo.scale-100.png">
       <PackagePath>images\logo.scale-100.png</PackagePath>
-      <Modified>2015-07-14T16:25:01.180</Modified>
+      <Modified>2015-07-16T13:13:00.898</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\images\logo_avatar.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\images\logo_avatar.scale-100.png">
       <PackagePath>images\logo_avatar.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-07-14T16:25:01.190</Modified>
+      <Modified>2015-07-16T13:13:00.900</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\images\logo_avatar.scale-180.png">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\images\logo_avatar.scale-180.png">
       <PackagePath>images\logo_avatar.scale-180.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-07-14T16:25:01.205</Modified>
+      <Modified>2015-07-16T13:13:00.901</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\images\logo_footer.png">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\images\logo_footer.png">
       <PackagePath>images\logo_footer.png</PackagePath>
-      <Modified>2015-07-14T16:25:01.211</Modified>
+      <Modified>2015-07-16T13:13:00.902</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\images\logo_footer_background.png">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\images\logo_footer_background.png">
       <PackagePath>images\logo_footer_background.png</PackagePath>
-      <Modified>2015-07-14T16:25:01.213</Modified>
+      <Modified>2015-07-16T13:13:00.902</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\images\logo_splash.png">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\images\logo_splash.png">
       <PackagePath>images\logo_splash.png</PackagePath>
-      <Modified>2015-07-14T16:25:01.215</Modified>
+      <Modified>2015-07-16T13:13:00.905</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\images\SmallLogo.scale-140.png">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\images\SmallLogo.scale-140.png">
       <PackagePath>images\SmallLogo.scale-140.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-07-14T16:25:01.151</Modified>
+      <Modified>2015-07-16T13:13:00.893</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\images\splash_screen_logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\images\splash_screen_logo.scale-100.png">
       <PackagePath>images\splash_screen_logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-07-14T16:25:01.225</Modified>
+      <Modified>2015-07-16T13:13:00.909</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\images\splash_screen_logo.scale-180.png">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\images\splash_screen_logo.scale-180.png">
       <PackagePath>images\splash_screen_logo.scale-180.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-07-14T16:25:01.226</Modified>
+      <Modified>2015-07-16T13:13:00.910</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\images\storelogo.scale-180.png">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\images\storelogo.scale-180.png">
       <PackagePath>images\storelogo.scale-180.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-07-14T16:25:01.231</Modified>
+      <Modified>2015-07-16T13:13:00.912</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\js\app_bar.js">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\js\app_bar.js">
       <PackagePath>js\app_bar.js</PackagePath>
-      <Modified>2015-07-14T16:25:01.332</Modified>
+      <Modified>2015-07-16T13:13:00.926</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\js\auth.js">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\js\auth.js">
       <PackagePath>js\auth.js</PackagePath>
-      <Modified>2015-07-14T16:25:01.339</Modified>
+      <Modified>2015-07-16T13:13:00.927</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\js\bootstrap.min.js">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\js\bootstrap.min.js">
       <PackagePath>js\bootstrap.min.js</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.879</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.006</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\js\ChangeApp.js">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\js\ChangeApp.js">
       <PackagePath>js\ChangeApp.js</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.878</Modified>
-=======
-      <Modified>2015-07-30T18:23:04.482</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\js\dataBaseGather.js">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\js\dataBaseGather.js">
       <PackagePath>js\dataBaseGather.js</PackagePath>
-<<<<<<< HEAD
-      <Modified>2015-08-07T17:15:11.880</Modified>
-=======
-      <Modified>2015-08-06T20:55:17.621</Modified>
->>>>>>> origin/getting-app-ready
+      <Modified>2015-09-11T02:26:52.878</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\js\dataStore.js">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\js\dataStore.js">
       <PackagePath>js\dataStore.js</PackagePath>
-      <Modified>2015-07-14T16:25:01.360</Modified>
+      <Modified>2015-07-16T13:13:00.928</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\js\default.js">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\js\default.js">
       <PackagePath>js\default.js</PackagePath>
-<<<<<<< HEAD
-      <Modified>2015-08-07T17:15:11.881</Modified>
-=======
-      <Modified>2015-07-30T18:26:48.030</Modified>
->>>>>>> origin/getting-app-ready
+      <Modified>2015-09-11T02:26:52.880</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\js\finalpagelogic.js">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\js\finalpagelogic.js">
       <PackagePath>js\finalpagelogic.js</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.881</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.037</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\js\myAzure.js">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\js\myAzure.js">
       <PackagePath>js\myAzure.js</PackagePath>
-      <Modified>2015-07-14T16:25:01.418</Modified>
+      <Modified>2015-07-16T13:13:00.932</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\js\tool.js">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\js\tool.js">
       <PackagePath>js\tool.js</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.942</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.375</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\js\gatherInfo.js">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\js\gatherInfo.js">
       <PackagePath>js\gatherInfo.js</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.882</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.040</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\js\jquery.js">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\js\jquery.js">
       <PackagePath>js\jquery.js</PackagePath>
-      <Modified>2015-07-14T16:25:01.401</Modified>
+      <Modified>2015-07-16T13:13:00.931</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\libs\prettify\prettify.js">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\libs\prettify\prettify.js">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\libs\prettify\prettify.js</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.911</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.276</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\jquery.slimscroll.js">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\jquery.slimscroll.js">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\jquery.slimscroll.js</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.923</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.369</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\jquery.slimscroll.min.js">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\jquery.slimscroll.min.js">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\jquery.slimscroll.min.js</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.939</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.370</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\js\navigator.js">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\js\navigator.js">
       <PackagePath>js\navigator.js</PackagePath>
-      <Modified>2015-07-14T16:25:01.419</Modified>
+      <Modified>2015-07-16T13:13:00.933</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\js\print.js">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\js\print.js">
       <PackagePath>js\print.js</PackagePath>
-      <Modified>2015-07-14T16:25:01.422</Modified>
+      <Modified>2015-07-16T13:13:00.933</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\js\removeInfo.js">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\js\removeInfo.js">
       <PackagePath>js\removeInfo.js</PackagePath>
-      <Modified>2015-07-14T16:25:01.423</Modified>
+      <Modified>2015-07-16T13:13:00.934</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\js\showPopupUI.js">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\js\showPopupUI.js">
       <PackagePath>js\showPopupUI.js</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.941</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.373</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\js\url_functions.js">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\js\url_functions.js">
       <PackagePath>js\url_functions.js</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.943</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.384</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\js\vendCalls.js">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\js\vendCalls.js">
       <PackagePath>js\vendCalls.js</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.944</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.385</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\mobile_services\connect.js">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\mobile_services\connect.js">
       <PackagePath>mobile_services\connect.js</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.945</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.387</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\base\base.js">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\base\base.js">
       <PackagePath>pages\base\base.js</PackagePath>
-<<<<<<< HEAD
-      <Modified>2015-08-07T17:15:11.955</Modified>
-=======
-      <Modified>2015-08-06T21:06:12.230</Modified>
->>>>>>> origin/getting-app-ready
+      <Modified>2015-09-11T02:26:52.890</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\boost\boost.js">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\boost\boost.js">
       <PackagePath>pages\boost\boost.js</PackagePath>
-<<<<<<< HEAD
-      <Modified>2015-09-09T03:06:41.985</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.439</Modified>
->>>>>>> origin/getting-app-ready
+      <Modified>2015-09-11T02:26:50.597</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\func\func.js">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\func\func.js">
       <PackagePath>pages\func\func.js</PackagePath>
-<<<<<<< HEAD
-      <Modified>2015-08-07T17:15:11.974</Modified>
-=======
-      <Modified>2015-08-06T20:31:42.772</Modified>
->>>>>>> origin/getting-app-ready
+      <Modified>2015-09-11T02:26:52.892</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\home2\home2.js">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\home2\home2.js">
       <PackagePath>pages\home2\home2.js</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.985</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.526</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\info_home\info_home.js">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\info_home\info_home.js">
       <PackagePath>pages\info_home\info_home.js</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.990</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.532</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.js">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.js">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.js</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:12.012</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.576</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\supl_sport\supl_sport.js">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\supl_sport\supl_sport.js">
       <PackagePath>pages\supl_sport\supl_sport.js</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:12.008</Modified>
-=======
-      <Modified>2015-08-06T21:06:32.248</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\all_products\all_products.js">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\all_products\all_products.js">
       <PackagePath>pages\all_products\all_products.js</PackagePath>
-      <Modified>2015-07-14T16:25:01.453</Modified>
+      <Modified>2015-07-16T13:13:00.938</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\final\final.js">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\final\final.js">
       <PackagePath>pages\final\final.js</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.965</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.475</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\flav_sel\flav_sel.js">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\flav_sel\flav_sel.js">
       <PackagePath>pages\flav_sel\flav_sel.js</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.971</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.495</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\home\home.js">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\home\home.js">
       <PackagePath>pages\home\home.js</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.980</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.515</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\item_info\item_info.js">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\item_info\item_info.js">
       <PackagePath>pages\item_info\item_info.js</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.995</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.544</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\launch_page\launch_page.js">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\launch_page\launch_page.js">
       <PackagePath>pages\launch_page\launch_page.js</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:12.000</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.557</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\login\login.js">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\login\login.js">
       <PackagePath>pages\login\login.js</PackagePath>
-      <Modified>2015-07-14T16:25:01.588</Modified>
+      <Modified>2015-07-16T13:13:00.965</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\signup\signup.js">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\signup\signup.js">
       <PackagePath>pages\signup\signup.js</PackagePath>
-      <Modified>2015-07-14T16:25:01.748</Modified>
+      <Modified>2015-07-16T13:13:01.029</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\thankyou\thankyou.js">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\thankyou\thankyou.js">
       <PackagePath>pages\thankyou\thankyou.js</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:12.017</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.581</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\welcome\welcome.js">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\welcome\welcome.js">
       <PackagePath>pages\welcome\welcome.js</PackagePath>
-      <Modified>2015-07-14T16:25:01.820</Modified>
+      <Modified>2015-07-16T13:13:01.046</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\allow-page-scroll.html">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\allow-page-scroll.html">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\allow-page-scroll.html</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.884</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.053</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\chaining.html">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\chaining.html">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\chaining.html</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.885</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.066</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\disable-fade-out.html">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\disable-fade-out.html">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\disable-fade-out.html</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.905</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.238</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\dynamic-content.html">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\dynamic-content.html">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\dynamic-content.html</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.906</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.240</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\height-width.html">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\height-width.html">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\height-width.html</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.907</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.251</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\index.html">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\index.html">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\index.html</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.908</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.254</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\mouse-wheel.html">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\mouse-wheel.html">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\mouse-wheel.html</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.912</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.286</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\multiple-elements.html">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\multiple-elements.html">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\multiple-elements.html</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.913</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.297</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\navigation.html">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\navigation.html">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\navigation.html</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.914</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.299</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\nested.html">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\nested.html">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\nested.html</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.915</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.310</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\programmatic-scrolling.html">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\programmatic-scrolling.html">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\programmatic-scrolling.html</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.915</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.319</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\rail.html">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\rail.html">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\rail.html</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.917</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.330</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\scroll-events.html">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\scroll-events.html">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\scroll-events.html</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.919</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.339</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\scrollbar.html">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\scrollbar.html">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\scrollbar.html</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.920</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.351</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\start-position.html">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\start-position.html">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\start-position.html</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.921</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.361</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\default.html">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\default.html">
       <PackagePath>default.html</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.597</Modified>
-=======
-      <Modified>2015-07-14T16:28:21.841</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\boost\boost.html">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\boost\boost.html">
       <PackagePath>pages\boost\boost.html</PackagePath>
-<<<<<<< HEAD
-      <Modified>2015-09-09T12:27:53.788</Modified>
-=======
-      <Modified>2015-09-09T16:41:25.738</Modified>
->>>>>>> origin/getting-app-ready
+      <Modified>2015-09-11T02:50:51.460</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\func\func.html">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\func\func.html">
       <PackagePath>pages\func\func.html</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.973</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.498</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\home2\home2.html">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\home2\home2.html">
       <PackagePath>pages\home2\home2.html</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.983</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.517</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.html">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.html">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.html</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:12.011</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.575</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\supl_sport\supl_sport.html">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\supl_sport\supl_sport.html">
       <PackagePath>pages\supl_sport\supl_sport.html</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:12.006</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.564</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\all_products\all_products.html">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\all_products\all_products.html">
       <PackagePath>pages\all_products\all_products.html</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.949</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.391</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\base\base.html">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\base\base.html">
       <PackagePath>pages\base\base.html</PackagePath>
-<<<<<<< HEAD
-      <Modified>2015-09-11T02:13:21.502</Modified>
-=======
-      <Modified>2015-09-09T16:35:16.606</Modified>
->>>>>>> origin/getting-app-ready
+      <Modified>2015-09-11T02:50:33.988</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\final\final.html">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\final\final.html">
       <PackagePath>pages\final\final.html</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.963</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.450</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\flav_sel\flav_sel.html">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\flav_sel\flav_sel.html">
       <PackagePath>pages\flav_sel\flav_sel.html</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.970</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.485</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\home\home.html">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\home\home.html">
       <PackagePath>pages\home\home.html</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.978</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.503</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\info_home\info_home.html">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\info_home\info_home.html">
       <PackagePath>pages\info_home\info_home.html</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.989</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.530</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\item_info\item_info.html">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\item_info\item_info.html">
       <PackagePath>pages\item_info\item_info.html</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.993</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.535</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\launch_page\launch_page.html">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\launch_page\launch_page.html">
       <PackagePath>pages\launch_page\launch_page.html</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.999</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.547</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\login\login.html">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\login\login.html">
       <PackagePath>pages\login\login.html</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:12.003</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.559</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\signup\signup.html">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\signup\signup.html">
       <PackagePath>pages\signup\signup.html</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:12.004</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.561</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\thankyou\thankyou.html">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\thankyou\thankyou.html">
       <PackagePath>pages\thankyou\thankyou.html</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:12.015</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.579</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\pages\welcome\welcome.html">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\pages\welcome\welcome.html">
       <PackagePath>pages\welcome\welcome.html</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:12.020</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.583</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\README.md">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\README.md">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\README.md</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.883</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.043</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\slimScroll.jquery.json">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\slimScroll.jquery.json">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\slimScroll.jquery.json</PackagePath>
-<<<<<<< HEAD
       <Modified>2015-08-07T17:15:11.940</Modified>
-=======
-      <Modified>2015-07-14T16:28:22.372</Modified>
->>>>>>> origin/getting-app-ready
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Anthony\Desktop\New_Github_clone\app5-current-\App5\App5\bin\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\linner\Desktop\Thinkit_drinkit_github\app5-current-\App5\App5\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-<<<<<<< HEAD
-      <Modified>2015-08-20T15:47:20.455</Modified>
-=======
-      <Modified>2015-08-03T17:56:55.904</Modified>
->>>>>>> origin/getting-app-ready
+      <Modified>2015-09-11T02:51:45.571</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\">
       <Name>Microsoft.WinJS.2.0</Name>
-      <Version>1.0.9600.16408</Version>
+      <Version>1.0.9600.17018</Version>
       <Architecture>Neutral</Architecture>
-      <FrameworkIdentity>Name=Microsoft.WinJS.2.0, MinVersion=1.0.9600.16408</FrameworkIdentity>
+      <FrameworkIdentity>Name=Microsoft.WinJS.2.0, MinVersion=1.0.9600.17018</FrameworkIdentity>
       <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\Microsoft.WinJS.2.0.appx</AppxLocation>
       <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkId=260891</MoreInfo>
     </ResolvedSDKReference>
