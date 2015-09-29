@@ -452,7 +452,10 @@
     WinJS.Namespace.define("boost_clicked", {
 
         clicked: function (id, name) {
-   
+            var the_quick_check = name.indexOf(" ");
+
+           
+           
             remove.pop_list(age_data.model.info_page5);
             //milo: bug fixed, had issue with image and text being pressed were not the same results. dataBaseGather.js has the rest of the logic... 
             //milo: when image is clicked numrical only allowed and id var pass through 

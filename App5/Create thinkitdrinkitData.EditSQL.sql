@@ -2,11 +2,13 @@
 USE [thinkitdrinkitData_db]
 GO
 
-UPDATE thinkitdrinkitData.Boost
+UPDATE thinkitdrinkitData.Base
 Set 
+	[ecommerceinfolite]='Organic Oryzatein™ is a whole grain brown rice protein concentrate. It is the first and only allergen-friendly plant protein. It is the smoothest form of whole grain rice proteins, available at 80% protein concentration with an excellent amino acid profile.'
+--’
 	--[Name] = 'GIVOCAL™*',
 	--[VendID] = 'b8ca3a65-0166-11e4-fbb5-a7024fa4f6a5',
-	[Image] = 'http://thinkitdrinkit.blob.core.windows.net/thinkitdrinkitappimagesboost/Quercetin_CellularEnergy_SM.png'
+	--[Image] = 'http://thinkitdrinkit.blob.core.windows.net/thinkitdrinkitappimagesboost/Quercetin_CellularEnergy_SM.png'
 	--[Price] = '2.90',
 	--[Label] = 'http://thinkitdrinkit.blob.core.windows.net/thinkitdrinkitlabelsboost/Givocal.jpg'
 
@@ -17,7 +19,8 @@ Set
 	--[Order] = '48'
 	--[ShopifyID] = '123',
 	--[ShopifyImg] = 'httpbbbbbb'
-WHERE  --Name = 'GIVOCAL™*'
-	id= '12859'
+WHERE  
+		--Name = 'Soccer'	
+	  id='66'
 	  --AND id 'blah'
 	  --id BETWEEN '14462' and '14608'
