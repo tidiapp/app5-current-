@@ -11,7 +11,7 @@
     color: #000;
     font-size: 30px;
     /*margin-top: -100px;*/
-    width: 100%;
+    width: 200%;
 }
 
 .age_bg2 {
@@ -64,6 +64,7 @@
     font-weight: 500;
     /*margin-left: 210px;*/
     font-size: 16px;
+   width:500px
 }
 
 .info_pic {
@@ -130,13 +131,13 @@
 
 #info_template_placement_winlistview22 .win-listview {
     height: 260px;
-    width: 580px;
+    width: 600px;
     float: left;
     /*border: 2px solid black;*/
     /*dont use margins here use in .win-surface*/
 }
 #home2_wrap {
-    width: 580px;
+    width: 650px;
     margin-top: -20px;
     margin-left: 20px;
 }

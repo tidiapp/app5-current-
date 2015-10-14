@@ -279,7 +279,7 @@
             },
             base_sub: function (id, name) {
                 var Age = thinkitdrinkitDataClient.getTable("Base");
-
+                console.log('here ' + id);
                 //milo: this is for a bug in base.html if clicking on id(a tag) this fires if clicked on image else fires (the issue is coming from base.html when div grabs event.srcElement.innerText there are two text areas a tag and span tag that couse this issue) 
 
                 if (id != isNaN && id != "") {
@@ -359,6 +359,7 @@
             //boost.html
             //milo: uses id from thinkitdrinkitData.Func table
             boost: function (cat_picked, id_func, id_sport, id_base) {
+                
                 var Age = thinkitdrinkitDataClient.getTable("Boost");
 
                 if (id_func == 1 || id_func == 2 || id_func == 4 || id_func == 6) {//milo: bug fix helps show boosts when id_func == 1 (which is recover) is hit. it needs to be the first thing checked if its not then the boost will not show up since it ends up reading the next code down.   
@@ -395,11 +396,12 @@
                             console.log(err);
                         });
                     } else if (cat_picked === "Energy" || cat_picked === "Fitness & Exercise" || cat_picked === "Weight Management" || cat_picked === "Lifestyle Diets" || cat_picked === "Wellness" || cat_picked === "Beauty") {
+                        
                         var query = Age.where({
                             BaseDBbase_id: id_base,
                         }).orderBy("Order").read().done(function (results) {
                             for (var i = 0; i < results.length; i++) {
-                                age_data.model.boost.push({ boost_name: results[i].Name, boost_pic: results[i].Image, id_sel: results[i].id })
+                                age_data.model.boost.push({ boost_name: results[i].Name, boost_pic: results[i].Image, id_sel: results[i].id, order_num: results[i].Order})
                             }
                                 ////milo: standard boosts that show up in most catagories.
                                 //var query = Age.where({

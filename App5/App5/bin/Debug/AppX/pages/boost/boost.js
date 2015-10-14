@@ -250,7 +250,7 @@
                 document.getElementById("the_number").textContent = age_data.model.the_boost_sel.length;
                 document.getElementById("the_num").textContent = age_data.model.the_boost_sel.length;
                 document.getElementById("area_img5").src = roamingSettings.values["Boost5_pic"];
-                document.getElementById("boost5_div").removeAttribute("hidden");
+                document.getElementBy ("boost5_div").removeAttribute("hidden");
                 document.getElementById("div_boost5_name").textContent = roamingSettings.values["Boost5_name"];
 
             } else if (age_data.model.the_boost_sel.length === 6) {
