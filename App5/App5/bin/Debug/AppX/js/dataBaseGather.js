@@ -5,7 +5,7 @@
         //"use strict";
         var appData = Windows.Storage.ApplicationData.current;
         var roamingSettings = appData.roamingSettings;
-        roamingSettings.values["computerNumber"] = 6;
+        roamingSettings.values["computerNumber"] = 2;
         CNum = roamingSettings.values["computerNumber"];
 
         WinJS.Namespace.define("server", {
