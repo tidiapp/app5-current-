@@ -48,9 +48,9 @@
 
     body {
         background-color: #fff;
-        font-family: Helvetica;
+      /* font-family: Helvetica;*/
         /*Linner change for the font-family*/
-        /*font-family: 'Myriad Pro';*/
+        font-family: 'Myriad Pro';
         font-stretch: condensed;
         /*Milo added the mstouch none, it disables multy touch -ms-touch-action: none; DID NOT WORK*/
         /*-ms-touch-action: none;*/
