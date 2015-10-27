@@ -66,7 +66,7 @@
 
 #sel_btn6 {
     /*Use xx-large insted of pixels there is a bug with the button shadow causing a white pixel border*/
-    font-size: large;
+    font-size:15px;/*large;*/
     margin-left: 210px;
     margin-top: 200px;
     position: absolute;
@@ -76,6 +76,8 @@
     /*box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);*/
     border: 0;
 }
+    
+   
 
 #the_sel_funcs {
     width: 620px;
