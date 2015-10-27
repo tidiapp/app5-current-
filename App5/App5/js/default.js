@@ -21,7 +21,7 @@
                 //www.html-color-codes.info is a good website to obtain hex color values
 
                 roamingSettings.values["the_complete_total"] = 0;
-                design.colorChange("#FE500", "white");//#F89B1E new as of 2/2014 #FE5000 #C5E3BF
+                design.colorChange("#ff7518", "#fff");//#F89B1E new as of 2/2014 #FE5000 #C5E3BF
                 roamingSettings.values["true"] = false;
                 roamingSettings.values["not_cont"] = true;
                 roamingSettings.values["went_back"] = true;
