@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>flav_sel</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-light.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <link href="flav_sel.css" rel="stylesheet" />
+    <script src="flav_sel.js"></script>
+</head>
+<body>
+    <div class="flav_sel fragment">
+        <header id="the_header_sel_flav" aria-label="Header content" role="banner">
+            <button data-win-control="WinJS.UI.BackButton"></button>
+            <h1 id="flav_sel_header"class="titlearea win-type-ellipsis"></h1>
+        </header>
+        <section aria-label="Main content" role="main">
+            <div id="flav_sel" class="flav_sel_class" data-win-control="WinJS.Binding.Template">
+                <div id="the_flav_sel" onclick="flav_sel_clicked.clicked(event.srcElement.innerText);">
+                    <img class="flav_sel_pic_class" id="flav_sel_pic" data-win-bind="src:  sel_flav_pic" />
+                    <div class="underline_class">
+                        <a id="flav_sel_name" class="flac_sel_name_class" data-win-bind="textContent: sel_flav_name"></a>
+                    </div>                
+                </div>
+            </div><!-- ends flav_sel div -->
+
+            <div id="flav_sel_placement" class="flav_sel_placement_class" data-win-control="WinJS.UI.ListView" data-win-bind="winControl.itemDataSource: flavor1.dataSource" data-win-options="{
+                    itemTemplate: select ('#flav_sel'),
+                    selectionMode: 'none'
+                }"></div>
+
+            <div id="flav_sel_sel" class="flav_sel_sel_class" data-win-control="WinJS.Binding.Template">
+                <div id="the_flav_sel_sel">
+                    <img class="flav_sel_sel_pic_class" id="flav_sel_sel_pic" data-win-bind="src:   sel_label" />
+                    <img id="hidden_flav_pic" hidden="" data-win-bind="src: sel_pic" />
+                    <!--<div id="hide_this_flav">
+                        <button id="info_btn4" class="sel_look_btn btn btn-warning" name="sel_btn" onclick="flav_sel_clicked.more_info(document.getElementById('flav_sel_sel_name').textContent)" type="submit">Learn More</button>
+                    </div>-->
+                    <div id="choosen_price_div3">
+                        <span id="base_price_doller3">$<span id="f_price" data-win-bind="textContent: flav_price"></span></span>
+                        <span id="perdays3">15 servings</span>
+                        <p id="per_serving3" data-win-bind="textContent: per_serv_f"></p>
+                    </div>
+
+                    <button id="sel_btn4" class="sel_look_btn btn btn-warning" onclick="flav_sel_clicked.next_page_boost(document.getElementById('f_price').textContent)" name="sel_btn2" type="submit">Choose your Flavor</button>
+                    <div id="out_of_stock2" hidden=""></div>
+                    <div id="out_of_stock" hidden=""></div>
+                    <h2 id="flav_sel_sel_name" class="flac_sel_sel_name_class" data-win-bind="textContent: sel_name"></h2>
+                    <p id="flav_sel_sel_info" class="flac_sel_sel_info_class" data-win-bind="textContent: sel_info"></p>
+                    <p id="f_vend" hidden="" data-win-bind="textContent: f_vend"></p>
+                    <!--<p id="f_price" data-win-bind="textContent: flav_price"></p>
+                    <p data-win-bind="textContent: per_serv_f"></p>-->
+
+                    </div>
+            </div><!-- ends flav_sel div -->
+
+            <div id="flav_sel_sel_placement" class="flav_sel_sel_placement_class" data-win-control="WinJS.UI.ListView" data-win-bind="winControl.itemDataSource: info_page4.dataSource" data-win-options="{
+                    itemTemplate: select ('.flav_sel_sel_class'),
+                    selectionMode: 'none'
+                }"></div>
+
+        </section>
+         <footer id="main_footer">
+             <div id="footer_wrap">
+             <div id="boost_footer">
+             <!--Milo: age_ is really coming from launch_page -->
+             <div id="age_div" class="history_div" onclick="flav_sel_clicked.footer_click4()">
+                 <p id="age_p" class="history_p"></p>
+                 <img id="age_pic" class="history_pic" alt="This is a test" src="#" width="90" height="80" />
+             </div>
+
+            <div hidden="" id="home2_div" class="history_div" onclick="flav_sel_clicked.footer_click3()">
+                <p id="home2_p" class="history_p"></p>
+                <img id="home2_pic" class="history_pic" alt="This is a test" src="#" width="90" height="80" />
+            </div>
+
+             <!--Milo: home_ is really coming from home page -->
+             <div id="home_div" class="history_div" onclick="flav_sel_clicked.footer_click()">
+                 <p id="home_p" class="history_p"></p>
+                 <img id="home_pic" class="history_pic" alt="This is a test" src="#" width="90" height="80" />
+             </div>
+
+             <!--Milo: func_ is really coming from func page -->
+             <div hidden="" id="func_div" class="history_div" onclick="WinJS.Navigation.back(3)">
+                 <p id="func_p" class="history_p"></p>
+                 <img id="func_pic" class="history_pic" alt="This is a test" src="#" width="90" height="80" />
+             </div>
+
+             <!--Milo: base_ is really coming from base page -->
+             <div id="base_div" class="history_div" onclick="WinJS.Navigation.back(2)">
+                 <div class="price_prev_div">
+                     <span>$<span id="base_price_prev2"></span></span>
+                 </div>
+                 <p id="base_p" class="history_p"></p>
+                 <img id="base_pic" class="history_pic" alt="This is a test" src="#" width="90" height="80" />
+             </div>
+
+             <!--Milo: boost_ is really coming from boost page -->
+                 <div hidden="" id="boost_div" class="history_div" onclick="WinJS.Navigation.back(1)">
+                     <div class="price_prev_div">
+                         <span>$<span id="boost_price_prev1"></span></span>
+                     </div>
+                     <p id="boost_p" class="history_p"></p>
+                     <img id="boost_pic" class="history_pic" width="90" height="80" />
+                 </div>
+
+                 <div hidden="" id="boost_div2" class="history_div" onclick="WinJS.Navigation.back(1)">
+                     <div class="price_prev_div">
+                         <span>$<span id="boost_price_prev2"></span></span>
+                     </div>
+                     <p id="boost_p2" class="history_p"></p>
+                     <img id="boost_pic2" class="history_pic" width="90" height="80" />
+                 </div>
+
+                 <div hidden="" id="boost_div3" class="history_div" onclick="WinJS.Navigation.back(1)">
+                     <div class="price_prev_div">
+                         <span>$<span id="boost_price_prev3"></span></span>
+                     </div>
+                     <p id="boost_p3" class="history_p"></p>
+                     <img id="boost_pic3" class="history_pic" width="90" height="80" />
+                 </div>
+
+                 <div hidden="" id="boost_div4" class="history_div" onclick="WinJS.Navigation.back(1)">
+                     <div class="price_prev_div">
+                         <span>$<span id="boost_price_prev4"></span></span>
+                     </div>
+                     <p id="boost_p4" class="history_p"></p>
+                     <img id="boost_pic4" class="history_pic" width="90" height="80" />
+                 </div>
+
+                 <div hidden="" id="boost_div5" class="history_div" onclick="WinJS.Navigation.back(1)">
+                     <div class="price_prev_div">
+                         <span>$<span id="boost_price_prev5"></span></span>
+                     </div>
+                     <p id="boost_p5" class="history_p"></p>
+                     <img id="boost_pic5" class="history_pic" width="90" height="80" />
+                 </div>
+
+                 <div hidden="" id="boost_div6" class="history_div" onclick="WinJS.Navigation.back(1)">
+                     <div class="price_prev_div">
+                         <span>$<span id="boost_price_prev6"></span></span>
+                     </div>
+                     <p id="boost_p6" class="history_p"></p>
+                     <img id="boost_pic6" class="history_pic" width="90" height="80" />
+                 </div>
+
+                 <div hidden="" id="boost_div7" class="history_div" onclick="WinJS.Navigation.back(1)">
+                     <div class="price_prev_div">
+                         <span>$<span id="boost_price_prev7"></span></span>
+                     </div>
+                     <p id="boost_p7" class="history_p"></p>
+                     <img id="boost_pic7" class="history_pic" width="90" height="80" />
+                 </div>
+
+                 <div hidden="" id="boost_div8" class="history_div" onclick="WinJS.Navigation.back(1)">
+                     <div class="price_prev_div">
+                         <span>$<span id="boost_price_prev8"></span></span>
+                     </div>
+                     <p id="boost_p8" class="history_p"></p>
+                     <img id="boost_pic8" class="history_pic" width="90" height="80" />
+                 </div>
+
+             </div>
+
+             <div id="boost_footer_total" >
+                 <h2 id="where_you_are3"></h2>
+
+                 <div id="history_div">
+                     <div id="price_prev_div_total">
+                         <span>Total</span>
+                         <span>$<span id="base_price_total"></span></span>
+                     </div>
+                     <p hidden="" id="thewordsforcurrentprice">Your Current Total is: $<span hidden="" id="youcurrentprice"></span></p>
+                 </div>
+             </div>
+
+             </div>
+             <!--<h1 id="footer_company_name"></h1>--><!-- this is being styled in the default.js folder -->
+        </footer>
+    </div>
+</body>
+</html>

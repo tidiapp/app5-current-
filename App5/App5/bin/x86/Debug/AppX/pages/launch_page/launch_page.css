@@ -1,0 +1,123 @@
+﻿.launch_page section[role=main] {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.the_float {
+    float: left;
+    margin-right: 25px;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.the_float img {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    z-index: -1;
+}
+
+.underline_div {
+    margin-top: 140px;
+    text-align: center;
+    margin-left: 6px;
+}    
+    /*.the_float a {
+        color: #fff;
+        font-size: 20px;
+        text-decoration: none;
+        border-bottom-width: 2px;
+        border-bottom-style: solid;
+        padding-bottom: 2px;
+        }
+        .the_float a:active {
+             color: #fff;
+        }*/
+
+    .underline_div a {
+    /*background-color: rgba(0,0,0,.6);*/
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    /*border-bottom-width: 2px;
+    border-bottom-style: solid;
+    padding-bottom: 2px;*/
+}
+
+.underline_div a:active {
+    color: #fff;
+}
+
+#launch_sel {
+    margin-left: 220px;
+    width: 1200px;
+    margin-top: -30px;
+}
+
+.the_float:hover {
+    cursor: pointer;
+    /*box-shadow: 3px 3px 3px #808080;*/
+}
+
+#explain {
+    font-size: 50px;
+    margin-left: 320px;
+    margin-top: 15px;
+}
+
+#intro_text {
+    /*font-size: 20px;
+    margin-left: 80px;*/
+}
+
+#intro_text_section {
+    /*margin-left: -40px;*/
+    margin-left: 300px;
+    float: left;
+    /*margin-top: 30px;*/
+}
+
+#intro_text_section h2 {
+    margin-top: 0px;
+}
+
+#intro_text_section ul, ol {
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+
+
+
+@media (min-width: 600px ) and (max-device-width: 1370px){
+
+        #launch_sel {
+            margin-left: 130px;
+            width: 1135px;
+            margin-top: -45px;
+        }
+
+
+        #explain {
+            font-size: 45px;
+            margin-left: 280px;
+            margin-top: 15px;
+        }
+
+        #intro_text_section h2 {
+            margin-top: 0px;
+            font-size: 20px;
+            margin-bottom: 0px;
+        }
+
+        .the_float {
+            margin-right: 25px;
+            width: 190px;
+            height: 190px;
+            margin-bottom: 20px;
+        }
+
+}

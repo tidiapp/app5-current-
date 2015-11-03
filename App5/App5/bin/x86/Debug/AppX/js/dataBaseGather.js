@@ -5,6 +5,8 @@
         //"use strict";
         var appData = Windows.Storage.ApplicationData.current;
         var roamingSettings = appData.roamingSettings;
+        roamingSettings.values["computerNumber"] = 2;
+        CNum = roamingSettings.values["computerNumber"];
 
         WinJS.Namespace.define("server", {
             //home.html
@@ -16,7 +18,7 @@
                     id: id
                 }).read().done(function (results) {
 
-                    roamingSettings.values["t"] = results[0].NutrigeneticsPrice + results[0].BasePrice + results[0].BoostPrice + results[0].Boost2Price + results[0].Boost3Price + results[0].Boost4Price + results[0].Boost5Price + results[0].Boost6Price + results[0].Boost7Price + results[0].Boost8Price ;
+                    roamingSettings.values["t"] = results[0].NutrigeneticsPrice + results[0].BasePrice + results[0].BoostPrice + results[0].Boost2Price + results[0].Boost3Price + results[0].Boost4Price + results[0].Boost5Price + results[0].Boost6Price + results[0].Boost7Price + results[0].Boost8Price + results[0].FlavPrice;
 
                     Age.del({
                         id: id
@@ -30,15 +32,12 @@
                         console.log("Error: " + err);
                     });
 
-
                 }, function (err) {
                     console.log("Error: " + err);
                 });
 
-
-         
             },
-            home: function (the_sel_age) {
+            home: function (the_sel_age, var1) {
                 remove.pop_list(age_data.model.age);
 
                 //milo: withFilter var Age = thinkitdrinkitDataClient.withFilter(noCachingFilter).getTable("Age"); suposed to not cache, great way to test for same name pictures being replaced never seems to refresh the new pic unless name is changed. 
@@ -65,10 +64,20 @@
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (the_sel_age === "Nutrigenetic Test") {
+                } else if (var1 === "Nutrigenetic Testing") {
                     var query = Age.where({
                         AccessNG: true
-                    }).orderBy("Name").read().done(function (results) {
+                    }).orderBy("Order").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.age.push({ age: results[i].Name, img: results[i].Image, info_price: results[i].Price })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                } else if (var1 === "Stress & Recovery Monitoring") {
+                    var query = Age.where({
+                        AccessN: true
+                    }).orderBy("Order").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.age.push({ age: results[i].Name, img: results[i].Image, info_price: results[i].Price })
                         }
@@ -140,15 +149,28 @@
 
                 //milo: id_sel is the id that was picked by user from the db and it equals the actual id number to display the correct business logic 
                 //milo: in the if statement == 'whatever number' is the actual id from the thinkitdrinkitDataClient.Age table in azure db
-                var query = Func.where({
-                    Age_id: id_sel
-                }).orderBy("Order").read().done(function (results) {
-                    for (var i = 0; i < results.length; i++) {
-                        age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
-                    }
-                }, function (err) {
-                    console.log(err);
-                });
+                if(id_sel == "" && cat_selected == "Performance Testing") {
+                    var query = Func.where({
+                        Access: 3
+                    }).orderBy("Order").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+
+                } else {
+                    var query = Func.where({
+                        Age_id: id_sel
+                    }).orderBy("Order").read().done(function (results) {
+                        for (var i = 0; i < results.length; i++) {
+                            age_data.model.func.push({ func: results[i].Name, img: results[i].Image })
+                        }
+                    }, function (err) {
+                        console.log(err);
+                    });
+                }
             },
 
             func_sub: function (name) {
@@ -157,7 +179,7 @@
                 var query = Func.where({
                     Name: name
                 }).read().done(function (results) {
-                    age_data.model.info_page2_func.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_img: results[0].Label, base_price: results[0].Price, the_pic: results[0].Image, b_vend: results[0].VendID, id_sel: results[0].id })
+                    age_data.model.info_page2_func.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_img: results[0].Image, base_price: results[0].Price, the_pic: results[0].Image, b_vend: results[0].VendID, id_sel: results[0].id })
                     roamingSettings.values["db_url"] = results[0].Info;
                 }, function (err) {
                     console.log(err);
@@ -183,7 +205,7 @@
                 } else if (id_sel == 27 || id_sel == 28) {
                     var query = Age.where({
                         AgeDBhome_id: id_sel
-                    }).orderBy("Name").read().done(function (results) {
+                    }).orderBy("Order").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[i].Price, id_sel: results[i].id })
                         }
@@ -193,7 +215,7 @@
                 } else if (cat_selected === "Beauty") {
                     var query = Age.where({
                         Access: 5
-                    }).orderBy("Name").read().done(function (results) {
+                    }).orderBy("Order").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[i].Price, id_sel: results[i].id })
                         }
@@ -213,7 +235,7 @@
                 } else if (cat_selected === "Weight Management") {
                     var query = Age.where({
                         Access: 2
-                    }).orderBy("Name").read().done(function (results) {
+                    }).orderBy("Order").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[i].Price, id_sel: results[i].id })
                         }
@@ -223,51 +245,23 @@
                 } else if (cat_selected === "Lifestyle Diets") {
                     var query = Age.where({
                         Access: 3
-                    }).orderBy("Name").read().done(function (results) {
+                    }).orderBy("Order").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[i].Price, id_sel: results[i].id })
                         }
                     }, function (err) {
                         console.log(err);
                     });
-                } else if (cat_selected === "Wellness") {
+                } else if (cat_selected === "Functional Health") {
                     var query = Age.where({
                         Access: 4
-                    }).orderBy("Name").read().done(function (results) {
+                    }).orderBy("Order").read().done(function (results) {
                         for (var i = 0; i < results.length; i++) {
                             age_data.model.base.push({ b_name: results[i].Name, b_pic: results[i].Image, base_price: results[i].Price, id_sel: results[i].id })
 
                             // IF id is grabbed here it will get all ids as it loops not a solution ... roamingSettings.values["Id_sel_func"]
                             //AND this for the page load so my issue is when I select the base thats the id I need and thats where the bug is. 
-
                         }
-
-                        
-                        //console.log("MILO " + age_data.model.base);
-                        if (base_name != undefined) {
-
-                            for (var i = 0; i < age_data.model.base.length; i++) {
-
-                                //if (base_name == results[i].Name) {
-
-                                //    roamingSettings.values["Id_sel_base"] = results[0].id;
-
-                                //}
-
-                                //age_data.model.base[i].Name == base_name
-
-                                // function dick(){
-                                //     console.log("MILO yes it ran" );
-                                //} 
-
-                                 //age_data.model.base.filter(dick(), [base_name == b_name]);
-                                 //age_data.model.base.createFiltered(base_name == results[i].Name)
-
-
-                                //age_data.model.base[i]({b_name:})
-                            }
-                        }
-
                     }, function (err) {
                         console.log(err);
                     });
@@ -283,42 +277,50 @@
                     });
                 }
             },
-            base_sub: function (name) {
+            base_sub: function (id, name) {
                 var Age = thinkitdrinkitDataClient.getTable("Base");
+                console.log('here ' + id);
+                //milo: this is for a bug in base.html if clicking on id(a tag) this fires if clicked on image else fires (the issue is coming from base.html when div grabs event.srcElement.innerText there are two text areas a tag and span tag that couse this issue) 
 
-                //server.base(roamingSettings.values["Id_sel_func"], roamingSettings.values["Cat_picked"], name);
-
-                //var query = Age.where({
-                //    Name: name,
-                //}).read().done(function (results) {
-                    
-                //    age_data.model.info_page2.push({id_sel: results[0].id })
-
+                if (id != isNaN && id != "") {
                     var query = Age.where({
-                        Name: name
-                        
+                        id: id
                     }).read().done(function (results) {
-                        age_data.model.info_page2.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_img: results[0].Label, base_price: results[0].Price, the_pic: results[0].Image, b_vend: results[0].VendID, id_sel: results[0].id })
+
+                        var price_result = results[0].Price;
+                        var result_dev = (price_result /= 15).toFixed(2);
+                        var perServ = "$" + result_dev + " per serving";
+
+                        age_data.model.info_page2.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_img: results[0].Label, base_price: results[0].Price, b_vend: results[0].VendID, id_sel: results[0].id, per_serv_b: perServ })
+                        //milo these are here because there is a timing issue 
                         roamingSettings.values["db_url"] = results[0].Info;
-                        // TOO late for id here this is after the name goes over the db and grabs the first same name, roamingSettings.values["Id_sel_base"] = results[0].id;
-
-
-
+                        roamingSettings.values["Id_sel_base"] = results[0].id;
+                        roamingSettings.values["Base_name"] = results[0].Name;
 
                     }, function (err) {
                         console.log(err);
                     })
+                } else {
 
+                    var query = Age.where({
+                        Name: name
+                    }).read().done(function (results) {
 
+                        var price_result = results[0].Price;
+                        var result_dev = (price_result /= 15).toFixed(2);
+                        var perServ = "$" + result_dev + " per serving";
 
+                        age_data.model.info_page2.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_img: results[0].Label, base_price: results[0].Price, the_pic: results[0].Image, b_vend: results[0].VendID, id_sel: results[0].id, per_serv_b: perServ })
+                        roamingSettings.values["db_url"] = results[0].Info;
+                        roamingSettings.values["Id_sel_base"] = results[0].id;
+                        roamingSettings.values["Base_name"] = results[0].Name;
+                        //roamingSettings.values["Id_sel_base"] = results[0].id;
+                        // TOO late for id here this is after the name goes over the db and grabs the first same name, roamingSettings.values["Id_sel_base"] = results[0].id;
 
-                //}, function (err) {
-                //    console.log(err);
-                //})
-
-
-
-
+                    }, function (err) {
+                        console.log(err);
+                    })
+                }
 
             },
 
@@ -342,7 +344,12 @@
                 var query = Age.where({
                     Name: name
                 }).read().done(function (results) {
-                    age_data.model.info_page4.push({ sel_name: results[0].Name, sel_info: results[0].InfoLite, sel_pic: results[0].Image, sel_label: results[0].Label, f_vend: results[0].VendID })
+
+                    var price_result = results[0].Price;
+                    var result_dev = (price_result /= 15).toFixed(2);
+                    var perServ = "$" + result_dev + " per serving";
+
+                    age_data.model.info_page4.push({ sel_name: results[0].Name, sel_info: results[0].InfoLite, sel_pic: results[0].Image, sel_label: results[0].Label, f_vend: results[0].VendID, flav_price: results[0].Price, per_serv_f: perServ })
                     roamingSettings.values["db_url"] = results[0].Info;
                 }, function (err) {
                     console.log(err);
@@ -352,6 +359,7 @@
             //boost.html
             //milo: uses id from thinkitdrinkitData.Func table
             boost: function (cat_picked, id_func, id_sport, id_base) {
+                
                 var Age = thinkitdrinkitDataClient.getTable("Boost");
 
                 if (id_func == 1 || id_func == 2 || id_func == 4 || id_func == 6) {//milo: bug fix helps show boosts when id_func == 1 (which is recover) is hit. it needs to be the first thing checked if its not then the boost will not show up since it ends up reading the next code down.   
@@ -380,7 +388,7 @@
                         var query = Age.where({
                             FuncDBsport_id: id_sport,
                             BaseDBbase_id: id_base
-                        }).orderBy("Name").read().done(function (results) {
+                        }).orderBy("Order").read().done(function (results) {
                             for (var i = 0; i < results.length; i++) {
                                 age_data.model.boost.push({ boost_name: results[i].Name, boost_pic: results[i].Image, id_sel: results[i].id })
                             }
@@ -388,11 +396,12 @@
                             console.log(err);
                         });
                     } else if (cat_picked === "Energy" || cat_picked === "Fitness & Exercise" || cat_picked === "Weight Management" || cat_picked === "Lifestyle Diets" || cat_picked === "Wellness" || cat_picked === "Beauty") {
+                        
                         var query = Age.where({
                             BaseDBbase_id: id_base,
                         }).orderBy("Order").read().done(function (results) {
                             for (var i = 0; i < results.length; i++) {
-                                age_data.model.boost.push({ boost_name: results[i].Name, boost_pic: results[i].Image, id_sel: results[i].id })
+                                age_data.model.boost.push({ boost_name: results[i].Name, boost_pic: results[i].Image, id_sel: results[i].id, order_num: results[i].Order})
                             }
                                 ////milo: standard boosts that show up in most catagories.
                                 //var query = Age.where({
@@ -418,8 +427,16 @@
                     var query = Age.where({
                         id: id
                     }).read().done(function (results) {
-                        age_data.model.info_page5.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_label: results[0].Label, the_price: results[0].Price, bo_vend: results[0].VendID, id_sel: results[0].id })
+
+                        var price_result = results[0].Price;
+                        var result_dev = (price_result /= 15).toFixed(2);
+                        var perServ = "$" + result_dev + " per serving";
+
+                        age_data.model.info_page5.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_label: results[0].Label, the_price: results[0].Price, bo_vend: results[0].VendID, id_sel: results[0].id, per_serv: perServ })
                         roamingSettings.values["db_url"] = results[0].Info;
+
+                        //boost_clicked.perServing(results[0].Price);
+
                     }, function (err) {
                         console.log(err);
                     })
@@ -430,8 +447,16 @@
                             FuncDBfunc_id: id_func,
                             Name: name
                         }).read().done(function (results) {
-                            age_data.model.info_page5.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_label: results[0].Label, the_price: results[0].Price, bo_vend: results[0].VendID, id_sel: results[0].id })
+
+                            var price_result = results[0].Price;
+                            var result_dev = (price_result /= 15).toFixed(2);
+                            var perServ = "$" + result_dev + " per serving";
+
+                            age_data.model.info_page5.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_label: results[0].Label, the_price: results[0].Price, bo_vend: results[0].VendID, id_sel: results[0].id, per_serv: perServ })
                             roamingSettings.values["db_url"] = results[0].Info;
+
+                            //boost_clicked.perServing(results[0].Price);
+
                         }, function (err) {
                             console.log(err);
                         })
@@ -443,8 +468,15 @@
                                 BaseDBbase_id: id_base,
                                 Name: name
                             }).read().done(function (results) {
-                                age_data.model.info_page5.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_label: results[0].Label, the_price: results[0].Price, bo_vend: results[0].VendID, id_sel: results[0].id })
+
+                                var price_result = results[0].Price;
+                                var result_dev = (price_result /= 15).toFixed(2);
+                                var perServ = "$" + result_dev + " per serving";
+
+                                age_data.model.info_page5.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_label: results[0].Label, the_price: results[0].Price, bo_vend: results[0].VendID, id_sel: results[0].id, per_serv: perServ })
                                 roamingSettings.values["db_url"] = results[0].Info;
+                                //boost_clicked.perServing(results[0].Price);
+
                             }, function (err) {
                                 console.log(err);
                             })
@@ -453,8 +485,15 @@
                                 FuncDBfunc_id: id_func,
                                 Name: name
                             }).read().done(function (results) {
-                                age_data.model.info_page5.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_label: results[0].Label, the_price: results[0].Price, bo_vend: results[0].VendID, id_sel: results[0].id })
+
+                                var price_result = results[0].Price;
+                                var result_dev = (price_result /= 15).toFixed(2);
+                                var perServ = "$" + result_dev + " per serving";
+
+                                age_data.model.info_page5.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_label: results[0].Label, the_price: results[0].Price, bo_vend: results[0].VendID, id_sel: results[0].id, per_serv: perServ })
                                 roamingSettings.values["db_url"] = results[0].Info;
+                                //boost_clicked.perServing(results[0].Price);
+
                             }, function (err) {
                                 console.log(err);
                             })
@@ -463,8 +502,17 @@
                                 BaseDBbase_id: id_base,
                                 Name: name
                             }).read().done(function (results) {
-                                age_data.model.info_page5.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_label: results[0].Label, the_price: results[0].Price, bo_vend: results[0].VendID, id_sel: results[0].id })
+
+                                var price_result = results[0].Price;
+                                var result_dev = (price_result /= 15).toFixed(2);
+                                var perServ = "$" + result_dev + " per serving";
+                                
+                                age_data.model.info_page5.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_label: results[0].Label, the_price: results[0].Price, bo_vend: results[0].VendID, id_sel: results[0].id, per_serv: perServ })
                                 roamingSettings.values["db_url"] = results[0].Info;
+
+                                //console.log("Milo price per ser " + perServ);
+                                //boost_clicked.perServing(results[0].Price);
+
                             }, function (err) {
                                 console.log(err);
                             })
@@ -651,15 +699,15 @@
                 var roamingSettings = appData.roamingSettings;
                 roamingSettings.values["t"] = 0;
                 var query = finalCall.where({
-                    CNum: 1
+                    CNum: CNum
                 }).read().done(function (results) {
-                    console.log("I made it here, Yay...");
+                    console.log("Computer # " + CNum);
                     console.log("This is the results number: " + results.length);
                     if (results.length > 0) {
                         if (roamingSettings.values["totalOrderNumber1"] > 0) {
                             //milo: DB ShopCart if its empty and allows to get into here it will couse BasePrice bug to break app
                             for (var i = 0; i < roamingSettings.values["totalOrderNumber1"]; i++) {
-                                roamingSettings.values["t"] += (parseFloat(results[i].BasePrice) + parseFloat(results[i].BoostPrice) + parseFloat(results[i].Boost2Price) + parseFloat(results[i].Boost3Price) + parseFloat(results[i].Boost4Price) + parseFloat(results[i].Boost5Price) + parseFloat(results[i].Boost6Price) + parseFloat(results[i].Boost7Price) + parseFloat(results[i].Boost8Price) + parseFloat(results[i].NutrigeneticsPrice));
+                                roamingSettings.values["t"] += (parseFloat(results[i].BasePrice) + parseFloat(results[i].BoostPrice) + parseFloat(results[i].Boost2Price) + parseFloat(results[i].Boost3Price) + parseFloat(results[i].Boost4Price) + parseFloat(results[i].Boost5Price) + parseFloat(results[i].Boost6Price) + parseFloat(results[i].Boost7Price) + parseFloat(results[i].Boost8Price) + parseFloat(results[i].NutrigeneticsPrice) + parseFloat(results[i].FlavPrice));
                                 console.log("Inside finalpagecall loop");
 
                             }
@@ -706,11 +754,16 @@
                 });
             },
             VendPrep: function () {
+
                 var finalCall = thinkitdrinkitDataClient.getTable("ShopCart");
                 var roamingSettings = appData.roamingSettings;
                 var Age = thinkitdrinkitDataClient.getTable("ShopCart");
+                console.log("Milo 1 " + roamingSettings.values["computerNumber"]);
+                console.log("Milo 2 " + CNum);
+
+
                 Age.insert({
-                    CNum: roamingSettings.values["computerNumber"],
+                    CNum: CNum,
                     OrderNum: roamingSettings.values["totalOrderNumber1"],
                     BaseName: roamingSettings.values["Base_name"],
                     BaseVend: roamingSettings.values["Base_vend"],
@@ -760,8 +813,10 @@
                     console.log("Results1 " + results1);
                     roamingSettings.values["totalOrderNumber"]++;
                     roamingSettings.values["computer" + roamingSettings.values["totalOrderNumber"] + "Number"] = results1.id;
+                    console.log("Milo 3 " + CNum);
+
                     var query = finalCall.where({
-                        CNum: 1
+                        CNum: CNum
                     }).read().done(function (results) {
 
                         for (var i = 0; i < results.length; i++) {
@@ -874,8 +929,7 @@
                             i++
                             //console.log(i);
                         }
-                        console.log("This one is not inside of a loop: ")
-                        console.log(array_t);
+                        console.log("Milo " + array_t)
                         WinJS.xhr({
                             type: "POST",
                             //url: "https://thinkitdrinkit.vendhq.com/api/register_sales",
@@ -943,13 +997,12 @@
             contSave: function () {
                 var appData = Windows.Storage.ApplicationData.current;
                 var roamingSettings = appData.roamingSettings;
-                roamingSettings.values["computerNumber"] = 1;
                 roamingSettings.values["totalOrderNumber"]++;
                 roamingSettings.values["totalOrderNumber1"]++;
                 var Age = thinkitdrinkitDataClient.getTable("ShopCart");
                 //console.log("I'm here 1!")
                 Age.insert({
-                    CNum: roamingSettings.values["computerNumber"],
+                    CNum: CNum,
                     OrderNum: roamingSettings.values["totalOrderNumber1"],
                     BaseName:roamingSettings.values["Base_name"],
                     BaseVend:roamingSettings.values["Base_vend"],
@@ -1030,29 +1083,11 @@
             userOrderFinalRead: function () {
                 //milo: remove.pop_list(age_data.model.order_final_read); HAPPENS in final page when leaving, if here does not remove in time i believe.
                 var Age = thinkitdrinkitDataClient.getTable("ShopCart");
-
-
-
-
-
-//milo issue setAttribute in here 
-
-
-
-
-
                 var query = Age.where({
-
+                    CNum: CNum
                }).read().done(function (results) {
 
-                   //if(results.length === 7){
                    FinalClick.howManyBoosts(results);/*Put this function on to its own page*/
-                   //}
-
-
-                    //for (var i = 0; i < results.length; i++) {
-                    //    age_data.model.order_final_read.push({ b_name: results[i].BaseName, b_img: results[i].BaseImages, b_price: results[i].BasePrice, f_name: results[i].FlavName, f_price: results[i].FlavPrice, bo_name: results[i].BoostName, bo_price: results[i].BoostPrice, bo2_name: results[i].Boost2Name, bo2_price: results[i].Boost2Price, bo3_name: results[i].Boost3Name, bo3_price: results[i].Boost3Price, bo4_name: results[i].Boost4Name, bo4_price: results[i].Boost4Price, bo5_name: results[i].Boost5Name, bo5_price: results[i].Boost5Price, bo6_name: results[i].Boost6Name, bo6_price: results[i].Boost6Price, bo7_name: results[i].Boost7Name, bo7_price: results[i].Boost7Price, bo8_name: results[i].Boost8Name, bo8_price: results[i].Boost8Price })
-                    //}
 
                 }, function (err) {
                     console.log(err);
