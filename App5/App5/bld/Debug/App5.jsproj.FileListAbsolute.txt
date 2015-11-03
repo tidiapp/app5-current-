@@ -121,3 +121,4 @@ C:\Users\appcomputer5\Desktop\GitHub\app5-current-\App5\App5\bld\Debug\qualifier
 C:\Users\appcomputer5\Desktop\GitHub\app5-current-\App5\App5\bld\Debug\qualifiers.txt.intermediate
 C:\Users\appcomputer5\Desktop\GitHub\app5-current-\App5\App5\bld\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\appcomputer5\Desktop\GitHub\app5-current-\App5\App5\bld\Debug\ProjectArchitectures.txt
+C:\Users\appcomputer5\Desktop\GitHub\app5-current-\App5\App5\bin\Debug\MicrosoftAdvertising.winmd
