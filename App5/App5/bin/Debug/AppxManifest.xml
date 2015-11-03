@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="e3f10fc1-365d-4d2e-b488-7e61baad9bf4" Version="1.0.0.39" Publisher="CN=Patrick" ProcessorArchitecture="neutral" />
+  <Identity Name="5e3f10fc1-365d-4d2e-b488-7e61baad9bf4" Version="1.0.0.39" Publisher="CN=Patrick" ProcessorArchitecture="neutral" />
   <Properties>
     <DisplayName>App5</DisplayName>
     <PublisherDisplayName>Anthony</PublisherDisplayName>

@@ -6,15 +6,21 @@
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
     <PackageArchitecture>neutral</PackageArchitecture>
-    <PackageIdentityName>e3f10fc1-365d-4d2e-b488-7e61baad9bf4</PackageIdentityName>
+    <PackageIdentityName>5e3f10fc1-365d-4d2e-b488-7e61baad9bf4</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\appcomputer5\Desktop\GitHub\app5-current-\App5\App5\bld\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>FDC715E0B1B91907534D7CC8FBDDD590075A3AD6BC3A7F6F3E760A45CA34767F</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>F71D09A3EF8EB0C5AEEFD6854FA4B7420C25B6242E21524946B43CCB310381D9</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>5e3f10fc1-365d-4d2e-b488-7e61baad9bf4_1.0.0.39_neutral__t66pgecwyvnzw</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>5e3f10fc1-365d-4d2e-b488-7e61baad9bf4_t66pgecwyvnzw!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>5e3f10fc1-365d-4d2e-b488-7e61baad9bf4</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Patrick</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.39</RegisteredVersion>
+    <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="C:\Users\appcomputer5\Desktop\GitHub\app5-current-\App5\App5\bin\Debug\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-11-03T01:40:46.376</Modified>
+      <Modified>2015-11-03T20:28:03.992</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -550,7 +556,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\appcomputer5\Desktop\GitHub\app5-current-\App5\App5\bin\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-11-03T01:40:46.043</Modified>
+      <Modified>2015-11-03T20:28:03.763</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
