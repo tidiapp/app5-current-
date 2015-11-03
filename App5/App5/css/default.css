@@ -72,7 +72,7 @@
     footer {
         width: auto;
         height: 90px;
-        background-color: #F89B1E;
+        background-color: #F26722;
         margin-top: 700px;
         /*margin-top: 532px;*/
         padding-top: 10px;
@@ -115,7 +115,7 @@
         text-align: right;
         font-size: 0px;
         min-height: 90px;
-        background-color: #F89B1E;
+        background-color: #F26722;
         color: rgb(255, 255, 255);
         /*milo the padding bellow is there to fix a glitch with be inline with the non appBar header*/
         padding-top: 10px;

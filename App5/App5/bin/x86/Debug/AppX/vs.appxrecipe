@@ -34,7 +34,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\appcomputer5\Desktop\GitHub\app5-current-\App5\App5\css\default.css">
       <PackagePath>css\default.css</PackagePath>
-      <Modified>2015-11-03T01:20:01.923</Modified>
+      <Modified>2015-11-03T21:29:45.105</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\appcomputer5\Desktop\GitHub\app5-current-\App5\App5\js\lib\jQuery-slimScroll-1.3.0\examples\libs\prettify\prettify.css">
       <PackagePath>js\lib\jQuery-slimScroll-1.3.0\examples\libs\prettify\prettify.css</PackagePath>
@@ -46,15 +46,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\appcomputer5\Desktop\GitHub\app5-current-\App5\App5\pages\boost\boost.css">
       <PackagePath>pages\boost\boost.css</PackagePath>
-      <Modified>2015-11-03T01:20:03.340</Modified>
+      <Modified>2015-11-03T21:34:24.020</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\appcomputer5\Desktop\GitHub\app5-current-\App5\App5\pages\func\func.css">
       <PackagePath>pages\func\func.css</PackagePath>
-      <Modified>2015-11-03T01:20:03.476</Modified>
+      <Modified>2015-11-03T21:32:10.223</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\appcomputer5\Desktop\GitHub\app5-current-\App5\App5\pages\home2\home2.css">
       <PackagePath>pages\home2\home2.css</PackagePath>
-      <Modified>2015-11-03T01:20:03.514</Modified>
+      <Modified>2015-11-03T21:36:08.422</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\appcomputer5\Desktop\GitHub\app5-current-\App5\App5\pages\supl_sport_item_info\supl_sport_item_info.css">
       <PackagePath>pages\supl_sport_item_info\supl_sport_item_info.css</PackagePath>

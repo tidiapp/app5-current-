@@ -96,7 +96,7 @@
     position: absolute;
     background-color: #FF7C00;
     height: 50px;
-    font-size: 20px;
+    font-size: 15px;/*20px;*/
     text-transform: uppercase;
     /*box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);*/
     border: 0;
