@@ -1,1 +1,1 @@
-C:\Users\appcomputer5\Desktop\TIDI_comp5\app5-current-\App5\App5\App5.jsproj;x64
+C:\Users\appcomputer5\Desktop\GitHub\app5-current-\App5\App5\App5.jsproj;x64
