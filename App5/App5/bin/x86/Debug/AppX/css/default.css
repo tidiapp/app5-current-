@@ -1,0 +1,628 @@
+﻿@media (min-width: 1371px) and (max-device-width: 2000px){
+
+    #contenthost {
+        height: 100%;
+        width: 100%;
+    }
+
+    .fragment {
+        /* Define a grid with rows for a banner and a body */
+        -ms-grid-columns: 1fr;
+        -ms-grid-rows: 128px 1fr;
+        display: -ms-grid;
+        height: 100%;
+        width: 100%;
+    }
+
+        .fragment header[role=banner] {
+            /* Define a grid with columns for the back button and page title. */
+            -ms-grid-columns: 37px 83px 1fr;
+            -ms-grid-rows: 1fr;
+            display: -ms-grid;
+        }
+
+            .fragment header[role=banner] .win-navigation-backbutton {
+                -ms-grid-column: 2;
+                margin-top: 57px;
+                position: relative;
+                z-index: 1;
+            }
+
+            .fragment header[role=banner] .titlearea {
+                -ms-grid-column: 6;
+                margin-top: 46px;
+                margin-left: -1490px;
+            }
+
+                .fragment header[role=banner] .titlearea .pagetitle {
+                    width: calc(100% - 20px);
+                }
+
+        .fragment section[role=main] {
+            -ms-grid-row: 2;
+            /*margin-top: 70px;*/
+            height: 100%;
+            width: 93%;
+        }
+
+
+    body {
+        background-color: #fff;
+        font-family: 'Myriad Pro';
+        font-stretch: condensed;
+        /*Milo added the mstouch none, it disables multy touch -ms-touch-action: none; DID NOT WORK*/
+        /*-ms-touch-action: none;*/
+    }
+
+    #main_header {
+        width: auto;
+        height: 90px;
+        background-color: #FF7700;
+        padding-top: 10px;
+        /*margin-top: -30px;*/
+    }
+
+    #main_header_nav {
+        width: auto;
+        height: 110px;
+        background-color: #c8060c;
+        padding-top: 10px;
+    }
+
+    footer {
+        width: auto;
+        height: 90px;
+        background-color: #F26722;
+        margin-top: 700px;
+        /*margin-top: 532px;*/
+        padding-top: 10px;
+    }
+
+    #company_name {
+        margin-top: 5px;
+        margin-left: 35px;
+        font-size: 60px;
+        color: rgb(255, 255, 255);
+    }
+
+    #company_name1 {
+        margin-top: 5px;
+        margin-left: 35px;
+        font-size: 60px;
+        color: rgb(255, 255, 255);
+    }
+
+    #footer_company_name {
+        float: right;
+        margin-right: 20px;
+        font-weight: bolder;
+        font-size: 50px;
+        /*background-image: url();*/
+    }
+
+    #float_rightid {
+        float: right;
+        margin-right: 60px;
+        color: rgb(255, 255, 255);
+        margin-top: -50px;
+        font-size: 18px;
+        text-decoration: underline;
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+    #appBar {
+        text-align: right;
+        font-size: 0px;
+        min-height: 90px;
+        background-color: #F26722;
+        color: rgb(255, 255, 255);
+        /*milo the padding bellow is there to fix a glitch with be inline with the non appBar header*/
+        padding-top: 10px;
+    }
+
+    #company_name {
+        /*milo added this so appBar can be on the right*/
+        float: left;
+    }
+
+    .win-commandicon, .win-commandimage, .win-label, .win-label {
+        color: rgb(255, 255, 255);
+        border-color: rgb(255, 255, 255);
+        font-size: 13px;
+    }
+
+    #footer_company_name {
+        width: 306px;
+        height: 50px;
+        float: right;
+        background-image: url(../../images/logo_footer.png);
+        margin-top: 20px;
+        /*background: no-repeat;*/
+    }
+
+    .win-listview > .win-viewport {
+        -ms-overflow-style: scrollbar;
+        -ms-scrollbar-base-color: ActiveBorder;
+        overflow-x: visible;
+        overflow-y: visible;
+    }
+
+    h1, .win-type-xx-large {
+        font-size: 34pt;
+        font-weight: 200;
+        letter-spacing: 0px;
+        line-height: 1.1429;
+    }
+
+    .article {
+        background: white;
+        color: black;
+        float: left;
+        /*padding: 10pt 10pt 10pt 10pt;*/
+        position: relative;
+        text-align: justify;
+        border-color: #808080;
+        border-style: dashed;
+        border-width: 2px;
+        cursor: text;
+        -ms-user-select: element;
+    }
+
+    .history_div {
+        float: left;
+    }
+
+    /*.history_p {
+        position: absolute;
+        color: #fff;
+        font-weight: 700;
+        height: 53px;
+        background-color: rgba(0,0,0,.6);
+        width: 113px;
+        margin-left: 17px;
+        margin-top: 37px;
+        font-size: 10px;
+        padding-left: 2px;
+        padding-top: 2px;
+    }*/
+
+    .history_p {
+        position: absolute;
+        color: #fff;
+        font-weight: 400;
+        height: 53px;
+        background-color: rgba(0,0,0,.6);
+        width: 88px;
+        margin-left: 12px;
+        margin-top: 28px;
+        font-size: 14px;
+        padding-left: 2px;
+        padding-top: 2px;
+    }
+
+    .history_pic {
+        border: 2px solid #F89B1E;
+        margin-left: 10px;
+        float: left;
+    }
+
+    /*.price_prev_div {
+        position: absolute;
+        margin-left: 94px;
+        margin-top: 2px;
+        font-size: 25px;
+        color: #fff;
+        background-color: rgba(0,0,0,0.6);
+        width: 38px;
+        height: 35px;
+    }*/
+
+    .price_prev_div {
+        position: absolute;
+        margin-left: 65px;
+        margin-top: 2px;
+        font-size: 15px;
+        color: #fff;
+        background-color: rgba(0,0,0,0.6);
+        width: 37px;
+        height: 26px;
+    }
+
+    .sel_look_btn {
+        /*Use xx-large insted of pixels there is a bug with the button shadow causing a white pixel border*/
+        font-size: x-large;
+        height: 50px;
+        margin-left: 120px;
+        text-transform: uppercase;
+        /*box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);*/
+        border: 0;
+        border-radius: 40px;
+    }
+
+    .div_where_you_are {
+        float: left;
+        margin-left: 10px;
+        /*margin-top: 30px;*/
+    }
+
+    .id_sel {
+        margin-left: 30px;
+        position: absolute;
+        color: black;
+        font-size: 30px;
+    }
+
+    .underline_class {
+        margin-top: 163px;
+        text-align: center;
+        /*margin-left: 6px;*/
+    }
+
+        .underline_class a {
+            /*background-color: rgba(0,0,0,.6);*/
+            color: #fff;
+            font-size: 20px;
+            text-decoration: none;
+            /*border-bottom-width: 2px;
+            border-bottom-style: solid;
+            padding-bottom: 2px;*/
+        }
+
+            .underline_class a:active {
+                color: #fff;
+            }
+
+    :not(.win-selectionstylefilled).win-listview .win-selected.win-container .win-selectionborder, :not(.win-selectionstylefilled).win-selected.win-container.win-itemcontainer .win-selectionborder {
+        border-color: orange;
+    }
+
+    :not(.win-selectionstylefilled).win-listview .win-selectioncheckmarkbackground, :not(.win-selectionstylefilled).win-itemcontainer .win-selectioncheckmarkbackground {
+        border-top-color: orange;
+        border-right-color: orange;
+    }
+
+    #thewordsforcurrentprice {
+        font-size: 25px;
+        color: #fff;
+        margin-left: 15px;
+        float: left;
+    }
+
+    #out_of_stock, #out_of_stock2, #out_of_stock3, #out_of_stock4 {
+        position: absolute;
+        margin-left: 290px;
+        margin-top: 215px;
+        font-size: 20px;
+        color: red;
+    }
+
+    #price_prev_div_total {
+        font-size: 25px;
+        color: #fff;
+    }
+}
+
+
+
+
+
+
+    @media (min-width: 600px ) and (max-device-width: 1370px){
+
+        .win-appbar {
+            height: 25px;
+            min-height: 25px;
+        }
+
+        #appBar {
+            height: 70px;
+            top: -50px;
+        }
+
+        button.win-command {
+            background: none;
+            background-clip: border-box;
+            padding-top: 5px;
+            margin: 0;
+            text-align: center;
+            font-size: x-large;
+            line-height: 16px;
+        }
+
+        #contenthost {
+            height: 100%;
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        .fragment {
+            /* Define a grid with rows for a banner and a body */
+            -ms-grid-columns: 1fr;
+            -ms-grid-rows: 128px 1fr;
+            display: -ms-grid;
+            height: 100%;
+            width: 100%;
+        }
+
+            .fragment header[role=banner] {
+                /* Define a grid with columns for the back button and page title. */
+                -ms-grid-columns: 37px 83px 1fr;
+                -ms-grid-rows: 1fr;
+                display: -ms-grid;
+            }
+
+                .fragment header[role=banner] .win-navigation-backbutton {
+                    -ms-grid-column: 2;
+                    margin-top: 47px;
+                    position: relative;
+                    z-index: 1;
+                }
+
+                .fragment header[role=banner] .titlearea {
+                    -ms-grid-column: 6;
+                    margin-top: 46px;
+                    margin-left: -1260px;
+                }
+
+                    .fragment header[role=banner] .titlearea .pagetitle {
+                        width: calc(100% - 20px);
+                    }
+
+            .fragment section[role=main] {
+                -ms-grid-row: 2;
+                /*margin-top: 70px;*/
+                height: 100%;
+                width: 93%;
+            }
+
+
+        body {
+            /*background-color: black;*/
+            font-family: 'Myriad Pro';
+            font-stretch: condensed;
+            /*Milo added the mstouch none, it disables multy touch -ms-touch-action: none; DID NOT WORK*/
+            /*-ms-touch-action: none;*/
+        }
+
+        #main_header {
+            width: auto;
+            height: 30px;
+            /*background-color: #F89B1E;*/
+            /*padding-top: 10px;*/
+            /*margin-top: -30px;*/
+        }
+
+        #main_header_nav {
+            width: auto;
+            height: 110px;
+            background-color: #c8060c;
+            padding-top: 10px;
+        }
+
+        footer {
+            width: auto;
+            height: 80px;
+            background-color: #F89B1E;
+            margin-top: 630px;
+            padding-top: 0;
+        }
+
+        #company_name {
+            margin-top: 15px;
+            margin-left: 10px;
+            font-size: 35px;
+            color: rgb(255, 255, 255);
+        }
+
+        #company_name1 {
+            margin-top: 0px;
+            margin-left: 35px;
+            font-size: 40px;
+            color: rgb(255, 255, 255);
+        }
+
+        #float_rightid {
+            float: right;
+            margin-right: 60px;
+            color: rgb(255, 255, 255);
+            margin-top: -50px;
+            font-size: 18px;
+            text-decoration: underline;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        #appBar {
+            text-align: right;
+            font-size: 0px;
+            /*min-height: 110px;*/
+            background-color: #F89B1E;
+            color: rgb(255, 255, 255);
+            /*milo the padding bellow is there to fix a glitch with be inline with the non appBar header*/
+            /*padding-top: 10px;*/
+        }
+
+        #company_name {
+            /*milo added this so appBar can be on the right*/
+            float: left;
+        }
+
+        .win-commandicon, .win-commandimage, .win-label, .win-label {
+            color: rgb(255, 255, 255);
+            border-color: rgb(255, 255, 255);
+            font-size: 13px;
+        }
+
+        #footer_company_name {
+            width: 306px;
+            height: 50px;
+            float: right;
+            background-image: url(../../images/logo_footer.png);
+            margin-top: 10px;
+            /*margin-top: 20px;*/
+            /*background: no-repeat;*/
+        }
+
+        .win-listview > .win-viewport {
+            -ms-overflow-style: scrollbar;
+            -ms-scrollbar-base-color: ActiveBorder;
+            overflow-x: visible;
+            overflow-y: visible;
+        }
+
+        h1, .win-type-xx-large {
+            font-size: 25pt;
+            font-weight: 200;
+            letter-spacing: 0px;
+            line-height: 1.1429;
+        }
+
+        .article {
+            background: white;
+            color: black;
+            float: left;
+            /*padding: 10pt 10pt 10pt 10pt;*/
+            position: relative;
+            text-align: justify;
+            border-color: #808080;
+            border-style: dashed;
+            border-width: 2px;
+            cursor: text;
+            -ms-user-select: element;
+        }
+
+        .history_div {
+            float: left;
+        }
+
+        /*.history_p {
+            position: absolute;
+            color: #fff;
+            font-weight: 700;
+            height: 53px;
+            background-color: rgba(0,0,0,.6);
+            width: 113px;
+            margin-left: 17px;
+            margin-top: 37px;
+            font-size: 10px;
+            padding-left: 2px;
+            padding-top: 2px;
+        }*/
+
+        .history_p {
+            position: absolute;
+            color: #fff;
+            font-weight: 400;
+            height: 53px;
+            background-color: rgba(0,0,0,.6);
+            width: 88px;
+            margin-left: 12px;
+            margin-top: 28px;
+            font-size: 14px;
+            padding-left: 2px;
+            padding-top: 2px;
+        }
+
+        .history_pic {
+            border: 2px solid #F89B1E;
+            margin-left: 10px;
+            float: left;
+        }
+
+        /*.price_prev_div {
+            position: absolute;
+            margin-left: 94px;
+            margin-top: 2px;
+            font-size: 25px;
+            color: #fff;
+            background-color: rgba(0,0,0,0.6);
+            width: 38px;
+            height: 35px;
+        }*/
+
+        .price_prev_div {
+            position: absolute;
+            margin-left: 65px;
+            margin-top: 2px;
+            font-size: 15px;
+            color: #fff;
+            background-color: rgba(0,0,0,0.6);
+            width: 37px;
+            height: 26px;
+        }
+
+        .sel_look_btn {
+            /*Use xx-large insted of pixels there is a bug with the button shadow causing a white pixel border*/
+            font-size: x-large;
+            height: 50px;
+            margin-left: 120px;
+            text-transform: uppercase;
+            /*box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);*/
+            border: 0;
+            border-radius: 40px;
+        }
+
+        .div_where_you_are {
+            float: left;
+            margin-left: 10px;
+            /*margin-top: 30px;*/
+        }
+
+        .id_sel {
+            margin-left: 30px;
+            position: absolute;
+            color: black;
+            font-size: 30px;
+        }
+
+        .underline_class {
+            margin-top: 163px;
+            text-align: center;
+            /*margin-left: 6px;*/
+        }
+
+            .underline_class a {
+                /*background-color: rgba(0,0,0,.6);*/
+                color: #fff;
+                font-size: 20px;
+                text-decoration: none;
+                /*border-bottom-width: 2px;
+                border-bottom-style: solid;
+                padding-bottom: 2px;*/
+            }
+
+                .underline_class a:active {
+                    color: #fff;
+                }
+
+        :not(.win-selectionstylefilled).win-listview .win-selected.win-container .win-selectionborder, :not(.win-selectionstylefilled).win-selected.win-container.win-itemcontainer .win-selectionborder {
+            border-color: orange;
+        }
+
+        :not(.win-selectionstylefilled).win-listview .win-selectioncheckmarkbackground, :not(.win-selectionstylefilled).win-itemcontainer .win-selectioncheckmarkbackground {
+            border-top-color: orange;
+            border-right-color: orange;
+        }
+
+        #thewordsforcurrentprice {
+            font-size: 25px;
+            color: #fff;
+            margin-left: 15px;
+            float: left;
+        }
+
+        #out_of_stock, #out_of_stock2, #out_of_stock3, #out_of_stock4 {
+            position: absolute;
+            margin-left: 290px;
+            margin-top: 215px;
+            font-size: 20px;
+            color: red;
+        }
+
+        #price_prev_div_total {
+            font-size: 25px;
+            color: #fff;
+        }
+
+     }
