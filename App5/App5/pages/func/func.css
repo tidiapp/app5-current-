@@ -66,13 +66,12 @@
 
 #sel_btn6 {
     /*Use xx-large insted of pixels there is a bug with the button shadow causing a white pixel border*/
-<<<<<<< HEAD
+
     font-size:15px;/*large;*/
     margin-left: 210px;
-=======
+
     font-size: 15px;/*large;*/
     margin-left: 175px;/*210px;*/
->>>>>>> origin/getting-app-ready
     margin-top: 200px;
     position: absolute;
     background-color: #FF7C00;
