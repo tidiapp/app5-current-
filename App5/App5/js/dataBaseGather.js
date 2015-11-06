@@ -5,7 +5,11 @@
         //"use strict";
         var appData = Windows.Storage.ApplicationData.current;
         var roamingSettings = appData.roamingSettings;
+<<<<<<< HEAD
         roamingSettings.values["computerNumber"] = 1;
+=======
+        roamingSettings.values["computerNumber"] = 2;
+>>>>>>> origin/getting-app-ready
         CNum = roamingSettings.values["computerNumber"];
 
         WinJS.Namespace.define("server", {
@@ -421,21 +425,30 @@
             },
             boost_sub: function (id, name, cat_picked, id_func, id_sport, id_base) {
                 var Age = thinkitdrinkitDataClient.getTable("Boost");
+<<<<<<< HEAD
                 console.log('This is the array length that i am looking for: ' + id.length);
                 if (id.length >= 6 ) {
                     console.log('This is the id that i am looking for on the page before: ' + id);
                     id = id.substring(0, id.length - 1);
                     console.log('This is the id that i am looking for on the page before, but after: ' + id);
                 }
+=======
+
+>>>>>>> origin/getting-app-ready
                 //milo: this is for a bug in boost.html if clicking on image this fires if clicked on h1 else fires (the issue is coming from boost.html when div grabs event.srcElement.innerText there are two text areas h1 and span that couse issues) 
                 if (id != isNaN && id != "") {
                     var query = Age.where({
                         id: id
                     }).read().done(function (results) {
+<<<<<<< HEAD
                         console.log('This is the price that I\'m looking for: ' + results);
+=======
+
+>>>>>>> origin/getting-app-ready
                         var price_result = results[0].Price;
                         var result_dev = (price_result /= 15).toFixed(2);
                         var perServ = "$" + result_dev + " per serving";
+
                         age_data.model.info_page5.push({ the_name: results[0].Name, the_info: results[0].InfoLite, the_pic: results[0].Image, the_label: results[0].Label, the_price: results[0].Price, bo_vend: results[0].VendID, id_sel: results[0].id, per_serv: perServ })
                         roamingSettings.values["db_url"] = results[0].Info;
 
