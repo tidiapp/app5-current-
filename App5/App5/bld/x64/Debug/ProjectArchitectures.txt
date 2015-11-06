@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-C:\Users\milo\Desktop\app5-current-\App5\App5\App5.jsproj;x64
-=======
-C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\App5.jsproj;x64
->>>>>>> master
+C:\Users\appcomputer5\Desktop\GitHub\app5-current-\App5\App5\App5.jsproj;x64

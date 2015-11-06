@@ -561,7 +561,6 @@ C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\bld\x64\Debug\qualifiers.
 C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\bld\x64\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\bld\x64\Debug\MobileServices.pri.xml
 C:\Users\milo\Documents\GitHub\app5-current-\App5\App5\bld\x64\Debug\ProjectArchitectures.txt
-<<<<<<< HEAD
 C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\bin\x64\Debug\resources.pri
 C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\bin\x64\Debug\AppxManifest.xml
 C:\Users\milo\Desktop\AppTIDI\App5GITHUB\App5v4\App5\bin\x64\Debug\App5.build.appxrecipe
@@ -657,5 +656,33 @@ C:\Users\milo\Desktop\app5-current-\App5\App5\bld\x64\Debug\qualifiers.txt
 C:\Users\milo\Desktop\app5-current-\App5\App5\bld\x64\Debug\qualifiers.txt.intermediate
 C:\Users\milo\Desktop\app5-current-\App5\App5\bld\x64\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\milo\Desktop\app5-current-\App5\App5\bld\x64\Debug\ProjectArchitectures.txt
-=======
->>>>>>> master
+C:\Users\appcomputer5\Desktop\TIDI_comp5\app5-current-\App5\App5\bin\x64\Debug\resources.pri
+C:\Users\appcomputer5\Desktop\TIDI_comp5\app5-current-\App5\App5\bin\x64\Debug\AppxManifest.xml
+C:\Users\appcomputer5\Desktop\TIDI_comp5\app5-current-\App5\App5\bin\x64\Debug\App5.build.appxrecipe
+C:\Users\appcomputer5\Desktop\TIDI_comp5\app5-current-\App5\App5\bld\x64\Debug\priconfig.xml
+C:\Users\appcomputer5\Desktop\TIDI_comp5\app5-current-\App5\App5\bld\x64\Debug\priconfig.xml.intermediate
+C:\Users\appcomputer5\Desktop\TIDI_comp5\app5-current-\App5\App5\bld\x64\Debug\layout.resfiles
+C:\Users\appcomputer5\Desktop\TIDI_comp5\app5-current-\App5\App5\bld\x64\Debug\layout.resfiles.intermediate
+C:\Users\appcomputer5\Desktop\TIDI_comp5\app5-current-\App5\App5\bld\x64\Debug\resources.resfiles
+C:\Users\appcomputer5\Desktop\TIDI_comp5\app5-current-\App5\App5\bld\x64\Debug\resources.resfiles.intermediate
+C:\Users\appcomputer5\Desktop\TIDI_comp5\app5-current-\App5\App5\bld\x64\Debug\pri.resfiles
+C:\Users\appcomputer5\Desktop\TIDI_comp5\app5-current-\App5\App5\bld\x64\Debug\pri.resfiles.intermediate
+C:\Users\appcomputer5\Desktop\TIDI_comp5\app5-current-\App5\App5\bld\x64\Debug\qualifiers.txt
+C:\Users\appcomputer5\Desktop\TIDI_comp5\app5-current-\App5\App5\bld\x64\Debug\qualifiers.txt.intermediate
+C:\Users\appcomputer5\Desktop\TIDI_comp5\app5-current-\App5\App5\bld\x64\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\appcomputer5\Desktop\TIDI_comp5\app5-current-\App5\App5\bld\x64\Debug\ProjectArchitectures.txt
+C:\Users\appcomputer5\Desktop\GitHub\app5-current-\App5\App5\bin\x64\Debug\resources.pri
+C:\Users\appcomputer5\Desktop\GitHub\app5-current-\App5\App5\bin\x64\Debug\AppxManifest.xml
+C:\Users\appcomputer5\Desktop\GitHub\app5-current-\App5\App5\bin\x64\Debug\App5.build.appxrecipe
+C:\Users\appcomputer5\Desktop\GitHub\app5-current-\App5\App5\bld\x64\Debug\priconfig.xml
+C:\Users\appcomputer5\Desktop\GitHub\app5-current-\App5\App5\bld\x64\Debug\priconfig.xml.intermediate
+C:\Users\appcomputer5\Desktop\GitHub\app5-current-\App5\App5\bld\x64\Debug\layout.resfiles
+C:\Users\appcomputer5\Desktop\GitHub\app5-current-\App5\App5\bld\x64\Debug\layout.resfiles.intermediate
+C:\Users\appcomputer5\Desktop\GitHub\app5-current-\App5\App5\bld\x64\Debug\resources.resfiles
+C:\Users\appcomputer5\Desktop\GitHub\app5-current-\App5\App5\bld\x64\Debug\resources.resfiles.intermediate
+C:\Users\appcomputer5\Desktop\GitHub\app5-current-\App5\App5\bld\x64\Debug\pri.resfiles
+C:\Users\appcomputer5\Desktop\GitHub\app5-current-\App5\App5\bld\x64\Debug\pri.resfiles.intermediate
+C:\Users\appcomputer5\Desktop\GitHub\app5-current-\App5\App5\bld\x64\Debug\qualifiers.txt
+C:\Users\appcomputer5\Desktop\GitHub\app5-current-\App5\App5\bld\x64\Debug\qualifiers.txt.intermediate
+C:\Users\appcomputer5\Desktop\GitHub\app5-current-\App5\App5\bld\x64\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\appcomputer5\Desktop\GitHub\app5-current-\App5\App5\bld\x64\Debug\ProjectArchitectures.txt

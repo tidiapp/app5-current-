@@ -1,0 +1,194 @@
+﻿.flav_sel section[role=main] {
+    margin-left: 110px;
+    margin-right: 120px;
+}
+
+#flav1_pic {
+    border: 2px solid #fff;
+    margin-left: 15px;
+}
+
+.flav_sel_pic_class {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    z-index: -1;
+    margin-right: 10px;
+}
+
+#flav_sel_name {
+    /*width: auto;*/
+    height: 35px;
+    color: #fff;
+    font-weight: 400;
+    margin-top: 210px;
+    /*background-color: rgba(0,0,0,.6);*/
+    font-size: 20px;
+    /*padding-left: 2px;
+    padding-top: 5px;*/
+}
+
+#the_flav_sel {
+    width: 200px;
+    height: 200px;
+    border: 3px solid;
+}
+
+#the_header_sel_flav {
+    margin-top: -30px;
+}
+
+#flav_sel_placement {
+    margin-top: -15px;
+    margin-left: -100px;
+    height: 255px;
+}
+
+.flav_sel_sel_pic_class {
+    float: left;
+    width: 250px;
+    height: auto;
+    background-color: #fff;
+    border: 0;
+    margin-right: 25px;
+}
+
+#the_flav_sel_sel {
+    width: 670px;
+    background-color: #fff;
+    height: 280px;
+    /*added this for scrollable nutritional lable*/
+    overflow: auto;
+}
+
+#flav_sel_sel_info {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#flav_sel_sel_placement {
+    margin-left: -100px;
+    width: 710px;
+    height: 280px;
+    margin-top: 22px;
+}
+
+#info_btn4 {
+    height: 50px;
+    margin-top: 180px;
+    position: absolute;
+    margin-left: 165px;
+    font-size: 15px;
+    /*box-shadow: 3px 3px 3px #b3b3b3, inset -2px -2px 3px 0px rgba(0,0,0,0.2), inset 2px 2px 3px 0px rgba(0,0,0,0.2);*/
+    border: 0;
+}
+
+#sel_btn4 {
+    margin-top: 225px;
+    position: absolute;
+    margin-left: 215px;
+    background-color: #FF7C00;
+    height: 50px;
+    text-transform: uppercase;
+    font-size: large;
+    border: 0;
+}
+
+#flav_div {
+    float: left;
+}
+
+/*#flav_p {
+    position: absolute;
+    color: #fff;
+    font-weight: 700;
+    height: 33px;
+    background-color: rgba(0,0,0,.6);
+    margin-left: 17px;
+    font-size: 10px;
+    width: 112px;
+    margin-top: 57px;
+    padding-left: 3px;
+    padding-top: 2px;
+}*/
+
+#where_you_are3 {
+    /*padding-left: 20px;
+    margin-top: 30px;*/
+    /*position: absolute;*/
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+
+}/*Milo this actually works to fix glictch when too many products are hit at the same time, it DOES NOT SHOW UP IN THE CSS DOM eXPLORER DUNNO WHY BUT IT WORKS!!*/
+#flav_sel_sel_placement .win-viewport {
+    overflow-x: hidden;
+}
+#contenthost {
+    margin-top: 0;
+}
+
+#boost_footer {
+    margin-right: 10px;
+    width: auto;
+    height: 100px;
+    float: left;
+}
+
+#boost_footer_total {
+    width: auto;
+    height: 100px;
+    float: left;
+    /*margin-top: 30px;*/
+}
+
+#choosen_price_div3 {
+    font-size: 25px;
+    position: absolute;
+    margin-top: 226px;
+    margin-left: 265px;
+}
+
+#perdays3 {
+    /*position: absolute;
+    margin-top: 32px;*/
+    font-size: small;
+    /*margin-left: 43px;*/
+}
+
+#per_serving3 {
+    font-size: small;
+    line-height: 0.5;
+}
+
+@media (min-width: 600px ) and (max-device-width: 1370px) {
+   
+     #contenthost {
+        margin-top: 40px;
+    }
+
+    .flav_sel section[role=main] {
+        margin-top: -30px;
+    }
+
+    #where_you_are3 {
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    #flav_sel_sel_placement {
+        height: 250px;
+    }
+
+    #the_flav_sel_sel {
+        height: 250px;
+    }
+
+    #choosen_price_div3 {
+        margin-top: 195px;
+    }
+
+    #sel_btn4 {
+        margin-top: 195px;
+    }
+}

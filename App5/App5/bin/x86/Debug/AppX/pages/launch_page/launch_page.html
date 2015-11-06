@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>launch_page</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-light.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <link href="launch_page.css" rel="stylesheet" />
+    <script src="launch_page.js"></script>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+</head>
+<body>
+    <div class="launch_page fragment">
+        <!-- <header aria-label="Header content" role="banner">
+             <button data-win-control="WinJS.UI.BackButton"></button>
+             <h1 class="titlearea win-type-ellipsis">
+                 <span class="pagetitle">Welcome to launch_page</span>
+             </h1>
+         </header>-->
+        <p id="explain">Start by choosing a category to create your own formula.</p>
+
+        <section id="launch_sel" aria-label="Main content" role="main">
+
+            <section id="learn_more" class="the_float" onclick="WinJS.Navigation.navigate('pages/info_home/info_home.html'), cat_clicked.clicked2(document.getElementById('learn_more_title').textContent);">
+                <img src="http://thinkitdrinkit.blob.core.windows.net/thinkitdrinkitappimagesage/apptilelearn4.png" />
+                <div class="underline_div">
+                    <a id="learn_more_title">Learn how to design your formula</a>
+                </div>
+            </section>
+
+            <section id="supl_sport2" class="the_float" onclick="cat_clicked.next_page(event.srcElement.innerText);">
+                <img id="make_sport_drink_img2" src="http://thinkitdrinkit.blob.core.windows.net/thinkitdrinkitappimagesage/apptilefitnessExercise4.png" />
+                <div class="underline_div">
+                    <a id="supl_sport_name2">Fitness & Exercise</a>
+                </div>
+            </section>
+
+            <section id="supl_sport" class="the_float" onclick="cat_clicked.next_page(event.srcElement.innerText);">
+                <img id="make_sport_drink_img" src="http://thinkitdrinkit.blob.core.windows.net/thinkitdrinkitappimagesage/apptilecompetivtiveSports4.png" />
+                <div class="underline_div">
+                    <a id="supl_sport_name">Competitive Sports</a>
+                </div>
+            </section>
+
+            <section id="make_drink" class="the_float" onclick="cat_clicked.next_page(event.srcElement.innerText);">
+                <img id="make_drink_img" src="http://thinkitdrinkit.blob.core.windows.net/thinkitdrinkitappimagesage/apptileenergy4.png" />
+                <div class="underline_div">
+                    <a>Energy</a>
+                </div>
+            </section>
+
+            <section id="make_drink2" class="the_float" onclick="cat_clicked.next_page(event.srcElement.innerText);">
+                <img id="make_drink_img2" src="http://thinkitdrinkit.blob.core.windows.net/thinkitdrinkitappimagesage/apptileprotein4.png" />
+                <div class="underline_div">
+                    <a>Protein</a>
+                </div>
+            </section>
+
+            <section id="supl_sport3" class="the_float" onclick="cat_clicked.next_page(event.srcElement.innerText);">
+                <img id="make_sport_drink_img3" src="http://thinkitdrinkit.blob.core.windows.net/thinkitdrinkitappimagesage/apptileweightmanagement4.png" />
+                <div class="underline_div">
+                    <a id="supl_sport_name3">Weight Management</a>
+                </div>
+            </section>
+
+            <section id="supl_sport4" class="the_float" onclick="cat_clicked.next_page(event.srcElement.innerText);">
+                <img id="make_sport_drink_img4" src="http://thinkitdrinkit.blob.core.windows.net/thinkitdrinkitappimagesage/apptilelifestylediets4.png" />
+                <div class="underline_div">
+                    <a id="supl_sport_name4">Lifestyle Diets</a>
+                </div>
+            </section>
+
+            <section id="supl_sport5" class="the_float" onclick="cat_clicked.next_page(event.srcElement.innerText);">
+                <img id="make_sport_drink_img5" src="http://thinkitdrinkit.blob.core.windows.net/thinkitdrinkitappimagesage/apptilewellness4.png" />
+                <div class="underline_div">
+                    <a id="supl_sport_name5">Functional Health</a>
+                </div>
+            </section>
+
+            <section id="make_drink6" class="the_float" onclick="cat_clicked.next_page(event.srcElement.innerText);">
+                <img id="make_drink_img6" src="http://thinkitdrinkit.blob.core.windows.net/thinkitdrinkitappimagesage/apptilebeauty4.png" />
+                <div class="underline_div">
+                    <a>Beauty</a>
+                </div>
+            </section>
+
+            <section id="nutrigenetics" class="the_float" onclick="cat_clicked.next_page(event.srcElement.innerText);">
+                <img id="nutrigenetics_img" src="http://thinkitdrinkit.blob.core.windows.net/thinkitdrinkitappimagesage/apptilenutrigenetic4.png" />
+                <div class="underline_div">
+                    <a>Performance Testing</a>
+                </div>            
+            </section>
+
+            <!--<section id="sign_up" class="the_float" onclick="WinJS.Navigation.navigate('pages/signup/signup.html');">
+                <img src="https://thinkitdrinkit.blob.core.windows.net/thinkitdrinkitappimages/sign_up.jpg" />
+                <h2>Join Us</h2>
+            </section>-->
+
+            <section id="intro_text_section">
+                <h2 id="intro_text">In these easy steps you will create your own 15 day formula</h2>
+                <ol>
+                    <li>Choose a category on this page</li>
+                    <li>On the next screen choose a base blend</li>
+                    <li>On the following screen select boosts to make your formula more functional</li>
+                    <li>Then pick a flavor and check out</li>
+                </ol>
+                <!--<p id="intro_text">Welcome to ThinkitDrinkit, the first interactive retail environment where you can customize nutrition based on sport, goals or lifestyle. On the following screens you'll be able to mix and match functions and flavors using next generation, clinically validated ingredients. Each choice you make will personalize your commitment to better health and optimized performance. When you checkout you will receive a 15 day serving supply of your powdered formula. In the future you may login to access your history, share your formula with others, or reorder with the click of a button.</p>-->
+
+
+
+            </section>
+
+        </section>
+        <footer id="main_footer">
+            <p hidden="" id="thewordsforcurrentprice">You Current Total is: $<span hidden="" id="youcurrentprice"></span></p>
+
+            <!--<h1 id="footer_company_name"></h1>--><!-- this is being styled in the default.js folder -->
+        </footer>
+    </div>
+</body>
+</html>

@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="e3f10fc1-365d-4d2e-b488-7e61baad9bf4" Version="1.0.0.26" Publisher="CN=Patrick" ProcessorArchitecture="x86" />
+  <Identity Name="5e3f10fc1-365d-4d2e-b488-7e61baad9bf4" Version="1.0.0.39" Publisher="CN=Patrick" ProcessorArchitecture="x86" />
   <Properties>
     <DisplayName>App5</DisplayName>
     <PublisherDisplayName>Anthony</PublisherDisplayName>
@@ -43,8 +43,8 @@
     <build:Item Name="VisualStudio" Version="12.0" />
     <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Ultimate 2013" />
     <build:Item Name="OperatingSystem" Version="6.3.9600.16384 (winblue_rtm.130821-1623)" />
-    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="12.0.31101.0" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="12.0.40629.0" />
     <build:Item Name="ProjectGUID" Value="e3f10fc1-365d-4d2e-b488-7e61baad9bf4" />
-    <build:Item Name="MakePri.exe" Version="6.3.9600.17298 (winblue.141024-1500)" />
+    <build:Item Name="MakePri.exe" Version="6.3.9600.17336 (winblue.150226-1500)" />
   </build:Metadata>
 </Package>

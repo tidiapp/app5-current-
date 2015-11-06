@@ -1,0 +1,15 @@
+C:\Users\appcomputer5\Desktop\TIDI_comp5\app5-current-\App5\App5\bin\ARM\Release\resources.pri
+C:\Users\appcomputer5\Desktop\TIDI_comp5\app5-current-\App5\App5\bin\ARM\Release\AppxManifest.xml
+C:\Users\appcomputer5\Desktop\TIDI_comp5\app5-current-\App5\App5\bin\ARM\Release\App5.build.appxrecipe
+C:\Users\appcomputer5\Desktop\TIDI_comp5\app5-current-\App5\App5\bld\ARM\Release\priconfig.xml
+C:\Users\appcomputer5\Desktop\TIDI_comp5\app5-current-\App5\App5\bld\ARM\Release\priconfig.xml.intermediate
+C:\Users\appcomputer5\Desktop\TIDI_comp5\app5-current-\App5\App5\bld\ARM\Release\layout.resfiles
+C:\Users\appcomputer5\Desktop\TIDI_comp5\app5-current-\App5\App5\bld\ARM\Release\layout.resfiles.intermediate
+C:\Users\appcomputer5\Desktop\TIDI_comp5\app5-current-\App5\App5\bld\ARM\Release\resources.resfiles
+C:\Users\appcomputer5\Desktop\TIDI_comp5\app5-current-\App5\App5\bld\ARM\Release\resources.resfiles.intermediate
+C:\Users\appcomputer5\Desktop\TIDI_comp5\app5-current-\App5\App5\bld\ARM\Release\pri.resfiles
+C:\Users\appcomputer5\Desktop\TIDI_comp5\app5-current-\App5\App5\bld\ARM\Release\pri.resfiles.intermediate
+C:\Users\appcomputer5\Desktop\TIDI_comp5\app5-current-\App5\App5\bld\ARM\Release\qualifiers.txt
+C:\Users\appcomputer5\Desktop\TIDI_comp5\app5-current-\App5\App5\bld\ARM\Release\qualifiers.txt.intermediate
+C:\Users\appcomputer5\Desktop\TIDI_comp5\app5-current-\App5\App5\bld\ARM\Release\MultipleQualifiersPerDimensionFound.txt
+C:\Users\appcomputer5\Desktop\TIDI_comp5\app5-current-\App5\App5\bld\ARM\Release\ProjectArchitectures.txt
