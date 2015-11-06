@@ -27,11 +27,11 @@
                 <div id="bases" class="bases_class" data-win-control="WinJS.Binding.Template">
                     <div id="the_bases" onclick="base_clicked.clicked(event.srcElement.innerText, event.srcElement.innerText);">
                         <!--milo: DO NOT USE! event.srcElement.children.id_sel.innerText or event.srcElement.firstElementChild.innerText, in boost page app has issues if you click on the image, the event.srcElement.innerText if it has more then 1 thing to grab like 2 pices of text from a h1 and span tag in one div it will break app -->
-
-                       <!-- <span  class="id_sel" id="id_sel4" data-win-bind="textContent: id_sel"></span>-->
-                        <!--Linner: this so that the ID can show  up had to turn it back on that why there are to copy of this line:
-                            <span hidden="" class="id_sel" id="id_sel4" data-win-bind="textContent: id_sel"></span>-->
                         <span hidden="" class="id_sel" id="id_sel4" data-win-bind="textContent: id_sel"></span>
+
+                        <!--Linner: this so that the ID can show  up had to turn it back on that why there are to copy of this line:-->
+                            <!--<span hidden="" class="id_sel" id="id_sel4" data-win-bind="textContent: id_sel"></span>-->
+                        
 
                         <img class="base_pic_class" id="base_pic1" data-win-bind="src: b_pic" />
                         <div class="underline_class">
